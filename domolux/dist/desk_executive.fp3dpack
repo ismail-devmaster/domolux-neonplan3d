@@ -1,0 +1,350 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.executive_desk",
+  "name": "Domolux Executive Desk",
+  "publisher": "Domolux Studio",
+  "description": "Premium walnut and matte black steel modern executive office desk.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "desk_executive",
+    "name": {
+     "en": "Executive Desk",
+     "de": "Chefbüro-Schreibtisch",
+     "ar": "مكتب تنفيذي فاخر"
+    },
+    "size": [
+     1.8,
+     0.85,
+     0.76
+    ],
+    "mount": "floor",
+    "surface": true,
+    "group": "office",
+    "room": [
+     "office",
+     "living"
+    ],
+    "tags": [
+     "desk",
+     "executive",
+     "office",
+     "table",
+     "walnut",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 1,
+      "d": 1,
+      "y": 0.9474,
+      "h": 0.0526,
+      "color": "wood",
+      "finish": "wood",
+      "edges": true,
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.9778,
+      "d": 0.9529,
+      "y": 0.9276,
+      "h": 0.0198,
+      "color": "dark",
+      "edges": "faint",
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": -0.4,
+      "z": -0.3765,
+      "w": 0.0889,
+      "d": 0.0706,
+      "y": 0.9947,
+      "h": 0.0053,
+      "color": "metal",
+      "edges": "glow",
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": -0.4,
+      "z": -0.3765,
+      "w": 0.0722,
+      "d": 0.0353,
+      "y": 0.9961,
+      "h": 0.0039,
+      "color": "dark",
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": 0.3611,
+      "z": 0.0329,
+      "w": 0.2444,
+      "d": 0.8588,
+      "y": 0.0658,
+      "h": 0.8618,
+      "color": "dark",
+      "finish": "body",
+      "edges": "faint",
+      "fix": "wd"
+     },
+     {
+      "shape": "box",
+      "x": 0.3611,
+      "z": 0.4329,
+      "w": 0.2444,
+      "d": 0.0588,
+      "y": 0,
+      "h": 0.0658,
+      "color": "metal",
+      "edges": "faint",
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": 0.3611,
+      "z": -0.3671,
+      "w": 0.2444,
+      "d": 0.0588,
+      "y": 0,
+      "h": 0.0658,
+      "color": "metal",
+      "edges": "faint",
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": 0.3611,
+      "z": 0.4712,
+      "w": 0.2278,
+      "d": 0.0176,
+      "y": 0.7039,
+      "h": 0.2105,
+      "color": "wood",
+      "finish": "wood",
+      "edges": true,
+      "fix": "wd"
+     },
+     {
+      "shape": "box",
+      "x": 0.3611,
+      "z": 0.4712,
+      "w": 0.2278,
+      "d": 0.0176,
+      "y": 0.4276,
+      "h": 0.2632,
+      "color": "wood",
+      "finish": "wood",
+      "edges": true,
+      "fix": "wd"
+     },
+     {
+      "shape": "box",
+      "x": 0.3611,
+      "z": 0.4712,
+      "w": 0.2278,
+      "d": 0.0176,
+      "y": 0.0855,
+      "h": 0.3289,
+      "color": "wood",
+      "finish": "wood",
+      "edges": true,
+      "fix": "wd"
+     },
+     {
+      "shape": "box",
+      "x": 0.3611,
+      "z": 0.4871,
+      "w": 0.0889,
+      "d": 0.0141,
+      "y": 0.8,
+      "h": 0.0184,
+      "color": "metal",
+      "edges": "glow",
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": 0.3611,
+      "z": 0.4871,
+      "w": 0.0889,
+      "d": 0.0141,
+      "y": 0.55,
+      "h": 0.0184,
+      "color": "metal",
+      "edges": "glow",
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": 0.3611,
+      "z": 0.4871,
+      "w": 0.0889,
+      "d": 0.0141,
+      "y": 0.2408,
+      "h": 0.0184,
+      "color": "metal",
+      "edges": "glow",
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": -0.4639,
+      "z": 0.4,
+      "w": 0.0278,
+      "d": 0.0588,
+      "y": 0.0658,
+      "h": 0.7961,
+      "color": "metal",
+      "edges": "faint",
+      "fix": "wd"
+     },
+     {
+      "shape": "box",
+      "x": -0.4639,
+      "z": -0.4,
+      "w": 0.0278,
+      "d": 0.0588,
+      "y": 0.0658,
+      "h": 0.7961,
+      "color": "metal",
+      "edges": "faint",
+      "fix": "wd"
+     },
+     {
+      "shape": "box",
+      "x": -0.4639,
+      "z": 0,
+      "w": 0.0278,
+      "d": 0.8588,
+      "y": 0,
+      "h": 0.0658,
+      "color": "metal",
+      "edges": "faint",
+      "fix": "wd"
+     },
+     {
+      "shape": "box",
+      "x": -0.4639,
+      "z": 0,
+      "w": 0.0278,
+      "d": 0.8588,
+      "y": 0.8618,
+      "h": 0.0658,
+      "color": "metal",
+      "edges": "faint",
+      "fix": "wd"
+     },
+     {
+      "shape": "box",
+      "x": -0.1056,
+      "z": -0.4,
+      "w": 0.6889,
+      "d": 0.0471,
+      "y": 0.875,
+      "h": 0.0526,
+      "color": "metal",
+      "edges": "faint",
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": -0.1056,
+      "z": 0.3294,
+      "w": 0.6889,
+      "d": 0.0471,
+      "y": 0.875,
+      "h": 0.0526,
+      "color": "metal",
+      "edges": "faint",
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": -0.1056,
+      "z": -0.3529,
+      "w": 0.6667,
+      "d": 0.0235,
+      "y": 0.4276,
+      "h": 0.5,
+      "color": "wood",
+      "finish": "wood",
+      "edges": true,
+      "fix": "dh"
+     },
+     {
+      "shape": "box",
+      "x": -0.1056,
+      "z": -0.3294,
+      "w": 0.6889,
+      "d": 0.0235,
+      "y": 0.875,
+      "h": 0.0526,
+      "color": "metal",
+      "edges": "faint",
+      "fix": "dh"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 1,
+      "d": 1
+     },
+     {
+      "shape": "rect",
+      "x": 0.3611,
+      "z": 0.0329,
+      "w": 0.2444,
+      "d": 0.8588
+     },
+     {
+      "shape": "line",
+      "x1": 0.2389,
+      "z1": 0.4712,
+      "x2": 0.4833,
+      "z2": 0.4712
+     },
+     {
+      "shape": "line",
+      "x1": -0.4389,
+      "z1": -0.3529,
+      "x2": 0.2278,
+      "z2": -0.3529
+     },
+     {
+      "shape": "rect",
+      "x": -0.4639,
+      "z": 0,
+      "w": 0.0278,
+      "d": 0.8588
+     },
+     {
+      "shape": "rect",
+      "x": -0.4,
+      "z": -0.3765,
+      "w": 0.0889,
+      "d": 0.0706
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "VWQXcAonXvfYIJM4T0NbVvn1Fsj5b5ZGpMqjmazEsg87mawq4+SGCE1608lHmjeoImK2TYDVhEu3fPUlFwlwAQ=="
+ }
+}
