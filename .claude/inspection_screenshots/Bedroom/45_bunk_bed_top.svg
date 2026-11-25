@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <rect width="400" height="400" fill="#0d1424" rx="8" />
+  <g><polygon points="145.4,311.6 145.4,82.4 254.6,82.4" fill="rgb(1,1,3)" stroke="rgb(1,1,3)" stroke-width="0.3" />
+    <polygon points="254.6,82.4 254.6,311.6 145.4,311.6" fill="rgb(1,1,3)" stroke="rgb(1,1,3)" stroke-width="0.3" />
+    <polygon points="194.5,317.6 194.5,313.3 231.7,313.3" fill="rgb(1,1,3)" stroke="rgb(1,1,3)" stroke-width="0.3" />
+    <polygon points="231.7,313.3 231.7,317.6 194.5,317.6" fill="rgb(1,1,3)" stroke="rgb(1,1,3)" stroke-width="0.3" />
+    <polygon points="145.4,82.4 254.6,82.4 254.6,82.4" fill="rgb(1,1,3)" stroke="rgb(1,1,3)" stroke-width="0.3" />
+    <polygon points="145.4,311.6 145.4,82.4 145.4,82.4" fill="rgb(1,1,4)" stroke="rgb(1,1,4)" stroke-width="0.3" />
+    <polygon points="254.6,82.4 254.6,311.6 254.6,311.6" fill="rgb(1,2,5)" stroke="rgb(1,2,5)" stroke-width="0.3" />
+    <polygon points="254.6,311.6 145.4,311.6 145.4,311.6" fill="rgb(1,2,6)" stroke="rgb(1,2,6)" stroke-width="0.3" />
+    <polygon points="194.5,313.3 231.7,313.3 231.7,313.3" fill="rgb(1,1,3)" stroke="rgb(1,1,3)" stroke-width="0.3" />
+    <polygon points="194.5,317.6 194.5,313.3 194.5,313.3" fill="rgb(1,2,4)" stroke="rgb(1,2,4)" stroke-width="0.3" />
+    <polygon points="231.7,313.3 231.7,317.6 231.7,317.6" fill="rgb(1,2,5)" stroke="rgb(1,2,5)" stroke-width="0.3" />
+    <polygon points="231.7,317.6 194.5,317.6 194.5,317.6" fill="rgb(1,2,6)" stroke="rgb(1,2,6)" stroke-width="0.3" />
+    <polygon points="194.5,313.3 194.5,313.3 231.7,313.3" fill="rgb(1,1,3)" stroke="rgb(1,1,3)" stroke-width="0.3" />
+    <polygon points="231.7,313.3 231.7,313.3 231.7,317.6" fill="rgb(1,2,5)" stroke="rgb(1,2,5)" stroke-width="0.3" />
+    <polygon points="194.5,317.6 194.5,317.6 194.5,313.3" fill="rgb(1,2,4)" stroke="rgb(1,2,4)" stroke-width="0.3" />
+    <polygon points="231.7,317.6 231.7,317.6 194.5,317.6" fill="rgb(1,2,6)" stroke="rgb(1,2,6)" stroke-width="0.3" />
+    <polygon points="194.5,317.6 231.7,313.3 194.5,313.3" fill="rgb(3,6,17)" stroke="rgb(3,6,17)" stroke-width="0.3" />
+    <polygon points="231.7,313.3 194.5,317.6 231.7,317.6" fill="rgb(3,6,17)" stroke="rgb(3,6,17)" stroke-width="0.3" />
+    <polygon points="145.4,82.4 145.4,82.4 254.6,82.4" fill="rgb(1,1,3)" stroke="rgb(1,1,3)" stroke-width="0.3" />
+    <polygon points="254.6,82.4 254.6,82.4 254.6,311.6" fill="rgb(1,2,5)" stroke="rgb(1,2,5)" stroke-width="0.3" />
+    <polygon points="145.4,311.6 145.4,311.6 145.4,82.4" fill="rgb(1,1,4)" stroke="rgb(1,1,4)" stroke-width="0.3" />
+    <polygon points="254.6,311.6 254.6,311.6 145.4,311.6" fill="rgb(1,2,6)" stroke="rgb(1,2,6)" stroke-width="0.3" />
+    <polygon points="145.4,311.6 254.6,82.4 145.4,82.4" fill="rgb(3,6,17)" stroke="rgb(3,6,17)" stroke-width="0.3" />
+    <polygon points="254.6,82.4 145.4,311.6 254.6,311.6" fill="rgb(3,6,17)" stroke="rgb(3,6,17)" stroke-width="0.3" />
+    <polygon points="153.1,90.0 250.2,86.7 246.9,90.0" fill="rgb(1,1,4)" stroke="rgb(1,1,4)" stroke-width="0.3" />
+    <polygon points="153.1,304.0 149.8,86.7 153.1,90.0" fill="rgb(1,2,5)" stroke="rgb(1,2,5)" stroke-width="0.3" />
+    <polygon points="246.9,90.0 250.2,307.3 246.9,304.0" fill="rgb(1,2,5)" stroke="rgb(1,2,5)" stroke-width="0.3" />
+    <polygon points="246.9,304.0 149.8,307.3 153.1,304.0" fill="rgb(1,2,7)" stroke="rgb(1,2,7)" stroke-width="0.3" />
+    <polygon points="153.1,90.0 149.8,86.7 250.2,86.7" fill="rgb(1,1,4)" stroke="rgb(1,1,4)" stroke-width="0.3" />
+    <polygon points="246.9,90.0 250.2,86.7 250.2,307.3" fill="rgb(1,2,5)" stroke="rgb(1,2,5)" stroke-width="0.3" />
+    <polygon points="153.1,304.0 149.8,307.3 149.8,86.7" fill="rgb(1,2,5)" stroke="rgb(1,2,5)" stroke-width="0.3" />
+    <polygon points="246.9,304.0 250.2,307.3 149.8,307.3" fill="rgb(1,2,7)" stroke="rgb(1,2,7)" stroke-width="0.3" />
+    <polygon points="250.2,86.7 149.8,86.7 149.8,307.3" fill="rgb(3,5,14)" stroke="rgb(3,5,14)" stroke-width="0.3" />
+    <polygon points="149.8,307.3 149.8,86.7 250.2,86.7" fill="rgb(1,2,4)" stroke="rgb(1,2,4)" stroke-width="0.3" />
+    <polygon points="250.2,86.7 149.8,307.3 250.2,307.3" fill="rgb(3,5,14)" stroke="rgb(3,5,14)" stroke-width="0.3" />
+    <polygon points="250.2,86.7 250.2,307.3 149.8,307.3" fill="rgb(1,2,4)" stroke="rgb(1,2,4)" stroke-width="0.3" />
+    <polygon points="149.8,86.7 250.2,86.7 250.2,86.7" fill="rgb(1,2,4)" stroke="rgb(1,2,4)" stroke-width="0.3" />
+    <polygon points="149.8,307.3 149.8,86.7 149.8,86.7" fill="rgb(1,2,6)" stroke="rgb(1,2,6)" stroke-width="0.3" />
+    <polygon points="250.2,86.7 250.2,307.3 250.2,307.3" fill="rgb(1,3,7)" stroke="rgb(1,3,7)" stroke-width="0.3" />
+    <polygon points="250.2,307.3 149.8,307.3 149.8,307.3" fill="rgb(2,3,9)" stroke="rgb(2,3,9)" stroke-width="0.3" />
+    <polygon points="149.8,86.7 149.8,86.7 250.2,86.7" fill="rgb(1,2,4)" stroke="rgb(1,2,4)" stroke-width="0.3" />
+    <polygon points="250.2,86.7 250.2,86.7 250.2,307.3" fill="rgb(1,3,7)" stroke="rgb(1,3,7)" stroke-width="0.3" />
+    <polygon points="149.8,307.3 149.8,307.3 149.8,86.7" fill="rgb(1,2,6)" stroke="rgb(1,2,6)" stroke-width="0.3" />
+    <polygon points="250.2,307.3 250.2,307.3 149.8,307.3" fill="rgb(2,3,9)" stroke="rgb(2,3,9)" stroke-width="0.3" />
+    <polygon points="149.8,307.3 250.2,86.7 149.8,86.7" fill="rgb(3,5,14)" stroke="rgb(3,5,14)" stroke-width="0.3" />
+    <polygon points="250.2,86.7 149.8,307.3 250.2,307.3" fill="rgb(3,5,14)" stroke="rgb(3,5,14)" stroke-width="0.3" />
+    <polygon points="149.8,86.7 246.9,90.0 250.2,86.7" fill="rgb(3,6,17)" stroke="rgb(3,6,17)" stroke-width="0.3" />
+    <polygon points="149.8,307.3 153.1,90.0 149.8,86.7" fill="rgb(3,6,18)" stroke="rgb(3,6,18)" stroke-width="0.3" />
+    <polygon points="250.2,86.7 246.9,304.0 250.2,307.3" fill="rgb(4,7,22)" stroke="rgb(4,7,22)" stroke-width="0.3" />
+    <polygon points="250.2,307.3 153.1,304.0 149.8,307.3" fill="rgb(4,8,23)" stroke="rgb(4,8,23)" stroke-width="0.3" />
+    <polygon points="149.8,86.7 153.1,90.0 246.9,90.0" fill="rgb(3,6,17)" stroke="rgb(3,6,17)" stroke-width="0.3" />
+    <polygon points="250.2,86.7 246.9,90.0 246.9,304.0" fill="rgb(4,7,22)" stroke="rgb(4,7,22)" stroke-width="0.3" />
+    <polygon points="149.8,307.3 153.1,304.0 153.1,90.0" fill="rgb(3,6,18)" stroke="rgb(3,6,18)" stroke-width="0.3" />
+    <polygon points="250.2,307.3 246.9,304.0 153.1,304.0" fill="rgb(4,8,23)" stroke="rgb(4,8,23)" stroke-width="0.3" />
+    <polygon points="153.6,98.2 249.1,95.5 246.4,98.2" fill="rgb(1,2,8)" stroke="rgb(1,2,8)" stroke-width="0.3" />
+    <polygon points="153.6,302.4 150.9,95.5 153.6,98.2" fill="rgb(1,3,10)" stroke="rgb(1,3,10)" stroke-width="0.3" />
+    <polygon points="246.4,98.2 249.1,305.1 246.4,302.4" fill="rgb(2,4,11)" stroke="rgb(2,4,11)" stroke-width="0.3" />
+    <polygon points="246.4,302.4 150.9,305.1 153.6,302.4" fill="rgb(2,4,14)" stroke="rgb(2,4,14)" stroke-width="0.3" />
+    <polygon points="246.9,90.0 153.1,90.0 153.1,304.0" fill="rgb(5,9,26)" stroke="rgb(5,9,26)" stroke-width="0.3" />
+    <polygon points="246.9,90.0 153.1,304.0 246.9,304.0" fill="rgb(5,9,26)" stroke="rgb(5,9,26)" stroke-width="0.3" />
+    <polygon points="156.3,91.1 245.9,88.9 243.7,91.1" fill="rgb(1,2,7)" stroke="rgb(1,2,7)" stroke-width="0.3" />
+    <polygon points="153.6,98.2 150.9,95.5 249.1,95.5" fill="rgb(1,2,8)" stroke="rgb(1,2,8)" stroke-width="0.3" />
+    <polygon points="156.3,119.5 154.1,88.9 156.3,91.1" fill="rgb(2,3,9)" stroke="rgb(2,3,9)" stroke-width="0.3" />
+    <polygon points="243.7,91.1 245.9,121.7 243.7,119.5" fill="rgb(2,4,11)" stroke="rgb(2,4,11)" stroke-width="0.3" />
+    <polygon points="243.7,119.5 154.1,121.7 156.3,119.5" fill="rgb(2,5,13)" stroke="rgb(2,5,13)" stroke-width="0.3" />
+    <polygon points="246.4,98.2 249.1,95.5 249.1,305.1" fill="rgb(2,4,11)" stroke="rgb(2,4,11)" stroke-width="0.3" />
+    <polygon points="153.6,302.4 150.9,305.1 150.9,95.5" fill="rgb(1,3,10)" stroke="rgb(1,3,10)" stroke-width="0.3" />
+    <polygon points="246.4,302.4 249.1,305.1 150.9,305.1" fill="rgb(2,4,14)" stroke="rgb(2,4,14)" stroke-width="0.3" />
+    <polygon points="156.3,91.1 154.1,88.9 245.9,88.9" fill="rgb(1,2,7)" stroke="rgb(1,2,7)" stroke-width="0.3" />
+    <polygon points="243.7,91.1 245.9,88.9 245.9,121.7" fill="rgb(2,4,11)" stroke="rgb(2,4,11)" stroke-width="0.3" />
+    <polygon points="156.3,119.5 154.1,121.7 154.1,88.9" fill="rgb(2,3,9)" stroke="rgb(2,3,9)" stroke-width="0.3" />
+    <polygon points="243.7,119.5 245.9,121.7 154.1,121.7" fill="rgb(2,5,13)" stroke="rgb(2,5,13)" stroke-width="0.3" />
+    <polygon points="249.1,95.5 150.9,95.5 150.9,305.1" fill="rgb(4,9,28)" stroke="rgb(4,9,28)" stroke-width="0.3" />
+    <polygon points="150.9,305.1 150.9,95.5 249.1,95.5" fill="rgb(1,3,9)" stroke="rgb(1,3,9)" stroke-width="0.3" />
+    <polygon points="249.1,95.5 150.9,305.1 249.1,305.1" fill="rgb(4,9,28)" stroke="rgb(4,9,28)" stroke-width="0.3" />
+    <polygon points="249.1,95.5 249.1,305.1 150.9,305.1" fill="rgb(1,3,9)" stroke="rgb(1,3,9)" stroke-width="0.3" />
+    <polygon points="245.9,88.9 154.1,88.9 154.1,121.7" fill="rgb(5,9,26)" stroke="rgb(5,9,26)" stroke-width="0.3" />
+    <polygon points="154.1,121.7 154.1,88.9 245.9,88.9" fill="rgb(1,3,8)" stroke="rgb(1,3,8)" stroke-width="0.3" />
+    <polygon points="245.9,88.9 154.1,121.7 245.9,121.7" fill="rgb(5,9,26)" stroke="rgb(5,9,26)" stroke-width="0.3" />
+    <polygon points="245.9,88.9 245.9,121.7 154.1,121.7" fill="rgb(1,3,8)" stroke="rgb(1,3,8)" stroke-width="0.3" />
+    <polygon points="150.9,95.5 249.1,95.5 249.1,95.5" fill="rgb(1,3,9)" stroke="rgb(1,3,9)" stroke-width="0.3" />
+    <polygon points="150.9,305.1 150.9,95.5 150.9,95.5" fill="rgb(2,4,12)" stroke="rgb(2,4,12)" stroke-width="0.3" />
+    <polygon points="249.1,95.5 249.1,305.1 249.1,305.1" fill="rgb(2,5,15)" stroke="rgb(2,5,15)" stroke-width="0.3" />
+    <polygon points="249.1,305.1 150.9,305.1 150.9,305.1" fill="rgb(3,6,18)" stroke="rgb(3,6,18)" stroke-width="0.3" />
+    <polygon points="150.9,95.5 150.9,95.5 249.1,95.5" fill="rgb(1,3,9)" stroke="rgb(1,3,9)" stroke-width="0.3" />
+    <polygon points="249.1,95.5 249.1,95.5 249.1,305.1" fill="rgb(2,5,15)" stroke="rgb(2,5,15)" stroke-width="0.3" />
+    <polygon points="150.9,305.1 150.9,305.1 150.9,95.5" fill="rgb(2,4,12)" stroke="rgb(2,4,12)" stroke-width="0.3" />
+    <polygon points="249.1,305.1 249.1,305.1 150.9,305.1" fill="rgb(3,6,18)" stroke="rgb(3,6,18)" stroke-width="0.3" />
+    <polygon points="194.5,317.6 194.5,313.3 231.7,313.3" fill="rgb(1,1,3)" stroke="rgb(1,1,3)" stroke-width="0.3" />
+    <polygon points="231.7,313.3 231.7,317.6 194.5,317.6" fill="rgb(1,1,3)" stroke="rgb(1,1,3)" stroke-width="0.3" />
+    <polygon points="154.1,88.9 245.9,88.9 245.9,88.9" fill="rgb(2,3,9)" stroke="rgb(2,3,9)" stroke-width="0.3" />
+    <polygon points="154.1,121.7 154.1,88.9 154.1,88.9" fill="rgb(2,4,11)" stroke="rgb(2,4,11)" stroke-width="0.3" />
+    <polygon points="245.9,88.9 245.9,121.7 245.9,121.7" fill="rgb(2,5,14)" stroke="rgb(2,5,14)" stroke-width="0.3" />
+    <polygon points="245.9,121.7 154.1,121.7 154.1,121.7" fill="rgb(3,6,17)" stroke="rgb(3,6,17)" stroke-width="0.3" />
+    <polygon points="150.9,305.1 249.1,95.5 150.9,95.5" fill="rgb(4,9,28)" stroke="rgb(4,9,28)" stroke-width="0.3" />
+    <polygon points="249.1,95.5 150.9,305.1 249.1,305.1" fill="rgb(4,9,28)" stroke="rgb(4,9,28)" stroke-width="0.3" />
+    <polygon points="194.5,313.3 231.7,313.3 231.7,313.3" fill="rgb(1,1,4)" stroke="rgb(1,1,4)" stroke-width="0.3" />
+    <polygon points="194.5,317.6 194.5,313.3 194.5,313.3" fill="rgb(1,2,5)" stroke="rgb(1,2,5)" stroke-width="0.3" />
+    <polygon points="231.7,313.3 231.7,317.6 231.7,317.6" fill="rgb(1,2,6)" stroke="rgb(1,2,6)" stroke-width="0.3" />
+    <polygon points="231.7,317.6 194.5,317.6 194.5,317.6" fill="rgb(2,3,7)" stroke="rgb(2,3,7)" stroke-width="0.3" />
+    <polygon points="191.8,313.8 195.1,313.8 195.1,313.8" fill="rgb(1,3,7)" stroke="rgb(1,3,7)" stroke-width="0.3" />
+    <polygon points="231.1,313.8 234.4,313.8 234.4,313.8" fill="rgb(1,3,7)" stroke="rgb(1,3,7)" stroke-width="0.3" />
+    <polygon points="191.8,317.1 191.8,313.8 191.8,313.8" fill="rgb(2,3,9)" stroke="rgb(2,3,9)" stroke-width="0.3" />
+    <polygon points="231.1,317.1 231.1,313.8 231.1,313.8" fill="rgb(2,3,9)" stroke="rgb(2,3,9)" stroke-width="0.3" />
+    <polygon points="195.1,313.8 195.1,317.1 195.1,317.1" fill="rgb(2,4,11)" stroke="rgb(2,4,11)" stroke-width="0.3" />
+    <polygon points="234.4,313.8 234.4,317.1 234.4,317.1" fill="rgb(2,4,11)" stroke="rgb(2,4,11)" stroke-width="0.3" />
+    <polygon points="195.1,317.1 191.8,317.1 191.8,317.1" fill="rgb(3,5,14)" stroke="rgb(3,5,14)" stroke-width="0.3" />
+    <polygon points="234.4,317.1 231.1,317.1 231.1,317.1" fill="rgb(3,5,14)" stroke="rgb(3,5,14)" stroke-width="0.3" />
+    <polygon points="150.9,95.5 246.4,98.2 249.1,95.5" fill="rgb(3,5,18)" stroke="rgb(3,5,18)" stroke-width="0.3" />
+    <polygon points="150.9,305.1 153.6,98.2 150.9,95.5" fill="rgb(3,6,19)" stroke="rgb(3,6,19)" stroke-width="0.3" />
+    <polygon points="249.1,95.5 246.4,302.4 249.1,305.1" fill="rgb(3,7,22)" stroke="rgb(3,7,22)" stroke-width="0.3" />
+    <polygon points="249.1,305.1 153.6,302.4 150.9,305.1" fill="rgb(4,7,24)" stroke="rgb(4,7,24)" stroke-width="0.3" />
+    <polygon points="194.5,313.3 194.5,313.3 231.7,313.3" fill="rgb(1,1,4)" stroke="rgb(1,1,4)" stroke-width="0.3" />
+    <polygon points="231.7,313.3 231.7,313.3 231.7,317.6" fill="rgb(1,2,6)" stroke="rgb(1,2,6)" stroke-width="0.3" />
+    <polygon points="194.5,317.6 194.5,317.6 194.5,313.3" fill="rgb(1,2,5)" stroke="rgb(1,2,5)" stroke-width="0.3" />
+    <polygon points="231.7,317.6 231.7,317.6 194.5,317.6" fill="rgb(2,3,7)" stroke="rgb(2,3,7)" stroke-width="0.3" />
+    <polygon points="154.1,88.9 154.1,88.9 245.9,88.9" fill="rgb(2,3,9)" stroke="rgb(2,3,9)" stroke-width="0.3" />
+    <polygon points="245.9,88.9 245.9,88.9 245.9,121.7" fill="rgb(2,5,14)" stroke="rgb(2,5,14)" stroke-width="0.3" />
+    <polygon points="154.1,121.7 154.1,121.7 154.1,88.9" fill="rgb(2,4,11)" stroke="rgb(2,4,11)" stroke-width="0.3" />
+    <polygon points="245.9,121.7 245.9,121.7 154.1,121.7" fill="rgb(3,6,17)" stroke="rgb(3,6,17)" stroke-width="0.3" />
+    <polygon points="150.9,95.5 153.6,98.2 246.4,98.2" fill="rgb(3,5,18)" stroke="rgb(3,5,18)" stroke-width="0.3" />
+    <polygon points="249.1,95.5 246.4,98.2 246.4,302.4" fill="rgb(3,7,22)" stroke="rgb(3,7,22)" stroke-width="0.3" />
+    <polygon points="150.9,305.1 153.6,302.4 153.6,98.2" fill="rgb(3,6,19)" stroke="rgb(3,6,19)" stroke-width="0.3" />
+    <polygon points="249.1,305.1 246.4,302.4 153.6,302.4" fill="rgb(4,7,24)" stroke="rgb(4,7,24)" stroke-width="0.3" />
+    <polygon points="194.5,317.6 231.7,313.3 194.5,313.3" fill="rgb(3,6,17)" stroke="rgb(3,6,17)" stroke-width="0.3" />
+    <polygon points="231.7,313.3 194.5,317.6 231.7,317.6" fill="rgb(3,6,17)" stroke="rgb(3,6,17)" stroke-width="0.3" />
+    <polygon points="246.4,98.2 153.6,98.2 153.6,302.4" fill="rgb(4,7,24)" stroke="rgb(4,7,24)" stroke-width="0.3" />
+    <polygon points="246.4,98.2 153.6,302.4 246.4,302.4" fill="rgb(4,7,24)" stroke="rgb(4,7,24)" stroke-width="0.3" />
+    <polygon points="154.1,121.7 245.9,88.9 154.1,88.9" fill="rgb(5,9,26)" stroke="rgb(5,9,26)" stroke-width="0.3" />
+    <polygon points="245.9,88.9 154.1,121.7 245.9,121.7" fill="rgb(5,9,26)" stroke="rgb(5,9,26)" stroke-width="0.3" />
+    <polygon points="154.1,88.9 243.7,91.1 245.9,88.9" fill="rgb(3,6,19)" stroke="rgb(3,6,19)" stroke-width="0.3" />
+    <polygon points="154.1,121.7 156.3,91.1 154.1,88.9" fill="rgb(3,7,20)" stroke="rgb(3,7,20)" stroke-width="0.3" />
+    <polygon points="245.9,88.9 243.7,119.5 245.9,121.7" fill="rgb(4,8,24)" stroke="rgb(4,8,24)" stroke-width="0.3" />
+    <polygon points="245.9,121.7 156.3,119.5 154.1,121.7" fill="rgb(4,9,25)" stroke="rgb(4,9,25)" stroke-width="0.3" />
+    <polygon points="145.4,82.4 151.4,82.4 151.4,82.4" fill="rgb(1,1,3)" stroke="rgb(1,1,3)" stroke-width="0.3" />
+    <polygon points="248.6,82.4 254.6,82.4 254.6,82.4" fill="rgb(1,1,3)" stroke="rgb(1,1,3)" stroke-width="0.3" />
+    <polygon points="145.4,88.4 145.4,82.4 145.4,82.4" fill="rgb(1,1,3)" stroke="rgb(1,1,3)" stroke-width="0.3" />
+    <polygon points="248.6,88.4 248.6,82.4 248.6,82.4" fill="rgb(1,1,3)" stroke="rgb(1,1,3)" stroke-width="0.3" />
+    <polygon points="151.4,82.4 151.4,88.4 151.4,88.4" fill="rgb(1,2,4)" stroke="rgb(1,2,4)" stroke-width="0.3" />
+    <polygon points="254.6,82.4 254.6,88.4 254.6,88.4" fill="rgb(1,2,4)" stroke="rgb(1,2,4)" stroke-width="0.3" />
+    <polygon points="151.4,88.4 145.4,88.4 145.4,88.4" fill="rgb(1,2,5)" stroke="rgb(1,2,5)" stroke-width="0.3" />
+    <polygon points="254.6,88.4 248.6,88.4 248.6,88.4" fill="rgb(1,2,5)" stroke="rgb(1,2,5)" stroke-width="0.3" />
+    <polygon points="154.1,88.9 156.3,91.1 243.7,91.1" fill="rgb(3,6,19)" stroke="rgb(3,6,19)" stroke-width="0.3" />
+    <polygon points="245.9,88.9 243.7,91.1 243.7,119.5" fill="rgb(4,8,24)" stroke="rgb(4,8,24)" stroke-width="0.3" />
+    <polygon points="154.1,121.7 156.3,119.5 156.3,91.1" fill="rgb(3,7,20)" stroke="rgb(3,7,20)" stroke-width="0.3" />
+    <polygon points="245.9,121.7 243.7,119.5 156.3,119.5" fill="rgb(4,9,25)" stroke="rgb(4,9,25)" stroke-width="0.3" />
+    <polygon points="145.4,305.6 151.4,305.6 151.4,305.6" fill="rgb(1,1,3)" stroke="rgb(1,1,3)" stroke-width="0.3" />
+    <polygon points="248.6,305.6 254.6,305.6 254.6,305.6" fill="rgb(1,1,3)" stroke="rgb(1,1,3)" stroke-width="0.3" />
+    <polygon points="145.4,311.6 145.4,305.6 145.4,305.6" fill="rgb(1,1,3)" stroke="rgb(1,1,3)" stroke-width="0.3" />
+    <polygon points="248.6,311.6 248.6,305.6 248.6,305.6" fill="rgb(1,1,3)" stroke="rgb(1,1,3)" stroke-width="0.3" />
+    <polygon points="151.4,305.6 151.4,311.6 151.4,311.6" fill="rgb(1,2,4)" stroke="rgb(1,2,4)" stroke-width="0.3" />
+    <polygon points="254.6,305.6 254.6,311.6 254.6,311.6" fill="rgb(1,2,4)" stroke="rgb(1,2,4)" stroke-width="0.3" />
+    <polygon points="151.4,311.6 145.4,311.6 145.4,311.6" fill="rgb(1,2,5)" stroke="rgb(1,2,5)" stroke-width="0.3" />
+    <polygon points="254.6,311.6 248.6,311.6 248.6,311.6" fill="rgb(1,2,5)" stroke="rgb(1,2,5)" stroke-width="0.3" />
+    <polygon points="243.7,91.1 156.3,91.1 156.3,119.5" fill="rgb(5,9,26)" stroke="rgb(5,9,26)" stroke-width="0.3" />
+    <polygon points="243.7,91.1 156.3,119.5 243.7,119.5" fill="rgb(5,9,26)" stroke="rgb(5,9,26)" stroke-width="0.3" />
+    <polygon points="194.5,317.6 194.5,313.3 231.7,313.3" fill="rgb(1,1,3)" stroke="rgb(1,1,3)" stroke-width="0.3" />
+    <polygon points="231.7,313.3 231.7,317.6 194.5,317.6" fill="rgb(1,1,3)" stroke="rgb(1,1,3)" stroke-width="0.3" />
+    <polygon points="194.5,313.3 231.7,313.3 231.7,313.3" fill="rgb(1,2,4)" stroke="rgb(1,2,4)" stroke-width="0.3" />
+    <polygon points="194.5,317.6 194.5,313.3 194.5,313.3" fill="rgb(1,2,5)" stroke="rgb(1,2,5)" stroke-width="0.3" />
+    <polygon points="231.7,313.3 231.7,317.6 231.7,317.6" fill="rgb(1,2,6)" stroke="rgb(1,2,6)" stroke-width="0.3" />
+    <polygon points="231.7,317.6 194.5,317.6 194.5,317.6" fill="rgb(2,3,8)" stroke="rgb(2,3,8)" stroke-width="0.3" />
+    <polygon points="194.5,313.3 194.5,313.3 231.7,313.3" fill="rgb(1,2,4)" stroke="rgb(1,2,4)" stroke-width="0.3" />
+    <polygon points="231.7,313.3 231.7,313.3 231.7,317.6" fill="rgb(1,2,6)" stroke="rgb(1,2,6)" stroke-width="0.3" />
+    <polygon points="194.5,317.6 194.5,317.6 194.5,313.3" fill="rgb(1,2,5)" stroke="rgb(1,2,5)" stroke-width="0.3" />
+    <polygon points="231.7,317.6 231.7,317.6 194.5,317.6" fill="rgb(2,3,8)" stroke="rgb(2,3,8)" stroke-width="0.3" />
+    <polygon points="194.5,317.6 231.7,313.3 194.5,313.3" fill="rgb(3,6,17)" stroke="rgb(3,6,17)" stroke-width="0.3" />
+    <polygon points="231.7,313.3 194.5,317.6 231.7,317.6" fill="rgb(3,6,17)" stroke="rgb(3,6,17)" stroke-width="0.3" />
+    <polygon points="194.5,317.6 194.5,313.3 231.7,313.3" fill="rgb(1,1,3)" stroke="rgb(1,1,3)" stroke-width="0.3" />
+    <polygon points="231.7,313.3 231.7,317.6 194.5,317.6" fill="rgb(1,1,3)" stroke="rgb(1,1,3)" stroke-width="0.3" />
+    <polygon points="194.5,313.3 231.7,313.3 231.7,313.3" fill="rgb(1,2,4)" stroke="rgb(1,2,4)" stroke-width="0.3" />
+    <polygon points="194.5,317.6 194.5,313.3 194.5,313.3" fill="rgb(1,2,6)" stroke="rgb(1,2,6)" stroke-width="0.3" />
+    <polygon points="231.7,313.3 231.7,317.6 231.7,317.6" fill="rgb(1,3,7)" stroke="rgb(1,3,7)" stroke-width="0.3" />
+    <polygon points="231.7,317.6 194.5,317.6 194.5,317.6" fill="rgb(2,3,9)" stroke="rgb(2,3,9)" stroke-width="0.3" />
+    <polygon points="194.5,313.3 194.5,313.3 231.7,313.3" fill="rgb(1,2,4)" stroke="rgb(1,2,4)" stroke-width="0.3" />
+    <polygon points="231.7,313.3 231.7,313.3 231.7,317.6" fill="rgb(1,3,7)" stroke="rgb(1,3,7)" stroke-width="0.3" />
+    <polygon points="194.5,317.6 194.5,317.6 194.5,313.3" fill="rgb(1,2,6)" stroke="rgb(1,2,6)" stroke-width="0.3" />
+    <polygon points="231.7,317.6 231.7,317.6 194.5,317.6" fill="rgb(2,3,9)" stroke="rgb(2,3,9)" stroke-width="0.3" />
+    <polygon points="194.5,317.6 231.7,313.3 194.5,313.3" fill="rgb(3,6,17)" stroke="rgb(3,6,17)" stroke-width="0.3" />
+    <polygon points="231.7,313.3 194.5,317.6 231.7,317.6" fill="rgb(3,6,17)" stroke="rgb(3,6,17)" stroke-width="0.3" />
+    <polygon points="191.8,313.8 191.8,313.8 195.1,313.8" fill="rgb(1,3,7)" stroke="rgb(1,3,7)" stroke-width="0.3" />
+    <polygon points="231.1,313.8 231.1,313.8 234.4,313.8" fill="rgb(1,3,7)" stroke="rgb(1,3,7)" stroke-width="0.3" />
+    <polygon points="195.1,313.8 195.1,313.8 195.1,317.1" fill="rgb(2,4,11)" stroke="rgb(2,4,11)" stroke-width="0.3" />
+    <polygon points="234.4,313.8 234.4,313.8 234.4,317.1" fill="rgb(2,4,11)" stroke="rgb(2,4,11)" stroke-width="0.3" />
+    <polygon points="191.8,317.1 191.8,317.1 191.8,313.8" fill="rgb(2,3,9)" stroke="rgb(2,3,9)" stroke-width="0.3" />
+    <polygon points="231.1,317.1 231.1,317.1 231.1,313.8" fill="rgb(2,3,9)" stroke="rgb(2,3,9)" stroke-width="0.3" />
+    <polygon points="195.1,317.1 195.1,317.1 191.8,317.1" fill="rgb(3,5,14)" stroke="rgb(3,5,14)" stroke-width="0.3" />
+    <polygon points="234.4,317.1 234.4,317.1 231.1,317.1" fill="rgb(3,5,14)" stroke="rgb(3,5,14)" stroke-width="0.3" />
+    <polygon points="145.4,82.4 145.4,82.4 151.4,82.4" fill="rgb(1,1,3)" stroke="rgb(1,1,3)" stroke-width="0.3" />
+    <polygon points="248.6,82.4 248.6,82.4 254.6,82.4" fill="rgb(1,1,3)" stroke="rgb(1,1,3)" stroke-width="0.3" />
+    <polygon points="151.4,82.4 151.4,82.4 151.4,88.4" fill="rgb(1,2,4)" stroke="rgb(1,2,4)" stroke-width="0.3" />
+    <polygon points="254.6,82.4 254.6,82.4 254.6,88.4" fill="rgb(1,2,4)" stroke="rgb(1,2,4)" stroke-width="0.3" />
+    <polygon points="145.4,88.4 145.4,88.4 145.4,82.4" fill="rgb(1,1,3)" stroke="rgb(1,1,3)" stroke-width="0.3" />
+    <polygon points="248.6,88.4 248.6,88.4 248.6,82.4" fill="rgb(1,1,3)" stroke="rgb(1,1,3)" stroke-width="0.3" />
+    <polygon points="151.4,88.4 151.4,88.4 145.4,88.4" fill="rgb(1,2,5)" stroke="rgb(1,2,5)" stroke-width="0.3" />
+    <polygon points="254.6,88.4 254.6,88.4 248.6,88.4" fill="rgb(1,2,5)" stroke="rgb(1,2,5)" stroke-width="0.3" />
+    <polygon points="145.4,305.6 145.4,305.6 151.4,305.6" fill="rgb(1,1,3)" stroke="rgb(1,1,3)" stroke-width="0.3" />
+    <polygon points="248.6,305.6 248.6,305.6 254.6,305.6" fill="rgb(1,1,3)" stroke="rgb(1,1,3)" stroke-width="0.3" />
+    <polygon points="151.4,305.6 151.4,305.6 151.4,311.6" fill="rgb(1,2,4)" stroke="rgb(1,2,4)" stroke-width="0.3" />
+    <polygon points="254.6,305.6 254.6,305.6 254.6,311.6" fill="rgb(1,2,4)" stroke="rgb(1,2,4)" stroke-width="0.3" />
+    <polygon points="145.4,311.6 145.4,311.6 145.4,305.6" fill="rgb(1,1,3)" stroke="rgb(1,1,3)" stroke-width="0.3" />
+    <polygon points="248.6,311.6 248.6,311.6 248.6,305.6" fill="rgb(1,1,3)" stroke="rgb(1,1,3)" stroke-width="0.3" />
+    <polygon points="151.4,311.6 151.4,311.6 145.4,311.6" fill="rgb(1,2,5)" stroke="rgb(1,2,5)" stroke-width="0.3" />
+    <polygon points="254.6,311.6 254.6,311.6 248.6,311.6" fill="rgb(1,2,5)" stroke="rgb(1,2,5)" stroke-width="0.3" />
+    <polygon points="145.4,311.6 145.4,82.4 254.6,82.4" fill="rgb(1,1,3)" stroke="rgb(1,1,3)" stroke-width="0.3" />
+    <polygon points="254.6,82.4 254.6,311.6 145.4,311.6" fill="rgb(1,1,3)" stroke="rgb(1,1,3)" stroke-width="0.3" />
+    <polygon points="145.4,82.4 254.6,82.4 254.6,82.4" fill="rgb(1,2,5)" stroke="rgb(1,2,5)" stroke-width="0.3" />
+    <polygon points="145.4,311.6 145.4,82.4 145.4,82.4" fill="rgb(1,2,6)" stroke="rgb(1,2,6)" stroke-width="0.3" />
+    <polygon points="254.6,82.4 254.6,311.6 254.6,311.6" fill="rgb(2,3,7)" stroke="rgb(2,3,7)" stroke-width="0.3" />
+    <polygon points="254.6,311.6 145.4,311.6 145.4,311.6" fill="rgb(2,3,9)" stroke="rgb(2,3,9)" stroke-width="0.3" />
+    <polygon points="145.4,82.4 145.4,82.4 254.6,82.4" fill="rgb(1,2,5)" stroke="rgb(1,2,5)" stroke-width="0.3" />
+    <polygon points="254.6,82.4 254.6,82.4 254.6,311.6" fill="rgb(2,3,7)" stroke="rgb(2,3,7)" stroke-width="0.3" />
+    <polygon points="145.4,311.6 145.4,311.6 145.4,82.4" fill="rgb(1,2,6)" stroke="rgb(1,2,6)" stroke-width="0.3" />
+    <polygon points="254.6,311.6 254.6,311.6 145.4,311.6" fill="rgb(2,3,9)" stroke="rgb(2,3,9)" stroke-width="0.3" />
+    <polygon points="145.4,311.6 254.6,82.4 145.4,82.4" fill="rgb(3,6,17)" stroke="rgb(3,6,17)" stroke-width="0.3" />
+    <polygon points="254.6,82.4 145.4,311.6 254.6,311.6" fill="rgb(3,6,17)" stroke="rgb(3,6,17)" stroke-width="0.3" />
+    <polygon points="153.1,90.0 250.2,86.7 246.9,90.0" fill="rgb(1,2,5)" stroke="rgb(1,2,5)" stroke-width="0.3" />
+    <polygon points="153.1,304.0 149.8,86.7 153.1,90.0" fill="rgb(1,3,7)" stroke="rgb(1,3,7)" stroke-width="0.3" />
+    <polygon points="246.9,90.0 250.2,307.3 246.9,304.0" fill="rgb(2,3,8)" stroke="rgb(2,3,8)" stroke-width="0.3" />
+    <polygon points="246.9,304.0 149.8,307.3 153.1,304.0" fill="rgb(2,4,10)" stroke="rgb(2,4,10)" stroke-width="0.3" />
+    <polygon points="153.1,90.0 149.8,86.7 250.2,86.7" fill="rgb(1,2,5)" stroke="rgb(1,2,5)" stroke-width="0.3" />
+    <polygon points="246.9,90.0 250.2,86.7 250.2,307.3" fill="rgb(2,3,8)" stroke="rgb(2,3,8)" stroke-width="0.3" />
+    <polygon points="153.1,304.0 149.8,307.3 149.8,86.7" fill="rgb(1,3,7)" stroke="rgb(1,3,7)" stroke-width="0.3" />
+    <polygon points="246.9,304.0 250.2,307.3 149.8,307.3" fill="rgb(2,4,10)" stroke="rgb(2,4,10)" stroke-width="0.3" />
+    <polygon points="250.2,86.7 149.8,86.7 149.8,307.3" fill="rgb(3,5,14)" stroke="rgb(3,5,14)" stroke-width="0.3" />
+    <polygon points="149.8,307.3 149.8,86.7 250.2,86.7" fill="rgb(1,2,4)" stroke="rgb(1,2,4)" stroke-width="0.3" />
+    <polygon points="250.2,86.7 149.8,307.3 250.2,307.3" fill="rgb(3,5,14)" stroke="rgb(3,5,14)" stroke-width="0.3" />
+    <polygon points="250.2,86.7 250.2,307.3 149.8,307.3" fill="rgb(1,2,4)" stroke="rgb(1,2,4)" stroke-width="0.3" />
+    <polygon points="194.5,317.6 194.5,313.3 231.7,313.3" fill="rgb(1,1,3)" stroke="rgb(1,1,3)" stroke-width="0.3" />
+    <polygon points="231.7,313.3 231.7,317.6 194.5,317.6" fill="rgb(1,1,3)" stroke="rgb(1,1,3)" stroke-width="0.3" />
+    <polygon points="194.5,313.3 231.7,313.3 231.7,313.3" fill="rgb(1,2,5)" stroke="rgb(1,2,5)" stroke-width="0.3" />
+    <polygon points="194.5,317.6 194.5,313.3 194.5,313.3" fill="rgb(1,2,6)" stroke="rgb(1,2,6)" stroke-width="0.3" />
+    <polygon points="231.7,313.3 231.7,317.6 231.7,317.6" fill="rgb(2,3,8)" stroke="rgb(2,3,8)" stroke-width="0.3" />
+    <polygon points="231.7,317.6 194.5,317.6 194.5,317.6" fill="rgb(2,4,10)" stroke="rgb(2,4,10)" stroke-width="0.3" />
+    <polygon points="149.8,86.7 250.2,86.7 250.2,86.7" fill="rgb(1,2,7)" stroke="rgb(1,2,7)" stroke-width="0.3" />
+    <polygon points="149.8,307.3 149.8,86.7 149.8,86.7" fill="rgb(2,3,9)" stroke="rgb(2,3,9)" stroke-width="0.3" />
+    <polygon points="250.2,86.7 250.2,307.3 250.2,307.3" fill="rgb(2,4,10)" stroke="rgb(2,4,10)" stroke-width="0.3" />
+    <polygon points="250.2,307.3 149.8,307.3 149.8,307.3" fill="rgb(3,5,13)" stroke="rgb(3,5,13)" stroke-width="0.3" />
+    <polygon points="194.5,313.3 194.5,313.3 231.7,313.3" fill="rgb(1,2,5)" stroke="rgb(1,2,5)" stroke-width="0.3" />
+    <polygon points="231.7,313.3 231.7,313.3 231.7,317.6" fill="rgb(2,3,8)" stroke="rgb(2,3,8)" stroke-width="0.3" />
+    <polygon points="194.5,317.6 194.5,317.6 194.5,313.3" fill="rgb(1,2,6)" stroke="rgb(1,2,6)" stroke-width="0.3" />
+    <polygon points="231.7,317.6 231.7,317.6 194.5,317.6" fill="rgb(2,4,10)" stroke="rgb(2,4,10)" stroke-width="0.3" />
+    <polygon points="194.5,317.6 231.7,313.3 194.5,313.3" fill="rgb(3,6,17)" stroke="rgb(3,6,17)" stroke-width="0.3" />
+    <polygon points="231.7,313.3 194.5,317.6 231.7,317.6" fill="rgb(3,6,17)" stroke="rgb(3,6,17)" stroke-width="0.3" />
+    <polygon points="149.8,86.7 149.8,86.7 250.2,86.7" fill="rgb(1,2,7)" stroke="rgb(1,2,7)" stroke-width="0.3" />
+    <polygon points="250.2,86.7 250.2,86.7 250.2,307.3" fill="rgb(2,4,10)" stroke="rgb(2,4,10)" stroke-width="0.3" />
+    <polygon points="149.8,307.3 149.8,307.3 149.8,86.7" fill="rgb(2,3,9)" stroke="rgb(2,3,9)" stroke-width="0.3" />
+    <polygon points="250.2,307.3 250.2,307.3 149.8,307.3" fill="rgb(3,5,13)" stroke="rgb(3,5,13)" stroke-width="0.3" />
+    <polygon points="149.8,307.3 250.2,86.7 149.8,86.7" fill="rgb(3,5,14)" stroke="rgb(3,5,14)" stroke-width="0.3" />
+    <polygon points="250.2,86.7 149.8,307.3 250.2,307.3" fill="rgb(3,5,14)" stroke="rgb(3,5,14)" stroke-width="0.3" />
+    <polygon points="149.8,86.7 246.9,90.0 250.2,86.7" fill="rgb(3,6,18)" stroke="rgb(3,6,18)" stroke-width="0.3" />
+    <polygon points="149.8,307.3 153.1,90.0 149.8,86.7" fill="rgb(3,7,19)" stroke="rgb(3,7,19)" stroke-width="0.3" />
+    <polygon points="250.2,86.7 246.9,304.0 250.2,307.3" fill="rgb(4,8,23)" stroke="rgb(4,8,23)" stroke-width="0.3" />
+    <polygon points="250.2,307.3 153.1,304.0 149.8,307.3" fill="rgb(4,8,24)" stroke="rgb(4,8,24)" stroke-width="0.3" />
+    <polygon points="149.8,86.7 153.1,90.0 246.9,90.0" fill="rgb(3,6,18)" stroke="rgb(3,6,18)" stroke-width="0.3" />
+    <polygon points="250.2,86.7 246.9,90.0 246.9,304.0" fill="rgb(4,8,23)" stroke="rgb(4,8,23)" stroke-width="0.3" />
+    <polygon points="149.8,307.3 153.1,304.0 153.1,90.0" fill="rgb(3,7,19)" stroke="rgb(3,7,19)" stroke-width="0.3" />
+    <polygon points="250.2,307.3 246.9,304.0 153.1,304.0" fill="rgb(4,8,24)" stroke="rgb(4,8,24)" stroke-width="0.3" />
+    <polygon points="153.6,98.2 249.1,95.5 246.4,98.2" fill="rgb(2,3,11)" stroke="rgb(2,3,11)" stroke-width="0.3" />
+    <polygon points="153.6,302.4 150.9,95.5 153.6,98.2" fill="rgb(2,4,14)" stroke="rgb(2,4,14)" stroke-width="0.3" />
+    <polygon points="246.4,98.2 249.1,305.1 246.4,302.4" fill="rgb(2,5,17)" stroke="rgb(2,5,17)" stroke-width="0.3" />
+    <polygon points="246.4,302.4 150.9,305.1 153.6,302.4" fill="rgb(3,6,21)" stroke="rgb(3,6,21)" stroke-width="0.3" />
+    <polygon points="246.9,90.0 153.1,90.0 153.1,304.0" fill="rgb(5,9,26)" stroke="rgb(5,9,26)" stroke-width="0.3" />
+    <polygon points="246.9,90.0 153.1,304.0 246.9,304.0" fill="rgb(5,9,26)" stroke="rgb(5,9,26)" stroke-width="0.3" />
+    <polygon points="156.3,91.1 245.9,88.9 243.7,91.1" fill="rgb(2,4,10)" stroke="rgb(2,4,10)" stroke-width="0.3" />
+    <polygon points="153.6,98.2 150.9,95.5 249.1,95.5" fill="rgb(2,3,11)" stroke="rgb(2,3,11)" stroke-width="0.3" />
+    <polygon points="156.3,119.5 154.1,88.9 156.3,91.1" fill="rgb(2,5,13)" stroke="rgb(2,5,13)" stroke-width="0.3" />
+    <polygon points="243.7,91.1 245.9,121.7 243.7,119.5" fill="rgb(3,5,16)" stroke="rgb(3,5,16)" stroke-width="0.3" />
+    <polygon points="243.7,119.5 154.1,121.7 156.3,119.5" fill="rgb(3,7,19)" stroke="rgb(3,7,19)" stroke-width="0.3" />
+    <polygon points="246.4,98.2 249.1,95.5 249.1,305.1" fill="rgb(2,5,17)" stroke="rgb(2,5,17)" stroke-width="0.3" />
+    <polygon points="153.6,302.4 150.9,305.1 150.9,95.5" fill="rgb(2,4,14)" stroke="rgb(2,4,14)" stroke-width="0.3" />
+    <polygon points="246.4,302.4 249.1,305.1 150.9,305.1" fill="rgb(3,6,21)" stroke="rgb(3,6,21)" stroke-width="0.3" />
+    <polygon points="145.4,311.6 145.4,305.6 254.6,305.6" fill="rgb(1,1,3)" stroke="rgb(1,1,3)" stroke-width="0.3" />
+    <polygon points="254.6,305.6 254.6,311.6 145.4,311.6" fill="rgb(1,1,3)" stroke="rgb(1,1,3)" stroke-width="0.3" />
+    <polygon points="156.3,91.1 154.1,88.9 245.9,88.9" fill="rgb(2,4,10)" stroke="rgb(2,4,10)" stroke-width="0.3" />
+    <polygon points="243.7,91.1 245.9,88.9 245.9,121.7" fill="rgb(3,5,16)" stroke="rgb(3,5,16)" stroke-width="0.3" />
+    <polygon points="156.3,119.5 154.1,121.7 154.1,88.9" fill="rgb(2,5,13)" stroke="rgb(2,5,13)" stroke-width="0.3" />
+    <polygon points="243.7,119.5 245.9,121.7 154.1,121.7" fill="rgb(3,7,19)" stroke="rgb(3,7,19)" stroke-width="0.3" />
+    <polygon points="249.1,95.5 150.9,95.5 150.9,305.1" fill="rgb(4,9,28)" stroke="rgb(4,9,28)" stroke-width="0.3" />
+    <polygon points="150.9,305.1 150.9,95.5 249.1,95.5" fill="rgb(1,3,9)" stroke="rgb(1,3,9)" stroke-width="0.3" />
+    <polygon points="249.1,95.5 150.9,305.1 249.1,305.1" fill="rgb(4,9,28)" stroke="rgb(4,9,28)" stroke-width="0.3" />
+    <polygon points="249.1,95.5 249.1,305.1 150.9,305.1" fill="rgb(1,3,9)" stroke="rgb(1,3,9)" stroke-width="0.3" />
+    <polygon points="245.9,88.9 154.1,88.9 154.1,121.7" fill="rgb(5,9,26)" stroke="rgb(5,9,26)" stroke-width="0.3" />
+    <polygon points="154.1,121.7 154.1,88.9 245.9,88.9" fill="rgb(1,3,8)" stroke="rgb(1,3,8)" stroke-width="0.3" />
+    <polygon points="245.9,88.9 154.1,121.7 245.9,121.7" fill="rgb(5,9,26)" stroke="rgb(5,9,26)" stroke-width="0.3" />
+    <polygon points="245.9,88.9 245.9,121.7 154.1,121.7" fill="rgb(1,3,8)" stroke="rgb(1,3,8)" stroke-width="0.3" />
+    <polygon points="145.4,305.6 254.6,305.6 254.6,305.6" fill="rgb(1,2,5)" stroke="rgb(1,2,5)" stroke-width="0.3" />
+    <polygon points="145.4,311.6 145.4,305.6 145.4,305.6" fill="rgb(1,2,7)" stroke="rgb(1,2,7)" stroke-width="0.3" />
+    <polygon points="254.6,305.6 254.6,311.6 254.6,311.6" fill="rgb(2,3,8)" stroke="rgb(2,3,8)" stroke-width="0.3" />
+    <polygon points="254.6,311.6 145.4,311.6 145.4,311.6" fill="rgb(2,4,10)" stroke="rgb(2,4,10)" stroke-width="0.3" />
+    <polygon points="150.9,95.5 249.1,95.5 249.1,95.5" fill="rgb(2,4,14)" stroke="rgb(2,4,14)" stroke-width="0.3" />
+    <polygon points="150.9,305.1 150.9,95.5 150.9,95.5" fill="rgb(3,5,17)" stroke="rgb(3,5,17)" stroke-width="0.3" />
+    <polygon points="249.1,95.5 249.1,305.1 249.1,305.1" fill="rgb(3,7,21)" stroke="rgb(3,7,21)" stroke-width="0.3" />
+    <polygon points="249.1,305.1 150.9,305.1 150.9,305.1" fill="rgb(4,8,27)" stroke="rgb(4,8,27)" stroke-width="0.3" />
+    <polygon points="150.9,95.5 150.9,95.5 249.1,95.5" fill="rgb(2,4,14)" stroke="rgb(2,4,14)" stroke-width="0.3" />
+    <polygon points="249.1,95.5 249.1,95.5 249.1,305.1" fill="rgb(3,7,21)" stroke="rgb(3,7,21)" stroke-width="0.3" />
+    <polygon points="150.9,305.1 150.9,305.1 150.9,95.5" fill="rgb(3,5,17)" stroke="rgb(3,5,17)" stroke-width="0.3" />
+    <polygon points="249.1,305.1 249.1,305.1 150.9,305.1" fill="rgb(4,8,27)" stroke="rgb(4,8,27)" stroke-width="0.3" />
+    <polygon points="145.4,305.6 145.4,305.6 254.6,305.6" fill="rgb(1,2,5)" stroke="rgb(1,2,5)" stroke-width="0.3" />
+    <polygon points="254.6,305.6 254.6,305.6 254.6,311.6" fill="rgb(2,3,8)" stroke="rgb(2,3,8)" stroke-width="0.3" />
+    <polygon points="145.4,311.6 145.4,311.6 145.4,305.6" fill="rgb(1,2,7)" stroke="rgb(1,2,7)" stroke-width="0.3" />
+    <polygon points="254.6,311.6 254.6,311.6 145.4,311.6" fill="rgb(2,4,10)" stroke="rgb(2,4,10)" stroke-width="0.3" />
+    <polygon points="154.1,88.9 245.9,88.9 245.9,88.9" fill="rgb(2,4,13)" stroke="rgb(2,4,13)" stroke-width="0.3" />
+    <polygon points="154.1,121.7 154.1,88.9 154.1,88.9" fill="rgb(3,6,16)" stroke="rgb(3,6,16)" stroke-width="0.3" />
+    <polygon points="245.9,88.9 245.9,121.7 245.9,121.7" fill="rgb(3,7,20)" stroke="rgb(3,7,20)" stroke-width="0.3" />
+    <polygon points="245.9,121.7 154.1,121.7 154.1,121.7" fill="rgb(4,9,25)" stroke="rgb(4,9,25)" stroke-width="0.3" />
+    <polygon points="150.9,305.1 249.1,95.5 150.9,95.5" fill="rgb(4,9,28)" stroke="rgb(4,9,28)" stroke-width="0.3" />
+    <polygon points="249.1,95.5 150.9,305.1 249.1,305.1" fill="rgb(4,9,28)" stroke="rgb(4,9,28)" stroke-width="0.3" />
+    <polygon points="145.4,311.6 254.6,305.6 145.4,305.6" fill="rgb(3,6,17)" stroke="rgb(3,6,17)" stroke-width="0.3" />
+    <polygon points="254.6,305.6 145.4,311.6 254.6,311.6" fill="rgb(3,6,17)" stroke="rgb(3,6,17)" stroke-width="0.3" />
+    <polygon points="150.9,95.5 246.4,98.2 249.1,95.5" fill="rgb(3,6,19)" stroke="rgb(3,6,19)" stroke-width="0.3" />
+    <polygon points="150.9,305.1 153.6,98.2 150.9,95.5" fill="rgb(3,7,21)" stroke="rgb(3,7,21)" stroke-width="0.3" />
+    <polygon points="249.1,95.5 246.4,302.4 249.1,305.1" fill="rgb(4,8,25)" stroke="rgb(4,8,25)" stroke-width="0.3" />
+    <polygon points="249.1,305.1 153.6,302.4 150.9,305.1" fill="rgb(4,8,27)" stroke="rgb(4,8,27)" stroke-width="0.3" />
+    <polygon points="154.1,88.9 154.1,88.9 245.9,88.9" fill="rgb(2,4,13)" stroke="rgb(2,4,13)" stroke-width="0.3" />
+    <polygon points="245.9,88.9 245.9,88.9 245.9,121.7" fill="rgb(3,7,20)" stroke="rgb(3,7,20)" stroke-width="0.3" />
+    <polygon points="154.1,121.7 154.1,121.7 154.1,88.9" fill="rgb(3,6,16)" stroke="rgb(3,6,16)" stroke-width="0.3" />
+    <polygon points="245.9,121.7 245.9,121.7 154.1,121.7" fill="rgb(4,9,25)" stroke="rgb(4,9,25)" stroke-width="0.3" />
+    <polygon points="150.9,95.5 153.6,98.2 246.4,98.2" fill="rgb(3,6,19)" stroke="rgb(3,6,19)" stroke-width="0.3" />
+    <polygon points="249.1,95.5 246.4,98.2 246.4,302.4" fill="rgb(4,8,25)" stroke="rgb(4,8,25)" stroke-width="0.3" />
+    <polygon points="150.9,305.1 153.6,302.4 153.6,98.2" fill="rgb(3,7,21)" stroke="rgb(3,7,21)" stroke-width="0.3" />
+    <polygon points="249.1,305.1 246.4,302.4 153.6,302.4" fill="rgb(4,8,27)" stroke="rgb(4,8,27)" stroke-width="0.3" />
+    <polygon points="246.4,98.2 153.6,98.2 153.6,302.4" fill="rgb(4,7,24)" stroke="rgb(4,7,24)" stroke-width="0.3" />
+    <polygon points="246.4,98.2 153.6,302.4 246.4,302.4" fill="rgb(4,7,24)" stroke="rgb(4,7,24)" stroke-width="0.3" />
+    <polygon points="154.1,121.7 245.9,88.9 154.1,88.9" fill="rgb(5,9,26)" stroke="rgb(5,9,26)" stroke-width="0.3" />
+    <polygon points="245.9,88.9 154.1,121.7 245.9,121.7" fill="rgb(5,9,26)" stroke="rgb(5,9,26)" stroke-width="0.3" />
+    <polygon points="154.1,88.9 243.7,91.1 245.9,88.9" fill="rgb(4,7,20)" stroke="rgb(4,7,20)" stroke-width="0.3" />
+    <polygon points="154.1,121.7 156.3,91.1 154.1,88.9" fill="rgb(4,7,22)" stroke="rgb(4,7,22)" stroke-width="0.3" />
+    <polygon points="245.9,88.9 243.7,119.5 245.9,121.7" fill="rgb(4,9,26)" stroke="rgb(4,9,26)" stroke-width="0.3" />
+    <polygon points="245.9,121.7 156.3,119.5 154.1,121.7" fill="rgb(5,9,28)" stroke="rgb(5,9,28)" stroke-width="0.3" />
+    <polygon points="154.1,88.9 156.3,91.1 243.7,91.1" fill="rgb(4,7,20)" stroke="rgb(4,7,20)" stroke-width="0.3" />
+    <polygon points="245.9,88.9 243.7,91.1 243.7,119.5" fill="rgb(4,9,26)" stroke="rgb(4,9,26)" stroke-width="0.3" />
+    <polygon points="154.1,121.7 156.3,119.5 156.3,91.1" fill="rgb(4,7,22)" stroke="rgb(4,7,22)" stroke-width="0.3" />
+    <polygon points="245.9,121.7 243.7,119.5 156.3,119.5" fill="rgb(5,9,28)" stroke="rgb(5,9,28)" stroke-width="0.3" />
+    <polygon points="243.7,91.1 156.3,91.1 156.3,119.5" fill="rgb(5,9,26)" stroke="rgb(5,9,26)" stroke-width="0.3" />
+    <polygon points="243.7,91.1 156.3,119.5 243.7,119.5" fill="rgb(5,9,26)" stroke="rgb(5,9,26)" stroke-width="0.3" />
+    <polygon points="145.4,311.6 145.4,305.6 254.6,305.6" fill="rgb(1,1,3)" stroke="rgb(1,1,3)" stroke-width="0.3" />
+    <polygon points="254.6,305.6 254.6,311.6 145.4,311.6" fill="rgb(1,1,3)" stroke="rgb(1,1,3)" stroke-width="0.3" />
+    <polygon points="145.4,305.6 254.6,305.6 254.6,305.6" fill="rgb(1,2,5)" stroke="rgb(1,2,5)" stroke-width="0.3" />
+    <polygon points="145.4,311.6 145.4,305.6 145.4,305.6" fill="rgb(1,3,7)" stroke="rgb(1,3,7)" stroke-width="0.3" />
+    <polygon points="254.6,305.6 254.6,311.6 254.6,311.6" fill="rgb(2,3,8)" stroke="rgb(2,3,8)" stroke-width="0.3" />
+    <polygon points="254.6,311.6 145.4,311.6 145.4,311.6" fill="rgb(2,4,10)" stroke="rgb(2,4,10)" stroke-width="0.3" />
+    <polygon points="145.4,305.6 145.4,305.6 254.6,305.6" fill="rgb(1,2,5)" stroke="rgb(1,2,5)" stroke-width="0.3" />
+    <polygon points="254.6,305.6 254.6,305.6 254.6,311.6" fill="rgb(2,3,8)" stroke="rgb(2,3,8)" stroke-width="0.3" />
+    <polygon points="145.4,311.6 145.4,311.6 145.4,305.6" fill="rgb(1,3,7)" stroke="rgb(1,3,7)" stroke-width="0.3" />
+    <polygon points="254.6,311.6 254.6,311.6 145.4,311.6" fill="rgb(2,4,10)" stroke="rgb(2,4,10)" stroke-width="0.3" />
+    <polygon points="145.4,311.6 254.6,305.6 145.4,305.6" fill="rgb(3,6,17)" stroke="rgb(3,6,17)" stroke-width="0.3" />
+    <polygon points="254.6,305.6 145.4,311.6 254.6,311.6" fill="rgb(3,6,17)" stroke="rgb(3,6,17)" stroke-width="0.3" />
+    <polygon points="191.8,317.1 195.1,313.8 191.8,313.8" fill="rgb(5,10,27)" stroke="rgb(5,10,27)" stroke-width="0.3" />
+    <polygon points="231.1,317.1 234.4,313.8 231.1,313.8" fill="rgb(5,10,27)" stroke="rgb(5,10,27)" stroke-width="0.3" />
+    <polygon points="195.1,313.8 191.8,317.1 195.1,317.1" fill="rgb(5,10,27)" stroke="rgb(5,10,27)" stroke-width="0.3" />
+    <polygon points="234.4,313.8 231.1,317.1 234.4,317.1" fill="rgb(5,10,27)" stroke="rgb(5,10,27)" stroke-width="0.3" />
+    <polygon points="145.4,88.4 151.4,82.4 145.4,82.4" fill="rgb(3,6,17)" stroke="rgb(3,6,17)" stroke-width="0.3" />
+    <polygon points="248.6,88.4 254.6,82.4 248.6,82.4" fill="rgb(3,6,17)" stroke="rgb(3,6,17)" stroke-width="0.3" />
+    <polygon points="151.4,82.4 145.4,88.4 151.4,88.4" fill="rgb(3,6,17)" stroke="rgb(3,6,17)" stroke-width="0.3" />
+    <polygon points="254.6,82.4 248.6,88.4 254.6,88.4" fill="rgb(3,6,17)" stroke="rgb(3,6,17)" stroke-width="0.3" />
+    <polygon points="145.4,311.6 151.4,305.6 145.4,305.6" fill="rgb(3,6,17)" stroke="rgb(3,6,17)" stroke-width="0.3" />
+    <polygon points="248.6,311.6 254.6,305.6 248.6,305.6" fill="rgb(3,6,17)" stroke="rgb(3,6,17)" stroke-width="0.3" />
+    <polygon points="151.4,305.6 145.4,311.6 151.4,311.6" fill="rgb(3,6,17)" stroke="rgb(3,6,17)" stroke-width="0.3" />
+    <polygon points="254.6,305.6 248.6,311.6 254.6,311.6" fill="rgb(3,6,17)" stroke="rgb(3,6,17)" stroke-width="0.3" /></g>
+  <g><line x1="145.4" y1="82.4" x2="145.4" y2="88.4" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="145.4" y1="82.4" x2="145.4" y2="82.4" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="145.4" y1="88.4" x2="151.4" y2="88.4" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="145.4" y1="88.4" x2="145.4" y2="88.4" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="151.4" y1="88.4" x2="151.4" y2="82.4" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="151.4" y1="88.4" x2="151.4" y2="88.4" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="151.4" y1="82.4" x2="145.4" y2="82.4" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="151.4" y1="82.4" x2="151.4" y2="82.4" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="145.4" y1="305.6" x2="145.4" y2="311.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="145.4" y1="305.6" x2="145.4" y2="305.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="145.4" y1="311.6" x2="151.4" y2="311.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="145.4" y1="311.6" x2="145.4" y2="311.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="151.4" y1="311.6" x2="151.4" y2="305.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="151.4" y1="311.6" x2="151.4" y2="311.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="151.4" y1="305.6" x2="145.4" y2="305.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="151.4" y1="305.6" x2="151.4" y2="305.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="248.6" y1="82.4" x2="248.6" y2="88.4" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="248.6" y1="82.4" x2="248.6" y2="82.4" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="248.6" y1="88.4" x2="254.6" y2="88.4" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="248.6" y1="88.4" x2="248.6" y2="88.4" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="254.6" y1="88.4" x2="254.6" y2="82.4" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="254.6" y1="88.4" x2="254.6" y2="88.4" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="254.6" y1="82.4" x2="248.6" y2="82.4" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="254.6" y1="82.4" x2="254.6" y2="82.4" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="248.6" y1="305.6" x2="248.6" y2="311.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="248.6" y1="305.6" x2="248.6" y2="305.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="248.6" y1="311.6" x2="254.6" y2="311.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="248.6" y1="311.6" x2="248.6" y2="311.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="254.6" y1="311.6" x2="254.6" y2="305.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="254.6" y1="311.6" x2="254.6" y2="311.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="254.6" y1="305.6" x2="248.6" y2="305.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="254.6" y1="305.6" x2="254.6" y2="305.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="145.4" y1="82.4" x2="145.4" y2="311.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="145.4" y1="82.4" x2="145.4" y2="82.4" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="145.4" y1="311.6" x2="254.6" y2="311.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="145.4" y1="311.6" x2="145.4" y2="311.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="254.6" y1="311.6" x2="254.6" y2="82.4" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="254.6" y1="311.6" x2="254.6" y2="311.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="254.6" y1="82.4" x2="145.4" y2="82.4" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="254.6" y1="82.4" x2="254.6" y2="82.4" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="149.8" y1="86.7" x2="149.8" y2="307.3" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="149.8" y1="86.7" x2="149.8" y2="86.7" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="149.8" y1="307.3" x2="250.2" y2="307.3" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="149.8" y1="307.3" x2="149.8" y2="307.3" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="250.2" y1="307.3" x2="250.2" y2="86.7" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="250.2" y1="307.3" x2="250.2" y2="307.3" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="250.2" y1="86.7" x2="149.8" y2="86.7" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="250.2" y1="86.7" x2="250.2" y2="86.7" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="145.4" y1="82.4" x2="145.4" y2="311.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="145.4" y1="82.4" x2="145.4" y2="82.4" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="145.4" y1="311.6" x2="254.6" y2="311.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="145.4" y1="311.6" x2="145.4" y2="311.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="254.6" y1="311.6" x2="254.6" y2="82.4" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="254.6" y1="311.6" x2="254.6" y2="311.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="254.6" y1="82.4" x2="145.4" y2="82.4" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="254.6" y1="82.4" x2="254.6" y2="82.4" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="149.8" y1="86.7" x2="149.8" y2="307.3" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="149.8" y1="86.7" x2="149.8" y2="86.7" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="149.8" y1="307.3" x2="250.2" y2="307.3" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="149.8" y1="307.3" x2="149.8" y2="307.3" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="250.2" y1="307.3" x2="250.2" y2="86.7" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="250.2" y1="307.3" x2="250.2" y2="307.3" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="250.2" y1="86.7" x2="149.8" y2="86.7" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="250.2" y1="86.7" x2="250.2" y2="86.7" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="145.4" y1="305.6" x2="145.4" y2="311.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="145.4" y1="305.6" x2="145.4" y2="305.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="145.4" y1="311.6" x2="254.6" y2="311.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="145.4" y1="311.6" x2="145.4" y2="311.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="254.6" y1="311.6" x2="254.6" y2="305.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="254.6" y1="311.6" x2="254.6" y2="311.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="254.6" y1="305.6" x2="145.4" y2="305.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="254.6" y1="305.6" x2="254.6" y2="305.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="145.4" y1="305.6" x2="145.4" y2="311.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="145.4" y1="305.6" x2="145.4" y2="305.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="145.4" y1="311.6" x2="254.6" y2="311.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="145.4" y1="311.6" x2="145.4" y2="311.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="254.6" y1="311.6" x2="254.6" y2="305.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="254.6" y1="311.6" x2="254.6" y2="311.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="254.6" y1="305.6" x2="145.4" y2="305.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="254.6" y1="305.6" x2="254.6" y2="305.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="191.8" y1="313.8" x2="191.8" y2="317.1" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="191.8" y1="313.8" x2="191.8" y2="313.8" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="191.8" y1="317.1" x2="195.1" y2="317.1" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="191.8" y1="317.1" x2="191.8" y2="317.1" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="195.1" y1="317.1" x2="195.1" y2="313.8" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="195.1" y1="317.1" x2="195.1" y2="317.1" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="195.1" y1="313.8" x2="191.8" y2="313.8" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="195.1" y1="313.8" x2="195.1" y2="313.8" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="231.1" y1="313.8" x2="231.1" y2="317.1" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="231.1" y1="313.8" x2="231.1" y2="313.8" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="231.1" y1="317.1" x2="234.4" y2="317.1" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="231.1" y1="317.1" x2="231.1" y2="317.1" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="234.4" y1="317.1" x2="234.4" y2="313.8" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="234.4" y1="317.1" x2="234.4" y2="317.1" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="234.4" y1="313.8" x2="231.1" y2="313.8" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="234.4" y1="313.8" x2="234.4" y2="313.8" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="194.5" y1="313.3" x2="194.5" y2="317.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="194.5" y1="313.3" x2="194.5" y2="313.3" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="194.5" y1="317.6" x2="231.7" y2="317.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="194.5" y1="317.6" x2="194.5" y2="317.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="231.7" y1="317.6" x2="231.7" y2="313.3" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="231.7" y1="317.6" x2="231.7" y2="317.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="231.7" y1="313.3" x2="194.5" y2="313.3" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="231.7" y1="313.3" x2="231.7" y2="313.3" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="194.5" y1="313.3" x2="194.5" y2="317.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="194.5" y1="313.3" x2="194.5" y2="313.3" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="194.5" y1="317.6" x2="231.7" y2="317.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="194.5" y1="317.6" x2="194.5" y2="317.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="231.7" y1="317.6" x2="231.7" y2="313.3" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="231.7" y1="317.6" x2="231.7" y2="317.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="231.7" y1="313.3" x2="194.5" y2="313.3" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="231.7" y1="313.3" x2="231.7" y2="313.3" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="194.5" y1="313.3" x2="194.5" y2="317.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="194.5" y1="313.3" x2="194.5" y2="313.3" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="194.5" y1="317.6" x2="231.7" y2="317.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="194.5" y1="317.6" x2="194.5" y2="317.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="231.7" y1="317.6" x2="231.7" y2="313.3" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="231.7" y1="317.6" x2="231.7" y2="317.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="231.7" y1="313.3" x2="194.5" y2="313.3" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="231.7" y1="313.3" x2="231.7" y2="313.3" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="194.5" y1="313.3" x2="194.5" y2="317.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="194.5" y1="313.3" x2="194.5" y2="313.3" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="194.5" y1="317.6" x2="231.7" y2="317.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="194.5" y1="317.6" x2="194.5" y2="317.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="231.7" y1="317.6" x2="231.7" y2="313.3" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="231.7" y1="317.6" x2="231.7" y2="317.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="231.7" y1="313.3" x2="194.5" y2="313.3" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="231.7" y1="313.3" x2="231.7" y2="313.3" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="194.5" y1="313.3" x2="194.5" y2="317.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="194.5" y1="313.3" x2="194.5" y2="313.3" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="194.5" y1="317.6" x2="231.7" y2="317.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="194.5" y1="317.6" x2="194.5" y2="317.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="231.7" y1="317.6" x2="231.7" y2="313.3" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="231.7" y1="317.6" x2="231.7" y2="317.6" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="231.7" y1="313.3" x2="194.5" y2="313.3" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" />
+    <line x1="231.7" y1="313.3" x2="231.7" y2="313.3" stroke="#2c3e50" stroke-width="0.8" opacity="0.65" /></g>
+</svg>

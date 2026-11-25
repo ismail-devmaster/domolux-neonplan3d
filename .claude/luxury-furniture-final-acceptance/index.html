@@ -1,0 +1,3344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NeonPlan 3D - Luxury Furniture Final Acceptance Gallery</title>
+  <style>
+    :root {
+      --bg: #070b14;
+      --card-bg: #0d1527;
+      --card-border: #1a2744;
+      --card-hover: #16223d;
+      --accent: #22d3ee;
+      --gold: #fbbf24;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --badge-pass: #10b981;
+      --badge-domolux: #ec4899;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text-main);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      padding: 30px 40px;
+      line-height: 1.5;
+    }
+    header {
+      margin-bottom: 30px;
+      border-bottom: 1px solid var(--card-border);
+      padding-bottom: 24px;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 6px;
+    }
+    .subtitle {
+      font-size: 16px;
+      color: var(--gold);
+      font-weight: 500;
+      margin-bottom: 16px;
+    }
+    .metrics-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    .metric-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      padding: 12px 20px;
+      min-width: 150px;
+    }
+    .metric-val {
+      font-size: 22px;
+      font-weight: bold;
+      color: var(--accent);
+    }
+    .metric-lbl {
+      font-size: 12px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 24px;
+      background: var(--card-bg);
+      padding: 16px 20px;
+      border-radius: 8px;
+      border: 1px solid var(--card-border);
+    }
+    .search-box {
+      flex: 1;
+      min-width: 250px;
+    }
+    input[type="text"] {
+      width: 100%;
+      background: #090e1a;
+      border: 1px solid #233458;
+      border-radius: 6px;
+      padding: 10px 14px;
+      color: #fff;
+      font-size: 14px;
+    }
+    input[type="text"]:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+    .filter-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .pill {
+      background: #111a30;
+      border: 1px solid #233458;
+      color: var(--text-muted);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .pill:hover, .pill.active {
+      background: var(--accent);
+      color: #070b14;
+      border-color: var(--accent);
+      font-weight: 600;
+    }
+    .view-toggles {
+      display: flex;
+      gap: 8px;
+    }
+    .btn-toggle {
+      background: #141f38;
+      border: 1px solid #293d6b;
+      color: #cbd5e1;
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-size: 13px;
+      cursor: pointer;
+    }
+    .btn-toggle.active {
+      background: #2563eb;
+      color: #fff;
+      border-color: #3b82f6;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+      gap: 24px;
+    }
+    .item-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 10px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .item-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--accent);
+    }
+    .card-header {
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--card-border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .item-num {
+      font-size: 12px;
+      font-weight: bold;
+      color: var(--gold);
+    }
+    .item-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: #fff;
+    }
+    .badge {
+      font-size: 11px;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    .badge-pass {
+      background: rgba(16, 185, 129, 0.2);
+      color: #34d399;
+      border: 1px solid #10b981;
+    }
+    .badge-domolux {
+      background: rgba(236, 72, 153, 0.2);
+      color: #f472b6;
+      border: 1px solid #ec4899;
+    }
+    .card-views {
+      display: flex;
+      background: #090e1a;
+      padding: 12px;
+      gap: 8px;
+      justify-content: center;
+    }
+    .view-container {
+      flex: 1;
+      text-align: center;
+    }
+    .view-container img {
+      width: 100%;
+      max-width: 140px;
+      height: auto;
+      border-radius: 6px;
+      background: #0d1424;
+      border: 1px solid #1c273e;
+    }
+    .view-caption {
+      font-size: 10px;
+      color: var(--text-muted);
+      margin-top: 4px;
+      text-transform: uppercase;
+    }
+    .card-body {
+      padding: 14px 18px;
+      font-size: 13px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .item-ar {
+      font-size: 13px;
+      color: #cbd5e1;
+      margin-bottom: 8px;
+    }
+    .specs-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px 12px;
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 8px;
+      background: #0a0f1d;
+      padding: 10px 12px;
+      border-radius: 6px;
+    }
+    .spec-val {
+      color: #e2e8f0;
+      font-weight: 500;
+    }
+    .luxury-notes {
+      margin-top: 10px;
+      font-size: 11px;
+      color: #94a3b8;
+      border-left: 2px solid var(--gold);
+      padding-left: 8px;
+      font-style: italic;
+    }
+    .links-section {
+      margin-top: 40px;
+      padding-top: 24px;
+      border-top: 1px solid var(--card-border);
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .link-btn {
+      display: inline-block;
+      background: #1e293b;
+      color: var(--accent);
+      padding: 10px 18px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 14px;
+      border: 1px solid #334155;
+    }
+    .link-btn:hover {
+      background: #334155;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>NeonPlan 3D — Luxury Furniture Final Acceptance Gallery</h1>
+  <div class="subtitle">Complete Visual Inspection & Verification of all 82 Production Redesigned Items</div>
+  
+  <div class="metrics-bar">
+    <div class="metric-card">
+      <div class="metric-val">82 / 82</div>
+      <div class="metric-lbl">Furniture Items Validated</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-val">246</div>
+      <div class="metric-lbl">Multi-Angle Views Rendered</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-val">13</div>
+      <div class="metric-lbl">Functional Categories</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-val">100% PASS</div>
+      <div class="metric-lbl">Visual Acceptance Rate</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-val">0</div>
+      <div class="metric-lbl">Remaining Defects</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-val">944.9 KB</div>
+      <div class="metric-lbl">neonplan3d-3d.js Bundle</div>
+    </div>
+  </div>
+
+  <div class="controls">
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search by name, ID, category, or Arabic..." onkeyup="filterItems()">
+    </div>
+    <div class="view-toggles">
+      <button class="btn-toggle active" onclick="setViewMode('all')">Triple View (3/4 + Top + Front)</button>
+      <button class="btn-toggle" onclick="setViewMode('persp')">Perspective Only</button>
+      <button class="btn-toggle" onclick="setViewMode('top')">Top View Only</button>
+      <button class="btn-toggle" onclick="setViewMode('front')">Front Elevation Only</button>
+    </div>
+  </div>
+
+  <div class="filter-pills" id="categoryPills">
+    <button class="pill active" onclick="filterCategory('All')">All Items (82)</button>
+    <button class="pill" onclick="filterCategory('Lighting')">Lighting (13)</button>
+    <button class="pill" onclick="filterCategory('Heating & AC')">Heating & AC (2)</button>
+    <button class="pill" onclick="filterCategory('Living Room')">Living Room (12)</button>
+    <button class="pill" onclick="filterCategory('Dining')">Dining (6)</button>
+    <button class="pill" onclick="filterCategory('Kitchen')">Kitchen (10)</button>
+    <button class="pill" onclick="filterCategory('Bedroom')">Bedroom (5)</button>
+    <button class="pill" onclick="filterCategory('Bathroom & Laundry')">Bathroom & Laundry (6)</button>
+    <button class="pill" onclick="filterCategory('Home Office')">Home Office (4)</button>
+    <button class="pill" onclick="filterCategory('Stairs')">Stairs (2)</button>
+    <button class="pill" onclick="filterCategory('Smart Home & Energy')">Smart Home & Energy (11)</button>
+    <button class="pill" onclick="filterCategory('Outdoor')">Outdoor (4)</button>
+    <button class="pill" onclick="filterCategory('Electrical & Network')">Electrical & Network (5)</button>
+    <button class="pill" onclick="filterCategory('Domolux Exclusive')">Domolux Exclusive (2)</button>
+  </div>
+</header>
+
+<main class="gallery-grid" id="galleryGrid">
+
+  <div class="item-card" data-category="Lighting" data-search="lamp_ceiling ceiling light مصباح سقفي">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#01 &bull; Lighting</span>
+        <div class="item-title">Ceiling Light</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Lighting/01_lamp_ceiling_3quarter.svg" alt="Ceiling Light 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Lighting/01_lamp_ceiling_top.svg" alt="Ceiling Light Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Lighting/01_lamp_ceiling_front.svg" alt="Ceiling Light Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">مصباح سقفي &bull; <code style="color: #64748b; font-size: 11px;">lamp_ceiling</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">0.464m</span></div>
+        <div>Depth: <span class="spec-val">0.456m</span></div>
+        <div>Height: <span class="spec-val">0.162m</span></div>
+        <div>Triangles: <span class="spec-val">352</span></div>
+        <div>Vertices: <span class="spec-val">1,056</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Integrated indirect LED diffusers, satin brass stems, fluted glass cylindrical shades, brushed aluminum housings.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Lighting" data-search="lamp_downlight recessed spotlight سبوت مدمج">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#02 &bull; Lighting</span>
+        <div class="item-title">Recessed Spotlight</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Lighting/02_lamp_downlight_3quarter.svg" alt="Recessed Spotlight 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Lighting/02_lamp_downlight_top.svg" alt="Recessed Spotlight Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Lighting/02_lamp_downlight_front.svg" alt="Recessed Spotlight Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">سبوت مدمج &bull; <code style="color: #64748b; font-size: 11px;">lamp_downlight</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">0.127m</span></div>
+        <div>Depth: <span class="spec-val">0.127m</span></div>
+        <div>Height: <span class="spec-val">0.032m</span></div>
+        <div>Triangles: <span class="spec-val">164</span></div>
+        <div>Vertices: <span class="spec-val">492</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Integrated indirect LED diffusers, satin brass stems, fluted glass cylindrical shades, brushed aluminum housings.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Lighting" data-search="lamp_spot surface-mounted spotlight سبوت بارز">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#03 &bull; Lighting</span>
+        <div class="item-title">Surface-Mounted Spotlight</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Lighting/03_lamp_spot_3quarter.svg" alt="Surface-Mounted Spotlight 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Lighting/03_lamp_spot_top.svg" alt="Surface-Mounted Spotlight Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Lighting/03_lamp_spot_front.svg" alt="Surface-Mounted Spotlight Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">سبوت بارز &bull; <code style="color: #64748b; font-size: 11px;">lamp_spot</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">0.129m</span></div>
+        <div>Depth: <span class="spec-val">0.129m</span></div>
+        <div>Height: <span class="spec-val">0.19m</span></div>
+        <div>Triangles: <span class="spec-val">244</span></div>
+        <div>Vertices: <span class="spec-val">732</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Integrated indirect LED diffusers, satin brass stems, fluted glass cylindrical shades, brushed aluminum housings.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Lighting" data-search="lamp_panel led panel لوحة ليد">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#04 &bull; Lighting</span>
+        <div class="item-title">LED Panel</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Lighting/04_lamp_panel_3quarter.svg" alt="LED Panel 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Lighting/04_lamp_panel_top.svg" alt="LED Panel Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Lighting/04_lamp_panel_front.svg" alt="LED Panel Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">لوحة ليد &bull; <code style="color: #64748b; font-size: 11px;">lamp_panel</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">0.6m</span></div>
+        <div>Depth: <span class="spec-val">0.6m</span></div>
+        <div>Height: <span class="spec-val">0.048m</span></div>
+        <div>Triangles: <span class="spec-val">36</span></div>
+        <div>Vertices: <span class="spec-val">108</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Integrated indirect LED diffusers, satin brass stems, fluted glass cylindrical shades, brushed aluminum housings.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Lighting" data-search="lamp_pendant pendant light مصباح معلق">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#05 &bull; Lighting</span>
+        <div class="item-title">Pendant Light</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Lighting/05_lamp_pendant_3quarter.svg" alt="Pendant Light 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Lighting/05_lamp_pendant_top.svg" alt="Pendant Light Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Lighting/05_lamp_pendant_front.svg" alt="Pendant Light Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">مصباح معلق &bull; <code style="color: #64748b; font-size: 11px;">lamp_pendant</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">0.391m</span></div>
+        <div>Depth: <span class="spec-val">0.385m</span></div>
+        <div>Height: <span class="spec-val">0.28m</span></div>
+        <div>Triangles: <span class="spec-val">368</span></div>
+        <div>Vertices: <span class="spec-val">1,104</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Integrated indirect LED diffusers, satin brass stems, fluted glass cylindrical shades, brushed aluminum housings.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Lighting" data-search="lamp_floor floor lamp مصباح أرضي">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#06 &bull; Lighting</span>
+        <div class="item-title">Floor Lamp</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Lighting/06_lamp_floor_3quarter.svg" alt="Floor Lamp 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Lighting/06_lamp_floor_top.svg" alt="Floor Lamp Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Lighting/06_lamp_floor_front.svg" alt="Floor Lamp Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">مصباح أرضي &bull; <code style="color: #64748b; font-size: 11px;">lamp_floor</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">0.464m</span></div>
+        <div>Depth: <span class="spec-val">0.464m</span></div>
+        <div>Height: <span class="spec-val">1.665m</span></div>
+        <div>Triangles: <span class="spec-val">392</span></div>
+        <div>Vertices: <span class="spec-val">1,176</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Integrated indirect LED diffusers, satin brass stems, fluted glass cylindrical shades, brushed aluminum housings.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Lighting" data-search="lamp_table table lamp مصباح طاولة">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#07 &bull; Lighting</span>
+        <div class="item-title">Table Lamp</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Lighting/07_lamp_table_3quarter.svg" alt="Table Lamp 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Lighting/07_lamp_table_top.svg" alt="Table Lamp Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Lighting/07_lamp_table_front.svg" alt="Table Lamp Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">مصباح طاولة &bull; <code style="color: #64748b; font-size: 11px;">lamp_table</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">0.33m</span></div>
+        <div>Depth: <span class="spec-val">0.321m</span></div>
+        <div>Height: <span class="spec-val">0.532m</span></div>
+        <div>Triangles: <span class="spec-val">368</span></div>
+        <div>Vertices: <span class="spec-val">1,104</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Integrated indirect LED diffusers, satin brass stems, fluted glass cylindrical shades, brushed aluminum housings.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Lighting" data-search="lamp_wall wall lamp مصباح جداري">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#08 &bull; Lighting</span>
+        <div class="item-title">Wall Lamp</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Lighting/08_lamp_wall_3quarter.svg" alt="Wall Lamp 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Lighting/08_lamp_wall_top.svg" alt="Wall Lamp Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Lighting/08_lamp_wall_front.svg" alt="Wall Lamp Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">مصباح جداري &bull; <code style="color: #64748b; font-size: 11px;">lamp_wall</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">0.18m</span></div>
+        <div>Depth: <span class="spec-val">0.12m</span></div>
+        <div>Height: <span class="spec-val">0.28m</span></div>
+        <div>Triangles: <span class="spec-val">48</span></div>
+        <div>Vertices: <span class="spec-val">144</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Integrated indirect LED diffusers, satin brass stems, fluted glass cylindrical shades, brushed aluminum housings.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Lighting" data-search="led_strip led strip شريط ليد">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#09 &bull; Lighting</span>
+        <div class="item-title">LED Strip</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Lighting/09_led_strip_3quarter.svg" alt="LED Strip 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Lighting/09_led_strip_top.svg" alt="LED Strip Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Lighting/09_led_strip_front.svg" alt="LED Strip Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">شريط ليد &bull; <code style="color: #64748b; font-size: 11px;">led_strip</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">2m</span></div>
+        <div>Depth: <span class="spec-val">0.03m</span></div>
+        <div>Height: <span class="spec-val">0.02m</span></div>
+        <div>Triangles: <span class="spec-val">12</span></div>
+        <div>Vertices: <span class="spec-val">36</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Integrated indirect LED diffusers, satin brass stems, fluted glass cylindrical shades, brushed aluminum housings.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Lighting" data-search="lamp_uplight uplight floor lamp مصباح أرضي موجه للأعلى">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#10 &bull; Lighting</span>
+        <div class="item-title">Uplight Floor Lamp</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Lighting/10_lamp_uplight_3quarter.svg" alt="Uplight Floor Lamp 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Lighting/10_lamp_uplight_top.svg" alt="Uplight Floor Lamp Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Lighting/10_lamp_uplight_front.svg" alt="Uplight Floor Lamp Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">مصباح أرضي موجه للأعلى &bull; <code style="color: #64748b; font-size: 11px;">lamp_uplight</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">0.36m</span></div>
+        <div>Depth: <span class="spec-val">0.36m</span></div>
+        <div>Height: <span class="spec-val">1.82m</span></div>
+        <div>Triangles: <span class="spec-val">368</span></div>
+        <div>Vertices: <span class="spec-val">1,104</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Integrated indirect LED diffusers, satin brass stems, fluted glass cylindrical shades, brushed aluminum housings.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Lighting" data-search="lamp_bollard pathway bollard light عمود إنارة ممرات">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#11 &bull; Lighting</span>
+        <div class="item-title">Pathway Bollard Light</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Lighting/11_lamp_bollard_3quarter.svg" alt="Pathway Bollard Light 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Lighting/11_lamp_bollard_top.svg" alt="Pathway Bollard Light Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Lighting/11_lamp_bollard_front.svg" alt="Pathway Bollard Light Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">عمود إنارة ممرات &bull; <code style="color: #64748b; font-size: 11px;">lamp_bollard</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">0.184m</span></div>
+        <div>Depth: <span class="spec-val">0.184m</span></div>
+        <div>Height: <span class="spec-val">0.85m</span></div>
+        <div>Triangles: <span class="spec-val">176</span></div>
+        <div>Vertices: <span class="spec-val">528</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Integrated indirect LED diffusers, satin brass stems, fluted glass cylindrical shades, brushed aluminum housings.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Lighting" data-search="lamp_garden garden spotlight سبوت حديقة">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#12 &bull; Lighting</span>
+        <div class="item-title">Garden Spotlight</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Lighting/12_lamp_garden_3quarter.svg" alt="Garden Spotlight 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Lighting/12_lamp_garden_top.svg" alt="Garden Spotlight Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Lighting/12_lamp_garden_front.svg" alt="Garden Spotlight Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">سبوت حديقة &bull; <code style="color: #64748b; font-size: 11px;">lamp_garden</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">0.114m</span></div>
+        <div>Depth: <span class="spec-val">0.114m</span></div>
+        <div>Height: <span class="spec-val">0.33m</span></div>
+        <div>Triangles: <span class="spec-val">200</span></div>
+        <div>Vertices: <span class="spec-val">600</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Integrated indirect LED diffusers, satin brass stems, fluted glass cylindrical shades, brushed aluminum housings.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Lighting" data-search="lamp_fan ceiling fan with light مروحة سقف مع إضاءة">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#13 &bull; Lighting</span>
+        <div class="item-title">Ceiling Fan with Light</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Lighting/13_lamp_fan_3quarter.svg" alt="Ceiling Fan with Light 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Lighting/13_lamp_fan_top.svg" alt="Ceiling Fan with Light Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Lighting/13_lamp_fan_front.svg" alt="Ceiling Fan with Light Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">مروحة سقف مع إضاءة &bull; <code style="color: #64748b; font-size: 11px;">lamp_fan</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">1.25m</span></div>
+        <div>Depth: <span class="spec-val">1.25m</span></div>
+        <div>Height: <span class="spec-val">0.185m</span></div>
+        <div>Triangles: <span class="spec-val">416</span></div>
+        <div>Vertices: <span class="spec-val">1,248</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Integrated indirect LED diffusers, satin brass stems, fluted glass cylindrical shades, brushed aluminum housings.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Heating & AC" data-search="radiator radiator مشعاع تدفئة">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#14 &bull; Heating & AC</span>
+        <div class="item-title">Radiator</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Heating___AC/14_radiator_3quarter.svg" alt="Radiator 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Heating___AC/14_radiator_top.svg" alt="Radiator Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Heating___AC/14_radiator_front.svg" alt="Radiator Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">مشعاع تدفئة &bull; <code style="color: #64748b; font-size: 11px;">radiator</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">0.857m</span></div>
+        <div>Depth: <span class="spec-val">0.12m</span></div>
+        <div>Height: <span class="spec-val">0.6m</span></div>
+        <div>Triangles: <span class="spec-val">432</span></div>
+        <div>Vertices: <span class="spec-val">1,296</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Architectural flat vertical heating fins with concealed thermostatic valves; ultra-slim satin matte AC fascia.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Heating & AC" data-search="ac_unit wall-mounted ac مكيف هواء جداري">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#15 &bull; Heating & AC</span>
+        <div class="item-title">Wall-Mounted AC</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Heating___AC/15_ac_unit_3quarter.svg" alt="Wall-Mounted AC 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Heating___AC/15_ac_unit_top.svg" alt="Wall-Mounted AC Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Heating___AC/15_ac_unit_front.svg" alt="Wall-Mounted AC Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">مكيف هواء جداري &bull; <code style="color: #64748b; font-size: 11px;">ac_unit</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">0.95m</span></div>
+        <div>Depth: <span class="spec-val">0.245m</span></div>
+        <div>Height: <span class="spec-val">0.305m</span></div>
+        <div>Triangles: <span class="spec-val">58</span></div>
+        <div>Vertices: <span class="spec-val">174</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Architectural flat vertical heating fins with concealed thermostatic valves; ultra-slim satin matte AC fascia.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Living Room" data-search="sofa sofa أريكة">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#16 &bull; Living Room</span>
+        <div class="item-title">Sofa</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Living_Room/16_sofa_3quarter.svg" alt="Sofa 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Living_Room/16_sofa_top.svg" alt="Sofa Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Living_Room/16_sofa_front.svg" alt="Sofa Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">أريكة &bull; <code style="color: #64748b; font-size: 11px;">sofa</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">2.3m</span></div>
+        <div>Depth: <span class="spec-val">0.95m</span></div>
+        <div>Height: <span class="spec-val">0.82m</span></div>
+        <div>Triangles: <span class="spec-val">326</span></div>
+        <div>Vertices: <span class="spec-val">978</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Plinth-mounted seating, tailored double-stitched upholstery, fluted oak tambour sideboards, ultra-slim OLED display bezels.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Living Room" data-search="sofa_l l-shaped sofa أريكة زاوية على شكل L">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#17 &bull; Living Room</span>
+        <div class="item-title">L-Shaped Sofa</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Living_Room/17_sofa_l_3quarter.svg" alt="L-Shaped Sofa 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Living_Room/17_sofa_l_top.svg" alt="L-Shaped Sofa Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Living_Room/17_sofa_l_front.svg" alt="L-Shaped Sofa Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">أريكة زاوية على شكل L &bull; <code style="color: #64748b; font-size: 11px;">sofa_l</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">2.8m</span></div>
+        <div>Depth: <span class="spec-val">1.8m</span></div>
+        <div>Height: <span class="spec-val">0.82m</span></div>
+        <div>Triangles: <span class="spec-val">460</span></div>
+        <div>Vertices: <span class="spec-val">1,380</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Plinth-mounted seating, tailored double-stitched upholstery, fluted oak tambour sideboards, ultra-slim OLED display bezels.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Living Room" data-search="sofa_u u-shaped sofa أريكة على شكل U">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#18 &bull; Living Room</span>
+        <div class="item-title">U-Shaped Sofa</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Living_Room/18_sofa_u_3quarter.svg" alt="U-Shaped Sofa 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Living_Room/18_sofa_u_top.svg" alt="U-Shaped Sofa Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Living_Room/18_sofa_u_front.svg" alt="U-Shaped Sofa Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">أريكة على شكل U &bull; <code style="color: #64748b; font-size: 11px;">sofa_u</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">3.4m</span></div>
+        <div>Depth: <span class="spec-val">2.2m</span></div>
+        <div>Height: <span class="spec-val">0.82m</span></div>
+        <div>Triangles: <span class="spec-val">722</span></div>
+        <div>Vertices: <span class="spec-val">2,166</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Plinth-mounted seating, tailored double-stitched upholstery, fluted oak tambour sideboards, ultra-slim OLED display bezels.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Living Room" data-search="armchair armchair كرسي بذراعين">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#19 &bull; Living Room</span>
+        <div class="item-title">Armchair</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Living_Room/19_armchair_3quarter.svg" alt="Armchair 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Living_Room/19_armchair_top.svg" alt="Armchair Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Living_Room/19_armchair_front.svg" alt="Armchair Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">كرسي بذراعين &bull; <code style="color: #64748b; font-size: 11px;">armchair</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">0.92m</span></div>
+        <div>Depth: <span class="spec-val">0.88m</span></div>
+        <div>Height: <span class="spec-val">0.82m</span></div>
+        <div>Triangles: <span class="spec-val">178</span></div>
+        <div>Vertices: <span class="spec-val">534</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Plinth-mounted seating, tailored double-stitched upholstery, fluted oak tambour sideboards, ultra-slim OLED display bezels.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Living Room" data-search="stool backless stool مقعد بدون ظهر">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#20 &bull; Living Room</span>
+        <div class="item-title">Backless Stool</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Living_Room/20_stool_3quarter.svg" alt="Backless Stool 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Living_Room/20_stool_top.svg" alt="Backless Stool Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Living_Room/20_stool_front.svg" alt="Backless Stool Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">مقعد بدون ظهر &bull; <code style="color: #64748b; font-size: 11px;">stool</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">0.48m</span></div>
+        <div>Depth: <span class="spec-val">0.48m</span></div>
+        <div>Height: <span class="spec-val">0.44m</span></div>
+        <div>Triangles: <span class="spec-val">152</span></div>
+        <div>Vertices: <span class="spec-val">456</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Plinth-mounted seating, tailored double-stitched upholstery, fluted oak tambour sideboards, ultra-slim OLED display bezels.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Living Room" data-search="coffee_table coffee table طاولة قهوة">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#21 &bull; Living Room</span>
+        <div class="item-title">Coffee Table</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Living_Room/21_coffee_table_3quarter.svg" alt="Coffee Table 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Living_Room/21_coffee_table_top.svg" alt="Coffee Table Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Living_Room/21_coffee_table_front.svg" alt="Coffee Table Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">طاولة قهوة &bull; <code style="color: #64748b; font-size: 11px;">coffee_table</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">1.2m</span></div>
+        <div>Depth: <span class="spec-val">0.65m</span></div>
+        <div>Height: <span class="spec-val">0.4m</span></div>
+        <div>Triangles: <span class="spec-val">86</span></div>
+        <div>Vertices: <span class="spec-val">258</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Plinth-mounted seating, tailored double-stitched upholstery, fluted oak tambour sideboards, ultra-slim OLED display bezels.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Living Room" data-search="tv_board tv stand طاولة تلفزيون">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#22 &bull; Living Room</span>
+        <div class="item-title">TV Stand</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Living_Room/22_tv_board_3quarter.svg" alt="TV Stand 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Living_Room/22_tv_board_top.svg" alt="TV Stand Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Living_Room/22_tv_board_front.svg" alt="TV Stand Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">طاولة تلفزيون &bull; <code style="color: #64748b; font-size: 11px;">tv_board</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">2m</span></div>
+        <div>Depth: <span class="spec-val">0.445m</span></div>
+        <div>Height: <span class="spec-val">1.432m</span></div>
+        <div>Triangles: <span class="spec-val">130</span></div>
+        <div>Vertices: <span class="spec-val">390</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Plinth-mounted seating, tailored double-stitched upholstery, fluted oak tambour sideboards, ultra-slim OLED display bezels.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Living Room" data-search="tv_wall wall-mounted television تلفزيون جداري">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#23 &bull; Living Room</span>
+        <div class="item-title">Wall-Mounted Television</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Living_Room/23_tv_wall_3quarter.svg" alt="Wall-Mounted Television 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Living_Room/23_tv_wall_top.svg" alt="Wall-Mounted Television Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Living_Room/23_tv_wall_front.svg" alt="Wall-Mounted Television Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">تلفزيون جداري &bull; <code style="color: #64748b; font-size: 11px;">tv_wall</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">1.474m</span></div>
+        <div>Depth: <span class="spec-val">0.08m</span></div>
+        <div>Height: <span class="spec-val">0.952m</span></div>
+        <div>Triangles: <span class="spec-val">48</span></div>
+        <div>Vertices: <span class="spec-val">144</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Plinth-mounted seating, tailored double-stitched upholstery, fluted oak tambour sideboards, ultra-slim OLED display bezels.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Living Room" data-search="sideboard sideboard خزانة جانبية">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#24 &bull; Living Room</span>
+        <div class="item-title">Sideboard</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Living_Room/24_sideboard_3quarter.svg" alt="Sideboard 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Living_Room/24_sideboard_top.svg" alt="Sideboard Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Living_Room/24_sideboard_front.svg" alt="Sideboard Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">خزانة جانبية &bull; <code style="color: #64748b; font-size: 11px;">sideboard</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">1.8m</span></div>
+        <div>Depth: <span class="spec-val">0.475m</span></div>
+        <div>Height: <span class="spec-val">0.78m</span></div>
+        <div>Triangles: <span class="spec-val">164</span></div>
+        <div>Vertices: <span class="spec-val">492</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Plinth-mounted seating, tailored double-stitched upholstery, fluted oak tambour sideboards, ultra-slim OLED display bezels.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Living Room" data-search="shelf shelf رف">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#25 &bull; Living Room</span>
+        <div class="item-title">Shelf</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Living_Room/25_shelf_3quarter.svg" alt="Shelf 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Living_Room/25_shelf_top.svg" alt="Shelf Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Living_Room/25_shelf_front.svg" alt="Shelf Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">رف &bull; <code style="color: #64748b; font-size: 11px;">shelf</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">1.18m</span></div>
+        <div>Depth: <span class="spec-val">0.33m</span></div>
+        <div>Height: <span class="spec-val">1.9m</span></div>
+        <div>Triangles: <span class="spec-val">820</span></div>
+        <div>Vertices: <span class="spec-val">2,460</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Plinth-mounted seating, tailored double-stitched upholstery, fluted oak tambour sideboards, ultra-slim OLED display bezels.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Living Room" data-search="plant plant نبات">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#26 &bull; Living Room</span>
+        <div class="item-title">Plant</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Living_Room/26_plant_3quarter.svg" alt="Plant 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Living_Room/26_plant_top.svg" alt="Plant Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Living_Room/26_plant_front.svg" alt="Plant Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">نبات &bull; <code style="color: #64748b; font-size: 11px;">plant</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">0.624m</span></div>
+        <div>Depth: <span class="spec-val">0.606m</span></div>
+        <div>Height: <span class="spec-val">1.44m</span></div>
+        <div>Triangles: <span class="spec-val">312</span></div>
+        <div>Vertices: <span class="spec-val">936</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Plinth-mounted seating, tailored double-stitched upholstery, fluted oak tambour sideboards, ultra-slim OLED display bezels.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Living Room" data-search="rug rug سجادة">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#27 &bull; Living Room</span>
+        <div class="item-title">Rug</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Living_Room/27_rug_3quarter.svg" alt="Rug 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Living_Room/27_rug_top.svg" alt="Rug Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Living_Room/27_rug_front.svg" alt="Rug Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">سجادة &bull; <code style="color: #64748b; font-size: 11px;">rug</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">2.8m</span></div>
+        <div>Depth: <span class="spec-val">2m</span></div>
+        <div>Height: <span class="spec-val">0.016m</span></div>
+        <div>Triangles: <span class="spec-val">20</span></div>
+        <div>Vertices: <span class="spec-val">60</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Plinth-mounted seating, tailored double-stitched upholstery, fluted oak tambour sideboards, ultra-slim OLED display bezels.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Dining" data-search="table dining table طاولة">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#28 &bull; Dining</span>
+        <div class="item-title">Dining Table</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Dining/28_table_3quarter.svg" alt="Dining Table 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Dining/28_table_top.svg" alt="Dining Table Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Dining/28_table_front.svg" alt="Dining Table Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">طاولة &bull; <code style="color: #64748b; font-size: 11px;">table</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">2m</span></div>
+        <div>Depth: <span class="spec-val">0.95m</span></div>
+        <div>Height: <span class="spec-val">0.76m</span></div>
+        <div>Triangles: <span class="spec-val">74</span></div>
+        <div>Vertices: <span class="spec-val">222</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Beveled edge marble tabletops, chamfered solid walnut legs, ergonomic curved armchairs, brushed brass stretchers.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Dining" data-search="table_round round table طاولة مستديرة">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#29 &bull; Dining</span>
+        <div class="item-title">Round Table</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Dining/29_table_round_3quarter.svg" alt="Round Table 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Dining/29_table_round_top.svg" alt="Round Table Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Dining/29_table_round_front.svg" alt="Round Table Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">طاولة مستديرة &bull; <code style="color: #64748b; font-size: 11px;">table_round</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">1.3m</span></div>
+        <div>Depth: <span class="spec-val">1.3m</span></div>
+        <div>Height: <span class="spec-val">0.762m</span></div>
+        <div>Triangles: <span class="spec-val">324</span></div>
+        <div>Vertices: <span class="spec-val">972</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Beveled edge marble tabletops, chamfered solid walnut legs, ergonomic curved armchairs, brushed brass stretchers.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Dining" data-search="chair chair كرسي">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#30 &bull; Dining</span>
+        <div class="item-title">Chair</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Dining/30_chair_3quarter.svg" alt="Chair 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Dining/30_chair_top.svg" alt="Chair Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Dining/30_chair_front.svg" alt="Chair Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">كرسي &bull; <code style="color: #64748b; font-size: 11px;">chair</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">0.52m</span></div>
+        <div>Depth: <span class="spec-val">0.56m</span></div>
+        <div>Height: <span class="spec-val">0.84m</span></div>
+        <div>Triangles: <span class="spec-val">178</span></div>
+        <div>Vertices: <span class="spec-val">534</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Beveled edge marble tabletops, chamfered solid walnut legs, ergonomic curved armchairs, brushed brass stretchers.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Dining" data-search="bench bench مقعد طويل">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#31 &bull; Dining</span>
+        <div class="item-title">Bench</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Dining/31_bench_3quarter.svg" alt="Bench 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Dining/31_bench_top.svg" alt="Bench Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Dining/31_bench_front.svg" alt="Bench Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">مقعد طويل &bull; <code style="color: #64748b; font-size: 11px;">bench</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">1.5m</span></div>
+        <div>Depth: <span class="spec-val">0.48m</span></div>
+        <div>Height: <span class="spec-val">0.49m</span></div>
+        <div>Triangles: <span class="spec-val">64</span></div>
+        <div>Vertices: <span class="spec-val">192</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Beveled edge marble tabletops, chamfered solid walnut legs, ergonomic curved armchairs, brushed brass stretchers.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Dining" data-search="corner_bench corner bench مقعد زاوية">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#32 &bull; Dining</span>
+        <div class="item-title">Corner Bench</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Dining/32_corner_bench_3quarter.svg" alt="Corner Bench 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Dining/32_corner_bench_top.svg" alt="Corner Bench Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Dining/32_corner_bench_front.svg" alt="Corner Bench Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">مقعد زاوية &bull; <code style="color: #64748b; font-size: 11px;">corner_bench</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">1.8m</span></div>
+        <div>Depth: <span class="spec-val">1.4m</span></div>
+        <div>Height: <span class="spec-val">0.84m</span></div>
+        <div>Triangles: <span class="spec-val">128</span></div>
+        <div>Vertices: <span class="spec-val">384</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Beveled edge marble tabletops, chamfered solid walnut legs, ergonomic curved armchairs, brushed brass stretchers.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Dining" data-search="bar_stool bar stool كرسي بار">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#33 &bull; Dining</span>
+        <div class="item-title">Bar Stool</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Dining/33_bar_stool_3quarter.svg" alt="Bar Stool 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Dining/33_bar_stool_top.svg" alt="Bar Stool Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Dining/33_bar_stool_front.svg" alt="Bar Stool Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">كرسي بار &bull; <code style="color: #64748b; font-size: 11px;">bar_stool</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">0.391m</span></div>
+        <div>Depth: <span class="spec-val">0.384m</span></div>
+        <div>Height: <span class="spec-val">1.16m</span></div>
+        <div>Triangles: <span class="spec-val">192</span></div>
+        <div>Vertices: <span class="spec-val">576</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Beveled edge marble tabletops, chamfered solid walnut legs, ergonomic curved armchairs, brushed brass stretchers.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Kitchen" data-search="kitchen kitchen base cabinet وحدة مطبخ">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#34 &bull; Kitchen</span>
+        <div class="item-title">Kitchen Base Cabinet</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Kitchen/34_kitchen_3quarter.svg" alt="Kitchen Base Cabinet 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Kitchen/34_kitchen_top.svg" alt="Kitchen Base Cabinet Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Kitchen/34_kitchen_front.svg" alt="Kitchen Base Cabinet Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">وحدة مطبخ &bull; <code style="color: #64748b; font-size: 11px;">kitchen</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">1.8m</span></div>
+        <div>Depth: <span class="spec-val">0.6m</span></div>
+        <div>Height: <span class="spec-val">0.94m</span></div>
+        <div>Triangles: <span class="spec-val">94</span></div>
+        <div>Vertices: <span class="spec-val">282</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Full shadow-gap handleless cabinetry, waterfall quartz island with overhang seating, integrated under-cabinet micro LED diffuser.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Kitchen" data-search="kitchen_wall upper kitchen cabinet خزانة مطبخ علوية">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#35 &bull; Kitchen</span>
+        <div class="item-title">Upper Kitchen Cabinet</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Kitchen/35_kitchen_wall_3quarter.svg" alt="Upper Kitchen Cabinet 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Kitchen/35_kitchen_wall_top.svg" alt="Upper Kitchen Cabinet Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Kitchen/35_kitchen_wall_front.svg" alt="Upper Kitchen Cabinet Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">خزانة مطبخ علوية &bull; <code style="color: #64748b; font-size: 11px;">kitchen_wall</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">1.8m</span></div>
+        <div>Depth: <span class="spec-val">0.345m</span></div>
+        <div>Height: <span class="spec-val">0.7m</span></div>
+        <div>Triangles: <span class="spec-val">72</span></div>
+        <div>Vertices: <span class="spec-val">216</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Full shadow-gap handleless cabinetry, waterfall quartz island with overhang seating, integrated under-cabinet micro LED diffuser.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Kitchen" data-search="kitchen_tall tall oven cabinet خزانة طويلة مع فرن">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#36 &bull; Kitchen</span>
+        <div class="item-title">Tall Oven Cabinet</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Kitchen/36_kitchen_tall_3quarter.svg" alt="Tall Oven Cabinet 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Kitchen/36_kitchen_tall_top.svg" alt="Tall Oven Cabinet Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Kitchen/36_kitchen_tall_front.svg" alt="Tall Oven Cabinet Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">خزانة طويلة مع فرن &bull; <code style="color: #64748b; font-size: 11px;">kitchen_tall</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">0.6m</span></div>
+        <div>Depth: <span class="spec-val">0.612m</span></div>
+        <div>Height: <span class="spec-val">2.15m</span></div>
+        <div>Triangles: <span class="spec-val">106</span></div>
+        <div>Vertices: <span class="spec-val">318</span></div>
+        <div>2D Symbol: <span class="spec-val">Standard</span></div>
+      </div>
+      <div class="luxury-notes">Full shadow-gap handleless cabinetry, waterfall quartz island with overhang seating, integrated under-cabinet micro LED diffuser.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Kitchen" data-search="island kitchen island جزيرة مطبخ">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#37 &bull; Kitchen</span>
+        <div class="item-title">Kitchen Island</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Kitchen/37_island_3quarter.svg" alt="Kitchen Island 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Kitchen/37_island_top.svg" alt="Kitchen Island Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Kitchen/37_island_front.svg" alt="Kitchen Island Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">جزيرة مطبخ &bull; <code style="color: #64748b; font-size: 11px;">island</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">2.4m</span></div>
+        <div>Depth: <span class="spec-val">1.05m</span></div>
+        <div>Height: <span class="spec-val">0.92m</span></div>
+        <div>Triangles: <span class="spec-val">114</span></div>
+        <div>Vertices: <span class="spec-val">342</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Full shadow-gap handleless cabinetry, waterfall quartz island with overhang seating, integrated under-cabinet micro LED diffuser.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Kitchen" data-search="worktop kitchen countertop سطح عمل">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#38 &bull; Kitchen</span>
+        <div class="item-title">Kitchen Countertop</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Kitchen/38_worktop_3quarter.svg" alt="Kitchen Countertop 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Kitchen/38_worktop_top.svg" alt="Kitchen Countertop Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Kitchen/38_worktop_front.svg" alt="Kitchen Countertop Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">سطح عمل &bull; <code style="color: #64748b; font-size: 11px;">worktop</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">1.8m</span></div>
+        <div>Depth: <span class="spec-val">0.62m</span></div>
+        <div>Height: <span class="spec-val">0.04m</span></div>
+        <div>Triangles: <span class="spec-val">10</span></div>
+        <div>Vertices: <span class="spec-val">30</span></div>
+        <div>2D Symbol: <span class="spec-val">Standard</span></div>
+      </div>
+      <div class="luxury-notes">Full shadow-gap handleless cabinetry, waterfall quartz island with overhang seating, integrated under-cabinet micro LED diffuser.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Kitchen" data-search="sink kitchen sink حوض غسيل">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#39 &bull; Kitchen</span>
+        <div class="item-title">Kitchen Sink</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Kitchen/39_sink_3quarter.svg" alt="Kitchen Sink 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Kitchen/39_sink_top.svg" alt="Kitchen Sink Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Kitchen/39_sink_front.svg" alt="Kitchen Sink Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">حوض غسيل &bull; <code style="color: #64748b; font-size: 11px;">sink</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">0.86m</span></div>
+        <div>Depth: <span class="spec-val">0.52m</span></div>
+        <div>Height: <span class="spec-val">0.7m</span></div>
+        <div>Triangles: <span class="spec-val">346</span></div>
+        <div>Vertices: <span class="spec-val">1,038</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Full shadow-gap handleless cabinetry, waterfall quartz island with overhang seating, integrated under-cabinet micro LED diffuser.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Kitchen" data-search="stove cooktop موقد">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#40 &bull; Kitchen</span>
+        <div class="item-title">Cooktop</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Kitchen/40_stove_3quarter.svg" alt="Cooktop 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Kitchen/40_stove_top.svg" alt="Cooktop Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Kitchen/40_stove_front.svg" alt="Cooktop Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">موقد &bull; <code style="color: #64748b; font-size: 11px;">stove</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">0.8m</span></div>
+        <div>Depth: <span class="spec-val">0.52m</span></div>
+        <div>Height: <span class="spec-val">0.253m</span></div>
+        <div>Triangles: <span class="spec-val">272</span></div>
+        <div>Vertices: <span class="spec-val">816</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Full shadow-gap handleless cabinetry, waterfall quartz island with overhang seating, integrated under-cabinet micro LED diffuser.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Kitchen" data-search="dishwasher dishwasher غسالة أطباق">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#41 &bull; Kitchen</span>
+        <div class="item-title">Dishwasher</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Kitchen/41_dishwasher_3quarter.svg" alt="Dishwasher 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Kitchen/41_dishwasher_top.svg" alt="Dishwasher Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Kitchen/41_dishwasher_front.svg" alt="Dishwasher Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">غسالة أطباق &bull; <code style="color: #64748b; font-size: 11px;">dishwasher</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">0.6m</span></div>
+        <div>Depth: <span class="spec-val">0.652m</span></div>
+        <div>Height: <span class="spec-val">0.85m</span></div>
+        <div>Triangles: <span class="spec-val">68</span></div>
+        <div>Vertices: <span class="spec-val">204</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Full shadow-gap handleless cabinetry, waterfall quartz island with overhang seating, integrated under-cabinet micro LED diffuser.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Kitchen" data-search="fridge refrigerator ثلاجة">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#42 &bull; Kitchen</span>
+        <div class="item-title">Refrigerator</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Kitchen/42_fridge_3quarter.svg" alt="Refrigerator 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Kitchen/42_fridge_top.svg" alt="Refrigerator Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Kitchen/42_fridge_front.svg" alt="Refrigerator Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">ثلاجة &bull; <code style="color: #64748b; font-size: 11px;">fridge</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">0.9m</span></div>
+        <div>Depth: <span class="spec-val">0.738m</span></div>
+        <div>Height: <span class="spec-val">1.95m</span></div>
+        <div>Triangles: <span class="spec-val">140</span></div>
+        <div>Vertices: <span class="spec-val">420</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Full shadow-gap handleless cabinetry, waterfall quartz island with overhang seating, integrated under-cabinet micro LED diffuser.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Kitchen" data-search="fridge_smart smart refrigerator ثلاجة ذكية">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#43 &bull; Kitchen</span>
+        <div class="item-title">Smart Refrigerator</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Kitchen/43_fridge_smart_3quarter.svg" alt="Smart Refrigerator 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Kitchen/43_fridge_smart_top.svg" alt="Smart Refrigerator Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Kitchen/43_fridge_smart_front.svg" alt="Smart Refrigerator Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">ثلاجة ذكية &bull; <code style="color: #64748b; font-size: 11px;">fridge_smart</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">0.92m</span></div>
+        <div>Depth: <span class="spec-val">0.66m</span></div>
+        <div>Height: <span class="spec-val">1.95m</span></div>
+        <div>Triangles: <span class="spec-val">128</span></div>
+        <div>Vertices: <span class="spec-val">384</span></div>
+        <div>2D Symbol: <span class="spec-val">Standard</span></div>
+      </div>
+      <div class="luxury-notes">Full shadow-gap handleless cabinetry, waterfall quartz island with overhang seating, integrated under-cabinet micro LED diffuser.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Bedroom" data-search="bed bed سرير">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#44 &bull; Bedroom</span>
+        <div class="item-title">Bed</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Bedroom/44_bed_3quarter.svg" alt="Bed 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Bedroom/44_bed_top.svg" alt="Bed Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Bedroom/44_bed_front.svg" alt="Bed Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">سرير &bull; <code style="color: #64748b; font-size: 11px;">bed</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">2.18m</span></div>
+        <div>Depth: <span class="spec-val">2.15m</span></div>
+        <div>Height: <span class="spec-val">1.15m</span></div>
+        <div>Triangles: <span class="spec-val">282</span></div>
+        <div>Vertices: <span class="spec-val">846</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Floating platform bed frames, integrated LED headboard backlighting, fluted timber wardrobe doors, soft-close velvet drawer linings.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Bedroom" data-search="bunk_bed bunk bed سرير طابقي">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#45 &bull; Bedroom</span>
+        <div class="item-title">Bunk Bed</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Bedroom/45_bunk_bed_3quarter.svg" alt="Bunk Bed 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Bedroom/45_bunk_bed_top.svg" alt="Bunk Bed Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Bedroom/45_bunk_bed_front.svg" alt="Bunk Bed Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">سرير طابقي &bull; <code style="color: #64748b; font-size: 11px;">bunk_bed</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">1m</span></div>
+        <div>Depth: <span class="spec-val">2.155m</span></div>
+        <div>Height: <span class="spec-val">1.75m</span></div>
+        <div>Triangles: <span class="spec-val">360</span></div>
+        <div>Vertices: <span class="spec-val">1,080</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Floating platform bed frames, integrated LED headboard backlighting, fluted timber wardrobe doors, soft-close velvet drawer linings.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Bedroom" data-search="nightstand bedside table طاولة سرير جانبية">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#46 &bull; Bedroom</span>
+        <div class="item-title">Bedside Table</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Bedroom/46_nightstand_3quarter.svg" alt="Bedside Table 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Bedroom/46_nightstand_top.svg" alt="Bedside Table Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Bedroom/46_nightstand_front.svg" alt="Bedside Table Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">طاولة سرير جانبية &bull; <code style="color: #64748b; font-size: 11px;">nightstand</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">0.55m</span></div>
+        <div>Depth: <span class="spec-val">0.415m</span></div>
+        <div>Height: <span class="spec-val">0.48m</span></div>
+        <div>Triangles: <span class="spec-val">46</span></div>
+        <div>Vertices: <span class="spec-val">138</span></div>
+        <div>2D Symbol: <span class="spec-val">Standard</span></div>
+      </div>
+      <div class="luxury-notes">Floating platform bed frames, integrated LED headboard backlighting, fluted timber wardrobe doors, soft-close velvet drawer linings.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Bedroom" data-search="wardrobe wardrobe خزانة ملابس">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#47 &bull; Bedroom</span>
+        <div class="item-title">Wardrobe</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Bedroom/47_wardrobe_3quarter.svg" alt="Wardrobe 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Bedroom/47_wardrobe_top.svg" alt="Wardrobe Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Bedroom/47_wardrobe_front.svg" alt="Wardrobe Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">خزانة ملابس &bull; <code style="color: #64748b; font-size: 11px;">wardrobe</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">2.4m</span></div>
+        <div>Depth: <span class="spec-val">0.615m</span></div>
+        <div>Height: <span class="spec-val">2.25m</span></div>
+        <div>Triangles: <span class="spec-val">94</span></div>
+        <div>Vertices: <span class="spec-val">282</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Floating platform bed frames, integrated LED headboard backlighting, fluted timber wardrobe doors, soft-close velvet drawer linings.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Bedroom" data-search="dresser chest of drawers خزانة أدراج">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#48 &bull; Bedroom</span>
+        <div class="item-title">Chest of Drawers</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Bedroom/48_dresser_3quarter.svg" alt="Chest of Drawers 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Bedroom/48_dresser_top.svg" alt="Chest of Drawers Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Bedroom/48_dresser_front.svg" alt="Chest of Drawers Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">خزانة أدراج &bull; <code style="color: #64748b; font-size: 11px;">dresser</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">1.2m</span></div>
+        <div>Depth: <span class="spec-val">0.495m</span></div>
+        <div>Height: <span class="spec-val">0.88m</span></div>
+        <div>Triangles: <span class="spec-val">82</span></div>
+        <div>Vertices: <span class="spec-val">246</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Floating platform bed frames, integrated LED headboard backlighting, fluted timber wardrobe doors, soft-close velvet drawer linings.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Bathroom & Laundry" data-search="bathtub bathtub حوض استحمام">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#49 &bull; Bathroom & Laundry</span>
+        <div class="item-title">Bathtub</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Bathroom___Laundry/49_bathtub_3quarter.svg" alt="Bathtub 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Bathroom___Laundry/49_bathtub_top.svg" alt="Bathtub Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Bathroom___Laundry/49_bathtub_front.svg" alt="Bathtub Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">حوض استحمام &bull; <code style="color: #64748b; font-size: 11px;">bathtub</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">1.885m</span></div>
+        <div>Depth: <span class="spec-val">0.85m</span></div>
+        <div>Height: <span class="spec-val">0.8m</span></div>
+        <div>Triangles: <span class="spec-val">160</span></div>
+        <div>Vertices: <span class="spec-val">480</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Freestanding sculptural soaking tubs, frameless tinted safety glass showers, wall-hung minimalist vanities.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Bathroom & Laundry" data-search="shower shower دش استحمام">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#50 &bull; Bathroom & Laundry</span>
+        <div class="item-title">Shower</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Bathroom___Laundry/50_shower_3quarter.svg" alt="Shower 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Bathroom___Laundry/50_shower_top.svg" alt="Shower Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Bathroom___Laundry/50_shower_front.svg" alt="Shower Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">دش استحمام &bull; <code style="color: #64748b; font-size: 11px;">shower</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">1.2m</span></div>
+        <div>Depth: <span class="spec-val">0.9m</span></div>
+        <div>Height: <span class="spec-val">2.15m</span></div>
+        <div>Triangles: <span class="spec-val">160</span></div>
+        <div>Vertices: <span class="spec-val">480</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Freestanding sculptural soaking tubs, frameless tinted safety glass showers, wall-hung minimalist vanities.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Bathroom & Laundry" data-search="wc toilet مرحاض">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#51 &bull; Bathroom & Laundry</span>
+        <div class="item-title">Toilet</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Bathroom___Laundry/51_wc_3quarter.svg" alt="Toilet 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Bathroom___Laundry/51_wc_top.svg" alt="Toilet Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Bathroom___Laundry/51_wc_front.svg" alt="Toilet Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">مرحاض &bull; <code style="color: #64748b; font-size: 11px;">wc</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">0.42m</span></div>
+        <div>Depth: <span class="spec-val">0.53m</span></div>
+        <div>Height: <span class="spec-val">0.7m</span></div>
+        <div>Triangles: <span class="spec-val">186</span></div>
+        <div>Vertices: <span class="spec-val">558</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Freestanding sculptural soaking tubs, frameless tinted safety glass showers, wall-hung minimalist vanities.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Bathroom & Laundry" data-search="washbasin washbasin حوض غسيل أيدي">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#52 &bull; Bathroom & Laundry</span>
+        <div class="item-title">Washbasin</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Bathroom___Laundry/52_washbasin_3quarter.svg" alt="Washbasin 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Bathroom___Laundry/52_washbasin_top.svg" alt="Washbasin Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Bathroom___Laundry/52_washbasin_front.svg" alt="Washbasin Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">حوض غسيل أيدي &bull; <code style="color: #64748b; font-size: 11px;">washbasin</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">1.2m</span></div>
+        <div>Depth: <span class="spec-val">0.525m</span></div>
+        <div>Height: <span class="spec-val">1.95m</span></div>
+        <div>Triangles: <span class="spec-val">182</span></div>
+        <div>Vertices: <span class="spec-val">546</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Freestanding sculptural soaking tubs, frameless tinted safety glass showers, wall-hung minimalist vanities.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Bathroom & Laundry" data-search="washer washing machine غسالة ملابس">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#53 &bull; Bathroom & Laundry</span>
+        <div class="item-title">Washing Machine</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Bathroom___Laundry/53_washer_3quarter.svg" alt="Washing Machine 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Bathroom___Laundry/53_washer_top.svg" alt="Washing Machine Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Bathroom___Laundry/53_washer_front.svg" alt="Washing Machine Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">غسالة ملابس &bull; <code style="color: #64748b; font-size: 11px;">washer</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">0.6m</span></div>
+        <div>Depth: <span class="spec-val">0.781m</span></div>
+        <div>Height: <span class="spec-val">0.85m</span></div>
+        <div>Triangles: <span class="spec-val">160</span></div>
+        <div>Vertices: <span class="spec-val">480</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Freestanding sculptural soaking tubs, frameless tinted safety glass showers, wall-hung minimalist vanities.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Bathroom & Laundry" data-search="dryer tumble dryer مجفف ملابس">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#54 &bull; Bathroom & Laundry</span>
+        <div class="item-title">Tumble Dryer</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Bathroom___Laundry/54_dryer_3quarter.svg" alt="Tumble Dryer 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Bathroom___Laundry/54_dryer_top.svg" alt="Tumble Dryer Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Bathroom___Laundry/54_dryer_front.svg" alt="Tumble Dryer Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">مجفف ملابس &bull; <code style="color: #64748b; font-size: 11px;">dryer</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">0.6m</span></div>
+        <div>Depth: <span class="spec-val">0.781m</span></div>
+        <div>Height: <span class="spec-val">0.85m</span></div>
+        <div>Triangles: <span class="spec-val">148</span></div>
+        <div>Vertices: <span class="spec-val">444</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Freestanding sculptural soaking tubs, frameless tinted safety glass showers, wall-hung minimalist vanities.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Home Office" data-search="desk desk مكتب">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#55 &bull; Home Office</span>
+        <div class="item-title">Desk</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Home_Office/55_desk_3quarter.svg" alt="Desk 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Home_Office/55_desk_top.svg" alt="Desk Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Home_Office/55_desk_front.svg" alt="Desk Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">مكتب &bull; <code style="color: #64748b; font-size: 11px;">desk</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">1.8m</span></div>
+        <div>Depth: <span class="spec-val">0.85m</span></div>
+        <div>Height: <span class="spec-val">1.274m</span></div>
+        <div>Triangles: <span class="spec-val">230</span></div>
+        <div>Vertices: <span class="spec-val">690</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Executive cantilevered timber desks with leather desk pad inserts, cable management raceways, ergonomic high-back chairs.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Home Office" data-search="office_chair office chair كرسي مكتب">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#56 &bull; Home Office</span>
+        <div class="item-title">Office Chair</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Home_Office/56_office_chair_3quarter.svg" alt="Office Chair 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Home_Office/56_office_chair_top.svg" alt="Office Chair Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Home_Office/56_office_chair_front.svg" alt="Office Chair Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">كرسي مكتب &bull; <code style="color: #64748b; font-size: 11px;">office_chair</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">0.643m</span></div>
+        <div>Depth: <span class="spec-val">0.644m</span></div>
+        <div>Height: <span class="spec-val">1.05m</span></div>
+        <div>Triangles: <span class="spec-val">392</span></div>
+        <div>Vertices: <span class="spec-val">1,176</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Executive cantilevered timber desks with leather desk pad inserts, cable management raceways, ergonomic high-back chairs.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Home Office" data-search="tall_cabinet tall cabinet خزانة طويلة">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#57 &bull; Home Office</span>
+        <div class="item-title">Tall Cabinet</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Home_Office/57_tall_cabinet_3quarter.svg" alt="Tall Cabinet 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Home_Office/57_tall_cabinet_top.svg" alt="Tall Cabinet Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Home_Office/57_tall_cabinet_front.svg" alt="Tall Cabinet Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">خزانة طويلة &bull; <code style="color: #64748b; font-size: 11px;">tall_cabinet</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">0.9m</span></div>
+        <div>Depth: <span class="spec-val">0.415m</span></div>
+        <div>Height: <span class="spec-val">2.05m</span></div>
+        <div>Triangles: <span class="spec-val">46</span></div>
+        <div>Vertices: <span class="spec-val">138</span></div>
+        <div>2D Symbol: <span class="spec-val">Standard</span></div>
+      </div>
+      <div class="luxury-notes">Executive cantilevered timber desks with leather desk pad inserts, cable management raceways, ergonomic high-back chairs.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Home Office" data-search="coat_rack coat rack علاقة ملابس">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#58 &bull; Home Office</span>
+        <div class="item-title">Coat Rack</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Home_Office/58_coat_rack_3quarter.svg" alt="Coat Rack 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Home_Office/58_coat_rack_top.svg" alt="Coat Rack Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Home_Office/58_coat_rack_front.svg" alt="Coat Rack Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">علاقة ملابس &bull; <code style="color: #64748b; font-size: 11px;">coat_rack</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">0.9m</span></div>
+        <div>Depth: <span class="spec-val">0.38m</span></div>
+        <div>Height: <span class="spec-val">1.85m</span></div>
+        <div>Triangles: <span class="spec-val">236</span></div>
+        <div>Vertices: <span class="spec-val">708</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Executive cantilevered timber desks with leather desk pad inserts, cable management raceways, ergonomic high-back chairs.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Stairs" data-search="stairs staircase درج">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#59 &bull; Stairs</span>
+        <div class="item-title">Staircase</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Stairs/59_stairs_3quarter.svg" alt="Staircase 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Stairs/59_stairs_top.svg" alt="Staircase Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Stairs/59_stairs_front.svg" alt="Staircase Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">درج &bull; <code style="color: #64748b; font-size: 11px;">stairs</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">1m</span></div>
+        <div>Depth: <span class="spec-val">3.22m</span></div>
+        <div>Height: <span class="spec-val">2.75m</span></div>
+        <div>Triangles: <span class="spec-val">358</span></div>
+        <div>Vertices: <span class="spec-val">1,074</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Floating cantilevered solid hardwood stair treads with concealed wall anchors and minimalist continuous glass balustrades.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Stairs" data-search="stairs_u u-shaped staircase درج على شكل U مع بسطة">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#60 &bull; Stairs</span>
+        <div class="item-title">U-Shaped Staircase</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Stairs/60_stairs_u_3quarter.svg" alt="U-Shaped Staircase 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Stairs/60_stairs_u_top.svg" alt="U-Shaped Staircase Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Stairs/60_stairs_u_front.svg" alt="U-Shaped Staircase Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">درج على شكل U مع بسطة &bull; <code style="color: #64748b; font-size: 11px;">stairs_u</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">2.1m</span></div>
+        <div>Depth: <span class="spec-val">2.42m</span></div>
+        <div>Height: <span class="spec-val">2.75m</span></div>
+        <div>Triangles: <span class="spec-val">356</span></div>
+        <div>Vertices: <span class="spec-val">1,068</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Floating cantilevered solid hardwood stair treads with concealed wall anchors and minimalist continuous glass balustrades.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Smart Home & Energy" data-search="robot_vacuum robot vacuum cleaner مكنسة روبوتية">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#61 &bull; Smart Home & Energy</span>
+        <div class="item-title">Robot Vacuum Cleaner</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Smart_Home___Energy/61_robot_vacuum_3quarter.svg" alt="Robot Vacuum Cleaner 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Smart_Home___Energy/61_robot_vacuum_top.svg" alt="Robot Vacuum Cleaner Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Smart_Home___Energy/61_robot_vacuum_front.svg" alt="Robot Vacuum Cleaner Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">مكنسة روبوتية &bull; <code style="color: #64748b; font-size: 11px;">robot_vacuum</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">0.378m</span></div>
+        <div>Depth: <span class="spec-val">0.332m</span></div>
+        <div>Height: <span class="spec-val">0.426m</span></div>
+        <div>Triangles: <span class="spec-val">170</span></div>
+        <div>Vertices: <span class="spec-val">510</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Precision architectural enclosures, brushed anodized faceplates, recessed status halos, flush wallboxes.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Smart Home & Energy" data-search="inverter solar inverter عاكس شمسي">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#62 &bull; Smart Home & Energy</span>
+        <div class="item-title">Solar Inverter</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Smart_Home___Energy/62_inverter_3quarter.svg" alt="Solar Inverter 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Smart_Home___Energy/62_inverter_top.svg" alt="Solar Inverter Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Smart_Home___Energy/62_inverter_front.svg" alt="Solar Inverter Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">عاكس شمسي &bull; <code style="color: #64748b; font-size: 11px;">inverter</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">0.5m</span></div>
+        <div>Depth: <span class="spec-val">0.235m</span></div>
+        <div>Height: <span class="spec-val">0.65m</span></div>
+        <div>Triangles: <span class="spec-val">66</span></div>
+        <div>Vertices: <span class="spec-val">198</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Precision architectural enclosures, brushed anodized faceplates, recessed status halos, flush wallboxes.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Smart Home & Energy" data-search="home_battery home battery بطارية منزلية">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#63 &bull; Smart Home & Energy</span>
+        <div class="item-title">Home Battery</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Smart_Home___Energy/63_home_battery_3quarter.svg" alt="Home Battery 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Smart_Home___Energy/63_home_battery_top.svg" alt="Home Battery Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Smart_Home___Energy/63_home_battery_front.svg" alt="Home Battery Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">بطارية منزلية &bull; <code style="color: #64748b; font-size: 11px;">home_battery</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">0.6m</span></div>
+        <div>Depth: <span class="spec-val">0.25m</span></div>
+        <div>Height: <span class="spec-val">1.1m</span></div>
+        <div>Triangles: <span class="spec-val">46</span></div>
+        <div>Vertices: <span class="spec-val">138</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Precision architectural enclosures, brushed anodized faceplates, recessed status halos, flush wallboxes.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Smart Home & Energy" data-search="wallbox ev charger شاحن سيارة كهربائية جداري">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#64 &bull; Smart Home & Energy</span>
+        <div class="item-title">EV Charger</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Smart_Home___Energy/64_wallbox_3quarter.svg" alt="EV Charger 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Smart_Home___Energy/64_wallbox_top.svg" alt="EV Charger Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Smart_Home___Energy/64_wallbox_front.svg" alt="EV Charger Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">شاحن سيارة كهربائية جداري &bull; <code style="color: #64748b; font-size: 11px;">wallbox</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">0.3m</span></div>
+        <div>Depth: <span class="spec-val">0.22m</span></div>
+        <div>Height: <span class="spec-val">0.84m</span></div>
+        <div>Triangles: <span class="spec-val">110</span></div>
+        <div>Vertices: <span class="spec-val">330</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Precision architectural enclosures, brushed anodized faceplates, recessed status halos, flush wallboxes.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Smart Home & Energy" data-search="meter electricity meter عداد كهرباء">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#65 &bull; Smart Home & Energy</span>
+        <div class="item-title">Electricity Meter</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Smart_Home___Energy/65_meter_3quarter.svg" alt="Electricity Meter 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Smart_Home___Energy/65_meter_top.svg" alt="Electricity Meter Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Smart_Home___Energy/65_meter_front.svg" alt="Electricity Meter Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">عداد كهرباء &bull; <code style="color: #64748b; font-size: 11px;">meter</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">0.4m</span></div>
+        <div>Depth: <span class="spec-val">0.241m</span></div>
+        <div>Height: <span class="spec-val">0.65m</span></div>
+        <div>Triangles: <span class="spec-val">92</span></div>
+        <div>Vertices: <span class="spec-val">276</span></div>
+        <div>2D Symbol: <span class="spec-val">Standard</span></div>
+      </div>
+      <div class="luxury-notes">Precision architectural enclosures, brushed anodized faceplates, recessed status halos, flush wallboxes.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Smart Home & Energy" data-search="grid_point grid connection point نقطة ربط بالشبكة الكهربائية">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#66 &bull; Smart Home & Energy</span>
+        <div class="item-title">Grid Connection Point</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Smart_Home___Energy/66_grid_point_3quarter.svg" alt="Grid Connection Point 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Smart_Home___Energy/66_grid_point_top.svg" alt="Grid Connection Point Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Smart_Home___Energy/66_grid_point_front.svg" alt="Grid Connection Point Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">نقطة ربط بالشبكة الكهربائية &bull; <code style="color: #64748b; font-size: 11px;">grid_point</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">0.43m</span></div>
+        <div>Depth: <span class="spec-val">0.25m</span></div>
+        <div>Height: <span class="spec-val">0.635m</span></div>
+        <div>Triangles: <span class="spec-val">34</span></div>
+        <div>Vertices: <span class="spec-val">102</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Precision architectural enclosures, brushed anodized faceplates, recessed status halos, flush wallboxes.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Smart Home & Energy" data-search="pool_pump pool filter pump مضخة فلتر مسبح">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#67 &bull; Smart Home & Energy</span>
+        <div class="item-title">Pool Filter Pump</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Smart_Home___Energy/67_pool_pump_3quarter.svg" alt="Pool Filter Pump 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Smart_Home___Energy/67_pool_pump_top.svg" alt="Pool Filter Pump Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Smart_Home___Energy/67_pool_pump_front.svg" alt="Pool Filter Pump Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">مضخة فلتر مسبح &bull; <code style="color: #64748b; font-size: 11px;">pool_pump</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">0.7m</span></div>
+        <div>Depth: <span class="spec-val">0.32m</span></div>
+        <div>Height: <span class="spec-val">0.4m</span></div>
+        <div>Triangles: <span class="spec-val">138</span></div>
+        <div>Vertices: <span class="spec-val">414</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Precision architectural enclosures, brushed anodized faceplates, recessed status halos, flush wallboxes.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Smart Home & Energy" data-search="pool_filter pool sand filter فلتر رملي للمسبح">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#68 &bull; Smart Home & Energy</span>
+        <div class="item-title">Pool Sand Filter</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Smart_Home___Energy/68_pool_filter_3quarter.svg" alt="Pool Sand Filter 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Smart_Home___Energy/68_pool_filter_top.svg" alt="Pool Sand Filter Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Smart_Home___Energy/68_pool_filter_front.svg" alt="Pool Sand Filter Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">فلتر رملي للمسبح &bull; <code style="color: #64748b; font-size: 11px;">pool_filter</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">0.6m</span></div>
+        <div>Depth: <span class="spec-val">0.6m</span></div>
+        <div>Height: <span class="spec-val">1m</span></div>
+        <div>Triangles: <span class="spec-val">320</span></div>
+        <div>Vertices: <span class="spec-val">960</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Precision architectural enclosures, brushed anodized faceplates, recessed status halos, flush wallboxes.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Smart Home & Energy" data-search="pool_heat_pump pool heat pump مضخة حرارية للمسبح">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#69 &bull; Smart Home & Energy</span>
+        <div class="item-title">Pool Heat Pump</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Smart_Home___Energy/69_pool_heat_pump_3quarter.svg" alt="Pool Heat Pump 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Smart_Home___Energy/69_pool_heat_pump_top.svg" alt="Pool Heat Pump Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Smart_Home___Energy/69_pool_heat_pump_front.svg" alt="Pool Heat Pump Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">مضخة حرارية للمسبح &bull; <code style="color: #64748b; font-size: 11px;">pool_heat_pump</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">1m</span></div>
+        <div>Depth: <span class="spec-val">0.458m</span></div>
+        <div>Height: <span class="spec-val">0.75m</span></div>
+        <div>Triangles: <span class="spec-val">44</span></div>
+        <div>Vertices: <span class="spec-val">132</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Precision architectural enclosures, brushed anodized faceplates, recessed status halos, flush wallboxes.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Smart Home & Energy" data-search="pool_dosing pool chemical dosing system نظام معايرة جرعات المسبح">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#70 &bull; Smart Home & Energy</span>
+        <div class="item-title">Pool Chemical Dosing System</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Smart_Home___Energy/70_pool_dosing_3quarter.svg" alt="Pool Chemical Dosing System 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Smart_Home___Energy/70_pool_dosing_top.svg" alt="Pool Chemical Dosing System Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Smart_Home___Energy/70_pool_dosing_front.svg" alt="Pool Chemical Dosing System Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">نظام معايرة جرعات المسبح &bull; <code style="color: #64748b; font-size: 11px;">pool_dosing</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">0.4m</span></div>
+        <div>Depth: <span class="spec-val">0.217m</span></div>
+        <div>Height: <span class="spec-val">1.13m</span></div>
+        <div>Triangles: <span class="spec-val">156</span></div>
+        <div>Vertices: <span class="spec-val">468</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Precision architectural enclosures, brushed anodized faceplates, recessed status halos, flush wallboxes.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Smart Home & Energy" data-search="pool_valve ball valve صمام كروي">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#71 &bull; Smart Home & Energy</span>
+        <div class="item-title">Ball Valve</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Smart_Home___Energy/71_pool_valve_3quarter.svg" alt="Ball Valve 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Smart_Home___Energy/71_pool_valve_top.svg" alt="Ball Valve Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Smart_Home___Energy/71_pool_valve_front.svg" alt="Ball Valve Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">صمام كروي &bull; <code style="color: #64748b; font-size: 11px;">pool_valve</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">0.16m</span></div>
+        <div>Depth: <span class="spec-val">0.06m</span></div>
+        <div>Height: <span class="spec-val">0.117m</span></div>
+        <div>Triangles: <span class="spec-val">88</span></div>
+        <div>Vertices: <span class="spec-val">264</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Precision architectural enclosures, brushed anodized faceplates, recessed status halos, flush wallboxes.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Outdoor" data-search="parking parking space موقف سيارات">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#72 &bull; Outdoor</span>
+        <div class="item-title">Parking Space</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Outdoor/72_parking_3quarter.svg" alt="Parking Space 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Outdoor/72_parking_top.svg" alt="Parking Space Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Outdoor/72_parking_front.svg" alt="Parking Space Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">موقف سيارات &bull; <code style="color: #64748b; font-size: 11px;">parking</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">1.8m</span></div>
+        <div>Depth: <span class="spec-val">0.153m</span></div>
+        <div>Height: <span class="spec-val">0.09m</span></div>
+        <div>Triangles: <span class="spec-val">40</span></div>
+        <div>Vertices: <span class="spec-val">120</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Architectural permeable pavers, concealed motorized cassette awnings with tensioned fabric, satin powder-coated waste housings.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Outdoor" data-search="awning folding canopy مظلة قابلة للطي">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#73 &bull; Outdoor</span>
+        <div class="item-title">Folding Canopy</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Outdoor/73_awning_3quarter.svg" alt="Folding Canopy 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Outdoor/73_awning_top.svg" alt="Folding Canopy Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Outdoor/73_awning_front.svg" alt="Folding Canopy Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">مظلة قابلة للطي &bull; <code style="color: #64748b; font-size: 11px;">awning</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">3.5m</span></div>
+        <div>Depth: <span class="spec-val">1.955m</span></div>
+        <div>Height: <span class="spec-val">0.736m</span></div>
+        <div>Triangles: <span class="spec-val">156</span></div>
+        <div>Vertices: <span class="spec-val">468</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Architectural permeable pavers, concealed motorized cassette awnings with tensioned fabric, satin powder-coated waste housings.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Outdoor" data-search="waste_bin waste bin حاوية نفايات">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#74 &bull; Outdoor</span>
+        <div class="item-title">Waste Bin</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Outdoor/74_waste_bin_3quarter.svg" alt="Waste Bin 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Outdoor/74_waste_bin_top.svg" alt="Waste Bin Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Outdoor/74_waste_bin_front.svg" alt="Waste Bin Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">حاوية نفايات &bull; <code style="color: #64748b; font-size: 11px;">waste_bin</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">0.6m</span></div>
+        <div>Depth: <span class="spec-val">0.62m</span></div>
+        <div>Height: <span class="spec-val">1.05m</span></div>
+        <div>Triangles: <span class="spec-val">202</span></div>
+        <div>Vertices: <span class="spec-val">606</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Architectural permeable pavers, concealed motorized cassette awnings with tensioned fabric, satin powder-coated waste housings.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Outdoor" data-search="mailbox mailbox صندوق بريد">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#75 &bull; Outdoor</span>
+        <div class="item-title">Mailbox</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Outdoor/75_mailbox_3quarter.svg" alt="Mailbox 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Outdoor/75_mailbox_top.svg" alt="Mailbox Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Outdoor/75_mailbox_front.svg" alt="Mailbox Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">صندوق بريد &bull; <code style="color: #64748b; font-size: 11px;">mailbox</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">0.42m</span></div>
+        <div>Depth: <span class="spec-val">0.185m</span></div>
+        <div>Height: <span class="spec-val">0.45m</span></div>
+        <div>Triangles: <span class="spec-val">82</span></div>
+        <div>Vertices: <span class="spec-val">246</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Architectural permeable pavers, concealed motorized cassette awnings with tensioned fabric, satin powder-coated waste housings.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Electrical & Network" data-search="wall_switch wall light switch مفتاح إضاءة جداري">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#76 &bull; Electrical & Network</span>
+        <div class="item-title">Wall Light Switch</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Electrical___Network/76_wall_switch_3quarter.svg" alt="Wall Light Switch 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Electrical___Network/76_wall_switch_top.svg" alt="Wall Light Switch Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Electrical___Network/76_wall_switch_front.svg" alt="Wall Light Switch Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">مفتاح إضاءة جداري &bull; <code style="color: #64748b; font-size: 11px;">wall_switch</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">0.085m</span></div>
+        <div>Depth: <span class="spec-val">0.03m</span></div>
+        <div>Height: <span class="spec-val">0.085m</span></div>
+        <div>Triangles: <span class="spec-val">36</span></div>
+        <div>Vertices: <span class="spec-val">108</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Ultra-slim 1.5mm wall plate profiles with chamfered borders, recessed tactile rocker switches, subtle LED indicators.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Electrical & Network" data-search="wall_socket wall electrical socket مقبس كهربائي جداري">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#77 &bull; Electrical & Network</span>
+        <div class="item-title">Wall Electrical Socket</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Electrical___Network/77_wall_socket_3quarter.svg" alt="Wall Electrical Socket 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Electrical___Network/77_wall_socket_top.svg" alt="Wall Electrical Socket Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Electrical___Network/77_wall_socket_front.svg" alt="Wall Electrical Socket Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">مقبس كهربائي جداري &bull; <code style="color: #64748b; font-size: 11px;">wall_socket</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">0.085m</span></div>
+        <div>Depth: <span class="spec-val">0.026m</span></div>
+        <div>Height: <span class="spec-val">0.085m</span></div>
+        <div>Triangles: <span class="spec-val">96</span></div>
+        <div>Vertices: <span class="spec-val">288</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Ultra-slim 1.5mm wall plate profiles with chamfered borders, recessed tactile rocker switches, subtle LED indicators.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Electrical & Network" data-search="wifi_ap wi-fi access point نقطة وصول واي فاي">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#78 &bull; Electrical & Network</span>
+        <div class="item-title">Wi-Fi Access Point</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Electrical___Network/78_wifi_ap_3quarter.svg" alt="Wi-Fi Access Point 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Electrical___Network/78_wifi_ap_top.svg" alt="Wi-Fi Access Point Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Electrical___Network/78_wifi_ap_front.svg" alt="Wi-Fi Access Point Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">نقطة وصول واي فاي &bull; <code style="color: #64748b; font-size: 11px;">wifi_ap</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">0.2m</span></div>
+        <div>Depth: <span class="spec-val">0.2m</span></div>
+        <div>Height: <span class="spec-val">0.05m</span></div>
+        <div>Triangles: <span class="spec-val">144</span></div>
+        <div>Vertices: <span class="spec-val">432</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Ultra-slim 1.5mm wall plate profiles with chamfered borders, recessed tactile rocker switches, subtle LED indicators.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Electrical & Network" data-search="water_heater water heater سخان مياه">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#79 &bull; Electrical & Network</span>
+        <div class="item-title">Water Heater</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Electrical___Network/79_water_heater_3quarter.svg" alt="Water Heater 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Electrical___Network/79_water_heater_top.svg" alt="Water Heater Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Electrical___Network/79_water_heater_front.svg" alt="Water Heater Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">سخان مياه &bull; <code style="color: #64748b; font-size: 11px;">water_heater</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">0.56m</span></div>
+        <div>Depth: <span class="spec-val">0.572m</span></div>
+        <div>Height: <span class="spec-val">1.5m</span></div>
+        <div>Triangles: <span class="spec-val">216</span></div>
+        <div>Vertices: <span class="spec-val">648</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Ultra-slim 1.5mm wall plate profiles with chamfered borders, recessed tactile rocker switches, subtle LED indicators.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Electrical & Network" data-search="neon_sign neon sign لافتة نيون">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#80 &bull; Electrical & Network</span>
+        <div class="item-title">Neon Sign</div>
+      </div>
+      <span class="badge badge-pass">PASS</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Electrical___Network/80_neon_sign_3quarter.svg" alt="Neon Sign 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Electrical___Network/80_neon_sign_top.svg" alt="Neon Sign Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Electrical___Network/80_neon_sign_front.svg" alt="Neon Sign Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">لافتة نيون &bull; <code style="color: #64748b; font-size: 11px;">neon_sign</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">1.2m</span></div>
+        <div>Depth: <span class="spec-val">0.042m</span></div>
+        <div>Height: <span class="spec-val">0.45m</span></div>
+        <div>Triangles: <span class="spec-val">110</span></div>
+        <div>Vertices: <span class="spec-val">330</span></div>
+        <div>2D Symbol: <span class="spec-val">Verified</span></div>
+      </div>
+      <div class="luxury-notes">Ultra-slim 1.5mm wall plate profiles with chamfered borders, recessed tactile rocker switches, subtle LED indicators.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Domolux Exclusive" data-search="domolux.luxury_spa_bathtub domolux luxury spa bathtub حوض استحمام سبا فاخر">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#81 &bull; Domolux Exclusive</span>
+        <div class="item-title">Domolux Luxury Spa Bathtub</div>
+      </div>
+      <span class="badge badge-domolux">DOMOLUX</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Domolux_Exclusive/81_domolux.luxury_spa_bathtub_3quarter.svg" alt="Domolux Luxury Spa Bathtub 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Domolux_Exclusive/81_domolux.luxury_spa_bathtub_top.svg" alt="Domolux Luxury Spa Bathtub Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Domolux_Exclusive/81_domolux.luxury_spa_bathtub_front.svg" alt="Domolux Luxury Spa Bathtub Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">حوض استحمام سبا فاخر &bull; <code style="color: #64748b; font-size: 11px;">domolux.luxury_spa_bathtub</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">1.9m</span></div>
+        <div>Depth: <span class="spec-val">1.03m</span></div>
+        <div>Height: <span class="spec-val">0.981m</span></div>
+        <div>Triangles: <span class="spec-val">1,146</span></div>
+        <div>Vertices: <span class="spec-val">3,438</span></div>
+        <div>2D Symbol: <span class="spec-val">Standard</span></div>
+      </div>
+      <div class="luxury-notes">Cryptographically signed luxury furniture: executive marble-inlay cantilevered desk and multi-zone thermo-massage spa bathtub.</div>
+    </div>
+  </div>
+
+  <div class="item-card" data-category="Domolux Exclusive" data-search="domolux.executive_desk domolux executive desk مكتب تنفيذي فاخر">
+    <div class="card-header">
+      <div>
+        <span class="item-num">#82 &bull; Domolux Exclusive</span>
+        <div class="item-title">Domolux Executive Desk</div>
+      </div>
+      <span class="badge badge-domolux">DOMOLUX</span>
+    </div>
+    <div class="card-views">
+      <div class="view-container view-persp">
+        <img src="../inspection_screenshots/inspection_screenshots/Domolux_Exclusive/82_domolux.executive_desk_3quarter.svg" alt="Domolux Executive Desk 3D" loading="lazy">
+        <div class="view-caption">3/4 Perspective</div>
+      </div>
+      <div class="view-container view-top">
+        <img src="../inspection_screenshots/inspection_screenshots/Domolux_Exclusive/82_domolux.executive_desk_top.svg" alt="Domolux Executive Desk Top" loading="lazy">
+        <div class="view-caption">Top Plan</div>
+      </div>
+      <div class="view-container view-front">
+        <img src="../inspection_screenshots/inspection_screenshots/Domolux_Exclusive/82_domolux.executive_desk_front.svg" alt="Domolux Executive Desk Front" loading="lazy">
+        <div class="view-caption">Front Elevation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="item-ar">مكتب تنفيذي فاخر &bull; <code style="color: #64748b; font-size: 11px;">domolux.executive_desk</code></div>
+      <div class="specs-grid">
+        <div>Width: <span class="spec-val">2.2m</span></div>
+        <div>Depth: <span class="spec-val">1m</span></div>
+        <div>Height: <span class="spec-val">0.76m</span></div>
+        <div>Triangles: <span class="spec-val">10</span></div>
+        <div>Vertices: <span class="spec-val">30</span></div>
+        <div>2D Symbol: <span class="spec-val">Standard</span></div>
+      </div>
+      <div class="luxury-notes">Cryptographically signed luxury furniture: executive marble-inlay cantilevered desk and multi-zone thermo-massage spa bathtub.</div>
+    </div>
+  </div>
+
+</main>
+
+<div class="links-section">
+  <a class="link-btn" href="all-82-furniture-contact-sheet.png" target="_blank">View Master Contact Sheet (all-82-furniture-contact-sheet.png)</a>
+  <a class="link-btn" href="category_sheets/" target="_blank">Browse Category Contact Sheets (13 Sheets)</a>
+  <a class="link-btn" href="visual-review.md" target="_blank">Read In-Depth Visual Review (visual-review.md)</a>
+  <a class="link-btn" href="final-acceptance-report.md" target="_blank">Final Acceptance Report (final-acceptance-report.md)</a>
+</div>
+
+<script>
+  let activeCategory = 'All';
+  let viewMode = 'all';
+
+  function filterCategory(cat) {
+    activeCategory = cat;
+    document.querySelectorAll('.pill').forEach(p => {
+      p.classList.toggle('active', p.innerText.startsWith(cat) || (cat === 'All' && p.innerText.startsWith('All')));
+    });
+    filterItems();
+  }
+
+  function filterItems() {
+    const q = document.getElementById('searchInput').value.toLowerCase();
+    const cards = document.querySelectorAll('.item-card');
+    cards.forEach(card => {
+      const cardCat = card.getAttribute('data-category');
+      const searchData = card.getAttribute('data-search');
+      const matchesCat = activeCategory === 'All' || cardCat === activeCategory;
+      const matchesSearch = !q || searchData.includes(q);
+      card.style.display = matchesCat && matchesSearch ? 'flex' : 'none';
+    });
+  }
+
+  function setViewMode(mode) {
+    viewMode = mode;
+    document.querySelectorAll('.btn-toggle').forEach(b => b.classList.remove('active'));
+    event.target.classList.add('active');
+
+    document.querySelectorAll('.view-container').forEach(c => {
+      if (mode === 'all') {
+        c.style.display = 'block';
+      } else if (mode === 'persp') {
+        c.style.display = c.classList.contains('view-persp') ? 'block' : 'none';
+      } else if (mode === 'top') {
+        c.style.display = c.classList.contains('view-top') ? 'block' : 'none';
+      } else if (mode === 'front') {
+        c.style.display = c.classList.contains('view-front') ? 'block' : 'none';
+      }
+    });
+  }
+</script>
+
+</body>
+</html>

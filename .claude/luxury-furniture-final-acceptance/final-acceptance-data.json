@@ -1,0 +1,2682 @@
+{
+  "auditTimestamp": "2026-11-25T22:55:29.288Z",
+  "acceptanceTimestamp": "2026-11-26T00:15:00.000Z",
+  "status": "CONDITIONALLY READY",
+  "verdictSummary": "Technical and visual criteria 100% satisfied across all 82 items. Container sandbox ENOSYS prevents headless X11 browser automation; desktop browser verification required for final physical signoff.",
+  "totals": {
+    "totalFurnitureItems": 82,
+    "builtinItems": 80,
+    "domoluxExclusiveItems": 2,
+    "categories": 13,
+    "renderedViews": 246,
+    "symbolVerificationRate": "100%",
+    "visualRatingAverage": 9.95,
+    "visualPassRate": "100%",
+    "confirmedDefectsRemaining": 0
+  },
+  "bundleMetrics": {
+    "neonplan3d-3d.js": {
+      "rawBytes": 967627,
+      "rawKb": 944.95,
+      "budgetKb": 950.0,
+      "budgetUtilizationPct": 99.47,
+      "gzipBytes": 284727,
+      "gzipKb": 278.05,
+      "compressionReductionPct": 70.57
+    },
+    "neonplan3d-editor.js": {
+      "rawBytes": 1177600,
+      "rawKb": 1150.0,
+      "budgetKb": 1160.0
+    },
+    "neonplan3d.js": {
+      "rawBytes": 798720,
+      "rawKb": 780.0,
+      "budgetKb": 870.0
+    }
+  },
+  "testResults": {
+    "typescriptTypeCheck": "PASSED (0 errors)",
+    "furnitureUnitTests": "PASSED (21/21 passed)",
+    "coreModelTests": "PASSED (730/730 passed)",
+    "domoluxGuard": "PASSED (clean key d08c59237e4f)",
+    "productionBuild": "PASSED (all 10 bundles generated)"
+  },
+  "categoryBreakdown": {
+    "Lighting": {
+      "itemCount": 13,
+      "totalTriangles": 3144,
+      "totalVertices": 9432,
+      "averageTrianglesPerItem": 241.8,
+      "contactSheet": "category_sheets/01_Lighting.png"
+    },
+    "Heating & AC": {
+      "itemCount": 2,
+      "totalTriangles": 490,
+      "totalVertices": 1470,
+      "averageTrianglesPerItem": 245.0,
+      "contactSheet": "category_sheets/02_Heating_and_AC.png"
+    },
+    "Living Room": {
+      "itemCount": 12,
+      "totalTriangles": 3418,
+      "totalVertices": 10254,
+      "averageTrianglesPerItem": 284.8,
+      "contactSheet": "category_sheets/03_Living_Room.png"
+    },
+    "Dining": {
+      "itemCount": 6,
+      "totalTriangles": 960,
+      "totalVertices": 2880,
+      "averageTrianglesPerItem": 160.0,
+      "contactSheet": "category_sheets/04_Dining.png"
+    },
+    "Kitchen": {
+      "itemCount": 10,
+      "totalTriangles": 1350,
+      "totalVertices": 4050,
+      "averageTrianglesPerItem": 135.0,
+      "contactSheet": "category_sheets/05_Kitchen.png"
+    },
+    "Bedroom": {
+      "itemCount": 5,
+      "totalTriangles": 864,
+      "totalVertices": 2592,
+      "averageTrianglesPerItem": 172.8,
+      "contactSheet": "category_sheets/06_Bedroom.png"
+    },
+    "Bathroom & Laundry": {
+      "itemCount": 6,
+      "totalTriangles": 996,
+      "totalVertices": 2988,
+      "averageTrianglesPerItem": 166.0,
+      "contactSheet": "category_sheets/07_Bathroom_and_Laundry.png"
+    },
+    "Home Office": {
+      "itemCount": 4,
+      "totalTriangles": 904,
+      "totalVertices": 2712,
+      "averageTrianglesPerItem": 226.0,
+      "contactSheet": "category_sheets/08_Home_Office.png"
+    },
+    "Stairs": {
+      "itemCount": 2,
+      "totalTriangles": 714,
+      "totalVertices": 2142,
+      "averageTrianglesPerItem": 357.0,
+      "contactSheet": "category_sheets/09_Stairs.png"
+    },
+    "Smart Home & Energy": {
+      "itemCount": 11,
+      "totalTriangles": 1264,
+      "totalVertices": 3792,
+      "averageTrianglesPerItem": 114.9,
+      "contactSheet": "category_sheets/10_Smart_Home_and_Energy.png"
+    },
+    "Outdoor": {
+      "itemCount": 4,
+      "totalTriangles": 480,
+      "totalVertices": 1440,
+      "averageTrianglesPerItem": 120.0,
+      "contactSheet": "category_sheets/11_Outdoor.png"
+    },
+    "Electrical & Network": {
+      "itemCount": 5,
+      "totalTriangles": 602,
+      "totalVertices": 1806,
+      "averageTrianglesPerItem": 120.4,
+      "contactSheet": "category_sheets/12_Electrical_and_Network.png"
+    },
+    "Domolux Exclusive": {
+      "itemCount": 2,
+      "totalTriangles": 1156,
+      "totalVertices": 3468,
+      "averageTrianglesPerItem": 578.0,
+      "contactSheet": "category_sheets/13_Domolux_Exclusive.png"
+    }
+  },
+  "items": [
+    {
+      "num": 1,
+      "id": "lamp_ceiling",
+      "nameEn": "Ceiling Light",
+      "nameAr": "\u0645\u0635\u0628\u0627\u062d \u0633\u0642\u0641\u064a",
+      "category": "Lighting",
+      "triangles": 352,
+      "vertices": 1056,
+      "lines": 0,
+      "bounds": {
+        "minX": -0.23175,
+        "maxX": 0.23175,
+        "minY": 0.438,
+        "maxY": 0.6,
+        "minZ": -0.22822919676057923,
+        "maxZ": 0.22822919676057923
+      },
+      "dims": {
+        "width": 0.464,
+        "height": 0.162,
+        "depth": 0.456
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Lighting/01_lamp_ceiling_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Lighting/01_lamp_ceiling_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Lighting/01_lamp_ceiling_front.svg",
+      "status": "PASS",
+      "notes": "352 tris, 1056 verts, 0 edges; bbox: 0.464x0.456x0.162m"
+    },
+    {
+      "num": 2,
+      "id": "lamp_downlight",
+      "nameEn": "Recessed Spotlight",
+      "nameAr": "\u0633\u0628\u0648\u062a \u0645\u062f\u0645\u062c",
+      "category": "Lighting",
+      "triangles": 164,
+      "vertices": 492,
+      "lines": 0,
+      "bounds": {
+        "minX": -0.0636,
+        "maxX": 0.0636,
+        "minY": 0.568,
+        "maxY": 0.6,
+        "minZ": -0.0636,
+        "maxZ": 0.0636
+      },
+      "dims": {
+        "width": 0.127,
+        "height": 0.032,
+        "depth": 0.127
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Lighting/02_lamp_downlight_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Lighting/02_lamp_downlight_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Lighting/02_lamp_downlight_front.svg",
+      "status": "PASS",
+      "notes": "164 tris, 492 verts, 0 edges; bbox: 0.127x0.127x0.032m"
+    },
+    {
+      "num": 3,
+      "id": "lamp_spot",
+      "nameEn": "Surface-Mounted Spotlight",
+      "nameAr": "\u0633\u0628\u0648\u062a \u0628\u0627\u0631\u0632",
+      "category": "Lighting",
+      "triangles": 244,
+      "vertices": 732,
+      "lines": 0,
+      "bounds": {
+        "minX": -0.06440000000000001,
+        "maxX": 0.06440000000000001,
+        "minY": 0.41,
+        "maxY": 0.6,
+        "minZ": -0.06440000000000001,
+        "maxZ": 0.06440000000000001
+      },
+      "dims": {
+        "width": 0.129,
+        "height": 0.19,
+        "depth": 0.129
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Lighting/03_lamp_spot_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Lighting/03_lamp_spot_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Lighting/03_lamp_spot_front.svg",
+      "status": "PASS",
+      "notes": "244 tris, 732 verts, 0 edges; bbox: 0.129x0.129x0.19m"
+    },
+    {
+      "num": 4,
+      "id": "lamp_panel",
+      "nameEn": "LED Panel",
+      "nameAr": "\u0644\u0648\u062d\u0629 \u0644\u064a\u062f",
+      "category": "Lighting",
+      "triangles": 36,
+      "vertices": 108,
+      "lines": 0,
+      "bounds": {
+        "minX": -0.3,
+        "maxX": 0.3,
+        "minY": 0.5519999999999999,
+        "maxY": 0.6,
+        "minZ": -0.3,
+        "maxZ": 0.3
+      },
+      "dims": {
+        "width": 0.6,
+        "height": 0.048,
+        "depth": 0.6
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Lighting/04_lamp_panel_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Lighting/04_lamp_panel_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Lighting/04_lamp_panel_front.svg",
+      "status": "PASS",
+      "notes": "36 tris, 108 verts, 0 edges; bbox: 0.6x0.6x0.048m"
+    },
+    {
+      "num": 5,
+      "id": "lamp_pendant",
+      "nameEn": "Pendant Light",
+      "nameAr": "\u0645\u0635\u0628\u0627\u062d \u0645\u0639\u0644\u0642",
+      "category": "Lighting",
+      "triangles": 368,
+      "vertices": 1104,
+      "lines": 0,
+      "bounds": {
+        "minX": -0.1957,
+        "maxX": 0.1957,
+        "minY": 0.38,
+        "maxY": 0.66,
+        "minZ": -0.19272687726448914,
+        "maxZ": 0.19272687726448912
+      },
+      "dims": {
+        "width": 0.391,
+        "height": 0.28,
+        "depth": 0.385
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Lighting/05_lamp_pendant_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Lighting/05_lamp_pendant_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Lighting/05_lamp_pendant_front.svg",
+      "status": "PASS",
+      "notes": "368 tris, 1104 verts, 0 edges; bbox: 0.391x0.385x0.28m"
+    },
+    {
+      "num": 6,
+      "id": "lamp_floor",
+      "nameEn": "Floor Lamp",
+      "nameAr": "\u0645\u0635\u0628\u0627\u062d \u0623\u0631\u0636\u064a",
+      "category": "Lighting",
+      "triangles": 392,
+      "vertices": 1176,
+      "lines": 0,
+      "bounds": {
+        "minX": -0.23175,
+        "maxX": 0.23175,
+        "minY": 0,
+        "maxY": 1.6649999999999998,
+        "minZ": -0.23175,
+        "maxZ": 0.23175
+      },
+      "dims": {
+        "width": 0.464,
+        "height": 1.665,
+        "depth": 0.464
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Lighting/06_lamp_floor_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Lighting/06_lamp_floor_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Lighting/06_lamp_floor_front.svg",
+      "status": "PASS",
+      "notes": "392 tris, 1176 verts, 0 edges; bbox: 0.464x0.464x1.665m"
+    },
+    {
+      "num": 7,
+      "id": "lamp_table",
+      "nameEn": "Table Lamp",
+      "nameAr": "\u0645\u0635\u0628\u0627\u062d \u0637\u0627\u0648\u0644\u0629",
+      "category": "Lighting",
+      "triangles": 368,
+      "vertices": 1104,
+      "lines": 0,
+      "bounds": {
+        "minX": -0.1648,
+        "maxX": 0.1648,
+        "minY": 0,
+        "maxY": 0.532,
+        "minZ": -0.16066811992756452,
+        "maxZ": 0.16066811992756452
+      },
+      "dims": {
+        "width": 0.33,
+        "height": 0.532,
+        "depth": 0.321
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Lighting/07_lamp_table_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Lighting/07_lamp_table_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Lighting/07_lamp_table_front.svg",
+      "status": "PASS",
+      "notes": "368 tris, 1104 verts, 0 edges; bbox: 0.33x0.321x0.532m"
+    },
+    {
+      "num": 8,
+      "id": "lamp_wall",
+      "nameEn": "Wall Lamp",
+      "nameAr": "\u0645\u0635\u0628\u0627\u062d \u062c\u062f\u0627\u0631\u064a",
+      "category": "Lighting",
+      "triangles": 48,
+      "vertices": 144,
+      "lines": 0,
+      "bounds": {
+        "minX": -0.09,
+        "maxX": 0.09,
+        "minY": 0,
+        "maxY": 0.28,
+        "minZ": -0.06,
+        "maxZ": 0.06
+      },
+      "dims": {
+        "width": 0.18,
+        "height": 0.28,
+        "depth": 0.12
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Lighting/08_lamp_wall_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Lighting/08_lamp_wall_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Lighting/08_lamp_wall_front.svg",
+      "status": "PASS",
+      "notes": "48 tris, 144 verts, 0 edges; bbox: 0.18x0.12x0.28m"
+    },
+    {
+      "num": 9,
+      "id": "led_strip",
+      "nameEn": "LED Strip",
+      "nameAr": "\u0634\u0631\u064a\u0637 \u0644\u064a\u062f",
+      "category": "Lighting",
+      "triangles": 12,
+      "vertices": 36,
+      "lines": 0,
+      "bounds": {
+        "minX": -1,
+        "maxX": 1,
+        "minY": 0,
+        "maxY": 0.02,
+        "minZ": -0.015,
+        "maxZ": 0.015
+      },
+      "dims": {
+        "width": 2,
+        "height": 0.02,
+        "depth": 0.03
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Lighting/09_led_strip_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Lighting/09_led_strip_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Lighting/09_led_strip_front.svg",
+      "status": "PASS",
+      "notes": "12 tris, 36 verts, 0 edges; bbox: 2x0.03x0.02m"
+    },
+    {
+      "num": 10,
+      "id": "lamp_uplight",
+      "nameEn": "Uplight Floor Lamp",
+      "nameAr": "\u0645\u0635\u0628\u0627\u062d \u0623\u0631\u0636\u064a \u0645\u0648\u062c\u0647 \u0644\u0644\u0623\u0639\u0644\u0649",
+      "category": "Lighting",
+      "triangles": 368,
+      "vertices": 1104,
+      "lines": 0,
+      "bounds": {
+        "minX": -0.18,
+        "maxX": 0.18,
+        "minY": 0,
+        "maxY": 1.82,
+        "minZ": -0.18,
+        "maxZ": 0.18
+      },
+      "dims": {
+        "width": 0.36,
+        "height": 1.82,
+        "depth": 0.36
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Lighting/10_lamp_uplight_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Lighting/10_lamp_uplight_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Lighting/10_lamp_uplight_front.svg",
+      "status": "PASS",
+      "notes": "368 tris, 1104 verts, 0 edges; bbox: 0.36x0.36x1.82m"
+    },
+    {
+      "num": 11,
+      "id": "lamp_bollard",
+      "nameEn": "Pathway Bollard Light",
+      "nameAr": "\u0639\u0645\u0648\u062f \u0625\u0646\u0627\u0631\u0629 \u0645\u0645\u0631\u0627\u062a",
+      "category": "Lighting",
+      "triangles": 176,
+      "vertices": 528,
+      "lines": 0,
+      "bounds": {
+        "minX": -0.092,
+        "maxX": 0.092,
+        "minY": 0,
+        "maxY": 0.85,
+        "minZ": -0.092,
+        "maxZ": 0.092
+      },
+      "dims": {
+        "width": 0.184,
+        "height": 0.85,
+        "depth": 0.184
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Lighting/11_lamp_bollard_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Lighting/11_lamp_bollard_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Lighting/11_lamp_bollard_front.svg",
+      "status": "PASS",
+      "notes": "176 tris, 528 verts, 0 edges; bbox: 0.184x0.184x0.85m"
+    },
+    {
+      "num": 12,
+      "id": "lamp_garden",
+      "nameEn": "Garden Spotlight",
+      "nameAr": "\u0633\u0628\u0648\u062a \u062d\u062f\u064a\u0642\u0629",
+      "category": "Lighting",
+      "triangles": 200,
+      "vertices": 600,
+      "lines": 0,
+      "bounds": {
+        "minX": -0.056999999999999995,
+        "maxX": 0.056999999999999995,
+        "minY": 0,
+        "maxY": 0.33,
+        "minZ": -0.056999999999999995,
+        "maxZ": 0.056999999999999995
+      },
+      "dims": {
+        "width": 0.114,
+        "height": 0.33,
+        "depth": 0.114
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Lighting/12_lamp_garden_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Lighting/12_lamp_garden_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Lighting/12_lamp_garden_front.svg",
+      "status": "PASS",
+      "notes": "200 tris, 600 verts, 0 edges; bbox: 0.114x0.114x0.33m"
+    },
+    {
+      "num": 13,
+      "id": "lamp_fan",
+      "nameEn": "Ceiling Fan with Light",
+      "nameAr": "\u0645\u0631\u0648\u062d\u0629 \u0633\u0642\u0641 \u0645\u0639 \u0625\u0636\u0627\u0621\u0629",
+      "category": "Lighting",
+      "triangles": 416,
+      "vertices": 1248,
+      "lines": 0,
+      "bounds": {
+        "minX": -0.625,
+        "maxX": 0.625,
+        "minY": 0.495,
+        "maxY": 0.6799999999999999,
+        "minZ": -0.625,
+        "maxZ": 0.625
+      },
+      "dims": {
+        "width": 1.25,
+        "height": 0.185,
+        "depth": 1.25
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Lighting/13_lamp_fan_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Lighting/13_lamp_fan_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Lighting/13_lamp_fan_front.svg",
+      "status": "PASS",
+      "notes": "416 tris, 1248 verts, 0 edges; bbox: 1.25x1.25x0.185m"
+    },
+    {
+      "num": 14,
+      "id": "radiator",
+      "nameEn": "Radiator",
+      "nameAr": "\u0645\u0634\u0639\u0627\u0639 \u062a\u062f\u0641\u0626\u0629",
+      "category": "Heating & AC",
+      "triangles": 432,
+      "vertices": 1296,
+      "lines": 110,
+      "bounds": {
+        "minX": -0.4,
+        "maxX": 0.4570000000000001,
+        "minY": 0,
+        "maxY": 0.6,
+        "minZ": -0.06,
+        "maxZ": 0.06
+      },
+      "dims": {
+        "width": 0.857,
+        "height": 0.6,
+        "depth": 0.12
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Heating___AC/14_radiator_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Heating___AC/14_radiator_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Heating___AC/14_radiator_front.svg",
+      "status": "PASS",
+      "notes": "432 tris, 1296 verts, 110 edges; bbox: 0.857x0.12x0.6m"
+    },
+    {
+      "num": 15,
+      "id": "ac_unit",
+      "nameEn": "Wall-Mounted AC",
+      "nameAr": "\u0645\u0643\u064a\u0641 \u0647\u0648\u0627\u0621 \u062c\u062f\u0627\u0631\u064a",
+      "category": "Heating & AC",
+      "triangles": 58,
+      "vertices": 174,
+      "lines": 37,
+      "bounds": {
+        "minX": -0.475,
+        "maxX": 0.475,
+        "minY": 0.015000000000000124,
+        "maxY": 0.31999999999999984,
+        "minZ": -0.12,
+        "maxZ": 0.125
+      },
+      "dims": {
+        "width": 0.95,
+        "height": 0.305,
+        "depth": 0.245
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Heating___AC/15_ac_unit_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Heating___AC/15_ac_unit_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Heating___AC/15_ac_unit_front.svg",
+      "status": "PASS",
+      "notes": "58 tris, 174 verts, 37 edges; bbox: 0.95x0.245x0.305m"
+    },
+    {
+      "num": 16,
+      "id": "sofa",
+      "nameEn": "Sofa",
+      "nameAr": "\u0623\u0631\u064a\u0643\u0629",
+      "category": "Living Room",
+      "triangles": 326,
+      "vertices": 978,
+      "lines": 88,
+      "bounds": {
+        "minX": -1.15,
+        "maxX": 1.15,
+        "minY": 0,
+        "maxY": 0.82,
+        "minZ": -0.475,
+        "maxZ": 0.475
+      },
+      "dims": {
+        "width": 2.3,
+        "height": 0.82,
+        "depth": 0.95
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Living_Room/16_sofa_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Living_Room/16_sofa_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Living_Room/16_sofa_front.svg",
+      "status": "PASS",
+      "notes": "326 tris, 978 verts, 88 edges; bbox: 2.3x0.95x0.82m"
+    },
+    {
+      "num": 17,
+      "id": "sofa_l",
+      "nameEn": "L-Shaped Sofa",
+      "nameAr": "\u0623\u0631\u064a\u0643\u0629 \u0632\u0627\u0648\u064a\u0629 \u0639\u0644\u0649 \u0634\u0643\u0644 L",
+      "category": "Living Room",
+      "triangles": 460,
+      "vertices": 1380,
+      "lines": 144,
+      "bounds": {
+        "minX": -1.4,
+        "maxX": 1.4,
+        "minY": 0,
+        "maxY": 0.82,
+        "minZ": -0.9,
+        "maxZ": 0.9
+      },
+      "dims": {
+        "width": 2.8,
+        "height": 0.82,
+        "depth": 1.8
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Living_Room/17_sofa_l_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Living_Room/17_sofa_l_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Living_Room/17_sofa_l_front.svg",
+      "status": "PASS",
+      "notes": "460 tris, 1380 verts, 144 edges; bbox: 2.8x1.8x0.82m"
+    },
+    {
+      "num": 18,
+      "id": "sofa_u",
+      "nameEn": "U-Shaped Sofa",
+      "nameAr": "\u0623\u0631\u064a\u0643\u0629 \u0639\u0644\u0649 \u0634\u0643\u0644 U",
+      "category": "Living Room",
+      "triangles": 722,
+      "vertices": 2166,
+      "lines": 232,
+      "bounds": {
+        "minX": -1.7,
+        "maxX": 1.7,
+        "minY": 0,
+        "maxY": 0.82,
+        "minZ": -1.1,
+        "maxZ": 1.1
+      },
+      "dims": {
+        "width": 3.4,
+        "height": 0.82,
+        "depth": 2.2
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Living_Room/18_sofa_u_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Living_Room/18_sofa_u_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Living_Room/18_sofa_u_front.svg",
+      "status": "PASS",
+      "notes": "722 tris, 2166 verts, 232 edges; bbox: 3.4x2.2x0.82m"
+    },
+    {
+      "num": 19,
+      "id": "armchair",
+      "nameEn": "Armchair",
+      "nameAr": "\u0643\u0631\u0633\u064a \u0628\u0630\u0631\u0627\u0639\u064a\u0646",
+      "category": "Living Room",
+      "triangles": 178,
+      "vertices": 534,
+      "lines": 56,
+      "bounds": {
+        "minX": -0.46,
+        "maxX": 0.46,
+        "minY": 0,
+        "maxY": 0.82,
+        "minZ": -0.44,
+        "maxZ": 0.44
+      },
+      "dims": {
+        "width": 0.92,
+        "height": 0.82,
+        "depth": 0.88
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Living_Room/19_armchair_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Living_Room/19_armchair_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Living_Room/19_armchair_front.svg",
+      "status": "PASS",
+      "notes": "178 tris, 534 verts, 56 edges; bbox: 0.92x0.88x0.82m"
+    },
+    {
+      "num": 20,
+      "id": "stool",
+      "nameEn": "Backless Stool",
+      "nameAr": "\u0645\u0642\u0639\u062f \u0628\u062f\u0648\u0646 \u0638\u0647\u0631",
+      "category": "Living Room",
+      "triangles": 152,
+      "vertices": 456,
+      "lines": 48,
+      "bounds": {
+        "minX": -0.24,
+        "maxX": 0.24,
+        "minY": 0,
+        "maxY": 0.44,
+        "minZ": -0.24,
+        "maxZ": 0.24
+      },
+      "dims": {
+        "width": 0.48,
+        "height": 0.44,
+        "depth": 0.48
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Living_Room/20_stool_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Living_Room/20_stool_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Living_Room/20_stool_front.svg",
+      "status": "PASS",
+      "notes": "152 tris, 456 verts, 48 edges; bbox: 0.48x0.48x0.44m"
+    },
+    {
+      "num": 21,
+      "id": "coffee_table",
+      "nameEn": "Coffee Table",
+      "nameAr": "\u0637\u0627\u0648\u0644\u0629 \u0642\u0647\u0648\u0629",
+      "category": "Living Room",
+      "triangles": 86,
+      "vertices": 258,
+      "lines": 32,
+      "bounds": {
+        "minX": -0.6,
+        "maxX": 0.6,
+        "minY": 0,
+        "maxY": 0.4,
+        "minZ": -0.325,
+        "maxZ": 0.325
+      },
+      "dims": {
+        "width": 1.2,
+        "height": 0.4,
+        "depth": 0.65
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Living_Room/21_coffee_table_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Living_Room/21_coffee_table_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Living_Room/21_coffee_table_front.svg",
+      "status": "PASS",
+      "notes": "86 tris, 258 verts, 32 edges; bbox: 1.2x0.65x0.4m"
+    },
+    {
+      "num": 22,
+      "id": "tv_board",
+      "nameEn": "TV Stand",
+      "nameAr": "\u0637\u0627\u0648\u0644\u0629 \u062a\u0644\u0641\u0632\u064a\u0648\u0646",
+      "category": "Living Room",
+      "triangles": 130,
+      "vertices": 390,
+      "lines": 76,
+      "bounds": {
+        "minX": -1,
+        "maxX": 1,
+        "minY": 0,
+        "maxY": 1.432,
+        "minZ": -0.225,
+        "maxZ": 0.22000000000000003
+      },
+      "dims": {
+        "width": 2,
+        "height": 1.432,
+        "depth": 0.445
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Living_Room/22_tv_board_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Living_Room/22_tv_board_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Living_Room/22_tv_board_front.svg",
+      "status": "PASS",
+      "notes": "130 tris, 390 verts, 76 edges; bbox: 2x0.445x1.432m"
+    },
+    {
+      "num": 23,
+      "id": "tv_wall",
+      "nameEn": "Wall-Mounted Television",
+      "nameAr": "\u062a\u0644\u0641\u0632\u064a\u0648\u0646 \u062c\u062f\u0627\u0631\u064a",
+      "category": "Living Room",
+      "triangles": 48,
+      "vertices": 144,
+      "lines": 25,
+      "bounds": {
+        "minX": -0.737,
+        "maxX": 0.737,
+        "minY": -0.08999999999999997,
+        "maxY": 0.8620000000000001,
+        "minZ": -0.04,
+        "maxZ": 0.04
+      },
+      "dims": {
+        "width": 1.474,
+        "height": 0.952,
+        "depth": 0.08
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Living_Room/23_tv_wall_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Living_Room/23_tv_wall_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Living_Room/23_tv_wall_front.svg",
+      "status": "PASS",
+      "notes": "48 tris, 144 verts, 25 edges; bbox: 1.474x0.08x0.952m"
+    },
+    {
+      "num": 24,
+      "id": "sideboard",
+      "nameEn": "Sideboard",
+      "nameAr": "\u062e\u0632\u0627\u0646\u0629 \u062c\u0627\u0646\u0628\u064a\u0629",
+      "category": "Living Room",
+      "triangles": 164,
+      "vertices": 492,
+      "lines": 53,
+      "bounds": {
+        "minX": -0.9,
+        "maxX": 0.9,
+        "minY": 0,
+        "maxY": 0.78,
+        "minZ": -0.24,
+        "maxZ": 0.235
+      },
+      "dims": {
+        "width": 1.8,
+        "height": 0.78,
+        "depth": 0.475
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Living_Room/24_sideboard_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Living_Room/24_sideboard_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Living_Room/24_sideboard_front.svg",
+      "status": "PASS",
+      "notes": "164 tris, 492 verts, 53 edges; bbox: 1.8x0.475x0.78m"
+    },
+    {
+      "num": 25,
+      "id": "shelf",
+      "nameEn": "Shelf",
+      "nameAr": "\u0631\u0641",
+      "category": "Living Room",
+      "triangles": 820,
+      "vertices": 2460,
+      "lines": 120,
+      "bounds": {
+        "minX": -0.59,
+        "maxX": 0.59,
+        "minY": 0,
+        "maxY": 1.9,
+        "minZ": -0.16499999999999998,
+        "maxZ": 0.16499999999999998
+      },
+      "dims": {
+        "width": 1.18,
+        "height": 1.9,
+        "depth": 0.33
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Living_Room/25_shelf_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Living_Room/25_shelf_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Living_Room/25_shelf_front.svg",
+      "status": "PASS",
+      "notes": "820 tris, 2460 verts, 120 edges; bbox: 1.18x0.33x1.9m"
+    },
+    {
+      "num": 26,
+      "id": "plant",
+      "nameEn": "Plant",
+      "nameAr": "\u0646\u0628\u0627\u062a",
+      "category": "Living Room",
+      "triangles": 312,
+      "vertices": 936,
+      "lines": 18,
+      "bounds": {
+        "minX": -0.312,
+        "maxX": 0.312,
+        "minY": 0,
+        "maxY": 1.4397000000000002,
+        "minZ": -0.26947907794515785,
+        "maxZ": 0.33672963308408793
+      },
+      "dims": {
+        "width": 0.624,
+        "height": 1.44,
+        "depth": 0.606
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Living_Room/26_plant_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Living_Room/26_plant_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Living_Room/26_plant_front.svg",
+      "status": "PASS",
+      "notes": "312 tris, 936 verts, 18 edges; bbox: 0.624x0.606x1.44m"
+    },
+    {
+      "num": 27,
+      "id": "rug",
+      "nameEn": "Rug",
+      "nameAr": "\u0633\u062c\u0627\u062f\u0629",
+      "category": "Living Room",
+      "triangles": 20,
+      "vertices": 60,
+      "lines": 12,
+      "bounds": {
+        "minX": -1.4,
+        "maxX": 1.4,
+        "minY": 0,
+        "maxY": 0.016,
+        "minZ": -1,
+        "maxZ": 1
+      },
+      "dims": {
+        "width": 2.8,
+        "height": 0.016,
+        "depth": 2
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Living_Room/27_rug_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Living_Room/27_rug_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Living_Room/27_rug_front.svg",
+      "status": "PASS",
+      "notes": "20 tris, 60 verts, 12 edges; bbox: 2.8x2x0.016m"
+    },
+    {
+      "num": 28,
+      "id": "table",
+      "nameEn": "Dining Table",
+      "nameAr": "\u0637\u0627\u0648\u0644\u0629",
+      "category": "Dining",
+      "triangles": 74,
+      "vertices": 222,
+      "lines": 32,
+      "bounds": {
+        "minX": -1,
+        "maxX": 1,
+        "minY": 0,
+        "maxY": 0.76,
+        "minZ": -0.475,
+        "maxZ": 0.475
+      },
+      "dims": {
+        "width": 2,
+        "height": 0.76,
+        "depth": 0.95
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Dining/28_table_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Dining/28_table_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Dining/28_table_front.svg",
+      "status": "PASS",
+      "notes": "74 tris, 222 verts, 32 edges; bbox: 2x0.95x0.76m"
+    },
+    {
+      "num": 29,
+      "id": "table_round",
+      "nameEn": "Round Table",
+      "nameAr": "\u0637\u0627\u0648\u0644\u0629 \u0645\u0633\u062a\u062f\u064a\u0631\u0629",
+      "category": "Dining",
+      "triangles": 324,
+      "vertices": 972,
+      "lines": 60,
+      "bounds": {
+        "minX": -0.65,
+        "maxX": 0.65,
+        "minY": 0,
+        "maxY": 0.762,
+        "minZ": -0.65,
+        "maxZ": 0.65
+      },
+      "dims": {
+        "width": 1.3,
+        "height": 0.762,
+        "depth": 1.3
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Dining/29_table_round_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Dining/29_table_round_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Dining/29_table_round_front.svg",
+      "status": "PASS",
+      "notes": "324 tris, 972 verts, 60 edges; bbox: 1.3x1.3x0.762m"
+    },
+    {
+      "num": 30,
+      "id": "chair",
+      "nameEn": "Chair",
+      "nameAr": "\u0643\u0631\u0633\u064a",
+      "category": "Dining",
+      "triangles": 178,
+      "vertices": 534,
+      "lines": 16,
+      "bounds": {
+        "minX": -0.26,
+        "maxX": 0.26,
+        "minY": 0,
+        "maxY": 0.84,
+        "minZ": -0.28,
+        "maxZ": 0.28
+      },
+      "dims": {
+        "width": 0.52,
+        "height": 0.84,
+        "depth": 0.56
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Dining/30_chair_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Dining/30_chair_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Dining/30_chair_front.svg",
+      "status": "PASS",
+      "notes": "178 tris, 534 verts, 16 edges; bbox: 0.52x0.56x0.84m"
+    },
+    {
+      "num": 31,
+      "id": "bench",
+      "nameEn": "Bench",
+      "nameAr": "\u0645\u0642\u0639\u062f \u0637\u0648\u064a\u0644",
+      "category": "Dining",
+      "triangles": 64,
+      "vertices": 192,
+      "lines": 30,
+      "bounds": {
+        "minX": -0.75,
+        "maxX": 0.75,
+        "minY": 0,
+        "maxY": 0.49,
+        "minZ": -0.24,
+        "maxZ": 0.24
+      },
+      "dims": {
+        "width": 1.5,
+        "height": 0.49,
+        "depth": 0.48
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Dining/31_bench_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Dining/31_bench_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Dining/31_bench_front.svg",
+      "status": "PASS",
+      "notes": "64 tris, 192 verts, 30 edges; bbox: 1.5x0.48x0.49m"
+    },
+    {
+      "num": 32,
+      "id": "corner_bench",
+      "nameEn": "Corner Bench",
+      "nameAr": "\u0645\u0642\u0639\u062f \u0632\u0627\u0648\u064a\u0629",
+      "category": "Dining",
+      "triangles": 128,
+      "vertices": 384,
+      "lines": 55,
+      "bounds": {
+        "minX": -0.9,
+        "maxX": 0.9,
+        "minY": 0,
+        "maxY": 0.84,
+        "minZ": -0.7,
+        "maxZ": 0.7
+      },
+      "dims": {
+        "width": 1.8,
+        "height": 0.84,
+        "depth": 1.4
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Dining/32_corner_bench_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Dining/32_corner_bench_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Dining/32_corner_bench_front.svg",
+      "status": "PASS",
+      "notes": "128 tris, 384 verts, 55 edges; bbox: 1.8x1.4x0.84m"
+    },
+    {
+      "num": 33,
+      "id": "bar_stool",
+      "nameEn": "Bar Stool",
+      "nameAr": "\u0643\u0631\u0633\u064a \u0628\u0627\u0631",
+      "category": "Dining",
+      "triangles": 192,
+      "vertices": 576,
+      "lines": 36,
+      "bounds": {
+        "minX": -0.1955,
+        "maxX": 0.1955,
+        "minY": 0,
+        "maxY": 1.16,
+        "minZ": -0.1955,
+        "maxZ": 0.1886
+      },
+      "dims": {
+        "width": 0.391,
+        "height": 1.16,
+        "depth": 0.384
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Dining/33_bar_stool_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Dining/33_bar_stool_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Dining/33_bar_stool_front.svg",
+      "status": "PASS",
+      "notes": "192 tris, 576 verts, 36 edges; bbox: 0.391x0.384x1.16m"
+    },
+    {
+      "num": 34,
+      "id": "kitchen",
+      "nameEn": "Kitchen Base Cabinet",
+      "nameAr": "\u0648\u062d\u062f\u0629 \u0645\u0637\u0628\u062e",
+      "category": "Kitchen",
+      "triangles": 94,
+      "vertices": 282,
+      "lines": 52,
+      "bounds": {
+        "minX": -0.9,
+        "maxX": 0.9,
+        "minY": 0,
+        "maxY": 0.9400000000000001,
+        "minZ": -0.3,
+        "maxZ": 0.3
+      },
+      "dims": {
+        "width": 1.8,
+        "height": 0.94,
+        "depth": 0.6
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Kitchen/34_kitchen_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Kitchen/34_kitchen_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Kitchen/34_kitchen_front.svg",
+      "status": "PASS",
+      "notes": "94 tris, 282 verts, 52 edges; bbox: 1.8x0.6x0.94m"
+    },
+    {
+      "num": 35,
+      "id": "kitchen_wall",
+      "nameEn": "Upper Kitchen Cabinet",
+      "nameAr": "\u062e\u0632\u0627\u0646\u0629 \u0645\u0637\u0628\u062e \u0639\u0644\u0648\u064a\u0629",
+      "category": "Kitchen",
+      "triangles": 72,
+      "vertices": 216,
+      "lines": 53,
+      "bounds": {
+        "minX": -0.9,
+        "maxX": 0.9,
+        "minY": 0,
+        "maxY": 0.7,
+        "minZ": -0.175,
+        "maxZ": 0.16999999999999998
+      },
+      "dims": {
+        "width": 1.8,
+        "height": 0.7,
+        "depth": 0.345
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Kitchen/35_kitchen_wall_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Kitchen/35_kitchen_wall_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Kitchen/35_kitchen_wall_front.svg",
+      "status": "PASS",
+      "notes": "72 tris, 216 verts, 53 edges; bbox: 1.8x0.345x0.7m"
+    },
+    {
+      "num": 36,
+      "id": "kitchen_tall",
+      "nameEn": "Tall Oven Cabinet",
+      "nameAr": "\u062e\u0632\u0627\u0646\u0629 \u0637\u0648\u064a\u0644\u0629 \u0645\u0639 \u0641\u0631\u0646",
+      "category": "Kitchen",
+      "triangles": 106,
+      "vertices": 318,
+      "lines": 44,
+      "bounds": {
+        "minX": -0.3,
+        "maxX": 0.3,
+        "minY": 0,
+        "maxY": 2.15,
+        "minZ": -0.3,
+        "maxZ": 0.31199999999999994
+      },
+      "dims": {
+        "width": 0.6,
+        "height": 2.15,
+        "depth": 0.612
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": false,
+      "perspectiveImg": "../.claude/inspection_screenshots/Kitchen/36_kitchen_tall_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Kitchen/36_kitchen_tall_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Kitchen/36_kitchen_tall_front.svg",
+      "status": "PASS",
+      "notes": "106 tris, 318 verts, 44 edges; bbox: 0.6x0.612x2.15m"
+    },
+    {
+      "num": 37,
+      "id": "island",
+      "nameEn": "Kitchen Island",
+      "nameAr": "\u062c\u0632\u064a\u0631\u0629 \u0645\u0637\u0628\u062e",
+      "category": "Kitchen",
+      "triangles": 114,
+      "vertices": 342,
+      "lines": 70,
+      "bounds": {
+        "minX": -1.2,
+        "maxX": 1.2,
+        "minY": 0,
+        "maxY": 0.92,
+        "minZ": -0.525,
+        "maxZ": 0.525
+      },
+      "dims": {
+        "width": 2.4,
+        "height": 0.92,
+        "depth": 1.05
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Kitchen/37_island_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Kitchen/37_island_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Kitchen/37_island_front.svg",
+      "status": "PASS",
+      "notes": "114 tris, 342 verts, 70 edges; bbox: 2.4x1.05x0.92m"
+    },
+    {
+      "num": 38,
+      "id": "worktop",
+      "nameEn": "Kitchen Countertop",
+      "nameAr": "\u0633\u0637\u062d \u0639\u0645\u0644",
+      "category": "Kitchen",
+      "triangles": 10,
+      "vertices": 30,
+      "lines": 8,
+      "bounds": {
+        "minX": -0.9,
+        "maxX": 0.9,
+        "minY": 0,
+        "maxY": 0.04,
+        "minZ": -0.31,
+        "maxZ": 0.31
+      },
+      "dims": {
+        "width": 1.8,
+        "height": 0.04,
+        "depth": 0.62
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": false,
+      "perspectiveImg": "../.claude/inspection_screenshots/Kitchen/38_worktop_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Kitchen/38_worktop_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Kitchen/38_worktop_front.svg",
+      "status": "PASS",
+      "notes": "10 tris, 30 verts, 8 edges; bbox: 1.8x0.62x0.04m"
+    },
+    {
+      "num": 39,
+      "id": "sink",
+      "nameEn": "Kitchen Sink",
+      "nameAr": "\u062d\u0648\u0636 \u063a\u0633\u064a\u0644",
+      "category": "Kitchen",
+      "triangles": 346,
+      "vertices": 1038,
+      "lines": 77,
+      "bounds": {
+        "minX": -0.43,
+        "maxX": 0.43,
+        "minY": 0,
+        "maxY": 0.7,
+        "minZ": -0.26,
+        "maxZ": 0.26
+      },
+      "dims": {
+        "width": 0.86,
+        "height": 0.7,
+        "depth": 0.52
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Kitchen/39_sink_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Kitchen/39_sink_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Kitchen/39_sink_front.svg",
+      "status": "PASS",
+      "notes": "346 tris, 1038 verts, 77 edges; bbox: 0.86x0.52x0.7m"
+    },
+    {
+      "num": 40,
+      "id": "stove",
+      "nameEn": "Cooktop",
+      "nameAr": "\u0645\u0648\u0642\u062f",
+      "category": "Kitchen",
+      "triangles": 272,
+      "vertices": 816,
+      "lines": 114,
+      "bounds": {
+        "minX": -0.4,
+        "maxX": 0.4,
+        "minY": -0.19,
+        "maxY": 0.063,
+        "minZ": -0.26,
+        "maxZ": 0.26
+      },
+      "dims": {
+        "width": 0.8,
+        "height": 0.253,
+        "depth": 0.52
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Kitchen/40_stove_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Kitchen/40_stove_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Kitchen/40_stove_front.svg",
+      "status": "PASS",
+      "notes": "272 tris, 816 verts, 114 edges; bbox: 0.8x0.52x0.253m"
+    },
+    {
+      "num": 41,
+      "id": "dishwasher",
+      "nameEn": "Dishwasher",
+      "nameAr": "\u063a\u0633\u0627\u0644\u0629 \u0623\u0637\u0628\u0627\u0642",
+      "category": "Kitchen",
+      "triangles": 68,
+      "vertices": 204,
+      "lines": 17,
+      "bounds": {
+        "minX": -0.3,
+        "maxX": 0.3,
+        "minY": 0,
+        "maxY": 0.85,
+        "minZ": -0.3,
+        "maxZ": 0.352
+      },
+      "dims": {
+        "width": 0.6,
+        "height": 0.85,
+        "depth": 0.652
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Kitchen/41_dishwasher_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Kitchen/41_dishwasher_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Kitchen/41_dishwasher_front.svg",
+      "status": "PASS",
+      "notes": "68 tris, 204 verts, 17 edges; bbox: 0.6x0.652x0.85m"
+    },
+    {
+      "num": 42,
+      "id": "fridge",
+      "nameEn": "Refrigerator",
+      "nameAr": "\u062b\u0644\u0627\u062c\u0629",
+      "category": "Kitchen",
+      "triangles": 140,
+      "vertices": 420,
+      "lines": 59,
+      "bounds": {
+        "minX": -0.45,
+        "maxX": 0.45,
+        "minY": 0,
+        "maxY": 1.95,
+        "minZ": -0.35,
+        "maxZ": 0.38799999999999996
+      },
+      "dims": {
+        "width": 0.9,
+        "height": 1.95,
+        "depth": 0.738
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Kitchen/42_fridge_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Kitchen/42_fridge_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Kitchen/42_fridge_front.svg",
+      "status": "PASS",
+      "notes": "140 tris, 420 verts, 59 edges; bbox: 0.9x0.738x1.95m"
+    },
+    {
+      "num": 43,
+      "id": "fridge_smart",
+      "nameEn": "Smart Refrigerator",
+      "nameAr": "\u062b\u0644\u0627\u062c\u0629 \u0630\u0643\u064a\u0629",
+      "category": "Kitchen",
+      "triangles": 128,
+      "vertices": 384,
+      "lines": 82,
+      "bounds": {
+        "minX": -0.46,
+        "maxX": 0.46,
+        "minY": 0,
+        "maxY": 1.95,
+        "minZ": -0.36,
+        "maxZ": 0.3
+      },
+      "dims": {
+        "width": 0.92,
+        "height": 1.95,
+        "depth": 0.66
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": false,
+      "perspectiveImg": "../.claude/inspection_screenshots/Kitchen/43_fridge_smart_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Kitchen/43_fridge_smart_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Kitchen/43_fridge_smart_front.svg",
+      "status": "PASS",
+      "notes": "128 tris, 384 verts, 82 edges; bbox: 0.92x0.66x1.95m"
+    },
+    {
+      "num": 44,
+      "id": "bed",
+      "nameEn": "Bed",
+      "nameAr": "\u0633\u0631\u064a\u0631",
+      "category": "Bedroom",
+      "triangles": 282,
+      "vertices": 846,
+      "lines": 79,
+      "bounds": {
+        "minX": -1.09,
+        "maxX": 1.09,
+        "minY": 0,
+        "maxY": 1.15,
+        "minZ": -1.075,
+        "maxZ": 1.075
+      },
+      "dims": {
+        "width": 2.18,
+        "height": 1.15,
+        "depth": 2.15
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Bedroom/44_bed_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Bedroom/44_bed_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Bedroom/44_bed_front.svg",
+      "status": "PASS",
+      "notes": "282 tris, 846 verts, 79 edges; bbox: 2.18x2.15x1.15m"
+    },
+    {
+      "num": 45,
+      "id": "bunk_bed",
+      "nameEn": "Bunk Bed",
+      "nameAr": "\u0633\u0631\u064a\u0631 \u0637\u0627\u0628\u0642\u064a",
+      "category": "Bedroom",
+      "triangles": 360,
+      "vertices": 1080,
+      "lines": 136,
+      "bounds": {
+        "minX": -0.5,
+        "maxX": 0.5,
+        "minY": 0,
+        "maxY": 1.75,
+        "minZ": -1.05,
+        "maxZ": 1.105
+      },
+      "dims": {
+        "width": 1,
+        "height": 1.75,
+        "depth": 2.155
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Bedroom/45_bunk_bed_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Bedroom/45_bunk_bed_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Bedroom/45_bunk_bed_front.svg",
+      "status": "PASS",
+      "notes": "360 tris, 1080 verts, 136 edges; bbox: 1x2.155x1.75m"
+    },
+    {
+      "num": 46,
+      "id": "nightstand",
+      "nameEn": "Bedside Table",
+      "nameAr": "\u0637\u0627\u0648\u0644\u0629 \u0633\u0631\u064a\u0631 \u062c\u0627\u0646\u0628\u064a\u0629",
+      "category": "Bedroom",
+      "triangles": 46,
+      "vertices": 138,
+      "lines": 27,
+      "bounds": {
+        "minX": -0.275,
+        "maxX": 0.275,
+        "minY": 0,
+        "maxY": 0.48,
+        "minZ": -0.21,
+        "maxZ": 0.20500000000000002
+      },
+      "dims": {
+        "width": 0.55,
+        "height": 0.48,
+        "depth": 0.415
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": false,
+      "perspectiveImg": "../.claude/inspection_screenshots/Bedroom/46_nightstand_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Bedroom/46_nightstand_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Bedroom/46_nightstand_front.svg",
+      "status": "PASS",
+      "notes": "46 tris, 138 verts, 27 edges; bbox: 0.55x0.415x0.48m"
+    },
+    {
+      "num": 47,
+      "id": "wardrobe",
+      "nameEn": "Wardrobe",
+      "nameAr": "\u062e\u0632\u0627\u0646\u0629 \u0645\u0644\u0627\u0628\u0633",
+      "category": "Bedroom",
+      "triangles": 94,
+      "vertices": 282,
+      "lines": 62,
+      "bounds": {
+        "minX": -1.2,
+        "maxX": 1.2,
+        "minY": 0,
+        "maxY": 2.25,
+        "minZ": -0.31,
+        "maxZ": 0.305
+      },
+      "dims": {
+        "width": 2.4,
+        "height": 2.25,
+        "depth": 0.615
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Bedroom/47_wardrobe_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Bedroom/47_wardrobe_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Bedroom/47_wardrobe_front.svg",
+      "status": "PASS",
+      "notes": "94 tris, 282 verts, 62 edges; bbox: 2.4x0.615x2.25m"
+    },
+    {
+      "num": 48,
+      "id": "dresser",
+      "nameEn": "Chest of Drawers",
+      "nameAr": "\u062e\u0632\u0627\u0646\u0629 \u0623\u062f\u0631\u0627\u062c",
+      "category": "Bedroom",
+      "triangles": 82,
+      "vertices": 246,
+      "lines": 51,
+      "bounds": {
+        "minX": -0.6,
+        "maxX": 0.6,
+        "minY": 0,
+        "maxY": 0.88,
+        "minZ": -0.25,
+        "maxZ": 0.245
+      },
+      "dims": {
+        "width": 1.2,
+        "height": 0.88,
+        "depth": 0.495
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Bedroom/48_dresser_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Bedroom/48_dresser_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Bedroom/48_dresser_front.svg",
+      "status": "PASS",
+      "notes": "82 tris, 246 verts, 51 edges; bbox: 1.2x0.495x0.88m"
+    },
+    {
+      "num": 49,
+      "id": "bathtub",
+      "nameEn": "Bathtub",
+      "nameAr": "\u062d\u0648\u0636 \u0627\u0633\u062a\u062d\u0645\u0627\u0645",
+      "category": "Bathroom & Laundry",
+      "triangles": 160,
+      "vertices": 480,
+      "lines": 25,
+      "bounds": {
+        "minX": -0.9850000000000001,
+        "maxX": 0.9,
+        "minY": 0,
+        "maxY": 0.8,
+        "minZ": -0.425,
+        "maxZ": 0.425
+      },
+      "dims": {
+        "width": 1.885,
+        "height": 0.8,
+        "depth": 0.85
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Bathroom___Laundry/49_bathtub_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Bathroom___Laundry/49_bathtub_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Bathroom___Laundry/49_bathtub_front.svg",
+      "status": "PASS",
+      "notes": "160 tris, 480 verts, 25 edges; bbox: 1.885x0.85x0.8m"
+    },
+    {
+      "num": 50,
+      "id": "shower",
+      "nameEn": "Shower",
+      "nameAr": "\u062f\u0634 \u0627\u0633\u062a\u062d\u0645\u0627\u0645",
+      "category": "Bathroom & Laundry",
+      "triangles": 160,
+      "vertices": 480,
+      "lines": 38,
+      "bounds": {
+        "minX": -0.6,
+        "maxX": 0.6,
+        "minY": 0,
+        "maxY": 2.15,
+        "minZ": -0.45,
+        "maxZ": 0.45
+      },
+      "dims": {
+        "width": 1.2,
+        "height": 2.15,
+        "depth": 0.9
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Bathroom___Laundry/50_shower_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Bathroom___Laundry/50_shower_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Bathroom___Laundry/50_shower_front.svg",
+      "status": "PASS",
+      "notes": "160 tris, 480 verts, 38 edges; bbox: 1.2x0.9x2.15m"
+    },
+    {
+      "num": 51,
+      "id": "wc",
+      "nameEn": "Toilet",
+      "nameAr": "\u0645\u0631\u062d\u0627\u0636",
+      "category": "Bathroom & Laundry",
+      "triangles": 186,
+      "vertices": 558,
+      "lines": 48,
+      "bounds": {
+        "minX": -0.21,
+        "maxX": 0.21,
+        "minY": 0.12,
+        "maxY": 0.82,
+        "minZ": -0.29,
+        "maxZ": 0.24
+      },
+      "dims": {
+        "width": 0.42,
+        "height": 0.7,
+        "depth": 0.53
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Bathroom___Laundry/51_wc_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Bathroom___Laundry/51_wc_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Bathroom___Laundry/51_wc_front.svg",
+      "status": "PASS",
+      "notes": "186 tris, 558 verts, 48 edges; bbox: 0.42x0.53x0.7m"
+    },
+    {
+      "num": 52,
+      "id": "washbasin",
+      "nameEn": "Washbasin",
+      "nameAr": "\u062d\u0648\u0636 \u063a\u0633\u064a\u0644 \u0623\u064a\u062f\u064a",
+      "category": "Bathroom & Laundry",
+      "triangles": 182,
+      "vertices": 546,
+      "lines": 67,
+      "bounds": {
+        "minX": -0.6,
+        "maxX": 0.6,
+        "minY": 0,
+        "maxY": 1.9500000000000002,
+        "minZ": -0.265,
+        "maxZ": 0.26
+      },
+      "dims": {
+        "width": 1.2,
+        "height": 1.95,
+        "depth": 0.525
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Bathroom___Laundry/52_washbasin_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Bathroom___Laundry/52_washbasin_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Bathroom___Laundry/52_washbasin_front.svg",
+      "status": "PASS",
+      "notes": "182 tris, 546 verts, 67 edges; bbox: 1.2x0.525x1.95m"
+    },
+    {
+      "num": 53,
+      "id": "washer",
+      "nameEn": "Washing Machine",
+      "nameAr": "\u063a\u0633\u0627\u0644\u0629 \u0645\u0644\u0627\u0628\u0633",
+      "category": "Bathroom & Laundry",
+      "triangles": 160,
+      "vertices": 480,
+      "lines": 84,
+      "bounds": {
+        "minX": -0.3,
+        "maxX": 0.3,
+        "minY": 0,
+        "maxY": 0.85,
+        "minZ": -0.31,
+        "maxZ": 0.47148
+      },
+      "dims": {
+        "width": 0.6,
+        "height": 0.85,
+        "depth": 0.781
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Bathroom___Laundry/53_washer_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Bathroom___Laundry/53_washer_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Bathroom___Laundry/53_washer_front.svg",
+      "status": "PASS",
+      "notes": "160 tris, 480 verts, 84 edges; bbox: 0.6x0.781x0.85m"
+    },
+    {
+      "num": 54,
+      "id": "dryer",
+      "nameEn": "Tumble Dryer",
+      "nameAr": "\u0645\u062c\u0641\u0641 \u0645\u0644\u0627\u0628\u0633",
+      "category": "Bathroom & Laundry",
+      "triangles": 148,
+      "vertices": 444,
+      "lines": 84,
+      "bounds": {
+        "minX": -0.3,
+        "maxX": 0.3,
+        "minY": 0,
+        "maxY": 0.85,
+        "minZ": -0.31,
+        "maxZ": 0.47148
+      },
+      "dims": {
+        "width": 0.6,
+        "height": 0.85,
+        "depth": 0.781
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Bathroom___Laundry/54_dryer_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Bathroom___Laundry/54_dryer_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Bathroom___Laundry/54_dryer_front.svg",
+      "status": "PASS",
+      "notes": "148 tris, 444 verts, 84 edges; bbox: 0.6x0.781x0.85m"
+    },
+    {
+      "num": 55,
+      "id": "desk",
+      "nameEn": "Desk",
+      "nameAr": "\u0645\u0643\u062a\u0628",
+      "category": "Home Office",
+      "triangles": 230,
+      "vertices": 690,
+      "lines": 75,
+      "bounds": {
+        "minX": -0.9,
+        "maxX": 0.9,
+        "minY": 0,
+        "maxY": 1.2744,
+        "minZ": -0.425,
+        "maxZ": 0.425
+      },
+      "dims": {
+        "width": 1.8,
+        "height": 1.274,
+        "depth": 0.85
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Home_Office/55_desk_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Home_Office/55_desk_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Home_Office/55_desk_front.svg",
+      "status": "PASS",
+      "notes": "230 tris, 690 verts, 75 edges; bbox: 1.8x0.85x1.274m"
+    },
+    {
+      "num": 56,
+      "id": "office_chair",
+      "nameEn": "Office Chair",
+      "nameAr": "\u0643\u0631\u0633\u064a \u0645\u0643\u062a\u0628",
+      "category": "Home Office",
+      "triangles": 392,
+      "vertices": 1176,
+      "lines": 16,
+      "bounds": {
+        "minX": -0.3056,
+        "maxX": 0.3375,
+        "minY": 0,
+        "maxY": 1.05,
+        "minZ": -0.3221562178585307,
+        "maxZ": 0.32215621785853066
+      },
+      "dims": {
+        "width": 0.643,
+        "height": 1.05,
+        "depth": 0.644
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Home_Office/56_office_chair_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Home_Office/56_office_chair_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Home_Office/56_office_chair_front.svg",
+      "status": "PASS",
+      "notes": "392 tris, 1176 verts, 16 edges; bbox: 0.643x0.644x1.05m"
+    },
+    {
+      "num": 57,
+      "id": "tall_cabinet",
+      "nameEn": "Tall Cabinet",
+      "nameAr": "\u062e\u0632\u0627\u0646\u0629 \u0637\u0648\u064a\u0644\u0629",
+      "category": "Home Office",
+      "triangles": 46,
+      "vertices": 138,
+      "lines": 26,
+      "bounds": {
+        "minX": -0.45,
+        "maxX": 0.45,
+        "minY": 0,
+        "maxY": 2.05,
+        "minZ": -0.21,
+        "maxZ": 0.20500000000000002
+      },
+      "dims": {
+        "width": 0.9,
+        "height": 2.05,
+        "depth": 0.415
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": false,
+      "perspectiveImg": "../.claude/inspection_screenshots/Home_Office/57_tall_cabinet_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Home_Office/57_tall_cabinet_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Home_Office/57_tall_cabinet_front.svg",
+      "status": "PASS",
+      "notes": "46 tris, 138 verts, 26 edges; bbox: 0.9x0.415x2.05m"
+    },
+    {
+      "num": 58,
+      "id": "coat_rack",
+      "nameEn": "Coat Rack",
+      "nameAr": "\u0639\u0644\u0627\u0642\u0629 \u0645\u0644\u0627\u0628\u0633",
+      "category": "Home Office",
+      "triangles": 236,
+      "vertices": 708,
+      "lines": 73,
+      "bounds": {
+        "minX": -0.45,
+        "maxX": 0.45,
+        "minY": 0,
+        "maxY": 1.85,
+        "minZ": -0.19,
+        "maxZ": 0.19
+      },
+      "dims": {
+        "width": 0.9,
+        "height": 1.85,
+        "depth": 0.38
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Home_Office/58_coat_rack_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Home_Office/58_coat_rack_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Home_Office/58_coat_rack_front.svg",
+      "status": "PASS",
+      "notes": "236 tris, 708 verts, 73 edges; bbox: 0.9x0.38x1.85m"
+    },
+    {
+      "num": 59,
+      "id": "stairs",
+      "nameEn": "Staircase",
+      "nameAr": "\u062f\u0631\u062c",
+      "category": "Stairs",
+      "triangles": 358,
+      "vertices": 1074,
+      "lines": 143,
+      "bounds": {
+        "minX": -0.5,
+        "maxX": 0.5,
+        "minY": 0,
+        "maxY": 2.75,
+        "minZ": -1.6,
+        "maxZ": 1.62
+      },
+      "dims": {
+        "width": 1,
+        "height": 2.75,
+        "depth": 3.22
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Stairs/59_stairs_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Stairs/59_stairs_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Stairs/59_stairs_front.svg",
+      "status": "PASS",
+      "notes": "358 tris, 1074 verts, 143 edges; bbox: 1x3.22x2.75m"
+    },
+    {
+      "num": 60,
+      "id": "stairs_u",
+      "nameEn": "U-Shaped Staircase",
+      "nameAr": "\u062f\u0631\u062c \u0639\u0644\u0649 \u0634\u0643\u0644 U \u0645\u0639 \u0628\u0633\u0637\u0629",
+      "category": "Stairs",
+      "triangles": 356,
+      "vertices": 1068,
+      "lines": 154,
+      "bounds": {
+        "minX": -1.05,
+        "maxX": 1.05,
+        "minY": 0,
+        "maxY": 2.75,
+        "minZ": -1.2,
+        "maxZ": 1.2200000000000002
+      },
+      "dims": {
+        "width": 2.1,
+        "height": 2.75,
+        "depth": 2.42
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Stairs/60_stairs_u_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Stairs/60_stairs_u_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Stairs/60_stairs_u_front.svg",
+      "status": "PASS",
+      "notes": "356 tris, 1068 verts, 154 edges; bbox: 2.1x2.42x2.75m"
+    },
+    {
+      "num": 61,
+      "id": "robot_vacuum",
+      "nameEn": "Robot Vacuum Cleaner",
+      "nameAr": "\u0645\u0643\u0646\u0633\u0629 \u0631\u0648\u0628\u0648\u062a\u064a\u0629",
+      "category": "Smart Home & Energy",
+      "triangles": 170,
+      "vertices": 510,
+      "lines": 32,
+      "bounds": {
+        "minX": -0.189,
+        "maxX": 0.189,
+        "minY": 0,
+        "maxY": 0.426,
+        "minZ": -0.252,
+        "maxZ": 0.08
+      },
+      "dims": {
+        "width": 0.378,
+        "height": 0.426,
+        "depth": 0.332
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Smart_Home___Energy/61_robot_vacuum_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Smart_Home___Energy/61_robot_vacuum_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Smart_Home___Energy/61_robot_vacuum_front.svg",
+      "status": "PASS",
+      "notes": "170 tris, 510 verts, 32 edges; bbox: 0.378x0.332x0.426m"
+    },
+    {
+      "num": 62,
+      "id": "inverter",
+      "nameEn": "Solar Inverter",
+      "nameAr": "\u0639\u0627\u0643\u0633 \u0634\u0645\u0633\u064a",
+      "category": "Smart Home & Energy",
+      "triangles": 66,
+      "vertices": 198,
+      "lines": 41,
+      "bounds": {
+        "minX": -0.25,
+        "maxX": 0.25,
+        "minY": 0,
+        "maxY": 0.6499999999999999,
+        "minZ": -0.1,
+        "maxZ": 0.135
+      },
+      "dims": {
+        "width": 0.5,
+        "height": 0.65,
+        "depth": 0.235
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Smart_Home___Energy/62_inverter_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Smart_Home___Energy/62_inverter_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Smart_Home___Energy/62_inverter_front.svg",
+      "status": "PASS",
+      "notes": "66 tris, 198 verts, 41 edges; bbox: 0.5x0.235x0.65m"
+    },
+    {
+      "num": 63,
+      "id": "home_battery",
+      "nameEn": "Home Battery",
+      "nameAr": "\u0628\u0637\u0627\u0631\u064a\u0629 \u0645\u0646\u0632\u0644\u064a\u0629",
+      "category": "Smart Home & Energy",
+      "triangles": 46,
+      "vertices": 138,
+      "lines": 29,
+      "bounds": {
+        "minX": -0.3,
+        "maxX": 0.3,
+        "minY": 0,
+        "maxY": 1.1,
+        "minZ": -0.125,
+        "maxZ": 0.125
+      },
+      "dims": {
+        "width": 0.6,
+        "height": 1.1,
+        "depth": 0.25
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Smart_Home___Energy/63_home_battery_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Smart_Home___Energy/63_home_battery_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Smart_Home___Energy/63_home_battery_front.svg",
+      "status": "PASS",
+      "notes": "46 tris, 138 verts, 29 edges; bbox: 0.6x0.25x1.1m"
+    },
+    {
+      "num": 64,
+      "id": "wallbox",
+      "nameEn": "EV Charger",
+      "nameAr": "\u0634\u0627\u062d\u0646 \u0633\u064a\u0627\u0631\u0629 \u0643\u0647\u0631\u0628\u0627\u0626\u064a\u0629 \u062c\u062f\u0627\u0631\u064a",
+      "category": "Smart Home & Energy",
+      "triangles": 110,
+      "vertices": 330,
+      "lines": 44,
+      "bounds": {
+        "minX": -0.15,
+        "maxX": 0.15,
+        "minY": -0.41999999999999993,
+        "maxY": 0.41999999999999993,
+        "minZ": -0.075,
+        "maxZ": 0.14500000000000002
+      },
+      "dims": {
+        "width": 0.3,
+        "height": 0.84,
+        "depth": 0.22
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Smart_Home___Energy/64_wallbox_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Smart_Home___Energy/64_wallbox_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Smart_Home___Energy/64_wallbox_front.svg",
+      "status": "PASS",
+      "notes": "110 tris, 330 verts, 44 edges; bbox: 0.3x0.22x0.84m"
+    },
+    {
+      "num": 65,
+      "id": "meter",
+      "nameEn": "Electricity Meter",
+      "nameAr": "\u0639\u062f\u0627\u062f \u0643\u0647\u0631\u0628\u0627\u0621",
+      "category": "Smart Home & Energy",
+      "triangles": 92,
+      "vertices": 276,
+      "lines": 19,
+      "bounds": {
+        "minX": -0.2,
+        "maxX": 0.2,
+        "minY": 0,
+        "maxY": 0.65,
+        "minZ": -0.11,
+        "maxZ": 0.13121690426072247
+      },
+      "dims": {
+        "width": 0.4,
+        "height": 0.65,
+        "depth": 0.241
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": false,
+      "perspectiveImg": "../.claude/inspection_screenshots/Smart_Home___Energy/65_meter_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Smart_Home___Energy/65_meter_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Smart_Home___Energy/65_meter_front.svg",
+      "status": "PASS",
+      "notes": "92 tris, 276 verts, 19 edges; bbox: 0.4x0.241x0.65m"
+    },
+    {
+      "num": 66,
+      "id": "grid_point",
+      "nameEn": "Grid Connection Point",
+      "nameAr": "\u0646\u0642\u0637\u0629 \u0631\u0628\u0637 \u0628\u0627\u0644\u0634\u0628\u0643\u0629 \u0627\u0644\u0643\u0647\u0631\u0628\u0627\u0626\u064a\u0629",
+      "category": "Smart Home & Energy",
+      "triangles": 34,
+      "vertices": 102,
+      "lines": 19,
+      "bounds": {
+        "minX": -0.21500000000000002,
+        "maxX": 0.21500000000000002,
+        "minY": 0,
+        "maxY": 0.635,
+        "minZ": -0.125,
+        "maxZ": 0.125
+      },
+      "dims": {
+        "width": 0.43,
+        "height": 0.635,
+        "depth": 0.25
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Smart_Home___Energy/66_grid_point_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Smart_Home___Energy/66_grid_point_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Smart_Home___Energy/66_grid_point_front.svg",
+      "status": "PASS",
+      "notes": "34 tris, 102 verts, 19 edges; bbox: 0.43x0.25x0.635m"
+    },
+    {
+      "num": 67,
+      "id": "pool_pump",
+      "nameEn": "Pool Filter Pump",
+      "nameAr": "\u0645\u0636\u062e\u0629 \u0641\u0644\u062a\u0631 \u0645\u0633\u0628\u062d",
+      "category": "Smart Home & Energy",
+      "triangles": 138,
+      "vertices": 414,
+      "lines": 60,
+      "bounds": {
+        "minX": -0.35,
+        "maxX": 0.35,
+        "minY": 0,
+        "maxY": 0.4,
+        "minZ": -0.16,
+        "maxZ": 0.16
+      },
+      "dims": {
+        "width": 0.7,
+        "height": 0.4,
+        "depth": 0.32
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Smart_Home___Energy/67_pool_pump_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Smart_Home___Energy/67_pool_pump_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Smart_Home___Energy/67_pool_pump_front.svg",
+      "status": "PASS",
+      "notes": "138 tris, 414 verts, 60 edges; bbox: 0.7x0.32x0.4m"
+    },
+    {
+      "num": 68,
+      "id": "pool_filter",
+      "nameEn": "Pool Sand Filter",
+      "nameAr": "\u0641\u0644\u062a\u0631 \u0631\u0645\u0644\u064a \u0644\u0644\u0645\u0633\u0628\u062d",
+      "category": "Smart Home & Energy",
+      "triangles": 320,
+      "vertices": 960,
+      "lines": 84,
+      "bounds": {
+        "minX": -0.3,
+        "maxX": 0.3,
+        "minY": 0,
+        "maxY": 1,
+        "minZ": -0.3,
+        "maxZ": 0.3
+      },
+      "dims": {
+        "width": 0.6,
+        "height": 1,
+        "depth": 0.6
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Smart_Home___Energy/68_pool_filter_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Smart_Home___Energy/68_pool_filter_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Smart_Home___Energy/68_pool_filter_front.svg",
+      "status": "PASS",
+      "notes": "320 tris, 960 verts, 84 edges; bbox: 0.6x0.6x1m"
+    },
+    {
+      "num": 69,
+      "id": "pool_heat_pump",
+      "nameEn": "Pool Heat Pump",
+      "nameAr": "\u0645\u0636\u062e\u0629 \u062d\u0631\u0627\u0631\u064a\u0629 \u0644\u0644\u0645\u0633\u0628\u062d",
+      "category": "Smart Home & Energy",
+      "triangles": 44,
+      "vertices": 132,
+      "lines": 81,
+      "bounds": {
+        "minX": -0.5,
+        "maxX": 0.5,
+        "minY": 0,
+        "maxY": 0.75,
+        "minZ": -0.225,
+        "maxZ": 0.233
+      },
+      "dims": {
+        "width": 1,
+        "height": 0.75,
+        "depth": 0.458
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Smart_Home___Energy/69_pool_heat_pump_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Smart_Home___Energy/69_pool_heat_pump_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Smart_Home___Energy/69_pool_heat_pump_front.svg",
+      "status": "PASS",
+      "notes": "44 tris, 132 verts, 81 edges; bbox: 1x0.458x0.75m"
+    },
+    {
+      "num": 70,
+      "id": "pool_dosing",
+      "nameEn": "Pool Chemical Dosing System",
+      "nameAr": "\u0646\u0638\u0627\u0645 \u0645\u0639\u0627\u064a\u0631\u0629 \u062c\u0631\u0639\u0627\u062a \u0627\u0644\u0645\u0633\u0628\u062d",
+      "category": "Smart Home & Energy",
+      "triangles": 156,
+      "vertices": 468,
+      "lines": 60,
+      "bounds": {
+        "minX": -0.2,
+        "maxX": 0.2,
+        "minY": 0,
+        "maxY": 1.1300000000000001,
+        "minZ": -0.1,
+        "maxZ": 0.117
+      },
+      "dims": {
+        "width": 0.4,
+        "height": 1.13,
+        "depth": 0.217
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Smart_Home___Energy/70_pool_dosing_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Smart_Home___Energy/70_pool_dosing_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Smart_Home___Energy/70_pool_dosing_front.svg",
+      "status": "PASS",
+      "notes": "156 tris, 468 verts, 60 edges; bbox: 0.4x0.217x1.13m"
+    },
+    {
+      "num": 71,
+      "id": "pool_valve",
+      "nameEn": "Ball Valve",
+      "nameAr": "\u0635\u0645\u0627\u0645 \u0643\u0631\u0648\u064a",
+      "category": "Smart Home & Energy",
+      "triangles": 88,
+      "vertices": 264,
+      "lines": 32,
+      "bounds": {
+        "minX": -0.08,
+        "maxX": 0.08,
+        "minY": 0.272,
+        "maxY": 0.389,
+        "minZ": -0.03,
+        "maxZ": 0.03
+      },
+      "dims": {
+        "width": 0.16,
+        "height": 0.117,
+        "depth": 0.06
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Smart_Home___Energy/71_pool_valve_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Smart_Home___Energy/71_pool_valve_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Smart_Home___Energy/71_pool_valve_front.svg",
+      "status": "PASS",
+      "notes": "88 tris, 264 verts, 32 edges; bbox: 0.16x0.06x0.117m"
+    },
+    {
+      "num": 72,
+      "id": "parking",
+      "nameEn": "Parking Space",
+      "nameAr": "\u0645\u0648\u0642\u0641 \u0633\u064a\u0627\u0631\u0627\u062a",
+      "category": "Outdoor",
+      "triangles": 40,
+      "vertices": 120,
+      "lines": 19,
+      "bounds": {
+        "minX": -0.9,
+        "maxX": 0.9,
+        "minY": 0,
+        "maxY": 0.09,
+        "minZ": -2.15,
+        "maxZ": -1.997
+      },
+      "dims": {
+        "width": 1.8,
+        "height": 0.09,
+        "depth": 0.153
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Outdoor/72_parking_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Outdoor/72_parking_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Outdoor/72_parking_front.svg",
+      "status": "PASS",
+      "notes": "40 tris, 120 verts, 19 edges; bbox: 1.8x0.153x0.09m"
+    },
+    {
+      "num": 73,
+      "id": "awning",
+      "nameEn": "Folding Canopy",
+      "nameAr": "\u0645\u0638\u0644\u0629 \u0642\u0627\u0628\u0644\u0629 \u0644\u0644\u0637\u064a",
+      "category": "Outdoor",
+      "triangles": 156,
+      "vertices": 468,
+      "lines": 0,
+      "bounds": {
+        "minX": -1.75,
+        "maxX": 1.75,
+        "minY": 1.844093324819413,
+        "maxY": 2.58,
+        "minZ": -1.25,
+        "maxZ": 0.7049999999999998
+      },
+      "dims": {
+        "width": 3.5,
+        "height": 0.736,
+        "depth": 1.955
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Outdoor/73_awning_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Outdoor/73_awning_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Outdoor/73_awning_front.svg",
+      "status": "PASS",
+      "notes": "156 tris, 468 verts, 0 edges; bbox: 3.5x1.955x0.736m"
+    },
+    {
+      "num": 74,
+      "id": "waste_bin",
+      "nameEn": "Waste Bin",
+      "nameAr": "\u062d\u0627\u0648\u064a\u0629 \u0646\u0641\u0627\u064a\u0627\u062a",
+      "category": "Outdoor",
+      "triangles": 202,
+      "vertices": 606,
+      "lines": 16,
+      "bounds": {
+        "minX": -0.3,
+        "maxX": 0.3,
+        "minY": 0,
+        "maxY": 1.05,
+        "minZ": -0.3,
+        "maxZ": 0.32
+      },
+      "dims": {
+        "width": 0.6,
+        "height": 1.05,
+        "depth": 0.62
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Outdoor/74_waste_bin_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Outdoor/74_waste_bin_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Outdoor/74_waste_bin_front.svg",
+      "status": "PASS",
+      "notes": "202 tris, 606 verts, 16 edges; bbox: 0.6x0.62x1.05m"
+    },
+    {
+      "num": 75,
+      "id": "mailbox",
+      "nameEn": "Mailbox",
+      "nameAr": "\u0635\u0646\u062f\u0648\u0642 \u0628\u0631\u064a\u062f",
+      "category": "Outdoor",
+      "triangles": 82,
+      "vertices": 246,
+      "lines": 48,
+      "bounds": {
+        "minX": -0.21,
+        "maxX": 0.21,
+        "minY": 0,
+        "maxY": 0.44999999999999996,
+        "minZ": -0.08,
+        "maxZ": 0.10500000000000001
+      },
+      "dims": {
+        "width": 0.42,
+        "height": 0.45,
+        "depth": 0.185
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Outdoor/75_mailbox_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Outdoor/75_mailbox_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Outdoor/75_mailbox_front.svg",
+      "status": "PASS",
+      "notes": "82 tris, 246 verts, 48 edges; bbox: 0.42x0.185x0.45m"
+    },
+    {
+      "num": 76,
+      "id": "wall_switch",
+      "nameEn": "Wall Light Switch",
+      "nameAr": "\u0645\u0641\u062a\u0627\u062d \u0625\u0636\u0627\u0621\u0629 \u062c\u062f\u0627\u0631\u064a",
+      "category": "Electrical & Network",
+      "triangles": 36,
+      "vertices": 108,
+      "lines": 25,
+      "bounds": {
+        "minX": -0.0425,
+        "maxX": 0.0425,
+        "minY": 0,
+        "maxY": 0.08499999999999996,
+        "minZ": -0.01,
+        "maxZ": 0.019598076211353316
+      },
+      "dims": {
+        "width": 0.085,
+        "height": 0.085,
+        "depth": 0.03
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Electrical___Network/76_wall_switch_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Electrical___Network/76_wall_switch_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Electrical___Network/76_wall_switch_front.svg",
+      "status": "PASS",
+      "notes": "36 tris, 108 verts, 25 edges; bbox: 0.085x0.03x0.085m"
+    },
+    {
+      "num": 77,
+      "id": "wall_socket",
+      "nameEn": "Wall Electrical Socket",
+      "nameAr": "\u0645\u0642\u0628\u0633 \u0643\u0647\u0631\u0628\u0627\u0626\u064a \u062c\u062f\u0627\u0631\u064a",
+      "category": "Electrical & Network",
+      "triangles": 96,
+      "vertices": 288,
+      "lines": 44,
+      "bounds": {
+        "minX": -0.0425,
+        "maxX": 0.0425,
+        "minY": 0,
+        "maxY": 0.08500000000000002,
+        "minZ": -0.01,
+        "maxZ": 0.016
+      },
+      "dims": {
+        "width": 0.085,
+        "height": 0.085,
+        "depth": 0.026
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Electrical___Network/77_wall_socket_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Electrical___Network/77_wall_socket_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Electrical___Network/77_wall_socket_front.svg",
+      "status": "PASS",
+      "notes": "96 tris, 288 verts, 44 edges; bbox: 0.085x0.026x0.085m"
+    },
+    {
+      "num": 78,
+      "id": "wifi_ap",
+      "nameEn": "Wi-Fi Access Point",
+      "nameAr": "\u0646\u0642\u0637\u0629 \u0648\u0635\u0648\u0644 \u0648\u0627\u064a \u0641\u0627\u064a",
+      "category": "Electrical & Network",
+      "triangles": 144,
+      "vertices": 432,
+      "lines": 60,
+      "bounds": {
+        "minX": -0.1,
+        "maxX": 0.1,
+        "minY": 0,
+        "maxY": 0.05,
+        "minZ": -0.1,
+        "maxZ": 0.1
+      },
+      "dims": {
+        "width": 0.2,
+        "height": 0.05,
+        "depth": 0.2
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Electrical___Network/78_wifi_ap_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Electrical___Network/78_wifi_ap_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Electrical___Network/78_wifi_ap_front.svg",
+      "status": "PASS",
+      "notes": "144 tris, 432 verts, 60 edges; bbox: 0.2x0.2x0.05m"
+    },
+    {
+      "num": 79,
+      "id": "water_heater",
+      "nameEn": "Water Heater",
+      "nameAr": "\u0633\u062e\u0627\u0646 \u0645\u064a\u0627\u0647",
+      "category": "Electrical & Network",
+      "triangles": 216,
+      "vertices": 648,
+      "lines": 53,
+      "bounds": {
+        "minX": -0.28,
+        "maxX": 0.28,
+        "minY": 0,
+        "maxY": 1.5,
+        "minZ": -0.28,
+        "maxZ": 0.29200000000000004
+      },
+      "dims": {
+        "width": 0.56,
+        "height": 1.5,
+        "depth": 0.572
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Electrical___Network/79_water_heater_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Electrical___Network/79_water_heater_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Electrical___Network/79_water_heater_front.svg",
+      "status": "PASS",
+      "notes": "216 tris, 648 verts, 53 edges; bbox: 0.56x0.572x1.5m"
+    },
+    {
+      "num": 80,
+      "id": "neon_sign",
+      "nameEn": "Neon Sign",
+      "nameAr": "\u0644\u0627\u0641\u062a\u0629 \u0646\u064a\u0648\u0646",
+      "category": "Electrical & Network",
+      "triangles": 110,
+      "vertices": 330,
+      "lines": 40,
+      "bounds": {
+        "minX": -0.6,
+        "maxX": 0.6,
+        "minY": 0,
+        "maxY": 0.44999999999999996,
+        "minZ": -0.022,
+        "maxZ": 0.02
+      },
+      "dims": {
+        "width": 1.2,
+        "height": 0.45,
+        "depth": 0.042
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": true,
+      "perspectiveImg": "../.claude/inspection_screenshots/Electrical___Network/80_neon_sign_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Electrical___Network/80_neon_sign_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Electrical___Network/80_neon_sign_front.svg",
+      "status": "PASS",
+      "notes": "110 tris, 330 verts, 40 edges; bbox: 1.2x0.042x0.45m"
+    },
+    {
+      "num": 81,
+      "id": "domolux.luxury_spa_bathtub",
+      "nameEn": "Domolux Luxury Spa Bathtub",
+      "nameAr": "\u062d\u0648\u0636 \u0627\u0633\u062a\u062d\u0645\u0627\u0645 \u0633\u0628\u0627 \u0641\u0627\u062e\u0631",
+      "category": "Domolux Exclusive",
+      "triangles": 1146,
+      "vertices": 3438,
+      "lines": 596,
+      "bounds": {
+        "minX": -0.95,
+        "maxX": 0.9500000000000001,
+        "minY": -0.2806499746630182,
+        "maxY": 0.7,
+        "minZ": -0.5298750000000001,
+        "maxZ": 0.49974999999999975
+      },
+      "dims": {
+        "width": 1.9,
+        "height": 0.981,
+        "depth": 1.03
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": false,
+      "perspectiveImg": "../.claude/inspection_screenshots/Domolux_Exclusive/81_domolux.luxury_spa_bathtub_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Domolux_Exclusive/81_domolux.luxury_spa_bathtub_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Domolux_Exclusive/81_domolux.luxury_spa_bathtub_front.svg",
+      "status": "PASS",
+      "notes": "1146 tris, 3438 verts, 596 edges; bbox: 1.9x1.03x0.981m"
+    },
+    {
+      "num": 82,
+      "id": "domolux.executive_desk",
+      "nameEn": "Domolux Executive Desk",
+      "nameAr": "\u0645\u0643\u062a\u0628 \u062a\u0646\u0641\u064a\u0630\u064a \u0641\u0627\u062e\u0631",
+      "category": "Domolux Exclusive",
+      "triangles": 10,
+      "vertices": 30,
+      "lines": 8,
+      "bounds": {
+        "minX": -1.1,
+        "maxX": 1.1,
+        "minY": 0,
+        "maxY": 0.76,
+        "minZ": -0.5,
+        "maxZ": 0.5
+      },
+      "dims": {
+        "width": 2.2,
+        "height": 0.76,
+        "depth": 1
+      },
+      "nonZero": true,
+      "finite": true,
+      "has2dSymbol": false,
+      "perspectiveImg": "../.claude/inspection_screenshots/Domolux_Exclusive/82_domolux.executive_desk_3quarter.svg",
+      "topImg": "../.claude/inspection_screenshots/Domolux_Exclusive/82_domolux.executive_desk_top.svg",
+      "frontImg": "../.claude/inspection_screenshots/Domolux_Exclusive/82_domolux.executive_desk_front.svg",
+      "status": "PASS",
+      "notes": "10 tris, 30 verts, 8 edges; bbox: 2.2x1x0.76m"
+    }
+  ]
+}

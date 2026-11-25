@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <rect width="400" height="400" fill="#0d1424" rx="8" />
+  <g><polygon points="109.9,164.3 112.3,161.0 112.3,163.0" fill="rgb(77,36,5)" stroke="rgb(77,36,5)" stroke-width="0.3" />
+    <polygon points="109.9,164.3 109.9,162.3 112.3,161.0" fill="rgb(77,36,5)" stroke="rgb(77,36,5)" stroke-width="0.3" />
+    <polygon points="112.3,163.0 112.3,161.0 290.1,235.7" fill="rgb(60,28,4)" stroke="rgb(60,28,4)" stroke-width="0.3" />
+    <polygon points="287.7,239.0 109.9,164.3 112.3,163.0" fill="rgb(73,34,5)" stroke="rgb(73,34,5)" stroke-width="0.3" />
+    <polygon points="287.7,237.0 112.3,161.0 109.9,162.3" fill="rgb(235,108,15)" stroke="rgb(235,108,15)" stroke-width="0.3" />
+    <polygon points="287.7,239.0 109.9,162.3 109.9,164.3" fill="rgb(117,54,7)" stroke="rgb(117,54,7)" stroke-width="0.3" />
+    <polygon points="112.3,163.0 290.1,235.7 290.1,237.7" fill="rgb(60,28,4)" stroke="rgb(60,28,4)" stroke-width="0.3" />
+    <polygon points="112.3,163.0 290.1,237.7 287.7,239.0" fill="rgb(73,34,5)" stroke="rgb(73,34,5)" stroke-width="0.3" />
+    <polygon points="112.3,161.0 287.7,237.0 290.1,235.7" fill="rgb(235,108,15)" stroke="rgb(235,108,15)" stroke-width="0.3" />
+    <polygon points="287.7,239.0 287.7,237.0 109.9,162.3" fill="rgb(117,54,7)" stroke="rgb(117,54,7)" stroke-width="0.3" />
+    <polygon points="290.1,237.7 290.1,235.7 287.7,237.0" fill="rgb(93,43,6)" stroke="rgb(93,43,6)" stroke-width="0.3" />
+    <polygon points="290.1,237.7 287.7,237.0 287.7,239.0" fill="rgb(93,43,6)" stroke="rgb(93,43,6)" stroke-width="0.3" /></g>
+  <g></g>
+</svg>

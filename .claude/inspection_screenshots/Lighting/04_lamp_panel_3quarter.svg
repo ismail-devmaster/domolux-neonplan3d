@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <rect width="400" height="400" fill="#0d1424" rx="8" />
+  <g><polygon points="188.1,125.0 188.1,111.3 366.0,186.0" fill="rgb(2,3,9)" stroke="rgb(2,3,9)" stroke-width="0.3" />
+    <polygon points="188.7,130.8 188.7,117.4 357.7,188.4" fill="rgb(81,37,5)" stroke="rgb(81,37,5)" stroke-width="0.3" />
+    <polygon points="34.0,211.2 188.1,111.3 188.1,125.0" fill="rgb(2,4,12)" stroke="rgb(2,4,12)" stroke-width="0.3" />
+    <polygon points="189.7,138.5 189.7,136.5 343.8,201.2" fill="rgb(80,37,5)" stroke="rgb(80,37,5)" stroke-width="0.3" />
+    <polygon points="42.3,212.7 188.7,117.4 188.7,130.8" fill="rgb(104,48,7)" stroke="rgb(104,48,7)" stroke-width="0.3" />
+    <polygon points="56.2,213.2 189.7,136.5 189.7,138.5" fill="rgb(104,48,7)" stroke="rgb(104,48,7)" stroke-width="0.3" />
+    <polygon points="188.1,125.0 366.0,186.0 366.0,199.7" fill="rgb(2,3,9)" stroke="rgb(2,3,9)" stroke-width="0.3" />
+    <polygon points="188.7,130.8 357.7,188.4 357.7,201.7" fill="rgb(81,37,5)" stroke="rgb(81,37,5)" stroke-width="0.3" />
+    <polygon points="189.7,138.5 343.8,201.2 343.8,203.3" fill="rgb(80,37,5)" stroke="rgb(80,37,5)" stroke-width="0.3" />
+    <polygon points="56.2,213.2 56.2,211.2 189.7,136.5" fill="rgb(104,48,7)" stroke="rgb(104,48,7)" stroke-width="0.3" />
+    <polygon points="34.0,211.2 34.0,197.5 188.1,111.3" fill="rgb(2,4,12)" stroke="rgb(2,4,12)" stroke-width="0.3" />
+    <polygon points="42.3,212.7 42.3,199.3 188.7,117.4" fill="rgb(104,48,7)" stroke="rgb(104,48,7)" stroke-width="0.3" />
+    <polygon points="189.7,138.5 343.8,203.3 210.3,277.9" fill="rgb(73,34,5)" stroke="rgb(73,34,5)" stroke-width="0.3" />
+    <polygon points="188.7,130.8 357.7,201.7 211.3,283.6" fill="rgb(73,34,5)" stroke="rgb(73,34,5)" stroke-width="0.3" />
+    <polygon points="188.1,125.0 366.0,199.7 211.9,285.9" fill="rgb(2,3,9)" stroke="rgb(2,3,9)" stroke-width="0.3" />
+    <polygon points="189.7,136.5 210.3,275.9 343.8,201.2" fill="rgb(235,108,15)" stroke="rgb(235,108,15)" stroke-width="0.3" />
+    <polygon points="210.3,277.9 56.2,213.2 189.7,138.5" fill="rgb(73,34,5)" stroke="rgb(73,34,5)" stroke-width="0.3" />
+    <polygon points="211.3,283.6 42.3,212.7 188.7,130.8" fill="rgb(73,34,5)" stroke="rgb(73,34,5)" stroke-width="0.3" />
+    <polygon points="210.3,275.9 189.7,136.5 56.2,211.2" fill="rgb(235,108,15)" stroke="rgb(235,108,15)" stroke-width="0.3" />
+    <polygon points="188.7,117.4 211.3,270.2 357.7,188.4" fill="rgb(235,108,15)" stroke="rgb(235,108,15)" stroke-width="0.3" />
+    <polygon points="211.9,285.9 34.0,211.2 188.1,125.0" fill="rgb(2,3,9)" stroke="rgb(2,3,9)" stroke-width="0.3" />
+    <polygon points="188.1,111.3 211.9,272.2 366.0,186.0" fill="rgb(5,10,27)" stroke="rgb(5,10,27)" stroke-width="0.3" />
+    <polygon points="211.3,270.2 188.7,117.4 42.3,199.3" fill="rgb(235,108,15)" stroke="rgb(235,108,15)" stroke-width="0.3" />
+    <polygon points="211.9,272.2 188.1,111.3 34.0,197.5" fill="rgb(5,10,27)" stroke="rgb(5,10,27)" stroke-width="0.3" />
+    <polygon points="343.8,203.3 343.8,201.2 210.3,275.9" fill="rgb(125,58,8)" stroke="rgb(125,58,8)" stroke-width="0.3" />
+    <polygon points="357.7,201.7 357.7,188.4 211.3,270.2" fill="rgb(125,58,8)" stroke="rgb(125,58,8)" stroke-width="0.3" />
+    <polygon points="366.0,199.7 366.0,186.0 211.9,272.2" fill="rgb(3,5,15)" stroke="rgb(3,5,15)" stroke-width="0.3" />
+    <polygon points="210.3,277.9 56.2,211.2 56.2,213.2" fill="rgb(158,73,10)" stroke="rgb(158,73,10)" stroke-width="0.3" />
+    <polygon points="211.3,283.6 42.3,199.3 42.3,212.7" fill="rgb(158,73,10)" stroke="rgb(158,73,10)" stroke-width="0.3" />
+    <polygon points="211.9,285.9 34.0,197.5 34.0,211.2" fill="rgb(4,7,19)" stroke="rgb(4,7,19)" stroke-width="0.3" />
+    <polygon points="343.8,203.3 210.3,275.9 210.3,277.9" fill="rgb(125,58,8)" stroke="rgb(125,58,8)" stroke-width="0.3" />
+    <polygon points="210.3,277.9 210.3,275.9 56.2,211.2" fill="rgb(158,73,10)" stroke="rgb(158,73,10)" stroke-width="0.3" />
+    <polygon points="357.7,201.7 211.3,270.2 211.3,283.6" fill="rgb(125,58,8)" stroke="rgb(125,58,8)" stroke-width="0.3" />
+    <polygon points="366.0,199.7 211.9,272.2 211.9,285.9" fill="rgb(3,5,15)" stroke="rgb(3,5,15)" stroke-width="0.3" />
+    <polygon points="211.3,283.6 211.3,270.2 42.3,199.3" fill="rgb(158,73,10)" stroke="rgb(158,73,10)" stroke-width="0.3" />
+    <polygon points="211.9,285.9 211.9,272.2 34.0,197.5" fill="rgb(4,7,19)" stroke="rgb(4,7,19)" stroke-width="0.3" /></g>
+  <g></g>
+</svg>
