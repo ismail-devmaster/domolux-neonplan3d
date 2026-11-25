@@ -23,7 +23,7 @@ EXPECTED_OFFICIAL_KEYS = {
     "867371cc70e6": "uP74xZzFJ2yysjdIZVq5q9G/yn5hVX4HJ6wHv7pqqwo=",
     "bdac241ae58b": "+oU/fcdvK7sfvpmz/aq63Y1QIymqK5+pKYGrGksrco8=",
 }
-EXPECTED_RELEASE_VERSION = "4.0.2.1"
+EXPECTED_RELEASE_VERSION = "4.0.2.2b1"
 
 ROOT = Path(__file__).resolve().parent.parent
 

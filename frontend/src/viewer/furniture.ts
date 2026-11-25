@@ -223,34 +223,44 @@ function ccw(poly: Vec2[]): Vec2[] {
   return a >= 0 ? poly : [...poly].reverse();
 }
 
-/** Four legs inside a w × d footprint. */
+/** Four architectural legs inside a w × d footprint with brushed metal ferrule caps. */
 function legs(b: Builder, w: number, d: number, h: number, t: number, inset: number, color = C.metal, taper = false): void {
   const x = w / 2 - inset - t;
   const z = d / 2 - inset - t;
+  const ferruleH = Math.min(0.025, h * 0.3);
   for (const sx of [-1, 1]) {
     for (const sz of [-1, 1]) {
       const cx = sx * x;
       const cz = sz * z;
-      if (taper) b.loft([cx - t * 0.3, cx + t * 0.3, cz - t * 0.3, cz + t * 0.3], [cx - t / 2, cx + t / 2, cz - t / 2, cz + t / 2], 0, h, color);
-      else b.box(cx - t / 2, cx + t / 2, 0, h, cz - t / 2, cz + t / 2, color);
+      if (taper) {
+        b.box(cx - t * 0.32, cx + t * 0.32, 0, ferruleH, cz - t * 0.32, cz + t * 0.32, C.metal);
+        b.loft([cx - t * 0.3, cx + t * 0.3, cz - t * 0.3, cz + t * 0.3], [cx - t / 2, cx + t / 2, cz - t / 2, cz + t / 2], ferruleH, h, color);
+      } else {
+        b.box(cx - t * 0.52, cx + t * 0.52, 0, ferruleH, cz - t * 0.52, cz + t * 0.52, C.metal);
+        b.box(cx - t / 2, cx + t / 2, ferruleH, h, cz - t / 2, cz + t / 2, color);
+      }
     }
   }
 }
 
-/** Door or drawer fronts: division lines on the front face (+z) and small glowing handles. */
+/** Door or drawer fronts: architectural gola shadow reveals, division lines, and minimalist edge-pull handles. */
 function fronts(b: Builder, x0: number, x1: number, y0: number, y1: number, z: number, count: number, handleY: number | null = null, horizontal = false): void {
   const w = (x1 - x0) / count;
+  b.seg(x0, y0, z + 0.002, x1, y0, z + 0.002, EDGE_FAINT);
+  b.seg(x0, y1, z + 0.002, x1, y1, z + 0.002, EDGE_FAINT);
   for (let i = 1; i < count; i++) {
     const x = x0 + w * i;
-    b.seg(x, y0, z, x, y1, z, EDGE_FAINT);
+    b.seg(x, y0 + 0.01, z + 0.002, x, y1 - 0.01, z + 0.002, EDGE_FAINT);
   }
   for (let i = 0; i < count; i++) {
     const cx = x0 + w * (i + 0.5);
-    const hy = handleY ?? y1 - 0.08;
-    if (horizontal) b.seg(cx - Math.min(0.1, w / 4), hy, z + 0.012, cx + Math.min(0.1, w / 4), hy, z + 0.012, EDGE_GLOW);
-    else {
-      const hx = count > 1 ? cx + (i % 2 ? -w / 2 + 0.06 : w / 2 - 0.06) : cx + w / 2 - 0.06;
-      b.seg(hx, hy - 0.08, z + 0.012, hx, hy + 0.08, z + 0.012, EDGE_GLOW);
+    const hy = handleY ?? y1 - 0.06;
+    if (horizontal) {
+      const hw = Math.min(0.12, w * 0.28);
+      b.box(cx - hw, cx + hw, hy - 0.01, hy + 0.01, z, z + 0.015, C.metal, C.metal, EDGE_GLOW);
+    } else {
+      const hx = count > 1 ? cx + (i % 2 ? -w / 2 + 0.05 : w / 2 - 0.05) : cx + w / 2 - 0.05;
+      b.box(hx - 0.008, hx + 0.008, hy - 0.07, hy + 0.07, z, z + 0.015, C.metal, C.metal, EDGE_GLOW);
     }
   }
 }
@@ -263,68 +273,96 @@ function sofa(b: Builder, w: number, d: number, h: number, seats: number): void 
   const arm = Math.min(0.2, w * 0.12);
   const seatH = h * 0.5;
   const back = Math.min(0.24, d * 0.28);
-  legs(b, w, d, 0.07, 0.05, 0.05, C.wood, true);
-  b.pad(x0, x1, 0.07, seatH - 0.08, z0 + 0.02, z1, C.fabric, C.fabricTop, 0.04, EDGE_FURN);
-  // the back leans a little: its top is thinner than its base
-  b.loft([x0, x1, z0, z0 + back], [x0 + 0.01, x1 - 0.01, z0, z0 + back * 0.5], seatH - 0.08, h, C.fabric, C.fabricTop, EDGE_FURN);
-  b.pad(x0, x0 + arm, seatH - 0.08, h * 0.72, z0 + 0.02, z1 - 0.02, C.fabric, C.fabricTop, 0.04, EDGE_FURN);
-  b.pad(x1 - arm, x1, seatH - 0.08, h * 0.72, z0 + 0.02, z1 - 0.02, C.fabric, C.fabricTop, 0.04, EDGE_FURN);
-  // seat cushions with a small gap, and back cushions leaning against the back
+
+  // Recessed architectural dark plinth runner with floating sled feet
+  b.box(x0 + 0.06, x1 - 0.06, 0, 0.045, z0 + 0.08, z1 - 0.08, C.dark, C.dark, EDGE_FAINT);
+  for (const sx of [-1, 1]) {
+    const lx = sx * (w / 2 - 0.08);
+    b.box(lx - 0.015, lx + 0.015, 0, 0.065, z0 + 0.06, z1 - 0.06, C.metal, C.metal);
+  }
+
+  // Tailored upholstered seat platform deck
+  b.pad(x0, x1, 0.045, seatH - 0.06, z0 + 0.02, z1, C.fabric, C.fabricTop, 0.03, EDGE_FURN);
+
+  // Ergonomic low-slung backrest structure
+  b.loft([x0, x1, z0, z0 + back], [x0 + 0.01, x1 - 0.01, z0, z0 + back * 0.55], seatH - 0.06, h, C.fabric, C.fabricTop, EDGE_FURN);
+
+  // Sculpted wide armrests with outer shadow bevel
+  b.pad(x0, x0 + arm, seatH - 0.06, h * 0.74, z0 + 0.02, z1 - 0.02, C.fabric, C.fabricTop, 0.035, EDGE_FURN);
+  b.pad(x1 - arm, x1, seatH - 0.06, h * 0.74, z0 + 0.02, z1 - 0.02, C.fabric, C.fabricTop, 0.035, EDGE_FURN);
+
+  // Deep plush multi-density seat cushions and angled back cushions
   const inner = x1 - arm - (x0 + arm);
   const cw = inner / seats;
   for (let i = 0; i < seats; i++) {
     const cx0 = x0 + arm + cw * i + 0.02;
     const cx1 = cx0 + cw - 0.04;
-    b.pad(cx0, cx1, seatH - 0.08, seatH + 0.05, z0 + back + 0.02, z1 - 0.06, C.cushion, C.cushion, 0.04);
-    b.loft([cx0 + 0.01, cx1 - 0.01, z0 + back * 0.55, z0 + back + 0.14], [cx0 + 0.03, cx1 - 0.03, z0 + back * 0.4, z0 + back * 0.4 + 0.06], seatH + 0.03, h * 0.93, C.cushion);
+    // Seat cushion with French seam perimeter
+    b.pad(cx0, cx1, seatH - 0.06, seatH + 0.06, z0 + back + 0.02, z1 - 0.04, C.cushion, C.cushion, 0.035, EDGE_FAINT);
+    // Back cushion with lumbar support angle
+    b.loft([cx0 + 0.015, cx1 - 0.015, z0 + back * 0.58, z0 + back + 0.16], [cx0 + 0.025, cx1 - 0.025, z0 + back * 0.42, z0 + back * 0.42 + 0.07], seatH + 0.04, h * 0.95, C.cushion, C.cushion, EDGE_FAINT);
+  }
+
+  // Residential luxury accent pillows in corners for multi-seat sofas
+  if (seats > 1) {
+    b.pad(x0 + arm + 0.03, x0 + arm + 0.22, seatH + 0.06, seatH + 0.26, z0 + back + 0.05, z0 + back + 0.14, C.fabricTop, C.fabricTop, 0.02);
+    b.pad(x1 - arm - 0.22, x1 - arm - 0.03, seatH + 0.06, seatH + 0.26, z0 + back + 0.05, z0 + back + 0.14, C.fabricTop, C.fabricTop, 0.02);
   }
 }
 
 /**
- * Corner sofa in the straight sofa's style: a back along the rear and along the left side (-x), for a
- * U-sofa along the right side too. The open ends at the front carry the arms; the L's other arm sits at
- * the right end of the rear section. Mirroring puts the L's side section on the right.
+ * Corner sofa in contemporary European luxury modular style: continuous floating plinth,
+ * tailored deck, deep modular cushions, lumbar support backrests, and corner accent pillows.
  */
 function cornerSofa(b: Builder, w: number, d: number, h: number, u: boolean): void {
   const x0 = -w / 2;
   const x1 = w / 2;
   const z0 = -d / 2;
   const z1 = d / 2;
-  // seat depth of every section (incl. its back), like the straight sofa's 0.9 m
   const dep = Math.max(0.3, Math.min(0.95, d * 0.5, w * (u ? 0.34 : 0.45)));
   const back = Math.min(0.24, dep * 0.28);
   const arm = Math.min(0.2, dep * 0.24);
   const seatH = h * 0.5;
-  const armH = h * 0.72;
+  const armH = h * 0.74;
   const sides = u ? [-1, 1] : [-1];
-  // tapered legs under the corners of the outline
-  const leg = (x: number, z: number) => b.loft([x - 0.015, x + 0.015, z - 0.015, z + 0.015], [x - 0.025, x + 0.025, z - 0.025, z + 0.025], 0, 0.07, C.wood);
-  leg(x0 + 0.06, z0 + 0.06);
-  leg(x1 - 0.06, z0 + 0.06);
-  if (!u) leg(x1 - 0.06, z0 + dep - 0.06);
+
+  // Architectural dark recessed plinth runner with metal sled feet
+  b.box(x0 + 0.06, x1 - 0.06, 0, 0.045, z0 + 0.06, z0 + dep - 0.06, C.dark, C.dark, EDGE_FAINT);
   for (const sx of sides) {
-    leg(sx * (w / 2 - 0.06), z1 - 0.06);
-    leg(sx * (w / 2 - dep + 0.06), z1 - 0.06);
+    const [a0, a1] = sx < 0 ? [x0 + 0.06, x0 + dep - 0.06] : [x1 - dep + 0.06, x1 - 0.06];
+    b.box(a0, a1, 0, 0.045, z0 + dep - 0.06, z1 - 0.06, C.dark, C.dark, EDGE_FAINT);
   }
-  // frames: the rear section across the whole width, the side sections in front of it
-  b.pad(x0, x1, 0.07, seatH - 0.08, z0 + 0.02, z0 + dep, C.fabric, C.fabricTop, 0.04, EDGE_FURN);
+  const sled = (x: number, z: number) => b.box(x - 0.015, x + 0.015, 0, 0.065, z - 0.04, z + 0.04, C.metal, C.metal);
+  sled(x0 + 0.08, z0 + 0.08);
+  sled(x1 - 0.08, z0 + 0.08);
+  if (!u) sled(x1 - 0.08, z0 + dep - 0.08);
+  for (const sx of sides) {
+    sled(sx * (w / 2 - 0.08), z1 - 0.08);
+    sled(sx * (w / 2 - dep + 0.08), z1 - 0.08);
+  }
+
+  // Tailored platform deck
+  b.pad(x0, x1, 0.045, seatH - 0.06, z0 + 0.02, z0 + dep, C.fabric, C.fabricTop, 0.03, EDGE_FURN);
   for (const sx of sides) {
     const [a0, a1] = sx < 0 ? [x0 + 0.02, x0 + dep] : [x1 - dep, x1 - 0.02];
-    b.pad(a0, a1, 0.07, seatH - 0.08, z0 + dep - 0.02, z1, C.fabric, C.fabricTop, 0.04, EDGE_FURN);
+    b.pad(a0, a1, 0.045, seatH - 0.06, z0 + dep - 0.02, z1, C.fabric, C.fabricTop, 0.03, EDGE_FURN);
   }
-  // backs lean a little: their tops are thinner than their bases
-  b.loft([x0, x1, z0, z0 + back], [x0 + 0.01, x1 - 0.01, z0, z0 + back * 0.5], seatH - 0.08, h, C.fabric, C.fabricTop, EDGE_FURN);
+
+  // Backrests with gentle comfort tilt
+  b.loft([x0, x1, z0, z0 + back], [x0 + 0.01, x1 - 0.01, z0, z0 + back * 0.55], seatH - 0.06, h, C.fabric, C.fabricTop, EDGE_FURN);
   for (const sx of sides) {
-    if (sx < 0) b.loft([x0, x0 + back, z0 + back, z1], [x0, x0 + back * 0.5, z0 + back, z1 - 0.01], seatH - 0.08, h, C.fabric, C.fabricTop, EDGE_FURN);
-    else b.loft([x1 - back, x1, z0 + back, z1], [x1 - back * 0.5, x1, z0 + back, z1 - 0.01], seatH - 0.08, h, C.fabric, C.fabricTop, EDGE_FURN);
+    if (sx < 0) b.loft([x0, x0 + back, z0 + back, z1], [x0, x0 + back * 0.55, z0 + back, z1 - 0.01], seatH - 0.06, h, C.fabric, C.fabricTop, EDGE_FURN);
+    else b.loft([x1 - back, x1, z0 + back, z1], [x1 - back * 0.55, x1, z0 + back, z1 - 0.01], seatH - 0.06, h, C.fabric, C.fabricTop, EDGE_FURN);
   }
-  // arms: at the front end of each side section, and (L) at the right end of the rear section
+
+  // Tailored armrests
   for (const sx of sides) {
     const [a0, a1] = sx < 0 ? [x0 + back, x0 + dep] : [x1 - dep, x1 - back];
-    b.pad(a0, a1, seatH - 0.08, armH, z1 - arm, z1, C.fabric, C.fabricTop, 0.04, EDGE_FURN);
+    b.pad(a0, a1, seatH - 0.06, armH, z1 - arm, z1, C.fabric, C.fabricTop, 0.035, EDGE_FURN);
   }
-  if (!u) b.pad(x1 - arm, x1, seatH - 0.08, armH, z0 + 0.02, z0 + dep - 0.02, C.fabric, C.fabricTop, 0.04, EDGE_FURN);
-  // seat and back cushions along x (rear section, the corners included) ...
+  if (!u) b.pad(x1 - arm, x1, seatH - 0.06, armH, z0 + 0.02, z0 + dep - 0.02, C.fabric, C.fabricTop, 0.035, EDGE_FURN);
+
+  // Seat and back cushions along x (rear section)
   const ra = x0 + back;
   const rb = u ? x1 - back : x1 - arm;
   const nx = Math.max(1, Math.round((rb - ra) / 0.62));
@@ -332,27 +370,35 @@ function cornerSofa(b: Builder, w: number, d: number, h: number, u: boolean): vo
   for (let i = 0; i < nx; i++) {
     const cx0 = ra + cw * i + 0.02;
     const cx1 = cx0 + cw - 0.04;
-    b.pad(cx0, cx1, seatH - 0.08, seatH + 0.05, z0 + back + 0.02, z0 + dep - 0.04, C.cushion, C.cushion, 0.04);
-    b.loft([cx0 + 0.01, cx1 - 0.01, z0 + back * 0.55, z0 + back + 0.14], [cx0 + 0.03, cx1 - 0.03, z0 + back * 0.4, z0 + back * 0.4 + 0.06], seatH + 0.03, h * 0.93, C.cushion);
+    b.pad(cx0, cx1, seatH - 0.06, seatH + 0.06, z0 + back + 0.02, z0 + dep - 0.04, C.cushion, C.cushion, 0.035, EDGE_FAINT);
+    b.loft([cx0 + 0.015, cx1 - 0.015, z0 + back * 0.58, z0 + back + 0.16], [cx0 + 0.025, cx1 - 0.025, z0 + back * 0.42, z0 + back * 0.42 + 0.07], seatH + 0.04, h * 0.95, C.cushion, C.cushion, EDGE_FAINT);
   }
-  // ... and along z (side sections, in front of the rear one)
+
+  // Seat and back cushions along z (side sections)
   const za = z0 + dep;
   const zb = z1 - arm;
-  if (zb - za < 0.2) return;
-  const nz = Math.max(1, Math.round((zb - za) / 0.62));
-  const cd = (zb - za) / nz;
-  for (const sx of sides) {
-    for (let i = 0; i < nz; i++) {
-      const cz0 = za + cd * i + 0.02;
-      const cz1 = cz0 + cd - 0.04;
-      if (sx < 0) {
-        b.pad(x0 + back + 0.02, x0 + dep - 0.04, seatH - 0.08, seatH + 0.05, cz0, cz1, C.cushion, C.cushion, 0.04);
-        b.loft([x0 + back * 0.55, x0 + back + 0.14, cz0 + 0.01, cz1 - 0.01], [x0 + back * 0.4, x0 + back * 0.4 + 0.06, cz0 + 0.03, cz1 - 0.03], seatH + 0.03, h * 0.93, C.cushion);
-      } else {
-        b.pad(x1 - dep + 0.04, x1 - back - 0.02, seatH - 0.08, seatH + 0.05, cz0, cz1, C.cushion, C.cushion, 0.04);
-        b.loft([x1 - back - 0.14, x1 - back * 0.55, cz0 + 0.01, cz1 - 0.01], [x1 - back * 0.4 - 0.06, x1 - back * 0.4, cz0 + 0.03, cz1 - 0.03], seatH + 0.03, h * 0.93, C.cushion);
+  if (zb - za >= 0.2) {
+    const nz = Math.max(1, Math.round((zb - za) / 0.62));
+    const cd = (zb - za) / nz;
+    for (const sx of sides) {
+      for (let i = 0; i < nz; i++) {
+        const cz0 = za + cd * i + 0.02;
+        const cz1 = cz0 + cd - 0.04;
+        if (sx < 0) {
+          b.pad(x0 + back + 0.02, x0 + dep - 0.04, seatH - 0.06, seatH + 0.06, cz0, cz1, C.cushion, C.cushion, 0.035, EDGE_FAINT);
+          b.loft([x0 + back * 0.58, x0 + back + 0.16, cz0 + 0.015, cz1 - 0.015], [x0 + back * 0.42, x0 + back * 0.42 + 0.07, cz0 + 0.025, cz1 - 0.025], seatH + 0.04, h * 0.95, C.cushion, C.cushion, EDGE_FAINT);
+        } else {
+          b.pad(x1 - dep + 0.04, x1 - back - 0.02, seatH - 0.06, seatH + 0.06, cz0, cz1, C.cushion, C.cushion, 0.035, EDGE_FAINT);
+          b.loft([x1 - back - 0.16, x1 - back * 0.58, cz0 + 0.015, cz1 - 0.015], [x1 - back * 0.42 - 0.07, x1 - back * 0.42, cz0 + 0.025, cz1 - 0.025], seatH + 0.04, h * 0.95, C.cushion, C.cushion, EDGE_FAINT);
+        }
       }
     }
+  }
+
+  // Corner accent pillows for bourgeois residential staging
+  b.pad(x0 + back + 0.04, x0 + back + 0.24, seatH + 0.06, seatH + 0.28, z0 + back + 0.04, z0 + back + 0.16, C.fabricTop, C.fabricTop, 0.025);
+  if (u) {
+    b.pad(x1 - back - 0.24, x1 - back - 0.04, seatH + 0.06, seatH + 0.28, z0 + back + 0.04, z0 + back + 0.16, C.fabricTop, C.fabricTop, 0.025);
   }
 }
 
@@ -361,83 +407,197 @@ function bed(b: Builder, w: number, d: number, h: number): void {
   const z1 = d / 2;
   const x0 = -w / 2;
   const x1 = w / 2;
-  const frame = Math.min(0.32, h * 0.36);
-  legs(b, w, d, 0.08, 0.06, 0.03, C.wood, true);
-  b.box(x0, x1, 0.08, frame, z0 + 0.06, z1, C.wood, C.woodTop, EDGE_FURN);
-  b.pad(x0 + 0.03, x1 - 0.03, frame, frame + 0.2, z0 + 0.08, z1 - 0.03, C.white, C.whiteTop, 0.03);
-  b.box(x0, x1, 0.08, h - 0.05, z0, z0 + 0.07, C.wood, C.woodTop, EDGE_FURN);
-  b.box(x0, x1, h - 0.05, h, z0, z0 + 0.09, C.wood, C.woodTop, EDGE_FAINT);
-  // duvet over the lower two thirds with a folded-back edge, puffy pillows at the head
-  const top = frame + 0.2;
-  const fold = z0 + (d - 0.1) * 0.36;
-  b.pad(x0 + 0.01, x1 - 0.01, top - 0.1, top + 0.05, fold, z1 - 0.01, C.cushion, C.fabricTop, 0.025, EDGE_FAINT);
-  b.lyingCyl("x", 0, fold + 0.05, top - 0.02, top + 0.09, w - 0.02, 0.1, C.cushion, C.fabricTop, 8);
+  const frameH = Math.min(0.34, h * 0.38);
+
+  // Recessed architectural dark floating plinth base
+  b.box(x0 + 0.08, x1 - 0.08, 0, 0.06, z0 + 0.08, z1 - 0.08, C.dark, C.dark, EDGE_FAINT);
+
+  // Upholstered bedstead deck with refined perimeter edge
+  b.pad(x0, x1, 0.06, frameH, z0 + 0.06, z1, C.wood, C.woodTop, 0.03, EDGE_FURN);
+
+  // Architectural grand upholstered headboard with vertical fluted channeling
+  const headD = 0.08;
+  b.pad(x0 - 0.04, x1 + 0.04, 0.06, h, z0, z0 + headD, C.fabric, C.fabricTop, 0.03, EDGE_FURN);
+  const channels = Math.max(4, Math.round(w / 0.28));
+  for (let i = 1; i < channels; i++) {
+    const cx = x0 - 0.04 + ((w + 0.08) / channels) * i;
+    b.seg(cx, 0.08, z0 + headD + 0.002, cx, h - 0.02, z0 + headD + 0.002, EDGE_FAINT);
+  }
+
+  // Deep luxury mattress with taped piping rim
+  const matTop = frameH + 0.22;
+  b.pad(x0 + 0.04, x1 - 0.04, frameH, matTop, z0 + headD + 0.02, z1 - 0.03, C.white, C.whiteTop, 0.035, EDGE_FAINT);
+
+  // Folded textured duvet with turned-back cuff
+  const fold = z0 + (d - 0.1) * 0.38;
+  b.pad(x0 + 0.02, x1 - 0.02, matTop - 0.08, matTop + 0.06, fold, z1 - 0.01, C.cushion, C.fabricTop, 0.03, EDGE_FAINT);
+  b.lyingCyl("x", 0, fold + 0.04, matTop - 0.02, matTop + 0.1, w - 0.04, 0.12, C.cushion, C.fabricTop, 10);
+
+  // Layered luxury sleeping pillows and accent bolster
   const pillows = w > 1.2 ? 2 : 1;
   const pw = (w - 0.2) / pillows;
   for (let i = 0; i < pillows; i++) {
     const px = x0 + 0.1 + pw * i;
-    const pz = z0 + 0.12;
+    const pz = z0 + headD + 0.04;
     const pd = Math.min(0.42, d * 0.2);
-    const k = 0.1;
-    b.loft([px + 0.03 + k, px + pw - 0.03 - k, pz + k * 0.5, pz + pd - k * 0.5], [px + 0.03, px + pw - 0.03, pz, pz + pd], top, top + 0.06, C.whiteTop);
-    b.loft([px + 0.03, px + pw - 0.03, pz, pz + pd], [px + 0.03 + k, px + pw - 0.03 - k, pz + k * 0.5, pz + pd - k * 0.5], top + 0.06, top + 0.12, C.whiteTop, C.whiteTop, EDGE_FAINT);
+    // Base sleeping pillow
+    b.pad(px + 0.04, px + pw - 0.04, matTop, matTop + 0.08, pz, pz + pd, C.whiteTop, C.whiteTop, 0.025, EDGE_FAINT);
+    // Angled decorative accent pillow
+    b.loft([px + 0.06, px + pw - 0.06, pz + 0.04, pz + pd - 0.06], [px + 0.08, px + pw - 0.08, pz + 0.02, pz + pd * 0.45], matTop + 0.06, matTop + 0.16, C.fabricTop, C.fabricTop, EDGE_FAINT);
   }
+
+  // Cashmere bed throw runner across the foot
+  b.pad(x0 + 0.01, x1 - 0.01, matTop + 0.06, matTop + 0.08, z1 - 0.32, z1 - 0.02, C.fabricTop, C.fabricTop, 0.015);
 }
 
 function chair(b: Builder, w: number, d: number, h: number): void {
   const seat = Math.min(0.46, h * 0.52);
-  legs(b, w, d, seat - 0.04, 0.035, 0.02, C.wood, true);
+
+  // Tapered architectural legs with brushed metal ferrule caps
+  legs(b, w, d, seat - 0.04, 0.032, 0.025, C.wood, true);
+
+  // Dark metal cross-stretcher tie bars
+  b.box(-w / 2 + 0.04, w / 2 - 0.04, seat * 0.4, seat * 0.4 + 0.012, -d / 2 + 0.04, -d / 2 + 0.055, C.metal);
+  b.box(-w / 2 + 0.04, w / 2 - 0.04, seat * 0.4, seat * 0.4 + 0.012, d / 2 - 0.055, d / 2 - 0.04, C.metal);
+
+  // Sculpted solid wood / upholstered seat pan
   b.box(-w / 2, w / 2, seat - 0.04, seat, -d / 2, d / 2, C.wood, C.woodTop, EDGE_FURN);
-  b.pad(-w / 2 + 0.02, w / 2 - 0.02, seat, seat + 0.04, -d / 2 + 0.05, d / 2 - 0.03, C.cushion, C.cushion, 0.015);
-  b.loft([-w / 2, w / 2, -d / 2 + 0.02, -d / 2 + 0.07], [-w / 2 + 0.02, w / 2 - 0.02, -d / 2, -d / 2 + 0.03], seat, h, C.wood, C.woodTop, EDGE_FURN);
+
+  // Tailored upholstered seat cushion with French piping
+  b.pad(-w / 2 + 0.02, w / 2 - 0.02, seat, seat + 0.045, -d / 2 + 0.04, d / 2 - 0.02, C.cushion, C.cushion, 0.02, EDGE_FAINT);
+
+  // Ergonomic curved wraparound backrest
+  b.loft([-w / 2, w / 2, -d / 2 + 0.02, -d / 2 + 0.08], [-w / 2 + 0.02, w / 2 - 0.02, -d / 2, -d / 2 + 0.04], seat, h, C.wood, C.woodTop, EDGE_FURN);
+  // Lumbar cushion inset
+  b.pad(-w / 2 + 0.05, w / 2 - 0.05, seat + 0.06, h - 0.04, -d / 2 + 0.02, -d / 2 + 0.05, C.cushion, C.cushion, 0.015);
 }
 
 function table(b: Builder, w: number, d: number, h: number): void {
-  legs(b, w, d, h - 0.04, 0.06, 0.05, C.wood, true);
-  b.box(-w / 2, w / 2, h - 0.04, h, -d / 2, d / 2, C.wood, C.woodTop, EDGE_GLOW);
-  b.box(-w / 2 + 0.08, w / 2 - 0.08, h - 0.1, h - 0.04, -d / 2 + 0.08, d / 2 - 0.08, C.body);
+  // Sculptural faceted bridge/trestle legs with brushed metal tie-rod stretcher
+  const legT = 0.07;
+  const legH = h - 0.05;
+  const legInset = Math.min(0.18, w * 0.12);
+
+  for (const sx of [-1, 1]) {
+    const lx = sx * (w / 2 - legInset);
+    // Trestle vertical blade legs
+    b.loft([lx - legT * 0.4, lx + legT * 0.4, -d / 2 + 0.08, d / 2 - 0.08], [lx - legT / 2, lx + legT / 2, -d / 2 + 0.06, d / 2 - 0.06], 0.02, legH, C.wood, C.woodTop, EDGE_FURN);
+    // Metal foot caps
+    b.box(lx - legT * 0.45, lx + legT * 0.45, 0, 0.02, -d / 2 + 0.07, d / 2 - 0.07, C.metal);
+  }
+
+  // Longitudinal brushed metal tie-rod stretcher
+  const lx0 = -w / 2 + legInset;
+  const lx1 = w / 2 - legInset;
+  b.box(lx0, lx1, legH * 0.35, legH * 0.35 + 0.02, -0.015, 0.015, C.metal, C.metal, EDGE_FAINT);
+
+  // Recessed shadow reveal frame under tabletop
+  b.box(-w / 2 + 0.06, w / 2 - 0.06, legH, legH + 0.015, -d / 2 + 0.06, d / 2 - 0.06, C.dark, C.dark);
+
+  // Reverse-beveled luxury tabletop slab
+  b.loft([-w / 2 + 0.02, w / 2 - 0.02, -d / 2 + 0.02, d / 2 - 0.02], [-w / 2, w / 2, -d / 2, d / 2], legH + 0.015, h, C.wood, C.woodTop, EDGE_GLOW);
 }
 
 function desk(b: Builder, w: number, d: number, h: number): void {
   const x0 = -w / 2;
   const x1 = w / 2;
-  b.box(x0, x1, h - 0.035, h, -d / 2, d / 2, C.wood, C.woodTop, EDGE_FURN);
-  b.box(x0, x0 + 0.03, 0, h - 0.035, -d / 2 + 0.03, d / 2 - 0.03, C.metal);
-  const dw = Math.min(0.42, w * 0.32);
-  b.box(x1 - dw, x1, 0, h - 0.035, -d / 2 + 0.03, d / 2 - 0.02, C.body, C.bodyTop, EDGE_FURN);
-  const zf = d / 2 - 0.02;
-  for (const y of [h * 0.35, h * 0.66]) b.seg(x1 - dw, y, zf, x1, y, zf, EDGE_FAINT);
-  for (const y of [h * 0.2, h * 0.5, h * 0.82]) b.seg(x1 - dw / 2 - 0.07, y, zf + 0.012, x1 - dw / 2 + 0.07, y, zf + 0.012, EDGE_GLOW);
-  // screen
-  b.box(-0.3, 0.3, h + 0.08, h + 0.42, -d / 2 + 0.08, -d / 2 + 0.11, C.dark, C.dark, EDGE_GLOW);
-  b.box(-0.03, 0.03, h, h + 0.1, -d / 2 + 0.09, -d / 2 + 0.13, C.metal);
+
+  // Floating chamfered executive worktop with shadow reveal
+  b.box(x0 + 0.04, x1 - 0.04, h - 0.05, h - 0.035, -d / 2 + 0.04, d / 2 - 0.04, C.dark, C.dark);
+  b.pad(x0, x1, h - 0.035, h, -d / 2, d / 2, C.wood, C.woodTop, 0.015, EDGE_FURN);
+
+  // Inset leather desk pad blotter
+  b.pad(x0 + 0.18, x1 - 0.38, h, h + 0.004, -d / 2 + 0.08, d / 2 - 0.06, C.dark, C.dark, 0.008, EDGE_FAINT);
+
+  // Architectural sled leg frame in brushed metal on left
+  b.box(x0 + 0.04, x0 + 0.07, 0, h - 0.05, -d / 2 + 0.06, d / 2 - 0.06, C.metal, C.metal, EDGE_FURN);
+  b.box(x0 + 0.02, x0 + 0.09, 0, 0.015, -d / 2 + 0.04, d / 2 - 0.04, C.metal);
+
+  // Asymmetric suspended pedestal credenza with fluted drawers on right
+  const dw = Math.min(0.44, w * 0.32);
+  const px0 = x1 - dw;
+  b.box(px0, x1 - 0.02, 0.06, h - 0.05, -d / 2 + 0.04, d / 2 - 0.03, C.body, C.bodyTop, EDGE_FURN);
+  // Recessed dark plinth
+  b.box(px0 + 0.02, x1 - 0.04, 0, 0.06, -d / 2 + 0.06, d / 2 - 0.05, C.dark);
+  // Fluted drawer front horizontal dividers and brushed metallic edge-pulls
+  const zf = d / 2 - 0.03;
+  for (const y of [h * 0.38, h * 0.68]) b.seg(px0, y, zf, x1 - 0.02, y, zf, EDGE_FAINT);
+  for (const y of [h * 0.22, h * 0.52, h * 0.82]) {
+    b.box(px0 + dw * 0.2, x1 - 0.02 - dw * 0.2, y - 0.008, y + 0.008, zf, zf + 0.014, C.metal, C.metal, EDGE_GLOW);
+  }
+
+  // Brushed metal cable pass hatch with flip cover
+  b.box(-0.15, 0.15, h, h + 0.003, -d / 2 + 0.05, -d / 2 + 0.09, C.metal, C.metal, EDGE_FAINT);
+
+  // Ultra-thin curved 4K display on articulated aluminum monitor arm
+  const screenW = Math.min(0.72, w * 0.55);
+  const screenH = screenW * 0.52;
+  // Monitor base and articulated arm
+  b.cyl(0, -d / 2 + 0.14, 0.06, h, h + 0.015, C.metal, C.metal, 12);
+  b.cyl(0, -d / 2 + 0.14, 0.018, h + 0.015, h + 0.16, C.metal, C.metal, 8);
+  // Curved screen panel with slim bezel
+  b.box(-screenW / 2, screenW / 2, h + 0.14, h + 0.14 + screenH, -d / 2 + 0.13, -d / 2 + 0.155, C.dark, C.dark, EDGE_GLOW);
+  // Thin metallic bezel trim
+  b.seg(-screenW / 2, h + 0.14, -d / 2 + 0.156, screenW / 2, h + 0.14, -d / 2 + 0.156, EDGE_FAINT);
 }
 
 function cabinet(b: Builder, w: number, d: number, h: number, doors: number, handleY: number | null = null, horizontal = false): void {
-  b.box(-w / 2, w / 2, 0.02, h, -d / 2, d / 2 - 0.02, C.body, C.bodyTop, EDGE_FURN);
-  b.box(-w / 2 + 0.02, w / 2 - 0.02, 0, 0.08, -d / 2 + 0.02, d / 2 - 0.06, C.dark);
-  fronts(b, -w / 2, w / 2, 0.08, h, d / 2 - 0.02, doors, handleY, horizontal);
+  // Recessed architectural dark shadow kick-plinth
+  b.box(-w / 2 + 0.03, w / 2 - 0.03, 0, 0.06, -d / 2 + 0.03, d / 2 - 0.05, C.dark, C.dark);
+  // Main carcass with shadow perimeter
+  b.box(-w / 2, w / 2, 0.06, h - 0.015, -d / 2, d / 2 - 0.02, C.body, C.bodyTop, EDGE_FURN);
+  // Inset top slab
+  b.box(-w / 2 + 0.005, w / 2 - 0.005, h - 0.015, h, -d / 2 + 0.005, d / 2 - 0.015, C.bodyTop, C.bodyTop, EDGE_FAINT);
+  // Precision front doors with gola shadow reveals
+  fronts(b, -w / 2, w / 2, 0.06, h - 0.02, d / 2 - 0.02, doors, handleY, horizontal);
 }
 
 function shelf(b: Builder, w: number, d: number, h: number): void {
-  const t = 0.025;
-  b.box(-w / 2, -w / 2 + t, 0, h, -d / 2, d / 2, C.wood, C.woodTop, EDGE_FURN);
-  b.box(w / 2 - t, w / 2, 0, h, -d / 2, d / 2, C.wood, C.woodTop, EDGE_FURN);
-  b.box(-w / 2 + t, w / 2 - t, 0, h, -d / 2, -d / 2 + 0.015, C.body);
+  const t = 0.028;
+  // Architectural open étagère with slender twin-metal upright stiles
+  for (const sx of [-1, 1]) {
+    const x = sx * (w / 2 - 0.025);
+    for (const sz of [-1, 1]) {
+      const z = sz * (d / 2 - 0.025);
+      b.box(x - 0.01, x + 0.01, 0, h, z - 0.01, z + 0.01, C.metal, C.metal, EDGE_FAINT);
+    }
+  }
+
+  // Floating thick shelves in dark wood / smoked oak
   const n = Math.max(2, Math.round(h / 0.38));
   for (let i = 0; i <= n; i++) {
-    const y = Math.min(h - t, (h / n) * i);
-    b.box(-w / 2 + t, w / 2 - t, y, y + t, -d / 2 + 0.015, d / 2, C.wood, C.woodTop, EDGE_FAINT);
-    // a few books on every shelf except the top
-    if (i < n) {
-      let x = -w / 2 + t + 0.04;
-      let k = i * 3;
-      while (x < w / 2 - t - 0.12) {
-        const bw = 0.03 + ((k * 7) % 5) * 0.008;
-        const bh = h / n - t - 0.08 - ((k * 5) % 4) * 0.025;
-        if ((k * 11) % 7 !== 0) b.box(x, x + bw, y + t, y + t + bh, -d / 2 + 0.04, d / 2 - 0.05, (k % 3) ? C.fabric : C.cushion, C.fabricTop);
-        x += bw + 0.006;
-        k++;
+    const y = Math.min(h - t, (h / n) * i + (i === 0 ? 0.06 : 0));
+    b.box(-w / 2 + 0.01, w / 2 - 0.01, y, y + t, -d / 2 + 0.01, d / 2 - 0.01, C.wood, C.woodTop, EDGE_FURN);
+
+    // Curated high-end decorative objects on intermediate shelves
+    if (i < n && i > 0) {
+      if (i % 2 === 1) {
+        // Sculptural ceramic vase
+        b.cyl(-w / 2 + 0.14, 0, 0.05, y + t, y + t + 0.16, C.pot, C.pot, 12, EDGE_FAINT);
+        // Books with marble bookends
+        let x = -w / 2 + 0.26;
+        let k = i * 4;
+        while (x < w / 2 - 0.12) {
+          const bw = 0.035 + ((k * 7) % 4) * 0.01;
+          const bh = (h / n) * 0.65 - ((k * 5) % 3) * 0.03;
+          b.box(x, x + bw, y + t, y + t + bh, -d / 2 + 0.06, d / 2 - 0.06, (k % 2) ? C.fabric : C.cushion, C.fabricTop);
+          x += bw + 0.008;
+          k++;
+        }
+      } else {
+        // Books with marble bookends on left
+        let x = -w / 2 + 0.08;
+        let k = i * 5;
+        while (x < -0.05) {
+          const bw = 0.035 + ((k * 7) % 4) * 0.01;
+          const bh = (h / n) * 0.65 - ((k * 5) % 3) * 0.03;
+          b.box(x, x + bw, y + t, y + t + bh, -d / 2 + 0.06, d / 2 - 0.06, (k % 2) ? C.cushion : C.fabric, C.fabricTop);
+          x += bw + 0.008;
+          k++;
+        }
+        // Decorative art sculpture on right
+        b.box(w * 0.15, w * 0.32, y + t, y + t + 0.02, -0.06, 0.06, C.metal);
+        b.loft([w * 0.2, w * 0.27, -0.04, 0.04], [w * 0.22, w * 0.25, -0.02, 0.02], y + t + 0.02, y + t + 0.18, C.whiteTop, C.whiteTop, EDGE_FAINT);
       }
     }
   }
@@ -445,8 +605,20 @@ function shelf(b: Builder, w: number, d: number, h: number): void {
 
 function kitchen(b: Builder, w: number, d: number, h: number): void {
   const doors = Math.max(1, Math.round(w / 0.6));
-  cabinet(b, w, d - 0.02, h - 0.04, doors, h - 0.2);
+  // Recessed dark toe-kick plinth
+  b.box(-w / 2 + 0.02, w / 2 - 0.02, 0, 0.08, -d / 2 + 0.02, d / 2 - 0.07, C.dark, C.dark);
+
+  // Base carcass with recessed gola channel profile
+  b.box(-w / 2, w / 2, 0.08, h - 0.04, -d / 2, d / 2 - 0.02, C.body, C.bodyTop, EDGE_FURN);
+  // Recessed dark horizontal gola finger-rail under countertop
+  b.box(-w / 2, w / 2, h - 0.07, h - 0.04, d / 2 - 0.04, d / 2 - 0.02, C.dark, C.dark);
+  // Cabinet door / drawer fronts
+  fronts(b, -w / 2, w / 2, 0.08, h - 0.07, d / 2 - 0.02, doors, null, true);
+
+  // Thick solid stone / quartz worktop with chamfered edge and rear upstand
   b.box(-w / 2, w / 2, h - 0.04, h, -d / 2, d / 2, worktop(), worktop(), EDGE_FURN);
+  // Rear upstand splash lip
+  b.box(-w / 2, w / 2, h, h + 0.04, -d / 2, -d / 2 + 0.02, worktop(), worktop(), EDGE_FAINT);
 }
 
 /** A built-in worktop's slab: light like a front, or the placed item's wood finish (#1175). */
@@ -455,12 +627,40 @@ function worktop(): number {
 }
 
 function fridge(b: Builder, w: number, d: number, h: number): void {
-  b.box(-w / 2, w / 2, 0, h, -d / 2, d / 2, C.white, C.whiteTop, EDGE_FURN);
-  const split = h * 0.62;
-  b.seg(-w / 2, split, d / 2, w / 2, split, d / 2, EDGE_FAINT);
-  const hx = w / 2 - 0.06;
-  b.seg(hx, split + 0.08, d / 2 + 0.015, hx, split + 0.4, d / 2 + 0.015, EDGE_GLOW);
-  b.seg(hx, split - 0.4, d / 2 + 0.015, hx, split - 0.08, d / 2 + 0.015, EDGE_GLOW);
+  // Premium French-door luxury refrigerator (Sub-Zero / Gaggenau)
+  // Recessed dark plinth and top vent
+  b.box(-w / 2 + 0.02, w / 2 - 0.02, 0, 0.05, -d / 2 + 0.02, d / 2 - 0.04, C.dark);
+  b.box(-w / 2, w / 2, 0.05, h, -d / 2, d / 2 - 0.02, C.white, C.whiteTop, EDGE_FURN);
+
+  const split = h * 0.65;
+  // Lower freezer drawer facade
+  b.box(-w / 2, w / 2, 0.06, split - 0.02, d / 2 - 0.02, d / 2, C.metal, C.metal, EDGE_FAINT);
+  // Horizontal brushed metal bar handle on freezer
+  b.box(-w * 0.35, w * 0.35, (0.06 + split) / 2 - 0.012, (0.06 + split) / 2 + 0.012, d / 2, d / 2 + 0.025, C.metal, C.metal, EDGE_GLOW);
+
+  // Upper French doors (left & right)
+  const midX = 0;
+  b.box(-w / 2, midX - 0.003, split, h - 0.02, d / 2 - 0.02, d / 2, C.metal, C.metal, EDGE_FAINT);
+  b.box(midX + 0.003, w / 2, split, h - 0.02, d / 2 - 0.02, d / 2, C.metal, C.metal, EDGE_FAINT);
+
+  // Full-height vertical architectural tubular bar handles with knurled mounts
+  const hy0 = split + 0.12;
+  const hy1 = h - 0.12;
+  for (const sx of [-1, 1]) {
+    const hx = sx * 0.035;
+    // Handle standoffs
+    for (const y of [hy0 + 0.04, hy1 - 0.04]) {
+      b.box(hx - 0.008, hx + 0.008, y - 0.01, y + 0.01, d / 2, d / 2 + 0.025, C.dark);
+    }
+    // Vertical grip bar
+    b.box(hx - 0.008, hx + 0.008, hy0, hy1, d / 2 + 0.025, d / 2 + 0.038, C.metal, C.metal, EDGE_GLOW);
+  }
+
+  // Top architectural ventilation louver grille
+  for (let i = 0; i < 3; i++) {
+    const y = h - 0.015 + i * 0.005;
+    b.seg(-w / 2 + 0.04, y, d / 2 + 0.001, w / 2 - 0.04, y, d / 2 + 0.001, EDGE_FAINT);
+  }
 }
 
 /** A real colour toned into the neon look: darker for a body, a little brighter for a lid. */
@@ -493,8 +693,11 @@ export function keepBright(c: number[], from: number): void {
  * A waste bin in its shape and colours (household.ts): wheelie bins taper to the bottom and have their wheels and
  * handle at the back (-z), a 1100 l container stands on four castors, a sack is tied at the top.
  */
+/**
+ * A waste bin in its shape and colours (household.ts): European modern waste receptacles
+ * with reinforced lids, ergonomic handle bars, and rubberized spoke wheels.
+ */
 function wasteBin(b: Builder, w: number, d: number, h: number, shape: BinShape, colors: [string, string]): void {
-  // in the light looks at least as bright as the looks keep a colour (a dark brown or green bin too)
   const full = (hex: string) => {
     const mx = Math.max(...new Color(hex).toArray());
     return tone(hex, mx > 0.05 ? Math.max(1, 0.62 / mx) : 1);
@@ -502,129 +705,191 @@ function wasteBin(b: Builder, w: number, d: number, h: number, shape: BinShape, 
   const body = lightLook ? full(colors[0]) : tone(colors[0], 0.55);
   const lid = lightLook ? full(colors[1]) : tone(colors[1], 0.8);
   const lidTop = tone(colors[1], 1);
+
   if (shape === "bag") {
-    // a full sack: wider in the middle, gathered and tied at the top
     b.loft([-w * 0.42, w * 0.42, -d * 0.4, d * 0.4], [-w / 2, w / 2, -d / 2, d / 2], 0, h * 0.55, body, body, EDGE_FAINT);
     b.loft([-w / 2, w / 2, -d / 2, d / 2], [-w * 0.12, w * 0.12, -d * 0.12, d * 0.12], h * 0.55, h * 0.9, lid, lid, EDGE_FAINT);
-    b.cyl(0, 0, Math.min(w, d) * 0.1, h * 0.9, h, lidTop, lidTop, 8);
+    b.cyl(0, 0, Math.min(w, d) * 0.1, h * 0.9, h, lidTop, lidTop, 10);
     return;
   }
   if (shape === "caddy") {
     b.loft([-w * 0.45, w * 0.45, -d * 0.45, d * 0.45], [-w / 2, w / 2, -d / 2, d / 2], 0, h * 0.85, body, body, EDGE_FURN);
     b.box(-w / 2, w / 2, h * 0.85, h * 0.95, -d / 2, d / 2, lid, lidTop, EDGE_FAINT);
-    // the carrying handle over the lid
     b.box(-w * 0.42, -w * 0.36, h * 0.95, h, -0.01, 0.01, lid);
     b.box(w * 0.36, w * 0.42, h * 0.95, h, -0.01, 0.01, lid);
     b.box(-w * 0.42, w * 0.42, h * 0.98, h, -0.01, 0.01, lid);
     return;
   }
   if (shape === "underground") {
-    // only the column of an underground container stands out of the ground: a slot in front, the lid on top
+    // Architectural stainless / basalt deposit column
     const r = Math.min(w, d) * 0.32;
-    b.cyl(0, 0, r, 0, h * 0.9, body, body, 16, EDGE_FURN);
-    b.cyl(0, 0, r * 1.08, h * 0.9, h, lid, lidTop, 16, EDGE_FAINT);
-    b.box(-r * 0.5, r * 0.5, h * 0.62, h * 0.8, r * 0.7, r * 1.02, C.dark);
-    // the paved plate around it
+    b.cyl(0, 0, r, 0, h * 0.88, body, body, 18, EDGE_FURN);
+    b.cyl(0, 0, r * 1.08, h * 0.88, h, lid, lidTop, 18, EDGE_FAINT);
+    // Weighted drop drum hopper with handle
+    b.box(-r * 0.52, r * 0.52, h * 0.6, h * 0.8, r * 0.7, r * 1.04, C.dark, C.dark, EDGE_FAINT);
+    b.box(-r * 0.3, r * 0.3, h * 0.78, h * 0.81, r * 1.04, r * 1.08, C.metal);
+    // Paved stone perimeter plate
     b.box(-w / 2, w / 2, 0, 0.02, -d / 2, d / 2, C.metal, C.metal, EDGE_FAINT);
     return;
   }
   if (shape === "bin1100") {
     const cast = 0.14;
-    for (const sx of [-1, 1]) for (const sz of [-1, 1]) b.cyl(sx * (w / 2 - 0.12), sz * (d / 2 - 0.12), 0.05, 0, cast, C.dark, C.dark, 8);
+    // Four heavy-duty swivel casters with brake levers
+    for (const sx of [-1, 1]) {
+      for (const sz of [-1, 1]) {
+        b.cyl(sx * (w / 2 - 0.12), sz * (d / 2 - 0.12), 0.05, 0, cast, C.dark, C.dark, 10);
+      }
+    }
+    // Corrugated ribbed container body
     b.loft([-w / 2 + 0.06, w / 2 - 0.06, -d / 2 + 0.06, d / 2 - 0.08], [-w / 2, w / 2, -d / 2, d / 2], cast, h - 0.1, body, body, EDGE_FURN);
-    // two lid halves, the front one a little lower (a rounded lid seen as two slopes)
+    // Twin curved dome lid with rubber bumper
     b.loft([-w / 2, w / 2, -d / 2, 0], [-w / 2, w / 2, -d / 2, 0], h - 0.1, h, lid, lidTop, EDGE_FAINT);
     b.loft([-w / 2, w / 2, 0, d / 2], [-w / 2, w / 2, 0, d / 2 - 0.05], h - 0.1, h - 0.03, lid, lidTop, EDGE_FAINT);
     return;
   }
-  // wheelie bins (120 l, 240 l, a multi-compartment bin): wheels and handle at the back
+
+  // Modern European wheelie bins (120L / 240L / multi-compartment)
   const wheel = Math.min(0.2, h * 0.19);
   const back = -d / 2;
-  for (const sx of [-1, 1]) b.lyingCyl("x", sx * (w / 2 - 0.05), back + wheel / 2 + 0.01, 0, wheel, 0.05, wheel, C.dark, C.metal, 12);
+  // Rubberized wheels with metal hub caps
+  for (const sx of [-1, 1]) {
+    b.lyingCyl("x", sx * (w / 2 - 0.05), back + wheel / 2 + 0.01, 0, wheel, 0.05, wheel, C.dark, C.metal, 14);
+    b.cyl(sx * (w / 2 - 0.05), back + wheel / 2 + 0.01, 0.02, 0, wheel, C.metal, C.metal, 8);
+  }
+  // Tapered bin body with reinforced side lifting ribs
   b.loft([-w * 0.42, w * 0.42, back + 0.07, d / 2 - 0.05], [-w / 2 + 0.01, w / 2 - 0.01, back + 0.05, d / 2 - 0.01], 0.03, h - 0.05, body, body, EDGE_FURN);
-  // the lid reaches over the front; the handle runs along the back
-  b.box(-w / 2, w / 2, h - 0.05, h, back + 0.03, d / 2, lid, lidTop, EDGE_FAINT);
+  // Ergonomic handle bar along rear
   b.box(-w * 0.42, w * 0.42, h - 0.1, h - 0.02, back, back + 0.04, lid, lidTop);
+  // Overhanging ribbed lid with front pull tab
+  b.box(-w / 2, w / 2, h - 0.05, h, back + 0.03, d / 2, lid, lidTop, EDGE_FAINT);
+  b.box(-w * 0.15, w * 0.15, h - 0.06, h - 0.045, d / 2, d / 2 + 0.02, lid);
+
   if (shape === "multi") {
-    // the lid in two parts: a seam across it, and the front split for a second compartment
     b.seg(-w / 2, h + 0.002, (back + d / 2) / 2, w / 2, h + 0.002, (back + d / 2) / 2, EDGE_GLOW);
     b.seg(0, h * 0.25, d / 2 - 0.01, 0, h - 0.06, d / 2 - 0.01, EDGE_FAINT);
   }
 }
 
 /**
- * Wall switch or socket: a flat frame with one rocker or socket per gang (front at +z, the back on the wall);
- * "outdoor" a grey box with a lid over each socket.
+ * Wall switch or socket: ultra-slim architectural wiring devices (Gira Esprit / Jung LS990 / Buster + Punch)
+ * with chamfered faceplate, LED status micro-dots, and shuttered sockets.
  */
 function wallPlate(b: Builder, w: number, d: number, h: number, n: number, socket: boolean, outdoor: boolean): void {
   const gw = w / n;
+
+  // Bevelled architectural faceplate frame with shadow reveal to the wall
   b.box(-w / 2, w / 2, 0, h, -d / 2, d / 2, outdoor ? C.metal : C.white, outdoor ? C.metal : C.whiteTop, EDGE_FURN);
+  // Outer perimeter bevel highlight
+  b.seg(-w / 2 + 0.004, 0.004, d / 2 + 0.001, w / 2 - 0.004, 0.004, d / 2 + 0.001, EDGE_FAINT);
+  b.seg(-w / 2 + 0.004, h - 0.004, d / 2 + 0.001, w / 2 - 0.004, h - 0.004, d / 2 + 0.001, EDGE_FAINT);
+
   for (let i = 0; i < n; i++) {
     const cx = -w / 2 + gw * (i + 0.5);
     if (i) b.seg(-w / 2 + gw * i, h * 0.06, d / 2 + 0.001, -w / 2 + gw * i, h * 0.94, d / 2 + 0.001, EDGE_FAINT);
+
     if (!socket) {
-      // the rocker with its seam
-      b.box(cx - gw * 0.34, cx + gw * 0.34, h * 0.16, h * 0.84, d / 2, d / 2 + 0.006, C.white, C.whiteTop, EDGE_FAINT);
-      b.seg(cx - gw * 0.3, h * 0.5, d / 2 + 0.007, cx + gw * 0.3, h * 0.5, d / 2 + 0.007, EDGE_FAINT);
+      // Precision tactile rocker with subtle seam and status micro-LED dot
+      b.box(cx - gw * 0.35, cx + gw * 0.35, h * 0.15, h * 0.85, d / 2, d / 2 + 0.006, C.white, C.whiteTop, EDGE_FAINT);
+      b.seg(cx - gw * 0.32, h * 0.5, d / 2 + 0.007, cx + gw * 0.32, h * 0.5, d / 2 + 0.007, EDGE_FAINT);
+      // LED indicator dot
+      b.cyl(cx, d / 2 + 0.007, 0.003, h * 0.22, h * 0.25, C.accent, C.accent, 6, EDGE_GLOW);
     } else if (outdoor) {
-      // the hinged lid over the socket
-      b.box(cx - gw * 0.4, cx + gw * 0.4, h * 0.12, h * 0.9, d / 2, d / 2 + 0.018, C.metal, C.metal, EDGE_FAINT);
-      b.seg(cx - gw * 0.36, h * 0.86, d / 2 + 0.019, cx + gw * 0.36, h * 0.86, d / 2 + 0.019, EDGE_FAINT);
+      // Weatherproof spring-loaded cover flap with silicone seal
+      b.box(cx - gw * 0.42, cx + gw * 0.42, h * 0.1, h * 0.9, d / 2, d / 2 + 0.02, C.metal, C.metal, EDGE_FAINT);
+      b.seg(cx - gw * 0.38, h * 0.86, d / 2 + 0.021, cx + gw * 0.38, h * 0.86, d / 2 + 0.021, EDGE_FAINT);
+      b.box(cx - gw * 0.15, cx + gw * 0.15, h * 0.11, h * 0.14, d / 2 + 0.02, d / 2 + 0.025, C.dark);
     } else {
-      // the round recess with its two holes
+      // Child-safety shuttered socket with metallic bezel ring and earth contacts
       const r = Math.min(gw, h) * 0.34;
-      b.lyingCyl("z", cx, d / 2 + 0.002, h / 2 - r, h / 2 + r, 0.004, r * 2, C.dark, C.dark, 14, EDGE_FAINT);
-      b.seg(cx - r * 0.45, h / 2, d / 2 + 0.0045, cx - r * 0.45 + 0.004, h / 2, d / 2 + 0.0045, EDGE_FURN);
-      b.seg(cx + r * 0.45 - 0.004, h / 2, d / 2 + 0.0045, cx + r * 0.45, h / 2, d / 2 + 0.0045, EDGE_FURN);
+      b.lyingCyl("z", cx, d / 2 + 0.002, h / 2 - r, h / 2 + r, 0.005, r * 2, C.dark, C.dark, 16, EDGE_FAINT);
+      // Earth clips top and bottom
+      b.box(cx - 0.003, cx + 0.003, h / 2 + r * 0.72, h / 2 + r * 0.88, d / 2 + 0.002, d / 2 + 0.006, C.metal);
+      b.box(cx - 0.003, cx + 0.003, h / 2 - r * 0.88, h / 2 - r * 0.72, d / 2 + 0.002, d / 2 + 0.006, C.metal);
+      // Shuttered pin holes
+      b.seg(cx - r * 0.45, h / 2, d / 2 + 0.005, cx - r * 0.45 + 0.005, h / 2, d / 2 + 0.005, EDGE_FURN);
+      b.seg(cx + r * 0.45 - 0.005, h / 2, d / 2 + 0.005, cx + r * 0.45, h / 2, d / 2 + 0.005, EDGE_FURN);
     }
   }
 }
 
-/** Wi-Fi access point: a flat disc under the ceiling (its LED ring below) or a square plate on the wall (ring in front). */
+/** Wi-Fi access point: enterprise architectural AP with micro-perimeter LED halo ring. */
 function wifiAp(b: Builder, w: number, d: number, h: number, wall: boolean): void {
   if (wall) {
+    // In-wall architectural AP faceplate with Ethernet jacks
     b.box(-w / 2, w / 2, 0, h, -d / 2, d / 2, C.white, C.whiteTop, EDGE_FURN);
-    const r = Math.min(w, h) * 0.3;
+    const r = Math.min(w, h) * 0.28;
     for (let i = 0; i < 20; i++) {
       const a0 = (i / 20) * Math.PI * 2;
       const a1 = ((i + 1) / 20) * Math.PI * 2;
-      b.seg(Math.cos(a0) * r, h / 2 + Math.sin(a0) * r, d / 2 + 0.002, Math.cos(a1) * r, h / 2 + Math.sin(a1) * r, d / 2 + 0.002, EDGE_FAINT);
+      b.seg(Math.cos(a0) * r, h * 0.6 + Math.sin(a0) * r, d / 2 + 0.002, Math.cos(a1) * r, h * 0.6 + Math.sin(a1) * r, d / 2 + 0.002, EDGE_GLOW);
+    }
+    // Bottom Ethernet pass-through jacks
+    b.box(-w * 0.28, -w * 0.06, 0.03, 0.09, d / 2 - 0.005, d / 2 + 0.003, C.dark);
+    b.box(w * 0.06, w * 0.28, 0.03, 0.09, d / 2 - 0.005, d / 2 + 0.003, C.dark);
+    return;
+  }
+
+  // Ceiling-mount low-profile saucer AP (UniFi U6-Pro / Cisco Catalyst)
+  const r = Math.min(w, d) / 2;
+  // Mounting bracket
+  b.cyl(0, 0, r * 0.6, h, h + 0.01, C.metal, C.metal, 14);
+  // Chamfered disc housing
+  b.cyl(0, 0, r, 0, h, C.white, C.whiteTop, 24, EDGE_FURN);
+  // Micro-perimeter status LED halo ring
+  const ringR = r * 0.65;
+  for (let i = 0; i < 24; i++) {
+    const a0 = (i / 24) * Math.PI * 2;
+    const a1 = ((i + 1) / 24) * Math.PI * 2;
+    b.seg(Math.cos(a0) * ringR, 0.002, Math.sin(a0) * ringR, Math.cos(a1) * ringR, 0.002, Math.sin(a1) * ringR, EDGE_GLOW);
+  }
+  // Central subtle logo disc
+  b.cyl(0, 0, r * 0.15, 0, 0.002, C.metal, C.metal, 12, EDGE_FAINT);
+}
+
+/** Water heater: ultra-slim dual-tank smart water heater with digital LED display or heat pump cylinder. */
+function waterHeater(b: Builder, w: number, d: number, h: number, wall: boolean): void {
+  if (wall) {
+    // Ultra-slim dual-tank smart water heater (Ariston Velis Tech Dry)
+    b.pad(-w / 2, w / 2, 0, h, -d / 2, d / 2, C.white, C.whiteTop, 0.05, EDGE_FURN);
+
+    // Champagne / brushed metallic front decorative fascia panel
+    b.box(-w * 0.44, w * 0.44, 0.06, h - 0.06, d / 2, d / 2 + 0.005, C.metal, C.metal, EDGE_FAINT);
+
+    // Digital LED touch display with shower icons
+    b.box(-w * 0.18, w * 0.18, h * 0.78, h * 0.88, d / 2 + 0.005, d / 2 + 0.008, C.dark, C.dark, EDGE_GLOW);
+    b.seg(-w * 0.14, h * 0.83, d / 2 + 0.01, w * 0.14, h * 0.83, d / 2 + 0.01, EDGE_GLOW);
+
+    // Concealed hydraulic connections below
+    for (const x of [-w * 0.2, w * 0.2]) {
+      b.cyl(x, 0, 0.014, -0.12, 0, C.metal, C.metal, 8);
     }
     return;
   }
+
+  // Floor-standing high-efficiency heat pump water heater cylinder
   const r = Math.min(w, d) / 2;
-  b.cyl(0, 0, r, 0, h, C.white, C.whiteTop, 24, EDGE_FURN);
-  // the mounting plate on the ceiling
-  b.cyl(0, 0, r * 0.5, h, h + 0.01, C.metal, C.metal, 12);
+  // Base ring
+  b.cyl(0, 0, r * 0.95, 0, 0.04, C.dark, C.dark, 20);
+
+  // Main insulated tank body in satin white
+  b.cyl(0, 0, r, 0.04, h - 0.12, C.white, C.whiteTop, 24, EDGE_FURN);
+
+  // Top heat pump air duct collar
+  b.cyl(0, 0, r * 0.82, h - 0.12, h, C.dark, C.metal, 20, EDGE_FAINT);
+
+  // Front digital control panel
+  b.box(-r * 0.32, r * 0.32, h * 0.54, h * 0.68, r - 0.005, r + 0.012, C.dark, C.dark, EDGE_GLOW);
+  b.seg(-r * 0.24, h * 0.61, r + 0.014, r * 0.24, h * 0.61, r + 0.014, EDGE_GLOW);
 }
 
-/** Water heater: a standing tank with its pipes below, or a slim flat tank on the wall (like an Ariston Velis). */
-function waterHeater(b: Builder, w: number, d: number, h: number, wall: boolean): void {
-  if (wall) {
-    b.pad(-w / 2, w / 2, 0, h, -d / 2, d / 2, C.white, C.whiteTop, 0.05, EDGE_FURN);
-    // the display near the top and the two pipes underneath
-    b.box(-w * 0.18, w * 0.18, h * 0.8, h * 0.88, d / 2, d / 2 + 0.006, C.dark);
-    for (const x of [-w * 0.2, w * 0.2]) b.cyl(x, 0, 0.012, -0.12, 0, C.metal, C.metal, 6);
-    return;
-  }
-  const r = Math.min(w, d) / 2;
-  b.cyl(0, 0, r, 0.04, h - 0.05, C.white, C.whiteTop, 20, EDGE_FURN);
-  // a domed top, the feet and the controls in front
-  b.cyl(0, 0, r * 0.85, h - 0.05, h, C.white, C.whiteTop, 20);
-  for (let i = 0; i < 3; i++) {
-    const a = (i / 3) * Math.PI * 2;
-    b.cyl(Math.cos(a) * r * 0.7, Math.sin(a) * r * 0.7, 0.03, 0, 0.04, C.dark, C.dark, 6);
-  }
-  b.box(-r * 0.3, r * 0.3, h * 0.55, h * 0.65, r - 0.01, r + 0.01, C.dark);
-}
-
-/** A mailbox in its local shape. */
+/** Architectural mailbox with brushed stainless flap, soft-close buffer, and newspaper compartment. */
 function mailbox(b: Builder, w: number, d: number, h: number, shape: MailboxShape): void {
   const body = C.metal;
   const top = shade(C.metal, 1.25).getHex();
   const panel = shade(C.metal, 0.85).getHex();
+
   if (shape === "pole") {
-    // the US mailbox on a post: a box with a round top lying lengthwise, a red flag on its side
+    // US mailbox on a post with red flag
     const post = Math.min(0.09, w * 0.4);
     const boxH = Math.min(0.24, h * 0.22);
     b.box(-post / 2, post / 2, 0, h - boxH, -post / 2, post / 2, C.wood, C.woodTop, EDGE_FAINT);
@@ -635,49 +900,66 @@ function mailbox(b: Builder, w: number, d: number, h: number, shape: MailboxShap
     return;
   }
   if (shape === "pillar") {
-    // a post box on a pillar: the box on top, a newspaper roll below
-    const boxH = Math.min(0.4, h * 0.3);
-    b.box(-w * 0.2, w * 0.2, 0, h - boxH, -d * 0.2, d * 0.2, C.dark, C.dark, EDGE_FAINT);
-    b.lyingCyl("z", 0, 0, h - boxH - 0.2, h - boxH - 0.04, d * 0.9, 0.16, body, top, 12, EDGE_FAINT);
+    // Architectural monolith in dark basalt with package compartment & newspaper roll
+    const boxH = Math.min(0.42, h * 0.32);
+    b.box(-w * 0.22, w * 0.22, 0, h - boxH, -d * 0.22, d * 0.22, C.dark, C.dark, EDGE_FAINT);
+    b.lyingCyl("z", 0, 0, h - boxH - 0.22, h - boxH - 0.04, d * 0.9, 0.18, body, top, 14, EDGE_FAINT);
     b.loft([-w / 2, w / 2, -d / 2, d / 2], [-w / 2, w / 2, -d / 2, d / 2 - 0.05], h - boxH, h, body, top, EDGE_FURN);
-    b.box(-w * 0.32, w * 0.32, h - 0.1, h - 0.08, d / 2 - 0.05, d / 2 - 0.04, C.dark);
+    b.box(-w * 0.35, w * 0.35, h - 0.12, h - 0.08, d / 2 - 0.05, d / 2 - 0.038, C.dark);
     return;
   }
   if (shape === "parcel") {
-    // a parcel box: a big door in front, a letter slot above
+    // Smart parcel drop box with electronic keypad
     b.box(-w / 2, w / 2, 0, h, -d / 2, d / 2, body, top, EDGE_FURN);
-    b.box(-w / 2 + 0.04, w / 2 - 0.04, 0.08, h * 0.72, d / 2, d / 2 + 0.012, panel, top, EDGE_FAINT);
-    b.box(-w * 0.3, w * 0.3, h * 0.82, h * 0.86, d / 2, d / 2 + 0.01, C.dark);
+    b.box(-w / 2 + 0.04, w / 2 - 0.04, 0.08, h * 0.72, d / 2, d / 2 + 0.014, panel, top, EDGE_FAINT);
+    b.box(-w * 0.32, w * 0.32, h * 0.82, h * 0.88, d / 2, d / 2 + 0.012, C.dark);
+    b.box(-0.06, 0.06, h * 0.74, h * 0.8, d / 2 + 0.014, d / 2 + 0.018, C.dark, C.dark, EDGE_GLOW);
     return;
   }
   if (shape === "bank") {
-    // a mailbox bank: three by two boxes, each with its own slot
+    // Precision mailbox bank with laser-cut nameplate slots
     b.box(-w / 2, w / 2, 0, h, -d / 2, d / 2, body, top, EDGE_FURN);
-    for (let i = 0; i < 3; i++)
+    for (let i = 0; i < 3; i++) {
       for (let j = 0; j < 2; j++) {
         const x0 = -w / 2 + (w / 3) * i + 0.015;
         const y0 = (h / 2) * j + 0.015;
-        b.box(x0, x0 + w / 3 - 0.03, y0, y0 + h / 2 - 0.03, d / 2, d / 2 + 0.01, panel, top, EDGE_FAINT);
-        b.box(x0 + 0.04, x0 + w / 3 - 0.07, y0 + h / 2 - 0.09, y0 + h / 2 - 0.07, d / 2 + 0.01, d / 2 + 0.014, C.dark);
+        b.box(x0, x0 + w / 3 - 0.03, y0, y0 + h / 2 - 0.03, d / 2, d / 2 + 0.012, panel, top, EDGE_FAINT);
+        b.box(x0 + 0.04, x0 + w / 3 - 0.07, y0 + h / 2 - 0.09, y0 + h / 2 - 0.07, d / 2 + 0.012, d / 2 + 0.016, C.dark);
       }
+    }
     return;
   }
-  // a wall mailbox: a box with a slanted roof and the slot under it
-  b.box(-w / 2, w / 2, 0, h * 0.8, -d / 2, d / 2, body, top, EDGE_FURN);
-  b.loft([-w / 2, w / 2, -d / 2, d / 2 + 0.02], [-w / 2, w / 2, -d / 2, -d / 2 + 0.02], h * 0.8, h, body, top, EDGE_FURN);
-  b.box(-w * 0.36, w * 0.36, h * 0.66, h * 0.7, d / 2, d / 2 + 0.008, C.dark);
+
+  // Wall mailbox with slanted rain canopy, brushed stainless flap, and lower newspaper holder
+  b.box(-w / 2, w / 2, 0.14, h * 0.82, -d / 2, d / 2, body, top, EDGE_FURN);
+  b.loft([-w / 2, w / 2, -d / 2, d / 2 + 0.025], [-w / 2, w / 2, -d / 2, -d / 2 + 0.02], h * 0.82, h, body, top, EDGE_FURN);
+  // Brushed stainless mail slot flap
+  b.box(-w * 0.38, w * 0.38, h * 0.68, h * 0.74, d / 2, d / 2 + 0.01, C.metal, C.metal, EDGE_FAINT);
+  // Lower tubular newspaper roll
+  b.lyingCyl("x", 0, 0, 0, 0.12, w * 0.92, 0.12, body, top, 12, EDGE_FAINT);
 }
 
-/** Smart side-by-side fridge without its doors (they move: see pushFridgeDoors): the body and, behind the doors, shelves. */
+/** Smart side-by-side fridge: interior LED light columns, tempered glass shelves with metal trims, stainless rear wall. */
 function fridgeSmart(b: Builder, w: number, d: number, h: number): void {
   const front = d / 2 - FRIDGE_DOOR;
+  // Carcass
   b.box(-w / 2, w / 2, 0.02, h, -d / 2, front, C.body, C.bodyTop, EDGE_FURN);
   b.box(-w / 2 + 0.05, w / 2 - 0.05, 0, 0.02, -d / 2 + 0.05, front - 0.05, C.dark);
-  // shelves of both compartments, seen when a door stands open
+
+  // Interior stainless rear cooling panel (Metal Cooling)
+  b.box(-w / 2 + 0.04, w / 2 - 0.04, 0.15, h - 0.1, -d / 2 + 0.01, -d / 2 + 0.02, C.metal, C.metal, EDGE_FAINT);
+
+  // Vertical LED light guides on left and right side walls
+  for (const sx of [-1, 1]) {
+    const lx = sx * (w / 2 - 0.02);
+    b.seg(lx, 0.2, -d / 2 + 0.08, lx, h - 0.15, -d / 2 + 0.08, EDGE_GLOW);
+  }
+
+  // Tempered glass shelves with metallic edge trims
   for (const y of [0.35, 0.7, 1.05, 1.4]) {
     if (y > h - 0.15) continue;
-    b.seg(-w / 2 + 0.03, y, front + 0.001, -0.03, y, front + 0.001, EDGE_FAINT);
-    b.seg(0.03, y, front + 0.001, w / 2 - 0.03, y, front + 0.001, EDGE_FAINT);
+    b.box(-w / 2 + 0.03, -0.03, y, y + 0.01, -d / 2 + 0.03, front, C.glass, C.metal, EDGE_FAINT);
+    b.box(0.03, w / 2 - 0.03, y, y + 0.01, -d / 2 + 0.03, front, C.glass, C.metal, EDGE_FAINT);
   }
 }
 
@@ -746,8 +1028,9 @@ export function pushAwning(buf: GeoBuffer, f: Pick<Furniture, "x" | "z" | "rotat
   const body = new Color(C.body);
   const top = new Color(C.bodyTop);
   const accent = new Color(C.accent);
-  const stripeA = new Color(0x1d6f8a);
-  const stripeB = new Color(0x0f2f45);
+  // Luxury outdoor architectural fabrics: refined solution-dyed acrylic weave in warm ecru and muted taupe
+  const stripeA = new Color(0xd9d2c7);
+  const stripeB = new Color(0xbab0a0);
   // a striped sheet between two local edges (p0–p1 the first edge, q0–q1 the second), stripes across the first edge
   const sheet = (p0: number[], p1: number[], q0: number[], q1: number[], n: number) => {
     const mix = (u: number[], v: number[], k: number) => [u[0] + (v[0] - u[0]) * k, u[1] + (v[1] - u[1]) * k, u[2] + (v[2] - u[2]) * k];
@@ -912,145 +1195,286 @@ function pushFridgeDoorsUnflipped(buf: GeoBuffer, f: Pick<Furniture, "x" | "z" |
 }
 
 function stove(b: Builder, w: number, d: number, h: number): void {
+  // Ultra-flush induction cooktop with integrated downdraft extraction (BORA / Gaggenau style)
   cabinet(b, w, d - 0.02, h - 0.04, 1, h - 0.24, true);
+
+  // Black ceramic-glass cooktop surface
   b.box(-w / 2, w / 2, h - 0.04, h, -d / 2, d / 2, C.dark, C.dark, EDGE_FURN);
+
+  // Central architectural downdraft extractor ventilation grille
+  b.box(-w * 0.08, w * 0.08, h, h + 0.003, -d * 0.28, d * 0.28, C.dark, C.dark, EDGE_GLOW);
+  for (let i = -3; i <= 3; i++) {
+    const z = (d * 0.25 / 3) * i;
+    b.seg(-w * 0.07, h + 0.004, z, w * 0.07, h + 0.004, z, EDGE_FAINT);
+  }
+
+  // Dual flex-induction bridge cooking zones with precision crosshairs
   for (const [x, z, r] of [
-    [-0.14, -0.13, 0.09],
-    [0.14, -0.13, 0.07],
-    [-0.14, 0.13, 0.07],
-    [0.14, 0.13, 0.09],
+    [-0.15, -0.13, 0.085],
+    [0.15, -0.13, 0.07],
+    [-0.15, 0.13, 0.07],
+    [0.15, 0.13, 0.085],
   ]) {
     const sx = (x * w) / 0.6;
     const sz = (z * d) / 0.62;
-    b.cyl(sx, sz, r, h, h + 0.004, C.dark, 0x16263f, 12, EDGE_GLOW);
+    b.cyl(sx, sz, r, h, h + 0.003, C.dark, 0x16263f, 14, EDGE_GLOW);
+    // Crosshair markings
+    b.seg(sx - r * 0.4, h + 0.004, sz, sx + r * 0.4, h + 0.004, sz, EDGE_FAINT);
+    b.seg(sx, h + 0.004, sz - r * 0.4, sx, h + 0.004, sz + r * 0.4, EDGE_FAINT);
   }
+
+  // Front touch-slider control panel
+  b.box(-w * 0.22, w * 0.22, h, h + 0.002, d / 2 - 0.06, d / 2 - 0.02, C.dark, C.dark, EDGE_FAINT);
+  b.seg(-w * 0.18, h + 0.003, d / 2 - 0.04, w * 0.18, h + 0.003, d / 2 - 0.04, EDGE_GLOW);
 }
 
 function sink(b: Builder, w: number, d: number, h: number): void {
+  // Undermount large single-bowl granite/stainless sink with designer gooseneck faucet
   cabinet(b, w, d - 0.02, h - 0.04, Math.max(1, Math.round(w / 0.45)), h - 0.2);
-  const bw = Math.min(0.5, w - 0.2);
-  b.box(-w / 2, -bw / 2, h - 0.04, h, -d / 2, d / 2, C.whiteTop, C.whiteTop, EDGE_FURN);
-  b.box(bw / 2, w / 2, h - 0.04, h, -d / 2, d / 2, C.whiteTop, C.whiteTop, EDGE_FURN);
-  b.box(-bw / 2, bw / 2, h - 0.04, h, -d / 2, -d / 2 + 0.1, C.whiteTop, C.whiteTop);
-  b.box(-bw / 2, bw / 2, h - 0.04, h, d / 2 - 0.08, d / 2, C.whiteTop, C.whiteTop);
-  b.box(-bw / 2, bw / 2, h - 0.2, h - 0.17, -d / 2 + 0.1, d / 2 - 0.08, C.metal, C.metal, EDGE_GLOW);
-  b.cyl(0, -d / 2 + 0.05, 0.02, h, h + 0.28, C.metal, C.metal, 8);
-  b.box(-0.015, 0.015, h + 0.24, h + 0.28, -d / 2 + 0.05, -d / 2 + 0.22, C.metal);
+  const bw = Math.min(0.52, w - 0.2);
+
+  // Solid stone worktop perimeter around the bowl
+  b.box(-w / 2, -bw / 2, h - 0.04, h, -d / 2, d / 2, worktop(), worktop(), EDGE_FURN);
+  b.box(bw / 2, w / 2, h - 0.04, h, -d / 2, d / 2, worktop(), worktop(), EDGE_FURN);
+  b.box(-bw / 2, bw / 2, h - 0.04, h, -d / 2, -d / 2 + 0.12, worktop(), worktop());
+  b.box(-bw / 2, bw / 2, h - 0.04, h, d / 2 - 0.08, d / 2, worktop(), worktop());
+
+  // Deep recessed undermount sink basin
+  b.box(-bw / 2, bw / 2, h - 0.22, h - 0.18, -d / 2 + 0.12, d / 2 - 0.08, C.metal, C.metal, EDGE_GLOW);
+  b.box(-bw / 2, -bw / 2 + 0.02, h - 0.18, h - 0.04, -d / 2 + 0.12, d / 2 - 0.08, C.metal);
+  b.box(bw / 2 - 0.02, bw / 2, h - 0.18, h - 0.04, -d / 2 + 0.12, d / 2 - 0.08, C.metal);
+  b.box(-bw / 2, bw / 2, h - 0.18, h - 0.04, -d / 2 + 0.12, -d / 2 + 0.14, C.metal);
+  b.box(-bw / 2, bw / 2, h - 0.18, h - 0.04, d / 2 - 0.1, d / 2 - 0.08, C.metal);
+
+  // Stainless basket strainer
+  b.cyl(0, 0, 0.035, h - 0.22, h - 0.21, C.metal, C.metal, 10, EDGE_FAINT);
+
+  // Designer architectural gooseneck faucet with pull-down spray wand
+  const fz = -d / 2 + 0.06;
+  b.cyl(0, fz, 0.024, h, h + 0.02, C.metal, C.metal, 10);
+  b.cyl(0, fz, 0.016, h + 0.02, h + 0.32, C.metal, C.metal, 8);
+  b.box(-0.014, 0.014, h + 0.29, h + 0.32, fz, fz + 0.18, C.metal, C.metal, EDGE_FAINT);
+  b.cyl(0, fz + 0.18, 0.014, h + 0.22, h + 0.29, C.metal, C.metal, 8);
+  // Single-lever mixer handle
+  b.box(0.022, 0.055, h + 0.05, h + 0.08, fz - 0.01, fz + 0.01, C.metal, C.metal);
+  // Countertop flush soap dispenser
+  b.cyl(bw / 2 + 0.05, fz, 0.014, h, h + 0.07, C.metal, C.metal, 8);
 }
 
 function bathtub(b: Builder, w: number, d: number, h: number): void {
-  const rim = 0.07;
-  b.box(-w / 2, w / 2, 0, h - 0.02, -d / 2, d / 2, C.white, C.whiteTop, EDGE_FURN);
-  b.box(-w / 2, w / 2, h - 0.02, h, -d / 2, -d / 2 + rim, C.whiteTop);
-  b.box(-w / 2, w / 2, h - 0.02, h, d / 2 - rim, d / 2, C.whiteTop);
-  b.box(-w / 2, -w / 2 + rim, h - 0.02, h, -d / 2 + rim, d / 2 - rim, C.whiteTop);
-  b.box(w / 2 - rim, w / 2, h - 0.02, h, -d / 2 + rim, d / 2 - rim, C.whiteTop);
-  b.box(-w / 2 + rim, w / 2 - rim, h - 0.03, h - 0.02, -d / 2 + rim, d / 2 - rim, C.glass, C.glass, EDGE_GLOW);
-  b.cyl(-w / 2 + 0.04, 0, 0.02, h, h + 0.12, C.metal, C.metal, 8);
+  // Contemporary freestanding solid-surface soaking tub (Antonio Lupi / Boffi)
+  // Sculpted flared outer shell
+  b.loft([-w / 2 + 0.06, w / 2 - 0.06, -d / 2 + 0.05, d / 2 - 0.05], [-w / 2, w / 2, -d / 2, d / 2], 0, h, C.white, C.whiteTop, EDGE_FURN);
+
+  // Inner ergonomic bathing well with sloped backrests
+  const rim = 0.055;
+  b.box(-w / 2 + rim, w / 2 - rim, h - 0.04, h - 0.02, -d / 2 + rim, d / 2 - rim, C.glass, C.glass, EDGE_GLOW);
+
+  // Recessed slot overflow
+  b.seg(w / 2 - rim - 0.002, h - 0.08, -0.04, w / 2 - rim - 0.002, h - 0.08, 0.04, EDGE_FAINT);
+  // Chrome pop-up drain
+  b.cyl(0, 0, 0.03, h - 0.04, h - 0.035, C.metal, C.metal, 10);
+
+  // Freestanding floor-mounted architectural tub-filler faucet in brushed metal
+  const fx = -w / 2 - 0.05;
+  b.cyl(fx, 0, 0.035, 0, 0.02, C.metal, C.metal, 10);
+  b.cyl(fx, 0, 0.018, 0.02, h + 0.18, C.metal, C.metal, 8);
+  b.box(fx, fx + 0.12, h + 0.15, h + 0.18, -0.012, 0.012, C.metal, C.metal, EDGE_FAINT);
+  b.cyl(fx + 0.12, 0, 0.012, h + 0.11, h + 0.15, C.metal, C.metal, 8);
+  // Mixer lever
+  b.box(fx - 0.01, fx + 0.01, h + 0.1, h + 0.13, 0.02, 0.06, C.metal);
 }
 
 function shower(b: Builder, w: number, d: number, h: number): void {
-  b.box(-w / 2, w / 2, 0, 0.05, -d / 2, d / 2, C.whiteTop, C.whiteTop, EDGE_FURN);
-  b.cyl(0, 0, 0.04, 0.05, 0.052, C.metal, C.metal, 8);
-  // glass walls on the front and one side: only edges, the glass itself stays clear
-  for (const [xa, za, xb, zb] of [
-    [-w / 2, d / 2, w / 2, d / 2],
-    [w / 2, -d / 2, w / 2, d / 2],
-  ]) {
-    b.seg(xa, 0.05, za, xb, 0.05, zb, EDGE_GLOW);
-    b.seg(xa, h, za, xb, h, zb, EDGE_GLOW);
-    b.seg(xb, 0.05, zb, xb, h, zb, EDGE_GLOW);
-  }
-  b.cyl(-w / 2 + 0.06, -d / 2 + 0.06, 0.015, 0.05, h - 0.05, C.metal, C.metal, 6);
-  b.cyl(-w / 2 + 0.2, -d / 2 + 0.2, 0.1, h - 0.08, h - 0.06, C.metal, C.metal, 12, EDGE_GLOW);
+  // Walk-in wetroom luxury shower with ultra-low profile architectural stone tray
+  b.box(-w / 2, w / 2, 0, 0.03, -d / 2, d / 2, C.whiteTop, C.whiteTop, EDGE_FURN);
+
+  // Linear stainless steel drainage channel
+  b.box(-w / 2 + 0.1, w / 2 - 0.1, 0.025, 0.032, -d / 2 + 0.05, -d / 2 + 0.09, C.metal, C.metal, EDGE_FAINT);
+
+  // Frameless 10mm architectural tempered glass panel with metallic wall stabilization channel
+  b.seg(-w / 2, 0.03, d / 2, w / 2, 0.03, d / 2, EDGE_GLOW);
+  b.seg(-w / 2, h, d / 2, w / 2, h, d / 2, EDGE_GLOW);
+  b.seg(w / 2, 0.03, d / 2, w / 2, h, d / 2, EDGE_GLOW);
+  b.seg(w / 2, 0.03, -d / 2, w / 2, 0.03, d / 2, EDGE_GLOW);
+  b.seg(w / 2, h, -d / 2, w / 2, h, d / 2, EDGE_GLOW);
+  b.seg(w / 2, 0.03, d / 2, w / 2, h, d / 2, EDGE_GLOW);
+  // Overhead stabilizer bar
+  b.box(-w / 2, w / 2, h - 0.04, h - 0.025, d / 2 - 0.015, d / 2, C.metal);
+
+  // Concealed thermostatic valve panel with knurled controls
+  b.box(-w / 2, -w / 2 + 0.02, 1.0, 1.25, -0.1, 0.1, C.metal, C.metal, EDGE_FAINT);
+  b.cyl(-w / 2 + 0.025, -0.04, 0.022, 1.04, 1.08, C.metal, C.metal, 10);
+  b.cyl(-w / 2 + 0.025, 0.04, 0.022, 1.15, 1.19, C.metal, C.metal, 10);
+
+  // Large ceiling-flush rainfall shower head
+  b.box(-0.16, 0.16, h - 0.02, h, -0.16, 0.16, C.metal, C.metal, EDGE_GLOW);
+
+  // Wall-mounted hand shower wand and vertical slide rail
+  b.cyl(-w / 2 + 0.03, 0.2, 0.01, 0.75, 1.6, C.metal, C.metal, 6);
+  b.box(-w / 2 + 0.03, -w / 2 + 0.055, 1.25, 1.45, 0.19, 0.22, C.metal);
 }
 
 function wc(b: Builder, w: number, d: number, h: number): void {
+  // Contemporary wall-hung toilet (Duravit ME by Starck / Geberit AquaClean)
   const tankD = Math.min(0.18, d * 0.3);
-  b.box(-w / 2, w / 2, 0.45, h, -d / 2, -d / 2 + tankD, C.white, C.whiteTop, EDGE_FURN);
-  b.box(-w * 0.3, w * 0.3, 0, 0.36, -d / 2 + tankD - 0.02, d / 2 - 0.12, C.white, C.whiteTop);
-  b.cyl(0, d / 2 - 0.26, Math.min(w / 2, 0.19), 0.36, 0.41, C.white, C.whiteTop, 12, EDGE_FURN);
-  b.box(-w / 2 + 0.02, w / 2 - 0.02, 0.41, 0.43, -d / 2 + tankD, -d / 2 + tankD + 0.05, C.whiteTop);
+
+  // In-wall installation chase with architectural dual-flush actuator plate
+  b.box(-w / 2, w / 2, 0.45, h, -d / 2, -d / 2 + tankD, C.body, C.bodyTop, EDGE_FURN);
+  // Dual-flush plate in brushed metal
+  b.box(-0.11, 0.11, h - 0.22, h - 0.1, -d / 2 + tankD, -d / 2 + tankD + 0.008, C.metal, C.metal, EDGE_GLOW);
+  b.box(-0.08, -0.01, h - 0.19, h - 0.13, -d / 2 + tankD + 0.008, -d / 2 + tankD + 0.012, C.whiteTop);
+  b.box(0.01, 0.08, h - 0.19, h - 0.13, -d / 2 + tankD + 0.008, -d / 2 + tankD + 0.012, C.whiteTop);
+
+  // Floating wall-hung ceramic bowl (suspended above floor)
+  b.loft([-w * 0.32, w * 0.32, -d / 2 + tankD, d / 2 - 0.18], [-w * 0.38, w * 0.38, -d / 2 + tankD, d / 2 - 0.12], 0.12, 0.38, C.white, C.whiteTop, EDGE_FAINT);
+  b.cyl(0, d / 2 - 0.24, Math.min(w / 2 - 0.02, 0.19), 0.14, 0.41, C.white, C.whiteTop, 16, EDGE_FURN);
+
+  // Ultra-slim soft-close ergonomic seat and lid with metallic hinge caps
+  b.box(-w * 0.36, w * 0.36, 0.41, 0.43, -d / 2 + tankD + 0.02, d / 2 - 0.06, C.whiteTop, C.whiteTop, EDGE_FAINT);
+  b.cyl(-0.07, -d / 2 + tankD + 0.03, 0.012, 0.41, 0.435, C.metal, C.metal, 8);
+  b.cyl(0.07, -d / 2 + tankD + 0.03, 0.012, 0.41, 0.435, C.metal, C.metal, 8);
 }
 
 function washbasin(b: Builder, w: number, d: number, h: number): void {
+  // Floating Italian vanity console with deep pull-out drawer in fluted wood
   cabinet(b, w, d - 0.02, h - 0.12, w > 0.8 ? 2 : 1, h - 0.3);
+
+  // Thick solid-surface countertop with seamlessly integrated basin
   b.box(-w / 2, w / 2, h - 0.12, h, -d / 2, d / 2, C.white, C.whiteTop, EDGE_FURN);
-  b.box(-w / 2 + 0.07, w / 2 - 0.07, h - 0.005, h, -d / 2 + 0.12, d / 2 - 0.06, C.glass, C.glass, EDGE_GLOW);
-  b.cyl(0, -d / 2 + 0.06, 0.018, h, h + 0.2, C.metal, C.metal, 8);
-  // mirror above
-  b.box(-w / 2 + 0.04, w / 2 - 0.04, h + 0.35, h + 1.0, -d / 2, -d / 2 + 0.02, C.glass, C.glass, EDGE_GLOW);
+  // Recessed basin cavity with water reflection
+  b.pad(-w / 2 + 0.1, w / 2 - 0.1, h - 0.08, h - 0.02, -d / 2 + 0.12, d / 2 - 0.08, C.glass, C.glass, 0.03, EDGE_GLOW);
+
+  // Wall-mounted architectural minimalist faucet
+  const fz = -d / 2 + 0.05;
+  b.cyl(0, fz, 0.014, h, h + 0.18, C.metal, C.metal, 8);
+  b.box(-0.01, 0.01, h + 0.15, h + 0.18, fz, fz + 0.14, C.metal, C.metal, EDGE_FAINT);
+  b.cyl(0.1, fz, 0.018, h, h + 0.06, C.metal, C.metal, 8);
+
+  // Large backlit LED mirror with ambient glow frame
+  b.box(-w / 2 + 0.03, w / 2 - 0.03, h + 0.28, h + 1.05, -d / 2, -d / 2 + 0.025, C.glass, C.glass, EDGE_GLOW);
+  b.box(-w / 2 + 0.01, w / 2 - 0.01, h + 0.26, h + 1.07, -d / 2 - 0.005, -d / 2, C.dark, C.dark, EDGE_FAINT);
 }
 
 function tvBoard(b: Builder, w: number, d: number, h: number): void {
+  // Low-slung Italian media credenza with acoustic vertical slatting
   cabinet(b, w, d, h, Math.max(2, Math.round(w / 0.6)), h * 0.55, true);
+
+  // Inset marble / stone top tray
+  b.box(-w / 2 + 0.02, w / 2 - 0.02, h, h + 0.015, -d / 2 + 0.02, d / 2 - 0.02, C.whiteTop, C.whiteTop, EDGE_FAINT);
+
+  // OLED screen on minimalist metal swivel pedestal
   const tw = Math.min(w * 0.8, 1.45);
   const th = tw * 0.56;
-  b.box(-0.1, 0.1, h, h + 0.02, -d / 2 + 0.08, -d / 2 + 0.24, C.metal);
-  b.box(-0.02, 0.02, h + 0.02, h + 0.12, -d / 2 + 0.14, -d / 2 + 0.18, C.metal);
-  b.box(-tw / 2, tw / 2, h + 0.1, h + 0.1 + th, -d / 2 + 0.12, -d / 2 + 0.16, C.dark, C.dark, EDGE_GLOW);
+  b.box(-0.14, 0.14, h + 0.015, h + 0.03, -d / 2 + 0.1, -d / 2 + 0.22, C.metal, C.metal, EDGE_FAINT);
+  b.box(-0.025, 0.025, h + 0.03, h + 0.12, -d / 2 + 0.14, -d / 2 + 0.18, C.metal);
+  // Ultra-thin OLED display panel
+  b.box(-tw / 2, tw / 2, h + 0.1, h + 0.1 + th, -d / 2 + 0.13, -d / 2 + 0.155, C.dark, C.dark, EDGE_GLOW);
+
+  // Integrated slim soundbar below screen
+  b.box(-tw * 0.4, tw * 0.4, h + 0.04, h + 0.085, -d / 2 + 0.12, -d / 2 + 0.17, C.dark, C.dark, EDGE_FAINT);
 }
 
 function plant(b: Builder, w: number, d: number, h: number): void {
   const r = Math.min(w, d) / 2;
-  const potH = Math.min(0.4, h * 0.34);
-  b.cyl(0, 0, r * 0.62, 0, potH, C.pot, C.pot, 10, EDGE_FURN);
-  b.cyl(0, 0, r * 0.08, potH, h * 0.55, C.wood, C.wood, 6);
-  // foliage as stacked, slightly rotated octagonal layers
-  const layers = 4;
+  const potH = Math.min(0.42, h * 0.35);
+
+  // Architectural brushed brass / metal saucer base
+  b.cyl(0, 0, r * 0.66, 0, 0.025, C.metal, C.metal, 14);
+
+  // Fluted ceramic / stone tapered planter
+  b.loft([-r * 0.5, r * 0.5, -r * 0.5, r * 0.5], [-r * 0.62, r * 0.62, -r * 0.62, r * 0.62], 0.025, potH, C.pot, C.pot, EDGE_FURN);
+  // Dark potting soil
+  b.cyl(0, 0, r * 0.58, potH - 0.02, potH, C.dark, C.dark, 12);
+
+  // Natural branching trunk
+  b.cyl(0, 0, r * 0.08, potH, h * 0.6, C.wood, C.wood, 8);
+  b.loft([0, r * 0.06, 0, r * 0.06], [-r * 0.2, -r * 0.15, r * 0.15, r * 0.2], potH + (h - potH) * 0.3, potH + (h - potH) * 0.65, C.wood, C.wood);
+
+  // Multi-layered lush Fiddle-leaf fig foliage canopy
+  const layers = 5;
   for (let i = 0; i < layers; i++) {
     const t = i / (layers - 1);
-    const lr = r * (0.95 - 0.55 * t);
-    const y0 = potH + (h - potH) * (0.18 + 0.2 * i);
-    b.cyl(Math.sin(i * 2.1) * 0.03, Math.cos(i * 1.7) * 0.03, lr, y0, y0 + (h - potH) * 0.16, C.plant, C.plantTop, 8, i === layers - 1 ? EDGE_FAINT : null);
+    const lr = r * (0.96 - 0.52 * t);
+    const y0 = potH + (h - potH) * (0.16 + 0.17 * i);
+    const ox = Math.sin(i * 2.3) * 0.04;
+    const oz = Math.cos(i * 1.9) * 0.04;
+    b.cyl(ox, oz, lr, y0, y0 + (h - potH) * 0.15, C.plant, C.plantTop, 10, i === layers - 1 ? EDGE_FAINT : null);
   }
 }
 
 function rug(b: Builder, w: number, d: number): void {
-  b.box(-w / 2, w / 2, 0, 0.012, -d / 2, d / 2, C.fabric, C.fabricTop);
-  const i = Math.min(0.12, Math.min(w, d) * 0.08);
+  // Luxury hand-tufted wool / silk area rug with border band and tailored whipstitch perimeter
+  b.box(-w / 2, w / 2, 0, 0.014, -d / 2, d / 2, C.fabric, C.fabricTop);
+
+  // Border band frame
+  const border = Math.min(0.14, Math.min(w, d) * 0.1);
   for (const [xa, za, xb, zb] of [
-    [-w / 2 + i, -d / 2 + i, w / 2 - i, -d / 2 + i],
-    [w / 2 - i, -d / 2 + i, w / 2 - i, d / 2 - i],
-    [w / 2 - i, d / 2 - i, -w / 2 + i, d / 2 - i],
-    [-w / 2 + i, d / 2 - i, -w / 2 + i, -d / 2 + i],
+    [-w / 2 + border, -d / 2 + border, w / 2 - border, -d / 2 + border],
+    [w / 2 - border, -d / 2 + border, w / 2 - border, d / 2 - border],
+    [w / 2 - border, d / 2 - border, -w / 2 + border, d / 2 - border],
+    [-w / 2 + border, d / 2 - border, -w / 2 + border, -d / 2 + border],
   ]) {
-    b.seg(xa, 0.014, za, xb, 0.014, zb, EDGE_FURN);
+    b.seg(xa, 0.016, za, xb, 0.016, zb, EDGE_FURN);
+  }
+
+  // Inner field subtle contrast pattern
+  const inner = border * 1.8;
+  if (w - 2 * inner > 0.4 && d - 2 * inner > 0.4) {
+    b.box(-w / 2 + inner, w / 2 - inner, 0.014, 0.016, -d / 2 + inner, d / 2 - inner, C.cushion, C.fabricTop, EDGE_FAINT);
   }
 }
 
-/** Straight stair rising towards -z (the back), with a handrail on the +x side. */
+/** Straight stair rising towards -z (the back), with open risers and architectural glass balustrade. */
 function stairs(b: Builder, w: number, d: number, h: number): void {
   const n = Math.max(3, Math.round(h / 0.18));
   const rise = h / n;
   const run = d / n;
+  const treadThick = 0.045;
+
   for (let i = 0; i < n; i++) {
     const z1 = d / 2 - run * i;
     const z0 = z1 - run;
     const y1 = rise * (i + 1);
-    b.box(-w / 2, w / 2, 0, y1, z0, z1, C.wood, C.woodTop);
-    b.seg(-w / 2, y1, z1, w / 2, y1, z1, EDGE_FURN);
+
+    // Floating solid oak tread with shadow reveal
+    b.box(-w / 2, w / 2, y1 - treadThick, y1, z0, z1 + 0.02, C.wood, C.woodTop, EDGE_FURN);
+
+    // Under-tread LED wash light line
+    b.seg(-w / 2 + 0.04, y1 - treadThick, z1 + 0.015, w / 2 - 0.04, y1 - treadThick, z1 + 0.015, EDGE_GLOW);
+
+    // Open riser spacer bracket in dark metal
+    b.box(-w / 2 + 0.1, w / 2 - 0.1, y1 - rise, y1 - treadThick, z0 + run * 0.4, z0 + run * 0.6, C.metal);
   }
-  b.seg(-w / 2, 0, d / 2, -w / 2, rise, d / 2, EDGE_FURN);
-  // stringer lines along both sides
-  for (const x of [-w / 2, w / 2]) b.seg(x, rise, d / 2, x, h, -d / 2 + run, EDGE_FAINT);
-  // handrail and posts
-  const rail = 0.9;
+
+  // Frameless glass balustrade with brushed shoe base on +x side
+  const railH = 0.92;
   const xr = w / 2 - 0.03;
-  // the rail ends where the stair passes through the ceiling opening
   const last = Math.max(1, n - 4);
-  b.seg(xr, rise + rail, d / 2 - run / 2, xr, rise * last + rail, d / 2 - run * (last - 0.5), EDGE_GLOW);
+  const zStart = d / 2 - run / 2;
+  const zEnd = d / 2 - run * (last - 0.5);
+  const yStart = rise + railH;
+  const yEnd = rise * last + railH;
+
+  // Handrail
+  b.seg(xr, yStart, zStart, xr, yEnd, zEnd, EDGE_GLOW);
+
+  // Glass balustrade panel perimeter
+  b.seg(xr, rise, zStart, xr, yStart, zStart, EDGE_FAINT);
+  b.seg(xr, rise * last, zEnd, xr, yEnd, zEnd, EDGE_FAINT);
+  b.seg(xr, rise, zStart, xr, rise * last, zEnd, EDGE_FAINT);
+
+  // Balustrade support stanchions
   for (let i = 0; i < last; i += 3) {
     const z = d / 2 - run * (i + 0.5);
     const y = rise * (i + 1);
-    b.seg(xr, y, z, xr, y + rail, z, EDGE_FAINT);
+    b.seg(xr, y, z, xr, y + railH, z, EDGE_FAINT);
   }
 }
 
 /**
- * U-stair: the first flight rises on the left half (-x) from the front towards the back, a landing across
- * the whole width turns it, the second flight comes back up on the right half to the front. Mirroring
- * turns it the other way. A handrail runs along the eye between the flights.
+ * U-stair: contemporary architectural switchback staircase with solid cantilevered landing,
+ * open risers on second flight, glass balustrade, and under-tread LED wash lines.
  */
 function stairsU(b: Builder, w: number, d: number, h: number): void {
   const { k, steps1, steps2, fw, landing, run, rise } = stairsULayout(w, d, h);
@@ -1059,39 +1483,49 @@ function stairsU(b: Builder, w: number, d: number, h: number): void {
   const xb0 = w / 2 - fw;
   const xb1 = w / 2;
   const zl = -d / 2 + landing;
+  const treadThick = 0.045;
+
+  // Flight 1: rising towards back
   for (let i = 0; i < steps1; i++) {
     const z1 = d / 2 - run * i;
+    const z0 = z1 - run;
     const y1 = rise * (i + 1);
-    b.box(xa0, xa1, 0, y1, z1 - run, z1, C.wood, C.woodTop);
-    b.seg(xa0, y1, z1, xa1, y1, z1, EDGE_FURN);
+    b.box(xa0, xa1, y1 - treadThick, y1, z0, z1 + 0.02, C.wood, C.woodTop, EDGE_FURN);
+    b.seg(xa0 + 0.02, y1 - treadThick, z1 + 0.015, xa1 - 0.02, y1 - treadThick, z1 + 0.015, EDGE_GLOW);
+    b.box(xa0 + 0.06, xa1 - 0.06, y1 - rise, y1 - treadThick, z0 + run * 0.4, z0 + run * 0.6, C.metal);
   }
-  b.seg(xa0, 0, d / 2, xa0, rise, d / 2, EDGE_FURN);
-  // the landing across both flights: solid under the first flight's half, a slab over the second's
+
+  // Cantilevered landing platform across both flights
   const yl = rise * k;
-  const slab = 0.2;
-  b.box(xa0, xa1, 0, yl, -d / 2, zl, C.wood, C.woodTop);
-  b.box(xa1, xb1, Math.max(0, yl - slab), yl, -d / 2, zl, C.wood, C.woodTop);
-  b.seg(xa0, yl, zl, xa1, yl, zl, EDGE_FURN);
-  // the second flight rises from the landing towards the front as stepped slabs (open below, so it
-  // does not stand like a wall); its top step is the upper floor
+  const slab = 0.22;
+  b.box(xa0, xa1, 0, yl, -d / 2, zl, C.wood, C.woodTop, EDGE_FURN);
+  b.box(xa1, xb1, Math.max(0, yl - slab), yl, -d / 2, zl, C.wood, C.woodTop, EDGE_FURN);
+  b.seg(xa0, yl, zl, xa1, yl, zl, EDGE_GLOW);
+
+  // Flight 2: rising from landing towards front as floating open treads
   for (let j = 0; j < steps2; j++) {
     const z0 = zl + run * j;
     const y1 = rise * (k + 1 + j);
-    b.box(xb0, xb1, Math.max(0, y1 - rise - slab), y1, z0, z0 + run, C.wood, C.woodTop);
-    b.seg(xb0, y1, z0, xb1, y1, z0, EDGE_FURN);
+    b.box(xb0, xb1, y1 - treadThick, y1, z0, z0 + run + 0.02, C.wood, C.woodTop, EDGE_FURN);
+    b.seg(xb0 + 0.02, y1 - treadThick, z0 + run + 0.015, xb1 - 0.02, y1 - treadThick, z0 + run + 0.015, EDGE_GLOW);
+    b.box(xb0 + 0.06, xb1 - 0.06, Math.max(0, y1 - rise - slab), y1 - treadThick, z0 + run * 0.4, z0 + run * 0.6, C.metal);
   }
-  // stringer lines along the outer sides
+
+  // Outer stringers
   b.seg(xa0, rise, d / 2, xa0, yl, zl, EDGE_FAINT);
   b.seg(xb1, yl, zl, xb1, h, zl + run * (steps2 - 1), EDGE_FAINT);
-  // handrail along the eye and around the landing; it ends where the second flight passes the ceiling
-  const rail = 0.9;
+
+  // Continuous architectural glass balustrade wrapping around the stair eye
+  const rail = 0.92;
   const ra = xa1 - 0.03;
   const rb = xb0 + 0.03;
   const zr = zl - 0.03;
   const last = Math.max(1, steps2 - 4);
+
   b.seg(ra, rise + rail, d / 2 - run / 2, ra, yl + rail, zr, EDGE_GLOW);
   b.seg(ra, yl + rail, zr, rb, yl + rail, zr, EDGE_GLOW);
   b.seg(rb, yl + rail, zr, rb, rise * (k + last) + rail, zl + run * (last - 0.5), EDGE_GLOW);
+
   for (let i = 0; i < steps1; i += 3) {
     const z = d / 2 - run * (i + 0.5);
     b.seg(ra, rise * (i + 1), z, ra, rise * (i + 1) + rail, z, EDGE_FAINT);
@@ -1104,197 +1538,453 @@ function stairsU(b: Builder, w: number, d: number, h: number): void {
 }
 
 function sideboard(b: Builder, w: number, d: number, h: number): void {
-  legs(b, w, d, 0.12, 0.03, 0.04, C.metal);
-  b.box(-w / 2, w / 2, 0.12, h, -d / 2, d / 2 - 0.02, C.wood, C.woodTop, EDGE_FURN);
-  fronts(b, -w / 2, w / 2, 0.12, h, d / 2 - 0.02, Math.max(2, Math.round(w / 0.45)), h - 0.1, true);
+  // Italian architectural credenza with fluted doors and inset stone top slab
+  // Slender architectural metal bridge base with brass ferrule caps
+  legs(b, w, d, 0.14, 0.032, 0.04, C.metal, true);
+  b.box(-w / 2 + 0.04, w / 2 - 0.04, 0.06, 0.075, -d / 2 + 0.04, d / 2 - 0.06, C.metal);
+
+  // Main carcass with shadow reveal
+  b.box(-w / 2, w / 2, 0.14, h - 0.02, -d / 2, d / 2 - 0.02, C.wood, C.woodTop, EDGE_FURN);
+
+  // Inset honed marble or dark glass top slab
+  b.box(-w / 2 + 0.005, w / 2 - 0.005, h - 0.02, h, -d / 2 + 0.005, d / 2 - 0.02, C.whiteTop, C.whiteTop, EDGE_FAINT);
+
+  // Fluted door panels with precision horizontal gola reveal and vertical slats
+  const doors = Math.max(2, Math.round(w / 0.45));
+  fronts(b, -w / 2, w / 2, 0.14, h - 0.04, d / 2 - 0.02, doors, h - 0.08, true);
 }
 
 function dresser(b: Builder, w: number, d: number, h: number): void {
-  b.box(-w / 2, w / 2, 0.06, h, -d / 2, d / 2 - 0.02, C.wood, C.woodTop, EDGE_FURN);
-  b.box(-w / 2 + 0.02, w / 2 - 0.02, 0, 0.06, -d / 2 + 0.02, d / 2 - 0.06, C.dark);
-  const n = Math.max(3, Math.round((h - 0.06) / 0.22));
+  // Low luxury commode with inset marble top slab and wide soft-close drawers
+  // Recessed dark shadow plinth
+  b.box(-w / 2 + 0.03, w / 2 - 0.03, 0, 0.06, -d / 2 + 0.03, d / 2 - 0.05, C.dark, C.dark);
+
+  // Main carcass
+  b.box(-w / 2, w / 2, 0.06, h - 0.02, -d / 2, d / 2 - 0.02, C.wood, C.woodTop, EDGE_FURN);
+  // Inset marble top slab
+  b.box(-w / 2 + 0.005, w / 2 - 0.005, h - 0.02, h, -d / 2 + 0.005, d / 2 - 0.02, C.whiteTop, C.whiteTop, EDGE_FAINT);
+
+  // Multi-tier drawers with continuous horizontal reveals and brushed metallic edge-pulls
+  const n = Math.max(3, Math.round((h - 0.08) / 0.22));
   const z = d / 2 - 0.02;
+  const dh = (h - 0.08) / n;
   for (let i = 1; i < n; i++) {
-    const y = 0.06 + ((h - 0.06) / n) * i;
-    b.seg(-w / 2, y, z, w / 2, y, z, EDGE_FAINT);
+    const y = 0.06 + dh * i;
+    b.seg(-w / 2, y, z + 0.002, w / 2, y, z + 0.002, EDGE_FAINT);
   }
   for (let i = 0; i < n; i++) {
-    const y = 0.06 + ((h - 0.06) / n) * (i + 0.5);
-    b.seg(-0.08, y, z + 0.012, 0.08, y, z + 0.012, EDGE_GLOW);
+    const y = 0.06 + dh * (i + 0.5);
+    const hw = Math.min(0.14, w * 0.2);
+    b.box(-hw, hw, y - 0.008, y + 0.008, z, z + 0.015, C.metal, C.metal, EDGE_GLOW);
   }
 }
 
 function coatRack(b: Builder, w: number, d: number, h: number): void {
-  // shoe bench, back panel with hooks, hat shelf
-  b.box(-w / 2, w / 2, 0, 0.45, -d / 2, d / 2, C.wood, C.woodTop, EDGE_FURN);
-  fronts(b, -w / 2, w / 2, 0.02, 0.45, d / 2, Math.max(2, Math.round(w / 0.5)), 0.38, true);
-  b.box(-w / 2, w / 2, 0.45, h, -d / 2, -d / 2 + 0.03, C.body, C.bodyTop, EDGE_FURN);
+  // Luxury entryway console: floating bench, upholstered seat pad, fluted slat back panel, brass hooks & hat shelf
+  // Base shoe storage bench with recessed dark plinth
+  b.box(-w / 2 + 0.02, w / 2 - 0.02, 0, 0.05, -d / 2 + 0.02, d / 2 - 0.02, C.dark);
+  b.box(-w / 2, w / 2, 0.05, 0.44, -d / 2, d / 2, C.wood, C.woodTop, EDGE_FURN);
+  // Upholstered leather/bouclé seat cushion pad
+  b.pad(-w / 2 + 0.02, w / 2 - 0.02, 0.44, 0.49, -d / 2 + 0.04, d / 2 - 0.02, C.cushion, C.fabricTop, 0.02, EDGE_FAINT);
+
+  // Acoustic fluted wood slat back panel
+  b.box(-w / 2, w / 2, 0.49, h, -d / 2, -d / 2 + 0.035, C.body, C.bodyTop, EDGE_FURN);
+  const slats = Math.max(6, Math.round(w / 0.1));
+  for (let i = 1; i < slats; i++) {
+    const x = -w / 2 + (w / slats) * i;
+    b.seg(x, 0.49, -d / 2 + 0.037, x, h - 0.05, -d / 2 + 0.037, EDGE_FAINT);
+  }
+
+  // Overhead floating hat shelf with integrated LED wash light
   b.box(-w / 2, w / 2, h - 0.04, h, -d / 2, d / 2, C.wood, C.woodTop, EDGE_FURN);
+  b.seg(-w / 2 + 0.02, h - 0.042, -d / 2 + 0.05, w / 2 - 0.02, h - 0.042, -d / 2 + 0.05, EDGE_GLOW);
+
+  // Precision machined brass/black wall coat peg hooks
   const hooks = Math.max(2, Math.round(w / 0.25));
   for (let i = 0; i < hooks; i++) {
     const x = -w / 2 + (w / hooks) * (i + 0.5);
-    b.box(x - 0.015, x + 0.015, h - 0.32, h - 0.28, -d / 2 + 0.03, -d / 2 + 0.1, C.metal, C.metal);
+    const hy = h - 0.35 + (i % 2 ? 0.06 : 0);
+    b.cyl(x, -d / 2 + 0.05, 0.012, hy, hy + 0.03, C.metal, C.metal, 8);
+    b.box(x - 0.012, x + 0.012, hy + 0.025, hy + 0.04, -d / 2 + 0.035, -d / 2 + 0.1, C.metal, C.metal, EDGE_FAINT);
   }
 }
 
-/** Bench with a back along the rear; `side` adds the second arm of a corner bench along -x. */
+/** Upholstered luxury banquette bench with channel-tufted backrest and French piping seams. */
 function bench(b: Builder, w: number, d: number, h: number, corner: boolean): void {
-  const seat = 0.45;
-  const depth = Math.min(0.5, corner ? d * 0.4 : d);
-  const back = 0.08;
-  // rear arm
-  b.box(-w / 2, w / 2, 0, seat - 0.06, -d / 2, -d / 2 + depth, C.wood, C.woodTop, EDGE_FURN);
-  b.box(-w / 2, w / 2, 0, h, -d / 2, -d / 2 + back, C.wood, C.woodTop, EDGE_FURN);
-  b.box(-w / 2 + (corner ? depth : 0.02), w / 2 - 0.02, seat - 0.06, seat + 0.02, -d / 2 + back, -d / 2 + depth, C.cushion, C.cushion, EDGE_FAINT);
+  const seat = 0.46;
+  const depth = Math.min(0.52, corner ? d * 0.42 : d);
+  const back = 0.09;
+
+  // Recessed dark wood / brass kick plinth
+  b.box(-w / 2 + 0.03, w / 2 - 0.03, 0, 0.06, -d / 2 + 0.03, -d / 2 + depth - 0.03, C.dark, C.dark);
+
+  // Upholstered seat structure & plush seat pad
+  b.box(-w / 2, w / 2, 0.06, seat - 0.06, -d / 2, -d / 2 + depth, C.fabric, C.fabricTop, EDGE_FURN);
+  b.pad(-w / 2 + (corner ? depth : 0.02), w / 2 - 0.02, seat - 0.06, seat + 0.03, -d / 2 + back, -d / 2 + depth, C.cushion, C.cushion, 0.025, EDGE_FAINT);
+
+  // Ergonomic channel-tufted backrest
+  b.loft([-w / 2, w / 2, -d / 2, -d / 2 + back], [-w / 2 + 0.01, w / 2 - 0.01, -d / 2, -d / 2 + back * 0.65], seat - 0.06, h, C.fabric, C.fabricTop, EDGE_FURN);
+  const tufts = Math.max(3, Math.round(w / 0.22));
+  for (let i = 1; i < tufts; i++) {
+    const x = -w / 2 + (w / tufts) * i;
+    b.seg(x, seat, -d / 2 + back * 0.7, x, h - 0.02, -d / 2 + back * 0.5, EDGE_FAINT);
+  }
+
   if (corner) {
-    // side arm along -x, meeting the rear arm in the corner
-    b.box(-w / 2, -w / 2 + depth, 0, seat - 0.06, -d / 2 + depth, d / 2, C.wood, C.woodTop, EDGE_FURN);
-    b.box(-w / 2, -w / 2 + back, 0, h, -d / 2 + back, d / 2, C.wood, C.woodTop, EDGE_FURN);
-    b.box(-w / 2 + back, -w / 2 + depth, seat - 0.06, seat + 0.02, -d / 2 + back, d / 2 - 0.02, C.cushion, C.cushion, EDGE_FAINT);
+    // Side arm along -x meeting the rear section
+    b.box(-w / 2 + 0.03, -w / 2 + depth - 0.03, 0, 0.06, -d / 2 + depth - 0.03, d / 2 - 0.03, C.dark, C.dark);
+    b.box(-w / 2, -w / 2 + depth, 0.06, seat - 0.06, -d / 2 + depth, d / 2, C.fabric, C.fabricTop, EDGE_FURN);
+    b.pad(-w / 2 + back, -w / 2 + depth, seat - 0.06, seat + 0.03, -d / 2 + back, d / 2 - 0.02, C.cushion, C.cushion, 0.025, EDGE_FAINT);
+    b.loft([-w / 2, -w / 2 + back, -d / 2 + back, d / 2], [-w / 2, -w / 2 + back * 0.65, -d / 2 + back, d / 2 - 0.01], seat - 0.06, h, C.fabric, C.fabricTop, EDGE_FURN);
   }
 }
 
 function barStool(b: Builder, w: number, d: number, h: number): void {
+  // Luxury counter stool with low bucket backrest, padded seat, and brushed metal footrest
   const r = Math.min(w, d) / 2;
-  b.cyl(0, 0, r * 0.8, 0, 0.02, C.metal, C.metal, 12);
-  b.cyl(0, 0, 0.025, 0.02, h - 0.05, C.metal, C.metal, 6);
-  b.cyl(0, 0, r * 0.75, h * 0.35, h * 0.35 + 0.015, C.metal, C.metal, 12, EDGE_FAINT);
-  b.cyl(0, 0, r, h - 0.05, h, C.cushion, C.fabricTop, 14, EDGE_FURN);
+
+  // Weighted brushed bronze / steel disc base
+  b.cyl(0, 0, r * 0.82, 0, 0.025, C.metal, C.metal, 14, EDGE_FAINT);
+
+  // Slender central fluted column
+  b.cyl(0, 0, 0.028, 0.025, h - 0.1, C.metal, C.metal, 8);
+
+  // Integrated circular footrest ring with radial support arms
+  const footH = h * 0.36;
+  b.cyl(0, 0, r * 0.76, footH, footH + 0.018, C.metal, C.metal, 14, EDGE_GLOW);
+  b.box(-r * 0.74, r * 0.74, footH + 0.002, footH + 0.016, -0.01, 0.01, C.metal);
+
+  // Swivel mechanism hub
+  b.cyl(0, 0, 0.06, h - 0.1, h - 0.06, C.dark, C.dark, 10);
+
+  // Deep comfort padded waterfall seat cushion
+  b.pad(-r * 0.82, r * 0.82, h - 0.06, h, -r * 0.82, r * 0.82, C.cushion, C.fabricTop, 0.03, EDGE_FURN);
+
+  // Low curved wraparound lumbar backrest
+  b.loft([-r * 0.85, r * 0.85, -r * 0.85, -r * 0.55], [-r * 0.8, r * 0.8, -r * 0.8, -r * 0.62], h, h + 0.18, C.fabric, C.fabricTop, EDGE_FURN);
 }
 
 function officeChair(b: Builder, w: number, d: number, h: number): void {
+  // High-end ergonomic executive chair (Herman Miller Aeron / Vitra Soft Pad)
   const r = Math.min(w, d) / 2;
-  // five-star base as two crossed bars and a hub, gas lift, seat and back
-  b.box(-r, r, 0.04, 0.08, -0.03, 0.03, C.metal);
-  b.box(-0.03, 0.03, 0.04, 0.08, -r, r, C.metal);
-  b.cyl(0, 0, 0.06, 0.02, 0.1, C.dark, C.dark, 8);
-  b.cyl(0, 0, 0.025, 0.1, 0.44, C.metal, C.metal, 6);
-  b.box(-r * 0.75, r * 0.75, 0.44, 0.52, -r * 0.7, r * 0.75, C.fabric, C.cushion, EDGE_FURN);
-  b.box(-r * 0.7, r * 0.7, 0.58, h, -r * 0.78, -r * 0.62, C.fabric, C.fabricTop, EDGE_FURN);
-  b.box(-0.03, 0.03, 0.5, 0.62, -r * 0.72, -r * 0.62, C.metal);
+
+  // Sculpted 5-star swivel base with dual-wheel casters
+  for (let i = 0; i < 5; i++) {
+    const a = (i / 5) * Math.PI * 2;
+    const ax = Math.cos(a) * (r * 0.95);
+    const az = Math.sin(a) * (r * 0.95);
+    b.loft([-0.02, 0.02, -0.02, 0.02], [ax - 0.015, ax + 0.015, az - 0.015, az + 0.015], 0.04, 0.08, C.metal, C.metal);
+    // Dual casters
+    b.cyl(ax, az, 0.024, 0, 0.045, C.dark, C.dark, 8);
+  }
+  b.cyl(0, 0, 0.06, 0.03, 0.11, C.dark, C.dark, 10);
+
+  // Pneumatic lift cylinder and synchro-tilt mechanism box
+  b.cyl(0, 0, 0.026, 0.11, 0.42, C.metal, C.metal, 8);
+  b.box(-0.09, 0.09, 0.42, 0.47, -0.09, 0.09, C.dark, C.dark);
+
+  // Ergonomic contoured seat cushion with waterfall front edge
+  b.pad(-r * 0.8, r * 0.8, 0.46, 0.54, -r * 0.72, r * 0.78, C.fabric, C.cushion, 0.03, EDGE_FURN);
+
+  // High breathable lumbar-supported backrest with die-cast aluminum spine
+  b.box(-0.03, 0.03, 0.48, h - 0.05, -r * 0.76, -r * 0.68, C.metal, C.metal);
+  b.pad(-r * 0.72, r * 0.72, 0.58, h, -r * 0.8, -r * 0.65, C.fabric, C.fabricTop, 0.025, EDGE_FURN);
+
+  // 3D adjustable cantilevered armrests
+  for (const sx of [-1, 1]) {
+    const ax = sx * (r * 0.82);
+    // Armrest metal upright
+    b.box(ax - 0.015, ax + 0.015, 0.48, 0.66, -0.08, 0.04, C.metal);
+    // Padded soft-touch arm pad
+    b.pad(ax - 0.035, ax + 0.035, 0.66, 0.69, -0.16, 0.1, C.dark, C.dark, 0.012);
+  }
 }
 
 function stool(b: Builder, w: number, d: number, h: number): void {
-  legs(b, w, d, 0.08, 0.04, 0.05, C.wood);
-  b.box(-w / 2, w / 2, 0.08, h, -d / 2, d / 2, C.fabric, C.cushion, EDGE_FURN);
+  // Bouclé / leather luxury ottoman pouf with recessed brushed brass plinth ring
+  const r = Math.min(w, d) / 2;
+
+  // Recessed brushed bronze / brass plinth ring
+  b.cyl(0, 0, r * 0.88, 0, 0.04, C.metal, C.metal, 16, EDGE_GLOW);
+
+  // Sculpted cylindrical / soft-corner bouclé cushion body
+  b.cyl(0, 0, r, 0.04, h - 0.03, C.cushion, C.fabricTop, 16, EDGE_FURN);
+  // Crowned lofted top pad with French piping rim
+  b.cyl(0, 0, r * 0.94, h - 0.03, h, C.fabricTop, C.cushion, 16, EDGE_FAINT);
 }
 
 function kitchenWall(b: Builder, w: number, d: number, h: number): void {
-  // hangs above the worktop
+  // Minimalist floating upper cabinetry with integrated under-cabinet LED task light strip
   const y0 = 1.45;
   b.box(-w / 2, w / 2, y0, y0 + h, -d / 2, d / 2 - 0.02, C.body, C.bodyTop, EDGE_FURN);
-  fronts(b, -w / 2, w / 2, y0, y0 + h, d / 2 - 0.02, Math.max(1, Math.round(w / 0.5)), y0 + 0.08);
+
+  // Precision vertical door splits with bottom overhang finger-grip opening
+  const doors = Math.max(1, Math.round(w / 0.5));
+  fronts(b, -w / 2, w / 2, y0, y0 + h, d / 2 - 0.02, doors, null, true);
+
+  // Continuous under-cabinet LED task light diffuser channel recessed into the underside
+  b.box(-w / 2 + 0.04, w / 2 - 0.04, y0, y0 + 0.012, -d / 2 + 0.05, d / 2 - 0.08, C.glass, C.glass, EDGE_GLOW);
 }
 
 function kitchenTall(b: Builder, w: number, d: number, h: number): void {
-  b.box(-w / 2, w / 2, 0.02, h, -d / 2, d / 2 - 0.02, C.body, C.bodyTop, EDGE_FURN);
+  // Monolithic floor-to-ceiling built-in architectural appliance tower (Miele ArtLine / Gaggenau)
   b.box(-w / 2 + 0.02, w / 2 - 0.02, 0, 0.08, -d / 2 + 0.02, d / 2 - 0.06, C.dark);
+  b.box(-w / 2, w / 2, 0.08, h, -d / 2, d / 2 - 0.02, C.body, C.bodyTop, EDGE_FURN);
+
   const z = d / 2 - 0.02;
-  // oven with a dark glass door and a glowing handle, fronts above and below
-  b.box(-w / 2 + 0.03, w / 2 - 0.03, 0.85, 1.45, z, z + 0.01, C.dark, C.dark, EDGE_GLOW);
-  b.seg(-w / 2 + 0.08, 1.4, z + 0.02, w / 2 - 0.08, 1.4, z + 0.02, EDGE_GLOW);
-  for (const y of [0.85, 1.45]) b.seg(-w / 2, y, z, w / 2, y, z, EDGE_FAINT);
-  b.seg(w / 2 - 0.06, 0.5, z + 0.012, w / 2 - 0.06, 0.7, z + 0.012, EDGE_GLOW);
-  b.seg(w / 2 - 0.06, 1.6, z + 0.012, w / 2 - 0.06, 1.8, z + 0.012, EDGE_GLOW);
+
+  // Integrated flush combination steam oven with dark glass door and metallic accents
+  b.box(-w / 2 + 0.025, w / 2 - 0.025, 0.88, 1.48, z, z + 0.015, C.dark, C.dark, EDGE_GLOW);
+  // Oven glass viewing window
+  b.box(-w / 2 + 0.06, w / 2 - 0.06, 0.96, 1.38, z + 0.015, z + 0.018, C.glass, C.dark);
+  // Slim metallic horizontal touch interface bar
+  b.box(-w / 2 + 0.06, w / 2 - 0.06, 1.42, 1.46, z + 0.015, z + 0.018, C.metal, C.metal, EDGE_FAINT);
+  // Glowing minimal oven handle bar
+  b.box(-w / 2 + 0.1, w / 2 - 0.1, 1.39, 1.41, z + 0.018, z + 0.032, C.metal, C.metal, EDGE_GLOW);
+
+  // Warming drawer below oven
+  b.box(-w / 2 + 0.025, w / 2 - 0.025, 0.72, 0.86, z, z + 0.012, C.metal, C.metal, EDGE_FAINT);
+  b.seg(-w / 2 + 0.05, 0.79, z + 0.013, w / 2 - 0.05, 0.79, z + 0.013, EDGE_GLOW);
+
+  // Upper & lower tall pantry doors with vertical gola finger channel
+  for (const y of [0.72, 0.88, 1.48]) b.seg(-w / 2, y, z, w / 2, y, z, EDGE_FAINT);
+  b.box(w / 2 - 0.035, w / 2 - 0.015, 0.12, 0.7, z, z + 0.012, C.metal, C.metal);
+  b.box(w / 2 - 0.035, w / 2 - 0.015, 1.52, h - 0.1, z, z + 0.012, C.metal, C.metal);
 }
 
 function island(b: Builder, w: number, d: number, h: number): void {
-  const inner = d - 0.3;
-  b.box(-w / 2 + 0.05, w / 2 - 0.05, 0.08, h - 0.04, -d / 2 + 0.02, -d / 2 + inner, C.body, C.bodyTop, EDGE_FURN);
-  b.box(-w / 2 + 0.07, w / 2 - 0.07, 0, 0.08, -d / 2 + 0.04, -d / 2 + inner - 0.04, C.dark);
-  fronts(b, -w / 2 + 0.05, w / 2 - 0.05, 0.08, h - 0.04, -d / 2 + inner, Math.max(2, Math.round(w / 0.6)), h - 0.2);
-  // worktop overhangs on the front for bar stools
-  b.box(-w / 2, w / 2, h - 0.04, h, -d / 2, d / 2, worktop(), worktop(), EDGE_FURN);
+  // Monolithic architectural kitchen island with waterfall stone countertop ends
+  const inner = d - 0.32;
+  const topThick = 0.045;
+
+  // Recessed dark kick plinth
+  b.box(-w / 2 + topThick + 0.03, w / 2 - topThick - 0.03, 0, 0.08, -d / 2 + 0.03, -d / 2 + inner - 0.04, C.dark);
+
+  // Cabinet modules on chef side with horizontal gola profile
+  b.box(-w / 2 + topThick, w / 2 - topThick, 0.08, h - topThick, -d / 2 + 0.02, -d / 2 + inner, C.body, C.bodyTop, EDGE_FURN);
+  // Recessed gola channel under countertop
+  b.box(-w / 2 + topThick, w / 2 - topThick, h - topThick - 0.03, h - topThick, -d / 2 + inner - 0.02, -d / 2 + inner, C.dark);
+  fronts(b, -w / 2 + topThick, w / 2 - topThick, 0.08, h - topThick - 0.03, -d / 2 + inner, Math.max(2, Math.round(w / 0.6)), null, true);
+
+  // Waterfall stone countertop cascading down left and right ends
+  b.box(-w / 2, w / 2, h - topThick, h, -d / 2, d / 2, worktop(), worktop(), EDGE_FURN);
+  b.box(-w / 2, -w / 2 + topThick, 0, h - topThick, -d / 2, d / 2, worktop(), worktop(), EDGE_FURN);
+  b.box(w / 2 - topThick, w / 2, 0, h - topThick, -d / 2, d / 2, worktop(), worktop(), EDGE_FURN);
+
+  // Recessed warm LED wash light under cantilevered breakfast bar overhang
+  b.seg(-w / 2 + topThick + 0.02, h - topThick - 0.002, -d / 2 + inner + 0.02, w / 2 - topThick - 0.02, h - topThick - 0.002, -d / 2 + inner + 0.02, EDGE_GLOW);
 }
 
 function dishwasher(b: Builder, w: number, d: number, h: number): void {
-  b.box(-w / 2, w / 2, 0.02, h - 0.04, -d / 2, d / 2 - 0.02, C.body, C.bodyTop, EDGE_FURN);
+  // Fully integrated luxury dishwasher matching cabinetry with projected floor status dot
   b.box(-w / 2 + 0.02, w / 2 - 0.02, 0, 0.08, -d / 2 + 0.02, d / 2 - 0.06, C.dark);
-  b.seg(-w / 2 + 0.08, h - 0.12, d / 2 - 0.008, w / 2 - 0.08, h - 0.12, d / 2 - 0.008, EDGE_GLOW);
-  b.box(-w / 2, w / 2, h - 0.04, h, -d / 2, d / 2, C.whiteTop, C.whiteTop, EDGE_FURN);
+  b.box(-w / 2, w / 2, 0.08, h - 0.04, -d / 2, d / 2 - 0.02, C.body, C.bodyTop, EDGE_FURN);
+
+  // Recessed gola rail and concealed top-edge controls
+  b.box(-w / 2, w / 2, h - 0.07, h - 0.04, d / 2 - 0.04, d / 2 - 0.02, C.dark);
+  b.seg(-w / 2 + 0.08, h - 0.05, d / 2 - 0.015, w / 2 - 0.08, h - 0.05, d / 2 - 0.015, EDGE_GLOW);
+
+  // Matching worktop slab on top
+  b.box(-w / 2, w / 2, h - 0.04, h, -d / 2, d / 2, worktop(), worktop(), EDGE_FURN);
+
+  // Projected floor status indicator dot (TimeLight)
+  b.cyl(0, d / 2 + 0.04, 0.012, 0, 0.002, C.accent, C.accent, 8);
 }
 
 function laundry(b: Builder, w: number, d: number, h: number, dryer: boolean): void {
-  b.box(-w / 2, w / 2, 0, h, -d / 2, d / 2 - 0.02, C.white, C.whiteTop, EDGE_FURN);
+  // Premium European appliances (Miele Passion / V-ZUG)
+  // Base plinth
+  b.box(-w / 2 + 0.02, w / 2 - 0.02, 0, 0.04, -d / 2 + 0.02, d / 2 - 0.03, C.dark);
+  b.box(-w / 2, w / 2, 0.04, h, -d / 2, d / 2 - 0.02, C.white, C.whiteTop, EDGE_FURN);
+
   const z = d / 2 - 0.012;
-  // control panel line and a round door drawn on the front
-  b.seg(-w / 2, h - 0.14, z, w / 2, h - 0.14, z, EDGE_FAINT);
-  b.seg(w / 2 - 0.16, h - 0.07, z, w / 2 - 0.08, h - 0.07, z, EDGE_GLOW);
-  const cy = (h - 0.14) / 2 + 0.04;
-  const r = Math.min(w * 0.36, (h - 0.2) * 0.42);
-  const n = 20;
+
+  // Incline black glass fascia control panel with crisp digital TFT touch display and rotary dial
+  b.box(-w / 2 + 0.02, w / 2 - 0.02, h - 0.16, h - 0.02, z, z + 0.014, C.dark, C.dark, EDGE_FAINT);
+  // TFT digital touch display
+  b.box(-0.12, 0.12, h - 0.13, h - 0.05, z + 0.014, z + 0.016, C.dark, C.dark, EDGE_GLOW);
+  // Rotary programme selector dial
+  b.cyl(w / 2 - 0.1, z + 0.015, 0.028, h - 0.11, h - 0.07, C.metal, C.metal, 12, EDGE_FAINT);
+
+  // Detergent dispenser drawer on washer
+  if (!dryer) {
+    b.box(-w / 2 + 0.04, -w * 0.18, h - 0.14, h - 0.04, z + 0.014, z + 0.016, C.whiteTop);
+  }
+
+  // Black glass porthole door with polished chrome outer bezel ring
+  const cy = (h - 0.18) / 2 + 0.04;
+  const r = Math.min(w * 0.36, (h - 0.22) * 0.44);
+  const n = 24;
   for (let i = 0; i < n; i++) {
     const a0 = (i / n) * Math.PI * 2;
     const a1 = ((i + 1) / n) * Math.PI * 2;
-    b.seg(Math.cos(a0) * r, cy + Math.sin(a0) * r, z, Math.cos(a1) * r, cy + Math.sin(a1) * r, z, EDGE_GLOW);
-    if (!dryer) b.seg(Math.cos(a0) * r * 0.72, cy + Math.sin(a0) * r * 0.72, z, Math.cos(a1) * r * 0.72, cy + Math.sin(a1) * r * 0.72, z, EDGE_FAINT);
+    // Outer chrome bezel
+    b.seg(Math.cos(a0) * r, cy + Math.sin(a0) * r, z + 0.01, Math.cos(a1) * r, cy + Math.sin(a1) * r, z + 0.01, EDGE_GLOW);
+    // Inner glass rim
+    b.seg(Math.cos(a0) * r * 0.82, cy + Math.sin(a0) * r * 0.82, z + 0.008, Math.cos(a1) * r * 0.82, cy + Math.sin(a1) * r * 0.82, z + 0.008, EDGE_FAINT);
   }
+  b.cyl(0, z + 0.005, r * 0.78, cy - r * 0.78, cy + r * 0.78, C.dark, C.dark, 16);
 }
 
 function bunkBed(b: Builder, w: number, d: number, h: number): void {
-  const t = 0.05;
-  for (const sx of [-1, 1]) for (const sz of [-1, 1]) b.box(sx * (w / 2) - (sx > 0 ? t : 0), sx * (w / 2) + (sx < 0 ? t : 0), 0, h, sz * (d / 2) - (sz > 0 ? t : 0), sz * (d / 2) + (sz < 0 ? t : 0), C.wood, C.woodTop);
-  for (const y of [0.25, h - 0.55]) {
-    b.box(-w / 2, w / 2, y, y + 0.08, -d / 2, d / 2, C.wood, C.woodTop, EDGE_FURN);
-    b.box(-w / 2 + 0.04, w / 2 - 0.04, y + 0.08, y + 0.24, -d / 2 + 0.05, d / 2 - 0.05, C.white, C.whiteTop, EDGE_FAINT);
-    b.box(-w / 2 + 0.05, w / 2 - 0.05, y + 0.24, y + 0.33, -d / 2 + 0.08, -d / 2 + 0.4, C.whiteTop, C.whiteTop);
+  // Custom architectural bunk system with privacy panels, modern guardrails, and angled ladder
+  const t = 0.055;
+  // Solid corner upright posts
+  for (const sx of [-1, 1]) {
+    for (const sz of [-1, 1]) {
+      b.box(sx * (w / 2) - (sx > 0 ? t : 0), sx * (w / 2) + (sx < 0 ? t : 0), 0, h, sz * (d / 2) - (sz > 0 ? t : 0), sz * (d / 2) + (sz < 0 ? t : 0), C.wood, C.woodTop, EDGE_FURN);
+    }
   }
-  // guard rail on top and a ladder at the front
-  b.box(-w / 2, w / 2, h - 0.2, h - 0.15, d / 2 - t, d / 2, C.wood, C.woodTop);
-  const lx = w / 2 - 0.35;
-  for (const x of [lx - 0.18, lx + 0.18]) b.seg(x, 0, d / 2 + 0.02, x, h - 0.15, d / 2 + 0.02, EDGE_FURN);
-  for (let y = 0.3; y < h - 0.2; y += 0.28) b.seg(lx - 0.18, y, d / 2 + 0.02, lx + 0.18, y, d / 2 + 0.02, EDGE_FAINT);
+
+  // Lower and upper bunk frames with plush bedding
+  for (const y of [0.24, h - 0.58]) {
+    // Bedstead rails
+    b.box(-w / 2, w / 2, y, y + 0.09, -d / 2, d / 2, C.wood, C.woodTop, EDGE_FURN);
+    // Deep comfortable mattress
+    b.pad(-w / 2 + 0.04, w / 2 - 0.04, y + 0.09, y + 0.25, -d / 2 + 0.04, d / 2 - 0.04, C.white, C.whiteTop, 0.03, EDGE_FAINT);
+    // Folded duvet and pillow
+    b.pad(-w / 2 + 0.05, w / 2 - 0.05, y + 0.24, y + 0.32, -d / 2 + 0.12, d / 2 - 0.06, C.cushion, C.fabricTop, 0.025);
+    b.pad(-w / 2 + 0.08, w / 2 - 0.08, y + 0.25, y + 0.35, -d / 2 + 0.06, -d / 2 + 0.36, C.whiteTop, C.whiteTop, 0.02);
+  }
+
+  // Modern slotted safety guardrail on top bunk
+  b.box(-w / 2, w / 2, h - 0.18, h - 0.14, d / 2 - t, d / 2, C.wood, C.woodTop, EDGE_FAINT);
+  b.box(-w / 2, w / 2, h - 0.32, h - 0.28, d / 2 - t, d / 2, C.wood, C.woodTop, EDGE_FAINT);
+
+  // Precision architectural angled ladder with flat rungs
+  const lx = w / 2 - 0.38;
+  for (const x of [lx - 0.18, lx + 0.18]) {
+    b.box(x - 0.015, x + 0.015, 0, h - 0.14, d / 2 + 0.02, d / 2 + 0.05, C.metal, C.metal, EDGE_FURN);
+  }
+  for (let y = 0.28; y < h - 0.2; y += 0.26) {
+    b.box(lx - 0.17, lx + 0.17, y - 0.012, y + 0.012, d / 2 + 0.015, d / 2 + 0.055, C.wood, C.woodTop, EDGE_FAINT);
+  }
 }
 
 function roundTable(b: Builder, w: number, d: number, h: number): void {
+  // Sculptural pedestal dining table (Saarinen Tulip / B&B Italia Allure O')
   const r = Math.min(w, d) / 2;
-  b.cyl(0, 0, r * 0.4, 0, 0.03, C.metal, C.metal, 12);
-  b.cyl(0, 0, 0.05, 0.03, h - 0.04, C.wood, C.wood, 8);
-  b.cyl(0, 0, r, h - 0.04, h, C.wood, C.woodTop, 20, EDGE_FURN);
+
+  // Flared heavy pedestal base in brushed bronze / dark oak
+  b.cyl(0, 0, r * 0.46, 0, 0.025, C.metal, C.metal, 20, EDGE_FAINT);
+  b.loft([-r * 0.32, r * 0.32, -r * 0.32, r * 0.32], [-0.06, 0.06, -0.06, 0.06], 0.025, h * 0.35, C.wood, C.woodTop);
+
+  // Slender central fluted column
+  b.cyl(0, 0, 0.055, h * 0.35, h - 0.05, C.metal, C.metal, 12);
+
+  // Tabletop under-mount hub
+  b.cyl(0, 0, r * 0.32, h - 0.05, h - 0.038, C.metal, C.metal, 16);
+
+  // Chamfered round stone / wood tabletop with undercut reveal
+  b.cyl(0, 0, r, h - 0.038, h, C.wood, C.woodTop, 24, EDGE_GLOW);
+
+  // Inset brass lazy susan / central decorative medallion
+  b.cyl(0, 0, r * 0.26, h, h + 0.002, C.metal, C.metal, 16, EDGE_FAINT);
 }
 
 function coffeeTable(b: Builder, w: number, d: number, h: number): void {
-  legs(b, w, d, h - 0.03, 0.04, 0.03, C.wood);
-  b.box(-w / 2, w / 2, h - 0.03, h, -d / 2, d / 2, C.wood, C.woodTop, EDGE_FURN);
-  b.box(-w / 2 + 0.05, w / 2 - 0.05, 0.1, 0.13, -d / 2 + 0.05, d / 2 - 0.05, C.body, C.bodyTop, EDGE_FAINT);
+  // Multi-tier architectural low table with honed stone slab, smoked glass lower shelf, and satin metal sled base
+  // Minimalist satin metal sled runner frame
+  const sledH = h - 0.04;
+  for (const sx of [-1, 1]) {
+    const lx = sx * (w / 2 - 0.08);
+    b.box(lx - 0.012, lx + 0.012, 0, sledH, -d / 2 + 0.05, d / 2 - 0.05, C.metal, C.metal, EDGE_FURN);
+    b.box(lx - 0.012, lx + 0.012, 0, 0.015, -d / 2 + 0.03, d / 2 - 0.03, C.metal);
+  }
+  b.box(-w / 2 + 0.08, w / 2 - 0.08, 0.08, 0.095, -0.01, 0.01, C.metal);
+
+  // Smoked glass / dark walnut secondary tier lower shelf
+  b.box(-w / 2 + 0.08, w / 2 - 0.08, 0.1, 0.125, -d / 2 + 0.06, d / 2 - 0.06, C.glass, C.glass, EDGE_FAINT);
+
+  // Recessed dark shadow reveal frame
+  b.box(-w / 2 + 0.04, w / 2 - 0.04, sledH, sledH + 0.012, -d / 2 + 0.04, d / 2 - 0.04, C.dark, C.dark);
+
+  // Honed travertine / marble top slab with reverse-beveled chamfer
+  b.loft([-w / 2 + 0.02, w / 2 - 0.02, -d / 2 + 0.02, d / 2 - 0.02], [-w / 2, w / 2, -d / 2, d / 2], sledH + 0.012, h, C.whiteTop, C.whiteTop, EDGE_GLOW);
 }
 
 function tvWall(b: Builder, w: number, d: number, h: number): void {
-  // flat screen on a wall bracket, centred at 1.3 m
+  // Gallery Art Frame OLED TV with chamfered anodized bezel & floating acoustic soundbar
   const y0 = 1.3 - h / 2;
-  b.box(-0.12, 0.12, y0 + h * 0.3, y0 + h * 0.7, -d / 2, -d / 2 + 0.03, C.metal);
-  b.box(-w / 2, w / 2, y0, y0 + h, -d / 2 + 0.03, d / 2, C.dark, C.dark, EDGE_GLOW);
+
+  // Ultra-shallow recessed wall mounting bracket
+  b.box(-0.16, 0.16, y0 + h * 0.35, y0 + h * 0.65, -d / 2, -d / 2 + 0.015, C.metal);
+
+  // Chamfered architectural art bezel frame in brushed metal
+  b.box(-w / 2 - 0.012, w / 2 + 0.012, y0 - 0.012, y0 + h + 0.012, -d / 2 + 0.015, -d / 2 + 0.03, C.metal, C.metal, EDGE_FAINT);
+
+  // Ultra-thin OLED display screen panel
+  b.box(-w / 2, w / 2, y0, y0 + h, -d / 2 + 0.025, d / 2, C.dark, C.dark, EDGE_GLOW);
+
+  // Integrated floating architectural soundbar suspended below screen
+  b.box(-w * 0.42, w * 0.42, y0 - 0.09, y0 - 0.03, -d / 2 + 0.015, -d / 2 + 0.065, C.dark, C.dark, EDGE_FAINT);
+  b.seg(-w * 0.38, y0 - 0.06, -d / 2 + 0.066, w * 0.38, y0 - 0.06, -d / 2 + 0.066, EDGE_GLOW);
 }
 
-/** Neon sign: a dark acrylic plate on four little spacers; its text is a picture on the plate (see screenRect). */
+/** Neon sign: a floating frameless acrylic plate on polished metal standoffs with edge-lit luminescence. */
 function neonSign(b: Builder, w: number, d: number, h: number): void {
-  for (const x of [-w / 2 + 0.04, w / 2 - 0.04])
-    for (const y of [0.04, h - 0.04]) b.box(x - 0.008, x + 0.008, y - 0.008, y + 0.008, -d / 2, -d / 2 + 0.02, C.metal);
-  b.box(-w / 2, w / 2, 0, h, -d / 2 + 0.02, d / 2, C.dark, C.dark, EDGE_FAINT);
+  // Polished cylindrical wall standoffs at 4 corners
+  for (const x of [-w / 2 + 0.05, w / 2 - 0.05]) {
+    for (const y of [0.05, h - 0.05]) {
+      b.cyl(x, -d / 2 + 0.012, 0.014, y - 0.014, y + 0.014, C.metal, C.metal, 8, EDGE_FAINT);
+    }
+  }
+
+  // Floating frameless acrylic panel with glowing edge-lit perimeter
+  b.box(-w / 2, w / 2, 0, h, -d / 2 + 0.025, d / 2, C.dark, C.dark, EDGE_GLOW);
 }
 
-/** Radiator on the wall (back at -z): panel with vertical fins, standing on short brackets. */
+/** Radiator on the wall: architectural flat-tube designer radiator with precision blades and knurled thermostatic valve. */
 function radiator(b: Builder, w: number, d: number, h: number): void {
   const y0 = RADIATOR_Y;
-  b.box(-w / 2 + 0.05, -w / 2 + 0.08, 0, y0, -d / 2, -d / 2 + 0.03, C.metal);
-  b.box(w / 2 - 0.08, w / 2 - 0.05, 0, y0, -d / 2, -d / 2 + 0.03, C.metal);
-  b.box(-w / 2, w / 2, y0, y0 + h, -d / 2 + 0.02, d / 2, C.white, C.whiteTop, EDGE_FURN);
-  const n = Math.max(3, Math.round(w / 0.1));
-  for (let i = 1; i < n; i++) {
-    const x = -w / 2 + (w / n) * i;
-    b.seg(x, y0 + 0.03, d / 2 + 0.002, x, y0 + h - 0.03, d / 2 + 0.002, EDGE_FAINT);
+
+  // Standoff wall brackets in dark metal
+  for (const sx of [-1, 1]) {
+    const bx = sx * (w / 2 - 0.1);
+    b.box(bx - 0.015, bx + 0.015, y0 + 0.06, y0 + h - 0.06, -d / 2, -d / 2 + 0.02, C.metal);
   }
+
+  // Top & bottom horizontal manifold headers
+  b.box(-w / 2, w / 2, y0, y0 + 0.035, -d / 2 + 0.02, d / 2 - 0.01, C.white, C.whiteTop, EDGE_FAINT);
+  b.box(-w / 2, w / 2, y0 + h - 0.035, y0 + h, -d / 2 + 0.02, d / 2 - 0.01, C.white, C.whiteTop, EDGE_FAINT);
+
+  // Vertical architectural flat heating blades with precision shadow reveals
+  const n = Math.max(3, Math.round(w / 0.08));
+  const bw = (w / n) * 0.82;
+  for (let i = 0; i < n; i++) {
+    const cx = -w / 2 + (w / n) * (i + 0.5);
+    b.pad(cx - bw / 2, cx + bw / 2, y0 + 0.035, y0 + h - 0.035, -d / 2 + 0.02, d / 2, C.white, C.whiteTop, 0.008, EDGE_FURN);
+  }
+
+  // Side integrated knurled thermostatic digital valve in brushed metal with status LED ring
+  const vx = w / 2 + 0.035;
+  b.box(w / 2, vx, y0 + 0.06, y0 + 0.1, -d / 2 + 0.03, -d / 2 + 0.05, C.metal);
+  b.cyl(vx, -d / 2 + 0.04, 0.022, y0 + 0.05, y0 + 0.13, C.metal, C.metal, 14, EDGE_GLOW);
 }
 
-/** An air conditioner's indoor unit (a wall split unit): a long body, the air outlet with its louvre at the bottom. */
+/** Air conditioner indoor unit: ultra-slim aerodynamic split unit with concealed louver and hidden OLED display. */
 function acUnit(b: Builder, w: number, d: number, h: number): void {
   const y0 = AC_Y;
-  b.box(-w / 2, w / 2, y0 + 0.07, y0 + h, -d / 2, d / 2, C.white, C.whiteTop, EDGE_FURN);
-  b.box(-w / 2, w / 2, y0, y0 + 0.07, -d / 2, d / 2 - 0.05, C.white, C.white, EDGE_FURN);
-  b.box(-w / 2 + 0.04, w / 2 - 0.04, y0 + 0.012, y0 + 0.06, d / 2 - 0.05, d / 2 - 0.02, C.dark);
-  // a line across the front and the little display
-  b.seg(-w / 2 + 0.03, y0 + h * 0.55, d / 2 + 0.002, w / 2 - 0.03, y0 + h * 0.55, d / 2 + 0.002, EDGE_FAINT);
-  b.seg(w / 2 - 0.14, y0 + h * 0.75, d / 2 + 0.002, w / 2 - 0.07, y0 + h * 0.75, d / 2 + 0.002, EDGE_GLOW);
+
+  // Recessed dark shadow reveal to the wall
+  b.box(-w / 2 + 0.02, w / 2 - 0.02, y0 + 0.02, y0 + h - 0.02, -d / 2, -d / 2 + 0.015, C.dark, C.dark);
+
+  // Aerodynamic curved / chamfered housing facade
+  b.loft([-w / 2, w / 2, -d / 2 + 0.015, d / 2 - 0.04], [-w / 2, w / 2, -d / 2 + 0.015, d / 2], y0 + 0.08, y0 + h, C.white, C.whiteTop, EDGE_FURN);
+
+  // Precision motorized bottom discharge louver with dark aerodynamic plenum
+  b.box(-w / 2 + 0.04, w / 2 - 0.04, y0 + 0.015, y0 + 0.08, -d / 2 + 0.04, d / 2 - 0.02, C.dark, C.dark, EDGE_FAINT);
+  b.box(-w / 2 + 0.03, w / 2 - 0.03, y0 + 0.03, y0 + 0.06, d / 2 - 0.04, d / 2 + 0.005, C.metal, C.whiteTop, EDGE_GLOW);
+
+  // Top intake micro-ventilation louvers
+  for (let i = 0; i < 4; i++) {
+    const z = -d / 2 + 0.04 + i * 0.03;
+    b.seg(-w / 2 + 0.06, y0 + h + 0.002, z, w / 2 - 0.06, y0 + h + 0.002, z, EDGE_FAINT);
+  }
+
+  // Hidden OLED ambient temperature display in brushed metallic badge
+  b.box(w / 2 - 0.16, w / 2 - 0.06, y0 + h * 0.65, y0 + h * 0.82, d / 2 - 0.002, d / 2 + 0.003, C.dark, C.dark, EDGE_GLOW);
+  b.seg(w / 2 - 0.14, y0 + h * 0.74, d / 2 + 0.004, w / 2 - 0.08, y0 + h * 0.74, d / 2 + 0.004, EDGE_FAINT);
 }
 
 /** A ring of glowing line on a front face (z = front), for dials and fans. */
@@ -1306,13 +1996,11 @@ function ring(b: Builder, cx: number, cy: number, r: number, z: number, n = 20):
   }
 }
 
-/**
- * Solar inverter on the wall (from 1.1 m): a flat box with a display and a status line; "slim" a tall narrow
- * one with a vertical light strip; "hybrid" with a round dial and two fans below.
- */
+/** Solar inverter: sculpted die-cast aluminum enclosure with weather-proof front shield, cooling fins, and OLED display. */
 function inverter(b: Builder, w: number, d: number, h: number, variant: string | null): void {
   const y0 = 1.1;
   const z = d / 2;
+
   if (variant === "slim") {
     b.box(-w / 2, w / 2, y0, y0 + h, -d / 2, d / 2, C.dark, C.body, EDGE_FURN);
     b.seg(-w * 0.25, y0 + h * 0.15, z + 0.004, -w * 0.25, y0 + h * 0.85, z + 0.004, EDGE_GLOW);
@@ -1326,140 +2014,231 @@ function inverter(b: Builder, w: number, d: number, h: number, variant: string |
     for (const s of [-1, 1]) ring(b, s * w * 0.22, y0 + h * 0.2, Math.min(w, h) * 0.1, -d / 2 - 0.002, 12);
     return;
   }
-  b.box(-w / 2, w / 2, y0, y0 + h, -d / 2, d / 2, C.white, C.whiteTop, EDGE_FURN);
-  b.box(-w * 0.28, w * 0.28, y0 + h * 0.58, y0 + h * 0.82, d / 2, d / 2 + 0.006, C.dark);
-  b.seg(-w * 0.3, y0 + h * 0.45, d / 2 + 0.004, w * 0.3, y0 + h * 0.45, d / 2 + 0.004, EDGE_GLOW);
-  // cooling fins at the sides
-  for (const s of [-1, 1]) for (let i = 1; i < 6; i++) b.seg((s * w) / 2 + s * 0.002, y0 + (h * i) / 6, -d / 2 + 0.03, (s * w) / 2 + s * 0.002, y0 + (h * i) / 6, d / 2 - 0.03, EDGE_FAINT);
+
+  // Standard architectural residential inverter (Fronius / Tesla style)
+  b.loft([-w / 2, w / 2, -d / 2, d / 2 - 0.02], [-w / 2 + 0.02, w / 2 - 0.02, -d / 2, d / 2], y0, y0 + h, C.white, C.whiteTop, EDGE_FURN);
+
+  // Black glass interactive interface panel
+  b.box(-w * 0.3, w * 0.3, y0 + h * 0.55, y0 + h * 0.84, d / 2 - 0.005, d / 2 + 0.006, C.dark, C.dark, EDGE_GLOW);
+  b.seg(-w * 0.22, y0 + h * 0.68, d / 2 + 0.008, w * 0.22, y0 + h * 0.68, d / 2 + 0.008, EDGE_GLOW);
+
+  // Lateral extruded heat sink fins
+  for (const s of [-1, 1]) {
+    for (let i = 1; i < 7; i++) {
+      b.seg((s * w) / 2 + s * 0.002, y0 + (h * i) / 7, -d / 2 + 0.03, (s * w) / 2 + s * 0.002, y0 + (h * i) / 7, d / 2 - 0.03, EDGE_FAINT);
+    }
+  }
+
+  // Integrated rotary DC disconnect isolator switch at bottom
+  b.cyl(0, z, 0.035, y0 + 0.06, y0 + 0.14, C.dark, C.metal, 12, EDGE_FAINT);
 }
 
-/** Pool pump (on the floor): the motor lying along x with its fan cover, the pre-filter pot with a lid at one end. */
+/** Pool pump: variable-speed TEFC motor with cooling ribs, clear cam-lock strainer pot, and digital touchscreen drive. */
 function poolPump(b: Builder, w: number, d: number, h: number): void {
   const r = Math.min(d, h) * 0.32;
-  // base plate
-  b.box(-w / 2, w / 2, 0, 0.03, -d / 2, d / 2, C.dark);
-  // motor: a row of short cylinders lying along x (cylinders stand upright, so a box with rings stands in)
-  b.box(-w / 2, w * 0.1, 0.05, 0.05 + r * 2, -r, r, C.metal, C.metal, EDGE_FURN);
-  for (const x of [-w * 0.4, -w * 0.25, -w * 0.1]) b.seg(x, 0.05 + r * 2 + 0.003, -r, x, 0.05 + r * 2 + 0.003, r, EDGE_FAINT);
-  // the pre-filter pot with its clear lid and the glowing ring that shows the pump runs
-  b.cyl(w * 0.28, 0, Math.min(w * 0.2, d * 0.45), 0.03, h * 0.82, C.dark, C.body, 14, EDGE_FURN);
-  b.cyl(w * 0.28, 0, Math.min(w * 0.2, d * 0.45) * 0.9, h * 0.82, h, C.glass, C.glass, 14);
-  const rr = Math.min(w * 0.2, d * 0.45) * 0.95;
+
+  // Heavy vibration-isolated base plate
+  b.box(-w / 2, w / 2, 0, 0.035, -d / 2, d / 2, C.dark, C.dark, EDGE_FAINT);
+
+  // High-efficiency TEFC motor body with extruded cooling ribs
+  b.box(-w / 2, w * 0.12, 0.045, 0.045 + r * 2, -r, r, C.metal, C.metal, EDGE_FURN);
+  for (const x of [-w * 0.42, -w * 0.3, -w * 0.18, -w * 0.06]) {
+    b.seg(x, 0.045 + r * 2 + 0.003, -r, x, 0.045 + r * 2 + 0.003, r, EDGE_FAINT);
+  }
+
+  // Top digital touchscreen drive control computer
+  b.box(-w * 0.35, 0, 0.045 + r * 2, 0.045 + r * 2 + 0.06, -r * 0.65, r * 0.65, C.dark, C.dark, EDGE_GLOW);
+
+  // Strainer pot with clear cam-lock lid and glowing water ring
+  const pr = Math.min(w * 0.22, d * 0.46);
+  b.cyl(w * 0.28, 0, pr, 0.035, h * 0.84, C.dark, C.body, 16, EDGE_FURN);
+  b.cyl(w * 0.28, 0, pr * 0.92, h * 0.84, h, C.glass, C.glass, 16);
+  // Glowing status water ring
+  const rr = pr * 0.96;
   for (let i = 0; i < 16; i++) {
     const a0 = (i / 16) * Math.PI * 2;
     const a1 = ((i + 1) / 16) * Math.PI * 2;
-    b.seg(w * 0.28 + Math.cos(a0) * rr, h * 0.83, Math.sin(a0) * rr, w * 0.28 + Math.cos(a1) * rr, h * 0.83, Math.sin(a1) * rr, EDGE_GLOW);
+    b.seg(w * 0.28 + Math.cos(a0) * rr, h * 0.85, Math.sin(a0) * rr, w * 0.28 + Math.cos(a1) * rr, h * 0.85, Math.sin(a1) * rr, EDGE_GLOW);
   }
 }
 
-/** Sand filter: a round tank on a foot with its multiport valve on top (six- or four-way) or at its side. */
+/** Sand filter: filament-wound fiberglass vessel with reinforced base and 6-way multiport valve. */
 function poolFilter(b: Builder, w: number, d: number, h: number, valve: string | null): void {
   const r = Math.min(w, d) / 2;
-  b.cyl(0, 0, r * 0.95, 0, h * 0.08, C.dark, C.dark, 16);
-  b.cyl(0, 0, r, h * 0.08, h * 0.78, C.dark, C.body, 18, EDGE_FURN);
-  b.cyl(0, 0, r * 0.75, h * 0.78, h * 0.84, C.dark, C.body, 16);
+
+  // Reinforced pedestal base ring
+  b.cyl(0, 0, r * 0.96, 0, h * 0.09, C.dark, C.dark, 18, EDGE_FAINT);
+
+  // Fiberglass filament-wound spherical tank body
+  b.cyl(0, 0, r, h * 0.09, h * 0.78, C.dark, C.body, 20, EDGE_FURN);
+  b.cyl(0, 0, r * 0.76, h * 0.78, h * 0.85, C.dark, C.body, 18);
+
   if (valve === "side6") {
-    // the valve at the right side: a block with the round dial facing forward and its three connections
+    // Side multiport valve
     const x0 = r * 0.9;
-    b.box(x0, x0 + 0.12, h * 0.3, h * 0.66, -0.07, 0.07, C.dark, C.metal, EDGE_FURN);
-    ring(b, x0 + 0.06, h * 0.56, 0.05, 0.075, 16);
-    b.box(x0 + 0.04, x0 + 0.08, h * 0.66, h * 0.72, -0.015, 0.015, C.dark, C.body);
+    b.box(x0, x0 + 0.13, h * 0.3, h * 0.68, -0.075, 0.075, C.dark, C.metal, EDGE_FURN);
+    ring(b, x0 + 0.065, h * 0.56, 0.055, 0.08, 16);
+    b.box(x0 + 0.04, x0 + 0.09, h * 0.68, h * 0.74, -0.015, 0.015, C.dark, C.body);
     return;
   }
-  // the six-way valve: a flat round head with the dial and the handle
-  b.cyl(0, 0, r * 0.45, h * 0.84, h * 0.95, C.dark, C.metal, 16, EDGE_FURN);
-  const rr = r * 0.4;
+
+  // Top 6-way multiport valve head with selector lever, pressure gauge, and sight glass
+  b.cyl(0, 0, r * 0.46, h * 0.85, h * 0.96, C.dark, C.metal, 18, EDGE_FURN);
+  const rr = r * 0.42;
   for (let i = 0; i < 16; i++) {
     const a0 = (i / 16) * Math.PI * 2;
     const a1 = ((i + 1) / 16) * Math.PI * 2;
-    b.seg(Math.cos(a0) * rr, h * 0.955, Math.sin(a0) * rr, Math.cos(a1) * rr, h * 0.955, Math.sin(a1) * rr, EDGE_GLOW);
+    b.seg(Math.cos(a0) * rr, h * 0.965, Math.sin(a0) * rr, Math.cos(a1) * rr, h * 0.965, Math.sin(a1) * rr, EDGE_GLOW);
   }
-  b.box(-0.02, 0.02, h * 0.95, h, -r * 0.35, r * 0.35, C.dark, C.body);
+  // Selector handle
+  b.box(-0.02, 0.02, h * 0.96, h, -r * 0.36, r * 0.36, C.dark, C.body);
+  // Dial pressure gauge
+  b.cyl(r * 0.35, -r * 0.2, 0.03, h * 0.9, h * 0.98, C.metal, C.whiteTop, 12, EDGE_FAINT);
 }
 
-/** Heat pump (outside or in the technical room): a wide box with a round fan grille in front and fins at the side. */
+/** Heat pump: high-efficiency inverter heat pump with aero-acoustic fan grille and digital touch interface. */
 function poolHeatPump(b: Builder, w: number, d: number, h: number): void {
+  // Base rubber vibration-isolating feet
+  for (const x of [-w * 0.4, w * 0.4]) {
+    b.box(x - 0.035, x + 0.035, 0, 0.06, -d / 2 + 0.02, d / 2 - 0.02, C.dark);
+  }
+
+  // Main chassis with weather-proof casing
   b.box(-w / 2, w / 2, 0.06, h, -d / 2, d / 2, C.white, C.whiteTop, EDGE_FURN);
-  for (const x of [-w * 0.4, w * 0.4]) b.box(x - 0.03, x + 0.03, 0, 0.06, -d / 2 + 0.02, d / 2 - 0.02, C.dark);
+
+  // Aero-acoustic spiral fan discharge grille
   const r = Math.min(h * 0.38, w * 0.3);
   const cx = -w * 0.15;
   const cy = h * 0.53;
   ring(b, cx, cy, r, d / 2 + 0.004, 24);
-  ring(b, cx, cy, r * 0.55, d / 2 + 0.004, 16);
+  ring(b, cx, cy, r * 0.6, d / 2 + 0.004, 18);
+  ring(b, cx, cy, r * 0.25, d / 2 + 0.004, 12);
   b.seg(cx - r, cy, d / 2 + 0.005, cx + r, cy, d / 2 + 0.005, EDGE_FAINT);
   b.seg(cx, cy - r, d / 2 + 0.005, cx, cy + r, d / 2 + 0.005, EDGE_FAINT);
-  // the display at the right
-  b.box(w * 0.22, w * 0.42, h * 0.62, h * 0.8, d / 2, d / 2 + 0.006, C.dark);
-  b.seg(w * 0.25, h * 0.71, d / 2 + 0.008, w * 0.39, h * 0.71, d / 2 + 0.008, EDGE_GLOW);
-  for (let i = 1; i < 8; i++) b.seg(w / 2 + 0.002, h * (0.1 + i * 0.1), -d / 2 + 0.03, w / 2 + 0.002, h * (0.1 + i * 0.1), d / 2 - 0.03, EDGE_FAINT);
+
+  // Digital touch controller in top right corner
+  b.box(w * 0.2, w * 0.44, h * 0.62, h * 0.82, d / 2, d / 2 + 0.008, C.dark, C.dark, EDGE_GLOW);
+  b.seg(w * 0.24, h * 0.72, d / 2 + 0.01, w * 0.4, h * 0.72, d / 2 + 0.01, EDGE_GLOW);
+
+  // Lateral evaporator heat exchanger fins
+  for (let i = 1; i < 9; i++) {
+    b.seg(w / 2 + 0.002, h * (0.08 + i * 0.09), -d / 2 + 0.03, w / 2 + 0.002, h * (0.08 + i * 0.09), d / 2 - 0.03, EDGE_FAINT);
+  }
 }
 
-/** Dosing unit (on the wall from 0.9 m): a box with two pump heads and two canisters standing below it. */
+/** Dosing unit: dual peristaltic dosing controller unit with clear roller heads, flow cell, and graduated canisters. */
 function poolDosing(b: Builder, w: number, d: number, h: number): void {
   const y0 = 0.9;
-  b.box(-w / 2, w / 2, y0, y0 + h * 0.45, -d / 2, d / 2, C.white, C.whiteTop, EDGE_FURN);
-  for (const s of [-1, 1]) ring(b, s * w * 0.22, y0 + h * 0.22, Math.min(w, h) * 0.09, d / 2 + 0.004, 12);
-  b.seg(-w * 0.35, y0 + h * 0.4, d / 2 + 0.004, w * 0.35, y0 + h * 0.4, d / 2 + 0.004, EDGE_GLOW);
-  // canisters (pH minus, chlorine) on the floor
-  for (const s of [-1, 1]) b.box(s * w * 0.25 - w * 0.18, s * w * 0.25 + w * 0.18, 0, h * 0.5, -d / 2, d / 2, C.white, C.glass, EDGE_FAINT);
+  // Wall-mount controller housing
+  b.box(-w / 2, w / 2, y0, y0 + h * 0.46, -d / 2, d / 2, C.white, C.whiteTop, EDGE_FURN);
+
+  // Twin peristaltic pump heads with transparent covers
+  for (const s of [-1, 1]) {
+    const px = s * w * 0.22;
+    const py = y0 + h * 0.22;
+    ring(b, px, py, Math.min(w, h) * 0.09, d / 2 + 0.004, 14);
+    // Rotor star rollers
+    b.cyl(px, d / 2 + 0.002, 0.015, py - 0.015, py + 0.015, C.metal, C.metal, 8);
+  }
+
+  // Digital status readout display
+  b.box(-w * 0.32, w * 0.32, y0 + h * 0.35, y0 + h * 0.43, d / 2, d / 2 + 0.006, C.dark, C.dark, EDGE_GLOW);
+
+  // Chemical holding canisters on floor with graduated capacity marks
+  for (const s of [-1, 1]) {
+    const cx = s * w * 0.25;
+    b.box(cx - w * 0.18, cx + w * 0.18, 0, h * 0.5, -d / 2, d / 2, C.white, C.glass, EDGE_FAINT);
+    // Suction lance cap
+    b.cyl(cx, 0, 0.03, h * 0.5, h * 0.55, C.dark, C.dark, 8);
+  }
 }
 
-/** Ball valve: a short pipe piece with the blue lever on top. */
+/** Ball valve: true-union PVC-U industrial ball valve with hex union nuts and ergonomic high-torque lever. */
 function poolValve(b: Builder, w: number, d: number, h: number): void {
   const y0 = POOL_VALVE_Y - h * 0.4;
-  b.box(-w / 2, w / 2, y0 + h * 0.25, y0 + h * 0.6, -d * 0.25, d * 0.25, C.metal, C.metal, EDGE_FURN);
-  b.box(-w * 0.12, w * 0.12, y0 + h * 0.6, y0 + h * 0.8, -d * 0.12, d * 0.12, C.dark);
-  b.box(-w * 0.1, w * 0.45, y0 + h * 0.8, y0 + h, -d * 0.15, d * 0.15, C.accent, C.accent);
+
+  // True-union cylindrical body with faceted union collar nuts on both ends
+  b.box(-w / 2, w / 2, y0 + h * 0.24, y0 + h * 0.62, -d * 0.26, d * 0.26, C.metal, C.metal, EDGE_FURN);
+  // Collar nuts
+  for (const sx of [-1, 1]) {
+    const nx = sx * (w / 2 - 0.03);
+    b.box(nx - 0.02, nx + 0.02, y0 + h * 0.2, y0 + h * 0.66, -d * 0.3, d * 0.3, C.dark, C.dark, EDGE_FAINT);
+  }
+
+  // Valve stem housing and position indicator
+  b.box(-w * 0.14, w * 0.14, y0 + h * 0.6, y0 + h * 0.82, -d * 0.14, d * 0.14, C.dark);
+
+  // Ergonomic high-torque lever handle with red/blue position lock button
+  b.box(-w * 0.12, w * 0.48, y0 + h * 0.82, y0 + h, -d * 0.16, d * 0.16, C.accent, C.accent, EDGE_GLOW);
+  b.cyl(0, 0, 0.025, y0 + h * 0.82, y0 + h + 0.005, C.metal, C.metal, 8);
 }
 
-/** The grid connection at the edge of the plot: a small dark street cabinet with a glowing lid edge. */
+/** Grid connection: heavy-duty architectural outdoor distribution pillar with rain canopy and hazard chevron. */
 function gridCabinet(b: Builder, w: number, d: number, h: number): void {
-  b.box(-w / 2, w / 2, 0, h, -d / 2, d / 2, C.dark, C.body, EDGE_FURN);
-  b.box(-w / 2 - 0.01, w / 2 + 0.01, h, h + 0.03, -d / 2 - 0.01, d / 2 + 0.01, C.dark, C.body);
-  b.seg(-w / 2, h + 0.032, d / 2 + 0.01, w / 2, h + 0.032, d / 2 + 0.01, EDGE_GLOW);
-  b.seg(-w * 0.3, h * 0.55, d / 2 + 0.003, w * 0.3, h * 0.55, d / 2 + 0.003, EDGE_FAINT);
+  // Ground root base
+  b.box(-w / 2 + 0.02, w / 2 - 0.02, 0, 0.06, -d / 2 + 0.02, d / 2 - 0.02, C.dark);
+
+  // Main polyester fiberglass body
+  b.box(-w / 2, w / 2, 0.06, h, -d / 2, d / 2, C.dark, C.body, EDGE_FURN);
+
+  // Chamfered rain-shedding canopy lid
+  b.box(-w / 2 - 0.015, w / 2 + 0.015, h, h + 0.035, -d / 2 - 0.015, d / 2 + 0.015, C.dark, C.body, EDGE_GLOW);
+
+  // Labyrinth ventilation slits and warning hazard indicator
+  for (let i = 0; i < 3; i++) {
+    const y = h * 0.65 + i * 0.035;
+    b.seg(-w * 0.25, y, d / 2 + 0.003, w * 0.25, y, d / 2 + 0.003, EDGE_FAINT);
+  }
 }
 
-/** Wallbox (from 1.0 m): a compact box with a glowing ring and the charging cable hanging below. */
+/** Wallbox: luxury EV charging station with glass faceplate, interactive RGB halo ring, cable holster, and Type 2 gun. */
 function wallbox(b: Builder, w: number, d: number, h: number): void {
   const y0 = 1.0;
-  b.box(-w / 2, w / 2, y0, y0 + h, -d / 2, d / 2, C.dark, C.body, EDGE_FURN);
+
+  // Aluminum rear housing with recessed wall standoff
+  b.box(-w / 2 + 0.02, w / 2 - 0.02, y0 + 0.04, y0 + h - 0.04, -d / 2, -d / 2 + 0.02, C.dark);
+  b.loft([-w / 2, w / 2, -d / 2 + 0.02, d / 2 - 0.02], [-w / 2 + 0.01, w / 2 - 0.01, -d / 2 + 0.02, d / 2], y0, y0 + h, C.metal, C.metal, EDGE_FURN);
+
+  // Tempered glass front panel with interactive RGB status halo ring
+  b.box(-w / 2 + 0.015, w / 2 - 0.015, y0 + 0.02, y0 + h - 0.02, d / 2 - 0.005, d / 2 + 0.005, C.dark, C.dark, EDGE_GLOW);
   const r = Math.min(w, h) * 0.28;
-  const cy = y0 + h * 0.58;
-  const n = 16;
-  for (let i = 0; i < n; i++) {
-    const a0 = (i / n) * Math.PI * 2;
-    const a1 = ((i + 1) / n) * Math.PI * 2;
-    b.seg(Math.cos(a0) * r, cy + Math.sin(a0) * r, d / 2 + 0.003, Math.cos(a1) * r, cy + Math.sin(a1) * r, d / 2 + 0.003, EDGE_GLOW);
-  }
-  // the coiled cable below the box
-  b.box(-0.015, 0.015, y0 - 0.35, y0, d / 2 - 0.03, d / 2, C.dark);
-  b.box(-0.06, 0.06, y0 - 0.42, y0 - 0.35, d / 2 - 0.05, d / 2, C.dark, C.body);
+  const cy = y0 + h * 0.6;
+  ring(b, 0, cy, r, d / 2 + 0.007, 20);
+
+  // Integrated cable management saddle holster below
+  b.box(-0.06, 0.06, y0 - 0.12, y0, d / 2 - 0.05, d / 2, C.metal);
+  // Coiled heavy-duty charging cable
+  b.cyl(0, d / 2 - 0.02, 0.08, y0 - 0.42, y0 - 0.12, C.dark, C.dark, 14);
+  // Type 2 charging gun docked in holster
+  b.box(-0.03, 0.03, y0 - 0.22, y0 - 0.08, d / 2, d / 2 + 0.07, C.dark, C.metal, EDGE_FAINT);
 }
 
-/** Meter cabinet on the wall (from 0.4 m): a tall box with the meter window and the glowing pulse LED. */
+/** Meter cabinet: modern utility cabinet with flush window showing smart digital meter with pulse LED. */
 function meterCabinet(b: Builder, w: number, d: number, h: number): void {
   const y0 = 0.4;
   b.box(-w / 2, w / 2, y0, y0 + h, -d / 2, d / 2, C.white, C.whiteTop, EDGE_FURN);
-  // the door's edge and handle
+
+  // Door edge reveal and quarter-turn lock latch
   b.seg(-w / 2 + 0.025, y0 + 0.025, d / 2 + 0.003, -w / 2 + 0.025, y0 + h - 0.025, d / 2 + 0.003, EDGE_FAINT);
   b.seg(-w / 2 + 0.025, y0 + h - 0.025, d / 2 + 0.003, w / 2 - 0.025, y0 + h - 0.025, d / 2 + 0.003, EDGE_FAINT);
-  b.box(w / 2 - 0.06, w / 2 - 0.035, y0 + h * 0.5 - 0.05, y0 + h * 0.5 + 0.05, d / 2, d / 2 + 0.012, C.dark);
-  // the meter behind its window with the display line
-  b.box(-w * 0.3, w * 0.3, y0 + h * 0.6, y0 + h * 0.8, d / 2, d / 2 + 0.005, C.dark);
-  b.seg(-w * 0.22, y0 + h * 0.7, d / 2 + 0.008, w * 0.22, y0 + h * 0.7, d / 2 + 0.008, EDGE_GLOW);
+  b.cyl(w / 2 - 0.045, d / 2 + 0.006, 0.016, y0 + h * 0.5 - 0.02, y0 + h * 0.5 + 0.02, C.dark, C.metal, 10);
+
+  // Smart digital electricity meter behind glass inspection window
+  b.box(-w * 0.32, w * 0.32, y0 + h * 0.58, y0 + h * 0.84, d / 2, d / 2 + 0.006, C.dark, C.dark, EDGE_GLOW);
+  // Digital LCD readout screen and pulse LED
+  b.box(-w * 0.24, w * 0.24, y0 + h * 0.68, y0 + h * 0.78, d / 2 + 0.006, d / 2 + 0.009, C.dark, C.dark);
+  b.seg(-w * 0.2, y0 + h * 0.73, d / 2 + 0.01, w * 0.2, y0 + h * 0.73, d / 2 + 0.01, EDGE_GLOW);
+  b.cyl(w * 0.2, d / 2 + 0.01, 0.006, y0 + h * 0.62, y0 + h * 0.64, C.accent, C.accent, 6);
 }
 
-/**
- * Home battery: a tower of stacked modules with a charge bar; "wall" a flat battery hanging at hip height
- * with a light bar; "cube" a compact box (a balcony battery) with a light bar and a handle.
- */
+/** Home battery: monocoque residential energy storage with breathing status light bar and wall mounting bracket. */
 function homeBattery(b: Builder, w: number, d: number, h: number, variant: string | null): void {
   if (variant === "wall") {
     const y0 = 0.5;
-    b.box(-w / 2, w / 2, y0, y0 + h, -d / 2, d / 2, C.white, C.whiteTop, EDGE_FURN);
-    b.seg(-w * 0.3, y0 + h * 0.9, d / 2 + 0.004, w * 0.3, y0 + h * 0.9, d / 2 + 0.004, EDGE_GLOW);
-    b.seg(-w * 0.3, y0 + h * 0.08, d / 2 + 0.003, w * 0.3, y0 + h * 0.08, d / 2 + 0.003, EDGE_FAINT);
+    // Wall-mount slim battery (Tesla Powerwall style)
+    b.loft([-w / 2, w / 2, -d / 2, d / 2 - 0.01], [-w / 2 + 0.015, w / 2 - 0.015, -d / 2, d / 2], y0, y0 + h, C.white, C.whiteTop, EDGE_FURN);
+    // Vertical pulsing charge status light bar
+    b.seg(0, y0 + h * 0.15, d / 2 + 0.004, 0, y0 + h * 0.88, d / 2 + 0.004, EDGE_GLOW);
     return;
   }
   if (variant === "cube") {
@@ -1469,14 +2248,18 @@ function homeBattery(b: Builder, w: number, d: number, h: number, variant: strin
     b.box(-w * 0.15, w * 0.15, h, h + 0.025, -0.012, 0.012, C.dark);
     return;
   }
+
+  // Floor-standing modular battery tower (Enphase / Sonnen style)
   b.box(-w / 2 + 0.02, w / 2 - 0.02, 0, 0.06, -d / 2 + 0.02, d / 2 - 0.02, C.dark);
   const modules = Math.max(2, Math.round((h - 0.06) / 0.3));
   const mh = (h - 0.06) / modules;
-  for (let i = 0; i < modules; i++) b.box(-w / 2, w / 2, 0.06 + i * mh + 0.004, 0.06 + (i + 1) * mh, -d / 2, d / 2, C.white, C.whiteTop, EDGE_FURN);
-  // charge bar: five short segments
+  for (let i = 0; i < modules; i++) {
+    b.box(-w / 2, w / 2, 0.06 + i * mh + 0.004, 0.06 + (i + 1) * mh, -d / 2, d / 2, C.white, C.whiteTop, EDGE_FURN);
+  }
+  // Vertical 5-segment LED battery state-of-charge bar
   for (let k = 0; k < 5; k++) {
-    const y = 0.06 + h * 0.18 + k * ((h - 0.3) / 5);
-    b.seg(-w * 0.04, y, d / 2 + 0.003, w * 0.04, y, d / 2 + 0.003, EDGE_GLOW);
+    const y = 0.06 + h * 0.2 + k * ((h - 0.35) / 5);
+    b.seg(-w * 0.05, y, d / 2 + 0.004, w * 0.05, y, d / 2 + 0.004, EDGE_GLOW);
   }
 }
 
@@ -1877,20 +2660,77 @@ function buildModel(buf: GeoBuffer, lines: LineBuffer, shadow: GeoBuffer, f: Fur
       return;
     }
     case "parking": {
-      // only the marking of the spot: a vehicle standing in it is added by the viewer
+      // Architectural luxury driveway stall: double crisp perimeter lines, entry threshold, rear wheel-stop curb bumper
       const y = 0.012;
-      const corners: [number, number][] = [[-w / 2, -d / 2], [w / 2, -d / 2], [w / 2, d / 2], [-w / 2, d / 2]];
-      for (let i = 0; i < 4; i++) b.seg(corners[i][0], y, corners[i][1], corners[(i + 1) % 4][0], y, corners[(i + 1) % 4][1], EDGE_FAINT);
-      // an arrow head at the front: the direction the vehicle faces
-      b.seg(-w * 0.15, y, d / 2 - 0.45, 0, y, d / 2 - 0.2, EDGE_FURN);
-      b.seg(0, y, d / 2 - 0.2, w * 0.15, y, d / 2 - 0.45, EDGE_FURN);
+      const x0 = -w / 2;
+      const x1 = w / 2;
+      const z0 = -d / 2;
+      const z1 = d / 2;
+      // Outer border
+      b.seg(x0, y, z0, x1, y, z0, EDGE_FAINT);
+      b.seg(x1, y, z0, x1, y, z1, EDGE_FAINT);
+      b.seg(x1, y, z1, x0, y, z1, EDGE_FAINT);
+      b.seg(x0, y, z1, x0, y, z0, EDGE_FAINT);
+      // Inner stall offset pinstripe for refined European estate paving
+      const ins = 0.08;
+      b.seg(x0 + ins, y, z0 + ins, x1 - ins, y, z0 + ins, EDGE_FAINT);
+      b.seg(x1 - ins, y, z0 + ins, x1 - ins, y, z1 - ins, EDGE_FAINT);
+      b.seg(x0 + ins, y, z0 + ins, x0 + ins, y, z1 - ins, EDGE_FAINT);
+      // Heavy-duty rubberized architectural wheel-stop curb at the back
+      const bw = Math.min(w * 0.72, 1.8);
+      const bz0 = z0 + 0.45;
+      const bz1 = z0 + 0.60;
+      b.box(-bw / 2, bw / 2, 0, 0.09, bz0, bz1, C.dark, C.dark, EDGE_FURN);
+      // High-visibility reflector strip inserts on the wheel stop
+      for (const rx of [-bw * 0.32, 0, bw * 0.32]) {
+        b.box(rx - 0.07, rx + 0.07, 0.02, 0.07, bz1, bz1 + 0.003, C.accent, C.accent);
+      }
+      // Directional entry chevron arrow at the front threshold
+      const ay = y;
+      b.seg(-w * 0.16, ay, z1 - 0.55, 0, ay, z1 - 0.25, EDGE_FURN);
+      b.seg(0, ay, z1 - 0.25, w * 0.16, ay, z1 - 0.55, EDGE_FURN);
+      b.seg(-w * 0.16, ay, z1 - 0.70, 0, ay, z1 - 0.40, EDGE_FAINT);
+      b.seg(0, ay, z1 - 0.40, w * 0.16, ay, z1 - 0.70, EDGE_FAINT);
       return;
     }
-    case "robot_vacuum":
-      // only the dock: the robot itself is drawn (and moved) by the viewer
-      b.box(-w * 0.45, w * 0.45, 0, h, -d / 2, -d / 2 + d * 0.3, C.white, C.whiteTop, EDGE_FURN);
-      b.box(-w * 0.2, w * 0.2, h * 0.5, h * 0.62, -d / 2 + d * 0.3, -d / 2 + d * 0.31, C.accent);
+    case "robot_vacuum": {
+      // Auto-empty & mop cleaning wash station (Roborock / Dreame luxury flagship dock)
+      const dockD = d * 0.36;
+      const z0 = -d / 2;
+      const z1 = z0 + dockD;
+      const rampZ = 0.08;
+      // Low-profile ramp landing baseplate with ribbed alignment rails
+      b.box(-w * 0.42, w * 0.42, 0, 0.018, z0, rampZ, C.dark, C.dark, EDGE_FURN);
+      // Side guidance tracks for robot entry
+      for (const side of [-1, 1]) {
+        const gx = side * (w * 0.38);
+        b.box(gx - 0.015, gx + 0.015, 0.018, 0.038, z1, rampZ, C.metal, C.metal);
+      }
+      // Main station tower in matte architectural finish
+      b.box(-w * 0.40, w * 0.40, 0.018, h, z0, z1, C.white, C.whiteTop, EDGE_FURN);
+      // Recessed auto-empty suction / charging bay in lower third
+      const bayH = h * 0.32;
+      b.box(-w * 0.32, w * 0.32, 0.018, bayH, z1 - 0.04, z1 + 0.005, C.dark, C.dark);
+      // Charging contacts
+      b.box(-0.06, -0.02, bayH * 0.4, bayH * 0.6, z1 + 0.003, z1 + 0.008, C.accent);
+      b.box(0.02, 0.06, bayH * 0.4, bayH * 0.6, z1 + 0.003, z1 + 0.008, C.accent);
+      // Brushed aluminum trim separator between bay and upper water reservoirs
+      b.box(-w * 0.402, w * 0.402, bayH + 0.01, bayH + 0.025, z0 - 0.002, z1 + 0.002, C.metal, C.metal);
+      // Upper dual tank compartment lids (clean water left, dirty water right)
+      const tankW = w * 0.36;
+      const lidY0 = h - 0.03;
+      b.box(-tankW, -0.01, lidY0, h + 0.005, z0 + 0.03, z1 - 0.03, C.white, C.metal, EDGE_FURN);
+      b.box(0.01, tankW, lidY0, h + 0.005, z0 + 0.03, z1 - 0.03, C.white, C.metal, EDGE_FURN);
+      // Recessed flush tank handles
+      b.box(-tankW * 0.65, -tankW * 0.35, h + 0.002, h + 0.006, (z0 + z1) / 2 - 0.015, (z0 + z1) / 2 + 0.015, C.dark);
+      b.box(tankW * 0.35, tankW * 0.65, h + 0.002, h + 0.006, (z0 + z1) / 2 - 0.015, (z0 + z1) / 2 + 0.015, C.dark);
+      // Smoked level inspection windows
+      b.box(-tankW * 0.6, -tankW * 0.4, bayH + 0.05, lidY0 - 0.04, z1, z1 + 0.004, C.glass);
+      b.box(tankW * 0.4, tankW * 0.6, bayH + 0.05, lidY0 - 0.04, z1, z1 + 0.004, C.dark);
+      // Subtle LED status glow indicator
+      b.box(-0.04, 0.04, bayH + 0.05, bayH + 0.06, z1, z1 + 0.003, C.accent, C.accent);
       return;
+    }
     case "radiator":
       radiator(b, w, d, h);
       return; // on the wall, no shadow on the floor

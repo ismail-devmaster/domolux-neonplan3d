@@ -7060,91 +7060,142 @@ export function pushLampModel(
   const r = Math.max(0.05, Math.min(w, dd) / 2);
   switch (d.lamp) {
     case "ceiling":
-      cyl(r * 0.25, H - 0.04, H, LAMP_BODY, LAMP_BODY, 8);
-      cyl(r, H - Math.max(0.04, h) - 0.035, H - 0.04, shadeCol, shadeCol);
+      // Luxury flush architectural luminaire: stepped ceiling rose, reveal gap, brushed casing, flush diffuser
+      cyl(r * 0.4, H - 0.015, H, LAMP_BODY, LAMP_BODY, 12);
+      cyl(r * 1.03, H - 0.025, H - 0.015, LAMP_BODY, LAMP_BODY, 18);
+      cyl(r * 0.97, H - 0.035, H - 0.025, LAMP_BODY, LAMP_BODY, 18);
+      cyl(r, H - Math.max(0.04, h) - 0.035, H - 0.035, LAMP_BODY, LAMP_BODY, 18);
+      cyl(r * 0.88, H - Math.max(0.04, h) - 0.04, H - Math.max(0.04, h) - 0.015, shadeCol, shadeCol, 18);
+      cyl(r * 0.25, H - Math.max(0.04, h) - 0.042, H - Math.max(0.04, h) - 0.03, LAMP_BODY, LAMP_BODY, 10);
       break;
     case "pendant": {
       const bottom = Math.max(0.4, H - h);
-      cyl(0.06, H - 0.02, H, LAMP_BODY, LAMP_BODY, 8);
-      const shapeTop = d.variant === "globe" ? bottom + 2 * r : d.variant === "drum" ? bottom + 0.24 : bottom + 0.2;
-      cyl(0.008, shapeTop, H - 0.02, LAMP_BODY, LAMP_BODY, 5);
+      // Architectural brass canopy with beveled reveal
+      cyl(0.07, H - 0.012, H, LAMP_BODY, LAMP_BODY, 12);
+      cyl(0.04, H - 0.03, H - 0.012, LAMP_BODY, LAMP_BODY, 10);
+      const shapeTop = d.variant === "globe" ? bottom + 2 * r : d.variant === "drum" ? bottom + 0.26 : bottom + 0.22;
+      // Braided suspension cord and brass strain-relief socket collar
+      cyl(0.005, shapeTop + 0.04, H - 0.03, LAMP_BODY, LAMP_BODY, 6);
+      cyl(0.022, shapeTop, shapeTop + 0.04, LAMP_BODY, LAMP_BODY, 8);
       if (d.variant === "globe") {
-        // stacked rings approximate a ball
-        const n = 7;
+        // Luxury opal glass sphere with brushed equatorial brass belt ring and top finial
+        const n = 9;
         for (let i = 0; i < n; i++) {
           const a0 = Math.PI * (i / n);
           const a1 = Math.PI * ((i + 1) / n);
-          cyl(r * Math.max(0.2, Math.sin((a0 + a1) / 2)), bottom + r - r * Math.cos(a0), bottom + r - r * Math.cos(a1), shadeCol, shadeCol, 14);
+          cyl(r * Math.max(0.2, Math.sin((a0 + a1) / 2)), bottom + r - r * Math.cos(a0), bottom + r - r * Math.cos(a1), shadeCol, shadeCol, 16);
         }
+        cyl(r * 1.04, bottom + r - 0.012, bottom + r + 0.012, LAMP_BODY, LAMP_BODY, 18);
       } else if (d.variant === "cone") {
-        const n = 4;
-        for (let i = 0; i < n; i++) cyl(r * (0.25 + (0.75 * (n - i)) / n), bottom + 0.06 * i, bottom + 0.06 * (i + 1), shadeCol, shadeCol, 16);
+        // Architectural spun metal cone with rolled lip and recessed optical lens
+        const n = 6;
+        for (let i = 0; i < n; i++) cyl(r * (0.28 + (0.72 * (n - i)) / n), bottom + 0.04 * i, bottom + 0.04 * (i + 1), shadeCol, shadeCol, 18);
+        cyl(r * 1.02, bottom, bottom + 0.015, LAMP_BODY, LAMP_BODY, 18);
       } else if (d.variant === "drum") {
-        cyl(r, bottom, bottom + 0.24, shadeCol, shadeCol, 18);
+        // Tailored architectural drum with brushed metallic top & bottom trim rings and recessed diffuser
+        cyl(r * 1.02, bottom + 0.24, bottom + 0.26, LAMP_BODY, LAMP_BODY, 18);
+        cyl(r, bottom + 0.02, bottom + 0.24, shadeCol, shadeCol, 18);
+        cyl(r * 1.02, bottom, bottom + 0.02, LAMP_BODY, LAMP_BODY, 18);
+        cyl(r * 0.9, bottom - 0.008, bottom + 0.01, shadeCol, shadeCol, 16);
       } else {
-        cyl(r * 0.35, bottom + 0.14, bottom + 0.2, shadeCol, shadeCol, 12);
-        cyl(r, bottom, bottom + 0.14, shadeCol, shadeCol, 16);
+        // Modern Scandinavian fluted shade with brass neck collar and visible soft globe
+        cyl(r * 0.38, bottom + 0.16, bottom + 0.22, LAMP_BODY, LAMP_BODY, 14);
+        cyl(r, bottom + 0.04, bottom + 0.16, shadeCol, shadeCol, 18);
+        cyl(r * 1.03, bottom + 0.03, bottom + 0.05, LAMP_BODY, LAMP_BODY, 18);
+        cyl(r * 0.45, bottom - 0.02, bottom + 0.04, shadeCol, shadeCol, 14);
       }
       break;
     }
     case "fan": {
-      // a ceiling fan: canopy, downrod, motor housing, the blades and its light bowl underneath
+      // Luxury architectural ceiling fan: stepped canopy, downrod, slim motor hub, flush glass bowl
       const bottom = Math.max(0.5, H - Math.max(0.25, h));
-      cyl(0.06, H - 0.03, H, LAMP_BODY, LAMP_BODY, 10);
-      cyl(0.012, bottom + 0.16, H - 0.03, LAMP_BODY, LAMP_BODY, 6);
-      cyl(0.13, bottom + 0.07, bottom + 0.16, LAMP_BODY, LAMP_BODY, 16);
-      cyl(0.11, bottom, bottom + 0.07, shadeCol, shadeCol, 16);
+      cyl(0.075, H - 0.015, H, LAMP_BODY, LAMP_BODY, 12);
+      cyl(0.045, H - 0.035, H - 0.015, LAMP_BODY, LAMP_BODY, 10);
+      cyl(0.012, bottom + 0.18, H - 0.035, LAMP_BODY, LAMP_BODY, 6);
+      cyl(0.03, bottom + 0.16, bottom + 0.18, LAMP_BODY, LAMP_BODY, 8);
+      cyl(0.14, bottom + 0.08, bottom + 0.16, LAMP_BODY, LAMP_BODY, 18);
+      cyl(0.145, bottom + 0.11, bottom + 0.13, LAMP_BODY, LAMP_BODY, 18);
+      cyl(0.115, bottom + 0.01, bottom + 0.08, shadeCol, shadeCol, 18);
+      cyl(0.04, bottom - 0.005, bottom + 0.015, LAMP_BODY, LAMP_BODY, 10);
       if (blades) pushFanBlades(buf, d.x, fanBladeY(H, h), d.z, w / 2, ang);
       break;
     }
     case "downlight":
-      // flush ring in the ceiling with a glowing lens
-      cyl(r, H - 0.012, H, LAMP_BODY, LAMP_BODY, 12);
-      cyl(r * 0.7, H - 0.02, H - 0.012, shadeCol, shadeCol, 12);
+      // Architectural micro-trim downlight: razor-thin outer bezel, dark anti-glare baffle, deep optical lens
+      cyl(r * 1.06, H - 0.008, H, LAMP_BODY, LAMP_BODY, 16);
+      cyl(r * 0.92, H - 0.025, H - 0.008, LAMP_BODY, LAMP_BODY, 14);
+      cyl(r * 0.65, H - 0.032, H - 0.02, shadeCol, shadeCol, 14);
       break;
     case "spot":
-      cyl(r * 0.6, H - 0.02, H, LAMP_BODY, LAMP_BODY, 10);
-      cyl(r, H - Math.max(0.06, h), H - 0.02, LAMP_BODY, LAMP_BODY, 12);
-      cyl(r * 0.8, H - Math.max(0.06, h) - 0.008, H - Math.max(0.06, h), shadeCol, shadeCol, 12);
+      // Architectural gimbal spotlight: mounting plate, knurled swivel knuckle, cylindrical housing with rear cooling fins
+      cyl(r * 0.7, H - 0.015, H, LAMP_BODY, LAMP_BODY, 12);
+      cyl(r * 0.25, H - 0.035, H - 0.015, LAMP_BODY, LAMP_BODY, 8);
+      cyl(r * 0.88, H - Math.max(0.07, h), H - 0.035, LAMP_BODY, LAMP_BODY, 16);
+      cyl(r * 0.92, H - 0.055, H - 0.045, LAMP_BODY, LAMP_BODY, 16);
+      cyl(r * 0.72, H - Math.max(0.07, h) - 0.01, H - Math.max(0.07, h), shadeCol, shadeCol, 14);
       break;
     case "panel":
-      box(-w / 2, w / 2, -dd / 2, dd / 2, H - Math.max(0.015, h), H, LAMP_BODY, LAMP_BODY);
-      box(-w / 2 + 0.02, w / 2 - 0.02, -dd / 2 + 0.02, dd / 2 - 0.02, H - Math.max(0.015, h) - 0.004, H - Math.max(0.015, h), shadeCol);
+      // Floating architectural LED panel: anodized aluminum perimeter bezel with shadow reveal
+      box(-w / 2, w / 2, -dd / 2, dd / 2, H - Math.max(0.018, h), H, LAMP_BODY, LAMP_BODY);
+      box(-w / 2 + 0.015, w / 2 - 0.015, -dd / 2 + 0.015, dd / 2 - 0.015, H - Math.max(0.018, h) - 0.005, H - 0.006, shadeCol);
+      box(-w / 2 + 0.04, w / 2 - 0.04, -dd / 2 + 0.04, dd / 2 - 0.04, H - Math.max(0.018, h) - 0.008, H - Math.max(0.018, h) - 0.002, shadeCol);
       break;
     case "uplight":
-      cyl(Math.max(0.1, r * 0.6), base, base + 0.03, LAMP_BODY, LAMP_BODY);
-      cyl(0.014, base + 0.03, base + h - 0.12, LAMP_BODY, LAMP_BODY, 6);
-      // bowl open to the top: dark outside, glowing rim
-      cyl(r, base + h - 0.14, base + h - 0.02, LAMP_BODY, LAMP_BODY);
-      cyl(r * 0.92, base + h - 0.02, base + h, shadeCol, shadeCol);
+      // Architectural torchère: heavy beveled marble plinth base, slender column with mid-height dimmer ring, flared reflector crown
+      cyl(Math.max(0.12, r * 0.75), base, base + 0.025, LAMP_BODY, LAMP_BODY, 16);
+      cyl(Math.max(0.1, r * 0.65), base + 0.025, base + 0.05, LAMP_BODY, LAMP_BODY, 14);
+      cyl(0.018, base + 0.05, base + h * 0.5 - 0.02, LAMP_BODY, LAMP_BODY, 8);
+      cyl(0.028, base + h * 0.5 - 0.02, base + h * 0.5 + 0.02, LAMP_BODY, LAMP_BODY, 10); // Dimmer knob
+      cyl(0.016, base + h * 0.5 + 0.02, base + h - 0.16, LAMP_BODY, LAMP_BODY, 8);
+      cyl(r * 0.4, base + h - 0.16, base + h - 0.12, LAMP_BODY, LAMP_BODY, 12);
+      cyl(r, base + h - 0.12, base + h - 0.02, LAMP_BODY, LAMP_BODY, 16);
+      cyl(r * 0.9, base + h - 0.02, base + h, shadeCol, shadeCol, 16);
       break;
     case "bollard":
-      // path light: post with a glowing band under its cap
-      cyl(r, base, base + h - 0.14, LAMP_BODY, LAMP_BODY, 10);
-      cyl(r * 0.9, base + h - 0.14, base + h - 0.03, shadeCol, shadeCol, 10);
-      cyl(r * 1.1, base + h - 0.03, base + h, LAMP_BODY, LAMP_BODY, 10);
+      // Minimalist architectural landscape bollard: heavy anchor base, basalt housing, downward louvred optical slit
+      cyl(r * 1.15, base, base + 0.02, LAMP_BODY, LAMP_BODY, 12);
+      cyl(r, base + 0.02, base + h - 0.15, LAMP_BODY, LAMP_BODY, 12);
+      cyl(r * 0.85, base + h - 0.15, base + h - 0.04, shadeCol, shadeCol, 12);
+      cyl(r * 1.08, base + h - 0.04, base + h, LAMP_BODY, LAMP_BODY, 12);
       break;
     case "garden":
-      // spike in the ground, head pointing up
-      cyl(0.012, base, base + h - 0.08, LAMP_BODY, LAMP_BODY, 5);
-      cyl(r, base + h - 0.08, base + h - 0.01, LAMP_BODY, LAMP_BODY, 10);
-      cyl(r * 0.8, base + h - 0.01, base + h, shadeCol, shadeCol, 10);
+      // Precision die-cast landscape spotlight: ground plate, swivel knuckle joint, cylinder housing with visor hood
+      cyl(0.04, base, base + 0.015, LAMP_BODY, LAMP_BODY, 8);
+      cyl(0.016, base + 0.015, base + h - 0.1, LAMP_BODY, LAMP_BODY, 6);
+      cyl(0.028, base + h - 0.1, base + h - 0.07, LAMP_BODY, LAMP_BODY, 8); // Swivel joint
+      cyl(r * 0.9, base + h - 0.07, base + h - 0.015, LAMP_BODY, LAMP_BODY, 12);
+      cyl(r * 0.95, base + h - 0.025, base + h + 0.01, LAMP_BODY, LAMP_BODY, 12); // Visor hood
+      cyl(r * 0.75, base + h - 0.02, base + h - 0.005, shadeCol, shadeCol, 10);
       break;
     case "floor":
-      cyl(Math.max(0.1, r * 0.7), base, base + 0.03, LAMP_BODY, LAMP_BODY);
-      cyl(0.014, base + 0.03, base + h - 0.28, LAMP_BODY, LAMP_BODY, 6);
-      cyl(r, base + h - 0.3, base + h, shadeCol, shadeCol);
+      // Luxury floor lamp: weighted marble base with brass foot ring, slender column, tailored linen drum shade with top/bottom trim
+      cyl(Math.max(0.14, r * 0.78), base, base + 0.015, LAMP_BODY, LAMP_BODY, 16); // Metal foot ring
+      cyl(Math.max(0.12, r * 0.72), base + 0.015, base + 0.045, LAMP_BODY, LAMP_BODY, 16); // Base plinth
+      cyl(0.015, base + 0.045, base + h - 0.35, LAMP_BODY, LAMP_BODY, 8);
+      cyl(0.025, base + h - 0.37, base + h - 0.34, LAMP_BODY, LAMP_BODY, 10); // Brass neck sleeve
+      cyl(r * 1.03, base + h - 0.36, base + h - 0.34, LAMP_BODY, LAMP_BODY, 16); // Bottom shade ring
+      cyl(r, base + h - 0.34, base + h - 0.02, shadeCol, shadeCol, 16); // Shade
+      cyl(r * 1.03, base + h - 0.02, base + h, LAMP_BODY, LAMP_BODY, 16); // Top shade ring
+      cyl(0.03, base + h, base + h + 0.015, LAMP_BODY, LAMP_BODY, 8); // Finial
       break;
     case "table":
-      cyl(Math.max(0.05, r * 0.55), base, base + 0.03, LAMP_BODY, LAMP_BODY);
-      cyl(0.012, base + 0.03, base + h - 0.16, LAMP_BODY, LAMP_BODY, 6);
-      cyl(r, base + h - 0.18, base + h, shadeCol, shadeCol);
+      // Sculptural bedside/table lamp: ceramic/stone vase base, brass neck collar, tailored silk drum shade, brass finial
+      cyl(Math.max(0.07, r * 0.65), base, base + 0.02, LAMP_BODY, LAMP_BODY, 14); // Base rim
+      cyl(Math.max(0.08, r * 0.75), base + 0.02, base + 0.08, LAMP_BODY, LAMP_BODY, 14); // Lower body
+      cyl(Math.max(0.05, r * 0.5), base + 0.08, base + h - 0.22, LAMP_BODY, LAMP_BODY, 12); // Tapered body
+      cyl(0.025, base + h - 0.22, base + h - 0.18, LAMP_BODY, LAMP_BODY, 8); // Brass neck collar
+      cyl(r * 1.03, base + h - 0.2, base + h - 0.185, LAMP_BODY, LAMP_BODY, 14); // Bottom shade ring
+      cyl(r, base + h - 0.185, base + h - 0.02, shadeCol, shadeCol, 16); // Shade
+      cyl(r * 1.03, base + h - 0.02, base + h, LAMP_BODY, LAMP_BODY, 14); // Top shade ring
+      cyl(0.02, base + h, base + h + 0.012, LAMP_BODY, LAMP_BODY, 8); // Finial cap
       break;
     case "wall": {
-      // plate on the wall (back at -z) and a glowing shade in front of it
+      // High-end architectural indirect sconce: slim brushed wall plate, floating dual-emission diffuser baffle
       const y0 = d.base ?? WALL_LAMP_Y;
-      box(-w / 2 + 0.03, w / 2 - 0.03, -dd / 2, -dd / 2 + 0.02, y0, y0 + h, LAMP_BODY);
-      box(-w / 2, w / 2, -dd / 2 + 0.02, dd / 2, y0 + h * 0.15, y0 + h * 0.85, shadeCol);
+      box(-w / 2 + 0.02, w / 2 - 0.02, -dd / 2, -dd / 2 + 0.015, y0, y0 + h, LAMP_BODY); // Wall mounting plate
+      box(-w / 2 + 0.04, w / 2 - 0.04, -dd / 2 + 0.015, -dd / 2 + 0.035, y0 + h * 0.25, y0 + h * 0.75, LAMP_BODY); // Standoff spacer
+      box(-w / 2, w / 2, -dd / 2 + 0.035, dd / 2, y0 + h * 0.08, y0 + h * 0.92, shadeCol); // Diffuser baffle
+      box(-w / 2 + 0.005, w / 2 - 0.005, -dd / 2 + 0.04, dd / 2 - 0.005, y0 + h * 0.05, y0 + h * 0.95, LAMP_BODY); // Front architectural face shield
       break;
     }
     case "strip": {
