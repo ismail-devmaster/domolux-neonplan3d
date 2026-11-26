@@ -1,0 +1,301 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.fluted_timber_feature_wall",
+  "name": "Domolux Fluted Timber Feature Wall",
+  "publisher": "Domolux Studio",
+  "description": "Floor-to-ceiling smoked walnut acoustic wall featuring deep vertical flutes, acoustic absorption backing, dark bronze shadow reveals, and integrated top perimeter wash lighting.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "fluted_timber_feature_wall",
+      "name": {
+        "en": "Domolux Fluted Timber Feature Wall",
+        "de": "Domolux Geriffelte Holz-Akzentwand",
+        "ar": "جدار خشبي مضلع مميز دومولوكس"
+      },
+      "size": [
+        2.4,
+        0.1,
+        3
+      ],
+      "mount": "wall",
+      "wall_y": 0,
+      "surface": false,
+      "group": "wall",
+      "room": [
+        "living",
+        "dining",
+        "hall",
+        "office"
+      ],
+      "tags": [
+        "fluted",
+        "wood",
+        "walnut",
+        "acoustic",
+        "wall",
+        "feature",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.35,
+          "w": 1,
+          "d": 0.3,
+          "y": 0,
+          "h": 1,
+          "color": "#16171b",
+          "edges": "faint"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.15,
+          "w": 0.98,
+          "d": 0.4,
+          "y": 0.02,
+          "h": 0.96,
+          "color": "#2d241e",
+          "finish": "wood",
+          "edges": "faint"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.4,
+          "w": 1,
+          "d": 0.2,
+          "y": 0,
+          "h": 0.02,
+          "color": "#0d0e11",
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.4,
+          "w": 1,
+          "d": 0.2,
+          "y": 0.98,
+          "h": 0.02,
+          "color": "#0d0e11",
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.25,
+          "w": 0.96,
+          "d": 0.15,
+          "y": 0.97,
+          "h": 0.015,
+          "color": "#ffe2ba",
+          "glow": true,
+          "edges": "glow",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": -0.44,
+          "z": 0.15,
+          "w": 0.05,
+          "d": 0.6,
+          "y": 0.02,
+          "h": 0.95,
+          "color": "#45362a",
+          "finish": "wood",
+          "edges": true,
+          "fix": "w"
+        },
+        {
+          "shape": "box",
+          "x": -0.36,
+          "z": 0.15,
+          "w": 0.05,
+          "d": 0.6,
+          "y": 0.02,
+          "h": 0.95,
+          "color": "#45362a",
+          "finish": "wood",
+          "edges": true,
+          "fix": "w"
+        },
+        {
+          "shape": "box",
+          "x": -0.28,
+          "z": 0.15,
+          "w": 0.05,
+          "d": 0.6,
+          "y": 0.02,
+          "h": 0.95,
+          "color": "#45362a",
+          "finish": "wood",
+          "edges": true,
+          "fix": "w"
+        },
+        {
+          "shape": "box",
+          "x": -0.2,
+          "z": 0.15,
+          "w": 0.05,
+          "d": 0.6,
+          "y": 0.02,
+          "h": 0.95,
+          "color": "#45362a",
+          "finish": "wood",
+          "edges": true,
+          "fix": "w"
+        },
+        {
+          "shape": "box",
+          "x": -0.12,
+          "z": 0.15,
+          "w": 0.05,
+          "d": 0.6,
+          "y": 0.02,
+          "h": 0.95,
+          "color": "#45362a",
+          "finish": "wood",
+          "edges": true,
+          "fix": "w"
+        },
+        {
+          "shape": "box",
+          "x": -0.04,
+          "z": 0.15,
+          "w": 0.05,
+          "d": 0.6,
+          "y": 0.02,
+          "h": 0.95,
+          "color": "#45362a",
+          "finish": "wood",
+          "edges": true,
+          "fix": "w"
+        },
+        {
+          "shape": "box",
+          "x": 0.04,
+          "z": 0.15,
+          "w": 0.05,
+          "d": 0.6,
+          "y": 0.02,
+          "h": 0.95,
+          "color": "#45362a",
+          "finish": "wood",
+          "edges": true,
+          "fix": "w"
+        },
+        {
+          "shape": "box",
+          "x": 0.12,
+          "z": 0.15,
+          "w": 0.05,
+          "d": 0.6,
+          "y": 0.02,
+          "h": 0.95,
+          "color": "#45362a",
+          "finish": "wood",
+          "edges": true,
+          "fix": "w"
+        },
+        {
+          "shape": "box",
+          "x": 0.2,
+          "z": 0.15,
+          "w": 0.05,
+          "d": 0.6,
+          "y": 0.02,
+          "h": 0.95,
+          "color": "#45362a",
+          "finish": "wood",
+          "edges": true,
+          "fix": "w"
+        },
+        {
+          "shape": "box",
+          "x": 0.28,
+          "z": 0.15,
+          "w": 0.05,
+          "d": 0.6,
+          "y": 0.02,
+          "h": 0.95,
+          "color": "#45362a",
+          "finish": "wood",
+          "edges": true,
+          "fix": "w"
+        },
+        {
+          "shape": "box",
+          "x": 0.36,
+          "z": 0.15,
+          "w": 0.05,
+          "d": 0.6,
+          "y": 0.02,
+          "h": 0.95,
+          "color": "#45362a",
+          "finish": "wood",
+          "edges": true,
+          "fix": "w"
+        },
+        {
+          "shape": "box",
+          "x": 0.44,
+          "z": 0.15,
+          "w": 0.05,
+          "d": 0.6,
+          "y": 0.02,
+          "h": 0.95,
+          "color": "#45362a",
+          "finish": "wood",
+          "edges": true,
+          "fix": "w"
+        },
+        {
+          "shape": "box",
+          "x": -0.49,
+          "z": 0.1,
+          "w": 0.02,
+          "d": 0.75,
+          "y": 0,
+          "h": 1,
+          "color": "#7a623a",
+          "edges": "glow",
+          "fix": "wd"
+        },
+        {
+          "shape": "box",
+          "x": 0.49,
+          "z": 0.1,
+          "w": 0.02,
+          "d": 0.75,
+          "y": 0,
+          "h": 1,
+          "color": "#7a623a",
+          "edges": "glow",
+          "fix": "wd"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 1,
+          "d": 0.9
+        },
+        {
+          "shape": "line",
+          "x1": -0.48,
+          "z1": 0.4,
+          "x2": 0.48,
+          "z2": 0.4
+        }
+      ]
+    }
+  ]
+}

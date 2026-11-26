@@ -1,0 +1,133 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.motorized_driveway_gate",
+  "name": "Domolux Monumental Estate Motorized Dual-Leaf Driveway Gates",
+  "publisher": "Domolux Studio",
+  "description": "Twin-leaf cantilevered estate entrance gates constructed from architectural bronze vertical slats, reinforced structural steel frames, and underground hydraulic operators.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "motorized_driveway_gate",
+    "name": {
+     "en": "Domolux Monumental Estate Motorized Dual-Leaf Driveway Gates",
+     "de": "Domolux Monumentales Automatisches Zufahrtstor",
+     "ar": "بوابة المداخل والقصور الرئيسية الآلية المزدوجة دومولوكس"
+    },
+    "size": [
+     5.5,
+     0.5,
+     2.4
+    ],
+    "mount": "floor",
+    "surface": false,
+    "group": "outdoor",
+    "room": [
+     "outdoor"
+    ],
+    "tags": [
+     "driveway_gate",
+     "motorized",
+     "estate_gate",
+     "bronze",
+     "security",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": -0.45,
+      "z": 0,
+      "w": 0.1,
+      "d": 0.94,
+      "y": 0,
+      "h": 0.98,
+      "color": "#2b2f38",
+      "finish": "dark",
+      "edges": true,
+      "fix": "w"
+     },
+     {
+      "shape": "box",
+      "x": 0.45,
+      "z": 0,
+      "w": 0.1,
+      "d": 0.94,
+      "y": 0,
+      "h": 0.98,
+      "color": "#2b2f38",
+      "finish": "dark",
+      "edges": true,
+      "fix": "w"
+     },
+     {
+      "shape": "box",
+      "x": -0.2,
+      "z": 0,
+      "w": 0.38,
+      "d": 0.1,
+      "y": 0.06,
+      "h": 0.88,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "d"
+     },
+     {
+      "shape": "box",
+      "x": 0.2,
+      "z": 0,
+      "w": 0.38,
+      "d": 0.1,
+      "y": 0.06,
+      "h": 0.88,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "d"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": 0,
+      "w": 0.04,
+      "d": 0.04,
+      "y": 0.02,
+      "h": 0.92,
+      "color": "#ffffff",
+      "edges": "glow",
+      "fix": "wd"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": -0.45,
+      "z": 0,
+      "w": 0.1,
+      "d": 0.94
+     },
+     {
+      "shape": "rect",
+      "x": 0.45,
+      "z": 0,
+      "w": 0.1,
+      "d": 0.94
+     },
+     {
+      "shape": "line",
+      "x1": -0.4,
+      "z1": 0,
+      "x2": 0.4,
+      "z2": 0
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "S+fQkQ/PRQ2qm55rdQxbRxkBphc25ydJYGZE1HStjpREmn92Cv0YKzNem9CqOhR9KuOvvw/o389CLhp7ULE8Bw=="
+ }
+}

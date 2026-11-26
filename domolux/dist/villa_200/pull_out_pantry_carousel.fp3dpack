@@ -1,0 +1,171 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.pull_out_pantry_carousel",
+  "name": "Domolux Pull-Out Pantry Carousel System",
+  "publisher": "Domolux Studio",
+  "description": "Heavy-duty full-extension tall pantry larder with revolving tiered smoked-glass baskets, soft-closing damper slides, solid oak trim, and integrated sensor illumination.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "pull_out_pantry_carousel",
+    "name": {
+     "en": "Domolux Pull-Out Pantry Carousel System",
+     "de": "Domolux Ausziehbarer Vorratsschrank-Drehkarussell",
+     "ar": "نظام دوار سحاب لخزانة المؤن دومولوكس"
+    },
+    "size": [
+     0.45,
+     0.6,
+     2.15
+    ],
+    "mount": "floor",
+    "surface": false,
+    "group": "kitchen",
+    "room": [
+     "kitchen"
+    ],
+    "tags": [
+     "pantry",
+     "larder",
+     "carousel",
+     "storage",
+     "pull-out",
+     "kitchen",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.98,
+      "y": 0,
+      "h": 1,
+      "color": "#22252c",
+      "finish": "dark",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.48,
+      "w": 0.96,
+      "d": 0.04,
+      "y": 0.02,
+      "h": 0.96,
+      "color": "#3a2d23",
+      "finish": "wood",
+      "edges": true
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": 0.48,
+      "w": 0.03,
+      "d": 0.03,
+      "y": 0.35,
+      "h": 0.5,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wd"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": 0,
+      "w": 0.06,
+      "d": 0.06,
+      "y": 0.06,
+      "h": 0.88,
+      "color": "metal",
+      "fix": "wd"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.82,
+      "d": 0.78,
+      "y": 0.12,
+      "h": 0.08,
+      "color": "glass",
+      "edges": true,
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.82,
+      "d": 0.78,
+      "y": 0.3,
+      "h": 0.08,
+      "color": "glass",
+      "edges": true,
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.82,
+      "d": 0.78,
+      "y": 0.48,
+      "h": 0.08,
+      "color": "glass",
+      "edges": true,
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.82,
+      "d": 0.78,
+      "y": 0.66,
+      "h": 0.08,
+      "color": "glass",
+      "edges": true,
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.82,
+      "d": 0.78,
+      "y": 0.84,
+      "h": 0.08,
+      "color": "glass",
+      "edges": true,
+      "fix": "h"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.98
+     },
+     {
+      "shape": "circle",
+      "x": 0,
+      "z": 0,
+      "r": 0.35
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "4stlX0nNkCfhnqJApOzWa+WaRkp2//bOgi7X2eMhSsiVKHSYGs01ETWpV1GqU3+XPQBHbVzV381zQPUw42XNBA=="
+ }
+}

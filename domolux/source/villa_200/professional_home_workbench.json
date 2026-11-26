@@ -1,0 +1,139 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.professional_home_workbench",
+  "name": "Domolux Heavy-Duty Professional Workshop Workbench",
+  "publisher": "Domolux Studio",
+  "description": "Solid steamed-beech butcher-block workbench with heavy-gauge welded steel frame, integrated quick-release bench vise, and modular tool-holding drawers.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "professional_home_workbench",
+      "name": {
+        "en": "Domolux Heavy-Duty Professional Workshop Workbench",
+        "de": "Domolux Professionelle Werkbank mit Buchenholzplatte",
+        "ar": "طاولة ورشة العمل الاحترافية بسطح خشب الزان ومنجلة دومولوكس"
+      },
+      "size": [
+        1.8,
+        0.75,
+        0.95
+      ],
+      "mount": "floor",
+      "surface": false,
+      "group": "living",
+      "room": [
+        "storage"
+      ],
+      "tags": [
+        "workbench",
+        "workshop",
+        "tools",
+        "beechwood",
+        "garage",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": -0.42,
+          "z": -0.38,
+          "w": 0.08,
+          "d": 0.08,
+          "y": 0,
+          "h": 0.84,
+          "color": "#1a1c22",
+          "fix": "wd"
+        },
+        {
+          "shape": "box",
+          "x": 0.42,
+          "z": -0.38,
+          "w": 0.08,
+          "d": 0.08,
+          "y": 0,
+          "h": 0.84,
+          "color": "#1a1c22",
+          "fix": "wd"
+        },
+        {
+          "shape": "box",
+          "x": -0.42,
+          "z": 0.38,
+          "w": 0.08,
+          "d": 0.08,
+          "y": 0,
+          "h": 0.84,
+          "color": "#1a1c22",
+          "fix": "wd"
+        },
+        {
+          "shape": "box",
+          "x": 0.42,
+          "z": 0.38,
+          "w": 0.08,
+          "d": 0.08,
+          "y": 0,
+          "h": 0.84,
+          "color": "#1a1c22",
+          "fix": "wd"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.9,
+          "d": 0.82,
+          "y": 0.15,
+          "h": 0.04,
+          "color": "#252830",
+          "edges": true,
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.98,
+          "d": 0.96,
+          "y": 0.84,
+          "h": 0.16,
+          "color": "#bfa382",
+          "finish": "wood",
+          "edges": true,
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": -0.35,
+          "z": 0.46,
+          "w": 0.25,
+          "d": 0.08,
+          "y": 0.84,
+          "h": 0.14,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wdh"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 0.98,
+          "d": 0.96
+        },
+        {
+          "shape": "rect",
+          "x": -0.35,
+          "z": 0.46,
+          "w": 0.25,
+          "d": 0.08
+        }
+      ]
+    }
+  ]
+}

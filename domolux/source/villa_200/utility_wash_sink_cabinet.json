@@ -1,0 +1,116 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.utility_wash_sink_cabinet",
+  "name": "Domolux Deep Composite Service and Pet-Wash Basin Cabinet",
+  "publisher": "Domolux Studio",
+  "description": "Deep granite-composite utility tub cabinet with splashback protection, commercial pull-down spring-coil pre-rinse faucet, and waterproof under-sink storage.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "utility_wash_sink_cabinet",
+      "name": {
+        "en": "Domolux Deep Composite Service and Pet-Wash Basin Cabinet",
+        "de": "Domolux Multifunktionales Ausgussbecken mit Unterschrank",
+        "ar": "حوض الغسيل الخدمي العميق مع صنبور شاور مرن دومولوكس"
+      },
+      "size": [
+        0.8,
+        0.65,
+        0.9
+      ],
+      "mount": "floor",
+      "surface": false,
+      "group": "kitchen",
+      "room": [
+        "storage",
+        "kitchen"
+      ],
+      "tags": [
+        "utility_sink",
+        "wash_basin",
+        "laundry",
+        "pet_wash",
+        "service",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.94,
+          "d": 0.88,
+          "y": 0,
+          "h": 0.12,
+          "color": "#16171b",
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.96,
+          "d": 0.92,
+          "y": 0.12,
+          "h": 0.65,
+          "color": "#272a33",
+          "finish": "dark",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.98,
+          "d": 0.96,
+          "y": 0.77,
+          "h": 0.23,
+          "color": "#495057",
+          "edges": true,
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.05,
+          "w": 0.84,
+          "d": 0.72,
+          "y": 0.35,
+          "h": 0.62,
+          "color": "#1f2228"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": -0.38,
+          "w": 0.06,
+          "d": 0.06,
+          "y": 0.82,
+          "h": 0.18,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wd"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 0.98,
+          "d": 0.96
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0.05,
+          "w": 0.84,
+          "d": 0.72
+        }
+      ]
+    }
+  ]
+}

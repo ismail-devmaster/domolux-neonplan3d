@@ -1,0 +1,121 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.retractable_downdraft_extractor",
+  "name": "Domolux Retractable Countertop Downdraft Extractor",
+  "publisher": "Domolux Studio",
+  "description": "Motorized flush-countertop downdraft ventilation unit rising 40cm above island worktops with perimeter extraction slot, glass touch control slider, and dimmable LED strip.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "retractable_downdraft_extractor",
+    "name": {
+     "en": "Domolux Retractable Countertop Downdraft Extractor",
+     "de": "Domolux Versenkbarer Tisch-Dunstabzug",
+     "ar": "شفاط مدمج هابط في الكاونتر وقابل للسحب دومولوكس"
+    },
+    "size": [
+     0.9,
+     0.15,
+     0.75
+    ],
+    "mount": "surface",
+    "surface": true,
+    "group": "kitchen",
+    "room": [
+     "kitchen"
+    ],
+    "tags": [
+     "downdraft",
+     "extractor",
+     "countertop",
+     "motorized",
+     "kitchen",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.96,
+      "d": 0.92,
+      "y": 0,
+      "h": 0.55,
+      "color": "#1c1d22",
+      "edges": "faint"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 1,
+      "d": 1,
+      "y": 0.54,
+      "h": 0.02,
+      "color": "#111215",
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.94,
+      "d": 0.4,
+      "y": 0.56,
+      "h": 0.44,
+      "color": "#25272e",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.18,
+      "w": 0.88,
+      "d": 0.04,
+      "y": 0.65,
+      "h": 0.28,
+      "color": "metal",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.15,
+      "w": 0.9,
+      "d": 0.03,
+      "y": 0.98,
+      "h": 0.015,
+      "color": "#fff5ea",
+      "glow": true,
+      "edges": "glow",
+      "fix": "wdh"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 1,
+      "d": 1
+     },
+     {
+      "shape": "line",
+      "x1": -0.45,
+      "z1": 0,
+      "x2": 0.45,
+      "z2": 0
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "xiXuKYV2hqZq9sMavfRzBVBDMceBxRtUF7uee/AJZPaqaqcg4mE8+eIOvvWKh/vSL2r3cj9/vliMfD1PEPyWCw=="
+ }
+}

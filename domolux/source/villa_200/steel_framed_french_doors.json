@@ -1,0 +1,231 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.steel_framed_french_doors",
+  "name": "Domolux Steel-Framed French Doors",
+  "publisher": "Domolux Studio",
+  "description": "Industrial-bourgeois double French doors with ultra-slender hot-rolled black steel profiles, true divided-light multi-pane glazing, and blackened brass cremone bolt locking system.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "steel_framed_french_doors",
+      "name": {
+        "en": "Domolux Steel-Framed French Doors",
+        "de": "Domolux Stahlprofil-Flügeltüren",
+        "ar": "أبواب فرنسية بإطار فولاذي دومولوكس"
+      },
+      "size": [
+        2,
+        0.16,
+        2.7
+      ],
+      "mount": "floor",
+      "surface": false,
+      "group": "door",
+      "room": [
+        "living",
+        "dining",
+        "office",
+        "patio"
+      ],
+      "tags": [
+        "french",
+        "steel",
+        "doors",
+        "industrial",
+        "divided-light",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": -0.48,
+          "z": 0,
+          "w": 0.04,
+          "d": 0.85,
+          "y": 0,
+          "h": 1,
+          "color": "#141517",
+          "edges": true,
+          "fix": "w"
+        },
+        {
+          "shape": "box",
+          "x": 0.48,
+          "z": 0,
+          "w": 0.04,
+          "d": 0.85,
+          "y": 0,
+          "h": 1,
+          "color": "#141517",
+          "edges": true,
+          "fix": "w"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 1,
+          "d": 0.85,
+          "y": 0.97,
+          "h": 0.03,
+          "color": "#141517",
+          "edges": true,
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": -0.24,
+          "z": 0,
+          "w": 0.45,
+          "d": 0.4,
+          "y": 0.02,
+          "h": 0.94,
+          "color": "#1a1b1f",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": -0.24,
+          "z": 0,
+          "w": 0.41,
+          "d": 0.1,
+          "y": 0.04,
+          "h": 0.9,
+          "color": "glass",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0.24,
+          "z": 0,
+          "w": 0.45,
+          "d": 0.4,
+          "y": 0.02,
+          "h": 0.94,
+          "color": "#1a1b1f",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0.24,
+          "z": 0,
+          "w": 0.41,
+          "d": 0.1,
+          "y": 0.04,
+          "h": 0.9,
+          "color": "glass",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": -0.24,
+          "z": 0,
+          "w": 0.41,
+          "d": 0.15,
+          "y": 0.26,
+          "h": 0.015,
+          "color": "#141517",
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": -0.24,
+          "z": 0,
+          "w": 0.41,
+          "d": 0.15,
+          "y": 0.48,
+          "h": 0.015,
+          "color": "#141517",
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": -0.24,
+          "z": 0,
+          "w": 0.41,
+          "d": 0.15,
+          "y": 0.7,
+          "h": 0.015,
+          "color": "#141517",
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0.24,
+          "z": 0,
+          "w": 0.41,
+          "d": 0.15,
+          "y": 0.26,
+          "h": 0.015,
+          "color": "#141517",
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0.24,
+          "z": 0,
+          "w": 0.41,
+          "d": 0.15,
+          "y": 0.48,
+          "h": 0.015,
+          "color": "#141517",
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0.24,
+          "z": 0,
+          "w": 0.41,
+          "d": 0.15,
+          "y": 0.7,
+          "h": 0.015,
+          "color": "#141517",
+          "fix": "h"
+        },
+        {
+          "shape": "cyl",
+          "x": -0.02,
+          "z": 0.1,
+          "w": 0.02,
+          "d": 0.02,
+          "y": 0.05,
+          "h": 0.88,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wd"
+        },
+        {
+          "shape": "box",
+          "x": -0.02,
+          "z": 0.14,
+          "w": 0.04,
+          "d": 0.06,
+          "y": 0.46,
+          "h": 0.06,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wdh"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 1,
+          "d": 0.85
+        },
+        {
+          "shape": "line",
+          "x1": -0.24,
+          "z1": 0,
+          "x2": 0.24,
+          "z2": 0
+        }
+      ]
+    }
+  ]
+}

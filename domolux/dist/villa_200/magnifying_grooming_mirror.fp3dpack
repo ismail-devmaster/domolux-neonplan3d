@@ -1,0 +1,137 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.magnifying_grooming_mirror",
+  "name": "Domolux Articulated Vanity Grooming Mirror",
+  "publisher": "Domolux Studio",
+  "description": "Wall-mounted precision double-jointed articulated grooming mirror with dual-sided 1x/10x optical surfaces, capacitive touch dimmer, and continuous ring CRI98 light halo.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "magnifying_grooming_mirror",
+    "name": {
+     "en": "Domolux Articulated Vanity Grooming Mirror",
+     "de": "Domolux Ausziehbarer Kosmetikspiegel",
+     "ar": "مرآة حلاقة وتجميل جدارية مكبرة ومتحركة دومولوكس"
+    },
+    "size": [
+     0.3,
+     0.35,
+     0.35
+    ],
+    "mount": "wall",
+    "wall_y": 1.3,
+    "surface": false,
+    "group": "bathroom",
+    "room": [
+     "bathroom"
+    ],
+    "tags": [
+     "mirror",
+     "grooming",
+     "magnifying",
+     "lighting",
+     "bathroom",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": -0.46,
+      "w": 0.32,
+      "d": 0.32,
+      "y": 0.34,
+      "h": 0.06,
+      "axis": "z",
+      "color": "#c5a059",
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": -0.15,
+      "z": -0.22,
+      "w": 0.04,
+      "d": 0.35,
+      "y": 0.47,
+      "h": 0.06,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wh"
+     },
+     {
+      "shape": "box",
+      "x": 0.05,
+      "z": 0.05,
+      "w": 0.04,
+      "d": 0.3,
+      "y": 0.47,
+      "h": 0.06,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wh"
+     },
+     {
+      "shape": "cyl",
+      "x": 0.15,
+      "z": 0.22,
+      "w": 0.06,
+      "d": 0.06,
+      "y": 0.25,
+      "h": 0.5,
+      "color": "#c5a059",
+      "fix": "wd"
+     },
+     {
+      "shape": "cyl",
+      "x": 0.15,
+      "z": 0.32,
+      "w": 0.78,
+      "d": 0.78,
+      "y": 0.11,
+      "h": 0.05,
+      "axis": "y",
+      "color": "#fff3cc",
+      "glow": true,
+      "fix": "h"
+     },
+     {
+      "shape": "cyl",
+      "x": 0.15,
+      "z": 0.32,
+      "w": 0.68,
+      "d": 0.68,
+      "y": 0.12,
+      "h": 0.04,
+      "axis": "y",
+      "color": "#a8c0d8",
+      "finish": "glass",
+      "fix": "h"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "circle",
+      "x": 0.15,
+      "z": 0.32,
+      "r": 0.35
+     },
+     {
+      "shape": "line",
+      "x1": 0,
+      "z1": -0.46,
+      "x2": 0.15,
+      "z2": 0.22
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "Ll4eqJ8IolyTKP7gAWrENYXLQLsAVm1cu1EdHeGVLjsJ2Fr3S+OLGAyg6YndQ89Z7OvO1Z68KYGYkXn4hQtMCQ=="
+ }
+}

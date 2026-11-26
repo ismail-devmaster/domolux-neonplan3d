@@ -1,0 +1,155 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.acoustic_double_door",
+  "name": "Domolux Acoustic Double Entrance Door",
+  "publisher": "Domolux Studio",
+  "description": "High-performance studio-grade sound isolating acoustic double door system (55dB rated) featuring dense composite core, drop-down automatic acoustic perimeter seals, and sound lock air cavity.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "acoustic_double_door",
+    "name": {
+     "en": "Domolux Acoustic Double Entrance Door",
+     "de": "Domolux Akustische Schallschutz-Doppeltür",
+     "ar": "باب صوتي مزدوج عازل للضوضاء دومولوكس"
+    },
+    "size": [
+     1.3,
+     0.42,
+     2.5
+    ],
+    "mount": "floor",
+    "surface": false,
+    "group": "door",
+    "room": [
+     "cinema",
+     "office",
+     "bedroom"
+    ],
+    "tags": [
+     "acoustic",
+     "soundproof",
+     "door",
+     "cinema",
+     "studio",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 1,
+      "d": 1,
+      "y": 0,
+      "h": 1,
+      "color": "#22252c",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.86,
+      "d": 0.9,
+      "y": 0.03,
+      "h": 0.94,
+      "color": "#141518",
+      "edges": "faint"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.32,
+      "w": 0.84,
+      "d": 0.22,
+      "y": 0.04,
+      "h": 0.92,
+      "color": "#362b22",
+      "finish": "wood",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.32,
+      "w": 0.84,
+      "d": 0.22,
+      "y": 0.04,
+      "h": 0.92,
+      "color": "#362b22",
+      "finish": "wood",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.42,
+      "w": 0.72,
+      "d": 0.05,
+      "y": 0.1,
+      "h": 0.8,
+      "color": "fabric",
+      "finish": "fabric",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0.32,
+      "z": 0.46,
+      "w": 0.04,
+      "d": 0.08,
+      "y": 0.45,
+      "h": 0.12,
+      "color": "metal",
+      "edges": "glow",
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": 0.32,
+      "z": -0.46,
+      "w": 0.04,
+      "d": 0.08,
+      "y": 0.45,
+      "h": 0.12,
+      "color": "metal",
+      "edges": "glow",
+      "fix": "wdh"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 1,
+      "d": 1
+     },
+     {
+      "shape": "line",
+      "x1": -0.42,
+      "z1": -0.32,
+      "x2": 0.42,
+      "z2": -0.32
+     },
+     {
+      "shape": "line",
+      "x1": -0.42,
+      "z1": 0.32,
+      "x2": 0.42,
+      "z2": 0.32
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "XDtHJYWt/Kq9jH5qKbK1gi6cm7ul3WbMrxrzaAtqwm0rVK4WsyrUDr1VJqIl32McgMdCMrqnFoScOMNE7+EsCQ=="
+ }
+}

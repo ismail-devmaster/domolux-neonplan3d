@@ -1,0 +1,108 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.linear_architectural_planter",
+  "name": "Domolux Low-Profile Linear Architectural Planter Trough",
+  "publisher": "Domolux Studio",
+  "description": "Elongated architectural planter crafted from anthracite basalt composite with internal thermal insulation, sub-irrigation reservoir, and architectural grasses.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "linear_architectural_planter",
+    "name": {
+     "en": "Domolux Low-Profile Linear Architectural Planter Trough",
+     "de": "Domolux Linearer Architektonischer Pflanztrog",
+     "ar": "حوض زراعة خطي طويل وممتد للأسوار والتراسات دومولوكس"
+    },
+    "size": [
+     2.5,
+     0.45,
+     0.55
+    ],
+    "mount": "floor",
+    "surface": false,
+    "group": "outdoor",
+    "room": [
+     "outdoor"
+    ],
+    "tags": [
+     "planter",
+     "trough",
+     "linear",
+     "landscape",
+     "balcony",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.96,
+      "d": 0.88,
+      "y": 0,
+      "h": 0.05,
+      "color": "#141518",
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.94,
+      "y": 0.05,
+      "h": 0.8,
+      "color": "#2b2f38",
+      "finish": "dark",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.92,
+      "d": 0.78,
+      "y": 0.12,
+      "h": 0.72,
+      "color": "#271d17"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.88,
+      "d": 0.6,
+      "y": 0.72,
+      "h": 0.26,
+      "color": "#52796f",
+      "edges": true
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.94
+     },
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.92,
+      "d": 0.78
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "aQd2bszBJs87e/PIgf1u1uIaWTskBooPjDLbXsH5fZ4hLpyuEqxItfqbrdxSxi2GBirtXgTsu7iuLB7vjpTjDw=="
+ }
+}

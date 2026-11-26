@@ -1,0 +1,167 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.architectural_gallery_rail",
+  "name": "Domolux Architectural Gallery Picture-Rail System",
+  "publisher": "Domolux Studio",
+  "description": "Ceiling-recessed museum picture hanging system with extruded bronze track, twin micro-braided steel suspension cables, and counterbalanced framed fine art canvas.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "architectural_gallery_rail",
+      "name": {
+        "en": "Domolux Architectural Gallery Picture-Rail System",
+        "de": "Domolux Architektonisches Galerie-Hängesystem",
+        "ar": "نظام تعليق لوحات المعارض المعماري دومولوكس"
+      },
+      "size": [
+        2,
+        0.15,
+        2.2
+      ],
+      "mount": "wall",
+      "wall_y": 0.8,
+      "surface": false,
+      "group": "decor",
+      "room": [
+        "hall",
+        "living",
+        "dining"
+      ],
+      "tags": [
+        "gallery",
+        "rail",
+        "art",
+        "hanging",
+        "museum",
+        "canvas",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 1,
+          "d": 0.85,
+          "y": 0.96,
+          "h": 0.04,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "h"
+        },
+        {
+          "shape": "cyl",
+          "x": -0.3,
+          "z": 0.05,
+          "w": 0.015,
+          "d": 0.015,
+          "y": 0.35,
+          "h": 0.6,
+          "color": "metal",
+          "fix": "wd"
+        },
+        {
+          "shape": "cyl",
+          "x": 0.3,
+          "z": 0.05,
+          "w": 0.015,
+          "d": 0.015,
+          "y": 0.35,
+          "h": 0.6,
+          "color": "metal",
+          "fix": "wd"
+        },
+        {
+          "shape": "box",
+          "x": -0.3,
+          "z": 0.05,
+          "w": 0.03,
+          "d": 0.03,
+          "y": 0.94,
+          "h": 0.03,
+          "color": "#c5a059",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0.3,
+          "z": 0.05,
+          "w": 0.03,
+          "d": 0.03,
+          "y": 0.94,
+          "h": 0.03,
+          "color": "#c5a059",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.1,
+          "w": 0.8,
+          "d": 0.4,
+          "y": 0.15,
+          "h": 0.65,
+          "color": "#2d231b",
+          "finish": "wood",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.12,
+          "w": 0.72,
+          "d": 0.35,
+          "y": 0.18,
+          "h": 0.59,
+          "color": "#f1ede6",
+          "finish": "white",
+          "edges": "faint"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.28,
+          "w": 0.24,
+          "d": 0.06,
+          "y": 0.82,
+          "h": 0.03,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.28,
+          "w": 0.22,
+          "d": 0.04,
+          "y": 0.8,
+          "h": 0.02,
+          "color": "#fff5ea",
+          "glow": true,
+          "edges": "glow",
+          "fix": "wdh"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "line",
+          "x1": -0.5,
+          "z1": 0,
+          "x2": 0.5,
+          "z2": 0
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0.1,
+          "w": 0.8,
+          "d": 0.4
+        }
+      ]
+    }
+  ]
+}

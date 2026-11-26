@@ -1,0 +1,143 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.horological_wall_clock",
+  "name": "Domolux Designer Horological Wall Clock",
+  "publisher": "Domolux Studio",
+  "description": "Monumental 1.2m minimalist horological statement clock featuring a floating satin champagne brass outer ring, dark walnut open dial, and precision counterweighted hands.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "horological_wall_clock",
+      "name": {
+        "en": "Domolux Designer Horological Wall Clock",
+        "de": "Domolux Designer Horologische Wanduhr",
+        "ar": "ساعة حائط فلكية راقية دومولوكس"
+      },
+      "size": [
+        1.2,
+        0.12,
+        1.2
+      ],
+      "mount": "wall",
+      "wall_y": 1.2,
+      "surface": false,
+      "group": "decor",
+      "room": [
+        "living",
+        "hall",
+        "dining",
+        "office"
+      ],
+      "tags": [
+        "clock",
+        "horology",
+        "timepiece",
+        "brass",
+        "minimal",
+        "luxury",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": -0.3,
+          "w": 0.22,
+          "d": 0.22,
+          "y": 0.44,
+          "h": 0.12,
+          "color": "#1f2229",
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": 0,
+          "w": 0.96,
+          "d": 0.96,
+          "y": 0.46,
+          "h": 0.08,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "h"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": 0.08,
+          "w": 0.28,
+          "d": 0.28,
+          "y": 0.42,
+          "h": 0.16,
+          "color": "#3a2d23",
+          "finish": "wood",
+          "edges": true,
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": 0.2,
+          "w": 0.06,
+          "d": 0.06,
+          "y": 0.46,
+          "h": 0.08,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0.1,
+          "z": 0.18,
+          "w": 0.28,
+          "d": 0.02,
+          "y": 0.5,
+          "h": 0.015,
+          "rot": 30,
+          "color": "#181a1f",
+          "edges": "faint",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": -0.15,
+          "z": 0.22,
+          "w": 0.42,
+          "d": 0.015,
+          "y": 0.52,
+          "h": 0.015,
+          "rot": -45,
+          "color": "#181a1f",
+          "edges": "faint",
+          "fix": "wdh"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "circle",
+          "x": 0,
+          "z": 0,
+          "r": 0.48
+        },
+        {
+          "shape": "line",
+          "x1": 0,
+          "z1": 0,
+          "x2": 0.15,
+          "z2": 0.2
+        },
+        {
+          "shape": "line",
+          "x1": 0,
+          "z1": 0,
+          "x2": -0.2,
+          "z2": -0.25
+        }
+      ]
+    }
+  ]
+}

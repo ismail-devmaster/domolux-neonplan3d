@@ -1,0 +1,133 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.backup_diesel_generator",
+  "name": "Domolux Silent Estate Standby Emergency Power Generator",
+  "publisher": "Domolux Studio",
+  "description": "Heavy acoustic-damped 65kVA standby emergency generator with critical-grade exhaust silencer, automatic transfer switch interface, and weather-sealed dual service doors.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "backup_diesel_generator",
+    "name": {
+     "en": "Domolux Silent Estate Standby Emergency Power Generator",
+     "de": "Domolux Schallgedämpftes Notstromaggregat",
+     "ar": "مولد الكهرباء الاحتياطي فائق الهدوء للقصور والمجمعات الفاخرة دومولوكس"
+    },
+    "size": [
+     2.2,
+     1.1,
+     1.4
+    ],
+    "mount": "floor",
+    "surface": false,
+    "group": "appliances",
+    "room": [
+     "outdoor",
+     "storage"
+    ],
+    "tags": [
+     "generator",
+     "backup_power",
+     "emergency",
+     "diesel",
+     "infrastructure",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.98,
+      "y": 0,
+      "h": 0.1,
+      "color": "#181a1f",
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.94,
+      "d": 0.92,
+      "y": 0.1,
+      "h": 0.86,
+      "color": "#2f3542",
+      "finish": "dark",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": -0.42,
+      "z": 0,
+      "w": 0.06,
+      "d": 0.74,
+      "y": 0.25,
+      "h": 0.55,
+      "color": "#1e2229",
+      "fix": "w"
+     },
+     {
+      "shape": "box",
+      "x": 0.42,
+      "z": 0,
+      "w": 0.06,
+      "d": 0.74,
+      "y": 0.25,
+      "h": 0.55,
+      "color": "#1e2229",
+      "fix": "w"
+     },
+     {
+      "shape": "cyl",
+      "x": 0.25,
+      "z": 0,
+      "w": 0.14,
+      "d": 0.14,
+      "y": 0.96,
+      "h": 0.04,
+      "color": "metal",
+      "edges": true,
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": -0.15,
+      "z": 0.46,
+      "w": 0.32,
+      "d": 0.02,
+      "y": 0.52,
+      "h": 0.24,
+      "color": "#00e5ff",
+      "glow": true,
+      "fix": "d"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.94,
+      "d": 0.92
+     },
+     {
+      "shape": "circle",
+      "x": 0.25,
+      "z": 0,
+      "r": 0.08
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "9fLVLCKOCw0WOCpC/W+G8ZU9/yyXVWIAQicrrqnCuMmsFQoHQrvWC5Dy6LcfJAMxsSJtSr/91PWIFN8AfCFdDQ=="
+ }
+}

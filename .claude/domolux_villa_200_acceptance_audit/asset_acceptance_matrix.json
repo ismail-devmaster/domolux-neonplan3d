@@ -1,0 +1,3402 @@
+[
+  {
+    "num": 1,
+    "id": "acoustic_bass_trap_tower",
+    "name": {
+      "en": "Domolux Corner Architectural Acoustic Bass-Trap Monolith",
+      "ar": "عمود مصيدة الترددات المنخفضة الزاوي لعزل الصوت دومولوكس"
+    },
+    "collection": "Private Media, Library and Game Rooms",
+    "mount": "floor",
+    "parts": 6,
+    "triangles": 72,
+    "packageSizeBytes": 2622,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 2,
+    "id": "acoustic_ceiling_baffles",
+    "name": {
+      "en": "Domolux Architectural Acoustic Ceiling Baffles",
+      "ar": "حواجز سقفية صوتية معمارية دومولوكس"
+    },
+    "collection": "Architectural Interior Systems",
+    "mount": "ceiling",
+    "parts": 10,
+    "triangles": 120,
+    "packageSizeBytes": 4108,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 3,
+    "id": "acoustic_double_door",
+    "name": {
+      "en": "Domolux Acoustic Double Entrance Door",
+      "ar": "باب صوتي مزدوج عازل للضوضاء دومولوكس"
+    },
+    "collection": "Doors, Windows, Entrances and Exterior Envelope",
+    "mount": "floor",
+    "parts": 7,
+    "triangles": 84,
+    "packageSizeBytes": 2900,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 4,
+    "id": "arched_feature_window",
+    "name": {
+      "en": "Domolux Arched Architectural Feature Window",
+      "ar": "نافذة معمارية قوسية مميزة دومولوكس"
+    },
+    "collection": "Doors, Windows, Entrances and Exterior Envelope",
+    "mount": "wall",
+    "parts": 10,
+    "triangles": 120,
+    "packageSizeBytes": 3454,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 5,
+    "id": "arched_interior_door",
+    "name": {
+      "en": "Domolux Arched Architectural Interior Door",
+      "ar": "باب داخلي قوسي دومولوكس"
+    },
+    "collection": "Doors, Windows, Entrances and Exterior Envelope",
+    "mount": "floor",
+    "parts": 9,
+    "triangles": 152,
+    "packageSizeBytes": 3438,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 6,
+    "id": "architectural_archway_portal",
+    "name": {
+      "en": "Domolux Architectural Archway Portal",
+      "ar": "بوابة قوسية معمارية دومولوكس"
+    },
+    "collection": "Architectural Interior Systems",
+    "mount": "floor",
+    "parts": 14,
+    "triangles": 168,
+    "packageSizeBytes": 4444,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 7,
+    "id": "architectural_display_niches",
+    "name": {
+      "en": "Domolux Architectural Display Niche System",
+      "ar": "نظام كوات العرض المعمارية دومولوكس"
+    },
+    "collection": "Architectural Interior Systems",
+    "mount": "wall",
+    "parts": 14,
+    "triangles": 300,
+    "packageSizeBytes": 4242,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 8,
+    "id": "architectural_gallery_rail",
+    "name": {
+      "en": "Domolux Architectural Gallery Picture-Rail System",
+      "ar": "نظام تعليق لوحات المعارض المعماري دومولوكس"
+    },
+    "collection": "Exclusive Interior Furnishings, Art and Decor",
+    "mount": "wall",
+    "parts": 9,
+    "triangles": 196,
+    "packageSizeBytes": 3220,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 9,
+    "id": "architectural_garden_pavilion",
+    "name": {
+      "en": "Domolux Modernist Cantilevered Garden Pavilion",
+      "ar": "جناح الحديقة المعماري الحديث بسقف ناتئ دومولوكس"
+    },
+    "collection": "Private Estate, Outdoor Architecture and Landscape",
+    "mount": "floor",
+    "parts": 6,
+    "triangles": 72,
+    "packageSizeBytes": 2786,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 10,
+    "id": "architectural_garden_trellis",
+    "name": {
+      "en": "Domolux Bronze and Cable Architectural Espalier Trellis",
+      "ar": "تعريشة تسلق النباتات المعمارية من النحاس وكابلات الفولاذ دومولوكس"
+    },
+    "collection": "Private Estate, Outdoor Architecture and Landscape",
+    "mount": "floor",
+    "parts": 6,
+    "triangles": 72,
+    "packageSizeBytes": 2633,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 11,
+    "id": "architectural_headboard_wall",
+    "name": {
+      "en": "Domolux Monumental Upholstered Headboard Wall Suite",
+      "ar": "جدار اللوح الرأسي المعماري المنجد مع إضاءة محيطية دومولوكس"
+    },
+    "collection": "Master Suites, Guest Hospitality and Nursery",
+    "mount": "wall",
+    "parts": 9,
+    "triangles": 108,
+    "packageSizeBytes": 3385,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 12,
+    "id": "architectural_linear_air_diffuser",
+    "name": {
+      "en": "Domolux Architectural Linear Air Diffuser",
+      "ar": "موزع هواء خطي معماري دومولوكس"
+    },
+    "collection": "Architectural Interior Systems",
+    "mount": "ceiling",
+    "parts": 6,
+    "triangles": 72,
+    "packageSizeBytes": 2715,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 93,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 13,
+    "id": "architectural_reflecting_pool",
+    "name": {
+      "en": "Domolux Basalt Mirror Architectural Reflecting Water Basin",
+      "ar": "حوض المياه المعماري العاكس بحجر البازلت الأسود دومولوكس"
+    },
+    "collection": "Private Estate, Outdoor Architecture and Landscape",
+    "mount": "floor",
+    "parts": 4,
+    "triangles": 48,
+    "packageSizeBytes": 2239,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 14,
+    "id": "architectural_shower_niche",
+    "name": {
+      "en": "Domolux Recessed Backlit Stone Shower Niche",
+      "ar": "نيش جداري مدمج لشاور الاستحمام مع إضاءة محيطية دومولوكس"
+    },
+    "collection": "Complete Bathroom, Spa and Personal Wellness",
+    "mount": "wall",
+    "parts": 8,
+    "triangles": 96,
+    "packageSizeBytes": 3008,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 15,
+    "id": "architectural_wall_cladding",
+    "name": {
+      "en": "Domolux Architectural Wall Cladding System",
+      "ar": "نظام دومولوكس لتكسية الجدران المعمارية"
+    },
+    "collection": "Architectural Interior Systems",
+    "mount": "wall",
+    "parts": 20,
+    "triangles": 240,
+    "packageSizeBytes": 6071,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 96,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 16,
+    "id": "armored_smart_entrance_door",
+    "name": {
+      "en": "Domolux Armored Smart Entrance Door",
+      "ar": "باب مدخل ذكي مصفح دومولوكس"
+    },
+    "collection": "Doors, Windows, Entrances and Exterior Envelope",
+    "mount": "floor",
+    "parts": 8,
+    "triangles": 184,
+    "packageSizeBytes": 3057,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 17,
+    "id": "automated_access_gate_operator",
+    "name": {
+      "en": "Domolux Estate Heavy-Duty Hydraulic Gate Operator Pylon",
+      "ar": "محرك البوابات الهيدروليكي فائق القوة للقصور الفاخرة دومولوكس"
+    },
+    "collection": "Smart Home, Security and Residential Infrastructure",
+    "mount": "floor",
+    "parts": 5,
+    "triangles": 104,
+    "packageSizeBytes": 2437,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 18,
+    "id": "automated_luggage_valet",
+    "name": {
+      "en": "Domolux Presidential Suite Luggage Valet and Wardrobe Bench",
+      "ar": "منصة حقائب السفر الفندقية المنجدة بالجلد الفاخر دومولوكس"
+    },
+    "collection": "Master Suites, Guest Hospitality and Nursery",
+    "mount": "floor",
+    "parts": 8,
+    "triangles": 140,
+    "packageSizeBytes": 3053,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 19,
+    "id": "av_equipment_cabinet",
+    "name": {
+      "en": "Domolux Reference Acoustically Ventilated AV Credenza",
+      "ar": "خزانة التجهيزات السمعية والبصرية عالية الأداء دومولوكس"
+    },
+    "collection": "Private Media, Library and Game Rooms",
+    "mount": "floor",
+    "parts": 9,
+    "triangles": 284,
+    "packageSizeBytes": 3380,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 20,
+    "id": "backlit_onyx_feature_wall",
+    "name": {
+      "en": "Domolux Backlit Onyx Feature Wall",
+      "ar": "جدار أونيكس مضاء من الخلف دومولوكس"
+    },
+    "collection": "Architectural Interior Systems",
+    "mount": "wall",
+    "parts": 11,
+    "triangles": 132,
+    "packageSizeBytes": 3733,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 21,
+    "id": "backup_diesel_generator",
+    "name": {
+      "en": "Domolux Silent Estate Standby Emergency Power Generator",
+      "ar": "مولد الكهرباء الاحتياطي فائق الهدوء للقصور والمجمعات الفاخرة دومولوكس"
+    },
+    "collection": "Smart Home, Security and Residential Infrastructure",
+    "mount": "floor",
+    "parts": 6,
+    "triangles": 116,
+    "packageSizeBytes": 2620,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 22,
+    "id": "bathroom_aroma_pedestal",
+    "name": {
+      "en": "Domolux Fluted Travertine Aromatherapy Pedestal",
+      "ar": "عمود المباخر والعطور الفاخرة من حجر الترافرتين دومولوكس"
+    },
+    "collection": "Complete Bathroom, Spa and Personal Wellness",
+    "mount": "floor",
+    "parts": 5,
+    "triangles": 192,
+    "packageSizeBytes": 2444,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 23,
+    "id": "bathroom_laundry_hamper",
+    "name": {
+      "en": "Domolux Dual-Compartment Bathroom Laundry Tower",
+      "ar": "برج تخزين وفرز الغسيل للحمام بخشب الجوز دومولوكس"
+    },
+    "collection": "Complete Bathroom, Spa and Personal Wellness",
+    "mount": "floor",
+    "parts": 7,
+    "triangles": 84,
+    "packageSizeBytes": 2760,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 24,
+    "id": "bathroom_towel_valet",
+    "name": {
+      "en": "Domolux Freestanding Architectural Towel Valet",
+      "ar": "حامل مناشف فندقي مستقل بقاعدة رخامية دومولوكس"
+    },
+    "collection": "Complete Bathroom, Spa and Personal Wellness",
+    "mount": "floor",
+    "parts": 6,
+    "triangles": 204,
+    "packageSizeBytes": 2710,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 25,
+    "id": "bathroom_water_purification_station",
+    "name": {
+      "en": "Domolux Mineralizing Bathroom Water Purification Column",
+      "ar": "محطة تنقية وإعادة تمعدن مياه الشرب للحمام دومولوكس"
+    },
+    "collection": "Complete Bathroom, Spa and Personal Wellness",
+    "mount": "floor",
+    "parts": 6,
+    "triangles": 160,
+    "packageSizeBytes": 2607,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 26,
+    "id": "bay_window_assembly",
+    "name": {
+      "en": "Domolux Architectural Bay Window Assembly",
+      "ar": "مجموعة نافذة خليجية معمارية بارزة دومولوكس"
+    },
+    "collection": "Doors, Windows, Entrances and Exterior Envelope",
+    "mount": "floor",
+    "parts": 8,
+    "triangles": 96,
+    "packageSizeBytes": 3284,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 27,
+    "id": "bespoke_arcade_cabinet",
+    "name": {
+      "en": "Domolux Nostalgia Bespoke Luxury Retro Arcade Cabinet",
+      "ar": "جهاز ألعاب الآركيد الكلاسيكي الفاخر بهيكل الخشب المصقول دومولوكس"
+    },
+    "collection": "Private Media, Library and Game Rooms",
+    "mount": "floor",
+    "parts": 7,
+    "triangles": 172,
+    "packageSizeBytes": 2848,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 28,
+    "id": "bespoke_luxury_bar_cabinet",
+    "name": {
+      "en": "Domolux Bespoke Luxury Bar Cabinet",
+      "ar": "خزانة بار فاخرة متكاملة دومولوكس"
+    },
+    "collection": "Exclusive Interior Furnishings, Art and Decor",
+    "mount": "floor",
+    "parts": 10,
+    "triangles": 120,
+    "packageSizeBytes": 3462,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 29,
+    "id": "bicycle_repair_stand",
+    "name": {
+      "en": "Domolux Professional Workshop Bicycle Maintenance Stand",
+      "ar": "حامل صيانة وإصلاح الدراجات الهوائية الاحترافي دومولوكس"
+    },
+    "collection": "Laundry, Service Rooms, Workshops and Specialist Systems",
+    "mount": "floor",
+    "parts": 5,
+    "triangles": 236,
+    "packageSizeBytes": 2400,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 30,
+    "id": "bioclimatic_pergola",
+    "name": {
+      "en": "Domolux Bioclimatic Motorized Architectural Pergola",
+      "ar": "مظلة بيرغولا معمارية بيومناخية بشرائح متحركة دومولوكس"
+    },
+    "collection": "Private Estate, Outdoor Architecture and Landscape",
+    "mount": "floor",
+    "parts": 8,
+    "triangles": 96,
+    "packageSizeBytes": 3345,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 31,
+    "id": "biometric_access_terminal",
+    "name": {
+      "en": "Domolux Biometric Facial and Palm-Vein Access Terminal",
+      "ar": "جهاز التحقق البيومتري ببصمة الكف وملامح الوجه دومولوكس"
+    },
+    "collection": "Smart Home, Security and Residential Infrastructure",
+    "mount": "wall",
+    "parts": 5,
+    "triangles": 104,
+    "packageSizeBytes": 2497,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 32,
+    "id": "built_in_combi_microwave",
+    "name": {
+      "en": "Domolux Built-In Combi Microwave Oven",
+      "ar": "فرن ميكروويف مدمج متعدد الوظائف دومولوكس"
+    },
+    "collection": "Gourmet Kitchens and Specialty Culinary Equipment",
+    "mount": "surface",
+    "parts": 5,
+    "triangles": 104,
+    "packageSizeBytes": 2372,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 33,
+    "id": "butlers_pantry_wall",
+    "name": {
+      "en": "Domolux Butler's Pantry Storage Wall",
+      "ar": "جدار خزانة خدمة وخادم المطبخ دومولوكس"
+    },
+    "collection": "Gourmet Kitchens and Specialty Culinary Equipment",
+    "mount": "floor",
+    "parts": 8,
+    "triangles": 96,
+    "packageSizeBytes": 2964,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 34,
+    "id": "ceiling_bicycle_lift",
+    "name": {
+      "en": "Domolux Motorized Architectural Ceiling Bicycle Hoist",
+      "ar": "رافعة الدراجات السقفية الآلية المعمارية دومولوكس"
+    },
+    "collection": "Laundry, Service Rooms, Workshops and Specialist Systems",
+    "mount": "ceiling",
+    "parts": 5,
+    "triangles": 148,
+    "packageSizeBytes": 2473,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 35,
+    "id": "ceiling_island_extractor",
+    "name": {
+      "en": "Domolux Ceiling-Mounted Island Extraction Hood",
+      "ar": "شفاط مطبخ جزيرة معلق بالسقف دومولوكس"
+    },
+    "collection": "Gourmet Kitchens and Specialty Culinary Equipment",
+    "mount": "ceiling",
+    "parts": 7,
+    "triangles": 84,
+    "packageSizeBytes": 2895,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 36,
+    "id": "center_channel_speaker",
+    "name": {
+      "en": "Domolux Reference Tri-Amplified Center Channel Speaker",
+      "ar": "مكبر صوت مركزي ثلاثي المنافذ للسينما المنزلية دومولوكس"
+    },
+    "collection": "Private Media, Library and Game Rooms",
+    "mount": "surface",
+    "parts": 5,
+    "triangles": 236,
+    "packageSizeBytes": 2732,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 37,
+    "id": "central_vacuum_inlet_valve",
+    "name": {
+      "en": "Domolux Architectural Flush Central Vacuum Inlet Port",
+      "ar": "منفذ شفط المكنسة المركزية الجداري المعماري الفاخر دومولوكس"
+    },
+    "collection": "Smart Home, Security and Residential Infrastructure",
+    "mount": "wall",
+    "parts": 4,
+    "triangles": 48,
+    "packageSizeBytes": 2267,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 38,
+    "id": "childrens_playhouse_loft",
+    "name": {
+      "en": "Domolux Scandinavian Timber Playhouse and Mezzanine Loft",
+      "ar": "كوخ ألعاب خشبي فاخر بطابقين مع درج مدمج دومولوكس"
+    },
+    "collection": "Master Suites, Guest Hospitality and Nursery",
+    "mount": "floor",
+    "parts": 6,
+    "triangles": 72,
+    "packageSizeBytes": 2760,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 39,
+    "id": "childrens_reading_pod",
+    "name": {
+      "en": "Domolux Acoustic Igloo Children's Reading Sanctuary",
+      "ar": "كبسولة القراءة الصوتية المعزولة للأطفال دومولوكس"
+    },
+    "collection": "Master Suites, Guest Hospitality and Nursery",
+    "mount": "floor",
+    "parts": 5,
+    "triangles": 192,
+    "packageSizeBytes": 2512,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 40,
+    "id": "cleaning_utility_station",
+    "name": {
+      "en": "Domolux Estate Housekeeping and Cleaning Utility Armoire",
+      "ar": "دولاب تنظيم أدوات ومعدات النظافة والخدمة المنزلية دومولوكس"
+    },
+    "collection": "Laundry, Service Rooms, Workshops and Specialist Systems",
+    "mount": "floor",
+    "parts": 6,
+    "triangles": 160,
+    "packageSizeBytes": 2657,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 41,
+    "id": "clerestory_glazing_band",
+    "name": {
+      "en": "Domolux Clerestory Ribbon Glazing Band",
+      "ar": "شريط نوافذ إضاءة علوي معماري دومولوكس"
+    },
+    "collection": "Doors, Windows, Entrances and Exterior Envelope",
+    "mount": "wall",
+    "parts": 11,
+    "triangles": 132,
+    "packageSizeBytes": 3481,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 93,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 42,
+    "id": "climate_controlled_wine_cabinet",
+    "name": {
+      "en": "Domolux Climate-Controlled Wine Cabinet",
+      "ar": "خزانة تبريد نبيذ متعددة المناخات دومولوكس"
+    },
+    "collection": "Gourmet Kitchens and Specialty Culinary Equipment",
+    "mount": "floor",
+    "parts": 13,
+    "triangles": 200,
+    "packageSizeBytes": 4060,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 43,
+    "id": "coffered_ceiling_system",
+    "name": {
+      "en": "Domolux Coffered Ceiling System",
+      "ar": "نظام الأسقف المجوفة دومولوكس"
+    },
+    "collection": "Architectural Interior Systems",
+    "mount": "ceiling",
+    "parts": 16,
+    "triangles": 236,
+    "packageSizeBytes": 5390,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 97,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 44,
+    "id": "commercial_grade_wifi_ap",
+    "name": {
+      "en": "Domolux Ultra-High-Density Wi-Fi 7 Enterprise Ceiling Access Point",
+      "ar": "نقطة الوصول اللاسلكية المعمارية السقفية بتقنية واي فاي 7 دومولوكس"
+    },
+    "collection": "Smart Home, Security and Residential Infrastructure",
+    "mount": "ceiling",
+    "parts": 3,
+    "triangles": 124,
+    "packageSizeBytes": 2131,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 45,
+    "id": "compact_steam_oven",
+    "name": {
+      "en": "Domolux Compact Steam Oven",
+      "ar": "فرن بخاري مدمج فاخر دومولوكس"
+    },
+    "collection": "Gourmet Kitchens and Specialty Culinary Equipment",
+    "mount": "surface",
+    "parts": 6,
+    "triangles": 116,
+    "packageSizeBytes": 2471,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 46,
+    "id": "concealed_flush_door",
+    "name": {
+      "en": "Domolux Concealed Flush Interior Door",
+      "ar": "باب داخلي متساوٍ ومخفي دومولوكس"
+    },
+    "collection": "Doors, Windows, Entrances and Exterior Envelope",
+    "mount": "floor",
+    "parts": 8,
+    "triangles": 96,
+    "packageSizeBytes": 2974,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 93,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 47,
+    "id": "concealed_ironing_center",
+    "name": {
+      "en": "Domolux Recessed Architectural Fold-Out Ironing Cabinet",
+      "ar": "مركز الكي الجداري المخفي المدمج بلوح دوار دومولوكس"
+    },
+    "collection": "Laundry, Service Rooms, Workshops and Specialist Systems",
+    "mount": "wall",
+    "parts": 5,
+    "triangles": 60,
+    "packageSizeBytes": 2474,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 48,
+    "id": "concealed_security_camera",
+    "name": {
+      "en": "Domolux Architectural Flush-Mount Micro PTZ Dome Camera",
+      "ar": "كاميرا المراقبة المعمارية السقفية المخفية بزجاج مدخن دومولوكس"
+    },
+    "collection": "Smart Home, Security and Residential Infrastructure",
+    "mount": "ceiling",
+    "parts": 3,
+    "triangles": 124,
+    "packageSizeBytes": 2133,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 49,
+    "id": "convertible_child_highchair",
+    "name": {
+      "en": "Domolux Sculptural Convertible Highchair",
+      "ar": "كرسي طعام الأطفال المتطور المصنوع من الجوز والنحاس دومولوكس"
+    },
+    "collection": "Master Suites, Guest Hospitality and Nursery",
+    "mount": "floor",
+    "parts": 8,
+    "triangles": 272,
+    "packageSizeBytes": 3059,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 50,
+    "id": "convertible_ping_pong_table",
+    "name": {
+      "en": "Domolux Minimalist Executive Table Tennis and Conference Table",
+      "ar": "طاولة تنس الطاولة والاجتماعات الفاخرة القابلة للتحول دومولوكس"
+    },
+    "collection": "Private Media, Library and Game Rooms",
+    "mount": "floor",
+    "parts": 7,
+    "triangles": 84,
+    "packageSizeBytes": 2929,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 51,
+    "id": "decorative_pilaster",
+    "name": {
+      "en": "Domolux Decorative Architectural Pilaster",
+      "ar": "عامود جداري زخرفي دومولوكس"
+    },
+    "collection": "Architectural Interior Systems",
+    "mount": "wall",
+    "parts": 11,
+    "triangles": 132,
+    "packageSizeBytes": 3724,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 52,
+    "id": "designer_bassinet",
+    "name": {
+      "en": "Domolux Cocoon Sculptural Infant Bassinet",
+      "ar": "مهد أطفال عضوي منحوت بأرجل نحاسية دومولوكس"
+    },
+    "collection": "Master Suites, Guest Hospitality and Nursery",
+    "mount": "floor",
+    "parts": 4,
+    "triangles": 92,
+    "packageSizeBytes": 2166,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 53,
+    "id": "designer_foosball_table",
+    "name": {
+      "en": "Domolux Glass and Anodized Alloy Designer Foosball Table",
+      "ar": "طاولة كرة قدم الطاولة الفاخرة بالزجاج والألمنيوم المصقول دومولوكس"
+    },
+    "collection": "Private Media, Library and Game Rooms",
+    "mount": "floor",
+    "parts": 10,
+    "triangles": 296,
+    "packageSizeBytes": 3498,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 54,
+    "id": "designer_hand_dryer",
+    "name": {
+      "en": "Domolux Whisper-Acoustic Architectural Hand Dryer",
+      "ar": "مجفف اليدين المعماري فائق الهدوء دومولوكس"
+    },
+    "collection": "Complete Bathroom, Spa and Personal Wellness",
+    "mount": "wall",
+    "parts": 4,
+    "triangles": 92,
+    "packageSizeBytes": 2297,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 55,
+    "id": "designer_umbrella_stand",
+    "name": {
+      "en": "Domolux Designer Umbrella Stand",
+      "ar": "حامل مظلات مصمم فاخر دومولوكس"
+    },
+    "collection": "Exclusive Interior Furnishings, Art and Decor",
+    "mount": "floor",
+    "parts": 9,
+    "triangles": 460,
+    "packageSizeBytes": 2989,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 56,
+    "id": "digital_health_scale",
+    "name": {
+      "en": "Domolux Biometric Tempered-Glass Smart Scale",
+      "ar": "ميزان الصحة الذكي الزجاجي بمؤشرات قياس متقدمة دومولوكس"
+    },
+    "collection": "Complete Bathroom, Spa and Personal Wellness",
+    "mount": "floor",
+    "parts": 7,
+    "triangles": 260,
+    "packageSizeBytes": 2776,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 57,
+    "id": "double_leaf_entrance_door",
+    "name": {
+      "en": "Domolux Bespoke Double-Leaf Entrance Door",
+      "ar": "باب مدخل مزدوج الأجنحة دومولوكس"
+    },
+    "collection": "Doors, Windows, Entrances and Exterior Envelope",
+    "mount": "floor",
+    "parts": 13,
+    "triangles": 156,
+    "packageSizeBytes": 4413,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 58,
+    "id": "ev_charging_pedestal",
+    "name": {
+      "en": "Domolux 22kW High-Output Architectural EV Fast-Charging Pedestal",
+      "ar": "محطة شحن السيارات الكهربائية السريعة المعمارية دومولوكس"
+    },
+    "collection": "Smart Home, Security and Residential Infrastructure",
+    "mount": "floor",
+    "parts": 5,
+    "triangles": 148,
+    "packageSizeBytes": 2520,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 59,
+    "id": "exterior_brise_soleil",
+    "name": {
+      "en": "Domolux Exterior Architectural Brise-Soleil Screen",
+      "ar": "كاسر شمس معمارية خارجية دومولوكس"
+    },
+    "collection": "Doors, Windows, Entrances and Exterior Envelope",
+    "mount": "wall",
+    "parts": 10,
+    "triangles": 120,
+    "packageSizeBytes": 3964,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 60,
+    "id": "exterior_roller_shutter",
+    "name": {
+      "en": "Domolux Motorized Exterior Roller Shutter",
+      "ar": "شيش حصيرة خارجي آلي دومولوكس"
+    },
+    "collection": "Doors, Windows, Entrances and Exterior Envelope",
+    "mount": "wall",
+    "parts": 5,
+    "triangles": 60,
+    "packageSizeBytes": 2358,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 93,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 61,
+    "id": "filtered_water_dispenser",
+    "name": {
+      "en": "Domolux Boiling and Chilled Water Dispensing Tower",
+      "ar": "برج توزيع مياه مغلية ومثلجة ومكربنة دومولوكس"
+    },
+    "collection": "Gourmet Kitchens and Specialty Culinary Equipment",
+    "mount": "surface",
+    "parts": 5,
+    "triangles": 236,
+    "packageSizeBytes": 2433,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 62,
+    "id": "fine_tea_service_trolley",
+    "name": {
+      "en": "Domolux Fine Tea Service Trolley",
+      "ar": "عربة تقديم الشاي الراقية دومولوكس"
+    },
+    "collection": "Exclusive Interior Furnishings, Art and Decor",
+    "mount": "floor",
+    "parts": 8,
+    "triangles": 316,
+    "packageSizeBytes": 2886,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 63,
+    "id": "flight_simulator_cockpit",
+    "name": {
+      "en": "Domolux Aviator Executive Glass-Cockpit Flight Simulator",
+      "ar": "جهاز محاكاة الطيران التنفيذي بشاشات الملاحة الرقمية دومولوكس"
+    },
+    "collection": "Private Media, Library and Game Rooms",
+    "mount": "floor",
+    "parts": 7,
+    "triangles": 128,
+    "packageSizeBytes": 2934,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 64,
+    "id": "floor_to_ceiling_picture_window",
+    "name": {
+      "en": "Domolux Floor-to-Ceiling Picture Window",
+      "ar": "نافذة بانورامية ثابتة ممتدة من الأرض إلى السقف دومولوكس"
+    },
+    "collection": "Doors, Windows, Entrances and Exterior Envelope",
+    "mount": "floor",
+    "parts": 6,
+    "triangles": 72,
+    "packageSizeBytes": 2530,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 65,
+    "id": "floorstanding_wine_display_rack",
+    "name": {
+      "en": "Domolux Floorstanding Wine Display Rack",
+      "ar": "رف عرض نبيذ فاخر قائم على الأرض دومولوكس"
+    },
+    "collection": "Exclusive Interior Furnishings, Art and Decor",
+    "mount": "floor",
+    "parts": 13,
+    "triangles": 332,
+    "packageSizeBytes": 4253,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 66,
+    "id": "fluted_timber_feature_wall",
+    "name": {
+      "en": "Domolux Fluted Timber Feature Wall",
+      "ar": "جدار خشبي مضلع مميز دومولوكس"
+    },
+    "collection": "Architectural Interior Systems",
+    "mount": "wall",
+    "parts": 19,
+    "triangles": 228,
+    "packageSizeBytes": 5487,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 96,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 67,
+    "id": "folding_panoramic_glass_wall",
+    "name": {
+      "en": "Domolux Folding Panoramic Glass Wall",
+      "ar": "جدار زجاجي بانورامي قابل للطي دومولوكس"
+    },
+    "collection": "Doors, Windows, Entrances and Exterior Envelope",
+    "mount": "floor",
+    "parts": 15,
+    "triangles": 312,
+    "packageSizeBytes": 4448,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 97,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 68,
+    "id": "frameless_sliding_glass_door",
+    "name": {
+      "en": "Domolux Frameless Panoramic Sliding Glass Door",
+      "ar": "باب زجاجي منزلق بانورامي بدون إطار دومولوكس"
+    },
+    "collection": "Doors, Windows, Entrances and Exterior Envelope",
+    "mount": "floor",
+    "parts": 9,
+    "triangles": 108,
+    "packageSizeBytes": 3274,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 69,
+    "id": "gentlemans_valet_stand",
+    "name": {
+      "en": "Domolux Gentleman's Valet Stand",
+      "ar": "حامل ملابس وإكسسوارات رجالي فاخر دومولوكس"
+    },
+    "collection": "Exclusive Interior Furnishings, Art and Decor",
+    "mount": "floor",
+    "parts": 8,
+    "triangles": 228,
+    "packageSizeBytes": 3129,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 70,
+    "id": "glass_pivot_door",
+    "name": {
+      "en": "Domolux Premium Glass Pivot Door",
+      "ar": "باب زجاجي محوري دومولوكس"
+    },
+    "collection": "Doors, Windows, Entrances and Exterior Envelope",
+    "mount": "floor",
+    "parts": 9,
+    "triangles": 284,
+    "packageSizeBytes": 3167,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 71,
+    "id": "grand_entry_console",
+    "name": {
+      "en": "Domolux Grand Entrance Console",
+      "ar": "طاولة كونسول المدخل الفاخرة دومولوكس"
+    },
+    "collection": "Exclusive Interior Furnishings, Art and Decor",
+    "mount": "floor",
+    "parts": 11,
+    "triangles": 176,
+    "packageSizeBytes": 3790,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 72,
+    "id": "grand_pivot_entrance_door",
+    "name": {
+      "en": "Domolux Grand Pivot Entrance Door",
+      "ar": "باب مدخل محوري كبير دومولوكس"
+    },
+    "collection": "Doors, Windows, Entrances and Exterior Envelope",
+    "mount": "floor",
+    "parts": 11,
+    "triangles": 220,
+    "packageSizeBytes": 3668,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 73,
+    "id": "guest_refreshment_console",
+    "name": {
+      "en": "Domolux Executive Suite Refreshment and Coffee Credenza",
+      "ar": "طاولة تقديم القهوة والضيافة لجناح الضيوف دومولوكس"
+    },
+    "collection": "Master Suites, Guest Hospitality and Nursery",
+    "mount": "floor",
+    "parts": 8,
+    "triangles": 272,
+    "packageSizeBytes": 2980,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 74,
+    "id": "guest_room_service_cabinet",
+    "name": {
+      "en": "Domolux Presidential Suite Service and Housekeeping Station",
+      "ar": "دولاب خدمة الغرف والبياضات الفندقي لجناح الضيوف دومولوكس"
+    },
+    "collection": "Master Suites, Guest Hospitality and Nursery",
+    "mount": "floor",
+    "parts": 6,
+    "triangles": 160,
+    "packageSizeBytes": 2676,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 75,
+    "id": "heated_drying_cabinet",
+    "name": {
+      "en": "Domolux Professional Heat-Pump Garment Drying Armoire",
+      "ar": "دولاب تجفيف الملابس الحراري المتطور بمضخة حرارية دومولوكس"
+    },
+    "collection": "Laundry, Service Rooms, Workshops and Specialist Systems",
+    "mount": "floor",
+    "parts": 5,
+    "triangles": 104,
+    "packageSizeBytes": 2476,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 76,
+    "id": "heated_towel_cabinet",
+    "name": {
+      "en": "Domolux Thermal Linen and Towel Warming Cabinet",
+      "ar": "خزانة تدفئة المناشف والبياضات الفاخرة دومولوكس"
+    },
+    "collection": "Complete Bathroom, Spa and Personal Wellness",
+    "mount": "floor",
+    "parts": 8,
+    "triangles": 184,
+    "packageSizeBytes": 2942,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 77,
+    "id": "heated_towel_rail",
+    "name": {
+      "en": "Domolux Sculptural Architectural Heated Towel Rail",
+      "ar": "مدفأة مناشف معمارية مسخنة دومولوكس"
+    },
+    "collection": "Complete Bathroom, Spa and Personal Wellness",
+    "mount": "wall",
+    "parts": 12,
+    "triangles": 408,
+    "packageSizeBytes": 3747,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 78,
+    "id": "horological_wall_clock",
+    "name": {
+      "en": "Domolux Designer Horological Wall Clock",
+      "ar": "ساعة حائط فلكية راقية دومولوكس"
+    },
+    "collection": "Exclusive Interior Furnishings, Art and Decor",
+    "mount": "wall",
+    "parts": 6,
+    "triangles": 248,
+    "packageSizeBytes": 2776,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 79,
+    "id": "illuminated_collectible_column",
+    "name": {
+      "en": "Domolux Illuminated Collectible Display Column",
+      "ar": "عامود عرض مقتنيات مضاء دومولوكس"
+    },
+    "collection": "Exclusive Interior Furnishings, Art and Decor",
+    "mount": "floor",
+    "parts": 12,
+    "triangles": 144,
+    "packageSizeBytes": 3859,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 80,
+    "id": "immersive_golf_simulator",
+    "name": {
+      "en": "Domolux PGA-Grade High-Definition Golf Simulator Enclosure",
+      "ar": "مقصورة محاكاة رياضة الجولف التفاعلية المتكاملة دومولوكس"
+    },
+    "collection": "Private Media, Library and Game Rooms",
+    "mount": "floor",
+    "parts": 7,
+    "triangles": 84,
+    "packageSizeBytes": 3036,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 81,
+    "id": "indoor_air_quality_monitor",
+    "name": {
+      "en": "Domolux Precision Architectural Air-Quality Environmental Sensor",
+      "ar": "مستشعر جودة الهواء والبيئة الداخلية الذكي دومولوكس"
+    },
+    "collection": "Smart Home, Security and Residential Infrastructure",
+    "mount": "wall",
+    "parts": 4,
+    "triangles": 224,
+    "packageSizeBytes": 2331,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 82,
+    "id": "indoor_climbing_structure",
+    "name": {
+      "en": "Domolux Montessori Architectural Play Gym and Climbing Tower",
+      "ar": "برج التسلق والألعاب الرياضية الداخلي للأطفال دومولوكس"
+    },
+    "collection": "Master Suites, Guest Hospitality and Nursery",
+    "mount": "floor",
+    "parts": 10,
+    "triangles": 340,
+    "packageSizeBytes": 3741,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 83,
+    "id": "indoor_food_waste_composter",
+    "name": {
+      "en": "Domolux Indoor Food-Waste Dehydrating Composter",
+      "ar": "جهاز تجفيف وتحويل مخلفات الطعام المنزلي دومولوكس"
+    },
+    "collection": "Gourmet Kitchens and Specialty Culinary Equipment",
+    "mount": "surface",
+    "parts": 5,
+    "triangles": 104,
+    "packageSizeBytes": 2505,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 84,
+    "id": "indoor_hydroponic_growing_cabinet",
+    "name": {
+      "en": "Domolux Smart Automated Indoor Hydroponic Cultivation Armoire",
+      "ar": "خزانة الزراعة المائية الذكية للأعشاب والخضروات العضوية دومولوكس"
+    },
+    "collection": "Laundry, Service Rooms, Workshops and Specialist Systems",
+    "mount": "floor",
+    "parts": 9,
+    "triangles": 108,
+    "packageSizeBytes": 3330,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 85,
+    "id": "indoor_putting_green",
+    "name": {
+      "en": "Domolux Contour-Engineered Architectural Putting Green",
+      "ar": "مسار تدريب الجولف الداخلي المعماري بالعشب الطبي دومولوكس"
+    },
+    "collection": "Private Media, Library and Game Rooms",
+    "mount": "floor",
+    "parts": 5,
+    "triangles": 192,
+    "packageSizeBytes": 2658,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 86,
+    "id": "infant_changing_station",
+    "name": {
+      "en": "Domolux Architectural Nursery Changing Credenza",
+      "ar": "طاولة تغيير وتجهيز الرضع الفاخرة بأدراج تخزين دومولوكس"
+    },
+    "collection": "Master Suites, Guest Hospitality and Nursery",
+    "mount": "floor",
+    "parts": 6,
+    "triangles": 72,
+    "packageSizeBytes": 2608,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 87,
+    "id": "infinity_edge_pool",
+    "name": {
+      "en": "Domolux Monumental Infinity-Edge Architectural Swimming Pool",
+      "ar": "مسبح الحافة اللانهائية المعماري الملكي بحوض الفائض دومولوكس"
+    },
+    "collection": "Private Estate, Outdoor Architecture and Landscape",
+    "mount": "floor",
+    "parts": 5,
+    "triangles": 60,
+    "packageSizeBytes": 2519,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 88,
+    "id": "infrared_therapy_cabin",
+    "name": {
+      "en": "Domolux Full-Spectrum Infrared Wellness Cabin",
+      "ar": "مقصورة العلاج بالأشعة تحت الحمراء بالخشب الطبيعي دومولوكس"
+    },
+    "collection": "Complete Bathroom, Spa and Personal Wellness",
+    "mount": "floor",
+    "parts": 10,
+    "triangles": 164,
+    "packageSizeBytes": 3539,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 89,
+    "id": "integrated_espresso_machine",
+    "name": {
+      "en": "Domolux Integrated Luxury Espresso Machine",
+      "ar": "ماكينة قهوة إسبريسو مدمجة فاخرة دومولوكس"
+    },
+    "collection": "Gourmet Kitchens and Specialty Culinary Equipment",
+    "mount": "surface",
+    "parts": 10,
+    "triangles": 340,
+    "packageSizeBytes": 3647,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 90,
+    "id": "irrigation_distribution_manifold",
+    "name": {
+      "en": "Domolux Smart Multi-Zone Landscape Irrigation Manifold",
+      "ar": "وحدة توزيع وصمامات الري الذكية متعددة المناطق للحدائق دومولوكس"
+    },
+    "collection": "Private Estate, Outdoor Architecture and Landscape",
+    "mount": "floor",
+    "parts": 7,
+    "triangles": 304,
+    "packageSizeBytes": 2824,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 91,
+    "id": "kitchen_waste_compactor",
+    "name": {
+      "en": "Domolux Integrated Kitchen Waste Compactor",
+      "ar": "مكبس نفايات مطبخ مدمج دومولوكس"
+    },
+    "collection": "Gourmet Kitchens and Specialty Culinary Equipment",
+    "mount": "floor",
+    "parts": 5,
+    "triangles": 104,
+    "packageSizeBytes": 2346,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 92,
+    "id": "laundry_folding_station",
+    "name": {
+      "en": "Domolux Garment Folding and Pressing Workstation",
+      "ar": "محطة طي وكي الملابس المتكاملة بوحدات تخزين دومولوكس"
+    },
+    "collection": "Laundry, Service Rooms, Workshops and Specialist Systems",
+    "mount": "floor",
+    "parts": 7,
+    "triangles": 84,
+    "packageSizeBytes": 2843,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 93,
+    "id": "laundry_linen_chute",
+    "name": {
+      "en": "Domolux Mirror-Polished Stainless Laundry Linen Chute Door",
+      "ar": "باب ومجرى إلقاء الغسيل الجداري المعماري من الستانلس ستيل دومولوكس"
+    },
+    "collection": "Laundry, Service Rooms, Workshops and Specialist Systems",
+    "mount": "wall",
+    "parts": 4,
+    "triangles": 92,
+    "packageSizeBytes": 2354,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 94,
+    "id": "laundry_sorting_island",
+    "name": {
+      "en": "Domolux Estate Laundry Sorting and Folding Island",
+      "ar": "جزيرة فرز وترتيب الغسيل المعمارية الفاخرة دومولوكس"
+    },
+    "collection": "Laundry, Service Rooms, Workshops and Specialist Systems",
+    "mount": "floor",
+    "parts": 7,
+    "triangles": 84,
+    "packageSizeBytes": 2855,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 95,
+    "id": "library_rolling_ladder",
+    "name": {
+      "en": "Domolux Library Rolling Ladder System",
+      "ar": "سلم مكتبة متدحرج دومولوكس"
+    },
+    "collection": "Exclusive Interior Furnishings, Art and Decor",
+    "mount": "floor",
+    "parts": 13,
+    "triangles": 288,
+    "packageSizeBytes": 4389,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 96,
+    "id": "lightning_protection_terminal",
+    "name": {
+      "en": "Domolux Early-Streamer-Emission Architectural Lightning Protection Terminal",
+      "ar": "نظام الحماية المعماري من الصواعق بتقنية التفريغ المسبق دومولوكس"
+    },
+    "collection": "Smart Home, Security and Residential Infrastructure",
+    "mount": "roof",
+    "parts": 5,
+    "triangles": 236,
+    "packageSizeBytes": 2506,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 97,
+    "id": "linear_architectural_planter",
+    "name": {
+      "en": "Domolux Low-Profile Linear Architectural Planter Trough",
+      "ar": "حوض زراعة خطي طويل وممتد للأسوار والتراسات دومولوكس"
+    },
+    "collection": "Private Estate, Outdoor Architecture and Landscape",
+    "mount": "floor",
+    "parts": 4,
+    "triangles": 48,
+    "packageSizeBytes": 2143,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 93,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 98,
+    "id": "living_green_facade",
+    "name": {
+      "en": "Domolux Architectural Living Biophilic Façade System",
+      "ar": "واجهة معمارية بيئية حية مكسوة بالنباتات الطبيعية دومولوكس"
+    },
+    "collection": "Private Estate, Outdoor Architecture and Landscape",
+    "mount": "wall",
+    "parts": 6,
+    "triangles": 72,
+    "packageSizeBytes": 2620,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 99,
+    "id": "living_green_wall",
+    "name": {
+      "en": "Domolux Living Green Wall Installation",
+      "ar": "جدار نباتي حي داخلي دومولوكس"
+    },
+    "collection": "Exclusive Interior Furnishings, Art and Decor",
+    "mount": "wall",
+    "parts": 12,
+    "triangles": 144,
+    "packageSizeBytes": 4295,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 100,
+    "id": "luminous_stretch_ceiling",
+    "name": {
+      "en": "Domolux Luminous Stretch Ceiling Panel",
+      "ar": "لوحة سقفية مشدودة مضيئة دومولوكس"
+    },
+    "collection": "Architectural Interior Systems",
+    "mount": "ceiling",
+    "parts": 7,
+    "triangles": 84,
+    "packageSizeBytes": 2761,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 101,
+    "id": "luxury_billiards_table",
+    "name": {
+      "en": "Domolux Grand Tournament Slate Billiards Table",
+      "ar": "طاولة البلياردو والسنوكر الملكية بقاعدة خشب الجوز وقماش الحرير دومولوكس"
+    },
+    "collection": "Private Media, Library and Game Rooms",
+    "mount": "floor",
+    "parts": 13,
+    "triangles": 420,
+    "packageSizeBytes": 4205,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 102,
+    "id": "luxury_chess_table",
+    "name": {
+      "en": "Domolux Grandmaster Inlaid Chess and Strategy Table",
+      "ar": "طاولة الشطرنج الاستراتيجية الملكية بالخشب المطعم دومولوكس"
+    },
+    "collection": "Private Media, Library and Game Rooms",
+    "mount": "floor",
+    "parts": 6,
+    "triangles": 160,
+    "packageSizeBytes": 2674,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 103,
+    "id": "luxury_cold_plunge",
+    "name": {
+      "en": "Domolux Titanium Hydrotherapy Cold-Plunge Bath",
+      "ar": "حوض الغمر بالماء البارد والجليد الصحي دومولوكس"
+    },
+    "collection": "Complete Bathroom, Spa and Personal Wellness",
+    "mount": "floor",
+    "parts": 7,
+    "triangles": 84,
+    "packageSizeBytes": 2769,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 104,
+    "id": "luxury_foot_spa",
+    "name": {
+      "en": "Domolux Freestanding Sculptural Foot Hydromassage Basin",
+      "ar": "حوض المساج المائي للأقدام بتصميم دائري فاخر دومولوكس"
+    },
+    "collection": "Complete Bathroom, Spa and Personal Wellness",
+    "mount": "floor",
+    "parts": 5,
+    "triangles": 236,
+    "packageSizeBytes": 2346,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 105,
+    "id": "luxury_hotel_minibar",
+    "name": {
+      "en": "Domolux Presidential Suite Concealed Hospitality Minibar",
+      "ar": "ميني بار وخزانة ضيافة فندقية فاخرة مدمجة دومولوكس"
+    },
+    "collection": "Master Suites, Guest Hospitality and Nursery",
+    "mount": "floor",
+    "parts": 8,
+    "triangles": 184,
+    "packageSizeBytes": 3111,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 106,
+    "id": "luxury_luggage_rack",
+    "name": {
+      "en": "Domolux Luxury Folding Luggage Rack",
+      "ar": "حامل حقائب سفر فاخر دومولوكس"
+    },
+    "collection": "Exclusive Interior Furnishings, Art and Decor",
+    "mount": "floor",
+    "parts": 11,
+    "triangles": 220,
+    "packageSizeBytes": 3839,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 107,
+    "id": "luxury_nursery_crib",
+    "name": {
+      "en": "Domolux Heirloom Curved Oak Nursery Crib",
+      "ar": "سرير أطفال ملكي فاخر من خشب البلوط المنحني دومولوكس"
+    },
+    "collection": "Master Suites, Guest Hospitality and Nursery",
+    "mount": "floor",
+    "parts": 9,
+    "triangles": 284,
+    "packageSizeBytes": 3233,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 108,
+    "id": "luxury_pedicure_chair",
+    "name": {
+      "en": "Domolux Throne Luxury Pedicure and Foot-Spa Lounge",
+      "ar": "كرسي العناية بالقدمين والباديكير الفاخر دومولوكس"
+    },
+    "collection": "Complete Bathroom, Spa and Personal Wellness",
+    "mount": "floor",
+    "parts": 8,
+    "triangles": 140,
+    "packageSizeBytes": 3014,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 109,
+    "id": "luxury_potting_bench",
+    "name": {
+      "en": "Domolux Estate Greenhouse Teak and Zinc Potting Bench",
+      "ar": "طاولة العناية بالنباتات والغرس بخشب التيك والزنك دومولوكس"
+    },
+    "collection": "Laundry, Service Rooms, Workshops and Specialist Systems",
+    "mount": "floor",
+    "parts": 8,
+    "triangles": 96,
+    "packageSizeBytes": 3057,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 93,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 110,
+    "id": "luxury_stand_mixer",
+    "name": {
+      "en": "Domolux Luxury Stand Mixer",
+      "ar": "عجانة كهربائية فاخرة دومولوكس"
+    },
+    "collection": "Gourmet Kitchens and Specialty Culinary Equipment",
+    "mount": "surface",
+    "parts": 5,
+    "triangles": 104,
+    "packageSizeBytes": 2514,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 111,
+    "id": "luxury_unpacking_station",
+    "name": {
+      "en": "Domolux Master Dressing Room Luggage Unpacking Credenza",
+      "ar": "منصة تفريغ وترتيب حقائب السفر الملكية المزدوجة دومولوكس"
+    },
+    "collection": "Master Suites, Guest Hospitality and Nursery",
+    "mount": "floor",
+    "parts": 7,
+    "triangles": 84,
+    "packageSizeBytes": 2902,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 112,
+    "id": "magnifying_grooming_mirror",
+    "name": {
+      "en": "Domolux Articulated Vanity Grooming Mirror",
+      "ar": "مرآة حلاقة وتجميل جدارية مكبرة ومتحركة دومولوكس"
+    },
+    "collection": "Complete Bathroom, Spa and Personal Wellness",
+    "mount": "wall",
+    "parts": 6,
+    "triangles": 248,
+    "packageSizeBytes": 2663,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 113,
+    "id": "marble_floor_medallion",
+    "name": {
+      "en": "Domolux Marble Floor Medallion",
+      "ar": "ميدالية أرضية رخامية دومولوكس"
+    },
+    "collection": "Architectural Interior Systems",
+    "mount": "floor",
+    "parts": 7,
+    "triangles": 260,
+    "packageSizeBytes": 2851,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 114,
+    "id": "massage_therapy_table",
+    "name": {
+      "en": "Domolux Professional Hydraulic Massage Therapy Bed",
+      "ar": "طاولة التدليك والعلاج الطبيعي الهيدروليكية الفاخرة دومولوكس"
+    },
+    "collection": "Complete Bathroom, Spa and Personal Wellness",
+    "mount": "floor",
+    "parts": 6,
+    "triangles": 160,
+    "packageSizeBytes": 2648,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 115,
+    "id": "master_smart_home_console",
+    "name": {
+      "en": "Domolux Master Smart-Home Architectural Touch Console",
+      "ar": "لوحة التحكم الذكية المعمارية المركزية للمنزل دومولوكس"
+    },
+    "collection": "Smart Home, Security and Residential Infrastructure",
+    "mount": "wall",
+    "parts": 4,
+    "triangles": 48,
+    "packageSizeBytes": 2310,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 116,
+    "id": "mirrored_medicine_cabinet",
+    "name": {
+      "en": "Domolux Recessed Tri-View Mirrored Cabinet",
+      "ar": "خزانة أدوية ومستحضرات جدارية ثلاثية المرايا بإضاءة محيطية دومولوكس"
+    },
+    "collection": "Complete Bathroom, Spa and Personal Wellness",
+    "mount": "wall",
+    "parts": 6,
+    "triangles": 72,
+    "packageSizeBytes": 2864,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 117,
+    "id": "modular_toy_storage_wall",
+    "name": {
+      "en": "Domolux Curated Architectural Toy and Book Display System",
+      "ar": "جدار تخزين وتنظيم الألعاب والكتب المعماري للأطفال دومولوكس"
+    },
+    "collection": "Master Suites, Guest Hospitality and Nursery",
+    "mount": "floor",
+    "parts": 8,
+    "triangles": 96,
+    "packageSizeBytes": 3174,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 118,
+    "id": "modular_wine_cellar_racking",
+    "name": {
+      "en": "Domolux Modular Architectural Wine Cellar Racking",
+      "ar": "نظام رفوف قبو النبيذ المعماري دومولوكس"
+    },
+    "collection": "Gourmet Kitchens and Specialty Culinary Equipment",
+    "mount": "floor",
+    "parts": 10,
+    "triangles": 120,
+    "packageSizeBytes": 3458,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 119,
+    "id": "modular_workshop_wall",
+    "name": {
+      "en": "Domolux Precision Architectural Slatwall Workshop Organizer",
+      "ar": "جدار تنظيم الورشة المعماري بالألواح الألمنيوم المشقوقة دومولوكس"
+    },
+    "collection": "Laundry, Service Rooms, Workshops and Specialist Systems",
+    "mount": "wall",
+    "parts": 5,
+    "triangles": 60,
+    "packageSizeBytes": 2461,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 120,
+    "id": "monumental_art_pedestal",
+    "name": {
+      "en": "Domolux Monumental Sculptural Art Pedestal",
+      "ar": "قاعدة عرض منحوتات فنية ضخمة دومولوكس"
+    },
+    "collection": "Exclusive Interior Furnishings, Art and Decor",
+    "mount": "floor",
+    "parts": 5,
+    "triangles": 60,
+    "packageSizeBytes": 2507,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 121,
+    "id": "monumental_garden_gate",
+    "name": {
+      "en": "Domolux Monumental Forged Bronze Walled Garden Portal",
+      "ar": "بوابة الحديقة الملكية المعمارية من البرونز المصقول دومولوكس"
+    },
+    "collection": "Private Estate, Outdoor Architecture and Landscape",
+    "mount": "floor",
+    "parts": 5,
+    "triangles": 104,
+    "packageSizeBytes": 2585,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 122,
+    "id": "motorized_closet_rail",
+    "name": {
+      "en": "Domolux Motorized Pull-Down Architectural Wardrobe Lift",
+      "ar": "شماعة الملابس الهيدروليكية المتحركة للملابس العالية دومولوكس"
+    },
+    "collection": "Master Suites, Guest Hospitality and Nursery",
+    "mount": "wall",
+    "parts": 6,
+    "triangles": 160,
+    "packageSizeBytes": 2671,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 123,
+    "id": "motorized_driveway_gate",
+    "name": {
+      "en": "Domolux Monumental Estate Motorized Dual-Leaf Driveway Gates",
+      "ar": "بوابة المداخل والقصور الرئيسية الآلية المزدوجة دومولوكس"
+    },
+    "collection": "Private Estate, Outdoor Architecture and Landscape",
+    "mount": "floor",
+    "parts": 5,
+    "triangles": 104,
+    "packageSizeBytes": 2613,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 124,
+    "id": "motorized_louver_window",
+    "name": {
+      "en": "Domolux Motorized Architectural Louver Window",
+      "ar": "نافذة شرائح ليد معمارية بمحرك دومولوكس"
+    },
+    "collection": "Doors, Windows, Entrances and Exterior Envelope",
+    "mount": "wall",
+    "parts": 10,
+    "triangles": 164,
+    "packageSizeBytes": 3808,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 125,
+    "id": "motorized_murphy_bed",
+    "name": {
+      "en": "Domolux Motorized Architectural Wall-Bed System",
+      "ar": "نظام سرير الحائط المخفي القابل للطي بمحرك كهربائي دومولوكس"
+    },
+    "collection": "Master Suites, Guest Hospitality and Nursery",
+    "mount": "floor",
+    "parts": 6,
+    "triangles": 116,
+    "packageSizeBytes": 2638,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 126,
+    "id": "motorized_wardrobe_carousel",
+    "name": {
+      "en": "Domolux Rotational Motorized Wardrobe Carousel Suite",
+      "ar": "دولاب الملابس الدوار الآلي بمحرك كهربائي وزجاج مدخن دومولوكس"
+    },
+    "collection": "Master Suites, Guest Hospitality and Nursery",
+    "mount": "floor",
+    "parts": 6,
+    "triangles": 336,
+    "packageSizeBytes": 2646,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 127,
+    "id": "multiroom_audio_distribution_console",
+    "name": {
+      "en": "Domolux Multi-Zone Audiophile Distribution Rack",
+      "ar": "برج التوزيع الصوتي الذكي متعدد المناطق دومولوكس"
+    },
+    "collection": "Private Media, Library and Game Rooms",
+    "mount": "floor",
+    "parts": 9,
+    "triangles": 108,
+    "packageSizeBytes": 3265,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 128,
+    "id": "museum_display_vitrine",
+    "name": {
+      "en": "Domolux Museum Display Vitrine",
+      "ar": "خزانة عرض متحفية فاخرة دومولوكس"
+    },
+    "collection": "Exclusive Interior Furnishings, Art and Decor",
+    "mount": "floor",
+    "parts": 9,
+    "triangles": 284,
+    "packageSizeBytes": 3278,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 129,
+    "id": "nursery_ceiling_mobile",
+    "name": {
+      "en": "Domolux Celestial Brass and Timber Kinetic Ceiling Mobile",
+      "ar": "مجسم سقف معلق متحرك من النحاس وخشب الجوز لغرف المواليد دومولوكس"
+    },
+    "collection": "Master Suites, Guest Hospitality and Nursery",
+    "mount": "ceiling",
+    "parts": 6,
+    "triangles": 292,
+    "packageSizeBytes": 2629,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 130,
+    "id": "nursing_rocking_chair",
+    "name": {
+      "en": "Domolux Ergonomic Bouclé Nursing Rocking Lounge",
+      "ar": "كرسي الرضاعة والاسترخاء الهزاز من قماش البوكليه دومولوكس"
+    },
+    "collection": "Master Suites, Guest Hospitality and Nursery",
+    "mount": "floor",
+    "parts": 8,
+    "triangles": 96,
+    "packageSizeBytes": 3063,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 131,
+    "id": "operable_roof_skylight",
+    "name": {
+      "en": "Domolux Operable Roof Skylight Window",
+      "ar": "نافذة منور سقفي قابلة للفتح دومولوكس"
+    },
+    "collection": "Architectural Interior Systems",
+    "mount": "ceiling",
+    "parts": 5,
+    "triangles": 60,
+    "packageSizeBytes": 2396,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 132,
+    "id": "outdoor_bicycle_shelter",
+    "name": {
+      "en": "Domolux Estate Architectural Bicycle and Equipment Pavilion",
+      "ar": "مظلة وموقف الدراجات الهوائية والمعدات الرياضية الفاخرة دومولوكس"
+    },
+    "collection": "Private Estate, Outdoor Architecture and Landscape",
+    "mount": "floor",
+    "parts": 8,
+    "triangles": 96,
+    "packageSizeBytes": 3518,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 133,
+    "id": "panoramic_corner_glazing",
+    "name": {
+      "en": "Domolux Panoramic Corner Glazing System",
+      "ar": "نظام زجاج ركني بانورامي دومولوكس"
+    },
+    "collection": "Doors, Windows, Entrances and Exterior Envelope",
+    "mount": "floor",
+    "parts": 7,
+    "triangles": 84,
+    "packageSizeBytes": 2693,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 134,
+    "id": "parquet_floor_inlay",
+    "name": {
+      "en": "Domolux Parquet Flooring Inlay System",
+      "ar": "نظام ترصيع أرضيات الباركيه دومولوكس"
+    },
+    "collection": "Architectural Interior Systems",
+    "mount": "floor",
+    "parts": 6,
+    "triangles": 72,
+    "packageSizeBytes": 2956,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 135,
+    "id": "pedestrian_entrance_gate",
+    "name": {
+      "en": "Domolux Secure Architectural Pedestrian Estate Gate",
+      "ar": "بوابة المشاة المعمارية الفاخرة بعمود الاتصال الذكي دومولوكس"
+    },
+    "collection": "Private Estate, Outdoor Architecture and Landscape",
+    "mount": "floor",
+    "parts": 4,
+    "triangles": 92,
+    "packageSizeBytes": 2398,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 136,
+    "id": "perimeter_security_sensor_bollard",
+    "name": {
+      "en": "Domolux Estate Perimeter Active-Infrared Security Bollard",
+      "ar": "عمود أمان واستشعار محيطي للأراضي والحدائق الفاخرة دومولوكس"
+    },
+    "collection": "Smart Home, Security and Residential Infrastructure",
+    "mount": "floor",
+    "parts": 5,
+    "triangles": 60,
+    "packageSizeBytes": 2471,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 137,
+    "id": "pocket_sliding_door",
+    "name": {
+      "en": "Domolux Concealed Pocket Sliding Door",
+      "ar": "باب منزلق داخل الجدار دومولوكس"
+    },
+    "collection": "Doors, Windows, Entrances and Exterior Envelope",
+    "mount": "floor",
+    "parts": 6,
+    "triangles": 116,
+    "packageSizeBytes": 2660,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 138,
+    "id": "pool_beach_entry_shelf",
+    "name": {
+      "en": "Domolux Baja Beach-Entry Shallow Sun Shelf Platform",
+      "ar": "منصة التشميس والشاطئ المائي الضحل لحوض السباحة دومولوكس"
+    },
+    "collection": "Private Estate, Outdoor Architecture and Landscape",
+    "mount": "floor",
+    "parts": 4,
+    "triangles": 92,
+    "packageSizeBytes": 2221,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 139,
+    "id": "poolside_changing_cabana",
+    "name": {
+      "en": "Domolux Estate Private Poolside Changing Pavilion",
+      "ar": "مقصورة تبديل الملابس والاستحمام الخارجية الفاخرة دومولوكس"
+    },
+    "collection": "Private Estate, Outdoor Architecture and Landscape",
+    "mount": "floor",
+    "parts": 7,
+    "triangles": 84,
+    "packageSizeBytes": 2921,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 93,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 140,
+    "id": "precision_coffee_grinder",
+    "name": {
+      "en": "Domolux Precision On-Demand Coffee Grinder",
+      "ar": "مطحنة قهوة دقيقة عند الطلب دومولوكس"
+    },
+    "collection": "Gourmet Kitchens and Specialty Culinary Equipment",
+    "mount": "surface",
+    "parts": 7,
+    "triangles": 172,
+    "packageSizeBytes": 2931,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 141,
+    "id": "precision_food_processor",
+    "name": {
+      "en": "Domolux Precision Food Processor",
+      "ar": "محضر طعام دقيق فاخر دومولوكس"
+    },
+    "collection": "Gourmet Kitchens and Specialty Culinary Equipment",
+    "mount": "surface",
+    "parts": 5,
+    "triangles": 192,
+    "packageSizeBytes": 2258,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 142,
+    "id": "precision_tool_chest",
+    "name": {
+      "en": "Domolux Roller-Cabinet Precision Tool Chest",
+      "ar": "عربة وصندوق أدوات الورشة الدقيقة المتنقل دومولوكس"
+    },
+    "collection": "Laundry, Service Rooms, Workshops and Specialist Systems",
+    "mount": "floor",
+    "parts": 11,
+    "triangles": 308,
+    "packageSizeBytes": 3580,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 143,
+    "id": "private_art_studio_table",
+    "name": {
+      "en": "Domolux Master Artist Tilting Drafting and Painting Table",
+      "ar": "طاولة الرسم والهندسة الفنية القابلة للإمالة دومولوكس"
+    },
+    "collection": "Laundry, Service Rooms, Workshops and Specialist Systems",
+    "mount": "floor",
+    "parts": 5,
+    "triangles": 104,
+    "packageSizeBytes": 2499,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 144,
+    "id": "private_bowling_lane",
+    "name": {
+      "en": "Domolux Estate Private Single-Lane Bowling Alley Module",
+      "ar": "مسار البولينج الخاص للفيلات الفاخرة بخشب القيقب دومولوكس"
+    },
+    "collection": "Private Media, Library and Game Rooms",
+    "mount": "floor",
+    "parts": 8,
+    "triangles": 228,
+    "packageSizeBytes": 2982,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 145,
+    "id": "private_cigar_humidor",
+    "name": {
+      "en": "Domolux Private Cigar Humidor Cabinet",
+      "ar": "خزانة ترطيب سجائر خاصة فاخرة دومولوكس"
+    },
+    "collection": "Exclusive Interior Furnishings, Art and Decor",
+    "mount": "floor",
+    "parts": 10,
+    "triangles": 120,
+    "packageSizeBytes": 3467,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 146,
+    "id": "private_conservatory_greenhouse",
+    "name": {
+      "en": "Domolux Monumental Glass Conservatory and Winter Garden Pavilion",
+      "ar": "قصر النباتات الشتوي والكونسرفتوار الزجاجي المعماري الفاخر دومولوكس"
+    },
+    "collection": "Laundry, Service Rooms, Workshops and Specialist Systems",
+    "mount": "floor",
+    "parts": 7,
+    "triangles": 128,
+    "packageSizeBytes": 3121,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 147,
+    "id": "private_hammam_room",
+    "name": {
+      "en": "Domolux Monumental Heated Marble Hammam Sanctuary",
+      "ar": "جناح الحمام التركي الفاخر بالرخام المسخن دومولوكس"
+    },
+    "collection": "Complete Bathroom, Spa and Personal Wellness",
+    "mount": "floor",
+    "parts": 11,
+    "triangles": 176,
+    "packageSizeBytes": 3844,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 148,
+    "id": "private_library_lectern",
+    "name": {
+      "en": "Domolux Private Library Reading Lectern",
+      "ar": "منصة قراءة مكتبية فاخرة دومولوكس"
+    },
+    "collection": "Exclusive Interior Furnishings, Art and Decor",
+    "mount": "floor",
+    "parts": 8,
+    "triangles": 184,
+    "packageSizeBytes": 3108,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 149,
+    "id": "private_manicure_station",
+    "name": {
+      "en": "Domolux Bespoke Nail Grooming and Manicure Desk",
+      "ar": "طاولة المانيكير والعناية بالأظافر الرخامية الفاخرة دومولوكس"
+    },
+    "collection": "Complete Bathroom, Spa and Personal Wellness",
+    "mount": "floor",
+    "parts": 7,
+    "triangles": 216,
+    "packageSizeBytes": 2975,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 150,
+    "id": "private_outdoor_cabana",
+    "name": {
+      "en": "Domolux Poolside Sanctuary Luxury Daybed Cabana",
+      "ar": "كابانا الاسترخاء الفاخرة بجانب المسبح بستائر ومقاعد سريرية دومولوكس"
+    },
+    "collection": "Private Estate, Outdoor Architecture and Landscape",
+    "mount": "floor",
+    "parts": 8,
+    "triangles": 140,
+    "packageSizeBytes": 3206,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 151,
+    "id": "private_poker_table",
+    "name": {
+      "en": "Domolux High-Stakes Oval Casino Poker Table",
+      "ar": "طاولة البوكر والألعاب الخاصة البيضاوية بالجلد الطبيعي دومولوكس"
+    },
+    "collection": "Private Media, Library and Game Rooms",
+    "mount": "floor",
+    "parts": 7,
+    "triangles": 172,
+    "packageSizeBytes": 2890,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 152,
+    "id": "professional_home_workbench",
+    "name": {
+      "en": "Domolux Heavy-Duty Professional Workshop Workbench",
+      "ar": "طاولة ورشة العمل الاحترافية بسطح خشب الزان ومنجلة دومولوكس"
+    },
+    "collection": "Laundry, Service Rooms, Workshops and Specialist Systems",
+    "mount": "floor",
+    "parts": 7,
+    "triangles": 84,
+    "packageSizeBytes": 2789,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 153,
+    "id": "professional_ice_maker",
+    "name": {
+      "en": "Domolux Professional Clear Ice Maker",
+      "ar": "صانعة ثلج نقي كريستالي احترافية دومولوكس"
+    },
+    "collection": "Gourmet Kitchens and Specialty Culinary Equipment",
+    "mount": "floor",
+    "parts": 5,
+    "triangles": 104,
+    "packageSizeBytes": 2368,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 154,
+    "id": "pull_out_pantry_carousel",
+    "name": {
+      "en": "Domolux Pull-Out Pantry Carousel System",
+      "ar": "نظام دوار سحاب لخزانة المؤن دومولوكس"
+    },
+    "collection": "Gourmet Kitchens and Specialty Culinary Equipment",
+    "mount": "floor",
+    "parts": 9,
+    "triangles": 196,
+    "packageSizeBytes": 3132,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 155,
+    "id": "racing_simulator_cockpit",
+    "name": {
+      "en": "Domolux Full-Motion Carbon-Fiber GT Racing Simulator",
+      "ar": "جهاز محاكاة سباقات السيارات بالحركة الكاملة وهيكل ألياف الكربون دومولوكس"
+    },
+    "collection": "Private Media, Library and Game Rooms",
+    "mount": "floor",
+    "parts": 9,
+    "triangles": 328,
+    "packageSizeBytes": 3228,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 156,
+    "id": "rainwater_harvesting_cistern",
+    "name": {
+      "en": "Domolux Monolithic 10,000L Rainwater Harvesting Cistern",
+      "ar": "خزان تجميع وحصاد مياه الأمطار المعماري عالي السعة دومولوكس"
+    },
+    "collection": "Private Estate, Outdoor Architecture and Landscape",
+    "mount": "floor",
+    "parts": 4,
+    "triangles": 180,
+    "packageSizeBytes": 2279,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 157,
+    "id": "raised_stone_platform",
+    "name": {
+      "en": "Domolux Raised Architectural Stone Platform",
+      "ar": "منصة حجرية معمارية مرتفعة دومولوكس"
+    },
+    "collection": "Architectural Interior Systems",
+    "mount": "floor",
+    "parts": 5,
+    "triangles": 60,
+    "packageSizeBytes": 2409,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 158,
+    "id": "recessed_roof_skylight",
+    "name": {
+      "en": "Domolux Recessed Roof Skylight Lantern",
+      "ar": "منور سقفي مدمج دومولوكس"
+    },
+    "collection": "Architectural Interior Systems",
+    "mount": "ceiling",
+    "parts": 6,
+    "triangles": 72,
+    "packageSizeBytes": 2792,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 159,
+    "id": "reference_subwoofer",
+    "name": {
+      "en": "Domolux Master Reference 15-Inch Cinema Subwoofer",
+      "ar": "مضخم صوت جهوري مرجعي بقوة فائقة للسينما الخاصة دومولوكس"
+    },
+    "collection": "Private Media, Library and Game Rooms",
+    "mount": "floor",
+    "parts": 8,
+    "triangles": 404,
+    "packageSizeBytes": 2954,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 160,
+    "id": "reference_vinyl_turntable",
+    "name": {
+      "en": "Domolux Reference High-Mass Audiophile Turntable",
+      "ar": "مشغل أسطوانات فينيل تناظري مرجعي فائق الدقة دومولوكس"
+    },
+    "collection": "Private Media, Library and Game Rooms",
+    "mount": "surface",
+    "parts": 9,
+    "triangles": 416,
+    "packageSizeBytes": 3285,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 161,
+    "id": "residential_battery_storage_wall",
+    "name": {
+      "en": "Domolux PowerVault High-Capacity Solar Energy Storage Wall",
+      "ar": "جدار تخزين الطاقة الشمسية الفاخر عالي السعة دومولوكس"
+    },
+    "collection": "Smart Home, Security and Residential Infrastructure",
+    "mount": "wall",
+    "parts": 5,
+    "triangles": 60,
+    "packageSizeBytes": 2585,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 162,
+    "id": "residential_dumbwaiter",
+    "name": {
+      "en": "Domolux Bi-Parting Stainless Service Dumbwaiter Lift",
+      "ar": "مصعد تقديم الأطعمة والخدمات الخفيفة بين الطوابق دومولوكس"
+    },
+    "collection": "Laundry, Service Rooms, Workshops and Specialist Systems",
+    "mount": "wall",
+    "parts": 5,
+    "triangles": 60,
+    "packageSizeBytes": 2499,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 163,
+    "id": "residential_elevator_cabin",
+    "name": {
+      "en": "Domolux Monumental Glass and Bronze Private Villa Elevator",
+      "ar": "مقصورة المصعد البانورامي المعماري بالزجاج والبرونز المصقول دومولوكس"
+    },
+    "collection": "Laundry, Service Rooms, Workshops and Specialist Systems",
+    "mount": "floor",
+    "parts": 8,
+    "triangles": 96,
+    "packageSizeBytes": 3124,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 164,
+    "id": "residential_server_rack",
+    "name": {
+      "en": "Domolux Datacenter 42U Acoustic Residential Server Cabinet",
+      "ar": "كابينة خوادم وشبكات سكنية فائقة الأداء معزولة صوتياً دومولوكس"
+    },
+    "collection": "Smart Home, Security and Residential Infrastructure",
+    "mount": "floor",
+    "parts": 9,
+    "triangles": 108,
+    "packageSizeBytes": 3220,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 165,
+    "id": "retractable_ceiling_drying_system",
+    "name": {
+      "en": "Domolux Motorized Architectural Ceiling Laundry Airer",
+      "ar": "منشر الغسيل المعماري السقفي الآلي القابل للنزول دومولوكس"
+    },
+    "collection": "Laundry, Service Rooms, Workshops and Specialist Systems",
+    "mount": "ceiling",
+    "parts": 8,
+    "triangles": 272,
+    "packageSizeBytes": 3119,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 166,
+    "id": "retractable_downdraft_extractor",
+    "name": {
+      "en": "Domolux Retractable Countertop Downdraft Extractor",
+      "ar": "شفاط مدمج هابط في الكاونتر وقابل للسحب دومولوكس"
+    },
+    "collection": "Gourmet Kitchens and Specialty Culinary Equipment",
+    "mount": "surface",
+    "parts": 5,
+    "triangles": 60,
+    "packageSizeBytes": 2364,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 167,
+    "id": "retractable_pool_cover",
+    "name": {
+      "en": "Domolux Motorized Architectural In-Ground Pool Safety Cover",
+      "ar": "غطاء حوض السباحة المعماري الآلي المنزلق في الأرضية دومولوكس"
+    },
+    "collection": "Private Estate, Outdoor Architecture and Landscape",
+    "mount": "floor",
+    "parts": 4,
+    "triangles": 136,
+    "packageSizeBytes": 2228,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 168,
+    "id": "rolling_cocktail_trolley",
+    "name": {
+      "en": "Domolux Rolling Cocktail Trolley",
+      "ar": "عربة كوكتيل فاخرة متحركة دومولوكس"
+    },
+    "collection": "Exclusive Interior Furnishings, Art and Decor",
+    "mount": "floor",
+    "parts": 11,
+    "triangles": 352,
+    "packageSizeBytes": 3977,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 169,
+    "id": "sculptural_3d_wall_relief",
+    "name": {
+      "en": "Domolux Sculptural 3D Wall Relief",
+      "ar": "نقش جداري نحتي ثلاثي الأبعاد دومولوكس"
+    },
+    "collection": "Architectural Interior Systems",
+    "mount": "wall",
+    "parts": 15,
+    "triangles": 180,
+    "packageSizeBytes": 4950,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 97,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 170,
+    "id": "sculptural_acoustic_diffuser",
+    "name": {
+      "en": "Domolux Quadratic Residue Sculptural Acoustic Wall Diffuser",
+      "ar": "لوح التشتيت الصوتي المعماري ثلاثي الأبعاد دومولوكس"
+    },
+    "collection": "Private Media, Library and Game Rooms",
+    "mount": "wall",
+    "parts": 6,
+    "triangles": 72,
+    "packageSizeBytes": 2941,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 171,
+    "id": "sculptural_ceiling_raft",
+    "name": {
+      "en": "Domolux Sculptural Gypsum Ceiling Raft",
+      "ar": "شراع سقفي جبسي نحتي دومولوكس"
+    },
+    "collection": "Architectural Interior Systems",
+    "mount": "ceiling",
+    "parts": 8,
+    "triangles": 272,
+    "packageSizeBytes": 3069,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 172,
+    "id": "sculptural_chaise_longue",
+    "name": {
+      "en": "Domolux Sculptural Chaise Longue",
+      "ar": "أريكة استرخاء نحتية دومولوكس"
+    },
+    "collection": "Exclusive Interior Furnishings, Art and Decor",
+    "mount": "floor",
+    "parts": 12,
+    "triangles": 188,
+    "packageSizeBytes": 4035,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 173,
+    "id": "sculptural_garden_bridge",
+    "name": {
+      "en": "Domolux Arched Teak and Glass Landscape Footbridge",
+      "ar": "جسر المشاة والحدائق المقوس بخشب التيك والزجاج دومولوكس"
+    },
+    "collection": "Private Estate, Outdoor Architecture and Landscape",
+    "mount": "floor",
+    "parts": 7,
+    "triangles": 172,
+    "packageSizeBytes": 2966,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 174,
+    "id": "sculptural_indoor_planter",
+    "name": {
+      "en": "Domolux Sculptural Indoor Planter Trough",
+      "ar": "حوض نباتات داخلي نحتي دومولوكس"
+    },
+    "collection": "Exclusive Interior Furnishings, Art and Decor",
+    "mount": "floor",
+    "parts": 10,
+    "triangles": 252,
+    "packageSizeBytes": 3749,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 175,
+    "id": "sculptural_interior_column",
+    "name": {
+      "en": "Domolux Sculptural Interior Column",
+      "ar": "عامود داخلي نحتي دومولوكس"
+    },
+    "collection": "Architectural Interior Systems",
+    "mount": "floor",
+    "parts": 7,
+    "triangles": 260,
+    "packageSizeBytes": 2735,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 176,
+    "id": "sculptural_raised_planter",
+    "name": {
+      "en": "Domolux Monumental Monolithic Stone Garden Planter",
+      "ar": "حوض زراعة نباتات حجري ضخم ومرتفع للحدائق دومولوكس"
+    },
+    "collection": "Private Estate, Outdoor Architecture and Landscape",
+    "mount": "floor",
+    "parts": 5,
+    "triangles": 104,
+    "packageSizeBytes": 2315,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 177,
+    "id": "smart_electrical_panel",
+    "name": {
+      "en": "Domolux Quantum-Grid Smart Electrical Distribution Panel",
+      "ar": "لوحة التوزيع الكهربائي الذكية وإدارة الأحمال الرقمية دومولوكس"
+    },
+    "collection": "Smart Home, Security and Residential Infrastructure",
+    "mount": "wall",
+    "parts": 5,
+    "triangles": 60,
+    "packageSizeBytes": 2522,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 178,
+    "id": "smart_keypad_lock",
+    "name": {
+      "en": "Domolux Monumental Deadbolt Smart Keypad Lock",
+      "ar": "قفل الأمان الذكي للأبواب بلوحة مفاتيح لمسية مشعة دومولوكس"
+    },
+    "collection": "Smart Home, Security and Residential Infrastructure",
+    "mount": "wall",
+    "parts": 5,
+    "triangles": 148,
+    "packageSizeBytes": 2449,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 179,
+    "id": "smart_thermostat_console",
+    "name": {
+      "en": "Domolux Rotational Glass and Brass Climate Thermostat Dial",
+      "ar": "منظم الحرارة والمناخ الذكي بحلقة نحاسية وشاشة رقمية دومولوكس"
+    },
+    "collection": "Smart Home, Security and Residential Infrastructure",
+    "mount": "wall",
+    "parts": 4,
+    "triangles": 224,
+    "packageSizeBytes": 2330,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 180,
+    "id": "smart_video_doorbell",
+    "name": {
+      "en": "Domolux Monumental Entrance Smart Video Doorbell",
+      "ar": "جرس الباب الذكي بالفيديو وكاميرا الرؤية الليلية دومولوكس"
+    },
+    "collection": "Smart Home, Security and Residential Infrastructure",
+    "mount": "wall",
+    "parts": 4,
+    "triangles": 136,
+    "packageSizeBytes": 2333,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 181,
+    "id": "sous_vide_cooking_station",
+    "name": {
+      "en": "Domolux Precision Sous-Vide Cooking Station",
+      "ar": "محطة طهي سو-فيد دقيقة دومولوكس"
+    },
+    "collection": "Gourmet Kitchens and Specialty Culinary Equipment",
+    "mount": "surface",
+    "parts": 5,
+    "triangles": 148,
+    "packageSizeBytes": 2369,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 182,
+    "id": "steam_shower_generator",
+    "name": {
+      "en": "Domolux Precision Digital Steam Generator Module",
+      "ar": "وحدة توليد البخار الرقمية لغرف الاستحمام الفاخرة دومولوكس"
+    },
+    "collection": "Complete Bathroom, Spa and Personal Wellness",
+    "mount": "wall",
+    "parts": 6,
+    "triangles": 160,
+    "packageSizeBytes": 2554,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 183,
+    "id": "steel_framed_french_doors",
+    "name": {
+      "en": "Domolux Steel-Framed French Doors",
+      "ar": "أبواب فرنسية بإطار فولاذي دومولوكس"
+    },
+    "collection": "Doors, Windows, Entrances and Exterior Envelope",
+    "mount": "floor",
+    "parts": 15,
+    "triangles": 224,
+    "packageSizeBytes": 4201,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 97,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 184,
+    "id": "stroller_docking_station",
+    "name": {
+      "en": "Domolux Estate Entrance Stroller Valet and Charging Port",
+      "ar": "محطة شحن وركن عربات الأطفال للمداخل الفاخرة دومولوكس"
+    },
+    "collection": "Master Suites, Guest Hospitality and Nursery",
+    "mount": "floor",
+    "parts": 6,
+    "triangles": 204,
+    "packageSizeBytes": 2704,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 185,
+    "id": "structural_glass_roof_canopy",
+    "name": {
+      "en": "Domolux Structural Glass Roof Canopy",
+      "ar": "مظلة سقفية زجاجية معمارية دومولوكس"
+    },
+    "collection": "Doors, Windows, Entrances and Exterior Envelope",
+    "mount": "wall",
+    "parts": 6,
+    "triangles": 248,
+    "packageSizeBytes": 2775,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 186,
+    "id": "surround_speaker_system",
+    "name": {
+      "en": "Domolux Architectural Dipole Surround Column Loudspeaker",
+      "ar": "مكبر صوت محيطي عمودي بنظام التشتيت ثنائي القطب دومولوكس"
+    },
+    "collection": "Private Media, Library and Game Rooms",
+    "mount": "floor",
+    "parts": 5,
+    "triangles": 60,
+    "packageSizeBytes": 2417,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 187,
+    "id": "suspended_timber_slat_ceiling",
+    "name": {
+      "en": "Domolux Suspended Timber Slat Ceiling",
+      "ar": "سقف معلق بشرائح خشبية دومولوكس"
+    },
+    "collection": "Architectural Interior Systems",
+    "mount": "ceiling",
+    "parts": 14,
+    "triangles": 168,
+    "packageSizeBytes": 4823,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 188,
+    "id": "swim_up_bar_island",
+    "name": {
+      "en": "Domolux Resort Luxury Swim-Up Pool Bar and Submerged Stools",
+      "ar": "بار المسبح المائي مع مقاعد غاطسة رخامية دومولوكس"
+    },
+    "collection": "Private Estate, Outdoor Architecture and Landscape",
+    "mount": "floor",
+    "parts": 7,
+    "triangles": 260,
+    "packageSizeBytes": 2992,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 189,
+    "id": "tailoring_sewing_station",
+    "name": {
+      "en": "Domolux Haute-Couture Tailoring and Sewing Desk",
+      "ar": "طاولة الخياطة وتفصيل الأزياء الراقية دومولوكس"
+    },
+    "collection": "Laundry, Service Rooms, Workshops and Specialist Systems",
+    "mount": "floor",
+    "parts": 7,
+    "triangles": 260,
+    "packageSizeBytes": 2853,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 190,
+    "id": "three_dimensional_wall_art",
+    "name": {
+      "en": "Domolux Three-Dimensional Wall Artwork",
+      "ar": "لوحة جدارية ثلاثية الأبعاد دومولوكس"
+    },
+    "collection": "Exclusive Interior Furnishings, Art and Decor",
+    "mount": "wall",
+    "parts": 5,
+    "triangles": 104,
+    "packageSizeBytes": 2483,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 191,
+    "id": "undercounter_beverage_cooler",
+    "name": {
+      "en": "Domolux Undercounter Luxury Beverage Cooler",
+      "ar": "مبرد مشروبات فاخر تحت الكاونتر دومولوكس"
+    },
+    "collection": "Gourmet Kitchens and Specialty Culinary Equipment",
+    "mount": "floor",
+    "parts": 9,
+    "triangles": 152,
+    "packageSizeBytes": 3151,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 192,
+    "id": "undercounter_blast_chiller",
+    "name": {
+      "en": "Domolux Undercounter Blast Chiller",
+      "ar": "مبرد صدمات سريع تحت الكاونتر دومولوكس"
+    },
+    "collection": "Gourmet Kitchens and Specialty Culinary Equipment",
+    "mount": "floor",
+    "parts": 5,
+    "triangles": 104,
+    "packageSizeBytes": 2369,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 193,
+    "id": "uninterruptible_power_supply",
+    "name": {
+      "en": "Domolux Industrial Lithium Double-Conversion Online UPS",
+      "ar": "نظام إمداد الطاقة غير المنقطعة وحماية الأحمال الحساسة دومولوكس"
+    },
+    "collection": "Smart Home, Security and Residential Infrastructure",
+    "mount": "floor",
+    "parts": 4,
+    "triangles": 48,
+    "packageSizeBytes": 2278,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 194,
+    "id": "upholstered_acoustic_wall_panels",
+    "name": {
+      "en": "Domolux Upholstered Acoustic Wall Panels",
+      "ar": "ألواح حائط صوتية منجدة دومولوكس"
+    },
+    "collection": "Architectural Interior Systems",
+    "mount": "wall",
+    "parts": 10,
+    "triangles": 120,
+    "packageSizeBytes": 3881,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 195,
+    "id": "utility_wash_sink_cabinet",
+    "name": {
+      "en": "Domolux Deep Composite Service and Pet-Wash Basin Cabinet",
+      "ar": "حوض الغسيل الخدمي العميق مع صنبور شاور مرن دومولوكس"
+    },
+    "collection": "Laundry, Service Rooms, Workshops and Specialist Systems",
+    "mount": "floor",
+    "parts": 5,
+    "triangles": 104,
+    "packageSizeBytes": 2402,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 196,
+    "id": "vacuum_sealing_drawer",
+    "name": {
+      "en": "Domolux Vacuum-Sealing Drawer",
+      "ar": "درج تفريغ الهواء والتغليف دومولوكس"
+    },
+    "collection": "Gourmet Kitchens and Specialty Culinary Equipment",
+    "mount": "surface",
+    "parts": 4,
+    "triangles": 48,
+    "packageSizeBytes": 2102,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 94,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 197,
+    "id": "video_intercom_station",
+    "name": {
+      "en": "Domolux Architectural Flush Video Intercom Monitor",
+      "ar": "شاشة الاتصال الداخلي بالفيديو المعمارية الفاخرة دومولوكس"
+    },
+    "collection": "Smart Home, Security and Residential Infrastructure",
+    "mount": "wall",
+    "parts": 5,
+    "triangles": 104,
+    "packageSizeBytes": 2463,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 198,
+    "id": "vinyl_archive_cabinet",
+    "name": {
+      "en": "Domolux Collector's Audiophile Vinyl Record Archive",
+      "ar": "دولاب أرشفة وحفظ أسطوانات الفينيل الموسيقية دومولوكس"
+    },
+    "collection": "Private Media, Library and Game Rooms",
+    "mount": "floor",
+    "parts": 10,
+    "triangles": 296,
+    "packageSizeBytes": 3351,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 199,
+    "id": "wall_hung_bidet",
+    "name": {
+      "en": "Domolux Architectural Wall-Hung Ceramic Bidet",
+      "ar": "شطاف حمام جداري معلق من السيراميك الفاخر دومولوكس"
+    },
+    "collection": "Complete Bathroom, Spa and Personal Wellness",
+    "mount": "wall",
+    "parts": 6,
+    "triangles": 160,
+    "packageSizeBytes": 2686,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  },
+  {
+    "num": 200,
+    "id": "water_leak_shutoff_valve",
+    "name": {
+      "en": "Domolux Smart Motorized Whole-Home Water Security Shutoff",
+      "ar": "صمام الأمان الذكي للغلق الآلي الفوري لمياه المنزل دومولوكس"
+    },
+    "collection": "Smart Home, Security and Residential Infrastructure",
+    "mount": "wall",
+    "parts": 5,
+    "triangles": 192,
+    "packageSizeBytes": 2487,
+    "signatureVerified": true,
+    "tamperPassed": true,
+    "qualityScore": 95,
+    "verdict": "VERIFIED"
+  }
+]

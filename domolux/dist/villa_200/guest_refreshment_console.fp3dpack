@@ -1,0 +1,157 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.guest_refreshment_console",
+  "name": "Domolux Executive Suite Refreshment and Coffee Credenza",
+  "publisher": "Domolux Studio",
+  "description": "Low-profile guest hospitality credenza with inset honed marble stone top, pull-out espresso accessory trays, integrated trash chute, and brushed brass legs.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "guest_refreshment_console",
+    "name": {
+     "en": "Domolux Executive Suite Refreshment and Coffee Credenza",
+     "de": "Domolux Gäste-Kaffee- & Erfrischungsanrichte",
+     "ar": "طاولة تقديم القهوة والضيافة لجناح الضيوف دومولوكس"
+    },
+    "size": [
+     1.1,
+     0.5,
+     0.95
+    ],
+    "mount": "floor",
+    "surface": false,
+    "group": "living",
+    "room": [
+     "living",
+     "bedroom"
+    ],
+    "tags": [
+     "credenza",
+     "coffee_station",
+     "hospitality",
+     "console",
+     "bedroom",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "cyl",
+      "x": -0.42,
+      "z": -0.38,
+      "w": 0.05,
+      "d": 0.05,
+      "y": 0,
+      "h": 0.25,
+      "color": "#c5a059",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": 0.42,
+      "z": -0.38,
+      "w": 0.05,
+      "d": 0.05,
+      "y": 0,
+      "h": 0.25,
+      "color": "#c5a059",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": -0.42,
+      "z": 0.38,
+      "w": 0.05,
+      "d": 0.05,
+      "y": 0,
+      "h": 0.25,
+      "color": "#c5a059",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": 0.42,
+      "z": 0.38,
+      "w": 0.05,
+      "d": 0.05,
+      "y": 0,
+      "h": 0.25,
+      "color": "#c5a059",
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.96,
+      "d": 0.92,
+      "y": 0.25,
+      "h": 0.68,
+      "color": "#1c1e22",
+      "finish": "dark",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.94,
+      "y": 0.93,
+      "h": 0.07,
+      "color": "#545a66",
+      "edges": true,
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.46,
+      "w": 0.9,
+      "d": 0.03,
+      "y": 0.6,
+      "h": 0.28,
+      "color": "#272a32",
+      "edges": true,
+      "fix": "d"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.48,
+      "w": 0.35,
+      "d": 0.02,
+      "y": 0.72,
+      "h": 0.03,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wdh"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.94
+     },
+     {
+      "shape": "line",
+      "x1": -0.45,
+      "z1": 0,
+      "x2": 0.45,
+      "z2": 0
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "I7D/N30FXhip8qfk0zQ4ivNHQo+ebk95IfAGqxYhAKaSZ4do0f4JrXx5ONbZB4irdBwY6tId1R0oGswIa1GzDw=="
+ }
+}

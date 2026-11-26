@@ -1,0 +1,111 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.pool_beach_entry_shelf",
+  "name": "Domolux Baja Beach-Entry Shallow Sun Shelf Platform",
+  "publisher": "Domolux Studio",
+  "description": "Shallow resort-style pool tanning ledge designed for in-water chaise loungers, featuring 20cm water depth, integrated umbrella sleeve, and non-slip quartz aggregate.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "pool_beach_entry_shelf",
+    "name": {
+     "en": "Domolux Baja Beach-Entry Shallow Sun Shelf Platform",
+     "de": "Domolux Flachwasser-Baja-Shelf & Sonnenplattform",
+     "ar": "منصة التشميس والشاطئ المائي الضحل لحوض السباحة دومولوكس"
+    },
+    "size": [
+     3.5,
+     2.5,
+     0.45
+    ],
+    "mount": "floor",
+    "surface": false,
+    "group": "outdoor",
+    "room": [
+     "outdoor"
+    ],
+    "tags": [
+     "baja_shelf",
+     "pool",
+     "tanning_ledge",
+     "sun_shelf",
+     "outdoor",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.98,
+      "y": 0,
+      "h": 0.88,
+      "color": "#1e2229",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.9,
+      "d": 0.9,
+      "y": 0.42,
+      "h": 0.25,
+      "color": "#e8ecef",
+      "finish": "white",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.88,
+      "d": 0.88,
+      "y": 0.68,
+      "h": 0.04,
+      "color": "#90e0ef",
+      "finish": "glass",
+      "glow": true,
+      "fix": "h"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": 0,
+      "w": 0.08,
+      "d": 0.08,
+      "y": 0.65,
+      "h": 0.08,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wdh"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.98
+     },
+     {
+      "shape": "circle",
+      "x": 0,
+      "z": 0,
+      "r": 0.06
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "ttIV5qNabLKEuTxUXFkK/GdFzjhQ9/2HHtNcNPuf+AHVdIAdI5IbzRHktCi206G9MlI+WMcuFvrgu6MRsJx2Cw=="
+ }
+}

@@ -1,0 +1,164 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.residential_server_rack",
+  "name": "Domolux Datacenter 42U Acoustic Residential Server Cabinet",
+  "publisher": "Domolux Studio",
+  "description": "Soundproof 42U equipment rack with integrated air conditioning exchanger, dual 10Gbps fiber patch panels, managed PoE switches, and glass door with blue telemetry LED wash.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "residential_server_rack",
+      "name": {
+        "en": "Domolux Datacenter 42U Acoustic Residential Server Cabinet",
+        "de": "Domolux 42HE Akustik-Serverschrank",
+        "ar": "كابينة خوادم وشبكات سكنية فائقة الأداء معزولة صوتياً دومولوكس"
+      },
+      "size": [
+        0.8,
+        1,
+        2.05
+      ],
+      "mount": "floor",
+      "surface": false,
+      "group": "appliances",
+      "room": [
+        "storage",
+        "office"
+      ],
+      "tags": [
+        "server_rack",
+        "datacenter",
+        "networking",
+        "rack",
+        "infrastructure",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.96,
+          "d": 0.96,
+          "y": 0,
+          "h": 0.06,
+          "color": "#111215",
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.96,
+          "d": 0.96,
+          "y": 0.06,
+          "h": 0.92,
+          "color": "#1e2129",
+          "finish": "dark",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.46,
+          "w": 0.88,
+          "d": 0.04,
+          "y": 0.08,
+          "h": 0.88,
+          "color": "#16202c",
+          "finish": "glass",
+          "edges": true,
+          "fix": "d"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.2,
+          "w": 0.82,
+          "d": 0.5,
+          "y": 0.75,
+          "h": 0.15,
+          "color": "#2d323e",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.42,
+          "w": 0.74,
+          "d": 0.02,
+          "y": 0.8,
+          "h": 0.04,
+          "color": "#00e5ff",
+          "glow": true,
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.2,
+          "w": 0.82,
+          "d": 0.5,
+          "y": 0.55,
+          "h": 0.15,
+          "color": "#2d323e",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.42,
+          "w": 0.74,
+          "d": 0.02,
+          "y": 0.6,
+          "h": 0.04,
+          "color": "#00e5ff",
+          "glow": true,
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.2,
+          "w": 0.82,
+          "d": 0.5,
+          "y": 0.35,
+          "h": 0.15,
+          "color": "#2d323e",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.42,
+          "w": 0.74,
+          "d": 0.02,
+          "y": 0.4,
+          "h": 0.04,
+          "color": "#00e5ff",
+          "glow": true,
+          "fix": "wdh"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 0.96,
+          "d": 0.96
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0.2,
+          "w": 0.82,
+          "d": 0.5
+        }
+      ]
+    }
+  ]
+}

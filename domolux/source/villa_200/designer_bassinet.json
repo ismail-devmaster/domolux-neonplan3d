@@ -1,0 +1,107 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.designer_bassinet",
+  "name": "Domolux Cocoon Sculptural Infant Bassinet",
+  "publisher": "Domolux Studio",
+  "description": "Freestanding organic cocoon bassinet with steam-bent walnut shell, breathable perforated linen liner, and hand-finished satin brass hairpin cradle stand.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "designer_bassinet",
+      "name": {
+        "en": "Domolux Cocoon Sculptural Infant Bassinet",
+        "de": "Domolux Designer-Babywiege Cocoon",
+        "ar": "مهد أطفال عضوي منحوت بأرجل نحاسية دومولوكس"
+      },
+      "size": [
+        0.9,
+        0.55,
+        0.85
+      ],
+      "mount": "floor",
+      "surface": false,
+      "group": "bedroom",
+      "room": [
+        "bedroom"
+      ],
+      "tags": [
+        "bassinet",
+        "nursery",
+        "infant",
+        "cradle",
+        "brass",
+        "bedroom",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.72,
+          "d": 0.65,
+          "y": 0,
+          "h": 0.48,
+          "color": "#c5a059",
+          "edges": "glow"
+        },
+        {
+          "shape": "loft",
+          "x": 0,
+          "z": 0,
+          "w": 0.94,
+          "d": 0.92,
+          "y": 0.46,
+          "h": 0.52,
+          "tx": 0,
+          "tz": 0,
+          "tw": 0.88,
+          "td": 0.84,
+          "color": "#3d2b1f",
+          "finish": "wood",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.82,
+          "d": 0.78,
+          "y": 0.52,
+          "h": 0.42,
+          "color": "#f4ede2",
+          "finish": "cushion"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": 0,
+          "w": 0.74,
+          "d": 0.74,
+          "y": 0.62,
+          "h": 0.12,
+          "color": "#ffffff",
+          "finish": "cushion",
+          "fix": "h"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "circle",
+          "x": 0,
+          "z": 0,
+          "r": 0.44
+        },
+        {
+          "shape": "circle",
+          "x": 0,
+          "z": 0,
+          "r": 0.36
+        }
+      ]
+    }
+  ]
+}

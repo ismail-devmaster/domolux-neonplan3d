@@ -1,0 +1,173 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.bay_window_assembly",
+  "name": "Domolux Architectural Bay Window Assembly",
+  "publisher": "Domolux Studio",
+  "description": "Projecting three-sided cantilevered architectural bay window assembly with integrated upholstered daybed bench, dark bronze mullions, and panoramic insulated glass.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "bay_window_assembly",
+      "name": {
+        "en": "Domolux Architectural Bay Window Assembly",
+        "de": "Domolux Architektonischer Erkerfenster-Vorbausatz",
+        "ar": "مجموعة نافذة خليجية معمارية بارزة دومولوكس"
+      },
+      "size": [
+        2.6,
+        1.2,
+        2.6
+      ],
+      "mount": "floor",
+      "surface": true,
+      "group": "window",
+      "room": [
+        "living",
+        "bedroom",
+        "library"
+      ],
+      "tags": [
+        "bay",
+        "window",
+        "bench",
+        "daybed",
+        "cantilever",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.95,
+          "d": 0.9,
+          "y": 0,
+          "h": 0.2,
+          "color": "#382c22",
+          "finish": "wood",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.05,
+          "w": 0.92,
+          "d": 0.85,
+          "y": 0.2,
+          "h": 0.08,
+          "color": "cushion",
+          "finish": "fabric",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.45,
+          "w": 0.6,
+          "d": 0.08,
+          "y": 0.28,
+          "h": 0.68,
+          "color": "glass",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": -0.3,
+          "z": 0.45,
+          "w": 0.05,
+          "d": 0.15,
+          "y": 0.28,
+          "h": 0.68,
+          "color": "#2d241c",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0.3,
+          "z": 0.45,
+          "w": 0.05,
+          "d": 0.15,
+          "y": 0.28,
+          "h": 0.68,
+          "color": "#2d241c",
+          "edges": true
+        },
+        {
+          "shape": "loft",
+          "x": -0.42,
+          "z": 0.15,
+          "w": 0.24,
+          "d": 0.5,
+          "y": 0.28,
+          "h": 0.68,
+          "tx": -0.42,
+          "tz": 0.15,
+          "tw": 0.24,
+          "td": 0.5,
+          "color": "glass",
+          "edges": true
+        },
+        {
+          "shape": "loft",
+          "x": 0.42,
+          "z": 0.15,
+          "w": 0.24,
+          "d": 0.5,
+          "y": 0.28,
+          "h": 0.68,
+          "tx": 0.42,
+          "tz": 0.15,
+          "tw": 0.24,
+          "td": 0.5,
+          "color": "glass",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 1,
+          "d": 0.95,
+          "y": 0.96,
+          "h": 0.04,
+          "color": "#22252c",
+          "edges": true,
+          "fix": "h"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 0.95,
+          "d": 0.9
+        },
+        {
+          "shape": "line",
+          "x1": -0.48,
+          "z1": -0.4,
+          "x2": -0.3,
+          "z2": 0.45
+        },
+        {
+          "shape": "line",
+          "x1": -0.3,
+          "z1": 0.45,
+          "x2": 0.3,
+          "z2": 0.45
+        },
+        {
+          "shape": "line",
+          "x1": 0.3,
+          "z1": 0.45,
+          "x2": 0.48,
+          "z2": -0.4
+        }
+      ]
+    }
+  ]
+}

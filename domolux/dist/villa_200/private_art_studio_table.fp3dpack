@@ -1,0 +1,126 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.private_art_studio_table",
+  "name": "Domolux Master Artist Tilting Drafting and Painting Table",
+  "publisher": "Domolux Studio",
+  "description": "Architectural artist easel table with continuous counterbalanced tilting tabletop (0 to 60 degrees), cast-iron antique cog adjustment gears, and brush trough.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "private_art_studio_table",
+    "name": {
+     "en": "Domolux Master Artist Tilting Drafting and Painting Table",
+     "de": "Domolux Künstler-Zeichentisch mit neigbarer Platte",
+     "ar": "طاولة الرسم والهندسة الفنية القابلة للإمالة دومولوكس"
+    },
+    "size": [
+     1.6,
+     0.95,
+     0.85
+    ],
+    "mount": "floor",
+    "surface": false,
+    "group": "living",
+    "room": [
+     "living",
+     "office"
+    ],
+    "tags": [
+     "drafting_table",
+     "art_studio",
+     "easel",
+     "painting",
+     "artist",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": -0.38,
+      "z": 0,
+      "w": 0.08,
+      "d": 0.88,
+      "y": 0,
+      "h": 0.75,
+      "color": "#1c1e24",
+      "finish": "dark",
+      "fix": "w"
+     },
+     {
+      "shape": "box",
+      "x": 0.38,
+      "z": 0,
+      "w": 0.08,
+      "d": 0.88,
+      "y": 0,
+      "h": 0.75,
+      "color": "#1c1e24",
+      "finish": "dark",
+      "fix": "w"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": 0,
+      "w": 0.08,
+      "d": 0.08,
+      "y": 0.45,
+      "h": 0.78,
+      "axis": "x",
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wd"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.05,
+      "w": 0.98,
+      "d": 0.92,
+      "y": 0.75,
+      "h": 0.12,
+      "color": "#c2ab87",
+      "finish": "wood",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.42,
+      "w": 0.96,
+      "d": 0.06,
+      "y": 0.78,
+      "h": 0.08,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wdh"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.95
+     },
+     {
+      "shape": "line",
+      "x1": -0.48,
+      "z1": 0.42,
+      "x2": 0.48,
+      "z2": 0.42
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "dnU8kv10sD22OTwRAwNEKGi2v+wygRkSe/OPvrdMR+hW4ThIPFDeZwbipPjtTrAOn9MxStrfnyEgujcs3NkWDw=="
+ }
+}

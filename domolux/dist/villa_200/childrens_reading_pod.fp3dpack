@@ -1,0 +1,128 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.childrens_reading_pod",
+  "name": "Domolux Acoustic Igloo Children's Reading Sanctuary",
+  "publisher": "Domolux Studio",
+  "description": "Curvilinear spherical acoustic retreat pod featuring molded felt exterior shell, tufted velvet interior nest, integrated LED constellation reading dome, and oak plinth.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "childrens_reading_pod",
+    "name": {
+     "en": "Domolux Acoustic Igloo Children's Reading Sanctuary",
+     "de": "Domolux Akustische Lese- und Rückzugskapsel",
+     "ar": "كبسولة القراءة الصوتية المعزولة للأطفال دومولوكس"
+    },
+    "size": [
+     1.1,
+     1.1,
+     1.35
+    ],
+    "mount": "floor",
+    "surface": false,
+    "group": "living",
+    "room": [
+     "living",
+     "bedroom"
+    ],
+    "tags": [
+     "reading_pod",
+     "acoustic",
+     "nursery",
+     "kids",
+     "cozy",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": 0,
+      "w": 0.84,
+      "d": 0.84,
+      "y": 0,
+      "h": 0.08,
+      "color": "#362619",
+      "finish": "wood",
+      "fix": "h"
+     },
+     {
+      "shape": "loft",
+      "x": 0,
+      "z": -0.05,
+      "w": 0.94,
+      "d": 0.9,
+      "y": 0.08,
+      "h": 0.88,
+      "tx": 0,
+      "tz": -0.08,
+      "tw": 0.75,
+      "td": 0.72,
+      "color": "#3f4652",
+      "finish": "fabric",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.38,
+      "w": 0.68,
+      "d": 0.08,
+      "y": 0.16,
+      "h": 0.7,
+      "color": "#c2ab87",
+      "finish": "wood",
+      "edges": true,
+      "fix": "d"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": -0.05,
+      "w": 0.78,
+      "d": 0.78,
+      "y": 0.12,
+      "h": 0.2,
+      "color": "#1b4332",
+      "finish": "cushion"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": -0.08,
+      "w": 0.35,
+      "d": 0.35,
+      "y": 0.9,
+      "h": 0.02,
+      "color": "#ffffff",
+      "glow": true,
+      "fix": "h"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "circle",
+      "x": 0,
+      "z": -0.05,
+      "r": 0.46
+     },
+     {
+      "shape": "line",
+      "x1": -0.34,
+      "z1": 0.38,
+      "x2": 0.34,
+      "z2": 0.38
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "rIogoY0EyqtnXZ0lm4lURYevDJOuC6zddknWCShgGhXqXN4vPZ7bH6QTpDMdt/a1mxQOePddmV2uHNlqzyBgBg=="
+ }
+}

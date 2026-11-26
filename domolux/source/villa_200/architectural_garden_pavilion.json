@@ -1,0 +1,137 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.architectural_garden_pavilion",
+  "name": "Domolux Modernist Cantilevered Garden Pavilion",
+  "publisher": "Domolux Studio",
+  "description": "Standalone architectural garden pavilion with cantilevered charred-timber canopy, honed Roman travertine floor slab, bronze glass rear windbreak, and recessed ceiling spots.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "architectural_garden_pavilion",
+      "name": {
+        "en": "Domolux Modernist Cantilevered Garden Pavilion",
+        "de": "Domolux Moderner Gartenpavillon mit Kragdach",
+        "ar": "جناح الحديقة المعماري الحديث بسقف ناتئ دومولوكس"
+      },
+      "size": [
+        4.5,
+        3.5,
+        2.9
+      ],
+      "mount": "floor",
+      "surface": false,
+      "group": "outdoor",
+      "room": [
+        "outdoor"
+      ],
+      "tags": [
+        "pavilion",
+        "garden",
+        "architecture",
+        "patio",
+        "outdoor",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.98,
+          "d": 0.98,
+          "y": 0,
+          "h": 0.08,
+          "color": "#d8c7b5",
+          "finish": "white",
+          "edges": true,
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.45,
+          "w": 0.94,
+          "d": 0.08,
+          "y": 0.08,
+          "h": 0.86,
+          "color": "#1b1816",
+          "finish": "wood",
+          "edges": true,
+          "fix": "d"
+        },
+        {
+          "shape": "box",
+          "x": -0.44,
+          "z": 0.38,
+          "w": 0.08,
+          "d": 0.08,
+          "y": 0.08,
+          "h": 0.86,
+          "color": "#22252c",
+          "finish": "dark",
+          "edges": true,
+          "fix": "wd"
+        },
+        {
+          "shape": "loft",
+          "x": 0,
+          "z": 0.02,
+          "w": 0.98,
+          "d": 0.96,
+          "y": 0.92,
+          "h": 0.08,
+          "tx": 0,
+          "tz": 0.06,
+          "tw": 0.98,
+          "td": 0.96,
+          "color": "#2b221d",
+          "finish": "dark",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.02,
+          "w": 0.92,
+          "d": 0.9,
+          "y": 0.91,
+          "h": 0.02,
+          "color": "#8a5d3b",
+          "finish": "wood",
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0.45,
+          "z": -0.15,
+          "w": 0.02,
+          "d": 0.55,
+          "y": 0.08,
+          "h": 0.84,
+          "color": "#3a2f26",
+          "finish": "glass",
+          "fix": "w"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 0.98,
+          "d": 0.98
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": -0.45,
+          "w": 0.94,
+          "d": 0.08
+        }
+      ]
+    }
+  ]
+}

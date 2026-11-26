@@ -1,0 +1,280 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.sculptural_3d_wall_relief",
+  "name": "Domolux Sculptural 3D Wall Relief",
+  "publisher": "Domolux Studio",
+  "description": "Museum-grade dimensional faceted wall installation engineered from cast mineral plaster and champagne gold leaf with angled light-catching geometric facets.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "sculptural_3d_wall_relief",
+    "name": {
+     "en": "Domolux Sculptural 3D Wall Relief",
+     "de": "Domolux Skulpturales 3D-Wandrelief",
+     "ar": "نقش جداري نحتي ثلاثي الأبعاد دومولوكس"
+    },
+    "size": [
+     2.2,
+     0.22,
+     2.2
+    ],
+    "mount": "wall",
+    "wall_y": 0.3,
+    "surface": false,
+    "group": "decor",
+    "room": [
+     "living",
+     "hall",
+     "dining"
+    ],
+    "tags": [
+     "relief",
+     "sculpture",
+     "art",
+     "plaster",
+     "facets",
+     "luxury",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.35,
+      "w": 0.96,
+      "d": 0.25,
+      "y": 0.02,
+      "h": 0.96,
+      "color": "#14151a",
+      "edges": "faint"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.15,
+      "w": 1,
+      "d": 0.3,
+      "y": 0,
+      "h": 1,
+      "color": "#22242c",
+      "edges": "faint"
+     },
+     {
+      "shape": "loft",
+      "x": -0.3,
+      "z": 0.15,
+      "w": 0.3,
+      "d": 0.6,
+      "y": 0.05,
+      "h": 0.28,
+      "tx": -0.28,
+      "tz": 0.25,
+      "tw": 0.12,
+      "td": 0.3,
+      "color": "#e3ded7",
+      "edges": true
+     },
+     {
+      "shape": "loft",
+      "x": 0,
+      "z": 0.15,
+      "w": 0.28,
+      "d": 0.6,
+      "y": 0.05,
+      "h": 0.28,
+      "tx": 0.02,
+      "tz": 0.2,
+      "tw": 0.1,
+      "td": 0.25,
+      "color": "#d2c7b8",
+      "edges": true
+     },
+     {
+      "shape": "loft",
+      "x": 0.3,
+      "z": 0.15,
+      "w": 0.3,
+      "d": 0.6,
+      "y": 0.05,
+      "h": 0.28,
+      "tx": 0.26,
+      "tz": 0.28,
+      "tw": 0.12,
+      "td": 0.3,
+      "color": "#e3ded7",
+      "edges": true
+     },
+     {
+      "shape": "loft",
+      "x": -0.3,
+      "z": 0.15,
+      "w": 0.3,
+      "d": 0.6,
+      "y": 0.36,
+      "h": 0.28,
+      "tx": -0.26,
+      "tz": 0.22,
+      "tw": 0.12,
+      "td": 0.28,
+      "color": "#c5a059",
+      "edges": "glow"
+     },
+     {
+      "shape": "loft",
+      "x": 0,
+      "z": 0.15,
+      "w": 0.28,
+      "d": 0.6,
+      "y": 0.36,
+      "h": 0.28,
+      "tx": 0,
+      "tz": 0.3,
+      "tw": 0.14,
+      "td": 0.32,
+      "color": "#ede9e3",
+      "edges": true
+     },
+     {
+      "shape": "loft",
+      "x": 0.3,
+      "z": 0.15,
+      "w": 0.3,
+      "d": 0.6,
+      "y": 0.36,
+      "h": 0.28,
+      "tx": 0.32,
+      "tz": 0.24,
+      "tw": 0.12,
+      "td": 0.28,
+      "color": "#d2c7b8",
+      "edges": true
+     },
+     {
+      "shape": "loft",
+      "x": -0.3,
+      "z": 0.15,
+      "w": 0.3,
+      "d": 0.6,
+      "y": 0.67,
+      "h": 0.28,
+      "tx": -0.32,
+      "tz": 0.26,
+      "tw": 0.12,
+      "td": 0.3,
+      "color": "#d2c7b8",
+      "edges": true
+     },
+     {
+      "shape": "loft",
+      "x": 0,
+      "z": 0.15,
+      "w": 0.28,
+      "d": 0.6,
+      "y": 0.67,
+      "h": 0.28,
+      "tx": -0.02,
+      "tz": 0.22,
+      "tw": 0.1,
+      "td": 0.25,
+      "color": "#e3ded7",
+      "edges": true
+     },
+     {
+      "shape": "loft",
+      "x": 0.3,
+      "z": 0.15,
+      "w": 0.3,
+      "d": 0.6,
+      "y": 0.67,
+      "h": 0.28,
+      "tx": 0.28,
+      "tz": 0.28,
+      "tw": 0.12,
+      "td": 0.3,
+      "color": "#c5a059",
+      "edges": "glow"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.25,
+      "w": 1,
+      "d": 0.1,
+      "y": 0,
+      "h": 0.02,
+      "color": "#9e8354",
+      "edges": "glow",
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.25,
+      "w": 1,
+      "d": 0.1,
+      "y": 0.98,
+      "h": 0.02,
+      "color": "#9e8354",
+      "edges": "glow",
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": -0.49,
+      "z": 0.25,
+      "w": 0.02,
+      "d": 0.1,
+      "y": 0,
+      "h": 1,
+      "color": "#9e8354",
+      "edges": "glow",
+      "fix": "w"
+     },
+     {
+      "shape": "box",
+      "x": 0.49,
+      "z": 0.25,
+      "w": 0.02,
+      "d": 0.1,
+      "y": 0,
+      "h": 1,
+      "color": "#9e8354",
+      "edges": "glow",
+      "fix": "w"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 1,
+      "d": 0.8
+     },
+     {
+      "shape": "line",
+      "x1": -0.4,
+      "z1": -0.3,
+      "x2": 0.4,
+      "z2": 0.3
+     },
+     {
+      "shape": "line",
+      "x1": -0.4,
+      "z1": 0.3,
+      "x2": 0.4,
+      "z2": -0.3
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "hZlTC5wcjRQy8OlYEGWuyJ4gpXieOktePlJyPR6Hpr2qzqcRZZyUO4xIpToCGsgXu7YBRryZyMMzfwtKgcoFDw=="
+ }
+}

@@ -1,0 +1,115 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.precision_food_processor",
+  "name": "Domolux Precision Food Processor",
+  "publisher": "Domolux Studio",
+  "description": "Induction-drive commercial food processor with transparent Tritan work bowl, precision pulse dials, dual feed chute, and brushed stainless motor base.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "precision_food_processor",
+      "name": {
+        "en": "Domolux Precision Food Processor",
+        "de": "Domolux Präzisions-Küchen-Food-Processor",
+        "ar": "محضر طعام دقيق فاخر دومولوكس"
+      },
+      "size": [
+        0.32,
+        0.35,
+        0.48
+      ],
+      "mount": "surface",
+      "surface": false,
+      "group": "kitchen",
+      "room": [
+        "kitchen"
+      ],
+      "tags": [
+        "processor",
+        "food",
+        "chopper",
+        "blender",
+        "kitchen",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.85,
+          "d": 0.85,
+          "y": 0,
+          "h": 0.35,
+          "color": "metal",
+          "edges": true,
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.38,
+          "w": 0.55,
+          "d": 0.04,
+          "y": 0.12,
+          "h": 0.14,
+          "color": "#1c1d22",
+          "edges": "glow",
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": 0,
+          "w": 0.78,
+          "d": 0.78,
+          "y": 0.35,
+          "h": 0.45,
+          "color": "glass",
+          "edges": true
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": 0,
+          "w": 0.8,
+          "d": 0.8,
+          "y": 0.8,
+          "h": 0.05,
+          "color": "#25272e",
+          "edges": true,
+          "fix": "h"
+        },
+        {
+          "shape": "cyl",
+          "x": 0.18,
+          "z": 0.1,
+          "w": 0.22,
+          "d": 0.22,
+          "y": 0.85,
+          "h": 0.14,
+          "color": "glass",
+          "fix": "wdh"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 0.85,
+          "d": 0.85
+        },
+        {
+          "shape": "circle",
+          "x": 0,
+          "z": 0,
+          "r": 0.39
+        }
+      ]
+    }
+  ]
+}

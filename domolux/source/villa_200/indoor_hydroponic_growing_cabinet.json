@@ -1,0 +1,166 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.indoor_hydroponic_growing_cabinet",
+  "name": "Domolux Smart Automated Indoor Hydroponic Cultivation Armoire",
+  "publisher": "Domolux Studio",
+  "description": "Multi-tiered closed-loop hydroponic growing cabinet for culinary microgreens and herbs, featuring tuned Samsung horticultural LEDs, carbon odor filters, and smart app dosing.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "indoor_hydroponic_growing_cabinet",
+      "name": {
+        "en": "Domolux Smart Automated Indoor Hydroponic Cultivation Armoire",
+        "de": "Domolux Intelligenter Hydrokultur-Kräuterschrank",
+        "ar": "خزانة الزراعة المائية الذكية للأعشاب والخضروات العضوية دومولوكس"
+      },
+      "size": [
+        0.95,
+        0.6,
+        1.9
+      ],
+      "mount": "floor",
+      "surface": false,
+      "group": "kitchen",
+      "room": [
+        "kitchen",
+        "storage"
+      ],
+      "tags": [
+        "hydroponics",
+        "growing_cabinet",
+        "herbs",
+        "microgreens",
+        "indoor_garden",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.96,
+          "d": 0.94,
+          "y": 0,
+          "h": 0.18,
+          "color": "#181a20",
+          "finish": "dark",
+          "edges": true,
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.02,
+          "w": 0.98,
+          "d": 0.94,
+          "y": 0.18,
+          "h": 0.8,
+          "color": "#252830",
+          "finish": "dark",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.08,
+          "w": 0.88,
+          "d": 0.72,
+          "y": 0.22,
+          "h": 0.12,
+          "color": "#2d6a4f",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.08,
+          "w": 0.88,
+          "d": 0.72,
+          "y": 0.48,
+          "h": 0.12,
+          "color": "#40916c",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.08,
+          "w": 0.88,
+          "d": 0.72,
+          "y": 0.74,
+          "h": 0.12,
+          "color": "#52b788",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.08,
+          "w": 0.82,
+          "d": 0.5,
+          "y": 0.44,
+          "h": 0.02,
+          "color": "#ff007f",
+          "glow": true,
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.08,
+          "w": 0.82,
+          "d": 0.5,
+          "y": 0.7,
+          "h": 0.02,
+          "color": "#ff007f",
+          "glow": true,
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.08,
+          "w": 0.82,
+          "d": 0.5,
+          "y": 0.94,
+          "h": 0.02,
+          "color": "#ff007f",
+          "glow": true,
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.46,
+          "w": 0.92,
+          "d": 0.02,
+          "y": 0.18,
+          "h": 0.8,
+          "color": "#88c0d0",
+          "finish": "glass",
+          "edges": true,
+          "fix": "d"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 0.98,
+          "d": 0.94
+        },
+        {
+          "shape": "line",
+          "x1": -0.46,
+          "z1": 0.46,
+          "x2": 0.46,
+          "z2": 0.46
+        }
+      ]
+    }
+  ]
+}

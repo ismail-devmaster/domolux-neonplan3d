@@ -1,0 +1,216 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.sculptural_chaise_longue",
+  "name": "Domolux Sculptural Chaise Longue",
+  "publisher": "Domolux Studio",
+  "description": "Asymmetrical sculptural relaxation chaise sculpted with continuous ergonomic contours in ivory bouclé, saddle leather headrest bolster, and polished bronze floating ribbon frame.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "sculptural_chaise_longue",
+      "name": {
+        "en": "Domolux Sculptural Chaise Longue",
+        "de": "Domolux Skulpturale Liege-Chaise",
+        "ar": "أريكة استرخاء نحتية دومولوكس"
+      },
+      "size": [
+        0.85,
+        1.85,
+        0.78
+      ],
+      "mount": "floor",
+      "surface": false,
+      "group": "living",
+      "room": [
+        "living",
+        "bedroom",
+        "library"
+      ],
+      "tags": [
+        "chaise",
+        "lounger",
+        "sculptural",
+        "boucle",
+        "leather",
+        "luxury",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": -0.38,
+          "z": 0,
+          "w": 0.05,
+          "d": 0.88,
+          "y": 0,
+          "h": 0.04,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0.38,
+          "z": 0,
+          "w": 0.05,
+          "d": 0.88,
+          "y": 0,
+          "h": 0.04,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.42,
+          "w": 0.8,
+          "d": 0.05,
+          "y": 0,
+          "h": 0.04,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.42,
+          "w": 0.8,
+          "d": 0.05,
+          "y": 0,
+          "h": 0.04,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": -0.38,
+          "z": -0.15,
+          "w": 0.05,
+          "d": 0.2,
+          "y": 0.04,
+          "h": 0.32,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wd"
+        },
+        {
+          "shape": "box",
+          "x": 0.38,
+          "z": -0.15,
+          "w": 0.05,
+          "d": 0.2,
+          "y": 0.04,
+          "h": 0.32,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wd"
+        },
+        {
+          "shape": "loft",
+          "x": 0,
+          "z": 0.3,
+          "w": 0.85,
+          "d": 0.35,
+          "y": 0.32,
+          "h": 0.16,
+          "tx": 0,
+          "tz": 0.3,
+          "tw": 0.8,
+          "td": 0.35,
+          "color": "cushion",
+          "finish": "fabric",
+          "edges": true
+        },
+        {
+          "shape": "loft",
+          "x": 0,
+          "z": 0,
+          "w": 0.88,
+          "d": 0.35,
+          "y": 0.28,
+          "h": 0.18,
+          "tx": 0,
+          "tz": 0,
+          "tw": 0.84,
+          "td": 0.35,
+          "color": "cushion",
+          "finish": "fabric",
+          "edges": true
+        },
+        {
+          "shape": "loft",
+          "x": 0,
+          "z": -0.32,
+          "w": 0.85,
+          "d": 0.35,
+          "y": 0.36,
+          "h": 0.48,
+          "tx": 0,
+          "tz": -0.36,
+          "tw": 0.8,
+          "td": 0.3,
+          "color": "cushion",
+          "finish": "fabric",
+          "edges": true
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": -0.36,
+          "w": 0.16,
+          "d": 0.7,
+          "y": 0.7,
+          "h": 0.16,
+          "axis": "x",
+          "color": "#824c28",
+          "finish": "fabric",
+          "edges": true,
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": -0.25,
+          "z": -0.36,
+          "w": 0.03,
+          "d": 0.18,
+          "y": 0.65,
+          "h": 0.18,
+          "color": "#4d2c16",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0.25,
+          "z": -0.36,
+          "w": 0.03,
+          "d": 0.18,
+          "y": 0.65,
+          "h": 0.18,
+          "color": "#4d2c16",
+          "fix": "wdh"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 0.85,
+          "d": 1
+        },
+        {
+          "shape": "circle",
+          "x": 0,
+          "z": -0.36,
+          "r": 0.15
+        }
+      ]
+    }
+  ]
+}

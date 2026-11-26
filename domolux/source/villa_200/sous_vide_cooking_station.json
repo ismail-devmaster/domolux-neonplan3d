@@ -1,0 +1,117 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.sous_vide_cooking_station",
+  "name": "Domolux Precision Sous-Vide Cooking Station",
+  "publisher": "Domolux Studio",
+  "description": "Countertop culinary immersion thermal bath station featuring circulating heating impeller, insulated clear polycarbonate bath with rack dividers, and WiFi touch head.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "sous_vide_cooking_station",
+      "name": {
+        "en": "Domolux Precision Sous-Vide Cooking Station",
+        "de": "Domolux Präzisions-Sous-Vide-Garstation",
+        "ar": "محطة طهي سو-فيد دقيقة دومولوكس"
+      },
+      "size": [
+        0.38,
+        0.48,
+        0.38
+      ],
+      "mount": "surface",
+      "surface": false,
+      "group": "kitchen",
+      "room": [
+        "kitchen"
+      ],
+      "tags": [
+        "sous-vide",
+        "immersion",
+        "culinary",
+        "cooker",
+        "bath",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.05,
+          "w": 0.92,
+          "d": 0.85,
+          "y": 0,
+          "h": 0.08,
+          "color": "metal",
+          "edges": true,
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.05,
+          "w": 0.88,
+          "d": 0.8,
+          "y": 0.08,
+          "h": 0.55,
+          "color": "glass",
+          "edges": true
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": -0.32,
+          "w": 0.16,
+          "d": 0.16,
+          "y": 0.12,
+          "h": 0.85,
+          "color": "#1c1d22",
+          "edges": true,
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": -0.32,
+          "w": 0.15,
+          "d": 0.15,
+          "y": 0.95,
+          "h": 0.04,
+          "color": "#38bdf8",
+          "glow": true,
+          "edges": "glow",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.05,
+          "w": 0.82,
+          "d": 0.75,
+          "y": 0.48,
+          "h": 0.02,
+          "color": "#00e5ff",
+          "glow": true,
+          "edges": "glow"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": -0.05,
+          "w": 0.88,
+          "d": 0.8
+        },
+        {
+          "shape": "circle",
+          "x": 0,
+          "z": -0.32,
+          "r": 0.08
+        }
+      ]
+    }
+  ]
+}

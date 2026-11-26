@@ -1,0 +1,135 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.luxury_stand_mixer",
+  "name": "Domolux Luxury Stand Mixer",
+  "publisher": "Domolux Studio",
+  "description": "Countertop die-cast aluminum stand mixer finished in dark anthracite enamel with mirror-polished stainless steel bowl, planetary gearing head, and brass speed lever.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "luxury_stand_mixer",
+    "name": {
+     "en": "Domolux Luxury Stand Mixer",
+     "de": "Domolux Luxus-Küchenmaschine",
+     "ar": "عجانة كهربائية فاخرة دومولوكس"
+    },
+    "size": [
+     0.38,
+     0.42,
+     0.45
+    ],
+    "mount": "surface",
+    "surface": false,
+    "group": "kitchen",
+    "room": [
+     "kitchen"
+    ],
+    "tags": [
+     "mixer",
+     "baking",
+     "culinary",
+     "appliance",
+     "countertop",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.82,
+      "d": 0.88,
+      "y": 0,
+      "h": 0.1,
+      "color": "#1c1d22",
+      "edges": true,
+      "fix": "h"
+     },
+     {
+      "shape": "loft",
+      "x": 0,
+      "z": 0.18,
+      "w": 0.52,
+      "d": 0.52,
+      "y": 0.1,
+      "h": 0.48,
+      "tx": 0,
+      "tz": 0.18,
+      "tw": 0.65,
+      "td": 0.65,
+      "color": "metal",
+      "edges": true
+     },
+     {
+      "shape": "loft",
+      "x": 0,
+      "z": -0.22,
+      "w": 0.45,
+      "d": 0.4,
+      "y": 0.1,
+      "h": 0.45,
+      "tx": 0,
+      "tz": -0.22,
+      "tw": 0.38,
+      "td": 0.35,
+      "color": "#25272e",
+      "finish": "dark",
+      "edges": true
+     },
+     {
+      "shape": "loft",
+      "x": 0,
+      "z": 0,
+      "w": 0.38,
+      "d": 0.8,
+      "y": 0.55,
+      "h": 0.38,
+      "tx": 0,
+      "tz": 0.05,
+      "tw": 0.35,
+      "td": 0.75,
+      "color": "#25272e",
+      "finish": "dark",
+      "edges": true
+     },
+     {
+      "shape": "cyl",
+      "x": 0.2,
+      "z": -0.15,
+      "w": 0.05,
+      "d": 0.05,
+      "y": 0.68,
+      "h": 0.04,
+      "axis": "x",
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wdh"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.82,
+      "d": 0.88
+     },
+     {
+      "shape": "circle",
+      "x": 0,
+      "z": 0.18,
+      "r": 0.32
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "VBVLu11w01NlyjIA1Z+jfi/GP17+OxgK2u1n4oEGDdckAkktNnct47yaEWverdf3jKATiXv0zZ2wysJuBrX7CA=="
+ }
+}

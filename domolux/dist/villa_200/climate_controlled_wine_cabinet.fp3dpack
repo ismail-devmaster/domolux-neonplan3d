@@ -1,0 +1,221 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.climate_controlled_wine_cabinet",
+  "name": "Domolux Climate-Controlled Wine Cabinet",
+  "publisher": "Domolux Studio",
+  "description": "Triple-temperature-zone preservation wine column with capacity for 120 bottles, low-vibration inverter compressor, natural beech glide shelves, and UV-absorbing smoked glass door.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "climate_controlled_wine_cabinet",
+    "name": {
+     "en": "Domolux Climate-Controlled Wine Cabinet",
+     "de": "Domolux Dreizonen-Weinklimaschrank",
+     "ar": "خزانة تبريد نبيذ متعددة المناخات دومولوكس"
+    },
+    "size": [
+     0.65,
+     0.72,
+     2.15
+    ],
+    "mount": "floor",
+    "surface": false,
+    "group": "kitchen",
+    "room": [
+     "kitchen",
+     "dining"
+    ],
+    "tags": [
+     "wine",
+     "cooler",
+     "refrigerator",
+     "sommelier",
+     "appliance",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.95,
+      "y": 0,
+      "h": 0.05,
+      "color": "#141518",
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.98,
+      "y": 0.05,
+      "h": 0.93,
+      "color": "#1e2229",
+      "finish": "dark",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.05,
+      "w": 0.84,
+      "d": 0.8,
+      "y": 0.15,
+      "h": 0.02,
+      "color": "#a88158",
+      "finish": "wood",
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.05,
+      "w": 0.84,
+      "d": 0.8,
+      "y": 0.28,
+      "h": 0.02,
+      "color": "#a88158",
+      "finish": "wood",
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.05,
+      "w": 0.84,
+      "d": 0.8,
+      "y": 0.42,
+      "h": 0.02,
+      "color": "#a88158",
+      "finish": "wood",
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.05,
+      "w": 0.84,
+      "d": 0.8,
+      "y": 0.56,
+      "h": 0.02,
+      "color": "#a88158",
+      "finish": "wood",
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.05,
+      "w": 0.84,
+      "d": 0.8,
+      "y": 0.7,
+      "h": 0.02,
+      "color": "#a88158",
+      "finish": "wood",
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.05,
+      "w": 0.84,
+      "d": 0.8,
+      "y": 0.84,
+      "h": 0.02,
+      "color": "#a88158",
+      "finish": "wood",
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": -0.42,
+      "z": 0.25,
+      "w": 0.02,
+      "d": 0.02,
+      "y": 0.08,
+      "h": 0.88,
+      "color": "#ffe0b2",
+      "glow": true,
+      "edges": "glow",
+      "fix": "wd"
+     },
+     {
+      "shape": "box",
+      "x": 0.42,
+      "z": 0.25,
+      "w": 0.02,
+      "d": 0.02,
+      "y": 0.08,
+      "h": 0.88,
+      "color": "#ffe0b2",
+      "glow": true,
+      "edges": "glow",
+      "fix": "wd"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.48,
+      "w": 0.96,
+      "d": 0.04,
+      "y": 0.06,
+      "h": 0.92,
+      "color": "glass",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": -0.46,
+      "z": 0.48,
+      "w": 0.04,
+      "d": 0.05,
+      "y": 0.06,
+      "h": 0.92,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wd"
+     },
+     {
+      "shape": "cyl",
+      "x": 0.42,
+      "z": 0.48,
+      "w": 0.03,
+      "d": 0.03,
+      "y": 0.2,
+      "h": 0.6,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wd"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.98
+     },
+     {
+      "shape": "line",
+      "x1": -0.45,
+      "z1": 0.48,
+      "x2": 0.45,
+      "z2": 0.48
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "oDyNa/eihXKlEC0tpMDswJ3TVZZSU0JZOH5rwDliopnNfqD4sYx0Qf1zsTFt2Nynr9Srmxg6nzobEVIJPDciDw=="
+ }
+}

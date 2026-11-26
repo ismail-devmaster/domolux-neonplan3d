@@ -1,0 +1,271 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.suspended_timber_slat_ceiling",
+  "name": "Domolux Suspended Timber Slat Ceiling",
+  "publisher": "Domolux Studio",
+  "description": "Architectural suspended acoustic ceiling with linear American walnut baffles, acoustic backing fleece, and recessed black linear LED lighting tracks.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "suspended_timber_slat_ceiling",
+    "name": {
+     "en": "Domolux Suspended Timber Slat Ceiling",
+     "de": "Domolux Abgehängte Holzlamellen-Decke",
+     "ar": "سقف معلق بشرائح خشبية دومولوكس"
+    },
+    "size": [
+     3,
+     2.4,
+     0.28
+    ],
+    "mount": "ceiling",
+    "surface": false,
+    "group": "ceiling",
+    "room": [
+     "living",
+     "kitchen",
+     "hall",
+     "dining"
+    ],
+    "tags": [
+     "ceiling",
+     "slats",
+     "timber",
+     "acoustic",
+     "suspended",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 1,
+      "d": 1,
+      "y": 0.85,
+      "h": 0.15,
+      "color": "#16171b",
+      "edges": "faint"
+     },
+     {
+      "shape": "box",
+      "x": -0.3,
+      "z": 0,
+      "w": 0.03,
+      "d": 0.98,
+      "y": 0.7,
+      "h": 0.15,
+      "color": "#22242a",
+      "edges": "faint"
+     },
+     {
+      "shape": "box",
+      "x": 0.3,
+      "z": 0,
+      "w": 0.03,
+      "d": 0.98,
+      "y": 0.7,
+      "h": 0.15,
+      "color": "#22242a",
+      "edges": "faint"
+     },
+     {
+      "shape": "box",
+      "x": -0.45,
+      "z": 0,
+      "w": 0.04,
+      "d": 0.96,
+      "y": 0.05,
+      "h": 0.7,
+      "color": "#45362a",
+      "finish": "wood",
+      "edges": true,
+      "fix": "w"
+     },
+     {
+      "shape": "box",
+      "x": -0.35,
+      "z": 0,
+      "w": 0.04,
+      "d": 0.96,
+      "y": 0.05,
+      "h": 0.7,
+      "color": "#45362a",
+      "finish": "wood",
+      "edges": true,
+      "fix": "w"
+     },
+     {
+      "shape": "box",
+      "x": -0.25,
+      "z": 0,
+      "w": 0.04,
+      "d": 0.96,
+      "y": 0.05,
+      "h": 0.7,
+      "color": "#45362a",
+      "finish": "wood",
+      "edges": true,
+      "fix": "w"
+     },
+     {
+      "shape": "box",
+      "x": -0.15,
+      "z": 0,
+      "w": 0.04,
+      "d": 0.96,
+      "y": 0.05,
+      "h": 0.7,
+      "color": "#45362a",
+      "finish": "wood",
+      "edges": true,
+      "fix": "w"
+     },
+     {
+      "shape": "box",
+      "x": -0.05,
+      "z": 0,
+      "w": 0.04,
+      "d": 0.96,
+      "y": 0.05,
+      "h": 0.7,
+      "color": "#45362a",
+      "finish": "wood",
+      "edges": true,
+      "fix": "w"
+     },
+     {
+      "shape": "box",
+      "x": 0.05,
+      "z": 0,
+      "w": 0.04,
+      "d": 0.96,
+      "y": 0.05,
+      "h": 0.7,
+      "color": "#45362a",
+      "finish": "wood",
+      "edges": true,
+      "fix": "w"
+     },
+     {
+      "shape": "box",
+      "x": 0.15,
+      "z": 0,
+      "w": 0.04,
+      "d": 0.96,
+      "y": 0.05,
+      "h": 0.7,
+      "color": "#45362a",
+      "finish": "wood",
+      "edges": true,
+      "fix": "w"
+     },
+     {
+      "shape": "box",
+      "x": 0.25,
+      "z": 0,
+      "w": 0.04,
+      "d": 0.96,
+      "y": 0.05,
+      "h": 0.7,
+      "color": "#45362a",
+      "finish": "wood",
+      "edges": true,
+      "fix": "w"
+     },
+     {
+      "shape": "box",
+      "x": 0.35,
+      "z": 0,
+      "w": 0.04,
+      "d": 0.96,
+      "y": 0.05,
+      "h": 0.7,
+      "color": "#45362a",
+      "finish": "wood",
+      "edges": true,
+      "fix": "w"
+     },
+     {
+      "shape": "box",
+      "x": 0.45,
+      "z": 0,
+      "w": 0.04,
+      "d": 0.96,
+      "y": 0.05,
+      "h": 0.7,
+      "color": "#45362a",
+      "finish": "wood",
+      "edges": true,
+      "fix": "w"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.03,
+      "d": 0.88,
+      "y": 0,
+      "h": 0.05,
+      "color": "#fff0db",
+      "glow": true,
+      "edges": "glow",
+      "fix": "wdh"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 1,
+      "d": 1
+     },
+     {
+      "shape": "line",
+      "x1": -0.45,
+      "z1": -0.48,
+      "x2": -0.45,
+      "z2": 0.48
+     },
+     {
+      "shape": "line",
+      "x1": -0.25,
+      "z1": -0.48,
+      "x2": -0.25,
+      "z2": 0.48
+     },
+     {
+      "shape": "line",
+      "x1": 0,
+      "z1": -0.48,
+      "x2": 0,
+      "z2": 0.48
+     },
+     {
+      "shape": "line",
+      "x1": 0.25,
+      "z1": -0.48,
+      "x2": 0.25,
+      "z2": 0.48
+     },
+     {
+      "shape": "line",
+      "x1": 0.45,
+      "z1": -0.48,
+      "x2": 0.45,
+      "z2": 0.48
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "a9PEhyHjxnr3A2aqrynwYQv2yPa2bvLShjLFRo9MHCPnjk9s+oiMNG4RkGKN5hXqojMD2iW5508bLGSsvUkgCQ=="
+ }
+}

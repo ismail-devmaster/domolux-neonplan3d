@@ -1,0 +1,147 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.mirrored_medicine_cabinet",
+  "name": "Domolux Recessed Tri-View Mirrored Cabinet",
+  "publisher": "Domolux Studio",
+  "description": "Tri-view recessed wall cabinet with bevelled optical float mirror faces, internal integrated electric toothbrush charging docks, and perimeter halo ambient illumination.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "mirrored_medicine_cabinet",
+    "name": {
+     "en": "Domolux Recessed Tri-View Mirrored Cabinet",
+     "de": "Domolux 3-teiliger LED-Spiegelschrank",
+     "ar": "خزانة أدوية ومستحضرات جدارية ثلاثية المرايا بإضاءة محيطية دومولوكس"
+    },
+    "size": [
+     0.9,
+     0.16,
+     0.8
+    ],
+    "mount": "wall",
+    "wall_y": 1.2,
+    "surface": false,
+    "group": "bathroom",
+    "room": [
+     "bathroom"
+    ],
+    "tags": [
+     "medicine_cabinet",
+     "mirror",
+     "storage",
+     "lighting",
+     "bathroom",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.38,
+      "w": 0.96,
+      "d": 0.2,
+      "y": 0.04,
+      "h": 0.92,
+      "color": "#1e2025",
+      "edges": true,
+      "fix": "d"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.26,
+      "w": 0.98,
+      "d": 0.04,
+      "y": 0.02,
+      "h": 0.96,
+      "color": "#fff3cc",
+      "glow": true,
+      "fix": "d"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.15,
+      "w": 0.48,
+      "d": 0.04,
+      "y": 0.02,
+      "h": 0.96,
+      "color": "#a8c0d8",
+      "finish": "glass",
+      "edges": true,
+      "fix": "d"
+     },
+     {
+      "shape": "box",
+      "x": -0.36,
+      "z": 0.15,
+      "w": 0.22,
+      "d": 0.04,
+      "y": 0.02,
+      "h": 0.96,
+      "color": "#a8c0d8",
+      "finish": "glass",
+      "edges": true,
+      "fix": "d"
+     },
+     {
+      "shape": "box",
+      "x": 0.36,
+      "z": 0.15,
+      "w": 0.22,
+      "d": 0.04,
+      "y": 0.02,
+      "h": 0.96,
+      "color": "#a8c0d8",
+      "finish": "glass",
+      "edges": true,
+      "fix": "d"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.15,
+      "w": 0.98,
+      "d": 0.06,
+      "y": 0,
+      "h": 0.02,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "yh"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.6
+     },
+     {
+      "shape": "line",
+      "x1": -0.25,
+      "z1": 0.15,
+      "x2": -0.25,
+      "z2": -0.38
+     },
+     {
+      "shape": "line",
+      "x1": 0.25,
+      "z1": 0.15,
+      "x2": 0.25,
+      "z2": -0.38
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "u0M6XuDrRvvcae9wGUXg6oSfiOShaZTEl/ff1s4TkShEZuajA9smOJjrfkDwvN+/vDHGHuuBsIzi1oUGOX/dAA=="
+ }
+}

@@ -1,0 +1,119 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.built_in_combi_microwave",
+  "name": "Domolux Built-In Combi Microwave Oven",
+  "publisher": "Domolux Studio",
+  "description": "45cm architectural compact combination microwave and convection oven with black obsidian glass facade, full-color touch display, and motor drop-down door.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "built_in_combi_microwave",
+      "name": {
+        "en": "Domolux Built-In Combi Microwave Oven",
+        "de": "Domolux Integrierte Kompakt-Mikrowelle",
+        "ar": "فرن ميكروويف مدمج متعدد الوظائف دومولوكس"
+      },
+      "size": [
+        0.6,
+        0.55,
+        0.45
+      ],
+      "mount": "surface",
+      "surface": true,
+      "group": "kitchen",
+      "room": [
+        "kitchen"
+      ],
+      "tags": [
+        "microwave",
+        "oven",
+        "combi",
+        "built-in",
+        "kitchen",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 1,
+          "d": 1,
+          "y": 0,
+          "h": 1,
+          "color": "#1c1d22",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.48,
+          "w": 0.98,
+          "d": 0.03,
+          "y": 0,
+          "h": 0.98,
+          "color": "#111215",
+          "finish": "dark",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.48,
+          "w": 0.65,
+          "d": 0.015,
+          "y": 0.08,
+          "h": 0.55,
+          "color": "glass",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.48,
+          "w": 0.48,
+          "d": 0.015,
+          "y": 0.75,
+          "h": 0.16,
+          "color": "#38bdf8",
+          "glow": true,
+          "edges": "glow",
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": 0.48,
+          "w": 0.025,
+          "d": 0.025,
+          "y": 0.62,
+          "h": 0.72,
+          "axis": "x",
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wd"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 1,
+          "d": 1
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0.48,
+          "w": 0.65,
+          "d": 0.04,
+          "fill": true
+        }
+      ]
+    }
+  ]
+}

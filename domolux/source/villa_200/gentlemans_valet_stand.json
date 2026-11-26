@@ -1,0 +1,162 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.gentlemans_valet_stand",
+  "name": "Domolux Gentleman's Valet Stand",
+  "publisher": "Domolux Studio",
+  "description": "Handcrafted master dressing valet sculpted in solid American walnut and champagne bronze with contour jacket hanger, trouser rail, velvet-lined watch and cufflink tray, and shoe platform.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "gentlemans_valet_stand",
+      "name": {
+        "en": "Domolux Gentleman's Valet Stand",
+        "de": "Domolux Exklusiver Herrendiener",
+        "ar": "حامل ملابس وإكسسوارات رجالي فاخر دومولوكس"
+      },
+      "size": [
+        0.55,
+        0.46,
+        1.25
+      ],
+      "mount": "floor",
+      "surface": true,
+      "group": "bedroom",
+      "room": [
+        "bedroom",
+        "closet"
+      ],
+      "tags": [
+        "valet",
+        "dressing",
+        "stand",
+        "walnut",
+        "gentleman",
+        "shoes",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.85,
+          "d": 0.85,
+          "y": 0,
+          "h": 0.05,
+          "color": "#d5cec4",
+          "finish": "body",
+          "edges": true,
+          "fix": "h"
+        },
+        {
+          "shape": "cyl",
+          "x": -0.22,
+          "z": 0,
+          "w": 0.04,
+          "d": 0.04,
+          "y": 0.05,
+          "h": 0.8,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wd"
+        },
+        {
+          "shape": "cyl",
+          "x": 0.22,
+          "z": 0,
+          "w": 0.04,
+          "d": 0.04,
+          "y": 0.05,
+          "h": 0.8,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wd"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.7,
+          "d": 0.6,
+          "y": 0.12,
+          "h": 0.02,
+          "color": "#3a2d23",
+          "finish": "wood",
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.65,
+          "d": 0.45,
+          "y": 0.65,
+          "h": 0.05,
+          "color": "#3a2d23",
+          "finish": "wood",
+          "edges": true,
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.58,
+          "d": 0.38,
+          "y": 0.68,
+          "h": 0.025,
+          "color": "#191a20",
+          "fix": "h"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": 0.15,
+          "w": 0.03,
+          "d": 0.03,
+          "y": 0.75,
+          "h": 0.75,
+          "axis": "x",
+          "color": "#8a5229",
+          "finish": "fabric",
+          "fix": "wd"
+        },
+        {
+          "shape": "loft",
+          "x": 0,
+          "z": -0.05,
+          "w": 0.95,
+          "d": 0.2,
+          "y": 0.88,
+          "h": 0.12,
+          "tx": 0,
+          "tz": -0.08,
+          "tw": 0.75,
+          "td": 0.16,
+          "color": "#3a2d23",
+          "finish": "wood",
+          "edges": true
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 0.85,
+          "d": 0.85
+        },
+        {
+          "shape": "line",
+          "x1": -0.45,
+          "z1": -0.05,
+          "x2": 0.45,
+          "z2": -0.05
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.childrens_playhouse_loft",
+  "name": "Domolux Scandinavian Timber Playhouse and Mezzanine Loft",
+  "publisher": "Domolux Studio",
+  "description": "Indoor architectural play structure featuring a pitched timber play cabin, upper sleeping mezzanine, arched entrance doorway, structural rung steps, and internal LED starry cove.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "childrens_playhouse_loft",
+      "name": {
+        "en": "Domolux Scandinavian Timber Playhouse and Mezzanine Loft",
+        "de": "Domolux Indoor-Spielhaus & Hochebene",
+        "ar": "كوخ ألعاب خشبي فاخر بطابقين مع درج مدمج دومولوكس"
+      },
+      "size": [
+        2,
+        1.5,
+        2.2
+      ],
+      "mount": "floor",
+      "surface": false,
+      "group": "living",
+      "room": [
+        "living",
+        "bedroom"
+      ],
+      "tags": [
+        "playhouse",
+        "loft",
+        "mezzanine",
+        "nursery",
+        "kids",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.98,
+          "d": 0.98,
+          "y": 0,
+          "h": 0.06,
+          "color": "#22252c",
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0.1,
+          "z": 0,
+          "w": 0.76,
+          "d": 0.94,
+          "y": 0.06,
+          "h": 0.65,
+          "color": "#e3ded7",
+          "finish": "wood",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0.1,
+          "z": 0.46,
+          "w": 0.35,
+          "d": 0.04,
+          "y": 0.06,
+          "h": 0.52,
+          "color": "#16171b",
+          "fix": "d"
+        },
+        {
+          "shape": "box",
+          "x": 0.1,
+          "z": 0,
+          "w": 0.78,
+          "d": 0.96,
+          "y": 0.71,
+          "h": 0.22,
+          "color": "#bfa382",
+          "finish": "wood",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": -0.38,
+          "z": 0,
+          "w": 0.2,
+          "d": 0.88,
+          "y": 0.06,
+          "h": 0.65,
+          "color": "#8a6a4b",
+          "finish": "wood",
+          "edges": true
+        },
+        {
+          "shape": "loft",
+          "x": 0.1,
+          "z": 0,
+          "w": 0.82,
+          "d": 0.98,
+          "y": 0.93,
+          "h": 0.07,
+          "tx": 0.1,
+          "tz": 0,
+          "tw": 0.7,
+          "td": 0.98,
+          "color": "#4a3525",
+          "edges": true
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 0.98,
+          "d": 0.98
+        },
+        {
+          "shape": "rect",
+          "x": 0.1,
+          "z": 0,
+          "w": 0.76,
+          "d": 0.94
+        },
+        {
+          "shape": "rect",
+          "x": -0.38,
+          "z": 0,
+          "w": 0.2,
+          "d": 0.88
+        }
+      ]
+    }
+  ]
+}

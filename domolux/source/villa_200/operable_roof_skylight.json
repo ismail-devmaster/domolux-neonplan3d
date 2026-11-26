@@ -1,0 +1,121 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.operable_roof_skylight",
+  "name": "Domolux Operable Roof Skylight Window",
+  "publisher": "Domolux Studio",
+  "description": "Motorized operable architectural roof window with concealed electric chain drive actuator, thermal-break bronze frame, rain sensor interface, and insect screen.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "operable_roof_skylight",
+      "name": {
+        "en": "Domolux Operable Roof Skylight Window",
+        "de": "Domolux Öffnungsfähiges Dachfenster",
+        "ar": "نافذة منور سقفي قابلة للفتح دومولوكس"
+      },
+      "size": [
+        1.5,
+        1.2,
+        0.45
+      ],
+      "mount": "ceiling",
+      "surface": false,
+      "group": "ceiling",
+      "room": [
+        "bedroom",
+        "bath",
+        "hall"
+      ],
+      "tags": [
+        "skylight",
+        "window",
+        "operable",
+        "motorized",
+        "roof",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 1,
+          "d": 1,
+          "y": 0.7,
+          "h": 0.3,
+          "color": "#334155",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.88,
+          "d": 0.88,
+          "y": 0.1,
+          "h": 0.65,
+          "color": "#f1f5f9",
+          "finish": "white",
+          "edges": "faint"
+        },
+        {
+          "shape": "loft",
+          "x": 0,
+          "z": 0.05,
+          "w": 0.85,
+          "d": 0.85,
+          "y": 0.65,
+          "h": 0.2,
+          "tx": 0,
+          "tz": 0.08,
+          "tw": 0.85,
+          "td": 0.85,
+          "color": "#7a623a",
+          "edges": "glow"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.06,
+          "w": 0.75,
+          "d": 0.75,
+          "y": 0.72,
+          "h": 0.03,
+          "color": "glass",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.38,
+          "w": 0.3,
+          "d": 0.08,
+          "y": 0.55,
+          "h": 0.08,
+          "color": "#1e293b",
+          "edges": "faint",
+          "fix": "wdh"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 1,
+          "d": 1
+        },
+        {
+          "shape": "line",
+          "x1": -0.4,
+          "z1": -0.35,
+          "x2": 0.4,
+          "z2": -0.35
+        }
+      ]
+    }
+  ]
+}

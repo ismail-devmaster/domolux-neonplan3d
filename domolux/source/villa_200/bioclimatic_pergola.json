@@ -1,0 +1,172 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.bioclimatic_pergola",
+  "name": "Domolux Bioclimatic Motorized Architectural Pergola",
+  "publisher": "Domolux Studio",
+  "description": "Architectural motorized aluminum patio pergola with 140-degree pivoting waterproof louvers, concealed internal post downspout drainage, and perimeter dimmable LED glow.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "bioclimatic_pergola",
+      "name": {
+        "en": "Domolux Bioclimatic Motorized Architectural Pergola",
+        "de": "Domolux Bioklimatische Lamellenpergola",
+        "ar": "مظلة بيرغولا معمارية بيومناخية بشرائح متحركة دومولوكس"
+      },
+      "size": [
+        4,
+        3,
+        2.7
+      ],
+      "mount": "floor",
+      "surface": false,
+      "group": "outdoor",
+      "room": [
+        "outdoor"
+      ],
+      "tags": [
+        "pergola",
+        "bioclimatic",
+        "outdoor",
+        "patio",
+        "shade",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": -0.46,
+          "z": -0.45,
+          "w": 0.08,
+          "d": 0.08,
+          "y": 0,
+          "h": 0.94,
+          "color": "#22252c",
+          "finish": "dark",
+          "edges": true,
+          "fix": "wd"
+        },
+        {
+          "shape": "box",
+          "x": 0.46,
+          "z": -0.45,
+          "w": 0.08,
+          "d": 0.08,
+          "y": 0,
+          "h": 0.94,
+          "color": "#22252c",
+          "finish": "dark",
+          "edges": true,
+          "fix": "wd"
+        },
+        {
+          "shape": "box",
+          "x": -0.46,
+          "z": 0.45,
+          "w": 0.08,
+          "d": 0.08,
+          "y": 0,
+          "h": 0.94,
+          "color": "#22252c",
+          "finish": "dark",
+          "edges": true,
+          "fix": "wd"
+        },
+        {
+          "shape": "box",
+          "x": 0.46,
+          "z": 0.45,
+          "w": 0.08,
+          "d": 0.08,
+          "y": 0,
+          "h": 0.94,
+          "color": "#22252c",
+          "finish": "dark",
+          "edges": true,
+          "fix": "wd"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.98,
+          "d": 0.96,
+          "y": 0.92,
+          "h": 0.08,
+          "color": "#1a1c22",
+          "edges": true,
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.25,
+          "w": 0.88,
+          "d": 0.12,
+          "y": 0.94,
+          "h": 0.04,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.88,
+          "d": 0.12,
+          "y": 0.94,
+          "h": 0.04,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.25,
+          "w": 0.88,
+          "d": 0.12,
+          "y": 0.94,
+          "h": 0.04,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wdh"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 0.98,
+          "d": 0.96
+        },
+        {
+          "shape": "line",
+          "x1": -0.44,
+          "z1": -0.25,
+          "x2": 0.44,
+          "z2": -0.25
+        },
+        {
+          "shape": "line",
+          "x1": -0.44,
+          "z1": 0,
+          "x2": 0.44,
+          "z2": 0
+        },
+        {
+          "shape": "line",
+          "x1": -0.44,
+          "z1": 0.25,
+          "x2": 0.44,
+          "z2": 0.25
+        }
+      ]
+    }
+  ]
+}

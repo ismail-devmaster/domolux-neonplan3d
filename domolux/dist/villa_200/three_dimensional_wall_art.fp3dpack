@@ -1,0 +1,131 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.three_dimensional_wall_art",
+  "name": "Domolux Three-Dimensional Wall Artwork",
+  "publisher": "Domolux Studio",
+  "description": "Curated contemporary sculptural wall installation composed of staggered dark bronze geometric planes, textured linen panels, and brushed brass floating pins.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "three_dimensional_wall_art",
+    "name": {
+     "en": "Domolux Three-Dimensional Wall Artwork",
+     "de": "Domolux Dreidimensionales Wandkunstwerk",
+     "ar": "لوحة جدارية ثلاثية الأبعاد دومولوكس"
+    },
+    "size": [
+     1.8,
+     0.16,
+     1.4
+    ],
+    "mount": "wall",
+    "wall_y": 1,
+    "surface": false,
+    "group": "decor",
+    "room": [
+     "living",
+     "hall",
+     "dining",
+     "bedroom"
+    ],
+    "tags": [
+     "art",
+     "wall",
+     "sculptural",
+     "bronze",
+     "brass",
+     "linen",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.35,
+      "w": 0.92,
+      "d": 0.2,
+      "y": 0.05,
+      "h": 0.9,
+      "color": "#181a1f",
+      "edges": "faint"
+     },
+     {
+      "shape": "box",
+      "x": -0.25,
+      "z": -0.15,
+      "w": 0.45,
+      "d": 0.25,
+      "y": 0.15,
+      "h": 0.7,
+      "color": "fabric",
+      "finish": "fabric",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0.18,
+      "z": 0,
+      "w": 0.48,
+      "d": 0.25,
+      "y": 0.08,
+      "h": 0.84,
+      "color": "#3a2d23",
+      "finish": "wood",
+      "edges": true
+     },
+     {
+      "shape": "loft",
+      "x": -0.05,
+      "z": 0.2,
+      "w": 0.35,
+      "d": 0.3,
+      "y": 0.28,
+      "h": 0.44,
+      "tx": 0,
+      "tz": 0.25,
+      "tw": 0.32,
+      "td": 0.3,
+      "color": "#c5a059",
+      "edges": "glow"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": 0.35,
+      "w": 0.03,
+      "d": 0.03,
+      "y": 0.1,
+      "h": 0.8,
+      "rot": 25,
+      "color": "#22252c",
+      "edges": "faint"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.92,
+      "d": 0.8
+     },
+     {
+      "shape": "line",
+      "x1": -0.4,
+      "z1": -0.2,
+      "x2": 0.4,
+      "z2": 0.2
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "yc0RaOs9XrrHXRLEGJuidYe2yvG51N2cuq3tg1IPVSDfNLTyFIi9hppJ9kBfIco1OWYiMgoNGZEE3qo4adR6AQ=="
+ }
+}

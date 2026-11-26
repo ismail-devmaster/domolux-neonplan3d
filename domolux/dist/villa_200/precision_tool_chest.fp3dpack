@@ -1,0 +1,193 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.precision_tool_chest",
+  "name": "Domolux Roller-Cabinet Precision Tool Chest",
+  "publisher": "Domolux Studio",
+  "description": "Professional rolling tool cabinet with 12 full-extension ball-bearing drawers, high-density EVA foam custom tool cutouts, stainless push handle, and central barrel lock.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "precision_tool_chest",
+    "name": {
+     "en": "Domolux Roller-Cabinet Precision Tool Chest",
+     "de": "Domolux Rollbarer Präzisions-Werkzeugwagen",
+     "ar": "عربة وصندوق أدوات الورشة الدقيقة المتنقل دومولوكس"
+    },
+    "size": [
+     0.85,
+     0.55,
+     1.1
+    ],
+    "mount": "floor",
+    "surface": false,
+    "group": "storage",
+    "room": [
+     "storage"
+    ],
+    "tags": [
+     "tool_chest",
+     "toolbox",
+     "workshop",
+     "garage",
+     "storage",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "cyl",
+      "x": -0.38,
+      "z": -0.38,
+      "w": 0.12,
+      "d": 0.12,
+      "y": 0,
+      "h": 0.12,
+      "color": "#111215",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": 0.38,
+      "z": -0.38,
+      "w": 0.12,
+      "d": 0.12,
+      "y": 0,
+      "h": 0.12,
+      "color": "#111215",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": -0.38,
+      "z": 0.38,
+      "w": 0.12,
+      "d": 0.12,
+      "y": 0,
+      "h": 0.12,
+      "color": "#111215",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": 0.38,
+      "z": 0.38,
+      "w": 0.12,
+      "d": 0.12,
+      "y": 0,
+      "h": 0.12,
+      "color": "#111215",
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.94,
+      "d": 0.92,
+      "y": 0.12,
+      "h": 0.82,
+      "color": "#252830",
+      "finish": "dark",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.96,
+      "d": 0.94,
+      "y": 0.94,
+      "h": 0.06,
+      "color": "#8a6642",
+      "finish": "wood",
+      "edges": true,
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.44,
+      "w": 0.86,
+      "d": 0.03,
+      "y": 0.2,
+      "h": 0.03,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.44,
+      "w": 0.86,
+      "d": 0.03,
+      "y": 0.35,
+      "h": 0.03,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.44,
+      "w": 0.86,
+      "d": 0.03,
+      "y": 0.5,
+      "h": 0.03,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.44,
+      "w": 0.86,
+      "d": 0.03,
+      "y": 0.65,
+      "h": 0.03,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.44,
+      "w": 0.86,
+      "d": 0.03,
+      "y": 0.8,
+      "h": 0.03,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wdh"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.96,
+      "d": 0.94
+     },
+     {
+      "shape": "line",
+      "x1": -0.43,
+      "z1": 0.44,
+      "x2": 0.43,
+      "z2": 0.44
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "Rp19c3MWRs4zuYfw89hnGkJMEqefgLB7eiuF4AP4kczXBryZou7TMRQLp9gN/syLaCLo4g8ol+xpSvWAO7fWCg=="
+ }
+}

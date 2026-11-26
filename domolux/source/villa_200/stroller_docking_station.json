@@ -1,0 +1,132 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.stroller_docking_station",
+  "name": "Domolux Estate Entrance Stroller Valet and Charging Port",
+  "publisher": "Domolux Studio",
+  "description": "Dedicated entryway stroller parking alcove with inductive battery charging pad for e-strollers, overhead UV sterilizing halo, fluted oak wall panel, and bronze canopy hook.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "stroller_docking_station",
+      "name": {
+        "en": "Domolux Estate Entrance Stroller Valet and Charging Port",
+        "de": "Domolux Kinderwagen-Dockingstation mit Ladestation",
+        "ar": "محطة شحن وركن عربات الأطفال للمداخل الفاخرة دومولوكس"
+      },
+      "size": [
+        0.85,
+        0.7,
+        1.1
+      ],
+      "mount": "floor",
+      "surface": false,
+      "group": "storage",
+      "room": [
+        "hallway",
+        "storage"
+      ],
+      "tags": [
+        "stroller",
+        "entryway",
+        "charging",
+        "nursery",
+        "valet",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.94,
+          "d": 0.94,
+          "y": 0,
+          "h": 0.06,
+          "color": "#181a1f",
+          "edges": true,
+          "fix": "h"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": 0.15,
+          "w": 0.38,
+          "d": 0.38,
+          "y": 0.06,
+          "h": 0.01,
+          "color": "#00e5ff",
+          "glow": true,
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.42,
+          "w": 0.94,
+          "d": 0.08,
+          "y": 0.06,
+          "h": 0.92,
+          "color": "#3d2b1f",
+          "finish": "wood",
+          "edges": true,
+          "fix": "d"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.22,
+          "w": 0.88,
+          "d": 0.38,
+          "y": 0.9,
+          "h": 0.04,
+          "color": "#1c1e22",
+          "fix": "h"
+        },
+        {
+          "shape": "cyl",
+          "x": -0.25,
+          "z": -0.34,
+          "w": 0.03,
+          "d": 0.03,
+          "y": 0.76,
+          "h": 0.12,
+          "axis": "z",
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": 0.25,
+          "z": -0.34,
+          "w": 0.03,
+          "d": 0.03,
+          "y": 0.76,
+          "h": 0.12,
+          "axis": "z",
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wdh"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 0.94,
+          "d": 0.94
+        },
+        {
+          "shape": "circle",
+          "x": 0,
+          "z": 0.15,
+          "r": 0.19
+        }
+      ]
+    }
+  ]
+}

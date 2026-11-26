@@ -1,0 +1,105 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.retractable_pool_cover",
+  "name": "Domolux Motorized Architectural In-Ground Pool Safety Cover",
+  "publisher": "Domolux Studio",
+  "description": "Concealed in-ground automated swimming pool cover housing rigid polycarbonate solar heating slats, heavy stainless winding tube, and flush titanium terrace hatch.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "retractable_pool_cover",
+      "name": {
+        "en": "Domolux Motorized Architectural In-Ground Pool Safety Cover",
+        "de": "Domolux Unterflur-Sicherheits-Poolabdeckung",
+        "ar": "غطاء حوض السباحة المعماري الآلي المنزلق في الأرضية دومولوكس"
+      },
+      "size": [
+        4.2,
+        0.8,
+        0.95
+      ],
+      "mount": "floor",
+      "surface": false,
+      "group": "outdoor",
+      "room": [
+        "outdoor"
+      ],
+      "tags": [
+        "pool_cover",
+        "retractable",
+        "safety",
+        "pool",
+        "motorized",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.98,
+          "d": 0.96,
+          "y": 0,
+          "h": 0.92,
+          "color": "#141518",
+          "edges": true
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": -0.05,
+          "w": 0.45,
+          "d": 0.45,
+          "y": 0.25,
+          "h": 0.92,
+          "axis": "x",
+          "color": "metal",
+          "edges": true,
+          "fix": "wd"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": -0.05,
+          "w": 0.65,
+          "d": 0.65,
+          "y": 0.2,
+          "h": 0.88,
+          "axis": "x",
+          "color": "#1e3a47",
+          "fix": "wd"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.98,
+          "d": 0.96,
+          "y": 0.94,
+          "h": 0.06,
+          "color": "#495057",
+          "edges": true,
+          "fix": "h"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 0.98,
+          "d": 0.96
+        },
+        {
+          "shape": "circle",
+          "x": 0,
+          "z": -0.05,
+          "r": 0.25
+        }
+      ]
+    }
+  ]
+}

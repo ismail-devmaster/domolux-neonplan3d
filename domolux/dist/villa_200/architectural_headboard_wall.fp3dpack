@@ -1,0 +1,177 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.architectural_headboard_wall",
+  "name": "Domolux Monumental Upholstered Headboard Wall Suite",
+  "publisher": "Domolux Studio",
+  "description": "Full-width master suite headboard installation with vertical fluted boucle acoustic panels, integrated floating nightstands, brushed brass reveals, and concealed ambient LED lighting.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "architectural_headboard_wall",
+    "name": {
+     "en": "Domolux Monumental Upholstered Headboard Wall Suite",
+     "de": "Domolux Monumentale Akustik-Kopfwand mit Nachttischen",
+     "ar": "جدار اللوح الرأسي المعماري المنجد مع إضاءة محيطية دومولوكس"
+    },
+    "size": [
+     3.2,
+     0.25,
+     2.4
+    ],
+    "mount": "wall",
+    "wall_y": 0,
+    "surface": false,
+    "group": "bedroom",
+    "room": [
+     "bedroom"
+    ],
+    "tags": [
+     "headboard",
+     "wall_panel",
+     "upholstered",
+     "lighting",
+     "bedroom",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.42,
+      "w": 0.98,
+      "d": 0.08,
+      "y": 0,
+      "h": 0.98,
+      "color": "#1c1d22",
+      "fix": "d"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.15,
+      "w": 0.54,
+      "d": 0.18,
+      "y": 0,
+      "h": 0.96,
+      "color": "#dfd7cb",
+      "finish": "fabric",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": -0.38,
+      "z": -0.22,
+      "w": 0.22,
+      "d": 0.12,
+      "y": 0,
+      "h": 0.96,
+      "color": "#362619",
+      "finish": "wood",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0.38,
+      "z": -0.22,
+      "w": 0.22,
+      "d": 0.12,
+      "y": 0,
+      "h": 0.96,
+      "color": "#362619",
+      "finish": "wood",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": -0.38,
+      "z": 0.15,
+      "w": 0.2,
+      "d": 0.38,
+      "y": 0.22,
+      "h": 0.08,
+      "color": "#1a1b1f",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0.38,
+      "z": 0.15,
+      "w": 0.2,
+      "d": 0.38,
+      "y": 0.22,
+      "h": 0.08,
+      "color": "#1a1b1f",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": -0.27,
+      "z": -0.05,
+      "w": 0.015,
+      "d": 0.05,
+      "y": 0,
+      "h": 0.98,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wd"
+     },
+     {
+      "shape": "box",
+      "x": 0.27,
+      "z": -0.05,
+      "w": 0.015,
+      "d": 0.05,
+      "y": 0,
+      "h": 0.98,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wd"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.36,
+      "w": 0.96,
+      "d": 0.04,
+      "y": 0.97,
+      "h": 0.02,
+      "color": "#fff3cc",
+      "glow": true,
+      "fix": "yd"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": -0.2,
+      "w": 0.98,
+      "d": 0.4
+     },
+     {
+      "shape": "rect",
+      "x": -0.38,
+      "z": 0.15,
+      "w": 0.2,
+      "d": 0.38
+     },
+     {
+      "shape": "rect",
+      "x": 0.38,
+      "z": 0.15,
+      "w": 0.2,
+      "d": 0.38
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "5A0PJwPkjqGaiI4fVQBeBVnGGaW66Ep+Dx6RGcU81nqJWKa8jIATqg0SSLoBeC1T7y5nyLVf+jYMpIHXuAGKDQ=="
+ }
+}

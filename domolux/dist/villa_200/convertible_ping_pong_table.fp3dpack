@@ -1,0 +1,149 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.convertible_ping_pong_table",
+  "name": "Domolux Minimalist Executive Table Tennis and Conference Table",
+  "publisher": "Domolux Studio",
+  "description": "Multi-functional tournament table-tennis table that transforms into an executive conference table, featuring a matte black Fenix top, perforated brushed brass net, and solid walnut legs.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "convertible_ping_pong_table",
+    "name": {
+     "en": "Domolux Minimalist Executive Table Tennis and Conference Table",
+     "de": "Domolux Designer-Tischtennistisch & Konferenztisch",
+     "ar": "طاولة تنس الطاولة والاجتماعات الفاخرة القابلة للتحول دومولوكس"
+    },
+    "size": [
+     2.74,
+     1.52,
+     0.76
+    ],
+    "mount": "floor",
+    "surface": false,
+    "group": "living",
+    "room": [
+     "living",
+     "office"
+    ],
+    "tags": [
+     "table_tennis",
+     "ping_pong",
+     "games",
+     "conference",
+     "luxury",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": -0.4,
+      "z": -0.38,
+      "w": 0.08,
+      "d": 0.08,
+      "y": 0,
+      "h": 0.9,
+      "color": "#362619",
+      "finish": "wood",
+      "fix": "wd"
+     },
+     {
+      "shape": "box",
+      "x": 0.4,
+      "z": -0.38,
+      "w": 0.08,
+      "d": 0.08,
+      "y": 0,
+      "h": 0.9,
+      "color": "#362619",
+      "finish": "wood",
+      "fix": "wd"
+     },
+     {
+      "shape": "box",
+      "x": -0.4,
+      "z": 0.38,
+      "w": 0.08,
+      "d": 0.08,
+      "y": 0,
+      "h": 0.9,
+      "color": "#362619",
+      "finish": "wood",
+      "fix": "wd"
+     },
+     {
+      "shape": "box",
+      "x": 0.4,
+      "z": 0.38,
+      "w": 0.08,
+      "d": 0.08,
+      "y": 0,
+      "h": 0.9,
+      "color": "#362619",
+      "finish": "wood",
+      "fix": "wd"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.96,
+      "y": 0.9,
+      "h": 0.06,
+      "color": "#141518",
+      "edges": true,
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.015,
+      "y": 0.96,
+      "h": 0.01,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "d"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.02,
+      "d": 0.98,
+      "y": 0.96,
+      "h": 0.18,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "w"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.96
+     },
+     {
+      "shape": "line",
+      "x1": 0,
+      "z1": -0.48,
+      "x2": 0,
+      "z2": 0.48
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "plZFVfKrCpqqoQW3WH6hbrrBLsahdOTAsA5GRjPsK8GriRmhQ/Ef89wZz8sAQoWkzPQ4Tls6Nxcsord0ZDv7AQ=="
+ }
+}

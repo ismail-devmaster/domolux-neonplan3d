@@ -1,0 +1,132 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.monumental_art_pedestal",
+  "name": "Domolux Monumental Sculptural Art Pedestal",
+  "publisher": "Domolux Studio",
+  "description": "Museum sculpture pedestal sculpted from solid Belgian bluestone featuring asymmetrical chamfered geometry, satin bronze reveal collar, and recessed floor-wash illumination.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "monumental_art_pedestal",
+    "name": {
+     "en": "Domolux Monumental Sculptural Art Pedestal",
+     "de": "Domolux Monumentales Kunst-Skulpturenpodest",
+     "ar": "قاعدة عرض منحوتات فنية ضخمة دومولوكس"
+    },
+    "size": [
+     0.65,
+     0.65,
+     1.25
+    ],
+    "mount": "floor",
+    "surface": true,
+    "group": "decor",
+    "room": [
+     "hall",
+     "living",
+     "dining"
+    ],
+    "tags": [
+     "pedestal",
+     "sculpture",
+     "art",
+     "stone",
+     "bluestone",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.85,
+      "d": 0.85,
+      "y": 0,
+      "h": 0.04,
+      "color": "#141518",
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.88,
+      "d": 0.88,
+      "y": 0.02,
+      "h": 0.02,
+      "color": "#ffe0b2",
+      "glow": true,
+      "edges": "glow",
+      "fix": "wdh"
+     },
+     {
+      "shape": "loft",
+      "x": 0,
+      "z": 0,
+      "w": 0.96,
+      "d": 0.96,
+      "y": 0.04,
+      "h": 0.82,
+      "tx": 0,
+      "tz": 0,
+      "tw": 0.82,
+      "td": 0.82,
+      "color": "#25272e",
+      "finish": "dark",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.84,
+      "d": 0.84,
+      "y": 0.86,
+      "h": 0.03,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.88,
+      "d": 0.88,
+      "y": 0.89,
+      "h": 0.11,
+      "color": "#25272e",
+      "finish": "dark",
+      "edges": true,
+      "fix": "h"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.96,
+      "d": 0.96
+     },
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.84,
+      "d": 0.84,
+      "fill": true
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "6wxuGUMAFnDQk2iXlKfr7MHjfcBtG37d2Aa1s5tHJUNb+haOSPi0tOMstveL9R15h5e3BbzAa9mfJguoEOgHDA=="
+ }
+}

@@ -1,0 +1,42 @@
+{
+  "gitCommit": "0ba8021bf93b7c5dccbf24b0005beab615f65c5e",
+  "gitBranch": "main",
+  "nodeVersion": "v22.23.2",
+  "pythonVersion": "Python 3.14.7",
+  "osInfo": "Linux 6.19.14+kali-amd64 x86_64",
+  "auditDate": "2026-11-26",
+  "totalBytes": 599624,
+  "sizeDecKb": "599.624",
+  "sizeDecMb": "0.599624",
+  "sizeBinKib": "585.570",
+  "sizeBinMib": "0.571846",
+  "minSize": 2102,
+  "maxSize": 6071,
+  "medianSize": 2853,
+  "avgSize": 2998.12,
+  "totalTriangles": 32148,
+  "avgTriangles": 160.74,
+  "totalParts": 1491,
+  "shapeCounts": {
+    "box": 1070,
+    "cyl": 324,
+    "loft": 97
+  },
+  "coldBulkTime": 309.4541299999996,
+  "avgWarmBulkTime": 302.6277625,
+  "avgSingleTime": 0.4285185649999923,
+  "medianSingleTime": 0.3586800000000494,
+  "p95SingleTime": 0.7887379999999666,
+  "minSingleTime": 0.2141189999999824,
+  "maxSingleTime": 2.426100000000133,
+  "maxSimilarPair": [
+    "kitchen_waste_compactor",
+    "professional_ice_maker",
+    "99.5%"
+  ],
+  "avgQuality": "94.7",
+  "medianQuality": 95,
+  "minQuality": 93,
+  "maxQuality": 97,
+  "below90Count": 0
+}

@@ -1,0 +1,121 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.raised_stone_platform",
+  "name": "Domolux Raised Architectural Stone Platform",
+  "publisher": "Domolux Studio",
+  "description": "Monolithic raised architectural stone stage in honed silver travertine featuring recessed shadow gap sub-base, concealed perimeter floor wash LED, and cantilevered bullnose lip.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "raised_stone_platform",
+      "name": {
+        "en": "Domolux Raised Architectural Stone Platform",
+        "de": "Domolux Erhöhtes Architektur-Steinpodest",
+        "ar": "منصة حجرية معمارية مرتفعة دومولوكس"
+      },
+      "size": [
+        3.4,
+        2.6,
+        0.24
+      ],
+      "mount": "floor",
+      "surface": true,
+      "group": "floor",
+      "room": [
+        "living",
+        "hall",
+        "bath",
+        "bedroom"
+      ],
+      "tags": [
+        "platform",
+        "stone",
+        "travertine",
+        "stage",
+        "architectural",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.9,
+          "d": 0.9,
+          "y": 0,
+          "h": 0.25,
+          "color": "#141518",
+          "edges": "faint"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.92,
+          "d": 0.92,
+          "y": 0.05,
+          "h": 0.15,
+          "color": "#ffe0b2",
+          "glow": true,
+          "edges": "glow"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.98,
+          "d": 0.98,
+          "y": 0.25,
+          "h": 0.65,
+          "color": "#c8c3b9",
+          "finish": "body",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 1,
+          "d": 1,
+          "y": 0.85,
+          "h": 0.15,
+          "color": "#d6d1c8",
+          "finish": "body",
+          "edges": true,
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.99,
+          "d": 0.99,
+          "y": 0.82,
+          "h": 0.03,
+          "color": "#9e8354",
+          "edges": "glow",
+          "fix": "h"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 1,
+          "d": 1
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 0.92,
+          "d": 0.92
+        }
+      ]
+    }
+  ]
+}

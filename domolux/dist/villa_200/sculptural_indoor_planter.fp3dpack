@@ -1,0 +1,209 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.sculptural_indoor_planter",
+  "name": "Domolux Sculptural Indoor Planter Trough",
+  "publisher": "Domolux Studio",
+  "description": "Elongated architectural indoor landscape trough cast in dark basalt composite with satin champagne brass rim collar, self-watering sub-irrigation tank, and lush Ficus lyrata architectural foliage.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "sculptural_indoor_planter",
+    "name": {
+     "en": "Domolux Sculptural Indoor Planter Trough",
+     "de": "Domolux Skulpturaler Innenraum-Pflanztrog",
+     "ar": "حوض نباتات داخلي نحتي دومولوكس"
+    },
+    "size": [
+     1.8,
+     0.55,
+     1.45
+    ],
+    "mount": "floor",
+    "surface": false,
+    "group": "living",
+    "room": [
+     "living",
+     "hall",
+     "dining"
+    ],
+    "tags": [
+     "planter",
+     "trough",
+     "plants",
+     "botanical",
+     "basalt",
+     "brass",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.9,
+      "d": 0.85,
+      "y": 0,
+      "h": 0.04,
+      "color": "#141518",
+      "fix": "h"
+     },
+     {
+      "shape": "loft",
+      "x": 0,
+      "z": 0,
+      "w": 0.92,
+      "d": 0.88,
+      "y": 0.04,
+      "h": 0.45,
+      "tx": 0,
+      "tz": 0,
+      "tw": 0.98,
+      "td": 0.95,
+      "color": "#22252c",
+      "finish": "dark",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 1,
+      "d": 0.98,
+      "y": 0.48,
+      "h": 0.03,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.92,
+      "d": 0.88,
+      "y": 0.46,
+      "h": 0.04,
+      "color": "#2d241e",
+      "finish": "pot"
+     },
+     {
+      "shape": "cyl",
+      "x": -0.28,
+      "z": 0,
+      "w": 0.06,
+      "d": 0.06,
+      "y": 0.5,
+      "h": 0.4,
+      "color": "#3d2817",
+      "fix": "wd"
+     },
+     {
+      "shape": "loft",
+      "x": -0.28,
+      "z": 0,
+      "w": 0.45,
+      "d": 0.45,
+      "y": 0.7,
+      "h": 0.28,
+      "tx": -0.28,
+      "tz": 0,
+      "tw": 0.3,
+      "td": 0.3,
+      "color": "plant",
+      "finish": "plant",
+      "edges": true
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": 0,
+      "w": 0.06,
+      "d": 0.06,
+      "y": 0.5,
+      "h": 0.5,
+      "color": "#3d2817",
+      "fix": "wd"
+     },
+     {
+      "shape": "loft",
+      "x": 0,
+      "z": 0,
+      "w": 0.55,
+      "d": 0.55,
+      "y": 0.8,
+      "h": 0.35,
+      "tx": 0,
+      "tz": 0,
+      "tw": 0.35,
+      "td": 0.35,
+      "color": "plant",
+      "finish": "plant",
+      "edges": true
+     },
+     {
+      "shape": "cyl",
+      "x": 0.28,
+      "z": 0,
+      "w": 0.06,
+      "d": 0.06,
+      "y": 0.5,
+      "h": 0.4,
+      "color": "#3d2817",
+      "fix": "wd"
+     },
+     {
+      "shape": "loft",
+      "x": 0.28,
+      "z": 0,
+      "w": 0.45,
+      "d": 0.45,
+      "y": 0.7,
+      "h": 0.28,
+      "tx": 0.28,
+      "tz": 0,
+      "tw": 0.3,
+      "td": 0.3,
+      "color": "plant",
+      "finish": "plant",
+      "edges": true
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 1,
+      "d": 0.98
+     },
+     {
+      "shape": "circle",
+      "x": -0.28,
+      "z": 0,
+      "r": 0.2
+     },
+     {
+      "shape": "circle",
+      "x": 0,
+      "z": 0,
+      "r": 0.25
+     },
+     {
+      "shape": "circle",
+      "x": 0.28,
+      "z": 0,
+      "r": 0.2
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "E4Fo9b9JR6UibIqxiKNz4Ctud93yKdyL5a/f/2nA/EdPKKBCCiv/8v+29gYN3JKVtLwfcEwKsao+22TEnC02Aw=="
+ }
+}

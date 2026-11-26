@@ -1,0 +1,146 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.digital_health_scale",
+  "name": "Domolux Biometric Tempered-Glass Smart Scale",
+  "publisher": "Domolux Studio",
+  "description": "Ultra-thin tempered smoked-glass body composition scale with chamfered satin brass perimeter band, four-point ITO conductive sensor pads, and concealed matrix LED readouts.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "digital_health_scale",
+    "name": {
+     "en": "Domolux Biometric Tempered-Glass Smart Scale",
+     "de": "Domolux Smarte Glas-Körperanalysewaage",
+     "ar": "ميزان الصحة الذكي الزجاجي بمؤشرات قياس متقدمة دومولوكس"
+    },
+    "size": [
+     0.38,
+     0.38,
+     0.06
+    ],
+    "mount": "floor",
+    "surface": false,
+    "group": "bathroom",
+    "room": [
+     "bathroom"
+    ],
+    "tags": [
+     "scale",
+     "health",
+     "smart",
+     "biometric",
+     "glass",
+     "bathroom",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "cyl",
+      "x": -0.38,
+      "z": -0.38,
+      "w": 0.12,
+      "d": 0.12,
+      "y": 0,
+      "h": 0.25,
+      "color": "#111215",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": 0.38,
+      "z": -0.38,
+      "w": 0.12,
+      "d": 0.12,
+      "y": 0,
+      "h": 0.25,
+      "color": "#111215",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": -0.38,
+      "z": 0.38,
+      "w": 0.12,
+      "d": 0.12,
+      "y": 0,
+      "h": 0.25,
+      "color": "#111215",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": 0.38,
+      "z": 0.38,
+      "w": 0.12,
+      "d": 0.12,
+      "y": 0,
+      "h": 0.25,
+      "color": "#111215",
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.98,
+      "y": 0.25,
+      "h": 0.4,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.94,
+      "d": 0.94,
+      "y": 0.65,
+      "h": 0.35,
+      "color": "#1a1e24",
+      "finish": "glass",
+      "edges": true,
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.28,
+      "w": 0.35,
+      "d": 0.12,
+      "y": 0.98,
+      "h": 0.02,
+      "color": "#ffffff",
+      "glow": true,
+      "fix": "wdh"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.96,
+      "d": 0.96
+     },
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": -0.28,
+      "w": 0.35,
+      "d": 0.12
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "YWgddnh8y5G2rh+wK93jkPI/llxgIDCTPr8Z/tC/3Sc95CzPxxD/h8MMoZh5mJVrmNI8qPPKyBUH9OQ0jEcGBw=="
+ }
+}

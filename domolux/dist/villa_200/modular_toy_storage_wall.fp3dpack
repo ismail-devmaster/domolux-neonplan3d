@@ -1,0 +1,166 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.modular_toy_storage_wall",
+  "name": "Domolux Curated Architectural Toy and Book Display System",
+  "publisher": "Domolux Studio",
+  "description": "Architectural wall storage system with rhythmic open oak display cubes, felt-lined rolling toy chests, integrated low reading ledge, and champagne brass hardware.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "modular_toy_storage_wall",
+    "name": {
+     "en": "Domolux Curated Architectural Toy and Book Display System",
+     "de": "Domolux Modulare Spielzeug- & Bücherwand",
+     "ar": "جدار تخزين وتنظيم الألعاب والكتب المعماري للأطفال دومولوكس"
+    },
+    "size": [
+     2,
+     0.45,
+     1.6
+    ],
+    "mount": "floor",
+    "surface": false,
+    "group": "storage",
+    "room": [
+     "bedroom",
+     "living"
+    ],
+    "tags": [
+     "toy_storage",
+     "bookcase",
+     "nursery",
+     "modular",
+     "storage",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.94,
+      "y": 0,
+      "h": 0.06,
+      "color": "#1c1e22",
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.96,
+      "d": 0.92,
+      "y": 0.06,
+      "h": 0.35,
+      "color": "#2d313a",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": -0.32,
+      "z": 0.15,
+      "w": 0.28,
+      "d": 0.7,
+      "y": 0.08,
+      "h": 0.3,
+      "color": "#7f8c8d",
+      "finish": "fabric",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.15,
+      "w": 0.28,
+      "d": 0.7,
+      "y": 0.08,
+      "h": 0.3,
+      "color": "#7f8c8d",
+      "finish": "fabric",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0.32,
+      "z": 0.15,
+      "w": 0.28,
+      "d": 0.7,
+      "y": 0.08,
+      "h": 0.3,
+      "color": "#7f8c8d",
+      "finish": "fabric",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.15,
+      "w": 0.96,
+      "d": 0.6,
+      "y": 0.41,
+      "h": 0.57,
+      "color": "wood",
+      "finish": "wood",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": -0.16,
+      "z": -0.15,
+      "w": 0.02,
+      "d": 0.6,
+      "y": 0.41,
+      "h": 0.57,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wd"
+     },
+     {
+      "shape": "box",
+      "x": 0.16,
+      "z": -0.15,
+      "w": 0.02,
+      "d": 0.6,
+      "y": 0.41,
+      "h": 0.57,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wd"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.92
+     },
+     {
+      "shape": "line",
+      "x1": -0.16,
+      "z1": -0.45,
+      "x2": -0.16,
+      "z2": 0.45
+     },
+     {
+      "shape": "line",
+      "x1": 0.16,
+      "z1": -0.45,
+      "x2": 0.16,
+      "z2": 0.45
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "iA9im9PTv+0ooKUySvEYvfkfwznStIjZ8+phXlWPPYzYo92+f2VQmkl3mjKw2toV6bkzcyzeD3FDjNU5LLxiDw=="
+ }
+}

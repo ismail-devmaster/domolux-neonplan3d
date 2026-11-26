@@ -1,0 +1,163 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.sculptural_ceiling_raft",
+  "name": "Domolux Sculptural Gypsum Ceiling Raft",
+  "publisher": "Domolux Studio",
+  "description": "Floating organic multi-tiered gypsum ceiling raft with knife-edge shadow lines, hidden perimeter cove LED ambient wash, and recessed downlight ports.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "sculptural_ceiling_raft",
+      "name": {
+        "en": "Domolux Sculptural Gypsum Ceiling Raft",
+        "de": "Domolux Skulpturales Gips-Deckensegel",
+        "ar": "شراع سقفي جبسي نحتي دومولوكس"
+      },
+      "size": [
+        2.8,
+        2,
+        0.35
+      ],
+      "mount": "ceiling",
+      "surface": false,
+      "group": "ceiling",
+      "room": [
+        "living",
+        "dining",
+        "bedroom"
+      ],
+      "tags": [
+        "ceiling",
+        "raft",
+        "cove",
+        "floating",
+        "gypsum",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.7,
+          "d": 0.7,
+          "y": 0.75,
+          "h": 0.25,
+          "color": "#1a1b20",
+          "edges": "faint"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.85,
+          "d": 0.85,
+          "y": 0.7,
+          "h": 0.03,
+          "color": "#ffe0b2",
+          "glow": true,
+          "edges": "glow"
+        },
+        {
+          "shape": "loft",
+          "x": 0,
+          "z": 0,
+          "w": 0.88,
+          "d": 0.88,
+          "y": 0.25,
+          "h": 0.45,
+          "tx": 0,
+          "tz": 0,
+          "tw": 1,
+          "td": 1,
+          "color": "#f8f9fa",
+          "finish": "white",
+          "edges": true
+        },
+        {
+          "shape": "loft",
+          "x": 0,
+          "z": 0,
+          "w": 0.55,
+          "d": 0.55,
+          "y": 0.05,
+          "h": 0.2,
+          "tx": 0,
+          "tz": 0,
+          "tw": 0.62,
+          "td": 0.62,
+          "color": "#eaecee",
+          "finish": "white",
+          "edges": true
+        },
+        {
+          "shape": "cyl",
+          "x": -0.2,
+          "z": -0.2,
+          "w": 0.08,
+          "d": 0.08,
+          "y": 0,
+          "h": 0.05,
+          "color": "#ffecb3",
+          "glow": true,
+          "edges": "glow"
+        },
+        {
+          "shape": "cyl",
+          "x": 0.2,
+          "z": -0.2,
+          "w": 0.08,
+          "d": 0.08,
+          "y": 0,
+          "h": 0.05,
+          "color": "#ffecb3",
+          "glow": true,
+          "edges": "glow"
+        },
+        {
+          "shape": "cyl",
+          "x": -0.2,
+          "z": 0.2,
+          "w": 0.08,
+          "d": 0.08,
+          "y": 0,
+          "h": 0.05,
+          "color": "#ffecb3",
+          "glow": true,
+          "edges": "glow"
+        },
+        {
+          "shape": "cyl",
+          "x": 0.2,
+          "z": 0.2,
+          "w": 0.08,
+          "d": 0.08,
+          "y": 0,
+          "h": 0.05,
+          "color": "#ffecb3",
+          "glow": true,
+          "edges": "glow"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 1,
+          "d": 1
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 0.6,
+          "d": 0.6
+        }
+      ]
+    }
+  ]
+}

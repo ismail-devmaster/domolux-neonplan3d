@@ -1,0 +1,172 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.museum_display_vitrine",
+  "name": "Domolux Museum Display Vitrine",
+  "publisher": "Domolux Studio",
+  "description": "Conservation-grade museum glass display vitrine with anti-reflective UV-filtering laminated glass hood, concealed micro-fiberoptic illumination, and brushed champagne bronze base plinth.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "museum_display_vitrine",
+      "name": {
+        "en": "Domolux Museum Display Vitrine",
+        "de": "Domolux Museums-Präsentationsvitrine",
+        "ar": "خزانة عرض متحفية فاخرة دومولوكس"
+      },
+      "size": [
+        0.75,
+        0.75,
+        1.45
+      ],
+      "mount": "floor",
+      "surface": true,
+      "group": "living",
+      "room": [
+        "hall",
+        "living",
+        "library"
+      ],
+      "tags": [
+        "vitrine",
+        "display",
+        "museum",
+        "glass",
+        "collectibles",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.88,
+          "d": 0.88,
+          "y": 0,
+          "h": 0.03,
+          "color": "#141519",
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.92,
+          "d": 0.92,
+          "y": 0.03,
+          "h": 0.52,
+          "color": "#7a623a",
+          "finish": "dark",
+          "edges": "glow",
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.85,
+          "d": 0.85,
+          "y": 0.55,
+          "h": 0.03,
+          "color": "#18191f",
+          "edges": "faint",
+          "fix": "h"
+        },
+        {
+          "shape": "cyl",
+          "x": -0.36,
+          "z": -0.36,
+          "w": 0.03,
+          "d": 0.03,
+          "y": 0.58,
+          "h": 0.04,
+          "color": "#fff5ea",
+          "glow": true,
+          "edges": "glow",
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": 0.36,
+          "z": -0.36,
+          "w": 0.03,
+          "d": 0.03,
+          "y": 0.58,
+          "h": 0.04,
+          "color": "#fff5ea",
+          "glow": true,
+          "edges": "glow",
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": -0.36,
+          "z": 0.36,
+          "w": 0.03,
+          "d": 0.03,
+          "y": 0.58,
+          "h": 0.04,
+          "color": "#fff5ea",
+          "glow": true,
+          "edges": "glow",
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": 0.36,
+          "z": 0.36,
+          "w": 0.03,
+          "d": 0.03,
+          "y": 0.58,
+          "h": 0.04,
+          "color": "#fff5ea",
+          "glow": true,
+          "edges": "glow",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.88,
+          "d": 0.88,
+          "y": 0.58,
+          "h": 0.4,
+          "color": "glass",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.9,
+          "d": 0.9,
+          "y": 0.98,
+          "h": 0.02,
+          "color": "glass",
+          "edges": true,
+          "fix": "h"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 0.92,
+          "d": 0.92
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 0.85,
+          "d": 0.85,
+          "fill": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.concealed_security_camera",
+  "name": "Domolux Architectural Flush-Mount Micro PTZ Dome Camera",
+  "publisher": "Domolux Studio",
+  "description": "Flush ceiling-recessed 4K optical zoom micro-dome camera with optically neutral smoked acrylic half-sphere dome, silent magnetic stepper pan-tilt, and infrared illuminator ring.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "concealed_security_camera",
+    "name": {
+     "en": "Domolux Architectural Flush-Mount Micro PTZ Dome Camera",
+     "de": "Domolux Architektonische Decken-Überwachungskamera",
+     "ar": "كاميرا المراقبة المعمارية السقفية المخفية بزجاج مدخن دومولوكس"
+    },
+    "size": [
+     0.14,
+     0.14,
+     0.12
+    ],
+    "mount": "ceiling",
+    "surface": false,
+    "group": "lighting",
+    "room": [
+     "hallway",
+     "living",
+     "outdoor"
+    ],
+    "tags": [
+     "camera",
+     "security",
+     "ptz",
+     "cctv",
+     "ceiling",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": 0,
+      "w": 0.96,
+      "d": 0.96,
+      "y": 0.88,
+      "h": 0.1,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "h"
+     },
+     {
+      "shape": "loft",
+      "x": 0,
+      "z": 0,
+      "w": 0.82,
+      "d": 0.82,
+      "y": 0.25,
+      "h": 0.65,
+      "tx": 0,
+      "tz": 0,
+      "tw": 0.6,
+      "td": 0.6,
+      "color": "#141820",
+      "finish": "glass",
+      "edges": true
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": 0,
+      "w": 0.35,
+      "d": 0.35,
+      "y": 0.45,
+      "h": 0.35,
+      "color": "#00e5ff",
+      "glow": true,
+      "fix": "wdh"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "circle",
+      "x": 0,
+      "z": 0,
+      "r": 0.48
+     },
+     {
+      "shape": "circle",
+      "x": 0,
+      "z": 0,
+      "r": 0.18
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "IGe9tT4Kh/UDVNmL/OTpRtoZk00PunSZEPutnhCtMs63kQeJ7TpqcLlLZqnzIYV2ksFioGhoICM1zTs98QK1BA=="
+ }
+}

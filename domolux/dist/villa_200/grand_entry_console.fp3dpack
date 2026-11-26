@@ -1,0 +1,209 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.grand_entry_console",
+  "name": "Domolux Grand Entrance Console",
+  "publisher": "Domolux Studio",
+  "description": "Architectural foyer statement console table with 60mm honed Calacatta marble slab, sculptural dark bronze interlocking arch base, and two soft-closing fluted walnut accessory drawers.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "grand_entry_console",
+    "name": {
+     "en": "Domolux Grand Entrance Console",
+     "de": "Domolux Monumentale Eingangs-Konsole",
+     "ar": "طاولة كونسول المدخل الفاخرة دومولوكس"
+    },
+    "size": [
+     2.2,
+     0.5,
+     0.88
+    ],
+    "mount": "floor",
+    "surface": true,
+    "group": "living",
+    "room": [
+     "hall",
+     "living",
+     "dining"
+    ],
+    "tags": [
+     "console",
+     "foyer",
+     "marble",
+     "bronze",
+     "walnut",
+     "luxury",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": -0.35,
+      "z": 0,
+      "w": 0.12,
+      "d": 0.85,
+      "y": 0,
+      "h": 0.04,
+      "color": "#3d301b",
+      "edges": "glow",
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": 0.35,
+      "z": 0,
+      "w": 0.12,
+      "d": 0.85,
+      "y": 0,
+      "h": 0.04,
+      "color": "#3d301b",
+      "edges": "glow",
+      "fix": "wdh"
+     },
+     {
+      "shape": "loft",
+      "x": -0.35,
+      "z": 0,
+      "w": 0.1,
+      "d": 0.7,
+      "y": 0.04,
+      "h": 0.68,
+      "tx": -0.3,
+      "tz": 0,
+      "tw": 0.14,
+      "td": 0.75,
+      "color": "#c5a059",
+      "edges": "glow"
+     },
+     {
+      "shape": "loft",
+      "x": 0.35,
+      "z": 0,
+      "w": 0.1,
+      "d": 0.7,
+      "y": 0.04,
+      "h": 0.68,
+      "tx": 0.3,
+      "tz": 0,
+      "tw": 0.14,
+      "td": 0.75,
+      "color": "#c5a059",
+      "edges": "glow"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": 0,
+      "w": 0.04,
+      "d": 0.04,
+      "y": 0.25,
+      "h": 0.65,
+      "axis": "x",
+      "color": "#c5a059",
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.9,
+      "d": 0.85,
+      "y": 0.72,
+      "h": 0.18,
+      "color": "#3a2d23",
+      "finish": "wood",
+      "edges": true,
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": -0.22,
+      "z": 0.43,
+      "w": 0.42,
+      "d": 0.04,
+      "y": 0.73,
+      "h": 0.16,
+      "color": "#47382c",
+      "finish": "wood",
+      "edges": true,
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0.22,
+      "z": 0.43,
+      "w": 0.42,
+      "d": 0.04,
+      "y": 0.73,
+      "h": 0.16,
+      "color": "#47382c",
+      "finish": "wood",
+      "edges": true,
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": -0.22,
+      "z": 0.46,
+      "w": 0.08,
+      "d": 0.02,
+      "y": 0.8,
+      "h": 0.02,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": 0.22,
+      "z": 0.46,
+      "w": 0.08,
+      "d": 0.02,
+      "y": 0.8,
+      "h": 0.02,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 1,
+      "d": 1,
+      "y": 0.9,
+      "h": 0.1,
+      "color": "#e8e5dc",
+      "finish": "body",
+      "edges": true,
+      "fix": "h"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 1,
+      "d": 1
+     },
+     {
+      "shape": "line",
+      "x1": 0,
+      "z1": -0.45,
+      "x2": 0,
+      "z2": 0.45
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "vOFPWrEUFYLXFIyuY+y4JM5EnPvzJ73yXVz2JVGGm1rrvIHLbgl5mtng4OTYscUwTqwZ9uDRF4Kb7IQ7lu76CA=="
+ }
+}

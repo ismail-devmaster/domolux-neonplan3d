@@ -1,0 +1,140 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.bespoke_arcade_cabinet",
+  "name": "Domolux Nostalgia Bespoke Luxury Retro Arcade Cabinet",
+  "publisher": "Domolux Studio",
+  "description": "Custom upright arcade machine constructed with piano-black lacquered sides, walnut front fascia, 28-inch curved CRT-filter OLED display, Sanwa arcade buttons, and backlit marquee.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "bespoke_arcade_cabinet",
+      "name": {
+        "en": "Domolux Nostalgia Bespoke Luxury Retro Arcade Cabinet",
+        "de": "Domolux Exklusiver Retro-Spielautomat Arcade",
+        "ar": "جهاز ألعاب الآركيد الكلاسيكي الفاخر بهيكل الخشب المصقول دومولوكس"
+      },
+      "size": [
+        0.75,
+        0.85,
+        1.75
+      ],
+      "mount": "floor",
+      "surface": false,
+      "group": "living",
+      "room": [
+        "living"
+      ],
+      "tags": [
+        "arcade",
+        "retro_gaming",
+        "cabinet",
+        "games",
+        "entertainment",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.92,
+          "d": 0.92,
+          "y": 0,
+          "h": 0.08,
+          "color": "#141518",
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.05,
+          "w": 0.94,
+          "d": 0.88,
+          "y": 0.08,
+          "h": 0.52,
+          "color": "#1a1c22",
+          "finish": "dark",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.28,
+          "w": 0.96,
+          "d": 0.38,
+          "y": 0.56,
+          "h": 0.12,
+          "color": "#282a30",
+          "edges": true
+        },
+        {
+          "shape": "cyl",
+          "x": -0.25,
+          "z": 0.28,
+          "w": 0.04,
+          "d": 0.04,
+          "y": 0.68,
+          "h": 0.1,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": 0.15,
+          "z": 0.28,
+          "w": 0.04,
+          "d": 0.04,
+          "y": 0.68,
+          "h": 0.1,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.02,
+          "w": 0.84,
+          "d": 0.12,
+          "y": 0.68,
+          "h": 0.22,
+          "color": "#00e5ff",
+          "glow": true,
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.22,
+          "w": 0.92,
+          "d": 0.18,
+          "y": 0.9,
+          "h": 0.08,
+          "color": "#fff3cc",
+          "glow": true,
+          "edges": true
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 0.94,
+          "d": 0.88
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0.28,
+          "w": 0.96,
+          "d": 0.38
+        }
+      ]
+    }
+  ]
+}

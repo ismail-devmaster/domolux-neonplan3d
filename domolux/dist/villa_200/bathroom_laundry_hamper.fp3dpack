@@ -1,0 +1,146 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.bathroom_laundry_hamper",
+  "name": "Domolux Dual-Compartment Bathroom Laundry Tower",
+  "publisher": "Domolux Studio",
+  "description": "Vertical fluted walnut bathroom laundry organizer with tilt-out hamper bins, breathable slatted base vents, brushed bronze hardware, and removable canvas linen bags.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "bathroom_laundry_hamper",
+    "name": {
+     "en": "Domolux Dual-Compartment Bathroom Laundry Tower",
+     "de": "Domolux Doppelkammer-Wäschesammler",
+     "ar": "برج تخزين وفرز الغسيل للحمام بخشب الجوز دومولوكس"
+    },
+    "size": [
+     0.45,
+     0.45,
+     1.2
+    ],
+    "mount": "floor",
+    "surface": false,
+    "group": "bathroom",
+    "room": [
+     "bathroom"
+    ],
+    "tags": [
+     "hamper",
+     "laundry",
+     "storage",
+     "walnut",
+     "bathroom",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.94,
+      "d": 0.94,
+      "y": 0,
+      "h": 0.08,
+      "color": "#1c1d22",
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.02,
+      "w": 0.96,
+      "d": 0.92,
+      "y": 0.08,
+      "h": 0.9,
+      "color": "wood",
+      "finish": "dark",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.44,
+      "w": 0.88,
+      "d": 0.04,
+      "y": 0.12,
+      "h": 0.42,
+      "color": "#28231d",
+      "edges": true,
+      "fix": "d"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.44,
+      "w": 0.88,
+      "d": 0.04,
+      "y": 0.56,
+      "h": 0.4,
+      "color": "#28231d",
+      "edges": true,
+      "fix": "d"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.47,
+      "w": 0.22,
+      "d": 0.03,
+      "y": 0.5,
+      "h": 0.03,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.47,
+      "w": 0.22,
+      "d": 0.03,
+      "y": 0.92,
+      "h": 0.03,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.96,
+      "y": 0.98,
+      "h": 0.02,
+      "color": "#c5a059",
+      "fix": "h"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.96,
+      "d": 0.94
+     },
+     {
+      "shape": "line",
+      "x1": -0.44,
+      "z1": 0,
+      "x2": 0.44,
+      "z2": 0
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "87IFWVIsihVWG38G7kIytpsNNhY7sjyw5Bawa8BrZvyufVBi+TGdY5mAlV38YG+5+eVWLp2BlwXnpRiULPI5DQ=="
+ }
+}

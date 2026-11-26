@@ -1,0 +1,189 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.infrared_therapy_cabin",
+  "name": "Domolux Full-Spectrum Infrared Wellness Cabin",
+  "publisher": "Domolux Studio",
+  "description": "Private wellness retreat crafted from Canadian red cedar with full-spectrum carbon/ceramic heating panels, chromotherapy LED ceiling, and frameless bronze glass entrance.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "infrared_therapy_cabin",
+    "name": {
+     "en": "Domolux Full-Spectrum Infrared Wellness Cabin",
+     "de": "Domolux Vollspektrum-Infrarotkabine",
+     "ar": "مقصورة العلاج بالأشعة تحت الحمراء بالخشب الطبيعي دومولوكس"
+    },
+    "size": [
+     1.5,
+     1.3,
+     2.1
+    ],
+    "mount": "floor",
+    "surface": false,
+    "group": "bathroom",
+    "room": [
+     "bathroom"
+    ],
+    "tags": [
+     "infrared",
+     "sauna",
+     "cabin",
+     "wellness",
+     "cedar",
+     "bathroom",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.98,
+      "y": 0,
+      "h": 0.06,
+      "color": "#2b1e15",
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.47,
+      "w": 0.98,
+      "d": 0.06,
+      "y": 0.06,
+      "h": 0.92,
+      "color": "#8c5835",
+      "finish": "wood",
+      "edges": true,
+      "fix": "d"
+     },
+     {
+      "shape": "box",
+      "x": -0.47,
+      "z": 0,
+      "w": 0.06,
+      "d": 0.98,
+      "y": 0.06,
+      "h": 0.92,
+      "color": "#8c5835",
+      "finish": "wood",
+      "edges": true,
+      "fix": "w"
+     },
+     {
+      "shape": "box",
+      "x": 0.47,
+      "z": 0,
+      "w": 0.06,
+      "d": 0.98,
+      "y": 0.06,
+      "h": 0.92,
+      "color": "#8c5835",
+      "finish": "wood",
+      "edges": true,
+      "fix": "w"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.98,
+      "y": 0.96,
+      "h": 0.04,
+      "color": "#6e4327",
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.22,
+      "w": 0.88,
+      "d": 0.44,
+      "y": 0.06,
+      "h": 0.24,
+      "color": "#b07d58",
+      "finish": "wood",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": -0.22,
+      "z": -0.43,
+      "w": 0.28,
+      "d": 0.02,
+      "y": 0.36,
+      "h": 0.48,
+      "color": "#8b0000",
+      "glow": true,
+      "edges": true,
+      "fix": "d"
+     },
+     {
+      "shape": "box",
+      "x": 0.22,
+      "z": -0.43,
+      "w": 0.28,
+      "d": 0.02,
+      "y": 0.36,
+      "h": 0.48,
+      "color": "#8b0000",
+      "glow": true,
+      "edges": true,
+      "fix": "d"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.47,
+      "w": 0.88,
+      "d": 0.02,
+      "y": 0.06,
+      "h": 0.9,
+      "color": "#3a2f26",
+      "finish": "glass",
+      "edges": true,
+      "fix": "d"
+     },
+     {
+      "shape": "cyl",
+      "x": 0.35,
+      "z": 0.49,
+      "w": 0.03,
+      "d": 0.03,
+      "y": 0.35,
+      "h": 0.4,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wdh"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.98
+     },
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": -0.22,
+      "w": 0.88,
+      "d": 0.44
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "mPxah85YvuKtRs8j/vpZeNHx+9kueTiREfn33ZOM7WM8t0QY2pGD90BYClxAjTojuAN1W7tn8ylmRvJ3+QuvAQ=="
+ }
+}

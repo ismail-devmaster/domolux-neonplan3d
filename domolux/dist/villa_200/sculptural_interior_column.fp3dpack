@@ -1,0 +1,150 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.sculptural_interior_column",
+  "name": "Domolux Sculptural Interior Column",
+  "publisher": "Domolux Studio",
+  "description": "Freestanding monumental architectural structural column crafted from honed Nero Marquina marble with fluted cylinder profile and brushed bronze collar rings.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "sculptural_interior_column",
+    "name": {
+     "en": "Domolux Sculptural Interior Column",
+     "de": "Domolux Skulpturale Innenraumsäule",
+     "ar": "عامود داخلي نحتي دومولوكس"
+    },
+    "size": [
+     0.7,
+     0.7,
+     3.2
+    ],
+    "mount": "floor",
+    "surface": false,
+    "group": "wall",
+    "room": [
+     "hall",
+     "living",
+     "dining"
+    ],
+    "tags": [
+     "column",
+     "marble",
+     "sculptural",
+     "monumental",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.95,
+      "d": 0.95,
+      "y": 0,
+      "h": 0.04,
+      "color": "#16171a",
+      "edges": true,
+      "fix": "h"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": 0,
+      "w": 0.9,
+      "d": 0.9,
+      "y": 0.04,
+      "h": 0.03,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "h"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": 0,
+      "w": 0.82,
+      "d": 0.82,
+      "y": 0.07,
+      "h": 0.84,
+      "color": "#22242a",
+      "finish": "dark",
+      "edges": true
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": 0,
+      "w": 0.84,
+      "d": 0.84,
+      "y": 0.48,
+      "h": 0.03,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "h"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": 0,
+      "w": 0.88,
+      "d": 0.88,
+      "y": 0.91,
+      "h": 0.04,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "h"
+     },
+     {
+      "shape": "loft",
+      "x": 0,
+      "z": 0,
+      "w": 0.85,
+      "d": 0.85,
+      "y": 0.95,
+      "h": 0.03,
+      "tx": 0,
+      "tz": 0,
+      "tw": 0.98,
+      "td": 0.98,
+      "color": "#16171a",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 1,
+      "d": 1,
+      "y": 0.98,
+      "h": 0.02,
+      "color": "#16171a",
+      "edges": true,
+      "fix": "h"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "circle",
+      "x": 0,
+      "z": 0,
+      "r": 0.45
+     },
+     {
+      "shape": "circle",
+      "x": 0,
+      "z": 0,
+      "r": 0.38
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "UBYF4TVwV0Ws2IBVYUHBbKIk6rLa48wt3Cc89RKyzNWN4NejEQQf1cRu7BX7GPQmQCy8kGwuryaAvFrSeqqKAg=="
+ }
+}

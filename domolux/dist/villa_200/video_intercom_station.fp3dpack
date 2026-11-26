@@ -1,0 +1,125 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.video_intercom_station",
+  "name": "Domolux Architectural Flush Video Intercom Monitor",
+  "publisher": "Domolux Studio",
+  "description": "Wall-mounted indoor communication station featuring an 8-inch portrait touchscreen, pinhole HD camera, micro-perforated acoustic speaker array, and solid brass faceplate.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "video_intercom_station",
+    "name": {
+     "en": "Domolux Architectural Flush Video Intercom Monitor",
+     "de": "Domolux Architektonische Video-Sprechanlage",
+     "ar": "شاشة الاتصال الداخلي بالفيديو المعمارية الفاخرة دومولوكس"
+    },
+    "size": [
+     0.22,
+     0.05,
+     0.32
+    ],
+    "mount": "wall",
+    "wall_y": 1.5,
+    "surface": false,
+    "group": "appliances",
+    "room": [
+     "hallway",
+     "entryway",
+     "kitchen"
+    ],
+    "tags": [
+     "intercom",
+     "security",
+     "touchscreen",
+     "video_doorbell",
+     "access",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.4,
+      "w": 0.92,
+      "d": 0.12,
+      "y": 0.04,
+      "h": 0.92,
+      "color": "#16171b",
+      "fix": "d"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.1,
+      "w": 0.98,
+      "d": 0.06,
+      "y": 0.02,
+      "h": 0.96,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "d"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": 0.12,
+      "w": 0.08,
+      "d": 0.08,
+      "y": 0.88,
+      "h": 0.02,
+      "axis": "z",
+      "color": "#111215",
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.12,
+      "w": 0.84,
+      "d": 0.02,
+      "y": 0.22,
+      "h": 0.62,
+      "color": "#00b4d8",
+      "glow": true,
+      "edges": true,
+      "fix": "d"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.12,
+      "w": 0.6,
+      "d": 0.02,
+      "y": 0.08,
+      "h": 0.08,
+      "color": "#22252c",
+      "fix": "d"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.3
+     },
+     {
+      "shape": "circle",
+      "x": 0,
+      "z": 0.12,
+      "r": 0.08
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "Ek8haOpbf9bl7zvlHFDU8La5pswNObRUubgekmjgignMO339r4fMIanefLiwNb6mU6zCACMqZhxPt6S+fiDwBA=="
+ }
+}

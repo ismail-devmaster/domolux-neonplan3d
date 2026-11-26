@@ -1,0 +1,144 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.private_poker_table",
+  "name": "Domolux High-Stakes Oval Casino Poker Table",
+  "publisher": "Domolux Studio",
+  "description": "Casino-grade 10-player oval gaming table with padded full-grain Italian leather armrest rail, waterproof micro-suede suited cloth, integrated brass cupholders, and fluted oak twin pedestals.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "private_poker_table",
+      "name": {
+        "en": "Domolux High-Stakes Oval Casino Poker Table",
+        "de": "Domolux Luxus-Pokertisch mit Leder-Armauflage",
+        "ar": "طاولة البوكر والألعاب الخاصة البيضاوية بالجلد الطبيعي دومولوكس"
+      },
+      "size": [
+        2.2,
+        1.15,
+        0.78
+      ],
+      "mount": "floor",
+      "surface": false,
+      "group": "living",
+      "room": [
+        "living"
+      ],
+      "tags": [
+        "poker_table",
+        "casino",
+        "games",
+        "leather",
+        "luxury",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "cyl",
+          "x": -0.28,
+          "z": 0,
+          "w": 0.35,
+          "d": 0.35,
+          "y": 0,
+          "h": 0.82,
+          "color": "#362619",
+          "finish": "wood",
+          "fix": "wd"
+        },
+        {
+          "shape": "cyl",
+          "x": 0.28,
+          "z": 0,
+          "w": 0.35,
+          "d": 0.35,
+          "y": 0,
+          "h": 0.82,
+          "color": "#362619",
+          "finish": "wood",
+          "fix": "wd"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.55,
+          "d": 0.12,
+          "y": 0.25,
+          "h": 0.08,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "dh"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.94,
+          "d": 0.9,
+          "y": 0.82,
+          "h": 0.06,
+          "color": "#181a1f",
+          "edges": true,
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.84,
+          "d": 0.78,
+          "y": 0.88,
+          "h": 0.02,
+          "color": "#1b4332",
+          "finish": "fabric",
+          "edges": true,
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.98,
+          "d": 0.96,
+          "y": 0.88,
+          "h": 0.12,
+          "color": "#1c1e22",
+          "finish": "cushion",
+          "edges": true,
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.36,
+          "w": 0.25,
+          "d": 0.1,
+          "y": 0.9,
+          "h": 0.03,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wdh"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 0.98,
+          "d": 0.96
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 0.84,
+          "d": 0.78
+        }
+      ]
+    }
+  ]
+}

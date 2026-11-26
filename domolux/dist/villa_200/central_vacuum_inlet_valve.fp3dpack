@@ -1,0 +1,113 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.central_vacuum_inlet_valve",
+  "name": "Domolux Architectural Flush Central Vacuum Inlet Port",
+  "publisher": "Domolux Studio",
+  "description": "Low-profile spring-loaded central vacuum suction valve with magnetic soft-close flap, microswitch low-voltage trigger pins, and solid brass faceplate.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "central_vacuum_inlet_valve",
+    "name": {
+     "en": "Domolux Architectural Flush Central Vacuum Inlet Port",
+     "de": "Domolux Architektonische Zentralstaubsauger-Saugdose",
+     "ar": "منفذ شفط المكنسة المركزية الجداري المعماري الفاخر دومولوكس"
+    },
+    "size": [
+     0.15,
+     0.06,
+     0.22
+    ],
+    "mount": "wall",
+    "wall_y": 0.35,
+    "surface": false,
+    "group": "appliances",
+    "room": [
+     "hallway",
+     "living",
+     "bedroom"
+    ],
+    "tags": [
+     "central_vacuum",
+     "suction_inlet",
+     "plumbing",
+     "cleaning",
+     "brass",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.4,
+      "w": 0.88,
+      "d": 0.14,
+      "y": 0.04,
+      "h": 0.92,
+      "color": "#141518",
+      "fix": "d"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.05,
+      "w": 0.96,
+      "d": 0.08,
+      "y": 0.02,
+      "h": 0.96,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "d"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.22,
+      "w": 0.74,
+      "d": 0.04,
+      "y": 0.15,
+      "h": 0.68,
+      "color": "#8a6d3b",
+      "edges": true,
+      "fix": "d"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.28,
+      "w": 0.24,
+      "d": 0.04,
+      "y": 0.18,
+      "h": 0.05,
+      "color": "#c5a059",
+      "fix": "wdh"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.96,
+      "d": 0.4
+     },
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0.22,
+      "w": 0.74,
+      "d": 0.1
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "kLa8v5VS66V2SFYxOzO+jCGpgc9fqzLCOre6E/3zOCiwMXwO58gACw1T+nG3jxXdww0PW2tu6xAtycJ4ttfiBw=="
+ }
+}

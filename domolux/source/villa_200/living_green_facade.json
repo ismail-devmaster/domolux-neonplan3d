@@ -1,0 +1,129 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.living_green_facade",
+  "name": "Domolux Architectural Living Biophilic Façade System",
+  "publisher": "Domolux Studio",
+  "description": "Modular exterior vertical living wall with integrated automated micro-drip fertigation, root-barrier sub-chassis, and diverse evergreen foliage plantings.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "living_green_facade",
+      "name": {
+        "en": "Domolux Architectural Living Biophilic Façade System",
+        "de": "Domolux Architektonische Grüne Fassadenwand",
+        "ar": "واجهة معمارية بيئية حية مكسوة بالنباتات الطبيعية دومولوكس"
+      },
+      "size": [
+        2.4,
+        0.35,
+        3
+      ],
+      "mount": "wall",
+      "wall_y": 0,
+      "surface": false,
+      "group": "outdoor",
+      "room": [
+        "outdoor"
+      ],
+      "tags": [
+        "green_wall",
+        "living_facade",
+        "biophilic",
+        "plants",
+        "landscape",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.4,
+          "w": 0.98,
+          "d": 0.12,
+          "y": 0,
+          "h": 0.98,
+          "color": "#1c1e22",
+          "edges": true,
+          "fix": "d"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.05,
+          "w": 0.98,
+          "d": 0.65,
+          "y": 0,
+          "h": 0.12,
+          "color": "#252830",
+          "finish": "dark",
+          "edges": true,
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.08,
+          "w": 0.94,
+          "d": 0.45,
+          "y": 0.12,
+          "h": 0.84,
+          "color": "#2d6a4f",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": -0.22,
+          "z": 0.22,
+          "w": 0.42,
+          "d": 0.22,
+          "y": 0.35,
+          "h": 0.45,
+          "color": "#40916c",
+          "fix": "wd"
+        },
+        {
+          "shape": "box",
+          "x": 0.25,
+          "z": 0.22,
+          "w": 0.38,
+          "d": 0.22,
+          "y": 0.2,
+          "h": 0.55,
+          "color": "#52b788",
+          "fix": "wd"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.1,
+          "w": 0.98,
+          "d": 0.68,
+          "y": 0.96,
+          "h": 0.04,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "h"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 0.98,
+          "d": 0.8
+        },
+        {
+          "shape": "line",
+          "x1": -0.48,
+          "z1": -0.4,
+          "x2": 0.48,
+          "z2": -0.4
+        }
+      ]
+    }
+  ]
+}

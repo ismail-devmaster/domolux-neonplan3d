@@ -1,0 +1,125 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.water_leak_shutoff_valve",
+  "name": "Domolux Smart Motorized Whole-Home Water Security Shutoff",
+  "publisher": "Domolux Studio",
+  "description": "Ultrasonic whole-home water consumption monitor with automated high-torque motorized brass ball valve shutoff, micro-leak detection, and Zigbee/Thread mesh radio.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "water_leak_shutoff_valve",
+    "name": {
+     "en": "Domolux Smart Motorized Whole-Home Water Security Shutoff",
+     "de": "Domolux Intelligentes Hauptwasser-Absperrventil",
+     "ar": "صمام الأمان الذكي للغلق الآلي الفوري لمياه المنزل دومولوكس"
+    },
+    "size": [
+     0.3,
+     0.22,
+     0.35
+    ],
+    "mount": "wall",
+    "wall_y": 0.45,
+    "surface": false,
+    "group": "appliances",
+    "room": [
+     "storage",
+     "kitchen"
+    ],
+    "tags": [
+     "water_shutoff",
+     "leak_detection",
+     "smart_valve",
+     "plumbing",
+     "security",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": 0,
+      "w": 0.35,
+      "d": 0.35,
+      "y": 0.12,
+      "h": 0.88,
+      "axis": "x",
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wd"
+     },
+     {
+      "shape": "cyl",
+      "x": -0.42,
+      "z": 0,
+      "w": 0.28,
+      "d": 0.28,
+      "y": 0.15,
+      "h": 0.15,
+      "axis": "x",
+      "color": "#8a6d3b",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": 0.42,
+      "z": 0,
+      "w": 0.28,
+      "d": 0.28,
+      "y": 0.15,
+      "h": 0.15,
+      "axis": "x",
+      "color": "#8a6d3b",
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.72,
+      "d": 0.72,
+      "y": 0.38,
+      "h": 0.58,
+      "color": "#252830",
+      "finish": "dark",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.65,
+      "d": 0.15,
+      "y": 0.94,
+      "h": 0.06,
+      "color": "#ff4d4f",
+      "fix": "h"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.72,
+      "d": 0.72
+     },
+     {
+      "shape": "circle",
+      "x": 0,
+      "z": 0,
+      "r": 0.18
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "pNbp5j80cRPuJX7cepclxYWv9MmxJDgM3TXr2773R/F6J1FCffWJDDqg0mKeF19cZHtBMDNc8jWeq+jfN9CoCg=="
+ }
+}

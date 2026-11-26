@@ -1,0 +1,136 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.pocket_sliding_door",
+  "name": "Domolux Concealed Pocket Sliding Door",
+  "publisher": "Domolux Studio",
+  "description": "In-wall architectural pocket sliding door cassette system with smoked oak door leaf, concealed top hanger tracks, flush jamb casing, and edge finger ring pull.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "pocket_sliding_door",
+      "name": {
+        "en": "Domolux Concealed Pocket Sliding Door",
+        "de": "Domolux In Der Wand Laufende Schiebetür",
+        "ar": "باب منزلق داخل الجدار دومولوكس"
+      },
+      "size": [
+        2.2,
+        0.25,
+        2.6
+      ],
+      "mount": "floor",
+      "surface": false,
+      "group": "door",
+      "room": [
+        "bedroom",
+        "bath",
+        "closet",
+        "living"
+      ],
+      "tags": [
+        "pocket",
+        "sliding",
+        "door",
+        "concealed",
+        "space-saving",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": -0.26,
+          "z": 0.35,
+          "w": 0.48,
+          "d": 0.15,
+          "y": 0,
+          "h": 1,
+          "color": "#e2e8f0",
+          "finish": "white",
+          "edges": "faint"
+        },
+        {
+          "shape": "box",
+          "x": -0.26,
+          "z": -0.35,
+          "w": 0.48,
+          "d": 0.15,
+          "y": 0,
+          "h": 1,
+          "color": "#e2e8f0",
+          "finish": "white",
+          "edges": "faint"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 1,
+          "d": 0.7,
+          "y": 0.96,
+          "h": 0.04,
+          "color": "#334155",
+          "edges": true,
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0.47,
+          "z": 0,
+          "w": 0.05,
+          "d": 0.85,
+          "y": 0,
+          "h": 1,
+          "color": "#3d301b",
+          "finish": "wood",
+          "edges": true,
+          "fix": "w"
+        },
+        {
+          "shape": "box",
+          "x": 0.18,
+          "z": 0,
+          "w": 0.52,
+          "d": 0.35,
+          "y": 0.02,
+          "h": 0.93,
+          "color": "#382c22",
+          "finish": "wood",
+          "edges": true
+        },
+        {
+          "shape": "cyl",
+          "x": 0.42,
+          "z": 0,
+          "w": 0.04,
+          "d": 0.04,
+          "y": 0.45,
+          "h": 0.06,
+          "axis": "z",
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wdh"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": -0.26,
+          "z": 0,
+          "w": 0.48,
+          "d": 0.85
+        },
+        {
+          "shape": "rect",
+          "x": 0.18,
+          "z": 0,
+          "w": 0.52,
+          "d": 0.35,
+          "fill": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.sculptural_acoustic_diffuser",
+  "name": "Domolux Quadratic Residue Sculptural Acoustic Wall Diffuser",
+  "publisher": "Domolux Studio",
+  "description": "Mathematically sequenced 2D QRD quadratic residue acoustic sound diffuser constructed from solid American walnut and champagne brass wells for precise flutter-echo elimination.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "sculptural_acoustic_diffuser",
+      "name": {
+        "en": "Domolux Quadratic Residue Sculptural Acoustic Wall Diffuser",
+        "de": "Domolux Architektonischer Akustik-Diffusor QRD",
+        "ar": "لوح التشتيت الصوتي المعماري ثلاثي الأبعاد دومولوكس"
+      },
+      "size": [
+        0.6,
+        0.15,
+        1.2
+      ],
+      "mount": "wall",
+      "wall_y": 1,
+      "surface": false,
+      "group": "decor",
+      "room": [
+        "living",
+        "office"
+      ],
+      "tags": [
+        "acoustic_diffuser",
+        "qrd",
+        "soundproofing",
+        "walnut",
+        "wall_art",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.42,
+          "w": 0.96,
+          "d": 0.08,
+          "y": 0.02,
+          "h": 0.96,
+          "color": "#181a1f",
+          "fix": "d"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.05,
+          "w": 0.98,
+          "d": 0.74,
+          "y": 0,
+          "h": 0.98,
+          "color": "#362619",
+          "finish": "wood",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": -0.32,
+          "z": 0.1,
+          "w": 0.18,
+          "d": 0.45,
+          "y": 0.08,
+          "h": 0.84,
+          "color": "#543c2b",
+          "finish": "wood",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": -0.12,
+          "z": 0.22,
+          "w": 0.18,
+          "d": 0.65,
+          "y": 0.08,
+          "h": 0.84,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wd"
+        },
+        {
+          "shape": "box",
+          "x": 0.12,
+          "z": -0.05,
+          "w": 0.18,
+          "d": 0.3,
+          "y": 0.08,
+          "h": 0.84,
+          "color": "#6a4e37",
+          "finish": "wood",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0.32,
+          "z": 0.18,
+          "w": 0.18,
+          "d": 0.55,
+          "y": 0.08,
+          "h": 0.84,
+          "color": "#543c2b",
+          "finish": "wood",
+          "edges": true
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 0.98,
+          "d": 0.88
+        },
+        {
+          "shape": "line",
+          "x1": -0.22,
+          "z1": -0.44,
+          "x2": -0.22,
+          "z2": 0.44
+        },
+        {
+          "shape": "line",
+          "x1": 0,
+          "z1": -0.44,
+          "x2": 0,
+          "z2": 0.44
+        },
+        {
+          "shape": "line",
+          "x1": 0.22,
+          "z1": -0.44,
+          "x2": 0.22,
+          "z2": 0.44
+        }
+      ]
+    }
+  ]
+}

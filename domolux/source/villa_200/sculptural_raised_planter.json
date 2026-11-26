@@ -1,0 +1,114 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.sculptural_raised_planter",
+  "name": "Domolux Monumental Monolithic Stone Garden Planter",
+  "publisher": "Domolux Studio",
+  "description": "Architectural raised garden planter carved from Pietra di Cardoso stone with mitered waterfall corners, recessed root-aeration cavity, and bronze base reveal.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "sculptural_raised_planter",
+      "name": {
+        "en": "Domolux Monumental Monolithic Stone Garden Planter",
+        "de": "Domolux Monumentaler Naturstein-Pflanzkübel",
+        "ar": "حوض زراعة نباتات حجري ضخم ومرتفع للحدائق دومولوكس"
+      },
+      "size": [
+        1.8,
+        0.9,
+        0.75
+      ],
+      "mount": "floor",
+      "surface": false,
+      "group": "outdoor",
+      "room": [
+        "outdoor"
+      ],
+      "tags": [
+        "planter",
+        "stone",
+        "landscape",
+        "garden",
+        "monolithic",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.92,
+          "d": 0.9,
+          "y": 0,
+          "h": 0.08,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.98,
+          "d": 0.96,
+          "y": 0.08,
+          "h": 0.88,
+          "color": "#495057",
+          "finish": "dark",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.84,
+          "d": 0.8,
+          "y": 0.16,
+          "h": 0.8,
+          "color": "#221914"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.82,
+          "d": 0.78,
+          "y": 0.72,
+          "h": 0.04,
+          "color": "#36271c",
+          "fix": "h"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": 0,
+          "w": 0.74,
+          "d": 0.7,
+          "y": 0.76,
+          "h": 0.22,
+          "color": "#2d6a4f",
+          "fix": "h"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 0.98,
+          "d": 0.96
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 0.84,
+          "d": 0.8
+        }
+      ]
+    }
+  ]
+}

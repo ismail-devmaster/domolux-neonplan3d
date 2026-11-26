@@ -1,0 +1,235 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.architectural_display_niches",
+  "name": "Domolux Architectural Display Niche System",
+  "publisher": "Domolux Studio",
+  "description": "Built-in architectural triple-tier display niche with dark walnut backing, recessed warm spotlights, polished bronze perimeter frame, and tempered glass display shelves.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "architectural_display_niches",
+    "name": {
+     "en": "Domolux Architectural Display Niche System",
+     "de": "Domolux Architektonisches Wandnischen-System",
+     "ar": "نظام كوات العرض المعمارية دومولوكس"
+    },
+    "size": [
+     1.6,
+     0.38,
+     2.4
+    ],
+    "mount": "wall",
+    "wall_y": 0.2,
+    "surface": true,
+    "group": "wall",
+    "room": [
+     "living",
+     "hall",
+     "dining"
+    ],
+    "tags": [
+     "niche",
+     "display",
+     "shelves",
+     "lighting",
+     "recessed",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.4,
+      "w": 1,
+      "d": 0.2,
+      "y": 0,
+      "h": 1,
+      "color": "#1e2025",
+      "edges": "faint"
+     },
+     {
+      "shape": "box",
+      "x": -0.47,
+      "z": 0.2,
+      "w": 0.06,
+      "d": 0.6,
+      "y": 0,
+      "h": 1,
+      "color": "#9e8354",
+      "edges": "glow",
+      "fix": "w"
+     },
+     {
+      "shape": "box",
+      "x": 0.47,
+      "z": 0.2,
+      "w": 0.06,
+      "d": 0.6,
+      "y": 0,
+      "h": 1,
+      "color": "#9e8354",
+      "edges": "glow",
+      "fix": "w"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.2,
+      "w": 1,
+      "d": 0.6,
+      "y": 0.96,
+      "h": 0.04,
+      "color": "#9e8354",
+      "edges": "glow",
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.2,
+      "w": 1,
+      "d": 0.6,
+      "y": 0,
+      "h": 0.04,
+      "color": "#9e8354",
+      "edges": "glow",
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.28,
+      "w": 0.88,
+      "d": 0.05,
+      "y": 0.04,
+      "h": 0.92,
+      "color": "#2d231c",
+      "finish": "wood",
+      "edges": "faint"
+     },
+     {
+      "shape": "box",
+      "x": -0.42,
+      "z": 0,
+      "w": 0.04,
+      "d": 0.55,
+      "y": 0.04,
+      "h": 0.92,
+      "color": "#241c16",
+      "finish": "wood",
+      "edges": "faint"
+     },
+     {
+      "shape": "box",
+      "x": 0.42,
+      "z": 0,
+      "w": 0.04,
+      "d": 0.55,
+      "y": 0.04,
+      "h": 0.92,
+      "color": "#241c16",
+      "finish": "wood",
+      "edges": "faint"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.02,
+      "w": 0.82,
+      "d": 0.5,
+      "y": 0.28,
+      "h": 0.015,
+      "color": "glass",
+      "edges": true,
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.02,
+      "w": 0.82,
+      "d": 0.5,
+      "y": 0.56,
+      "h": 0.015,
+      "color": "glass",
+      "edges": true,
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.02,
+      "w": 0.82,
+      "d": 0.5,
+      "y": 0.84,
+      "h": 0.015,
+      "color": "glass",
+      "edges": true,
+      "fix": "h"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": -0.05,
+      "w": 0.12,
+      "d": 0.12,
+      "y": 0.94,
+      "h": 0.02,
+      "color": "#fff0db",
+      "glow": true,
+      "edges": "glow"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": -0.05,
+      "w": 0.12,
+      "d": 0.12,
+      "y": 0.82,
+      "h": 0.02,
+      "color": "#fff0db",
+      "glow": true,
+      "edges": "glow"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": -0.05,
+      "w": 0.12,
+      "d": 0.12,
+      "y": 0.54,
+      "h": 0.02,
+      "color": "#fff0db",
+      "glow": true,
+      "edges": "glow"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 1,
+      "d": 0.8
+     },
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": -0.05,
+      "w": 0.88,
+      "d": 0.6,
+      "fill": true
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "Z55/C7PRBbj3oRlWqTfboHvOBb0SeAum/bVpuAaTMPTvjVD1clW87XveS9GYFmTdPN60t9nUYV12iXp8VkD6Bg=="
+ }
+}

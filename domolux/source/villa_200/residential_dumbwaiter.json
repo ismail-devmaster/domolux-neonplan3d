@@ -1,0 +1,121 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.residential_dumbwaiter",
+  "name": "Domolux Bi-Parting Stainless Service Dumbwaiter Lift",
+  "publisher": "Domolux Studio",
+  "description": "Compact architectural dumbwaiter connecting kitchen, wine cellar, and master suite, featuring bi-parting stainless doors, heated tray shelf, and whisper drive.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "residential_dumbwaiter",
+      "name": {
+        "en": "Domolux Bi-Parting Stainless Service Dumbwaiter Lift",
+        "de": "Domolux Speisenaufzug & Butler-Lift",
+        "ar": "مصعد تقديم الأطعمة والخدمات الخفيفة بين الطوابق دومولوكس"
+      },
+      "size": [
+        0.75,
+        0.75,
+        1.2
+      ],
+      "mount": "wall",
+      "wall_y": 0.6,
+      "surface": false,
+      "group": "kitchen",
+      "room": [
+        "kitchen",
+        "storage"
+      ],
+      "tags": [
+        "dumbwaiter",
+        "service_lift",
+        "butler",
+        "food_lift",
+        "kitchen",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.35,
+          "w": 0.96,
+          "d": 0.25,
+          "y": 0.02,
+          "h": 0.96,
+          "color": "#16171b",
+          "fix": "d"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.98,
+          "d": 0.45,
+          "y": 0,
+          "h": 0.98,
+          "color": "metal",
+          "finish": "metal",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.24,
+          "w": 0.86,
+          "d": 0.02,
+          "y": 0.52,
+          "h": 0.42,
+          "color": "#cfd8dc",
+          "finish": "white",
+          "edges": true,
+          "fix": "d"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.24,
+          "w": 0.86,
+          "d": 0.02,
+          "y": 0.06,
+          "h": 0.42,
+          "color": "#cfd8dc",
+          "finish": "white",
+          "edges": true,
+          "fix": "d"
+        },
+        {
+          "shape": "box",
+          "x": 0.4,
+          "z": 0.24,
+          "w": 0.06,
+          "d": 0.02,
+          "y": 0.85,
+          "h": 0.08,
+          "color": "#00e5ff",
+          "glow": true,
+          "fix": "wdh"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 0.98,
+          "d": 0.7
+        },
+        {
+          "shape": "line",
+          "x1": -0.43,
+          "z1": 0.24,
+          "x2": 0.43,
+          "z2": 0.24
+        }
+      ]
+    }
+  ]
+}

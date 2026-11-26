@@ -1,0 +1,147 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.luxury_cold_plunge",
+  "name": "Domolux Titanium Hydrotherapy Cold-Plunge Bath",
+  "publisher": "Domolux Studio",
+  "description": "Architectural cryogenic recovery plunge bath with thermal insulated marine-grade oak exterior cladding, electropolished 316-titanium tank, ozone sanitation, and teak step.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "luxury_cold_plunge",
+    "name": {
+     "en": "Domolux Titanium Hydrotherapy Cold-Plunge Bath",
+     "de": "Domolux Eisbad & Kaltwasser-Tauchbecken",
+     "ar": "حوض الغمر بالماء البارد والجليد الصحي دومولوكس"
+    },
+    "size": [
+     1.8,
+     1,
+     0.9
+    ],
+    "mount": "floor",
+    "surface": false,
+    "group": "bathroom",
+    "room": [
+     "bathroom"
+    ],
+    "tags": [
+     "cold_plunge",
+     "ice_bath",
+     "recovery",
+     "spa",
+     "wellness",
+     "bathroom",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.96,
+      "d": 0.94,
+      "y": 0,
+      "h": 0.08,
+      "color": "#151619",
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.96,
+      "y": 0.08,
+      "h": 0.84,
+      "color": "#3d2b1f",
+      "finish": "wood",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.9,
+      "d": 0.88,
+      "y": 0.92,
+      "h": 0.08,
+      "color": "metal",
+      "edges": "glow",
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.8,
+      "d": 0.76,
+      "y": 0.12,
+      "h": 0.8,
+      "color": "#0d3b66",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.78,
+      "d": 0.74,
+      "y": 0.82,
+      "h": 0.02,
+      "color": "#00b4d8",
+      "finish": "glass",
+      "glow": true
+     },
+     {
+      "shape": "box",
+      "x": -0.42,
+      "z": 0.44,
+      "w": 0.22,
+      "d": 0.18,
+      "y": 0,
+      "h": 0.22,
+      "color": "#543d2b",
+      "edges": true,
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": -0.42,
+      "z": 0.44,
+      "w": 0.18,
+      "d": 0.14,
+      "y": 0.22,
+      "h": 0.22,
+      "color": "#6a4e37",
+      "edges": true,
+      "fix": "wdh"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.96
+     },
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.8,
+      "d": 0.76
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "02l2AmtiPWTeHXdS3Nq9v6yrlI0CU8O+nBvaGOwikU9i42NsnPLMAV8D/uVRQrO7o1L8QyK7Hp2Np5FECwoWAQ=="
+ }
+}

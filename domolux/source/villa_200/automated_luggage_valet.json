@@ -1,0 +1,152 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.automated_luggage_valet",
+  "name": "Domolux Presidential Suite Luggage Valet and Wardrobe Bench",
+  "publisher": "Domolux Studio",
+  "description": "Luggage reception console featuring saddle-leather ribbed suitcase platform slats, integrated garment hanging rail with LED downlight, and dual accessory soft-close drawers.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "automated_luggage_valet",
+      "name": {
+        "en": "Domolux Presidential Suite Luggage Valet and Wardrobe Bench",
+        "de": "Domolux Luxus-Kofferablage & Garderobenbank",
+        "ar": "منصة حقائب السفر الفندقية المنجدة بالجلد الفاخر دومولوكس"
+      },
+      "size": [
+        1.2,
+        0.6,
+        1.8
+      ],
+      "mount": "floor",
+      "surface": false,
+      "group": "bedroom",
+      "room": [
+        "bedroom"
+      ],
+      "tags": [
+        "luggage_valet",
+        "bench",
+        "wardrobe",
+        "leather",
+        "bedroom",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.96,
+          "d": 0.92,
+          "y": 0,
+          "h": 0.24,
+          "color": "#22252c",
+          "finish": "dark",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.94,
+          "d": 0.88,
+          "y": 0.24,
+          "h": 0.08,
+          "color": "#8b5a2b",
+          "finish": "cushion",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": -0.28,
+          "z": 0,
+          "w": 0.03,
+          "d": 0.78,
+          "y": 0.32,
+          "h": 0.02,
+          "color": "#c5a059",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.03,
+          "d": 0.78,
+          "y": 0.32,
+          "h": 0.02,
+          "color": "#c5a059",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0.28,
+          "z": 0,
+          "w": 0.03,
+          "d": 0.78,
+          "y": 0.32,
+          "h": 0.02,
+          "color": "#c5a059",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": -0.44,
+          "z": -0.38,
+          "w": 0.05,
+          "d": 0.05,
+          "y": 0.32,
+          "h": 0.66,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wd"
+        },
+        {
+          "shape": "box",
+          "x": 0.44,
+          "z": -0.38,
+          "w": 0.05,
+          "d": 0.05,
+          "y": 0.32,
+          "h": 0.66,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wd"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": -0.38,
+          "w": 0.04,
+          "d": 0.04,
+          "y": 0.92,
+          "h": 0.88,
+          "axis": "x",
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wd"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 0.96,
+          "d": 0.92
+        },
+        {
+          "shape": "line",
+          "x1": -0.44,
+          "z1": -0.38,
+          "x2": 0.44,
+          "z2": -0.38
+        }
+      ]
+    }
+  ]
+}

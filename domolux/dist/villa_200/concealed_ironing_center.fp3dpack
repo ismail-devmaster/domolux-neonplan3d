@@ -1,0 +1,126 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.concealed_ironing_center",
+  "name": "Domolux Recessed Architectural Fold-Out Ironing Cabinet",
+  "publisher": "Domolux Studio",
+  "description": "Recessed in-wall ironing center with 180-degree swivel board, integrated steam-iron heat rest, electrical timer outlet, and full-length mirrored door face.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "concealed_ironing_center",
+    "name": {
+     "en": "Domolux Recessed Architectural Fold-Out Ironing Cabinet",
+     "de": "Domolux Wandeinbau-Bügelzentrum",
+     "ar": "مركز الكي الجداري المخفي المدمج بلوح دوار دومولوكس"
+    },
+    "size": [
+     0.45,
+     0.16,
+     1.25
+    ],
+    "mount": "wall",
+    "wall_y": 0.6,
+    "surface": false,
+    "group": "appliances",
+    "room": [
+     "storage",
+     "bedroom"
+    ],
+    "tags": [
+     "ironing_board",
+     "ironing_cabinet",
+     "concealed",
+     "utility",
+     "laundry",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.42,
+      "w": 0.92,
+      "d": 0.14,
+      "y": 0.02,
+      "h": 0.96,
+      "color": "#141518",
+      "fix": "d"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.05,
+      "w": 0.96,
+      "d": 0.08,
+      "y": 0,
+      "h": 0.98,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "d"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.15,
+      "w": 0.92,
+      "d": 0.04,
+      "y": 0.02,
+      "h": 0.96,
+      "color": "#a8c0d8",
+      "finish": "glass",
+      "edges": true,
+      "fix": "d"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.35,
+      "w": 0.72,
+      "d": 0.35,
+      "y": 0.45,
+      "h": 0.06,
+      "color": "#e8ecef",
+      "finish": "cushion",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.22,
+      "w": 0.45,
+      "d": 0.14,
+      "y": 0.75,
+      "h": 0.04,
+      "color": "metal",
+      "edges": true,
+      "fix": "h"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.96,
+      "d": 0.45
+     },
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0.35,
+      "w": 0.72,
+      "d": 0.35
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "YA27J9D5X/lQsiqdU72kGzo50UDL5YcBqtcgFigCJl0sOCZzyeG+uvzSj2cvDSHOaBNlegA+gDwahRKh3oFmBg=="
+ }
+}

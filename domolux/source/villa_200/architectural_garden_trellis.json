@@ -1,0 +1,128 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.architectural_garden_trellis",
+  "name": "Domolux Bronze and Cable Architectural Espalier Trellis",
+  "publisher": "Domolux Studio",
+  "description": "Freestanding estate garden screen featuring marine-grade 316 stainless tensioned cables, dark bronze extruded frame, and architectural star jasmine climbers.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "architectural_garden_trellis",
+      "name": {
+        "en": "Domolux Bronze and Cable Architectural Espalier Trellis",
+        "de": "Domolux Architektonisches Rankgitter aus Bronze & Stahlseilen",
+        "ar": "تعريشة تسلق النباتات المعمارية من النحاس وكابلات الفولاذ دومولوكس"
+      },
+      "size": [
+        1.6,
+        0.18,
+        2.4
+      ],
+      "mount": "floor",
+      "surface": false,
+      "group": "outdoor",
+      "room": [
+        "outdoor"
+      ],
+      "tags": [
+        "trellis",
+        "espalier",
+        "garden",
+        "climber",
+        "bronze",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.96,
+          "d": 0.92,
+          "y": 0,
+          "h": 0.06,
+          "color": "#1a1c20",
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": -0.44,
+          "z": 0,
+          "w": 0.08,
+          "d": 0.35,
+          "y": 0.06,
+          "h": 0.92,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wd"
+        },
+        {
+          "shape": "box",
+          "x": 0.44,
+          "z": 0,
+          "w": 0.08,
+          "d": 0.35,
+          "y": 0.06,
+          "h": 0.92,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wd"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.96,
+          "d": 0.35,
+          "y": 0.94,
+          "h": 0.05,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.82,
+          "d": 0.02,
+          "y": 0.15,
+          "h": 0.78,
+          "color": "metal",
+          "edges": true,
+          "fix": "d"
+        },
+        {
+          "shape": "box",
+          "x": -0.2,
+          "z": 0.04,
+          "w": 0.35,
+          "d": 0.15,
+          "y": 0.25,
+          "h": 0.55,
+          "color": "#2d6a4f",
+          "fix": "wd"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 0.96,
+          "d": 0.92
+        },
+        {
+          "shape": "line",
+          "x1": -0.44,
+          "z1": 0,
+          "x2": 0.44,
+          "z2": 0
+        }
+      ]
+    }
+  ]
+}

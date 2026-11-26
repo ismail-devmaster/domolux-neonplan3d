@@ -1,0 +1,114 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.pedestrian_entrance_gate",
+  "name": "Domolux Secure Architectural Pedestrian Estate Gate",
+  "publisher": "Domolux Studio",
+  "description": "Pedestrian entrance portal integrated into estate boundary wall, featuring fluted bronze security panel, motorized fail-secure lock, and stone pier intercom integration.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "pedestrian_entrance_gate",
+      "name": {
+        "en": "Domolux Secure Architectural Pedestrian Estate Gate",
+        "de": "Domolux Architektonisches Fußgängertor mit Gegensprechpfeiler",
+        "ar": "بوابة المشاة المعمارية الفاخرة بعمود الاتصال الذكي دومولوكس"
+      },
+      "size": [
+        1.5,
+        0.35,
+        2.3
+      ],
+      "mount": "floor",
+      "surface": false,
+      "group": "outdoor",
+      "room": [
+        "outdoor"
+      ],
+      "tags": [
+        "pedestrian_gate",
+        "security",
+        "estate",
+        "bronze",
+        "entry",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": -0.42,
+          "z": 0,
+          "w": 0.14,
+          "d": 0.92,
+          "y": 0,
+          "h": 0.98,
+          "color": "#343a40",
+          "finish": "dark",
+          "edges": true,
+          "fix": "w"
+        },
+        {
+          "shape": "box",
+          "x": 0.42,
+          "z": 0,
+          "w": 0.14,
+          "d": 0.92,
+          "y": 0,
+          "h": 0.98,
+          "color": "#343a40",
+          "finish": "dark",
+          "edges": true,
+          "fix": "w"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.68,
+          "d": 0.08,
+          "y": 0.04,
+          "h": 0.9,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "d"
+        },
+        {
+          "shape": "cyl",
+          "x": 0.28,
+          "z": 0.08,
+          "w": 0.03,
+          "d": 0.03,
+          "y": 0.2,
+          "h": 0.6,
+          "color": "#d4af37",
+          "fix": "wdh"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": -0.42,
+          "z": 0,
+          "w": 0.14,
+          "d": 0.92
+        },
+        {
+          "shape": "rect",
+          "x": 0.42,
+          "z": 0,
+          "w": 0.14,
+          "d": 0.92
+        },
+        {
+          "shape": "line",
+          "x1": -0.35,
+          "z1": 0,
+          "x2": 0.35,
+          "z2": 0
+        }
+      ]
+    }
+  ]
+}

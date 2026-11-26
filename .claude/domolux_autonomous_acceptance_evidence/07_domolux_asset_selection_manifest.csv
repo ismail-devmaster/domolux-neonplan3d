@@ -1,0 +1,36 @@
+index,asset_id,canonical_pack_id,display_name,category,width,depth,height,target_room_id
+1,domolux.indoor_sculptural_fountain,pack:domolux.indoor_sculptural_fountain:indoor_sculptural_fountain,Domolux Indoor Sculptural Fountain,living,1.40,0.70,1.90,room_gf_foyer
+2,domolux.shoe_care_station,pack:domolux.shoe_care_station:shoe_care_station,Domolux Bespoke Shoe-Care Station,bedroom,1.35,0.52,1.15,room_gf_foyer
+3,domolux.designer_cat_tree,pack:domolux.designer_cat_tree:designer_cat_tree,Domolux Architectural Cat Tree,living,1.05,0.75,1.75,room_gf_foyer
+4,domolux.concert_grand_piano,pack:domolux.concert_grand_piano:concert_grand_piano,Domolux Concert Grand Piano,living,1.55,2.25,1.05,room_gf_salon
+5,domolux.sculptural_fireplace,pack:domolux.sculptural_fireplace:sculptural_fireplace,Domolux Sculptural Fireplace,living,2.40,0.65,1.45,room_gf_salon
+6,domolux.sculptural_room_divider,pack:domolux.sculptural_room_divider:sculptural_room_divider,Domolux Sculptural Room Divider,living,2.20,0.35,2.10,room_gf_salon
+7,domolux.luxury_aquarium,pack:domolux.luxury_aquarium:luxury_aquarium,Domolux Architectural Luxury Aquarium,living,1.80,0.65,1.70,room_gf_salon
+8,domolux.floorstanding_hifi_speaker,pack:domolux.floorstanding_hifi_speaker:floorstanding_hifi_speaker,Domolux Reference Hi-Fi Tower,entertainment,0.38,0.52,1.42,room_gf_salon
+9,domolux.full_body_massage_chair,pack:domolux.full_body_massage_chair:full_body_massage_chair,Domolux Full-Body Massage Chair,living,0.90,1.55,1.25,room_gf_living
+10,domolux.motorized_drapery,pack:domolux.motorized_drapery:motorized_drapery,Domolux Motorized Architectural Drapery,living,2.80,0.32,2.80,room_gf_living
+11,domolux.smart_pet_feeding_station,pack:domolux.smart_pet_feeding_station:smart_pet_feeding_station,Domolux Intelligent Pet Dining Station,kitchen,0.75,0.42,0.65,room_gf_living
+12,domolux.acoustic_bass_trap_tower,pack:domolux.acoustic_bass_trap_tower:acoustic_bass_trap_tower,Domolux Acoustic Bass-Trap Monolith,entertainment,0.50,0.50,2.20,room_gf_living
+13,domolux.acoustic_ceiling_baffles,pack:domolux.acoustic_ceiling_baffles:acoustic_ceiling_baffles,Domolux Architectural Acoustic Baffles,entertainment,2.80,1.80,0.45,room_gf_dining
+14,domolux.closet_island,pack:domolux.closet_island:closet_island,Domolux Gourmet Culinary Prep Island,bedroom,1.80,1.10,0.95,room_gf_kitchen
+15,domolux.pet_grooming_wash_station,pack:domolux.pet_grooming_wash_station:pet_grooming_wash_station,Domolux Pet Grooming Suite,wellness,1.45,0.85,1.65,room_gf_pantry
+16,domolux.garment_care_steam_cabinet,pack:domolux.garment_care_steam_cabinet:garment_care_steam_cabinet,Domolux Garment Steam Cabinet,bedroom,0.65,0.68,1.95,room_gf_pantry
+17,domolux.jewelry_safe,pack:domolux.jewelry_safe:jewelry_safe,Domolux Armored Guest Safe,bedroom,0.65,0.60,1.25,room_gf_guest_bed
+18,domolux.dressing_vanity,pack:domolux.dressing_vanity:dressing_vanity,Domolux Haute Couture Guest Vanity,wellness,1.65,0.65,1.48,room_gf_guest_bath
+19,domolux.outdoor_sun_lounger,pack:domolux.outdoor_sun_lounger:outdoor_sun_lounger,Domolux Grand Resort Sun Lounger,outdoor,0.88,2.10,0.52,out_terrace
+20,domolux.outdoor_grill_station,pack:domolux.outdoor_grill_station:outdoor_grill_station,Domolux Outdoor Gourmet Grill Station,kitchen,2.40,0.85,1.25,out_terrace
+21,domolux.outdoor_fire_pit,pack:domolux.outdoor_fire_pit:outdoor_fire_pit,Domolux Sculptural Outdoor Fire Pit,outdoor,1.25,1.25,0.42,out_terrace
+22,domolux.outdoor_shower_column,pack:domolux.outdoor_shower_column:outdoor_shower_column,Domolux Architectural Outdoor Shower,outdoor,1.05,1.05,2.30,out_terrace
+23,domolux.robotic_lawn_mower_dock,pack:domolux.robotic_lawn_mower_dock:robotic_lawn_mower_dock,Domolux Robotic Estate Mower Dock,outdoor,0.95,1.15,0.58,out_garden
+24,domolux.pilates_reformer,pack:domolux.pilates_reformer:pilates_reformer,Domolux Professional Pilates Reformer,bedroom,0.76,2.45,0.72,room_uf_master_bed
+25,domolux.luxury_spa_bathtub,pack:domolux.luxury_spa_bathtub:luxury_spa_bathtub,Domolux Luxury Spa Bathtub,wellness,2.00,1.15,2.25,room_uf_master_bath
+26,domolux.finnish_sauna_cabin,pack:domolux.finnish_sauna_cabin:finnish_sauna_cabin,Domolux Finnish Sauna Sanctuary,wellness,2.10,1.80,2.15,room_uf_master_bath
+27,domolux.full_length_mirror,pack:domolux.full_length_mirror:full_length_mirror,Domolux Sculptural Dressing Mirror,wellness,0.95,0.35,2.15,room_uf_dressing
+28,domolux.executive_desk,pack:domolux.executive_desk:desk_executive,Domolux Presidential Executive Desk,living,1.80,0.85,0.76,room_uf_library
+29,domolux.premium_exercise_bike,pack:domolux.premium_exercise_bike:premium_exercise_bike,Domolux Performance Indoor Cycle,general,0.62,1.35,1.32,room_uf_library
+30,domolux.motorized_projection_screen,pack:domolux.motorized_projection_screen:motorized_projection_screen,Domolux Motorized Cinema Screen 150\",entertainment,3.20,0.24,2.10,room_uf_cinema
+31,domolux.laser_projector,pack:domolux.laser_projector:laser_projector,Domolux Reference Laser Projector,entertainment,0.60,0.55,0.26,room_uf_cinema
+32,domolux.cinema_recliner,pack:domolux.cinema_recliner:cinema_recliner,Domolux Cinema Power Recliner,entertainment,1.05,1.20,1.10,room_uf_cinema
+33,domolux.acoustic_double_door,pack:domolux.acoustic_double_door:acoustic_double_door,Domolux Acoustic Double Door,entertainment,1.30,0.42,2.50,room_uf_cinema
+34,domolux.luxury_treadmill,pack:domolux.luxury_treadmill:luxury_treadmill,Domolux Elite Commercial Treadmill,general,0.92,1.95,1.48,room_uf_bed1
+35,domolux.dual_cable_trainer,pack:domolux.dual_cable_trainer:dual_cable_trainer,Domolux Dual Cable Trainer,general,1.65,1.15,2.20,room_uf_bed2

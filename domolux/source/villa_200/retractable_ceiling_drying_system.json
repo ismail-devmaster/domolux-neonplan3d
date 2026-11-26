@@ -1,0 +1,157 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.retractable_ceiling_drying_system",
+  "name": "Domolux Motorized Architectural Ceiling Laundry Airer",
+  "publisher": "Domolux Studio",
+  "description": "Ceiling-recessed motorized clothes drying rack featuring twin scissor lifts, 15m of anodized aluminum drying rods, warm air blowers, and LED downlight panel.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "retractable_ceiling_drying_system",
+      "name": {
+        "en": "Domolux Motorized Architectural Ceiling Laundry Airer",
+        "de": "Domolux Motorisierter Decken-Wäscheständer",
+        "ar": "منشر الغسيل المعماري السقفي الآلي القابل للنزول دومولوكس"
+      },
+      "size": [
+        1.5,
+        0.6,
+        0.35
+      ],
+      "mount": "ceiling",
+      "surface": false,
+      "group": "appliances",
+      "room": [
+        "storage"
+      ],
+      "tags": [
+        "ceiling_airer",
+        "drying_rack",
+        "laundry",
+        "motorized",
+        "ceiling",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.96,
+          "d": 0.94,
+          "y": 0.85,
+          "h": 0.15,
+          "color": "#22252c",
+          "finish": "dark",
+          "edges": true,
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.55,
+          "d": 0.45,
+          "y": 0.84,
+          "h": 0.02,
+          "color": "#fff3cc",
+          "glow": true,
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": -0.38,
+          "z": 0,
+          "w": 0.04,
+          "d": 0.65,
+          "y": 0.25,
+          "h": 0.6,
+          "color": "metal",
+          "fix": "wd"
+        },
+        {
+          "shape": "box",
+          "x": 0.38,
+          "z": 0,
+          "w": 0.04,
+          "d": 0.65,
+          "y": 0.25,
+          "h": 0.6,
+          "color": "metal",
+          "fix": "wd"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": -0.25,
+          "w": 0.03,
+          "d": 0.03,
+          "y": 0.2,
+          "h": 0.92,
+          "axis": "x",
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wd"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": -0.08,
+          "w": 0.03,
+          "d": 0.03,
+          "y": 0.2,
+          "h": 0.92,
+          "axis": "x",
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wd"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": 0.08,
+          "w": 0.03,
+          "d": 0.03,
+          "y": 0.2,
+          "h": 0.92,
+          "axis": "x",
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wd"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": 0.25,
+          "w": 0.03,
+          "d": 0.03,
+          "y": 0.2,
+          "h": 0.92,
+          "axis": "x",
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wd"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 0.96,
+          "d": 0.94
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 0.55,
+          "d": 0.45
+        }
+      ]
+    }
+  ]
+}

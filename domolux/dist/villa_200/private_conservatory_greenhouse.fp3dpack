@@ -1,0 +1,156 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.private_conservatory_greenhouse",
+  "name": "Domolux Monumental Glass Conservatory and Winter Garden Pavilion",
+  "publisher": "Domolux Studio",
+  "description": "Monumental Victorian-inspired private villa conservatory featuring blackened steel architectural glazing, vaulted arched glass roof, automated ridge vent windows, and central exotic planter island.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "private_conservatory_greenhouse",
+    "name": {
+     "en": "Domolux Monumental Glass Conservatory and Winter Garden Pavilion",
+     "de": "Domolux Monumentale Orangerie & Glas-Wintergarten",
+     "ar": "قصر النباتات الشتوي والكونسرفتوار الزجاجي المعماري الفاخر دومولوكس"
+    },
+    "size": [
+     3.5,
+     2.4,
+     2.8
+    ],
+    "mount": "floor",
+    "surface": false,
+    "group": "outdoor",
+    "room": [
+     "outdoor"
+    ],
+    "tags": [
+     "conservatory",
+     "greenhouse",
+     "orangerie",
+     "glass_pavilion",
+     "winter_garden",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.98,
+      "y": 0,
+      "h": 0.22,
+      "color": "#495057",
+      "finish": "dark",
+      "edges": true,
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": -0.47,
+      "z": 0,
+      "w": 0.04,
+      "d": 0.94,
+      "y": 0.22,
+      "h": 0.58,
+      "color": "#88c0d0",
+      "finish": "glass",
+      "edges": true,
+      "fix": "w"
+     },
+     {
+      "shape": "box",
+      "x": 0.47,
+      "z": 0,
+      "w": 0.04,
+      "d": 0.94,
+      "y": 0.22,
+      "h": 0.58,
+      "color": "#88c0d0",
+      "finish": "glass",
+      "edges": true,
+      "fix": "w"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.47,
+      "w": 0.94,
+      "d": 0.04,
+      "y": 0.22,
+      "h": 0.58,
+      "color": "#88c0d0",
+      "finish": "glass",
+      "edges": true,
+      "fix": "d"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.47,
+      "w": 0.94,
+      "d": 0.04,
+      "y": 0.22,
+      "h": 0.58,
+      "color": "#88c0d0",
+      "finish": "glass",
+      "edges": true,
+      "fix": "d"
+     },
+     {
+      "shape": "loft",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.98,
+      "y": 0.8,
+      "h": 0.18,
+      "tx": 0,
+      "tz": 0,
+      "tw": 0.5,
+      "td": 0.98,
+      "color": "#3a4a58",
+      "finish": "glass",
+      "edges": true
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": 0,
+      "w": 0.45,
+      "d": 0.45,
+      "y": 0.22,
+      "h": 0.45,
+      "color": "#2d6a4f",
+      "edges": true,
+      "fix": "wd"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.98
+     },
+     {
+      "shape": "circle",
+      "x": 0,
+      "z": 0,
+      "r": 0.22
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "F4smCbRgIFhuwYGOUN/TabxXOMrPGQzNLZ+vgI/llv2HrXVzTFoo1jQL68DlR0kuK2U1QXnw12oQ05mlJhKTCA=="
+ }
+}

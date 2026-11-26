@@ -1,0 +1,132 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.motorized_wardrobe_carousel",
+  "name": "Domolux Rotational Motorized Wardrobe Carousel Suite",
+  "publisher": "Domolux Studio",
+  "description": "Circular architectural dressing room installation with automated bidirectional garment indexing carousel, curved bronze glass enclosure, and capacitive touch foot control.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "motorized_wardrobe_carousel",
+      "name": {
+        "en": "Domolux Rotational Motorized Wardrobe Carousel Suite",
+        "de": "Domolux Motorisiertes Garderoben-Karussell",
+        "ar": "دولاب الملابس الدوار الآلي بمحرك كهربائي وزجاج مدخن دومولوكس"
+      },
+      "size": [
+        1.4,
+        1.4,
+        2.2
+      ],
+      "mount": "floor",
+      "surface": false,
+      "group": "storage",
+      "room": [
+        "bedroom",
+        "storage"
+      ],
+      "tags": [
+        "wardrobe",
+        "carousel",
+        "motorized",
+        "closet",
+        "luxury",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": 0,
+          "w": 0.96,
+          "d": 0.96,
+          "y": 0,
+          "h": 0.08,
+          "color": "#141518",
+          "fix": "h"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": 0,
+          "w": 0.96,
+          "d": 0.96,
+          "y": 0.94,
+          "h": 0.06,
+          "color": "#141518",
+          "fix": "h"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": 0,
+          "w": 0.16,
+          "d": 0.16,
+          "y": 0.08,
+          "h": 0.86,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wd"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": 0,
+          "w": 0.76,
+          "d": 0.76,
+          "y": 0.65,
+          "h": 0.04,
+          "color": "#d4af37",
+          "fix": "h"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": 0,
+          "w": 0.82,
+          "d": 0.82,
+          "y": 0.18,
+          "h": 0.04,
+          "color": "#282a30",
+          "edges": true,
+          "fix": "h"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": 0,
+          "w": 0.92,
+          "d": 0.92,
+          "y": 0.08,
+          "h": 0.86,
+          "color": "#3a2f26",
+          "finish": "glass",
+          "edges": true
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "circle",
+          "x": 0,
+          "z": 0,
+          "r": 0.48
+        },
+        {
+          "shape": "circle",
+          "x": 0,
+          "z": 0,
+          "r": 0.38
+        },
+        {
+          "shape": "circle",
+          "x": 0,
+          "z": 0,
+          "r": 0.08
+        }
+      ]
+    }
+  ]
+}

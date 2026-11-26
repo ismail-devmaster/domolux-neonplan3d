@@ -1,0 +1,179 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.vinyl_archive_cabinet",
+  "name": "Domolux Collector's Audiophile Vinyl Record Archive",
+  "publisher": "Domolux Studio",
+  "description": "Precision-engineered walnut vinyl library storing up to 800 LPs across vertical bays with flip-forward browsing bins, integrated warm LED shelf wash, and brass dividing rods.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "vinyl_archive_cabinet",
+    "name": {
+     "en": "Domolux Collector's Audiophile Vinyl Record Archive",
+     "de": "Domolux Architektonisches Schallplatten-Archiv",
+     "ar": "دولاب أرشفة وحفظ أسطوانات الفينيل الموسيقية دومولوكس"
+    },
+    "size": [
+     1.2,
+     0.45,
+     1.4
+    ],
+    "mount": "floor",
+    "surface": false,
+    "group": "storage",
+    "room": [
+     "living",
+     "office"
+    ],
+    "tags": [
+     "vinyl_storage",
+     "lp_archive",
+     "audio",
+     "shelving",
+     "walnut",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.96,
+      "d": 0.94,
+      "y": 0,
+      "h": 0.06,
+      "color": "#141518",
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.02,
+      "w": 0.98,
+      "d": 0.92,
+      "y": 0.06,
+      "h": 0.92,
+      "color": "wood",
+      "finish": "dark",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.04,
+      "w": 0.04,
+      "d": 0.82,
+      "y": 0.08,
+      "h": 0.88,
+      "color": "#2d1f14",
+      "fix": "w"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.05,
+      "w": 0.9,
+      "d": 0.8,
+      "y": 0.08,
+      "h": 0.4,
+      "color": "#111215"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.05,
+      "w": 0.9,
+      "d": 0.8,
+      "y": 0.52,
+      "h": 0.4,
+      "color": "#111215"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.04,
+      "w": 0.92,
+      "d": 0.84,
+      "y": 0.48,
+      "h": 0.04,
+      "color": "#3d2b1f",
+      "finish": "wood",
+      "fix": "h"
+     },
+     {
+      "shape": "cyl",
+      "x": -0.24,
+      "z": 0.42,
+      "w": 0.02,
+      "d": 0.02,
+      "y": 0.08,
+      "h": 0.4,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wd"
+     },
+     {
+      "shape": "cyl",
+      "x": 0.24,
+      "z": 0.42,
+      "w": 0.02,
+      "d": 0.02,
+      "y": 0.08,
+      "h": 0.4,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wd"
+     },
+     {
+      "shape": "cyl",
+      "x": -0.24,
+      "z": 0.42,
+      "w": 0.02,
+      "d": 0.02,
+      "y": 0.52,
+      "h": 0.4,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wd"
+     },
+     {
+      "shape": "cyl",
+      "x": 0.24,
+      "z": 0.42,
+      "w": 0.02,
+      "d": 0.02,
+      "y": 0.52,
+      "h": 0.4,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wd"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.92
+     },
+     {
+      "shape": "line",
+      "x1": 0,
+      "z1": -0.45,
+      "x2": 0,
+      "z2": 0.45
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "aAkiOf6mX1VGw0nFNkP3rr6lSxEkqHRLMa889qx35n43yP/r5OqYXeovzR88nz8pyVndRQldlfgQ0dUaFakSCw=="
+ }
+}

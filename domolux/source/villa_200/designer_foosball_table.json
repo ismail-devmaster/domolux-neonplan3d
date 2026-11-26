@@ -1,0 +1,179 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.designer_foosball_table",
+  "name": "Domolux Glass and Anodized Alloy Designer Foosball Table",
+  "publisher": "Domolux Studio",
+  "description": "Contemporary foosball table with extra-clear tempered glass playing pitch, CNC-machined aerospace aluminum players, chrome rods with timber grips, and smoked glass side aprons.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "designer_foosball_table",
+      "name": {
+        "en": "Domolux Glass and Anodized Alloy Designer Foosball Table",
+        "de": "Domolux Designer-Tischkicker aus Glas & Metall",
+        "ar": "طاولة كرة قدم الطاولة الفاخرة بالزجاج والألمنيوم المصقول دومولوكس"
+      },
+      "size": [
+        1.5,
+        0.95,
+        0.9
+      ],
+      "mount": "floor",
+      "surface": false,
+      "group": "living",
+      "room": [
+        "living"
+      ],
+      "tags": [
+        "foosball",
+        "table_football",
+        "games",
+        "glass",
+        "luxury",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": -0.42,
+          "z": -0.4,
+          "w": 0.06,
+          "d": 0.08,
+          "y": 0,
+          "h": 0.7,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wd"
+        },
+        {
+          "shape": "box",
+          "x": 0.42,
+          "z": -0.4,
+          "w": 0.06,
+          "d": 0.08,
+          "y": 0,
+          "h": 0.7,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wd"
+        },
+        {
+          "shape": "box",
+          "x": -0.42,
+          "z": 0.4,
+          "w": 0.06,
+          "d": 0.08,
+          "y": 0,
+          "h": 0.7,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wd"
+        },
+        {
+          "shape": "box",
+          "x": 0.42,
+          "z": 0.4,
+          "w": 0.06,
+          "d": 0.08,
+          "y": 0,
+          "h": 0.7,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wd"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.96,
+          "d": 0.86,
+          "y": 0.65,
+          "h": 0.28,
+          "color": "#2e3b4e",
+          "finish": "glass",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.88,
+          "d": 0.78,
+          "y": 0.66,
+          "h": 0.02,
+          "color": "#e8ecef",
+          "finish": "glass",
+          "edges": true,
+          "fix": "h"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": -0.25,
+          "w": 0.02,
+          "d": 0.02,
+          "y": 0.82,
+          "h": 0.98,
+          "axis": "z",
+          "color": "metal",
+          "fix": "wd"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": -0.08,
+          "w": 0.02,
+          "d": 0.02,
+          "y": 0.82,
+          "h": 0.98,
+          "axis": "z",
+          "color": "metal",
+          "fix": "wd"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": 0.08,
+          "w": 0.02,
+          "d": 0.02,
+          "y": 0.82,
+          "h": 0.98,
+          "axis": "z",
+          "color": "metal",
+          "fix": "wd"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": 0.25,
+          "w": 0.02,
+          "d": 0.02,
+          "y": 0.82,
+          "h": 0.98,
+          "axis": "z",
+          "color": "metal",
+          "fix": "wd"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 0.96,
+          "d": 0.86
+        },
+        {
+          "shape": "line",
+          "x1": 0,
+          "z1": -0.43,
+          "x2": 0,
+          "z2": 0.43
+        }
+      ]
+    }
+  ]
+}

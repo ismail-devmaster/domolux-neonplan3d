@@ -1,0 +1,188 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.arched_feature_window",
+  "name": "Domolux Arched Architectural Feature Window",
+  "publisher": "Domolux Studio",
+  "description": "Palatial semicircular arched window assembly featuring custom cast bronze frames, sunburst radial glazing bars, and low-E insulated glass.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "arched_feature_window",
+      "name": {
+        "en": "Domolux Arched Architectural Feature Window",
+        "de": "Domolux Rundbogen-Architekturfenster",
+        "ar": "نافذة معمارية قوسية مميزة دومولوكس"
+      },
+      "size": [
+        1.6,
+        0.22,
+        2.6
+      ],
+      "mount": "wall",
+      "wall_y": 0.4,
+      "surface": false,
+      "group": "window",
+      "room": [
+        "hall",
+        "living",
+        "dining",
+        "bath"
+      ],
+      "tags": [
+        "window",
+        "arched",
+        "classical",
+        "radial",
+        "bronze",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": -0.46,
+          "z": 0,
+          "w": 0.08,
+          "d": 0.85,
+          "y": 0,
+          "h": 0.65,
+          "color": "#3d301b",
+          "edges": "glow",
+          "fix": "w"
+        },
+        {
+          "shape": "box",
+          "x": 0.46,
+          "z": 0,
+          "w": 0.08,
+          "d": 0.85,
+          "y": 0,
+          "h": 0.65,
+          "color": "#3d301b",
+          "edges": "glow",
+          "fix": "w"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 1,
+          "d": 0.85,
+          "y": 0,
+          "h": 0.05,
+          "color": "#3d301b",
+          "edges": "glow",
+          "fix": "h"
+        },
+        {
+          "shape": "loft",
+          "x": -0.32,
+          "z": 0,
+          "w": 0.2,
+          "d": 0.85,
+          "y": 0.65,
+          "h": 0.28,
+          "tx": -0.15,
+          "tz": 0,
+          "tw": 0.16,
+          "td": 0.85,
+          "color": "#3d301b",
+          "edges": "glow"
+        },
+        {
+          "shape": "loft",
+          "x": 0.32,
+          "z": 0,
+          "w": 0.2,
+          "d": 0.85,
+          "y": 0.65,
+          "h": 0.28,
+          "tx": 0.15,
+          "tz": 0,
+          "tw": 0.16,
+          "td": 0.85,
+          "color": "#3d301b",
+          "edges": "glow"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.3,
+          "d": 0.85,
+          "y": 0.93,
+          "h": 0.07,
+          "color": "#3d301b",
+          "edges": "glow",
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.84,
+          "d": 0.1,
+          "y": 0.05,
+          "h": 0.6,
+          "color": "glass",
+          "edges": true
+        },
+        {
+          "shape": "loft",
+          "x": 0,
+          "z": 0,
+          "w": 0.84,
+          "d": 0.1,
+          "y": 0.65,
+          "h": 0.28,
+          "tx": 0,
+          "tz": 0,
+          "tw": 0.45,
+          "td": 0.1,
+          "color": "glass",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.02,
+          "d": 0.12,
+          "y": 0.05,
+          "h": 0.88,
+          "color": "#c5a059",
+          "fix": "w"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.84,
+          "d": 0.12,
+          "y": 0.65,
+          "h": 0.02,
+          "color": "#c5a059",
+          "fix": "h"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 1,
+          "d": 0.85
+        },
+        {
+          "shape": "line",
+          "x1": 0,
+          "z1": -0.4,
+          "x2": 0,
+          "z2": 0.4
+        }
+      ]
+    }
+  ]
+}

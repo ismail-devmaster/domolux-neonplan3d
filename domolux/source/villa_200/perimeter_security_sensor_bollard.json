@@ -1,0 +1,119 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.perimeter_security_sensor_bollard",
+  "name": "Domolux Estate Perimeter Active-Infrared Security Bollard",
+  "publisher": "Domolux Studio",
+  "description": "Substantial architectural bronze perimeter bollard concealing multi-beam active infrared intrusion sensors, microwave radar, and discreet pathway wash lighting.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "perimeter_security_sensor_bollard",
+      "name": {
+        "en": "Domolux Estate Perimeter Active-Infrared Security Bollard",
+        "de": "Domolux Perimeter-Sicherheits- und Sensorpoller",
+        "ar": "عمود أمان واستشعار محيطي للأراضي والحدائق الفاخرة دومولوكس"
+      },
+      "size": [
+        0.22,
+        0.22,
+        1.05
+      ],
+      "mount": "floor",
+      "surface": false,
+      "group": "entryway",
+      "room": [
+        "outdoor",
+        "hallway"
+      ],
+      "tags": [
+        "bollard",
+        "perimeter",
+        "security",
+        "infrared",
+        "radar",
+        "outdoor",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.94,
+          "d": 0.94,
+          "y": 0,
+          "h": 0.08,
+          "color": "#181a1f",
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.82,
+          "d": 0.82,
+          "y": 0.08,
+          "h": 0.84,
+          "color": "#2e251e",
+          "finish": "dark",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.38,
+          "w": 0.44,
+          "d": 0.06,
+          "y": 0.25,
+          "h": 0.58,
+          "color": "#8b0000",
+          "glow": true,
+          "fix": "wd"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.86,
+          "d": 0.86,
+          "y": 0.92,
+          "h": 0.06,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.8,
+          "d": 0.8,
+          "y": 0.88,
+          "h": 0.04,
+          "color": "#fff3cc",
+          "glow": true,
+          "fix": "h"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 0.94,
+          "d": 0.94
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0.38,
+          "w": 0.44,
+          "d": 0.06
+        }
+      ]
+    }
+  ]
+}

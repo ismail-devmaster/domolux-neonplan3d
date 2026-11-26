@@ -1,0 +1,128 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.ceiling_bicycle_lift",
+  "name": "Domolux Motorized Architectural Ceiling Bicycle Hoist",
+  "publisher": "Domolux Studio",
+  "description": "Ceiling-recessed motorized electric hoist with dual steel aircraft cables, vinyl-coated handlebar/saddle hooks, wireless RF remote, and auto-stop sensors.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "ceiling_bicycle_lift",
+    "name": {
+     "en": "Domolux Motorized Architectural Ceiling Bicycle Hoist",
+     "de": "Domolux Motorisierter Decken-Fahrradlift",
+     "ar": "رافعة الدراجات السقفية الآلية المعمارية دومولوكس"
+    },
+    "size": [
+     0.6,
+     1.8,
+     0.4
+    ],
+    "mount": "ceiling",
+    "surface": false,
+    "group": "appliances",
+    "room": [
+     "storage"
+    ],
+    "tags": [
+     "bike_lift",
+     "bicycle_hoist",
+     "motorized",
+     "ceiling",
+     "garage",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.84,
+      "d": 0.94,
+      "y": 0.82,
+      "h": 0.18,
+      "color": "#22252c",
+      "finish": "dark",
+      "edges": true,
+      "fix": "h"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": -0.38,
+      "w": 0.015,
+      "d": 0.015,
+      "y": 0.22,
+      "h": 0.6,
+      "color": "metal",
+      "fix": "wd"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": 0.38,
+      "w": 0.015,
+      "d": 0.015,
+      "y": 0.22,
+      "h": 0.6,
+      "color": "metal",
+      "fix": "wd"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.38,
+      "w": 0.48,
+      "d": 0.1,
+      "y": 0.15,
+      "h": 0.08,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.38,
+      "w": 0.35,
+      "d": 0.1,
+      "y": 0.15,
+      "h": 0.08,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wdh"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.84,
+      "d": 0.94
+     },
+     {
+      "shape": "circle",
+      "x": 0,
+      "z": -0.38,
+      "r": 0.12
+     },
+     {
+      "shape": "circle",
+      "x": 0,
+      "z": 0.38,
+      "r": 0.12
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "Vi52SBk1MJS64fLdvOP5rBqn2Pdlbq5BGCRfZNDMfdvaXWVQKgvUbcwahpuCRfEsC7sR3tVZbgIifMGcs9onDQ=="
+ }
+}

@@ -1,0 +1,229 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.floorstanding_wine_display_rack",
+  "name": "Domolux Floorstanding Wine Display Rack",
+  "publisher": "Domolux Studio",
+  "description": "Floor-to-ceiling sculptural wine showcase tower featuring smoked oak vertical stiles, angled satin brass bottle cradles with LED label illumination, and Nero Marquina base.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "floorstanding_wine_display_rack",
+      "name": {
+        "en": "Domolux Floorstanding Wine Display Rack",
+        "de": "Domolux Freistehendes Wein-Präsentationsregal",
+        "ar": "رف عرض نبيذ فاخر قائم على الأرض دومولوكس"
+      },
+      "size": [
+        0.9,
+        0.42,
+        2.4
+      ],
+      "mount": "floor",
+      "surface": false,
+      "group": "living",
+      "room": [
+        "dining",
+        "living",
+        "kitchen"
+      ],
+      "tags": [
+        "wine",
+        "rack",
+        "display",
+        "bottles",
+        "sommelier",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.96,
+          "d": 0.92,
+          "y": 0,
+          "h": 0.06,
+          "color": "#1a1b20",
+          "finish": "dark",
+          "edges": true,
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": -0.42,
+          "z": 0,
+          "w": 0.06,
+          "d": 0.8,
+          "y": 0.06,
+          "h": 0.92,
+          "color": "#3a2d23",
+          "finish": "wood",
+          "edges": true,
+          "fix": "w"
+        },
+        {
+          "shape": "box",
+          "x": 0.42,
+          "z": 0,
+          "w": 0.06,
+          "d": 0.8,
+          "y": 0.06,
+          "h": 0.92,
+          "color": "#3a2d23",
+          "finish": "wood",
+          "edges": true,
+          "fix": "w"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.96,
+          "d": 0.8,
+          "y": 0.96,
+          "h": 0.04,
+          "color": "#3a2d23",
+          "finish": "wood",
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.76,
+          "d": 0.65,
+          "y": 0.2,
+          "h": 0.02,
+          "rot": 15,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.76,
+          "d": 0.65,
+          "y": 0.36,
+          "h": 0.02,
+          "rot": 15,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.76,
+          "d": 0.65,
+          "y": 0.52,
+          "h": 0.02,
+          "rot": 15,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.76,
+          "d": 0.65,
+          "y": 0.68,
+          "h": 0.02,
+          "rot": 15,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.76,
+          "d": 0.65,
+          "y": 0.84,
+          "h": 0.02,
+          "rot": 15,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "h"
+        },
+        {
+          "shape": "cyl",
+          "x": -0.22,
+          "z": 0.05,
+          "w": 0.08,
+          "d": 0.08,
+          "y": 0.22,
+          "h": 0.24,
+          "axis": "z",
+          "color": "#193322",
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": 0.22,
+          "z": 0.05,
+          "w": 0.08,
+          "d": 0.08,
+          "y": 0.22,
+          "h": 0.24,
+          "axis": "z",
+          "color": "#193322",
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": -0.22,
+          "z": 0.05,
+          "w": 0.08,
+          "d": 0.08,
+          "y": 0.54,
+          "h": 0.24,
+          "axis": "z",
+          "color": "#193322",
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": 0.22,
+          "z": 0.05,
+          "w": 0.08,
+          "d": 0.08,
+          "y": 0.54,
+          "h": 0.24,
+          "axis": "z",
+          "color": "#193322",
+          "fix": "wdh"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 0.96,
+          "d": 0.92
+        },
+        {
+          "shape": "circle",
+          "x": -0.22,
+          "z": 0,
+          "r": 0.1
+        },
+        {
+          "shape": "circle",
+          "x": 0.22,
+          "z": 0,
+          "r": 0.1
+        }
+      ]
+    }
+  ]
+}

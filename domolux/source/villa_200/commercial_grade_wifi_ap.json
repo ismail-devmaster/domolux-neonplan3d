@@ -1,0 +1,97 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.commercial_grade_wifi_ap",
+  "name": "Domolux Ultra-High-Density Wi-Fi 7 Enterprise Ceiling Access Point",
+  "publisher": "Domolux Studio",
+  "description": "Ceiling-mounted tri-band Wi-Fi 7 commercial wireless access point supporting up to 10Gbps aggregate throughput, with multi-color status beacon halo and sleek white dome.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "commercial_grade_wifi_ap",
+      "name": {
+        "en": "Domolux Ultra-High-Density Wi-Fi 7 Enterprise Ceiling Access Point",
+        "de": "Domolux High-End Wi-Fi 7 Decken-Access-Point",
+        "ar": "نقطة الوصول اللاسلكية المعمارية السقفية بتقنية واي فاي 7 دومولوكس"
+      },
+      "size": [
+        0.25,
+        0.25,
+        0.06
+      ],
+      "mount": "ceiling",
+      "surface": false,
+      "group": "appliances",
+      "room": [
+        "hallway",
+        "living",
+        "office"
+      ],
+      "tags": [
+        "wifi",
+        "access_point",
+        "networking",
+        "wifi7",
+        "ceiling",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": 0,
+          "w": 0.9,
+          "d": 0.9,
+          "y": 0.85,
+          "h": 0.15,
+          "color": "#141518",
+          "fix": "h"
+        },
+        {
+          "shape": "loft",
+          "x": 0,
+          "z": 0,
+          "w": 0.96,
+          "d": 0.96,
+          "y": 0.1,
+          "h": 0.75,
+          "tx": 0,
+          "tz": 0,
+          "tw": 0.82,
+          "td": 0.82,
+          "color": "#f8f9fa",
+          "finish": "white",
+          "edges": true
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": 0,
+          "w": 0.28,
+          "d": 0.28,
+          "y": 0.05,
+          "h": 0.06,
+          "color": "#00e5ff",
+          "glow": true,
+          "fix": "wdh"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "circle",
+          "x": 0,
+          "z": 0,
+          "r": 0.48
+        },
+        {
+          "shape": "circle",
+          "x": 0,
+          "z": 0,
+          "r": 0.14
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.undercounter_beverage_cooler",
+  "name": "Domolux Undercounter Luxury Beverage Cooler",
+  "publisher": "Domolux Studio",
+  "description": "Built-under hospitality beverage center with double-glazed glass door, adjustable metal shelves for cans and champagne, toe-kick ventilation, and blue LED illumination.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "undercounter_beverage_cooler",
+    "name": {
+     "en": "Domolux Undercounter Luxury Beverage Cooler",
+     "de": "Domolux Unterbau-Getränkekühlschrank",
+     "ar": "مبرد مشروبات فاخر تحت الكاونتر دومولوكس"
+    },
+    "size": [
+     0.6,
+     0.6,
+     0.85
+    ],
+    "mount": "floor",
+    "surface": true,
+    "group": "kitchen",
+    "room": [
+     "kitchen",
+     "living"
+    ],
+    "tags": [
+     "cooler",
+     "beverage",
+     "drinks",
+     "undercounter",
+     "appliance",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.05,
+      "w": 0.98,
+      "d": 0.85,
+      "y": 0,
+      "h": 0.12,
+      "color": "#141519",
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.96,
+      "y": 0.12,
+      "h": 0.86,
+      "color": "#22252c",
+      "finish": "dark",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.05,
+      "w": 0.84,
+      "d": 0.78,
+      "y": 0.3,
+      "h": 0.02,
+      "color": "metal",
+      "edges": true,
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.05,
+      "w": 0.84,
+      "d": 0.78,
+      "y": 0.5,
+      "h": 0.02,
+      "color": "metal",
+      "edges": true,
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.05,
+      "w": 0.84,
+      "d": 0.78,
+      "y": 0.7,
+      "h": 0.02,
+      "color": "metal",
+      "edges": true,
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.46,
+      "w": 0.96,
+      "d": 0.05,
+      "y": 0.13,
+      "h": 0.84,
+      "color": "metal",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.46,
+      "w": 0.78,
+      "d": 0.03,
+      "y": 0.2,
+      "h": 0.7,
+      "color": "glass",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.35,
+      "w": 0.78,
+      "d": 0.02,
+      "y": 0.88,
+      "h": 0.02,
+      "color": "#00e5ff",
+      "glow": true,
+      "edges": "glow",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": 0.42,
+      "z": 0.48,
+      "w": 0.03,
+      "d": 0.03,
+      "y": 0.35,
+      "h": 0.4,
+      "color": "metal",
+      "fix": "wd"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.96
+     },
+     {
+      "shape": "line",
+      "x1": -0.45,
+      "z1": 0.46,
+      "x2": 0.45,
+      "z2": 0.46
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "BWWWZVklRqYbNiV+iF3jt2wZZHjR7FsZqp4LvosQpUpbKZxBy87KKdI8LfvKxfgFL2lzAb/4Wkpw4weKrwsJCA=="
+ }
+}

@@ -1,0 +1,128 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.floor_to_ceiling_picture_window",
+  "name": "Domolux Floor-to-Ceiling Picture Window",
+  "publisher": "Domolux Studio",
+  "description": "Monumental triple-glazed floor-to-ceiling fixed picture window with concealed sub-floor structural glazing channel, low-iron solar control glass, and satin bronze internal sill trim.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "floor_to_ceiling_picture_window",
+      "name": {
+        "en": "Domolux Floor-to-Ceiling Picture Window",
+        "de": "Domolux Raumhohes Panorama-Festfenster",
+        "ar": "نافذة بانورامية ثابتة ممتدة من الأرض إلى السقف دومولوكس"
+      },
+      "size": [
+        2.8,
+        0.22,
+        3.2
+      ],
+      "mount": "floor",
+      "surface": false,
+      "group": "window",
+      "room": [
+        "living",
+        "dining",
+        "bedroom",
+        "hall"
+      ],
+      "tags": [
+        "window",
+        "fixed",
+        "picture",
+        "panoramic",
+        "glazing",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 1,
+          "d": 0.9,
+          "y": 0,
+          "h": 0.03,
+          "color": "#1e2229",
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 1,
+          "d": 0.9,
+          "y": 0.97,
+          "h": 0.03,
+          "color": "#1e2229",
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": -0.485,
+          "z": 0,
+          "w": 0.03,
+          "d": 0.9,
+          "y": 0,
+          "h": 1,
+          "color": "#1e2229",
+          "fix": "w"
+        },
+        {
+          "shape": "box",
+          "x": 0.485,
+          "z": 0,
+          "w": 0.03,
+          "d": 0.9,
+          "y": 0,
+          "h": 1,
+          "color": "#1e2229",
+          "fix": "w"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.95,
+          "d": 0.12,
+          "y": 0.03,
+          "h": 0.94,
+          "color": "glass",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.25,
+          "w": 1,
+          "d": 0.4,
+          "y": 0,
+          "h": 0.04,
+          "color": "#7a623a",
+          "edges": "glow",
+          "fix": "h"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 1,
+          "d": 0.9
+        },
+        {
+          "shape": "line",
+          "x1": -0.48,
+          "z1": 0,
+          "x2": 0.48,
+          "z2": 0
+        }
+      ]
+    }
+  ]
+}

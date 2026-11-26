@@ -1,0 +1,187 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.bespoke_luxury_bar_cabinet",
+  "name": "Domolux Bespoke Luxury Bar Cabinet",
+  "publisher": "Domolux Studio",
+  "description": "Monumental hospitality bar credenza with folding pocket doors, antiqued mirrored back wall, polished brass stemware racks, Calacatta marble mixing station, and wine bottle storage drawers.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "bespoke_luxury_bar_cabinet",
+    "name": {
+     "en": "Domolux Bespoke Luxury Bar Cabinet",
+     "de": "Domolux Maßgefertigte Luxus-Barschrankwand",
+     "ar": "خزانة بار فاخرة متكاملة دومولوكس"
+    },
+    "size": [
+     1.8,
+     0.65,
+     1.95
+    ],
+    "mount": "floor",
+    "surface": true,
+    "group": "living",
+    "room": [
+     "living",
+     "dining"
+    ],
+    "tags": [
+     "bar",
+     "cabinet",
+     "cocktail",
+     "marble",
+     "mirrored",
+     "luxury",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.94,
+      "d": 0.9,
+      "y": 0,
+      "h": 0.05,
+      "color": "#16171b",
+      "edges": "faint",
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.94,
+      "y": 0.05,
+      "h": 0.92,
+      "color": "#3a2d23",
+      "finish": "wood",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.02,
+      "w": 0.9,
+      "d": 0.8,
+      "y": 0.44,
+      "h": 0.05,
+      "color": "#e8e5dc",
+      "finish": "body",
+      "edges": true,
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.38,
+      "w": 0.9,
+      "d": 0.02,
+      "y": 0.5,
+      "h": 0.44,
+      "color": "#a5b4c4",
+      "glow": true,
+      "edges": "faint"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.86,
+      "d": 0.65,
+      "y": 0.9,
+      "h": 0.02,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.1,
+      "w": 0.88,
+      "d": 0.45,
+      "y": 0.7,
+      "h": 0.015,
+      "color": "glass",
+      "edges": true,
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": -0.23,
+      "z": 0.44,
+      "w": 0.43,
+      "d": 0.04,
+      "y": 0.08,
+      "h": 0.34,
+      "color": "#2d231b",
+      "finish": "wood",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0.23,
+      "z": 0.44,
+      "w": 0.43,
+      "d": 0.04,
+      "y": 0.08,
+      "h": 0.34,
+      "color": "#2d231b",
+      "finish": "wood",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": -0.04,
+      "z": 0.48,
+      "w": 0.02,
+      "d": 0.04,
+      "y": 0.16,
+      "h": 0.18,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": 0.04,
+      "z": 0.48,
+      "w": 0.02,
+      "d": 0.04,
+      "y": 0.16,
+      "h": 0.18,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wdh"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.94
+     },
+     {
+      "shape": "line",
+      "x1": 0,
+      "z1": -0.45,
+      "x2": 0,
+      "z2": 0.45
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "GjTI9GmqGSqnFziswBY9wdvKuwTfSuvqp5qd/A6D/+dPZ62Ni5Fnmejtbx9swpJ7GCWTbBv1KuYkGTMRvA6gCw=="
+ }
+}

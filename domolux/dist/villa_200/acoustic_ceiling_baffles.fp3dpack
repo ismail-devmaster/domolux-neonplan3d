@@ -1,0 +1,225 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.acoustic_ceiling_baffles",
+  "name": "Domolux Architectural Acoustic Ceiling Baffles",
+  "publisher": "Domolux Studio",
+  "description": "Suspended rhythmic acoustic baffle installation with felt-clad fins, concealed wire tensioners, and integrated micro-linear LED accents for commercial-grade residential acoustic control.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "acoustic_ceiling_baffles",
+    "name": {
+     "en": "Domolux Architectural Acoustic Ceiling Baffles",
+     "de": "Domolux Architektonische Akustik-Deckensegel",
+     "ar": "حواجز سقفية صوتية معمارية دومولوكس"
+    },
+    "size": [
+     2.8,
+     1.8,
+     0.45
+    ],
+    "mount": "ceiling",
+    "surface": false,
+    "group": "ceiling",
+    "room": [
+     "cinema",
+     "living",
+     "office"
+    ],
+    "tags": [
+     "baffles",
+     "acoustic",
+     "ceiling",
+     "felt",
+     "cinema",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": -0.35,
+      "z": 0,
+      "w": 0.04,
+      "d": 0.95,
+      "y": 0.88,
+      "h": 0.12,
+      "color": "#22252a",
+      "edges": "faint"
+     },
+     {
+      "shape": "box",
+      "x": 0.35,
+      "z": 0,
+      "w": 0.04,
+      "d": 0.95,
+      "y": 0.88,
+      "h": 0.12,
+      "color": "#22252a",
+      "edges": "faint"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.4,
+      "w": 0.96,
+      "d": 0.04,
+      "y": 0.05,
+      "h": 0.8,
+      "color": "#3e434f",
+      "finish": "fabric",
+      "edges": true,
+      "fix": "d"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.24,
+      "w": 0.96,
+      "d": 0.04,
+      "y": 0.05,
+      "h": 0.8,
+      "color": "#4b515f",
+      "finish": "fabric",
+      "edges": true,
+      "fix": "d"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.08,
+      "w": 0.96,
+      "d": 0.04,
+      "y": 0.05,
+      "h": 0.8,
+      "color": "#5a6273",
+      "finish": "fabric",
+      "edges": true,
+      "fix": "d"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.08,
+      "w": 0.96,
+      "d": 0.04,
+      "y": 0.05,
+      "h": 0.8,
+      "color": "#5a6273",
+      "finish": "fabric",
+      "edges": true,
+      "fix": "d"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.24,
+      "w": 0.96,
+      "d": 0.04,
+      "y": 0.05,
+      "h": 0.8,
+      "color": "#4b515f",
+      "finish": "fabric",
+      "edges": true,
+      "fix": "d"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.4,
+      "w": 0.96,
+      "d": 0.04,
+      "y": 0.05,
+      "h": 0.8,
+      "color": "#3e434f",
+      "finish": "fabric",
+      "edges": true,
+      "fix": "d"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.08,
+      "w": 0.96,
+      "d": 0.02,
+      "y": 0,
+      "h": 0.05,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "dh"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.08,
+      "w": 0.96,
+      "d": 0.02,
+      "y": 0,
+      "h": 0.05,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "dh"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 1,
+      "d": 1
+     },
+     {
+      "shape": "line",
+      "x1": -0.48,
+      "z1": -0.4,
+      "x2": 0.48,
+      "z2": -0.4
+     },
+     {
+      "shape": "line",
+      "x1": -0.48,
+      "z1": -0.24,
+      "x2": 0.48,
+      "z2": -0.24
+     },
+     {
+      "shape": "line",
+      "x1": -0.48,
+      "z1": -0.08,
+      "x2": 0.48,
+      "z2": -0.08
+     },
+     {
+      "shape": "line",
+      "x1": -0.48,
+      "z1": 0.08,
+      "x2": 0.48,
+      "z2": 0.08
+     },
+     {
+      "shape": "line",
+      "x1": -0.48,
+      "z1": 0.24,
+      "x2": 0.48,
+      "z2": 0.24
+     },
+     {
+      "shape": "line",
+      "x1": -0.48,
+      "z1": 0.4,
+      "x2": 0.48,
+      "z2": 0.4
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "kd7pAENj5A7+Aqh2aeOR4zYJLbObMWiI+fct4saag9ayKBVcxx+RbBA8+LH/cS4l5uwSi9G3m0/ozUI23D+eDQ=="
+ }
+}

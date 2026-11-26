@@ -1,0 +1,11 @@
+{
+  "name": "domolux-3d-bridge",
+  "version": "1.0.0",
+  "description": "Domolux 3D Autonomous Architecture and MCP Bridge for NeonPlan 3D",
+  "type": "module",
+  "main": "src/mcp-server.js",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "start": "node src/mcp-server.js"
+  }
+}

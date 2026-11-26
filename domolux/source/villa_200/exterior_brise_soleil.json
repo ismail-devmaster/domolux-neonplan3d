@@ -1,0 +1,212 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.exterior_brise_soleil",
+  "name": "Domolux Exterior Architectural Brise-Soleil Screen",
+  "publisher": "Domolux Studio",
+  "description": "Façade architectural solar shading screen composed of motorized aerodynamic extruded aluminum blades finished in champagne bronze with smart solar tracking integration.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "exterior_brise_soleil",
+      "name": {
+        "en": "Domolux Exterior Architectural Brise-Soleil Screen",
+        "de": "Domolux Architektonischer Sonnenschutz-Lamellenraster",
+        "ar": "كاسر شمس معمارية خارجية دومولوكس"
+      },
+      "size": [
+        2.6,
+        0.45,
+        3.2
+      ],
+      "mount": "wall",
+      "wall_y": 0,
+      "surface": false,
+      "group": "outdoor",
+      "room": [
+        "terrace",
+        "living"
+      ],
+      "tags": [
+        "shading",
+        "brise-soleil",
+        "louvers",
+        "facade",
+        "solar",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": -0.45,
+          "z": 0,
+          "w": 0.08,
+          "d": 0.85,
+          "y": 0,
+          "h": 1,
+          "color": "#473824",
+          "edges": "glow",
+          "fix": "wd"
+        },
+        {
+          "shape": "box",
+          "x": 0.45,
+          "z": 0,
+          "w": 0.08,
+          "d": 0.85,
+          "y": 0,
+          "h": 1,
+          "color": "#473824",
+          "edges": "glow",
+          "fix": "wd"
+        },
+        {
+          "shape": "loft",
+          "x": 0,
+          "z": 0.08,
+          "w": 0.9,
+          "d": 0.7,
+          "y": 0.08,
+          "h": 0.03,
+          "tx": 0,
+          "tz": 0.18,
+          "tw": 0.9,
+          "td": 0.5,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "h"
+        },
+        {
+          "shape": "loft",
+          "x": 0,
+          "z": 0.08,
+          "w": 0.9,
+          "d": 0.7,
+          "y": 0.2,
+          "h": 0.03,
+          "tx": 0,
+          "tz": 0.18,
+          "tw": 0.9,
+          "td": 0.5,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "h"
+        },
+        {
+          "shape": "loft",
+          "x": 0,
+          "z": 0.08,
+          "w": 0.9,
+          "d": 0.7,
+          "y": 0.32,
+          "h": 0.03,
+          "tx": 0,
+          "tz": 0.18,
+          "tw": 0.9,
+          "td": 0.5,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "h"
+        },
+        {
+          "shape": "loft",
+          "x": 0,
+          "z": 0.08,
+          "w": 0.9,
+          "d": 0.7,
+          "y": 0.44,
+          "h": 0.03,
+          "tx": 0,
+          "tz": 0.18,
+          "tw": 0.9,
+          "td": 0.5,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "h"
+        },
+        {
+          "shape": "loft",
+          "x": 0,
+          "z": 0.08,
+          "w": 0.9,
+          "d": 0.7,
+          "y": 0.56,
+          "h": 0.03,
+          "tx": 0,
+          "tz": 0.18,
+          "tw": 0.9,
+          "td": 0.5,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "h"
+        },
+        {
+          "shape": "loft",
+          "x": 0,
+          "z": 0.08,
+          "w": 0.9,
+          "d": 0.7,
+          "y": 0.68,
+          "h": 0.03,
+          "tx": 0,
+          "tz": 0.18,
+          "tw": 0.9,
+          "td": 0.5,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "h"
+        },
+        {
+          "shape": "loft",
+          "x": 0,
+          "z": 0.08,
+          "w": 0.9,
+          "d": 0.7,
+          "y": 0.8,
+          "h": 0.03,
+          "tx": 0,
+          "tz": 0.18,
+          "tw": 0.9,
+          "td": 0.5,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "h"
+        },
+        {
+          "shape": "loft",
+          "x": 0,
+          "z": 0.08,
+          "w": 0.9,
+          "d": 0.7,
+          "y": 0.92,
+          "h": 0.03,
+          "tx": 0,
+          "tz": 0.18,
+          "tw": 0.9,
+          "td": 0.5,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "h"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 1,
+          "d": 0.85
+        },
+        {
+          "shape": "line",
+          "x1": -0.4,
+          "z1": 0.1,
+          "x2": 0.4,
+          "z2": 0.1
+        }
+      ]
+    }
+  ]
+}

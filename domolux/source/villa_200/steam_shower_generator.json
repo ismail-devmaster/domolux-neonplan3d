@@ -1,0 +1,126 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.steam_shower_generator",
+  "name": "Domolux Precision Digital Steam Generator Module",
+  "publisher": "Domolux Studio",
+  "description": "Compact high-output stainless steel residential steam generator with dual heating tanks, auto-flush system, acoustic silencer exhaust, and aromatherapy oil injection port.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "steam_shower_generator",
+      "name": {
+        "en": "Domolux Precision Digital Steam Generator Module",
+        "de": "Domolux Digitaler Dampfbadgenerator",
+        "ar": "وحدة توليد البخار الرقمية لغرف الاستحمام الفاخرة دومولوكس"
+      },
+      "size": [
+        0.5,
+        0.25,
+        0.45
+      ],
+      "mount": "wall",
+      "wall_y": 0.4,
+      "surface": false,
+      "group": "bathroom",
+      "room": [
+        "bathroom"
+      ],
+      "tags": [
+        "steam",
+        "generator",
+        "spa",
+        "wellness",
+        "bathroom",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.45,
+          "w": 0.94,
+          "d": 0.08,
+          "y": 0.05,
+          "h": 0.9,
+          "color": "#1a1c20",
+          "fix": "d"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.02,
+          "w": 0.92,
+          "d": 0.82,
+          "y": 0.06,
+          "h": 0.88,
+          "color": "metal",
+          "finish": "metal",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": -0.22,
+          "z": 0.4,
+          "w": 0.38,
+          "d": 0.02,
+          "y": 0.3,
+          "h": 0.45,
+          "color": "#22252c",
+          "fix": "d"
+        },
+        {
+          "shape": "box",
+          "x": 0.25,
+          "z": 0.4,
+          "w": 0.28,
+          "d": 0.02,
+          "y": 0.55,
+          "h": 0.2,
+          "color": "#00e5ff",
+          "glow": true,
+          "fix": "d"
+        },
+        {
+          "shape": "cyl",
+          "x": -0.3,
+          "z": 0,
+          "w": 0.08,
+          "d": 0.08,
+          "y": 0.94,
+          "h": 0.12,
+          "color": "#c5a059",
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": 0.25,
+          "z": 0,
+          "w": 0.12,
+          "d": 0.12,
+          "y": 0.94,
+          "h": 0.1,
+          "color": "metal",
+          "fix": "wdh"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": -0.02,
+          "w": 0.92,
+          "d": 0.82
+        },
+        {
+          "shape": "circle",
+          "x": 0.25,
+          "z": 0,
+          "r": 0.1
+        }
+      ]
+    }
+  ]
+}

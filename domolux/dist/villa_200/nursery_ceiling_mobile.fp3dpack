@@ -1,0 +1,134 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.nursery_ceiling_mobile",
+  "name": "Domolux Celestial Brass and Timber Kinetic Ceiling Mobile",
+  "publisher": "Domolux Studio",
+  "description": "Suspended kinetic Calder-inspired celestial mobile with hand-balanced counterweight wire arms, solid turned walnut orbs, and satin brass lunar crescents.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "nursery_ceiling_mobile",
+    "name": {
+     "en": "Domolux Celestial Brass and Timber Kinetic Ceiling Mobile",
+     "de": "Domolux Kinetisches Hänge-Mobile aus Messing & Holz",
+     "ar": "مجسم سقف معلق متحرك من النحاس وخشب الجوز لغرف المواليد دومولوكس"
+    },
+    "size": [
+     0.7,
+     0.7,
+     0.8
+    ],
+    "mount": "ceiling",
+    "surface": false,
+    "group": "lighting",
+    "room": [
+     "bedroom"
+    ],
+    "tags": [
+     "mobile",
+     "kinetic",
+     "nursery",
+     "decor",
+     "ceiling",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": 0,
+      "w": 0.18,
+      "d": 0.18,
+      "y": 0.94,
+      "h": 0.06,
+      "color": "#c5a059",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": 0,
+      "w": 0.02,
+      "d": 0.02,
+      "y": 0.55,
+      "h": 0.4,
+      "color": "metal",
+      "fix": "wd"
+     },
+     {
+      "shape": "cyl",
+      "x": 0.05,
+      "z": 0,
+      "w": 0.02,
+      "d": 0.02,
+      "y": 0.55,
+      "h": 0.75,
+      "axis": "x",
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wd"
+     },
+     {
+      "shape": "cyl",
+      "x": -0.28,
+      "z": 0.08,
+      "w": 0.015,
+      "d": 0.015,
+      "y": 0.32,
+      "h": 0.45,
+      "axis": "z",
+      "color": "#c5a059",
+      "fix": "wd"
+     },
+     {
+      "shape": "cyl",
+      "x": 0.38,
+      "z": -0.05,
+      "w": 0.18,
+      "d": 0.18,
+      "y": 0.44,
+      "h": 0.18,
+      "color": "#3a281a",
+      "finish": "wood",
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": -0.28,
+      "z": 0.28,
+      "w": 0.16,
+      "d": 0.02,
+      "y": 0.15,
+      "h": 0.2,
+      "color": "#d4af37",
+      "edges": "glow",
+      "fix": "wdh"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "circle",
+      "x": 0,
+      "z": 0,
+      "r": 0.35
+     },
+     {
+      "shape": "line",
+      "x1": -0.35,
+      "z1": 0,
+      "x2": 0.35,
+      "z2": 0
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "PTxC1vmKkAe4kNHTa5FU23Z6ngqWhwvphktcQSUeFYc7vq0KIjDXVOK2j62Cv1MwDNbigndy5+RgIpui4r0qCw=="
+ }
+}

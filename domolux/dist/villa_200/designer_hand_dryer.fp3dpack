@@ -1,0 +1,116 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.designer_hand_dryer",
+  "name": "Domolux Whisper-Acoustic Architectural Hand Dryer",
+  "publisher": "Domolux Studio",
+  "description": "Curvilinear wall-mounted acoustic high-speed hand dryer crafted with an anodized gunmetal shell, precision laser-cut linear airflow nozzle, and HEPA H14 internal filtration.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "designer_hand_dryer",
+    "name": {
+     "en": "Domolux Whisper-Acoustic Architectural Hand Dryer",
+     "de": "Domolux Geräuscharmer Designer-Händetrockner",
+     "ar": "مجفف اليدين المعماري فائق الهدوء دومولوكس"
+    },
+    "size": [
+     0.28,
+     0.2,
+     0.48
+    ],
+    "mount": "wall",
+    "wall_y": 1.05,
+    "surface": false,
+    "group": "bathroom",
+    "room": [
+     "bathroom"
+    ],
+    "tags": [
+     "hand_dryer",
+     "acoustic",
+     "hygiene",
+     "commercial",
+     "bathroom",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.44,
+      "w": 0.88,
+      "d": 0.1,
+      "y": 0.06,
+      "h": 0.88,
+      "color": "#1c1e22",
+      "fix": "d"
+     },
+     {
+      "shape": "loft",
+      "x": 0,
+      "z": 0,
+      "w": 0.92,
+      "d": 0.82,
+      "y": 0.06,
+      "h": 0.86,
+      "tx": 0,
+      "tz": -0.06,
+      "tw": 0.78,
+      "td": 0.65,
+      "color": "#2e323b",
+      "finish": "dark",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.15,
+      "w": 0.72,
+      "d": 0.08,
+      "y": 0.02,
+      "h": 0.06,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": 0.22,
+      "w": 0.08,
+      "d": 0.08,
+      "y": 0.06,
+      "h": 0.02,
+      "color": "#00e5ff",
+      "glow": true,
+      "fix": "wdh"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.92,
+      "d": 0.82
+     },
+     {
+      "shape": "line",
+      "x1": -0.36,
+      "z1": 0.15,
+      "x2": 0.36,
+      "z2": 0.15
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "vVwvKk1dVSb4eze4JPBEE2r4HbKxrvhkWuBUAtNJqNhpagJCUVNvTprhqsuTbK1gDKhhtGr6FDrc8pTlUSSeBQ=="
+ }
+}

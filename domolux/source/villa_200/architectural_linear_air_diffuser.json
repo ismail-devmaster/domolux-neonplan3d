@@ -1,0 +1,138 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.architectural_linear_air_diffuser",
+  "name": "Domolux Architectural Linear Air Diffuser",
+  "publisher": "Domolux Studio",
+  "description": "Discreet architectural HVAC linear slot diffuser designed for flush integration into plasterboard ceilings with satin black directional air deflectors and shadow reveal perimeter.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "architectural_linear_air_diffuser",
+      "name": {
+        "en": "Domolux Architectural Linear Air Diffuser",
+        "de": "Domolux Architektonischer Linearer Luftauslass",
+        "ar": "موزع هواء خطي معماري دومولوكس"
+      },
+      "size": [
+        1.8,
+        0.22,
+        0.15
+      ],
+      "mount": "ceiling",
+      "surface": false,
+      "group": "heating",
+      "room": [
+        "living",
+        "bedroom",
+        "dining",
+        "hall"
+      ],
+      "tags": [
+        "hvac",
+        "diffuser",
+        "ventilation",
+        "linear",
+        "ceiling",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.94,
+          "d": 0.85,
+          "y": 0.25,
+          "h": 0.75,
+          "color": "#282a30",
+          "edges": "faint"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 1,
+          "d": 1,
+          "y": 0.15,
+          "h": 0.1,
+          "color": "#e2e8f0",
+          "finish": "white",
+          "edges": "faint"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.92,
+          "d": 0.5,
+          "y": 0,
+          "h": 0.15,
+          "color": "#0f1013",
+          "edges": "faint"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.12,
+          "w": 0.9,
+          "d": 0.08,
+          "y": 0.02,
+          "h": 0.08,
+          "color": "#8c7247",
+          "edges": true,
+          "fix": "dh"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.12,
+          "w": 0.9,
+          "d": 0.08,
+          "y": 0.02,
+          "h": 0.08,
+          "color": "#8c7247",
+          "edges": true,
+          "fix": "dh"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.92,
+          "d": 0.04,
+          "y": 0,
+          "h": 0.1,
+          "color": "#1a1c22",
+          "edges": "faint",
+          "fix": "dh"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 1,
+          "d": 1
+        },
+        {
+          "shape": "line",
+          "x1": -0.45,
+          "z1": -0.12,
+          "x2": 0.45,
+          "z2": -0.12
+        },
+        {
+          "shape": "line",
+          "x1": -0.45,
+          "z1": 0.12,
+          "x2": 0.45,
+          "z2": 0.12
+        }
+      ]
+    }
+  ]
+}

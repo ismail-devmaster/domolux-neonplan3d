@@ -1,0 +1,106 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.rainwater_harvesting_cistern",
+  "name": "Domolux Monolithic 10,000L Rainwater Harvesting Cistern",
+  "publisher": "Domolux Studio",
+  "description": "Heavy reinforced precast concrete rainwater harvesting reservoir with vortex particulate pre-filter, calming inlet, submersible pressure pump, and cast bronze turret access hatch.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "rainwater_harvesting_cistern",
+      "name": {
+        "en": "Domolux Monolithic 10,000L Rainwater Harvesting Cistern",
+        "de": "Domolux Unterirdische 10.000L Regenwasser-Zisterne",
+        "ar": "خزان تجميع وحصاد مياه الأمطار المعماري عالي السعة دومولوكس"
+      },
+      "size": [
+        2.5,
+        2.5,
+        2.2
+      ],
+      "mount": "floor",
+      "surface": false,
+      "group": "outdoor",
+      "room": [
+        "outdoor"
+      ],
+      "tags": [
+        "cistern",
+        "rainwater",
+        "water_storage",
+        "sustainability",
+        "landscape",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": 0,
+          "w": 0.96,
+          "d": 0.96,
+          "y": 0,
+          "h": 0.88,
+          "color": "#343a40",
+          "finish": "dark",
+          "edges": true
+        },
+        {
+          "shape": "loft",
+          "x": 0,
+          "z": 0,
+          "w": 0.96,
+          "d": 0.96,
+          "y": 0.84,
+          "h": 0.12,
+          "tx": 0,
+          "tz": 0,
+          "tw": 0.55,
+          "td": 0.55,
+          "color": "#2b2f36",
+          "edges": true
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": 0,
+          "w": 0.42,
+          "d": 0.42,
+          "y": 0.9,
+          "h": 0.06,
+          "color": "#212529",
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": 0,
+          "w": 0.38,
+          "d": 0.38,
+          "y": 0.96,
+          "h": 0.04,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wdh"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "circle",
+          "x": 0,
+          "z": 0,
+          "r": 0.48
+        },
+        {
+          "shape": "circle",
+          "x": 0,
+          "z": 0,
+          "r": 0.19
+        }
+      ]
+    }
+  ]
+}

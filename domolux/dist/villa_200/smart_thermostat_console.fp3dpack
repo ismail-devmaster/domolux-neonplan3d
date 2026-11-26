@@ -1,0 +1,116 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.smart_thermostat_console",
+  "name": "Domolux Rotational Glass and Brass Climate Thermostat Dial",
+  "publisher": "Domolux Studio",
+  "description": "Rotational wall climate dial featuring a knurled solid brass rotary outer bezel, high-contrast round AMOLED display, and integrated radar proximity wake-up.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "smart_thermostat_console",
+    "name": {
+     "en": "Domolux Rotational Glass and Brass Climate Thermostat Dial",
+     "de": "Domolux Designer-Raumthermostat mit Drehring",
+     "ar": "منظم الحرارة والمناخ الذكي بحلقة نحاسية وشاشة رقمية دومولوكس"
+    },
+    "size": [
+     0.14,
+     0.04,
+     0.14
+    ],
+    "mount": "wall",
+    "wall_y": 1.45,
+    "surface": false,
+    "group": "appliances",
+    "room": [
+     "living",
+     "bedroom",
+     "hallway"
+    ],
+    "tags": [
+     "thermostat",
+     "climate",
+     "hvac",
+     "brass",
+     "rotary",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": -0.42,
+      "w": 0.9,
+      "d": 0.9,
+      "y": 0.05,
+      "h": 0.12,
+      "axis": "z",
+      "color": "#141518",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": 0,
+      "w": 0.96,
+      "d": 0.96,
+      "y": 0.02,
+      "h": 0.42,
+      "axis": "z",
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": 0.26,
+      "w": 0.76,
+      "d": 0.76,
+      "y": 0.12,
+      "h": 0.05,
+      "axis": "z",
+      "color": "#000000",
+      "finish": "dark",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": 0.28,
+      "w": 0.42,
+      "d": 0.42,
+      "y": 0.28,
+      "h": 0.02,
+      "axis": "z",
+      "color": "#ff9800",
+      "glow": true,
+      "fix": "wdh"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "circle",
+      "x": 0,
+      "z": 0,
+      "r": 0.48
+     },
+     {
+      "shape": "circle",
+      "x": 0,
+      "z": 0.26,
+      "r": 0.38
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "lhCsL5mSXOF7VLh9gh6BYeIY4ld03gIlPF1fdbrw27t9yvUkIKpgxr+LX6yncbdikGUEJegy7dGTRJ0PAJDjBg=="
+ }
+}

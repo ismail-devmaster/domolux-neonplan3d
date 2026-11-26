@@ -1,0 +1,232 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.living_green_wall",
+  "name": "Domolux Living Green Wall Installation",
+  "publisher": "Domolux Studio",
+  "description": "Vertical indoor living biophilic plant wall module featuring automated hydroponic nutrient irrigation, dark bronze perimeter frame, and spectrum LED plant grow lighting.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "living_green_wall",
+      "name": {
+        "en": "Domolux Living Green Wall Installation",
+        "de": "Domolux Vertikale Lebende Pflanzenwand",
+        "ar": "جدار نباتي حي داخلي دومولوكس"
+      },
+      "size": [
+        2.2,
+        0.28,
+        2.8
+      ],
+      "mount": "wall",
+      "wall_y": 0.1,
+      "surface": false,
+      "group": "living",
+      "room": [
+        "living",
+        "hall",
+        "bath",
+        "dining"
+      ],
+      "tags": [
+        "green",
+        "wall",
+        "vertical",
+        "biophilic",
+        "plants",
+        "hydroponic",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.35,
+          "w": 1,
+          "d": 0.3,
+          "y": 0,
+          "h": 1,
+          "color": "#141519",
+          "edges": "faint"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.96,
+          "d": 0.85,
+          "y": 0,
+          "h": 0.12,
+          "color": "#22252c",
+          "edges": true,
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": -0.48,
+          "z": 0,
+          "w": 0.04,
+          "d": 0.8,
+          "y": 0,
+          "h": 1,
+          "color": "#3d301b",
+          "edges": "glow",
+          "fix": "w"
+        },
+        {
+          "shape": "box",
+          "x": 0.48,
+          "z": 0,
+          "w": 0.04,
+          "d": 0.8,
+          "y": 0,
+          "h": 1,
+          "color": "#3d301b",
+          "edges": "glow",
+          "fix": "w"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 1,
+          "d": 0.8,
+          "y": 0.96,
+          "h": 0.04,
+          "color": "#3d301b",
+          "edges": "glow",
+          "fix": "h"
+        },
+        {
+          "shape": "loft",
+          "x": -0.24,
+          "z": 0.12,
+          "w": 0.44,
+          "d": 0.5,
+          "y": 0.14,
+          "h": 0.26,
+          "tx": -0.24,
+          "tz": 0.18,
+          "tw": 0.4,
+          "td": 0.45,
+          "color": "#1f6e2e",
+          "finish": "plant",
+          "edges": true
+        },
+        {
+          "shape": "loft",
+          "x": 0.24,
+          "z": 0.12,
+          "w": 0.44,
+          "d": 0.5,
+          "y": 0.14,
+          "h": 0.26,
+          "tx": 0.24,
+          "tz": 0.18,
+          "tw": 0.4,
+          "td": 0.45,
+          "color": "#278237",
+          "finish": "plant",
+          "edges": true
+        },
+        {
+          "shape": "loft",
+          "x": -0.24,
+          "z": 0.12,
+          "w": 0.44,
+          "d": 0.5,
+          "y": 0.41,
+          "h": 0.26,
+          "tx": -0.24,
+          "tz": 0.18,
+          "tw": 0.4,
+          "td": 0.45,
+          "color": "#278237",
+          "finish": "plant",
+          "edges": true
+        },
+        {
+          "shape": "loft",
+          "x": 0.24,
+          "z": 0.12,
+          "w": 0.44,
+          "d": 0.5,
+          "y": 0.41,
+          "h": 0.26,
+          "tx": 0.24,
+          "tz": 0.18,
+          "tw": 0.4,
+          "td": 0.45,
+          "color": "#1f6e2e",
+          "finish": "plant",
+          "edges": true
+        },
+        {
+          "shape": "loft",
+          "x": -0.24,
+          "z": 0.12,
+          "w": 0.44,
+          "d": 0.5,
+          "y": 0.68,
+          "h": 0.26,
+          "tx": -0.24,
+          "tz": 0.18,
+          "tw": 0.4,
+          "td": 0.45,
+          "color": "#1f6e2e",
+          "finish": "plant",
+          "edges": true
+        },
+        {
+          "shape": "loft",
+          "x": 0.24,
+          "z": 0.12,
+          "w": 0.44,
+          "d": 0.5,
+          "y": 0.68,
+          "h": 0.26,
+          "tx": 0.24,
+          "tz": 0.18,
+          "tw": 0.4,
+          "td": 0.45,
+          "color": "#278237",
+          "finish": "plant",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.25,
+          "w": 0.94,
+          "d": 0.12,
+          "y": 0.94,
+          "h": 0.03,
+          "color": "#ffe0b2",
+          "glow": true,
+          "edges": "glow",
+          "fix": "h"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 1,
+          "d": 0.8
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0.1,
+          "w": 0.92,
+          "d": 0.6,
+          "fill": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.upholstered_acoustic_wall_panels",
+  "name": "Domolux Upholstered Acoustic Wall Panels",
+  "publisher": "Domolux Studio",
+  "description": "Geometric modular upholstered acoustic wall system with Italian cashmere and bouclé segment pillows, recessed dark bronze framing, and sound dampening core.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "upholstered_acoustic_wall_panels",
+      "name": {
+        "en": "Domolux Upholstered Acoustic Wall Panels",
+        "de": "Domolux Gepolsterte Akustik-Wandpaneele",
+        "ar": "ألواح حائط صوتية منجدة دومولوكس"
+      },
+      "size": [
+        2.6,
+        0.14,
+        2.6
+      ],
+      "mount": "wall",
+      "wall_y": 0.2,
+      "surface": false,
+      "group": "wall",
+      "room": [
+        "cinema",
+        "bedroom",
+        "living",
+        "office"
+      ],
+      "tags": [
+        "acoustic",
+        "upholstered",
+        "fabric",
+        "boucle",
+        "panels",
+        "cinema",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.35,
+          "w": 0.98,
+          "d": 0.25,
+          "y": 0,
+          "h": 1,
+          "color": "#191a20",
+          "edges": "faint"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.15,
+          "w": 1,
+          "d": 0.35,
+          "y": 0,
+          "h": 1,
+          "color": "#614d2e",
+          "edges": "glow"
+        },
+        {
+          "shape": "loft",
+          "x": -0.24,
+          "z": 0.15,
+          "w": 0.44,
+          "d": 0.55,
+          "y": 0.04,
+          "h": 0.43,
+          "tx": -0.24,
+          "tz": 0.18,
+          "tw": 0.4,
+          "td": 0.48,
+          "color": "fabric",
+          "finish": "fabric",
+          "edges": true
+        },
+        {
+          "shape": "loft",
+          "x": 0.24,
+          "z": 0.15,
+          "w": 0.44,
+          "d": 0.55,
+          "y": 0.04,
+          "h": 0.43,
+          "tx": 0.24,
+          "tz": 0.18,
+          "tw": 0.4,
+          "td": 0.48,
+          "color": "cushion",
+          "finish": "fabric",
+          "edges": true
+        },
+        {
+          "shape": "loft",
+          "x": -0.24,
+          "z": 0.15,
+          "w": 0.44,
+          "d": 0.55,
+          "y": 0.52,
+          "h": 0.43,
+          "tx": -0.24,
+          "tz": 0.18,
+          "tw": 0.4,
+          "td": 0.48,
+          "color": "cushion",
+          "finish": "fabric",
+          "edges": true
+        },
+        {
+          "shape": "loft",
+          "x": 0.24,
+          "z": 0.15,
+          "w": 0.44,
+          "d": 0.55,
+          "y": 0.52,
+          "h": 0.43,
+          "tx": 0.24,
+          "tz": 0.18,
+          "tw": 0.4,
+          "td": 0.48,
+          "color": "fabric",
+          "finish": "fabric",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.05,
+          "w": 0.03,
+          "d": 0.5,
+          "y": 0.02,
+          "h": 0.96,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "w"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.05,
+          "w": 0.96,
+          "d": 0.5,
+          "y": 0.48,
+          "h": 0.03,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.05,
+          "w": 0.98,
+          "d": 0.1,
+          "y": 0.98,
+          "h": 0.015,
+          "color": "#ffeacc",
+          "glow": true,
+          "edges": "glow",
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.05,
+          "w": 0.98,
+          "d": 0.1,
+          "y": 0.005,
+          "h": 0.015,
+          "color": "#ffeacc",
+          "glow": true,
+          "edges": "glow",
+          "fix": "h"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 1,
+          "d": 0.8
+        },
+        {
+          "shape": "line",
+          "x1": 0,
+          "z1": -0.4,
+          "x2": 0,
+          "z2": 0.4
+        },
+        {
+          "shape": "line",
+          "x1": -0.5,
+          "z1": 0,
+          "x2": 0.5,
+          "z2": 0
+        }
+      ]
+    }
+  ]
+}

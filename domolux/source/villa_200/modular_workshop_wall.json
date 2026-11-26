@@ -1,0 +1,118 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.modular_workshop_wall",
+  "name": "Domolux Precision Architectural Slatwall Workshop Organizer",
+  "publisher": "Domolux Studio",
+  "description": "Extruded heavy-duty anodized aluminum slatwall panel system with heavy tool hooks, magnetic socket holders, precision bit trays, and overhead LED task canopy.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "modular_workshop_wall",
+      "name": {
+        "en": "Domolux Precision Architectural Slatwall Workshop Organizer",
+        "de": "Domolux Modulare Werkstatt-Lamellenwand",
+        "ar": "جدار تنظيم الورشة المعماري بالألواح الألمنيوم المشقوقة دومولوكس"
+      },
+      "size": [
+        2,
+        0.2,
+        1.6
+      ],
+      "mount": "wall",
+      "wall_y": 0.6,
+      "surface": false,
+      "group": "storage",
+      "room": [
+        "storage"
+      ],
+      "tags": [
+        "slatwall",
+        "tool_organizer",
+        "workshop",
+        "garage",
+        "storage",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.42,
+          "w": 0.98,
+          "d": 0.12,
+          "y": 0,
+          "h": 0.98,
+          "color": "#16171b",
+          "fix": "d"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.05,
+          "w": 0.98,
+          "d": 0.72,
+          "y": 0,
+          "h": 0.94,
+          "color": "metal",
+          "finish": "metal",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": -0.3,
+          "z": 0.38,
+          "w": 0.32,
+          "d": 0.15,
+          "y": 0.55,
+          "h": 0.12,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0.25,
+          "z": 0.38,
+          "w": 0.38,
+          "d": 0.15,
+          "y": 0.3,
+          "h": 0.18,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.15,
+          "w": 0.98,
+          "d": 0.85,
+          "y": 0.94,
+          "h": 0.06,
+          "color": "#22252c",
+          "edges": true,
+          "fix": "h"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 0.98,
+          "d": 0.8
+        },
+        {
+          "shape": "line",
+          "x1": -0.48,
+          "z1": 0,
+          "x2": 0.48,
+          "z2": 0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.reference_vinyl_turntable",
+  "name": "Domolux Reference High-Mass Audiophile Turntable",
+  "publisher": "Domolux Studio",
+  "description": "High-mass reference analog turntable featuring a mirror-polished 60mm solid aerospace aluminum platter, magnetic levitation bearing, 12-inch carbon fiber tonearm, and brass sub-chassis.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "reference_vinyl_turntable",
+    "name": {
+     "en": "Domolux Reference High-Mass Audiophile Turntable",
+     "de": "Domolux High-Mass Referenz-Plattenspieler",
+     "ar": "مشغل أسطوانات فينيل تناظري مرجعي فائق الدقة دومولوكس"
+    },
+    "size": [
+     0.5,
+     0.45,
+     0.25
+    ],
+    "mount": "surface",
+    "surface": true,
+    "group": "living",
+    "room": [
+     "living",
+     "office"
+    ],
+    "tags": [
+     "turntable",
+     "vinyl",
+     "analog",
+     "audiophile",
+     "hifi",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "cyl",
+      "x": -0.38,
+      "z": 0.3,
+      "w": 0.12,
+      "d": 0.12,
+      "y": 0,
+      "h": 0.15,
+      "color": "#c5a059",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": 0.38,
+      "z": 0.3,
+      "w": 0.12,
+      "d": 0.12,
+      "y": 0,
+      "h": 0.15,
+      "color": "#c5a059",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": -0.38,
+      "w": 0.12,
+      "d": 0.12,
+      "y": 0,
+      "h": 0.15,
+      "color": "#c5a059",
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.94,
+      "d": 0.92,
+      "y": 0.15,
+      "h": 0.22,
+      "color": "#1c1e24",
+      "finish": "dark",
+      "edges": true
+     },
+     {
+      "shape": "cyl",
+      "x": -0.15,
+      "z": 0,
+      "w": 0.62,
+      "d": 0.62,
+      "y": 0.37,
+      "h": 0.24,
+      "color": "metal",
+      "edges": "glow",
+      "fix": "h"
+     },
+     {
+      "shape": "cyl",
+      "x": -0.15,
+      "z": 0,
+      "w": 0.58,
+      "d": 0.58,
+      "y": 0.61,
+      "h": 0.03,
+      "color": "#000000",
+      "fix": "h"
+     },
+     {
+      "shape": "cyl",
+      "x": -0.15,
+      "z": 0,
+      "w": 0.14,
+      "d": 0.14,
+      "y": 0.64,
+      "h": 0.16,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": 0.32,
+      "z": -0.18,
+      "w": 0.12,
+      "d": 0.12,
+      "y": 0.37,
+      "h": 0.28,
+      "color": "#c5a059",
+      "fix": "wd"
+     },
+     {
+      "shape": "cyl",
+      "x": 0.24,
+      "z": 0.05,
+      "w": 0.03,
+      "d": 0.03,
+      "y": 0.6,
+      "h": 0.44,
+      "axis": "z",
+      "color": "#363a42",
+      "edges": "glow",
+      "fix": "wd"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.94,
+      "d": 0.92
+     },
+     {
+      "shape": "circle",
+      "x": -0.15,
+      "z": 0,
+      "r": 0.31
+     },
+     {
+      "shape": "line",
+      "x1": 0.32,
+      "z1": -0.18,
+      "x2": 0.15,
+      "z2": 0.22
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "YVz9vX+2mWVwgWNMXba35ajMNSnAGf2K0W6FQ5nTszICDSKiKi2iVGwDCHjF6fN3VdyuHhabusooNqFJxPhmCg=="
+ }
+}

@@ -1,0 +1,159 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.architectural_shower_niche",
+  "name": "Domolux Recessed Backlit Stone Shower Niche",
+  "publisher": "Domolux Studio",
+  "description": "Waterproof recessed shower storage module featuring a mitered Fior di Bosco marble reveal, tempered glass floating tier, and IP68 concealed LED backlight channel.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "architectural_shower_niche",
+    "name": {
+     "en": "Domolux Recessed Backlit Stone Shower Niche",
+     "de": "Domolux Beleuchtete Dusch-Wandnische",
+     "ar": "نيش جداري مدمج لشاور الاستحمام مع إضاءة محيطية دومولوكس"
+    },
+    "size": [
+     0.4,
+     0.15,
+     0.7
+    ],
+    "mount": "wall",
+    "wall_y": 1.1,
+    "surface": false,
+    "group": "bathroom",
+    "room": [
+     "bathroom"
+    ],
+    "tags": [
+     "shower_niche",
+     "storage",
+     "lighting",
+     "marble",
+     "bathroom",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.44,
+      "w": 0.98,
+      "d": 0.08,
+      "y": 0.02,
+      "h": 0.96,
+      "color": "#363a42",
+      "edges": true,
+      "fix": "d"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.3,
+      "w": 0.84,
+      "d": 0.04,
+      "y": 0.06,
+      "h": 0.88,
+      "color": "#545a66",
+      "finish": "dark",
+      "edges": true,
+      "fix": "d"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.04,
+      "w": 0.84,
+      "d": 0.72,
+      "y": 0.06,
+      "h": 0.04,
+      "color": "#3e424c",
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.04,
+      "w": 0.84,
+      "d": 0.72,
+      "y": 0.9,
+      "h": 0.04,
+      "color": "#3e424c",
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": -0.4,
+      "z": 0.04,
+      "w": 0.04,
+      "d": 0.72,
+      "y": 0.1,
+      "h": 0.8,
+      "color": "#3e424c",
+      "fix": "w"
+     },
+     {
+      "shape": "box",
+      "x": 0.4,
+      "z": 0.04,
+      "w": 0.04,
+      "d": 0.72,
+      "y": 0.1,
+      "h": 0.8,
+      "color": "#3e424c",
+      "fix": "w"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.26,
+      "w": 0.82,
+      "d": 0.02,
+      "y": 0.88,
+      "h": 0.02,
+      "color": "#fff3cc",
+      "glow": true,
+      "fix": "yd"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.04,
+      "w": 0.82,
+      "d": 0.68,
+      "y": 0.48,
+      "h": 0.02,
+      "color": "#3a3429",
+      "finish": "glass",
+      "edges": true,
+      "fix": "h"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0.04,
+      "w": 0.84,
+      "d": 0.76
+     },
+     {
+      "shape": "line",
+      "x1": -0.4,
+      "z1": 0.04,
+      "x2": 0.4,
+      "z2": 0.04
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "hyVfAXH/lWWPfzXXT+1Mjgz+ik7HiOqfIiVcn+SQxo3quDHlAOOTmNlJvb+n/9cXCwkemg3kXq05dDAnJdxbDg=="
+ }
+}

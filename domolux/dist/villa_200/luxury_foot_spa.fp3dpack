@@ -1,0 +1,119 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.luxury_foot_spa",
+  "name": "Domolux Freestanding Sculptural Foot Hydromassage Basin",
+  "publisher": "Domolux Studio",
+  "description": "Compact freestanding hydrotherapy foot basin crafted from composite stone with thermo-circulating whirlpool bubblers, brass deck filler, and underwater chromotherapy lighting.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "luxury_foot_spa",
+    "name": {
+     "en": "Domolux Freestanding Sculptural Foot Hydromassage Basin",
+     "de": "Domolux Freistehendes Fuß-Whirlpoolbecken",
+     "ar": "حوض المساج المائي للأقدام بتصميم دائري فاخر دومولوكس"
+    },
+    "size": [
+     0.6,
+     0.65,
+     0.45
+    ],
+    "mount": "floor",
+    "surface": false,
+    "group": "bathroom",
+    "room": [
+     "bathroom"
+    ],
+    "tags": [
+     "foot_spa",
+     "hydromassage",
+     "wellness",
+     "relaxation",
+     "bathroom",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": 0,
+      "w": 0.82,
+      "d": 0.82,
+      "y": 0,
+      "h": 0.08,
+      "color": "#1a1c20",
+      "fix": "h"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": 0,
+      "w": 0.94,
+      "d": 0.94,
+      "y": 0.08,
+      "h": 0.88,
+      "color": "#2c2f36",
+      "finish": "dark",
+      "edges": true
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": 0.04,
+      "w": 0.74,
+      "d": 0.74,
+      "y": 0.2,
+      "h": 0.76,
+      "color": "#00b4d8",
+      "glow": true
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.04,
+      "w": 0.45,
+      "d": 0.38,
+      "y": 0.21,
+      "h": 0.03,
+      "color": "#141518",
+      "fix": "h"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": -0.38,
+      "w": 0.06,
+      "d": 0.06,
+      "y": 0.92,
+      "h": 0.22,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wd"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "circle",
+      "x": 0,
+      "z": 0,
+      "r": 0.46
+     },
+     {
+      "shape": "circle",
+      "x": 0,
+      "z": 0.04,
+      "r": 0.35
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "pp3F9TIerQWsvyuurvgedeJzEhq/1by8+ZOcgqyPys1mhs8rmCiYHBlyw3piWOn8vyQ0vbKihPNOhWz46Ke/Cg=="
+ }
+}

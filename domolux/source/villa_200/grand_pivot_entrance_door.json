@@ -1,0 +1,197 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.grand_pivot_entrance_door",
+  "name": "Domolux Grand Pivot Entrance Door",
+  "publisher": "Domolux Studio",
+  "description": "Monumental oversized entrance pivot door featuring carbon-core smoked oak cladding, thermal-break bronze jambs, concealed heavy-duty bottom pivot hinge, and full-height bronze pull handle.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "grand_pivot_entrance_door",
+      "name": {
+        "en": "Domolux Grand Pivot Entrance Door",
+        "de": "Domolux Monumentale Pivot-Eingangstür",
+        "ar": "باب مدخل محوري كبير دومولوكس"
+      },
+      "size": [
+        1.8,
+        0.28,
+        3.2
+      ],
+      "mount": "floor",
+      "surface": false,
+      "group": "door",
+      "room": [
+        "hall",
+        "living"
+      ],
+      "tags": [
+        "door",
+        "pivot",
+        "entrance",
+        "oak",
+        "bronze",
+        "luxury",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": -0.47,
+          "z": 0,
+          "w": 0.06,
+          "d": 0.9,
+          "y": 0,
+          "h": 1,
+          "color": "#3d301b",
+          "edges": "glow",
+          "fix": "wd"
+        },
+        {
+          "shape": "box",
+          "x": 0.47,
+          "z": 0,
+          "w": 0.06,
+          "d": 0.9,
+          "y": 0,
+          "h": 1,
+          "color": "#3d301b",
+          "edges": "glow",
+          "fix": "wd"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 1,
+          "d": 0.9,
+          "y": 0.96,
+          "h": 0.04,
+          "color": "#3d301b",
+          "edges": "glow",
+          "fix": "hd"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 1,
+          "d": 0.92,
+          "y": 0,
+          "h": 0.02,
+          "color": "metal",
+          "edges": "faint",
+          "fix": "hd"
+        },
+        {
+          "shape": "box",
+          "x": 0.03,
+          "z": 0.05,
+          "w": 0.88,
+          "d": 0.45,
+          "y": 0.025,
+          "h": 0.93,
+          "color": "#382c22",
+          "finish": "wood",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0.03,
+          "z": 0.17,
+          "w": 0.87,
+          "d": 0.02,
+          "y": 0.33,
+          "h": 0.01,
+          "color": "#191512",
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0.03,
+          "z": 0.17,
+          "w": 0.87,
+          "d": 0.02,
+          "y": 0.66,
+          "h": 0.01,
+          "color": "#191512",
+          "fix": "h"
+        },
+        {
+          "shape": "cyl",
+          "x": -0.32,
+          "z": 0.05,
+          "w": 0.06,
+          "d": 0.06,
+          "y": 0,
+          "h": 0.03,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": -0.32,
+          "z": 0.05,
+          "w": 0.06,
+          "d": 0.06,
+          "y": 0.95,
+          "h": 0.03,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0.35,
+          "z": 0.22,
+          "w": 0.03,
+          "d": 0.08,
+          "y": 0.15,
+          "h": 0.7,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wd"
+        },
+        {
+          "shape": "box",
+          "x": 0.35,
+          "z": -0.12,
+          "w": 0.03,
+          "d": 0.08,
+          "y": 0.15,
+          "h": 0.7,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wd"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 1,
+          "d": 0.9
+        },
+        {
+          "shape": "rect",
+          "x": 0.03,
+          "z": 0.05,
+          "w": 0.88,
+          "d": 0.45,
+          "fill": true
+        },
+        {
+          "shape": "circle",
+          "x": -0.32,
+          "z": 0.05,
+          "r": 0.08
+        }
+      ]
+    }
+  ]
+}

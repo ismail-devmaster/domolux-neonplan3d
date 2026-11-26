@@ -1,0 +1,121 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.ev_charging_pedestal",
+  "name": "Domolux 22kW High-Output Architectural EV Fast-Charging Pedestal",
+  "publisher": "Domolux Studio",
+  "description": "Monolithic outdoor EV charging pylon with integrated 22kW Type 2 cable management reel, illuminated RFID authentication dial, and brushed bronze armor.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "ev_charging_pedestal",
+      "name": {
+        "en": "Domolux 22kW High-Output Architectural EV Fast-Charging Pedestal",
+        "de": "Domolux 22kW Designer-Ladestation für Elektrofahrzeuge",
+        "ar": "محطة شحن السيارات الكهربائية السريعة المعمارية دومولوكس"
+      },
+      "size": [
+        0.38,
+        0.28,
+        1.45
+      ],
+      "mount": "floor",
+      "surface": false,
+      "group": "entryway",
+      "room": [
+        "outdoor"
+      ],
+      "tags": [
+        "ev_charger",
+        "electric_vehicle",
+        "charging_station",
+        "pedestal",
+        "outdoor",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.94,
+          "d": 0.94,
+          "y": 0,
+          "h": 0.08,
+          "color": "#141518",
+          "fix": "h"
+        },
+        {
+          "shape": "loft",
+          "x": 0,
+          "z": 0,
+          "w": 0.88,
+          "d": 0.84,
+          "y": 0.08,
+          "h": 0.88,
+          "tx": 0,
+          "tz": -0.05,
+          "tw": 0.75,
+          "td": 0.72,
+          "color": "#22252c",
+          "finish": "dark",
+          "edges": true
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": 0.36,
+          "w": 0.42,
+          "d": 0.42,
+          "y": 0.65,
+          "h": 0.03,
+          "axis": "z",
+          "color": "#00e5ff",
+          "glow": true,
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": 0.36,
+          "w": 0.25,
+          "d": 0.25,
+          "y": 0.4,
+          "h": 0.05,
+          "axis": "z",
+          "color": "#111215",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.8,
+          "d": 0.78,
+          "y": 0.96,
+          "h": 0.04,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "h"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 0.88,
+          "d": 0.84
+        },
+        {
+          "shape": "circle",
+          "x": 0,
+          "z": 0.36,
+          "r": 0.2
+        }
+      ]
+    }
+  ]
+}

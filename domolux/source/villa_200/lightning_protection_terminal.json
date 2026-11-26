@@ -1,0 +1,118 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.lightning_protection_terminal",
+  "name": "Domolux Early-Streamer-Emission Architectural Lightning Protection Terminal",
+  "publisher": "Domolux Studio",
+  "description": "Rooftop Early Streamer Emission (ESE) lightning air terminal crafted from solid chrome-plated copper and bronze, featuring high-voltage ion generator fins and grounding collar.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "lightning_protection_terminal",
+      "name": {
+        "en": "Domolux Early-Streamer-Emission Architectural Lightning Protection Terminal",
+        "de": "Domolux Architektonischer Blitzschutz-Endpol ESE",
+        "ar": "نظام الحماية المعماري من الصواعق بتقنية التفريغ المسبق دومولوكس"
+      },
+      "size": [
+        0.25,
+        0.25,
+        1.2
+      ],
+      "mount": "roof",
+      "surface": false,
+      "group": "appliances",
+      "room": [
+        "outdoor"
+      ],
+      "tags": [
+        "lightning_rod",
+        "ese",
+        "protection",
+        "safety",
+        "roof",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": 0,
+          "w": 0.88,
+          "d": 0.88,
+          "y": 0,
+          "h": 0.08,
+          "color": "#141518",
+          "fix": "h"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": 0,
+          "w": 0.45,
+          "d": 0.45,
+          "y": 0.08,
+          "h": 0.18,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wd"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": 0,
+          "w": 0.12,
+          "d": 0.12,
+          "y": 0.26,
+          "h": 0.58,
+          "color": "metal",
+          "edges": true,
+          "fix": "wd"
+        },
+        {
+          "shape": "loft",
+          "x": 0,
+          "z": 0,
+          "w": 0.72,
+          "d": 0.72,
+          "y": 0.62,
+          "h": 0.18,
+          "tx": 0,
+          "tz": 0,
+          "tw": 0.42,
+          "td": 0.42,
+          "color": "#c5a059",
+          "edges": "glow"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": 0,
+          "w": 0.04,
+          "d": 0.04,
+          "y": 0.84,
+          "h": 0.16,
+          "color": "metal",
+          "edges": "glow",
+          "fix": "wdh"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "circle",
+          "x": 0,
+          "z": 0,
+          "r": 0.44
+        },
+        {
+          "shape": "circle",
+          "x": 0,
+          "z": 0,
+          "r": 0.18
+        }
+      ]
+    }
+  ]
+}

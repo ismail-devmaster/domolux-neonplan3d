@@ -1,0 +1,145 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.luminous_stretch_ceiling",
+  "name": "Domolux Luminous Stretch Ceiling Panel",
+  "publisher": "Domolux Studio",
+  "description": "Architectural seamless translucent membrane stretch ceiling providing homogeneous glare-free daylight simulation with anodized matte black aluminum edge profile.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "luminous_stretch_ceiling",
+      "name": {
+        "en": "Domolux Luminous Stretch Ceiling Panel",
+        "de": "Domolux Licht-Spanndeckenpaneel",
+        "ar": "لوحة سقفية مشدودة مضيئة دومولوكس"
+      },
+      "size": [
+        2.4,
+        2.4,
+        0.18
+      ],
+      "mount": "ceiling",
+      "surface": false,
+      "group": "ceiling",
+      "room": [
+        "bath",
+        "hall",
+        "living",
+        "office"
+      ],
+      "tags": [
+        "ceiling",
+        "stretch",
+        "luminous",
+        "light",
+        "minimal",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.98,
+          "d": 0.98,
+          "y": 0.2,
+          "h": 0.8,
+          "color": "#14151a",
+          "edges": "faint"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.92,
+          "d": 0.92,
+          "y": 0.1,
+          "h": 0.1,
+          "color": "#fffbf2",
+          "glow": true,
+          "edges": "glow"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.94,
+          "d": 0.94,
+          "y": 0.02,
+          "h": 0.05,
+          "color": "#ffffff",
+          "glow": true,
+          "edges": "glow"
+        },
+        {
+          "shape": "box",
+          "x": -0.485,
+          "z": 0,
+          "w": 0.03,
+          "d": 1,
+          "y": 0,
+          "h": 0.2,
+          "color": "#22252a",
+          "edges": true,
+          "fix": "w"
+        },
+        {
+          "shape": "box",
+          "x": 0.485,
+          "z": 0,
+          "w": 0.03,
+          "d": 1,
+          "y": 0,
+          "h": 0.2,
+          "color": "#22252a",
+          "edges": true,
+          "fix": "w"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.485,
+          "w": 0.97,
+          "d": 0.03,
+          "y": 0,
+          "h": 0.2,
+          "color": "#22252a",
+          "edges": true,
+          "fix": "d"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.485,
+          "w": 0.97,
+          "d": 0.03,
+          "y": 0,
+          "h": 0.2,
+          "color": "#22252a",
+          "edges": true,
+          "fix": "d"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 1,
+          "d": 1
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 0.94,
+          "d": 0.94,
+          "fill": true
+        }
+      ]
+    }
+  ]
+}

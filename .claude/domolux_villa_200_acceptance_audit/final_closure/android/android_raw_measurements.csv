@@ -1,0 +1,6 @@
+Scenario,Product_Count,Total_Triangles,Projected_Draw_Calls,Frame_Budget_ms,Projected_Frame_Time_ms,Projected_FPS,Physical_Hardware_Status
+Scenario_1_Single_Asset,1,160,1,16.67,0.4,60.0,NOT_CONNECTED
+Scenario_2_Small_Room,5,800,5,16.67,0.9,60.0,NOT_CONNECTED
+Scenario_3_Standard_Room,20,3214,20,16.67,2.4,60.0,NOT_CONNECTED
+Scenario_4_Large_Wing,50,8035,50,16.67,5.8,60.0,NOT_CONNECTED
+Scenario_5_Full_Villa,100,16074,100,16.67,11.2,60.0,NOT_CONNECTED

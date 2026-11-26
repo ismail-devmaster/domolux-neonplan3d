@@ -1,0 +1,129 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.compact_steam_oven",
+  "name": "Domolux Compact Steam Oven",
+  "publisher": "Domolux Studio",
+  "description": "Precision culinary sous-vide steam oven with external boiler generation, motor-lifted fascia revealing motorized water cartridge, and sous-vide cooking programs.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "compact_steam_oven",
+      "name": {
+        "en": "Domolux Compact Steam Oven",
+        "de": "Domolux Kompakt-Dampfbackofen",
+        "ar": "فرن بخاري مدمج فاخر دومولوكس"
+      },
+      "size": [
+        0.6,
+        0.55,
+        0.45
+      ],
+      "mount": "surface",
+      "surface": true,
+      "group": "kitchen",
+      "room": [
+        "kitchen"
+      ],
+      "tags": [
+        "steam",
+        "oven",
+        "sous-vide",
+        "culinary",
+        "kitchen",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 1,
+          "d": 1,
+          "y": 0,
+          "h": 1,
+          "color": "#1c1d22",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.48,
+          "w": 0.98,
+          "d": 0.03,
+          "y": 0,
+          "h": 0.75,
+          "color": "#111215",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.48,
+          "w": 0.68,
+          "d": 0.015,
+          "y": 0.1,
+          "h": 0.55,
+          "color": "glass",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.48,
+          "w": 0.98,
+          "d": 0.03,
+          "y": 0.78,
+          "h": 0.2,
+          "color": "#25272e",
+          "edges": "glow",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.48,
+          "w": 0.45,
+          "d": 0.015,
+          "y": 0.82,
+          "h": 0.12,
+          "color": "#00e5ff",
+          "glow": true,
+          "edges": "glow",
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": 0.48,
+          "w": 0.025,
+          "d": 0.025,
+          "y": 0.66,
+          "h": 0.72,
+          "axis": "x",
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wd"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 1,
+          "d": 1
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0.48,
+          "w": 0.68,
+          "d": 0.04
+        }
+      ]
+    }
+  ]
+}

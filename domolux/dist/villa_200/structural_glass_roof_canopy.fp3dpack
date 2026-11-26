@@ -1,0 +1,148 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.structural_glass_roof_canopy",
+  "name": "Domolux Structural Glass Roof Canopy",
+  "publisher": "Domolux Studio",
+  "description": "Cantilevered structural entrance canopy constructed with laminated tempered glass, marine-grade 316 stainless steel tension tie rods, and integral drainage drip edge.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "structural_glass_roof_canopy",
+    "name": {
+     "en": "Domolux Structural Glass Roof Canopy",
+     "de": "Domolux Ganzglas-Vordach mit Edelstahl-Zugstangen",
+     "ar": "مظلة سقفية زجاجية معمارية دومولوكس"
+    },
+    "size": [
+     2.6,
+     1.6,
+     0.95
+    ],
+    "mount": "wall",
+    "wall_y": 2.4,
+    "surface": false,
+    "group": "outdoor",
+    "room": [
+     "hall",
+     "terrace"
+    ],
+    "tags": [
+     "canopy",
+     "glass",
+     "entrance",
+     "cantilever",
+     "stainless",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.45,
+      "w": 0.98,
+      "d": 0.08,
+      "y": 0.1,
+      "h": 0.08,
+      "color": "metal",
+      "edges": true,
+      "fix": "wdh"
+     },
+     {
+      "shape": "loft",
+      "x": 0,
+      "z": 0.05,
+      "w": 0.96,
+      "d": 0.9,
+      "y": 0.08,
+      "h": 0.04,
+      "tx": 0,
+      "tz": 0.05,
+      "tw": 0.96,
+      "td": 0.9,
+      "color": "glass",
+      "edges": true
+     },
+     {
+      "shape": "cyl",
+      "x": -0.4,
+      "z": -0.15,
+      "w": 0.03,
+      "d": 0.03,
+      "y": 0.12,
+      "h": 0.85,
+      "rot": 35,
+      "color": "metal",
+      "fix": "wd"
+     },
+     {
+      "shape": "cyl",
+      "x": 0.4,
+      "z": -0.15,
+      "w": 0.03,
+      "d": 0.03,
+      "y": 0.12,
+      "h": 0.85,
+      "rot": -35,
+      "color": "metal",
+      "fix": "wd"
+     },
+     {
+      "shape": "cyl",
+      "x": -0.4,
+      "z": -0.45,
+      "w": 0.06,
+      "d": 0.06,
+      "y": 0.9,
+      "h": 0.08,
+      "axis": "z",
+      "color": "metal",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": 0.4,
+      "z": -0.45,
+      "w": 0.06,
+      "d": 0.06,
+      "y": 0.9,
+      "h": 0.08,
+      "axis": "z",
+      "color": "metal",
+      "fix": "wdh"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0.05,
+      "w": 0.96,
+      "d": 0.9
+     },
+     {
+      "shape": "line",
+      "x1": -0.4,
+      "z1": -0.45,
+      "x2": -0.4,
+      "z2": 0.45
+     },
+     {
+      "shape": "line",
+      "x1": 0.4,
+      "z1": -0.45,
+      "x2": 0.4,
+      "z2": 0.45
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "yLWkFWMt6yPOe/ggEaaZT5+Ac0TaGbvJ33eNzrZkHEuSr97wxjEKfyaT32EijmvVeKbkyUHQkHDgVykJjdjOAg=="
+ }
+}

@@ -1,0 +1,17 @@
+floor_id,floor_name,room_id,room_name,area_m2,floor_material,elevation,height
+floor_ground,Ground Floor — Luxury Living & Reception,room_gf_foyer,Grand Entrance Foyer,24.00,marble,0.0,3.0
+floor_ground,Ground Floor — Luxury Living & Reception,room_gf_salon,Grand Reception Salon,60.00,marble,0.0,3.0
+floor_ground,Ground Floor — Luxury Living & Reception,room_gf_living,Family Living Lounge,60.00,wood,0.0,3.0
+floor_ground,Ground Floor — Luxury Living & Reception,room_gf_dining,Formal Dining Hall,36.00,marble,0.0,3.0
+floor_ground,Ground Floor — Luxury Living & Reception,room_gf_kitchen,Gourmet Chef Kitchen,48.00,tile,0.0,3.0
+floor_ground,Ground Floor — Luxury Living & Reception,room_gf_pantry,Private Pantry & Service Room,12.00,tile,0.0,3.0
+floor_ground,Ground Floor — Luxury Living & Reception,room_gf_guest_bed,Executive Guest Bedroom,48.00,wood,0.0,3.0
+floor_ground,Ground Floor — Luxury Living & Reception,room_gf_guest_bath,Private Guest Bathroom,24.00,marble,0.0,3.0
+floor_upper,Upper Floor — Private Suites & Sky Lounge,room_uf_master_bed,Presidential Master Bedroom,64.00,wood,3.0,3.0
+floor_upper,Upper Floor — Private Suites & Sky Lounge,room_uf_master_bath,Master Spa Bathroom,36.00,marble,3.0,3.0
+floor_upper,Upper Floor — Private Suites & Sky Lounge,room_uf_dressing,Royal Walk-In Dressing Room,16.00,wood,3.0,3.0
+floor_upper,Upper Floor — Private Suites & Sky Lounge,room_uf_library,Executive Study & Private Library,48.00,wood,3.0,3.0
+floor_upper,Upper Floor — Private Suites & Sky Lounge,room_uf_cinema,Private Cinema & Entertainment Room,48.00,wood,3.0,3.0
+floor_upper,Upper Floor — Private Suites & Sky Lounge,room_uf_bed1,Deluxe Bedroom One,32.00,wood,3.0,3.0
+floor_upper,Upper Floor — Private Suites & Sky Lounge,room_uf_bed2,Deluxe Bedroom Two,32.00,wood,3.0,3.0
+floor_upper,Upper Floor — Private Suites & Sky Lounge,room_uf_family_bath,Upper Family Bathroom,8.00,tile,3.0,3.0

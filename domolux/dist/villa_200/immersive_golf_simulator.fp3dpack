@@ -1,0 +1,156 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.immersive_golf_simulator",
+  "name": "Domolux PGA-Grade High-Definition Golf Simulator Enclosure",
+  "publisher": "Domolux Studio",
+  "description": "Complete room-scale golf simulation suite featuring heavy acoustic ballistic baffles, tensioned HD impact projection screen, multi-surface fairway hitting turf, and dual high-speed tracking cameras.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "immersive_golf_simulator",
+    "name": {
+     "en": "Domolux PGA-Grade High-Definition Golf Simulator Enclosure",
+     "de": "Domolux PGA-Golfsimulator mit Prallwand & Kunstrasen",
+     "ar": "مقصورة محاكاة رياضة الجولف التفاعلية المتكاملة دومولوكس"
+    },
+    "size": [
+     3.6,
+     2.5,
+     2.8
+    ],
+    "mount": "floor",
+    "surface": false,
+    "group": "living",
+    "room": [
+     "living"
+    ],
+    "tags": [
+     "golf_sim",
+     "golf",
+     "simulator",
+     "sports",
+     "entertainment",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.98,
+      "y": 0,
+      "h": 0.06,
+      "color": "#1e222a",
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.08,
+      "w": 0.92,
+      "d": 0.82,
+      "y": 0.06,
+      "h": 0.02,
+      "color": "#2d6a4f",
+      "edges": true,
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": -0.47,
+      "z": -0.05,
+      "w": 0.05,
+      "d": 0.88,
+      "y": 0.06,
+      "h": 0.94,
+      "color": "#16171b",
+      "finish": "dark",
+      "edges": true,
+      "fix": "w"
+     },
+     {
+      "shape": "box",
+      "x": 0.47,
+      "z": -0.05,
+      "w": 0.05,
+      "d": 0.88,
+      "y": 0.06,
+      "h": 0.94,
+      "color": "#16171b",
+      "finish": "dark",
+      "edges": true,
+      "fix": "w"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.47,
+      "w": 0.92,
+      "d": 0.04,
+      "y": 0.06,
+      "h": 0.92,
+      "color": "#f8f9fa",
+      "glow": true,
+      "edges": true,
+      "fix": "d"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.05,
+      "w": 0.96,
+      "d": 0.88,
+      "y": 0.96,
+      "h": 0.04,
+      "color": "#16171b",
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.15,
+      "w": 0.35,
+      "d": 0.12,
+      "y": 0.94,
+      "h": 0.04,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wdh"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.98
+     },
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0.08,
+      "w": 0.92,
+      "d": 0.82
+     },
+     {
+      "shape": "line",
+      "x1": -0.46,
+      "z1": -0.47,
+      "x2": 0.46,
+      "z2": -0.47
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "pOGiZgtHM7cb7EXGCMqjUdVkPRm/7h/ODLQdDkSEd22//H1MuXuI2BAYhc8p4WkYJ431hiy1fzElUnFIXXxABw=="
+ }
+}

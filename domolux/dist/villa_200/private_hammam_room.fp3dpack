@@ -1,0 +1,210 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.private_hammam_room",
+  "name": "Domolux Monumental Heated Marble Hammam Sanctuary",
+  "publisher": "Domolux Studio",
+  "description": "Complete walk-in private spa chamber with heated ergonomic Calacatta marble slab benches, vaulted ceiling profile, recessed perimeter vapor glow, and brass steam plinth.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "private_hammam_room",
+    "name": {
+     "en": "Domolux Monumental Heated Marble Hammam Sanctuary",
+     "de": "Domolux Beheiztes Marmor-Dampfbad Hammam",
+     "ar": "جناح الحمام التركي الفاخر بالرخام المسخن دومولوكس"
+    },
+    "size": [
+     2.2,
+     1.8,
+     2.4
+    ],
+    "mount": "floor",
+    "surface": false,
+    "group": "bathroom",
+    "room": [
+     "bathroom"
+    ],
+    "tags": [
+     "hammam",
+     "steam_room",
+     "marble",
+     "spa",
+     "wellness",
+     "bathroom",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.98,
+      "y": 0,
+      "h": 0.06,
+      "color": "#1e2025",
+      "edges": true,
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": -0.34,
+      "z": 0,
+      "w": 0.28,
+      "d": 0.94,
+      "y": 0.06,
+      "h": 0.22,
+      "color": "#e8ecef",
+      "finish": "white",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0.34,
+      "z": 0,
+      "w": 0.28,
+      "d": 0.94,
+      "y": 0.06,
+      "h": 0.22,
+      "color": "#e8ecef",
+      "finish": "white",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.34,
+      "w": 0.94,
+      "d": 0.28,
+      "y": 0.06,
+      "h": 0.24,
+      "color": "#e8ecef",
+      "finish": "white",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.47,
+      "w": 0.98,
+      "d": 0.05,
+      "y": 0.06,
+      "h": 0.94,
+      "color": "#dbe0e6",
+      "edges": true,
+      "fix": "d"
+     },
+     {
+      "shape": "box",
+      "x": -0.47,
+      "z": 0,
+      "w": 0.05,
+      "d": 0.98,
+      "y": 0.06,
+      "h": 0.94,
+      "color": "#dbe0e6",
+      "edges": true,
+      "fix": "w"
+     },
+     {
+      "shape": "box",
+      "x": 0.47,
+      "z": 0,
+      "w": 0.05,
+      "d": 0.98,
+      "y": 0.06,
+      "h": 0.94,
+      "color": "#dbe0e6",
+      "edges": true,
+      "fix": "w"
+     },
+     {
+      "shape": "box",
+      "x": -0.28,
+      "z": 0.47,
+      "w": 0.4,
+      "d": 0.02,
+      "y": 0.06,
+      "h": 0.94,
+      "color": "#88c0d0",
+      "finish": "glass",
+      "fix": "d"
+     },
+     {
+      "shape": "box",
+      "x": 0.28,
+      "z": 0.47,
+      "w": 0.4,
+      "d": 0.02,
+      "y": 0.06,
+      "h": 0.94,
+      "color": "#88c0d0",
+      "finish": "glass",
+      "fix": "d"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": 0.08,
+      "w": 0.22,
+      "d": 0.22,
+      "y": 0.06,
+      "h": 0.18,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.96,
+      "d": 0.96,
+      "y": 0.96,
+      "h": 0.04,
+      "color": "#f8f9fa",
+      "glow": true,
+      "fix": "h"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.98
+     },
+     {
+      "shape": "rect",
+      "x": -0.34,
+      "z": 0,
+      "w": 0.28,
+      "d": 0.94
+     },
+     {
+      "shape": "rect",
+      "x": 0.34,
+      "z": 0,
+      "w": 0.28,
+      "d": 0.94
+     },
+     {
+      "shape": "circle",
+      "x": 0,
+      "z": 0.08,
+      "r": 0.15
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "i7nTErCIFQqxoZCBnLKtLhJeRJ80Ql6lhGtQIBitY/LJnZjnseU2QhlwcNLDMVp2Pl0JW/DH1fgNkpxliZPZDw=="
+ }
+}

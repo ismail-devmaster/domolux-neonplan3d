@@ -1,0 +1,161 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.armored_smart_entrance_door",
+  "name": "Domolux Armored Smart Entrance Door",
+  "publisher": "Domolux Studio",
+  "description": "Ballistic and forced-entry armored residential entrance door featuring titanium reinforcement, biometrics recognition reader, motor deadbolts, and natural travertine stone outer paneling.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "armored_smart_entrance_door",
+      "name": {
+        "en": "Domolux Armored Smart Entrance Door",
+        "de": "Domolux Gepanzerte Smart-Eingangstür",
+        "ar": "باب مدخل ذكي مصفح دومولوكس"
+      },
+      "size": [
+        1.6,
+        0.32,
+        2.8
+      ],
+      "mount": "floor",
+      "surface": false,
+      "group": "door",
+      "room": [
+        "hall"
+      ],
+      "tags": [
+        "armored",
+        "security",
+        "smart",
+        "biometric",
+        "door",
+        "entrance",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 1,
+          "d": 1,
+          "y": 0,
+          "h": 1,
+          "color": "#16171b",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.88,
+          "d": 0.6,
+          "y": 0.02,
+          "h": 0.96,
+          "color": "#22252c",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.28,
+          "w": 0.84,
+          "d": 0.12,
+          "y": 0.04,
+          "h": 0.92,
+          "color": "#d2cbbf",
+          "finish": "body",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0.28,
+          "z": 0.34,
+          "w": 0.08,
+          "d": 0.04,
+          "y": 0.04,
+          "h": 0.92,
+          "color": "#9e8354",
+          "edges": "glow",
+          "fix": "wd"
+        },
+        {
+          "shape": "box",
+          "x": 0.28,
+          "z": 0.37,
+          "w": 0.04,
+          "d": 0.02,
+          "y": 0.5,
+          "h": 0.08,
+          "color": "#00e676",
+          "glow": true,
+          "edges": "glow",
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": 0.44,
+          "z": 0,
+          "w": 0.04,
+          "d": 0.04,
+          "y": 0.3,
+          "h": 0.06,
+          "axis": "x",
+          "color": "metal",
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": 0.44,
+          "z": 0,
+          "w": 0.04,
+          "d": 0.04,
+          "y": 0.7,
+          "h": 0.06,
+          "axis": "x",
+          "color": "metal",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.28,
+          "w": 0.84,
+          "d": 0.1,
+          "y": 0.04,
+          "h": 0.92,
+          "color": "#2d231b",
+          "finish": "wood",
+          "edges": true
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 1,
+          "d": 1
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 0.88,
+          "d": 0.6,
+          "fill": true
+        },
+        {
+          "shape": "circle",
+          "x": 0.28,
+          "z": 0.34,
+          "r": 0.06
+        }
+      ]
+    }
+  ]
+}

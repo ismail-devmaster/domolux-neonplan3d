@@ -1,0 +1,156 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.precision_coffee_grinder",
+  "name": "Domolux Precision On-Demand Coffee Grinder",
+  "publisher": "Domolux Studio",
+  "description": "Countertop commercial espresso bean grinder featuring stepless micrometric burr adjustment, smoked glass bean hopper with walnut lid, and hands-free portafilter cradle.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "precision_coffee_grinder",
+    "name": {
+     "en": "Domolux Precision On-Demand Coffee Grinder",
+     "de": "Domolux Präzisions-Kaffeemühle",
+     "ar": "مطحنة قهوة دقيقة عند الطلب دومولوكس"
+    },
+    "size": [
+     0.22,
+     0.32,
+     0.52
+    ],
+    "mount": "surface",
+    "surface": false,
+    "group": "kitchen",
+    "room": [
+     "kitchen"
+    ],
+    "tags": [
+     "grinder",
+     "coffee",
+     "espresso",
+     "burrs",
+     "countertop",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.92,
+      "d": 0.92,
+      "y": 0,
+      "h": 0.12,
+      "color": "#1c1d22",
+      "edges": true,
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.38,
+      "w": 0.4,
+      "d": 0.25,
+      "y": 0.14,
+      "h": 0.05,
+      "color": "metal",
+      "edges": "glow",
+      "fix": "wdh"
+     },
+     {
+      "shape": "loft",
+      "x": 0,
+      "z": -0.05,
+      "w": 0.75,
+      "d": 0.75,
+      "y": 0.12,
+      "h": 0.52,
+      "tx": 0,
+      "tz": -0.05,
+      "tw": 0.65,
+      "td": 0.65,
+      "color": "#25272e",
+      "finish": "dark",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.28,
+      "w": 0.42,
+      "d": 0.02,
+      "y": 0.38,
+      "h": 0.14,
+      "color": "#38bdf8",
+      "glow": true,
+      "edges": "glow",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": -0.05,
+      "w": 0.68,
+      "d": 0.68,
+      "y": 0.64,
+      "h": 0.06,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "h"
+     },
+     {
+      "shape": "loft",
+      "x": 0,
+      "z": -0.05,
+      "w": 0.4,
+      "d": 0.4,
+      "y": 0.7,
+      "h": 0.24,
+      "tx": 0,
+      "tz": -0.05,
+      "tw": 0.75,
+      "td": 0.75,
+      "color": "glass",
+      "edges": true
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": -0.05,
+      "w": 0.78,
+      "d": 0.78,
+      "y": 0.94,
+      "h": 0.06,
+      "color": "#45362a",
+      "finish": "wood",
+      "edges": true,
+      "fix": "h"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.92,
+      "d": 0.92
+     },
+     {
+      "shape": "circle",
+      "x": 0,
+      "z": -0.05,
+      "r": 0.38
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "N7gaG8l8EkgEY0sBtiIBekvYqvXnN51jifVZ/douYxDh0M8/7kyCnZfPp9OmZCnZ0kUQN+ILObInaNBsNSS7Bg=="
+ }
+}

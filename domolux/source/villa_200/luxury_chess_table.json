@@ -1,0 +1,132 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.luxury_chess_table",
+  "name": "Domolux Grandmaster Inlaid Chess and Strategy Table",
+  "publisher": "Domolux Studio",
+  "description": "Artisanal game table with marquetry Macassar ebony and bird's eye maple chessboard top, dual velvet-lined piece storage drawers with weighted brass chessmen, and sculptural tripod base.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "luxury_chess_table",
+      "name": {
+        "en": "Domolux Grandmaster Inlaid Chess and Strategy Table",
+        "de": "Domolux Meister-Schachtisch aus Edelhölzern",
+        "ar": "طاولة الشطرنج الاستراتيجية الملكية بالخشب المطعم دومولوكس"
+      },
+      "size": [
+        0.85,
+        0.85,
+        0.76
+      ],
+      "mount": "floor",
+      "surface": false,
+      "group": "living",
+      "room": [
+        "living",
+        "office"
+      ],
+      "tags": [
+        "chess_table",
+        "board_games",
+        "marquetry",
+        "ebony",
+        "strategy",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": 0,
+          "w": 0.16,
+          "d": 0.16,
+          "y": 0,
+          "h": 0.84,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wd"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.76,
+          "d": 0.76,
+          "y": 0,
+          "h": 0.08,
+          "color": "#362619",
+          "finish": "wood",
+          "edges": true,
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.96,
+          "d": 0.96,
+          "y": 0.84,
+          "h": 0.12,
+          "color": "#22170f",
+          "finish": "dark",
+          "edges": true,
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.72,
+          "d": 0.72,
+          "y": 0.96,
+          "h": 0.02,
+          "color": "#dfd2b8",
+          "edges": true,
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.68,
+          "d": 0.68,
+          "y": 0.97,
+          "h": 0.01,
+          "color": "#2a1810",
+          "fix": "h"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": 0.48,
+          "w": 0.03,
+          "d": 0.03,
+          "y": 0.88,
+          "h": 0.03,
+          "axis": "z",
+          "color": "#c5a059",
+          "fix": "wdh"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 0.96,
+          "d": 0.96
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 0.72,
+          "d": 0.72
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+item_id,floor_id,room_id,asset_type,display_name,x,z,rotation,width,depth,height,has_collision,swing_clear
+furn_gf_01,floor_ground,room_gf_foyer,domolux.indoor_sculptural_fountain,Domolux Indoor Sculptural Fountain,9.5,2.0,0,1.4,0.7,1.9,false,true
+furn_gf_02,floor_ground,room_gf_foyer,domolux.shoe_care_station,Domolux Bespoke Shoe-Care Station,12.5,2.0,0,1.35,0.52,1.15,false,true
+furn_gf_03,floor_ground,room_gf_foyer,domolux.designer_cat_tree,Domolux Architectural Cat Tree,8.8,3.2,0,1.05,0.75,1.75,false,true
+furn_gf_04,floor_ground,room_gf_salon,domolux.concert_grand_piano,Domolux Concert Grand Piano,3.0,6.5,45,1.55,2.25,1.05,false,true
+furn_gf_05,floor_ground,room_gf_salon,domolux.sculptural_fireplace,Domolux Sculptural Fireplace,7.0,4.6,0,2.4,0.65,1.45,false,true
+furn_gf_06,floor_ground,room_gf_salon,domolux.sculptural_room_divider,Domolux Sculptural Room Divider,9.0,8.5,90,2.2,0.35,2.1,false,true
+furn_gf_07,floor_ground,room_gf_salon,domolux.luxury_aquarium,Domolux Architectural Luxury Aquarium,1.5,8.8,0,1.8,0.65,1.7,false,true
+furn_gf_08,floor_ground,room_gf_salon,domolux.floorstanding_hifi_speaker,Domolux Reference Hi-Fi Tower,5.5,4.6,0,0.38,0.52,1.42,false,true
+furn_gf_09,floor_ground,room_gf_living,domolux.full_body_massage_chair,Domolux Full-Body Massage Chair,2.5,12.0,90,0.9,1.55,1.25,false,true
+furn_gf_10,floor_ground,room_gf_living,domolux.motorized_drapery,Domolux Motorized Architectural Drapery,5.0,15.6,0,2.8,0.32,2.8,false,true
+furn_gf_11,floor_ground,room_gf_living,domolux.smart_pet_feeding_station,Domolux Intelligent Pet Dining Station,1.5,14.5,0,0.75,0.42,0.65,false,true
+furn_gf_12,floor_ground,room_gf_living,domolux.acoustic_bass_trap_tower,Domolux Acoustic Bass-Trap Monolith,0.8,10.8,0,0.5,0.5,2.2,false,true
+furn_gf_13,floor_ground,room_gf_dining,domolux.acoustic_ceiling_baffles,Domolux Architectural Acoustic Baffles,13.0,7.0,0,2.8,1.8,0.45,false,true
+furn_gf_14,floor_ground,room_gf_kitchen,domolux.closet_island,Domolux Gourmet Culinary Prep Island,20.0,7.0,0,1.8,1.1,0.95,false,true
+furn_gf_15,floor_ground,room_gf_pantry,domolux.pet_grooming_wash_station,Domolux Pet Grooming Suite,12.0,15.0,0,1.45,0.85,1.65,false,true
+furn_gf_16,floor_ground,room_gf_pantry,domolux.garment_care_steam_cabinet,Domolux Garment Steam Cabinet,14.5,15.0,0,0.65,0.68,1.95,false,true
+furn_gf_17,floor_ground,room_gf_guest_bed,domolux.jewelry_safe,Domolux Armored Guest Safe,17.5,11.5,0,0.65,0.6,1.25,false,true
+furn_gf_18,floor_ground,room_gf_guest_bath,domolux.dressing_vanity,Domolux Haute Couture Guest Vanity,13.0,12.5,0,1.65,0.65,1.48,false,true
+furn_gf_19,floor_ground,out_terrace,domolux.outdoor_sun_lounger,Domolux Grand Resort Sun Lounger,3.0,17.5,0,0.88,2.1,0.52,false,true
+furn_gf_20,floor_ground,out_terrace,domolux.outdoor_grill_station,Domolux Outdoor Gourmet Grill Station,8.0,17.5,0,2.4,0.85,1.25,false,true
+furn_gf_21,floor_ground,out_terrace,domolux.outdoor_fire_pit,Domolux Sculptural Outdoor Fire Pit,5.5,17.5,0,1.25,1.25,0.42,false,true
+furn_gf_22,floor_ground,out_terrace,domolux.outdoor_shower_column,Domolux Architectural Outdoor Shower,1.5,17.5,0,1.05,1.05,2.3,false,true
+furn_gf_23,floor_ground,out_garden,domolux.robotic_lawn_mower_dock,Domolux Robotic Estate Mower Dock,-3.0,12.0,0,0.95,1.15,0.58,false,true
+furn_uf_24,floor_upper,room_uf_master_bed,domolux.pilates_reformer,Domolux Professional Pilates Reformer,6.5,10.5,90,0.76,2.45,0.72,false,true
+furn_uf_25,floor_upper,room_uf_master_bath,domolux.luxury_spa_bathtub,Domolux Luxury Spa Bathtub,3.0,4.0,0,2.0,1.15,2.25,false,true
+furn_uf_26,floor_upper,room_uf_master_bath,domolux.finnish_sauna_cabin,Domolux Finnish Sauna Sanctuary,4.5,6.5,270,2.1,1.8,2.15,false,true
+furn_uf_27,floor_upper,room_uf_dressing,domolux.full_length_mirror,Domolux Sculptural Dressing Mirror,8.8,9.5,90,0.95,0.35,2.15,false,true
+furn_uf_28,floor_upper,room_uf_library,domolux.executive_desk,Domolux Presidential Executive Desk,10.0,5.0,0,1.8,0.85,0.76,false,true
+furn_uf_29,floor_upper,room_uf_library,domolux.premium_exercise_bike,Domolux Performance Indoor Cycle,7.5,3.5,0,0.62,1.35,1.32,false,true
+furn_uf_30,floor_upper,room_uf_cinema,domolux.motorized_projection_screen,Domolux Motorized Cinema Screen 150",18.0,2.4,0,3.2,0.24,2.1,false,true
+furn_uf_31,floor_upper,room_uf_cinema,domolux.laser_projector,Domolux Reference Laser Projector,18.0,6.5,0,0.6,0.55,0.26,false,true
+furn_uf_32,floor_upper,room_uf_cinema,domolux.cinema_recliner,Domolux Cinema Power Recliner,16.5,5.2,0,1.05,1.2,1.1,false,true
+furn_uf_33,floor_upper,room_uf_cinema,domolux.acoustic_double_door,Domolux Acoustic Double Door,14.5,7.0,90,1.3,0.42,2.5,false,true
+furn_uf_34,floor_upper,room_uf_bed1,domolux.luxury_treadmill,Domolux Elite Commercial Treadmill,16.5,10.0,0,0.92,1.95,1.48,false,true
+furn_uf_35,floor_upper,room_uf_bed2,domolux.dual_cable_trainer,Domolux Dual Cable Trainer,16.5,14.0,0,1.65,1.15,2.2,false,true

@@ -1,0 +1,156 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.private_manicure_station",
+  "name": "Domolux Bespoke Nail Grooming and Manicure Desk",
+  "publisher": "Domolux Studio",
+  "description": "Architectural beauty desk featuring a honed Fior di Bosco marble worktop, flush-mounted downdraft dust vacuum extractor, ergonomic client wrist cushion, and fluted brass pedestal drawers.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "private_manicure_station",
+    "name": {
+     "en": "Domolux Bespoke Nail Grooming and Manicure Desk",
+     "de": "Domolux Luxus-Manikürtisch mit Absaugung",
+     "ar": "طاولة المانيكير والعناية بالأظافر الرخامية الفاخرة دومولوكس"
+    },
+    "size": [
+     1.2,
+     0.6,
+     0.78
+    ],
+    "mount": "floor",
+    "surface": false,
+    "group": "bathroom",
+    "room": [
+     "bathroom"
+    ],
+    "tags": [
+     "manicure",
+     "salon",
+     "marble",
+     "beauty",
+     "wellness",
+     "bathroom",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0.34,
+      "z": 0,
+      "w": 0.28,
+      "d": 0.88,
+      "y": 0,
+      "h": 0.72,
+      "color": "#23262d",
+      "finish": "dark",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": -0.38,
+      "z": 0,
+      "w": 0.08,
+      "d": 0.88,
+      "y": 0,
+      "h": 0.72,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "w"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.96,
+      "y": 0.72,
+      "h": 0.08,
+      "color": "#50545b",
+      "edges": true,
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.26,
+      "d": 0.26,
+      "y": 0.8,
+      "h": 0.02,
+      "color": "metal",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": -0.22,
+      "w": 0.08,
+      "d": 0.08,
+      "y": 0.82,
+      "h": 0.45,
+      "axis": "x",
+      "color": "#d9cab8",
+      "finish": "cushion",
+      "fix": "wd"
+     },
+     {
+      "shape": "cyl",
+      "x": -0.32,
+      "z": -0.3,
+      "w": 0.04,
+      "d": 0.04,
+      "y": 0.8,
+      "h": 0.16,
+      "color": "#c5a059",
+      "fix": "wd"
+     },
+     {
+      "shape": "cyl",
+      "x": -0.2,
+      "z": -0.15,
+      "w": 0.03,
+      "d": 0.03,
+      "y": 0.94,
+      "h": 0.25,
+      "axis": "x",
+      "color": "#fff9e6",
+      "glow": true,
+      "fix": "wd"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.96
+     },
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.26,
+      "d": 0.26
+     },
+     {
+      "shape": "rect",
+      "x": 0.34,
+      "z": 0,
+      "w": 0.28,
+      "d": 0.88
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "buopY3aVWmN0MAhF9t3jkCV7MeTgErhUmotWxlKZxI3UPZgk0tXwrYsCG00HMxmdHY6eb5N28dULzgrp6NCAAw=="
+ }
+}

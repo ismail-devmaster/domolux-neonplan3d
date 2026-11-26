@@ -1,0 +1,120 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.bathroom_aroma_pedestal",
+  "name": "Domolux Fluted Travertine Aromatherapy Pedestal",
+  "publisher": "Domolux Studio",
+  "description": "Monolithic fluted Roman travertine pedestal with integrated ultrasonic cold-mist essential oil nebulizer, brushed bronze vapor bowl, and warm ambient floor wash.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "bathroom_aroma_pedestal",
+      "name": {
+        "en": "Domolux Fluted Travertine Aromatherapy Pedestal",
+        "de": "Domolux Flötierte Aroma-Diffusor-Säule",
+        "ar": "عمود المباخر والعطور الفاخرة من حجر الترافرتين دومولوكس"
+      },
+      "size": [
+        0.32,
+        0.32,
+        0.95
+      ],
+      "mount": "floor",
+      "surface": false,
+      "group": "bathroom",
+      "room": [
+        "bathroom"
+      ],
+      "tags": [
+        "aromatherapy",
+        "diffuser",
+        "pedestal",
+        "travertine",
+        "spa",
+        "bathroom",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.92,
+          "d": 0.92,
+          "y": 0,
+          "h": 0.06,
+          "color": "#1f1d19",
+          "fix": "h"
+        },
+        {
+          "shape": "loft",
+          "x": 0,
+          "z": 0,
+          "w": 0.84,
+          "d": 0.84,
+          "y": 0.06,
+          "h": 0.78,
+          "tx": 0,
+          "tz": 0,
+          "tw": 0.78,
+          "td": 0.78,
+          "color": "#d8c7b5",
+          "finish": "wood",
+          "edges": true
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": 0,
+          "w": 0.82,
+          "d": 0.82,
+          "y": 0.84,
+          "h": 0.04,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "h"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": 0,
+          "w": 0.72,
+          "d": 0.72,
+          "y": 0.88,
+          "h": 0.08,
+          "color": "#2a221b",
+          "edges": true,
+          "fix": "h"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": 0,
+          "w": 0.22,
+          "d": 0.22,
+          "y": 0.96,
+          "h": 0.12,
+          "color": "#e8f4f8",
+          "glow": true,
+          "fix": "wdh"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "circle",
+          "x": 0,
+          "z": 0,
+          "r": 0.42
+        },
+        {
+          "shape": "circle",
+          "x": 0,
+          "z": 0,
+          "r": 0.24
+        }
+      ]
+    }
+  ]
+}

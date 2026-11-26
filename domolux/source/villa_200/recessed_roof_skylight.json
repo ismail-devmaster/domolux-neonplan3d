@@ -1,0 +1,149 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.recessed_roof_skylight",
+  "name": "Domolux Recessed Roof Skylight Lantern",
+  "publisher": "Domolux Studio",
+  "description": "Architectural ceiling daylight well with double-glazed solar control insulated glass, flared white gypsum light shaft, and concealed LED solar simulation halo.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "recessed_roof_skylight",
+      "name": {
+        "en": "Domolux Recessed Roof Skylight Lantern",
+        "de": "Domolux Eingelassene Dach-Lichtkuppel",
+        "ar": "منور سقفي مدمج دومولوكس"
+      },
+      "size": [
+        2.2,
+        1.6,
+        0.65
+      ],
+      "mount": "ceiling",
+      "surface": false,
+      "group": "ceiling",
+      "room": [
+        "living",
+        "hall",
+        "bath",
+        "kitchen"
+      ],
+      "tags": [
+        "skylight",
+        "roof",
+        "lantern",
+        "daylight",
+        "glass",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 1,
+          "d": 1,
+          "y": 0.85,
+          "h": 0.15,
+          "color": "#2a2d34",
+          "edges": "faint"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.94,
+          "d": 0.94,
+          "y": 0.7,
+          "h": 0.2,
+          "color": "#475569",
+          "edges": true
+        },
+        {
+          "shape": "loft",
+          "x": 0,
+          "z": 0,
+          "w": 0.75,
+          "d": 0.75,
+          "y": 0.15,
+          "h": 0.6,
+          "tx": 0,
+          "tz": 0,
+          "tw": 0.95,
+          "td": 0.95,
+          "color": "#f8fafc",
+          "finish": "white",
+          "edges": "faint"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.76,
+          "d": 0.76,
+          "y": 0.75,
+          "h": 0.03,
+          "color": "glass",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.78,
+          "d": 0.78,
+          "y": 0.14,
+          "h": 0.02,
+          "color": "#fff7eb",
+          "glow": true,
+          "edges": "glow"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 1,
+          "d": 1,
+          "y": 0,
+          "h": 0.05,
+          "color": "#e2e8f0",
+          "finish": "white",
+          "edges": true
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 1,
+          "d": 1
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 0.75,
+          "d": 0.75,
+          "fill": true
+        },
+        {
+          "shape": "line",
+          "x1": -0.5,
+          "z1": -0.5,
+          "x2": 0.5,
+          "z2": 0.5
+        },
+        {
+          "shape": "line",
+          "x1": 0.5,
+          "z1": -0.5,
+          "x2": -0.5,
+          "z2": 0.5
+        }
+      ]
+    }
+  ]
+}

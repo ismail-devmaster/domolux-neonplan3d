@@ -1,0 +1,199 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.heated_towel_rail",
+  "name": "Domolux Sculptural Architectural Heated Towel Rail",
+  "publisher": "Domolux Studio",
+  "description": "Vertical architectural hydronic and electric dry-element towel radiator with brushed bronze square-profile vertical headers and horizontal cross-tubes.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "heated_towel_rail",
+      "name": {
+        "en": "Domolux Sculptural Architectural Heated Towel Rail",
+        "de": "Domolux Architektonischer Handtuchwärmer",
+        "ar": "مدفأة مناشف معمارية مسخنة دومولوكس"
+      },
+      "size": [
+        0.6,
+        0.12,
+        1.2
+      ],
+      "mount": "wall",
+      "wall_y": 0.8,
+      "surface": false,
+      "group": "bathroom",
+      "room": [
+        "bathroom"
+      ],
+      "tags": [
+        "towel_rail",
+        "radiator",
+        "heating",
+        "bronze",
+        "bathroom",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": -0.42,
+          "z": -0.42,
+          "w": 0.08,
+          "d": 0.14,
+          "y": 0.15,
+          "h": 0.08,
+          "color": "#1c1d22",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0.42,
+          "z": -0.42,
+          "w": 0.08,
+          "d": 0.14,
+          "y": 0.15,
+          "h": 0.08,
+          "color": "#1c1d22",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": -0.42,
+          "z": -0.42,
+          "w": 0.08,
+          "d": 0.14,
+          "y": 0.85,
+          "h": 0.08,
+          "color": "#1c1d22",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0.42,
+          "z": -0.42,
+          "w": 0.08,
+          "d": 0.14,
+          "y": 0.85,
+          "h": 0.08,
+          "color": "#1c1d22",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": -0.42,
+          "z": -0.28,
+          "w": 0.08,
+          "d": 0.08,
+          "y": 0.02,
+          "h": 0.96,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wd"
+        },
+        {
+          "shape": "box",
+          "x": 0.42,
+          "z": -0.28,
+          "w": 0.08,
+          "d": 0.08,
+          "y": 0.02,
+          "h": 0.96,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wd"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": -0.28,
+          "w": 0.05,
+          "d": 0.05,
+          "y": 0.16,
+          "h": 0.8,
+          "axis": "x",
+          "color": "#d4af37",
+          "fix": "wd"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": -0.28,
+          "w": 0.05,
+          "d": 0.05,
+          "y": 0.32,
+          "h": 0.8,
+          "axis": "x",
+          "color": "#d4af37",
+          "fix": "wd"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": -0.28,
+          "w": 0.05,
+          "d": 0.05,
+          "y": 0.48,
+          "h": 0.8,
+          "axis": "x",
+          "color": "#d4af37",
+          "fix": "wd"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": -0.28,
+          "w": 0.05,
+          "d": 0.05,
+          "y": 0.64,
+          "h": 0.8,
+          "axis": "x",
+          "color": "#d4af37",
+          "fix": "wd"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": -0.28,
+          "w": 0.05,
+          "d": 0.05,
+          "y": 0.8,
+          "h": 0.8,
+          "axis": "x",
+          "color": "#d4af37",
+          "fix": "wd"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": -0.28,
+          "w": 0.05,
+          "d": 0.05,
+          "y": 0.94,
+          "h": 0.8,
+          "axis": "x",
+          "color": "#d4af37",
+          "fix": "wd"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": -0.28,
+          "w": 0.92,
+          "d": 0.12
+        },
+        {
+          "shape": "line",
+          "x1": -0.42,
+          "z1": -0.28,
+          "x2": 0.42,
+          "z2": -0.28
+        }
+      ]
+    }
+  ]
+}

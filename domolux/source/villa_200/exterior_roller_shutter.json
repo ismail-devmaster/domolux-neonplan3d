@@ -1,0 +1,120 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.exterior_roller_shutter",
+  "name": "Domolux Motorized Exterior Roller Shutter",
+  "publisher": "Domolux Studio",
+  "description": "Insulated extruded aluminum security roller shutter with flush-mounted exterior box, polyurethane foam core slats, anti-lift locks, and silent electric tubular motor.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "exterior_roller_shutter",
+      "name": {
+        "en": "Domolux Motorized Exterior Roller Shutter",
+        "de": "Domolux Motorisierter Sicherheits-Rollladen",
+        "ar": "شيش حصيرة خارجي آلي دومولوكس"
+      },
+      "size": [
+        2,
+        0.28,
+        2.6
+      ],
+      "mount": "wall",
+      "wall_y": 0,
+      "surface": false,
+      "group": "outdoor",
+      "room": [
+        "living",
+        "bedroom"
+      ],
+      "tags": [
+        "shutter",
+        "roller",
+        "security",
+        "storm",
+        "motorized",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 1,
+          "d": 0.9,
+          "y": 0.85,
+          "h": 0.15,
+          "color": "#1f2228",
+          "edges": true,
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": -0.47,
+          "z": 0,
+          "w": 0.06,
+          "d": 0.6,
+          "y": 0,
+          "h": 0.85,
+          "color": "#1f2228",
+          "edges": true,
+          "fix": "w"
+        },
+        {
+          "shape": "box",
+          "x": 0.47,
+          "z": 0,
+          "w": 0.06,
+          "d": 0.6,
+          "y": 0,
+          "h": 0.85,
+          "color": "#1f2228",
+          "edges": true,
+          "fix": "w"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.88,
+          "d": 0.25,
+          "y": 0.02,
+          "h": 0.83,
+          "color": "#333842",
+          "edges": "faint"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.88,
+          "d": 0.35,
+          "y": 0,
+          "h": 0.04,
+          "color": "#111215",
+          "edges": true,
+          "fix": "h"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 1,
+          "d": 0.9
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 1,
+          "d": 0.4,
+          "fill": true
+        }
+      ]
+    }
+  ]
+}

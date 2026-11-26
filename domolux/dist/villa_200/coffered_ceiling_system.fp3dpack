@@ -1,0 +1,307 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.coffered_ceiling_system",
+  "name": "Domolux Coffered Ceiling System",
+  "publisher": "Domolux Studio",
+  "description": "Architectural coffered ceiling module featuring recessed 4-box coffers in lacquered white oak, stepped plaster moldings, dark bronze beams, and perimeter cove lighting channels.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "coffered_ceiling_system",
+    "name": {
+     "en": "Domolux Coffered Ceiling System",
+     "de": "Domolux Kassetten-Deckensystem",
+     "ar": "نظام الأسقف المجوفة دومولوكس"
+    },
+    "size": [
+     3.2,
+     3.2,
+     0.4
+    ],
+    "mount": "ceiling",
+    "surface": false,
+    "group": "ceiling",
+    "room": [
+     "living",
+     "dining",
+     "hall",
+     "library"
+    ],
+    "tags": [
+     "ceiling",
+     "coffered",
+     "molding",
+     "luxury",
+     "cove",
+     "lighting",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 1,
+      "d": 1,
+      "y": 0.85,
+      "h": 0.15,
+      "color": "#f8f9fa",
+      "finish": "white",
+      "edges": "faint"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.14,
+      "d": 1,
+      "y": 0,
+      "h": 0.85,
+      "color": "#3a2d23",
+      "finish": "wood",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 1,
+      "d": 0.14,
+      "y": 0,
+      "h": 0.85,
+      "color": "#3a2d23",
+      "finish": "wood",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": -0.46,
+      "z": 0,
+      "w": 0.08,
+      "d": 1,
+      "y": 0,
+      "h": 0.85,
+      "color": "#3a2d23",
+      "finish": "wood",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0.46,
+      "z": 0,
+      "w": 0.08,
+      "d": 1,
+      "y": 0,
+      "h": 0.85,
+      "color": "#3a2d23",
+      "finish": "wood",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.46,
+      "w": 1,
+      "d": 0.08,
+      "y": 0,
+      "h": 0.85,
+      "color": "#3a2d23",
+      "finish": "wood",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.46,
+      "w": 1,
+      "d": 0.08,
+      "y": 0,
+      "h": 0.85,
+      "color": "#3a2d23",
+      "finish": "wood",
+      "edges": true
+     },
+     {
+      "shape": "loft",
+      "x": -0.24,
+      "z": -0.24,
+      "w": 0.36,
+      "d": 0.36,
+      "y": 0.5,
+      "h": 0.35,
+      "tx": -0.24,
+      "tz": -0.24,
+      "tw": 0.28,
+      "td": 0.28,
+      "color": "#eaeaea",
+      "edges": "faint"
+     },
+     {
+      "shape": "loft",
+      "x": 0.24,
+      "z": -0.24,
+      "w": 0.36,
+      "d": 0.36,
+      "y": 0.5,
+      "h": 0.35,
+      "tx": 0.24,
+      "tz": -0.24,
+      "tw": 0.28,
+      "td": 0.28,
+      "color": "#eaeaea",
+      "edges": "faint"
+     },
+     {
+      "shape": "loft",
+      "x": -0.24,
+      "z": 0.24,
+      "w": 0.36,
+      "d": 0.36,
+      "y": 0.5,
+      "h": 0.35,
+      "tx": -0.24,
+      "tz": 0.24,
+      "tw": 0.28,
+      "td": 0.28,
+      "color": "#eaeaea",
+      "edges": "faint"
+     },
+     {
+      "shape": "loft",
+      "x": 0.24,
+      "z": 0.24,
+      "w": 0.36,
+      "d": 0.36,
+      "y": 0.5,
+      "h": 0.35,
+      "tx": 0.24,
+      "tz": 0.24,
+      "tw": 0.28,
+      "td": 0.28,
+      "color": "#eaeaea",
+      "edges": "faint"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": 0,
+      "w": 0.12,
+      "d": 0.12,
+      "y": 0,
+      "h": 0.04,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": -0.24,
+      "z": -0.24,
+      "w": 0.26,
+      "d": 0.26,
+      "y": 0.82,
+      "h": 0.02,
+      "color": "#fff2d9",
+      "glow": true,
+      "edges": "glow"
+     },
+     {
+      "shape": "box",
+      "x": 0.24,
+      "z": -0.24,
+      "w": 0.26,
+      "d": 0.26,
+      "y": 0.82,
+      "h": 0.02,
+      "color": "#fff2d9",
+      "glow": true,
+      "edges": "glow"
+     },
+     {
+      "shape": "box",
+      "x": -0.24,
+      "z": 0.24,
+      "w": 0.26,
+      "d": 0.26,
+      "y": 0.82,
+      "h": 0.02,
+      "color": "#fff2d9",
+      "glow": true,
+      "edges": "glow"
+     },
+     {
+      "shape": "box",
+      "x": 0.24,
+      "z": 0.24,
+      "w": 0.26,
+      "d": 0.26,
+      "y": 0.82,
+      "h": 0.02,
+      "color": "#fff2d9",
+      "glow": true,
+      "edges": "glow"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 1,
+      "d": 1
+     },
+     {
+      "shape": "line",
+      "x1": 0,
+      "z1": -0.5,
+      "x2": 0,
+      "z2": 0.5
+     },
+     {
+      "shape": "line",
+      "x1": -0.5,
+      "z1": 0,
+      "x2": 0.5,
+      "z2": 0
+     },
+     {
+      "shape": "rect",
+      "x": -0.24,
+      "z": -0.24,
+      "w": 0.32,
+      "d": 0.32
+     },
+     {
+      "shape": "rect",
+      "x": 0.24,
+      "z": -0.24,
+      "w": 0.32,
+      "d": 0.32
+     },
+     {
+      "shape": "rect",
+      "x": -0.24,
+      "z": 0.24,
+      "w": 0.32,
+      "d": 0.32
+     },
+     {
+      "shape": "rect",
+      "x": 0.24,
+      "z": 0.24,
+      "w": 0.32,
+      "d": 0.32
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "G5J1icSubOEr0xVlr4uFMovuHxcYLnYYT6txXeSIik3PVQdSw3wxhpoueOnlkFOEVXW3NSGZQxuuw0IDImM0Cg=="
+ }
+}

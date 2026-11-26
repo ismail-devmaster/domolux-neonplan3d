@@ -1,0 +1,247 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.double_leaf_entrance_door",
+  "name": "Domolux Bespoke Double-Leaf Entrance Door",
+  "publisher": "Domolux Studio",
+  "description": "Symmetrical double-leaf architectural portal with dark walnut cassette panels, bronze moldings, twin full-height bronze pull stiles, and multipoint lock mortise.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "double_leaf_entrance_door",
+    "name": {
+     "en": "Domolux Bespoke Double-Leaf Entrance Door",
+     "de": "Domolux Zweiflügelige Portal-Eingangstür",
+     "ar": "باب مدخل مزدوج الأجنحة دومولوكس"
+    },
+    "size": [
+     2.4,
+     0.24,
+     3
+    ],
+    "mount": "floor",
+    "surface": false,
+    "group": "door",
+    "room": [
+     "hall",
+     "living"
+    ],
+    "tags": [
+     "door",
+     "double",
+     "entrance",
+     "walnut",
+     "bronze",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": -0.48,
+      "z": 0,
+      "w": 0.04,
+      "d": 0.9,
+      "y": 0,
+      "h": 1,
+      "color": "#3d301b",
+      "edges": "glow",
+      "fix": "wd"
+     },
+     {
+      "shape": "box",
+      "x": 0.48,
+      "z": 0,
+      "w": 0.04,
+      "d": 0.9,
+      "y": 0,
+      "h": 1,
+      "color": "#3d301b",
+      "edges": "glow",
+      "fix": "wd"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 1,
+      "d": 0.9,
+      "y": 0.96,
+      "h": 0.04,
+      "color": "#3d301b",
+      "edges": "glow",
+      "fix": "hd"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 1,
+      "d": 0.92,
+      "y": 0,
+      "h": 0.02,
+      "color": "metal",
+      "edges": "faint",
+      "fix": "hd"
+     },
+     {
+      "shape": "box",
+      "x": -0.235,
+      "z": 0,
+      "w": 0.45,
+      "d": 0.4,
+      "y": 0.025,
+      "h": 0.93,
+      "color": "#382c22",
+      "finish": "wood",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0.235,
+      "z": 0,
+      "w": 0.45,
+      "d": 0.4,
+      "y": 0.025,
+      "h": 0.93,
+      "color": "#382c22",
+      "finish": "wood",
+      "edges": true
+     },
+     {
+      "shape": "loft",
+      "x": -0.235,
+      "z": 0.12,
+      "w": 0.35,
+      "d": 0.1,
+      "y": 0.1,
+      "h": 0.35,
+      "tx": -0.235,
+      "tz": 0.14,
+      "tw": 0.28,
+      "td": 0.1,
+      "color": "#47382c",
+      "edges": true
+     },
+     {
+      "shape": "loft",
+      "x": -0.235,
+      "z": 0.12,
+      "w": 0.35,
+      "d": 0.1,
+      "y": 0.55,
+      "h": 0.35,
+      "tx": -0.235,
+      "tz": 0.14,
+      "tw": 0.28,
+      "td": 0.1,
+      "color": "#47382c",
+      "edges": true
+     },
+     {
+      "shape": "loft",
+      "x": 0.235,
+      "z": 0.12,
+      "w": 0.35,
+      "d": 0.1,
+      "y": 0.1,
+      "h": 0.35,
+      "tx": 0.235,
+      "tz": 0.14,
+      "tw": 0.28,
+      "td": 0.1,
+      "color": "#47382c",
+      "edges": true
+     },
+     {
+      "shape": "loft",
+      "x": 0.235,
+      "z": 0.12,
+      "w": 0.35,
+      "d": 0.1,
+      "y": 0.55,
+      "h": 0.35,
+      "tx": 0.235,
+      "tz": 0.14,
+      "tw": 0.28,
+      "td": 0.1,
+      "color": "#47382c",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.12,
+      "w": 0.02,
+      "d": 0.15,
+      "y": 0.025,
+      "h": 0.93,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wd"
+     },
+     {
+      "shape": "box",
+      "x": -0.06,
+      "z": 0.18,
+      "w": 0.025,
+      "d": 0.08,
+      "y": 0.25,
+      "h": 0.5,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wd"
+     },
+     {
+      "shape": "box",
+      "x": 0.06,
+      "z": 0.18,
+      "w": 0.025,
+      "d": 0.08,
+      "y": 0.25,
+      "h": 0.5,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wd"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 1,
+      "d": 0.9
+     },
+     {
+      "shape": "rect",
+      "x": -0.235,
+      "z": 0,
+      "w": 0.45,
+      "d": 0.4
+     },
+     {
+      "shape": "rect",
+      "x": 0.235,
+      "z": 0,
+      "w": 0.45,
+      "d": 0.4
+     },
+     {
+      "shape": "line",
+      "x1": 0,
+      "z1": -0.2,
+      "x2": 0,
+      "z2": 0.2
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "zkTjOa538B8AQSualw3uQQ5E7G1b7NRSba2ZdyNkCwskI52embNqoPWXSgt04g2VMeYKStZes0AhTfqEVlH/Cw=="
+ }
+}

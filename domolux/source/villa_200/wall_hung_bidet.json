@@ -1,0 +1,133 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.wall_hung_bidet",
+  "name": "Domolux Architectural Wall-Hung Ceramic Bidet",
+  "publisher": "Domolux Studio",
+  "description": "Sculpted minimalist wall-hung vitrified porcelain bidet with concealed carrier frame integration, ergonomic contoured bowl cavity, and precision brushed bronze single-lever mixer.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "wall_hung_bidet",
+      "name": {
+        "en": "Domolux Architectural Wall-Hung Ceramic Bidet",
+        "de": "Domolux Wandhängendes Designer-Bidet",
+        "ar": "شطاف حمام جداري معلق من السيراميك الفاخر دومولوكس"
+      },
+      "size": [
+        0.38,
+        0.56,
+        0.4
+      ],
+      "mount": "wall",
+      "wall_y": 0.15,
+      "surface": false,
+      "group": "bathroom",
+      "room": [
+        "bathroom"
+      ],
+      "tags": [
+        "bidet",
+        "porcelain",
+        "wellness",
+        "hygiene",
+        "bathroom",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.46,
+          "w": 0.82,
+          "d": 0.08,
+          "y": 0.05,
+          "h": 0.9,
+          "color": "#22252c",
+          "edges": true,
+          "fix": "d"
+        },
+        {
+          "shape": "loft",
+          "x": 0,
+          "z": -0.05,
+          "w": 0.92,
+          "d": 0.82,
+          "y": 0.15,
+          "h": 0.85,
+          "tx": 0,
+          "tz": -0.08,
+          "tw": 0.72,
+          "td": 0.65,
+          "color": "#f8f9fa",
+          "finish": "white",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.05,
+          "w": 0.68,
+          "d": 0.56,
+          "y": 0.45,
+          "h": 0.52,
+          "color": "#e2e6ea",
+          "finish": "white",
+          "edges": true
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": 0.12,
+          "w": 0.16,
+          "d": 0.16,
+          "y": 0.46,
+          "h": 0.02,
+          "color": "#c5a059",
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": -0.32,
+          "w": 0.08,
+          "d": 0.08,
+          "y": 0.82,
+          "h": 0.12,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.25,
+          "w": 0.06,
+          "d": 0.12,
+          "y": 0.94,
+          "h": 0.04,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wdh"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": -0.05,
+          "w": 0.92,
+          "d": 0.82
+        },
+        {
+          "shape": "circle",
+          "x": 0,
+          "z": 0.05,
+          "r": 0.28
+        }
+      ]
+    }
+  ]
+}

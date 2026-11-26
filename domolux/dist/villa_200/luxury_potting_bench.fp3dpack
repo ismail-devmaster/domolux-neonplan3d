@@ -1,0 +1,160 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.luxury_potting_bench",
+  "name": "Domolux Estate Greenhouse Teak and Zinc Potting Bench",
+  "publisher": "Domolux Studio",
+  "description": "Weather-resistant greenhouse workstation crafted from solid plantation teak with dry-sink zinc potting basin, upper tool shelf, and soil storage bucket rack.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "luxury_potting_bench",
+    "name": {
+     "en": "Domolux Estate Greenhouse Teak and Zinc Potting Bench",
+     "de": "Domolux Exklusiver Pflanztisch aus Teak & Zink",
+     "ar": "طاولة العناية بالنباتات والغرس بخشب التيك والزنك دومولوكس"
+    },
+    "size": [
+     1.25,
+     0.65,
+     1.45
+    ],
+    "mount": "floor",
+    "surface": false,
+    "group": "outdoor",
+    "room": [
+     "outdoor",
+     "storage"
+    ],
+    "tags": [
+     "potting_bench",
+     "gardening",
+     "greenhouse",
+     "teak",
+     "plants",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": -0.42,
+      "z": -0.38,
+      "w": 0.08,
+      "d": 0.08,
+      "y": 0,
+      "h": 0.96,
+      "color": "#543c2b",
+      "finish": "wood",
+      "fix": "wd"
+     },
+     {
+      "shape": "box",
+      "x": 0.42,
+      "z": -0.38,
+      "w": 0.08,
+      "d": 0.08,
+      "y": 0,
+      "h": 0.96,
+      "color": "#543c2b",
+      "finish": "wood",
+      "fix": "wd"
+     },
+     {
+      "shape": "box",
+      "x": -0.42,
+      "z": 0.38,
+      "w": 0.08,
+      "d": 0.08,
+      "y": 0,
+      "h": 0.58,
+      "color": "#543c2b",
+      "finish": "wood",
+      "fix": "wd"
+     },
+     {
+      "shape": "box",
+      "x": 0.42,
+      "z": 0.38,
+      "w": 0.08,
+      "d": 0.08,
+      "y": 0,
+      "h": 0.58,
+      "color": "#543c2b",
+      "finish": "wood",
+      "fix": "wd"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.9,
+      "d": 0.84,
+      "y": 0.12,
+      "h": 0.04,
+      "color": "#3d2b1f",
+      "finish": "wood",
+      "edges": true,
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.94,
+      "y": 0.58,
+      "h": 0.08,
+      "color": "#788591",
+      "edges": true,
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0.22,
+      "z": 0.05,
+      "w": 0.42,
+      "d": 0.45,
+      "y": 0.48,
+      "h": 0.1,
+      "color": "#495057"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.38,
+      "w": 0.94,
+      "d": 0.15,
+      "y": 0.82,
+      "h": 0.04,
+      "color": "#543c2b",
+      "finish": "wood",
+      "fix": "h"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.94
+     },
+     {
+      "shape": "rect",
+      "x": 0.22,
+      "z": 0.05,
+      "w": 0.42,
+      "d": 0.45
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "oHLpX0uwy+QWFP9rHELt1Inhmf7IEDFpcziENI9j5JjRdgjNcygbjF1o2Af9Qhf5em+C2rsIfLFD4mNJJT0HAg=="
+ }
+}

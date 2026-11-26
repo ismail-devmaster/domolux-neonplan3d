@@ -1,0 +1,118 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.undercounter_blast_chiller",
+  "name": "Domolux Undercounter Blast Chiller",
+  "publisher": "Domolux Studio",
+  "description": "Culinary blast chiller and shock freezer with core food temperature probe, forced cross-flow evaporation fans, touch screen cycles, and insulated stainless door.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "undercounter_blast_chiller",
+      "name": {
+        "en": "Domolux Undercounter Blast Chiller",
+        "de": "Domolux Unterbau-Schockkühler",
+        "ar": "مبرد صدمات سريع تحت الكاونتر دومولوكس"
+      },
+      "size": [
+        0.6,
+        0.62,
+        0.85
+      ],
+      "mount": "floor",
+      "surface": true,
+      "group": "kitchen",
+      "room": [
+        "kitchen"
+      ],
+      "tags": [
+        "chiller",
+        "blast",
+        "freezer",
+        "culinary",
+        "appliance",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.96,
+          "d": 0.85,
+          "y": 0,
+          "h": 0.12,
+          "color": "#141518",
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.98,
+          "d": 0.96,
+          "y": 0.12,
+          "h": 0.86,
+          "color": "#22252c",
+          "finish": "dark",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.46,
+          "w": 0.96,
+          "d": 0.05,
+          "y": 0.13,
+          "h": 0.84,
+          "color": "metal",
+          "finish": "front",
+          "edges": true
+        },
+        {
+          "shape": "cyl",
+          "x": 0.38,
+          "z": 0.48,
+          "w": 0.03,
+          "d": 0.03,
+          "y": 0.35,
+          "h": 0.4,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wd"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.48,
+          "w": 0.52,
+          "d": 0.015,
+          "y": 0.85,
+          "h": 0.06,
+          "color": "#00e5ff",
+          "glow": true,
+          "edges": "glow",
+          "fix": "wdh"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 0.98,
+          "d": 0.96
+        },
+        {
+          "shape": "line",
+          "x1": -0.45,
+          "z1": 0.46,
+          "x2": 0.45,
+          "z2": 0.46
+        }
+      ]
+    }
+  ]
+}

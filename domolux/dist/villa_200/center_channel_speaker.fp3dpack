@@ -1,0 +1,142 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.center_channel_speaker",
+  "name": "Domolux Reference Tri-Amplified Center Channel Speaker",
+  "publisher": "Domolux Studio",
+  "description": "Horizontal 3-way reference dialogue loudspeaker featuring dual 8-inch Rohacell bass drivers, a pure beryllium dome tweeter, and curved acoustic enclosure.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "center_channel_speaker",
+    "name": {
+     "en": "Domolux Reference Tri-Amplified Center Channel Speaker",
+     "de": "Domolux 3-Wege Referenz-Center-Lautsprecher",
+     "ar": "مكبر صوت مركزي ثلاثي المنافذ للسينما المنزلية دومولوكس"
+    },
+    "size": [
+     0.85,
+     0.35,
+     0.28
+    ],
+    "mount": "surface",
+    "surface": true,
+    "group": "living",
+    "room": [
+     "living",
+     "office"
+    ],
+    "tags": [
+     "center_speaker",
+     "audio",
+     "cinema",
+     "hifi",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "loft",
+      "x": 0,
+      "z": 0,
+      "w": 0.96,
+      "d": 0.92,
+      "y": 0.04,
+      "h": 0.92,
+      "tx": 0,
+      "tz": -0.06,
+      "tw": 0.92,
+      "td": 0.84,
+      "color": "#141519",
+      "finish": "dark",
+      "edges": true
+     },
+     {
+      "shape": "cyl",
+      "x": -0.32,
+      "z": 0.44,
+      "w": 0.26,
+      "d": 0.26,
+      "y": 0.22,
+      "h": 0.03,
+      "axis": "z",
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": 0.32,
+      "z": 0.44,
+      "w": 0.26,
+      "d": 0.26,
+      "y": 0.22,
+      "h": 0.03,
+      "axis": "z",
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": 0.44,
+      "w": 0.2,
+      "d": 0.2,
+      "y": 0.28,
+      "h": 0.03,
+      "axis": "z",
+      "color": "#3d424d",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": 0.44,
+      "w": 0.1,
+      "d": 0.1,
+      "y": 0.65,
+      "h": 0.03,
+      "axis": "z",
+      "color": "#d4af37",
+      "edges": "glow",
+      "fix": "wdh"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.96,
+      "d": 0.92
+     },
+     {
+      "shape": "circle",
+      "x": -0.32,
+      "z": 0.44,
+      "r": 0.12
+     },
+     {
+      "shape": "circle",
+      "x": 0,
+      "z": 0.44,
+      "r": 0.09
+     },
+     {
+      "shape": "circle",
+      "x": 0.32,
+      "z": 0.44,
+      "r": 0.12
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "GQchtR8SKVuGg6tDReO3TaiYeYd0lWnHGx/lNV2H/2Tr+NhVHz8TDW46ud/yC6ryl39EPGFxa6zoJjwlNYhqDg=="
+ }
+}

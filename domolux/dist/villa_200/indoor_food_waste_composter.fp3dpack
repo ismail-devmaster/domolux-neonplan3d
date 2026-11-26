@@ -1,0 +1,128 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.indoor_food_waste_composter",
+  "name": "Domolux Indoor Food-Waste Dehydrating Composter",
+  "publisher": "Domolux Studio",
+  "description": "Countertop or undercounter electric culinary waste dehydrator and compost transformer with activated carbon odor scrubbing, cast aluminum processing chamber, and touch controls.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "indoor_food_waste_composter",
+    "name": {
+     "en": "Domolux Indoor Food-Waste Dehydrating Composter",
+     "de": "Domolux Elektrischer Küchenabfall-Komposter",
+     "ar": "جهاز تجفيف وتحويل مخلفات الطعام المنزلي دومولوكس"
+    },
+    "size": [
+     0.35,
+     0.45,
+     0.42
+    ],
+    "mount": "surface",
+    "surface": true,
+    "group": "kitchen",
+    "room": [
+     "kitchen"
+    ],
+    "tags": [
+     "composter",
+     "waste",
+     "organic",
+     "sustainability",
+     "kitchen",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.92,
+      "d": 0.92,
+      "y": 0,
+      "h": 0.15,
+      "color": "#1c1d22",
+      "edges": true,
+      "fix": "h"
+     },
+     {
+      "shape": "loft",
+      "x": 0,
+      "z": 0,
+      "w": 0.88,
+      "d": 0.88,
+      "y": 0.15,
+      "h": 0.65,
+      "tx": 0,
+      "tz": 0,
+      "tw": 0.84,
+      "td": 0.84,
+      "color": "#25272e",
+      "finish": "dark",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.86,
+      "d": 0.86,
+      "y": 0.8,
+      "h": 0.15,
+      "color": "#16171b",
+      "edges": true,
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.38,
+      "w": 0.18,
+      "d": 0.06,
+      "y": 0.84,
+      "h": 0.05,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": 0,
+      "w": 0.42,
+      "d": 0.42,
+      "y": 0.96,
+      "h": 0.03,
+      "color": "#00e676",
+      "glow": true,
+      "edges": "glow",
+      "fix": "wdh"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.92,
+      "d": 0.92
+     },
+     {
+      "shape": "circle",
+      "x": 0,
+      "z": 0,
+      "r": 0.22
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "YnSQCuTi8OzZO4QcDxjHXsHq+/HKV7ECzSXxiJGXJo9Ok/N6G5VaUN1FeTQf8vrxX0PLXXoirDULtS8p2wzyBQ=="
+ }
+}

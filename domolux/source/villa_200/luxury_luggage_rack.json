@@ -1,0 +1,207 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.luxury_luggage_rack",
+  "name": "Domolux Luxury Folding Luggage Rack",
+  "publisher": "Domolux Studio",
+  "description": "Suite luggage bench crafted from satin brass X-frame geometry, hand-stitched cognac bridle leather support straps, and protective walnut wall bumper rail.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "luxury_luggage_rack",
+      "name": {
+        "en": "Domolux Luxury Folding Luggage Rack",
+        "de": "Domolux Exklusive Kofferablage",
+        "ar": "حامل حقائب سفر فاخر دومولوكس"
+      },
+      "size": [
+        0.75,
+        0.55,
+        0.62
+      ],
+      "mount": "floor",
+      "surface": true,
+      "group": "bedroom",
+      "room": [
+        "bedroom",
+        "guest"
+      ],
+      "tags": [
+        "luggage",
+        "rack",
+        "suitcase",
+        "leather",
+        "brass",
+        "hospitality",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": -0.42,
+          "z": 0,
+          "w": 0.04,
+          "d": 0.75,
+          "y": 0,
+          "h": 0.85,
+          "rot": 25,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wd"
+        },
+        {
+          "shape": "box",
+          "x": -0.42,
+          "z": 0,
+          "w": 0.04,
+          "d": 0.75,
+          "y": 0,
+          "h": 0.85,
+          "rot": -25,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wd"
+        },
+        {
+          "shape": "box",
+          "x": 0.42,
+          "z": 0,
+          "w": 0.04,
+          "d": 0.75,
+          "y": 0,
+          "h": 0.85,
+          "rot": 25,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wd"
+        },
+        {
+          "shape": "box",
+          "x": 0.42,
+          "z": 0,
+          "w": 0.04,
+          "d": 0.75,
+          "y": 0,
+          "h": 0.85,
+          "rot": -25,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wd"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": -0.32,
+          "w": 0.03,
+          "d": 0.03,
+          "y": 0.8,
+          "h": 0.88,
+          "axis": "x",
+          "color": "#c5a059",
+          "fix": "wd"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": 0.32,
+          "w": 0.03,
+          "d": 0.03,
+          "y": 0.8,
+          "h": 0.88,
+          "axis": "x",
+          "color": "#c5a059",
+          "fix": "wd"
+        },
+        {
+          "shape": "box",
+          "x": -0.28,
+          "z": 0,
+          "w": 0.08,
+          "d": 0.68,
+          "y": 0.78,
+          "h": 0.02,
+          "color": "#9c572b",
+          "finish": "fabric",
+          "edges": true,
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": -0.09,
+          "z": 0,
+          "w": 0.08,
+          "d": 0.68,
+          "y": 0.78,
+          "h": 0.02,
+          "color": "#9c572b",
+          "finish": "fabric",
+          "edges": true,
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0.09,
+          "z": 0,
+          "w": 0.08,
+          "d": 0.68,
+          "y": 0.78,
+          "h": 0.02,
+          "color": "#9c572b",
+          "finish": "fabric",
+          "edges": true,
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0.28,
+          "z": 0,
+          "w": 0.08,
+          "d": 0.68,
+          "y": 0.78,
+          "h": 0.02,
+          "color": "#9c572b",
+          "finish": "fabric",
+          "edges": true,
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.42,
+          "w": 0.9,
+          "d": 0.05,
+          "y": 0.82,
+          "h": 0.16,
+          "color": "#3a2d23",
+          "finish": "wood",
+          "fix": "wdh"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 0.9,
+          "d": 0.85
+        },
+        {
+          "shape": "line",
+          "x1": -0.4,
+          "z1": -0.35,
+          "x2": -0.4,
+          "z2": 0.35
+        },
+        {
+          "shape": "line",
+          "x1": 0.4,
+          "z1": -0.35,
+          "x2": 0.4,
+          "z2": 0.35
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.indoor_putting_green",
+  "name": "Domolux Contour-Engineered Architectural Putting Green",
+  "publisher": "Domolux Studio",
+  "description": "Custom contoured residential putting green featuring adjustable break underlayment, PGA Stimpmeter 11 turf, three precision solid brass cup liners, and fluted oak border surround.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "indoor_putting_green",
+    "name": {
+     "en": "Domolux Contour-Engineered Architectural Putting Green",
+     "de": "Domolux Architektonisches Indoor-Putting-Green",
+     "ar": "مسار تدريب الجولف الداخلي المعماري بالعشب الطبي دومولوكس"
+    },
+    "size": [
+     3.2,
+     1.4,
+     0.15
+    ],
+    "mount": "floor",
+    "surface": false,
+    "group": "living",
+    "room": [
+     "living",
+     "office"
+    ],
+    "tags": [
+     "putting_green",
+     "golf",
+     "turf",
+     "sports",
+     "games",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.96,
+      "y": 0,
+      "h": 0.12,
+      "color": "#362619",
+      "finish": "wood",
+      "edges": true,
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.94,
+      "d": 0.9,
+      "y": 0.06,
+      "h": 0.06,
+      "color": "#2d6a4f",
+      "edges": true,
+      "fix": "h"
+     },
+     {
+      "shape": "cyl",
+      "x": -0.36,
+      "z": -0.15,
+      "w": 0.1,
+      "d": 0.1,
+      "y": 0.06,
+      "h": 0.08,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": -0.1,
+      "z": 0.18,
+      "w": 0.1,
+      "d": 0.1,
+      "y": 0.06,
+      "h": 0.08,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": 0.36,
+      "z": -0.1,
+      "w": 0.1,
+      "d": 0.1,
+      "y": 0.06,
+      "h": 0.08,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wdh"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.96
+     },
+     {
+      "shape": "circle",
+      "x": -0.36,
+      "z": -0.15,
+      "r": 0.05
+     },
+     {
+      "shape": "circle",
+      "x": -0.1,
+      "z": 0.18,
+      "r": 0.05
+     },
+     {
+      "shape": "circle",
+      "x": 0.36,
+      "z": -0.1,
+      "r": 0.05
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "jMdHud0pbsydstLwYq+KOh6rIG7DYdRV3hyDT6zQFxCpUjzizfnmAsE0B0MntYIMo0TriDcZq/CWZAflnvdPDw=="
+ }
+}

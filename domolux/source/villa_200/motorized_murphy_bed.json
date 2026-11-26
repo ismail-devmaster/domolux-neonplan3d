@@ -1,0 +1,129 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.motorized_murphy_bed",
+  "name": "Domolux Motorized Architectural Wall-Bed System",
+  "publisher": "Domolux Studio",
+  "description": "Architectural floor-to-ceiling cabinetry concealing a motorized fold-down queen bed with integrated counterbalanced pivot hinge, LED cove reading lights, and fluted oak front.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "motorized_murphy_bed",
+      "name": {
+        "en": "Domolux Motorized Architectural Wall-Bed System",
+        "de": "Domolux Motorisiertes Schrankbett-System",
+        "ar": "نظام سرير الحائط المخفي القابل للطي بمحرك كهربائي دومولوكس"
+      },
+      "size": [
+        1.7,
+        0.6,
+        2.25
+      ],
+      "mount": "floor",
+      "surface": false,
+      "group": "bedroom",
+      "room": [
+        "bedroom"
+      ],
+      "tags": [
+        "murphy_bed",
+        "wall_bed",
+        "motorized",
+        "space_saving",
+        "bedroom",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.15,
+          "w": 0.98,
+          "d": 0.68,
+          "y": 0,
+          "h": 0.98,
+          "color": "wood",
+          "finish": "dark",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.1,
+          "w": 0.88,
+          "d": 0.54,
+          "y": 0.04,
+          "h": 0.92,
+          "color": "#181a1f"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.18,
+          "w": 0.84,
+          "d": 0.48,
+          "y": 0.05,
+          "h": 0.42,
+          "color": "#282b33",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.18,
+          "w": 0.8,
+          "d": 0.44,
+          "y": 0.47,
+          "h": 0.18,
+          "color": "#e8ecef",
+          "finish": "fabric",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.44,
+          "w": 0.94,
+          "d": 0.04,
+          "y": 0.68,
+          "h": 0.28,
+          "color": "#422e1d",
+          "finish": "wood",
+          "edges": true,
+          "fix": "d"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": 0.42,
+          "w": 0.04,
+          "d": 0.04,
+          "y": 0.02,
+          "h": 0.78,
+          "axis": "x",
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wd"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": -0.15,
+          "w": 0.98,
+          "d": 0.68
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0.18,
+          "w": 0.84,
+          "d": 0.48
+        }
+      ]
+    }
+  ]
+}

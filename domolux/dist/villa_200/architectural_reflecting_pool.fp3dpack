@@ -1,0 +1,111 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.architectural_reflecting_pool",
+  "name": "Domolux Basalt Mirror Architectural Reflecting Water Basin",
+  "publisher": "Domolux Studio",
+  "description": "Perimeter slot-overflow reflecting pool basin lined with honed Nero Zimbabwe granite, glass-still surface mirror plane, and submerged underwater LED glow reveal.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "architectural_reflecting_pool",
+    "name": {
+     "en": "Domolux Basalt Mirror Architectural Reflecting Water Basin",
+     "de": "Domolux Architektonisches Spiegel-Wasserbecken",
+     "ar": "حوض المياه المعماري العاكس بحجر البازلت الأسود دومولوكس"
+    },
+    "size": [
+     3.8,
+     2.2,
+     0.4
+    ],
+    "mount": "floor",
+    "surface": false,
+    "group": "outdoor",
+    "room": [
+     "outdoor"
+    ],
+    "tags": [
+     "reflecting_pool",
+     "water_feature",
+     "fountain",
+     "mirror_pool",
+     "landscape",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.98,
+      "y": 0,
+      "h": 0.12,
+      "color": "#141518",
+      "edges": true,
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.86,
+      "d": 0.86,
+      "y": 0.04,
+      "h": 0.88,
+      "color": "#0c0d10"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.84,
+      "d": 0.84,
+      "y": 0.84,
+      "h": 0.02,
+      "color": "#00b4d8",
+      "finish": "glass",
+      "glow": true,
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.85,
+      "d": 0.85,
+      "y": 0.82,
+      "h": 0.02,
+      "color": "#fff3cc",
+      "glow": true,
+      "fix": "h"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.98
+     },
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.86,
+      "d": 0.86
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "YTNd0jCUTbyOyys1V17dZnHP32xQo2YOTzGSuyBlW9MA0VSyJRQBWTJZk0MoO+5370MpwZH2H9qwl3TPOLDXCQ=="
+ }
+}

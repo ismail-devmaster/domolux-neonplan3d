@@ -1,0 +1,160 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.convertible_child_highchair",
+  "name": "Domolux Sculptural Convertible Highchair",
+  "publisher": "Domolux Studio",
+  "description": "Evolutionary child dining highchair constructed from bent walnut ply, sand-cast brass stability spreaders, removable food-grade silicone dining tray, and padded harness.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "convertible_child_highchair",
+    "name": {
+     "en": "Domolux Sculptural Convertible Highchair",
+     "de": "Domolux Mitwachsender Designer-Kinderhochstuhl",
+     "ar": "كرسي طعام الأطفال المتطور المصنوع من الجوز والنحاس دومولوكس"
+    },
+    "size": [
+     0.55,
+     0.55,
+     0.88
+    ],
+    "mount": "floor",
+    "surface": false,
+    "group": "dining",
+    "room": [
+     "dining",
+     "kitchen"
+    ],
+    "tags": [
+     "highchair",
+     "child",
+     "dining",
+     "nursery",
+     "walnut",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "cyl",
+      "x": -0.36,
+      "z": -0.36,
+      "w": 0.06,
+      "d": 0.06,
+      "y": 0,
+      "h": 0.62,
+      "color": "#3d2b1f",
+      "finish": "wood",
+      "fix": "wd"
+     },
+     {
+      "shape": "cyl",
+      "x": 0.36,
+      "z": -0.36,
+      "w": 0.06,
+      "d": 0.06,
+      "y": 0,
+      "h": 0.62,
+      "color": "#3d2b1f",
+      "finish": "wood",
+      "fix": "wd"
+     },
+     {
+      "shape": "cyl",
+      "x": -0.36,
+      "z": 0.36,
+      "w": 0.06,
+      "d": 0.06,
+      "y": 0,
+      "h": 0.62,
+      "color": "#3d2b1f",
+      "finish": "wood",
+      "fix": "wd"
+     },
+     {
+      "shape": "cyl",
+      "x": 0.36,
+      "z": 0.36,
+      "w": 0.06,
+      "d": 0.06,
+      "y": 0,
+      "h": 0.62,
+      "color": "#3d2b1f",
+      "finish": "wood",
+      "fix": "wd"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.28,
+      "w": 0.62,
+      "d": 0.16,
+      "y": 0.28,
+      "h": 0.04,
+      "color": "#543c2b",
+      "finish": "wood",
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.05,
+      "w": 0.7,
+      "d": 0.68,
+      "y": 0.62,
+      "h": 0.32,
+      "color": "#2d2017",
+      "finish": "wood",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.05,
+      "w": 0.6,
+      "d": 0.58,
+      "y": 0.64,
+      "h": 0.26,
+      "color": "#d2cbc4",
+      "finish": "cushion"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.25,
+      "w": 0.74,
+      "d": 0.35,
+      "y": 0.82,
+      "h": 0.05,
+      "color": "#f8f9fa",
+      "edges": true,
+      "fix": "h"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.88,
+      "d": 0.88
+     },
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0.25,
+      "w": 0.74,
+      "d": 0.35
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "tRCwIof/MzcR1KhApOGduQRezLX4/wmpyaXUCEfXfnkcKsUTOFQLPd1k7mwzO+219FwzUjBWMbbL6A8ncEDVCg=="
+ }
+}

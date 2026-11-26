@@ -1,0 +1,118 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.smart_video_doorbell",
+  "name": "Domolux Monumental Entrance Smart Video Doorbell",
+  "publisher": "Domolux Studio",
+  "description": "Slimline exterior entryway station milled from a solid billet of dark oxidized bronze, with 4K HDR optical lens, capacitive backlit touch button, and LED status halo.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "smart_video_doorbell",
+    "name": {
+     "en": "Domolux Monumental Entrance Smart Video Doorbell",
+     "de": "Domolux Smarte Video-Türklingel aus Bronze",
+     "ar": "جرس الباب الذكي بالفيديو وكاميرا الرؤية الليلية دومولوكس"
+    },
+    "size": [
+     0.08,
+     0.04,
+     0.22
+    ],
+    "mount": "wall",
+    "wall_y": 1.4,
+    "surface": false,
+    "group": "entryway",
+    "room": [
+     "hallway",
+     "outdoor"
+    ],
+    "tags": [
+     "doorbell",
+     "camera",
+     "security",
+     "entryway",
+     "bronze",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.4,
+      "w": 0.9,
+      "d": 0.15,
+      "y": 0.04,
+      "h": 0.92,
+      "color": "#1a1c20",
+      "fix": "d"
+     },
+     {
+      "shape": "loft",
+      "x": 0,
+      "z": 0,
+      "w": 0.96,
+      "d": 0.7,
+      "y": 0.02,
+      "h": 0.96,
+      "tx": 0,
+      "tz": -0.05,
+      "tw": 0.88,
+      "td": 0.65,
+      "color": "#2a221b",
+      "finish": "dark",
+      "edges": true
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": 0.25,
+      "w": 0.45,
+      "d": 0.45,
+      "y": 0.72,
+      "h": 0.04,
+      "axis": "z",
+      "color": "#111215",
+      "edges": "glow",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": 0.25,
+      "w": 0.5,
+      "d": 0.5,
+      "y": 0.25,
+      "h": 0.03,
+      "axis": "z",
+      "color": "#ffa726",
+      "glow": true,
+      "fix": "wdh"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.96,
+      "d": 0.7
+     },
+     {
+      "shape": "circle",
+      "x": 0,
+      "z": 0.25,
+      "r": 0.22
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "oP9qIl6zlq4v/Inhg3fHcvW8glpsquM30TpeV14m46BCTH0AB9IPC/DTrI/bosPuzEcNi4bIgwLQ/ttAipGZCA=="
+ }
+}

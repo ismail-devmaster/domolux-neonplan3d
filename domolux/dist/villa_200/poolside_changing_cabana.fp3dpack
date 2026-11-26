@@ -1,0 +1,151 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.poolside_changing_cabana",
+  "name": "Domolux Estate Private Poolside Changing Pavilion",
+  "publisher": "Domolux Studio",
+  "description": "Fully enclosed teak changing cube with louvered ventilation panels, integrated bench seating, towel warmer nook, frosted glass skylight, and outdoor shower hookup.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "poolside_changing_cabana",
+    "name": {
+     "en": "Domolux Estate Private Poolside Changing Pavilion",
+     "de": "Domolux Pool-Umkleidepavillon mit Außendusche",
+     "ar": "مقصورة تبديل الملابس والاستحمام الخارجية الفاخرة دومولوكس"
+    },
+    "size": [
+     1.8,
+     1.8,
+     2.4
+    ],
+    "mount": "floor",
+    "surface": false,
+    "group": "outdoor",
+    "room": [
+     "outdoor"
+    ],
+    "tags": [
+     "changing_cabana",
+     "poolside",
+     "teak",
+     "changing_room",
+     "outdoor",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.98,
+      "y": 0,
+      "h": 0.08,
+      "color": "#3d2b1f",
+      "finish": "wood",
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.46,
+      "w": 0.96,
+      "d": 0.06,
+      "y": 0.08,
+      "h": 0.9,
+      "color": "#543c2b",
+      "finish": "wood",
+      "edges": true,
+      "fix": "d"
+     },
+     {
+      "shape": "box",
+      "x": -0.46,
+      "z": 0,
+      "w": 0.06,
+      "d": 0.96,
+      "y": 0.08,
+      "h": 0.9,
+      "color": "#543c2b",
+      "finish": "wood",
+      "edges": true,
+      "fix": "w"
+     },
+     {
+      "shape": "box",
+      "x": 0.46,
+      "z": 0,
+      "w": 0.06,
+      "d": 0.96,
+      "y": 0.08,
+      "h": 0.9,
+      "color": "#543c2b",
+      "finish": "wood",
+      "edges": true,
+      "fix": "w"
+     },
+     {
+      "shape": "box",
+      "x": -0.28,
+      "z": 0.46,
+      "w": 0.4,
+      "d": 0.04,
+      "y": 0.08,
+      "h": 0.9,
+      "color": "#543c2b",
+      "finish": "wood",
+      "edges": true,
+      "fix": "d"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.28,
+      "w": 0.82,
+      "d": 0.32,
+      "y": 0.08,
+      "h": 0.22,
+      "color": "#6a4e37",
+      "finish": "wood",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.98,
+      "y": 0.96,
+      "h": 0.04,
+      "color": "#1c1e24",
+      "fix": "h"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.98
+     },
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": -0.28,
+      "w": 0.82,
+      "d": 0.32
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "Zcp/nf0UPtSGc5fX7SCguyuS6gw5zK4TQlW9qFj0O0h2Zkg7+pqmp+wJiCxE4rlM8jvv2TTiLF4LscPneXutCQ=="
+ }
+}

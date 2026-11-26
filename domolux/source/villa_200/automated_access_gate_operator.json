@@ -1,0 +1,115 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.automated_access_gate_operator",
+  "name": "Domolux Estate Heavy-Duty Hydraulic Gate Operator Pylon",
+  "publisher": "Domolux Studio",
+  "description": "Industrial continuous-duty hydraulic operator column capable of swinging massive 1,200kg bronze gates, with battery backup, soft-close deceleration, and internal diagnostic computer.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "automated_access_gate_operator",
+      "name": {
+        "en": "Domolux Estate Heavy-Duty Hydraulic Gate Operator Pylon",
+        "de": "Domolux Hydraulischer Torantrieb-Pylon",
+        "ar": "محرك البوابات الهيدروليكي فائق القوة للقصور الفاخرة دومولوكس"
+      },
+      "size": [
+        0.45,
+        0.35,
+        0.85
+      ],
+      "mount": "floor",
+      "surface": false,
+      "group": "entryway",
+      "room": [
+        "outdoor"
+      ],
+      "tags": [
+        "gate_operator",
+        "hydraulic",
+        "estate",
+        "automation",
+        "security",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.96,
+          "d": 0.94,
+          "y": 0,
+          "h": 0.12,
+          "color": "#141518",
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.02,
+          "w": 0.92,
+          "d": 0.88,
+          "y": 0.12,
+          "h": 0.82,
+          "color": "#22252c",
+          "finish": "dark",
+          "edges": true
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": 0.15,
+          "w": 0.42,
+          "d": 0.42,
+          "y": 0.88,
+          "h": 0.12,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0.15,
+          "z": 0.32,
+          "w": 0.48,
+          "d": 0.12,
+          "y": 0.92,
+          "h": 0.06,
+          "color": "metal",
+          "edges": true,
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.42,
+          "w": 0.24,
+          "d": 0.02,
+          "y": 0.45,
+          "h": 0.22,
+          "color": "#c5a059",
+          "fix": "wdh"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 0.96,
+          "d": 0.94
+        },
+        {
+          "shape": "circle",
+          "x": 0,
+          "z": 0.15,
+          "r": 0.21
+        }
+      ]
+    }
+  ]
+}

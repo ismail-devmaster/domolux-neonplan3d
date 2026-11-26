@@ -1,0 +1,132 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.bathroom_water_purification_station",
+  "name": "Domolux Mineralizing Bathroom Water Purification Column",
+  "publisher": "Domolux Studio",
+  "description": "Architectural floorstanding drinking water mineralizing station with reverse-osmosis filtration column, illuminated mouthwash glass cradle, and touchless chilled tap.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "bathroom_water_purification_station",
+    "name": {
+     "en": "Domolux Mineralizing Bathroom Water Purification Column",
+     "de": "Domolux Bad-Wasseraufbereitungs- und Spendersäule",
+     "ar": "محطة تنقية وإعادة تمعدن مياه الشرب للحمام دومولوكس"
+    },
+    "size": [
+     0.42,
+     0.45,
+     1.15
+    ],
+    "mount": "floor",
+    "surface": false,
+    "group": "bathroom",
+    "room": [
+     "bathroom"
+    ],
+    "tags": [
+     "water_station",
+     "purification",
+     "filtration",
+     "wellness",
+     "bathroom",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.92,
+      "d": 0.92,
+      "y": 0,
+      "h": 0.06,
+      "color": "#141518",
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.05,
+      "w": 0.94,
+      "d": 0.88,
+      "y": 0.06,
+      "h": 0.9,
+      "color": "#22252c",
+      "finish": "dark",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.15,
+      "w": 0.72,
+      "d": 0.45,
+      "y": 0.52,
+      "h": 0.38,
+      "color": "#111215",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.15,
+      "w": 0.68,
+      "d": 0.42,
+      "y": 0.52,
+      "h": 0.03,
+      "color": "metal",
+      "fix": "h"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": 0.02,
+      "w": 0.05,
+      "d": 0.05,
+      "y": 0.8,
+      "h": 0.16,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wd"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": 0.15,
+      "w": 0.18,
+      "d": 0.18,
+      "y": 0.89,
+      "h": 0.02,
+      "color": "#00e5ff",
+      "glow": true,
+      "fix": "wdh"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": -0.05,
+      "w": 0.94,
+      "d": 0.88
+     },
+     {
+      "shape": "circle",
+      "x": 0,
+      "z": 0.15,
+      "r": 0.2
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "Yt+xJM2gNkJdhf3e2lXMAo+YlbKstdIxOz8sEnzloiFfe2Arc6FJrfi0dzscAkdKJ/IomZuI99jAcWE9K5O2Dw=="
+ }
+}

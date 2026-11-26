@@ -1,0 +1,173 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.luxury_nursery_crib",
+  "name": "Domolux Heirloom Curved Oak Nursery Crib",
+  "publisher": "Domolux Studio",
+  "description": "Heirloom-grade convertible crib handcrafted from solid white oak with softly radiused corners, precision vertical safety spindles, non-toxic organic cotton mattress, and brass feet.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "luxury_nursery_crib",
+    "name": {
+     "en": "Domolux Heirloom Curved Oak Nursery Crib",
+     "de": "Domolux Exklusives Designer-Kinderbett",
+     "ar": "سرير أطفال ملكي فاخر من خشب البلوط المنحني دومولوكس"
+    },
+    "size": [
+     1.45,
+     0.8,
+     0.95
+    ],
+    "mount": "floor",
+    "surface": false,
+    "group": "bedroom",
+    "room": [
+     "bedroom"
+    ],
+    "tags": [
+     "crib",
+     "nursery",
+     "baby",
+     "infant",
+     "oak",
+     "bedroom",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "cyl",
+      "x": -0.45,
+      "z": -0.44,
+      "w": 0.07,
+      "d": 0.07,
+      "y": 0,
+      "h": 0.98,
+      "color": "#8a6642",
+      "finish": "wood",
+      "fix": "wd"
+     },
+     {
+      "shape": "cyl",
+      "x": 0.45,
+      "z": -0.44,
+      "w": 0.07,
+      "d": 0.07,
+      "y": 0,
+      "h": 0.98,
+      "color": "#8a6642",
+      "finish": "wood",
+      "fix": "wd"
+     },
+     {
+      "shape": "cyl",
+      "x": -0.45,
+      "z": 0.44,
+      "w": 0.07,
+      "d": 0.07,
+      "y": 0,
+      "h": 0.98,
+      "color": "#8a6642",
+      "finish": "wood",
+      "fix": "wd"
+     },
+     {
+      "shape": "cyl",
+      "x": 0.45,
+      "z": 0.44,
+      "w": 0.07,
+      "d": 0.07,
+      "y": 0,
+      "h": 0.98,
+      "color": "#8a6642",
+      "finish": "wood",
+      "fix": "wd"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.84,
+      "d": 0.82,
+      "y": 0.22,
+      "h": 0.18,
+      "color": "#f8f9fa",
+      "finish": "cushion",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.44,
+      "w": 0.9,
+      "d": 0.05,
+      "y": 0.88,
+      "h": 0.08,
+      "color": "#8a6642",
+      "finish": "wood",
+      "edges": true,
+      "fix": "d"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.44,
+      "w": 0.9,
+      "d": 0.05,
+      "y": 0.88,
+      "h": 0.08,
+      "color": "#8a6642",
+      "finish": "wood",
+      "edges": true,
+      "fix": "d"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.44,
+      "w": 0.84,
+      "d": 0.02,
+      "y": 0.38,
+      "h": 0.5,
+      "color": "#a57d54",
+      "fix": "d"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.44,
+      "w": 0.84,
+      "d": 0.02,
+      "y": 0.38,
+      "h": 0.5,
+      "color": "#a57d54",
+      "fix": "d"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.96,
+      "d": 0.94
+     },
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.84,
+      "d": 0.82
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "KXeYU0h6JBUxaHDFu7Aw7VPXgfoCaiX2a2d4leikrVVakLwiOESOtNr5W7kh2jmyXpZV0aqd0F1RTkuQFbT+Aw=="
+ }
+}

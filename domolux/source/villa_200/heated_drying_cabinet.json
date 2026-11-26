@@ -1,0 +1,118 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.heated_drying_cabinet",
+  "name": "Domolux Professional Heat-Pump Garment Drying Armoire",
+  "publisher": "Domolux Studio",
+  "description": "Gentle heat-pump clothes drying cabinet for delicate silks and outerwear, featuring three levels of pull-out drying racks, shoe blowers, and digital touch door.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "heated_drying_cabinet",
+      "name": {
+        "en": "Domolux Professional Heat-Pump Garment Drying Armoire",
+        "de": "Domolux Professioneller Wärmepumpen-Trockenschrank",
+        "ar": "دولاب تجفيف الملابس الحراري المتطور بمضخة حرارية دومولوكس"
+      },
+      "size": [
+        0.6,
+        0.65,
+        1.85
+      ],
+      "mount": "floor",
+      "surface": false,
+      "group": "appliances",
+      "room": [
+        "storage"
+      ],
+      "tags": [
+        "drying_cabinet",
+        "garment_care",
+        "heat_pump",
+        "appliances",
+        "laundry",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.94,
+          "d": 0.94,
+          "y": 0,
+          "h": 0.06,
+          "color": "#141518",
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.02,
+          "w": 0.96,
+          "d": 0.94,
+          "y": 0.06,
+          "h": 0.92,
+          "color": "#22252c",
+          "finish": "dark",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.46,
+          "w": 0.92,
+          "d": 0.04,
+          "y": 0.08,
+          "h": 0.88,
+          "color": "#1b2028",
+          "finish": "glass",
+          "edges": true,
+          "fix": "d"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.48,
+          "w": 0.42,
+          "d": 0.01,
+          "y": 0.82,
+          "h": 0.08,
+          "color": "#00e5ff",
+          "glow": true,
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": 0.38,
+          "z": 0.48,
+          "w": 0.03,
+          "d": 0.03,
+          "y": 0.25,
+          "h": 0.5,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wdh"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 0.96,
+          "d": 0.94
+        },
+        {
+          "shape": "line",
+          "x1": -0.46,
+          "z1": 0.46,
+          "x2": 0.46,
+          "z2": 0.46
+        }
+      ]
+    }
+  ]
+}

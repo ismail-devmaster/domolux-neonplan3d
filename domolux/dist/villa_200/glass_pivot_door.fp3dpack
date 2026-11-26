@@ -1,0 +1,178 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.glass_pivot_door",
+  "name": "Domolux Premium Glass Pivot Door",
+  "publisher": "Domolux Studio",
+  "description": "Full-height smoked architectural safety glass pivot door with ultra-slim dark bronze anodized frame, hydraulic self-closing floor pivot, and vertical bronze pull stile.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "glass_pivot_door",
+    "name": {
+     "en": "Domolux Premium Glass Pivot Door",
+     "de": "Domolux Glas-Pivot-Innentür",
+     "ar": "باب زجاجي محوري دومولوكس"
+    },
+    "size": [
+     1.4,
+     0.18,
+     3
+    ],
+    "mount": "floor",
+    "surface": false,
+    "group": "door",
+    "room": [
+     "living",
+     "office",
+     "hall",
+     "bath"
+    ],
+    "tags": [
+     "door",
+     "glass",
+     "pivot",
+     "smoked",
+     "bronze",
+     "minimal",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": -0.485,
+      "z": 0,
+      "w": 0.03,
+      "d": 0.8,
+      "y": 0,
+      "h": 1,
+      "color": "#2d251d",
+      "edges": "glow",
+      "fix": "wd"
+     },
+     {
+      "shape": "box",
+      "x": 0.485,
+      "z": 0,
+      "w": 0.03,
+      "d": 0.8,
+      "y": 0,
+      "h": 1,
+      "color": "#2d251d",
+      "edges": "glow",
+      "fix": "wd"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 1,
+      "d": 0.8,
+      "y": 0.98,
+      "h": 0.02,
+      "color": "#2d251d",
+      "edges": "glow",
+      "fix": "hd"
+     },
+     {
+      "shape": "box",
+      "x": 0.02,
+      "z": 0,
+      "w": 0.92,
+      "d": 0.25,
+      "y": 0.015,
+      "h": 0.965,
+      "color": "#7a623a",
+      "edges": "glow"
+     },
+     {
+      "shape": "box",
+      "x": 0.02,
+      "z": 0,
+      "w": 0.88,
+      "d": 0.08,
+      "y": 0.03,
+      "h": 0.935,
+      "color": "glass",
+      "edges": true
+     },
+     {
+      "shape": "cyl",
+      "x": -0.28,
+      "z": 0,
+      "w": 0.05,
+      "d": 0.05,
+      "y": 0,
+      "h": 0.025,
+      "color": "metal",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": -0.28,
+      "z": 0,
+      "w": 0.05,
+      "d": 0.05,
+      "y": 0.975,
+      "h": 0.025,
+      "color": "metal",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": 0.35,
+      "z": 0.08,
+      "w": 0.03,
+      "d": 0.03,
+      "y": 0.15,
+      "h": 0.7,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wd"
+     },
+     {
+      "shape": "cyl",
+      "x": 0.35,
+      "z": -0.08,
+      "w": 0.03,
+      "d": 0.03,
+      "y": 0.15,
+      "h": 0.7,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wd"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 1,
+      "d": 0.8
+     },
+     {
+      "shape": "line",
+      "x1": 0.02,
+      "z1": -0.1,
+      "x2": 0.02,
+      "z2": 0.1
+     },
+     {
+      "shape": "circle",
+      "x": -0.28,
+      "z": 0,
+      "r": 0.06
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "/LVHdD49zu4TU4uFVr+X8gFqDmN+jRrPaTCE7DPGsdTgq5B3xaJuRSgSAdRuZLSR3JIyHERZuLmgvCgb3buRCQ=="
+ }
+}
