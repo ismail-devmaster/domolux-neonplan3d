@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOMOLUX — Private Collection 30 Visual Gallery</title>
+  <style>
+    :root {
+      --bg: #090c13;
+      --card-bg: #101522;
+      --panel-bg: #07090e;
+      --gold: #c5a059;
+      --gold-light: #e6cb8f;
+      --text: #e6edf3;
+      --text-muted: #8b949e;
+      --border: #21262d;
+      --accent: #58a6ff;
+      --success: #238636;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 30px;
+    }
+    header {
+      background: linear-gradient(135deg, #161b22, #0d1117);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 30px 40px;
+      margin-bottom: 30px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+    }
+    h1 {
+      font-size: 2.2rem;
+      color: var(--gold-light);
+      margin-bottom: 8px;
+      letter-spacing: 0.5px;
+    }
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+    .stats-strip {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      border-top: 1px solid var(--border);
+      padding-top: 15px;
+    }
+    .stat-item strong {
+      color: var(--gold);
+      font-size: 1.4rem;
+      display: block;
+    }
+    .stat-item span {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      text-transform: uppercase;
+    }
+    .gallery-container {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+    .product-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 22px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+    }
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 18px;
+    }
+    .num-badge {
+      background: var(--gold);
+      color: #0d1117;
+      font-weight: bold;
+      font-size: 1.2rem;
+      padding: 8px 14px;
+      border-radius: 6px;
+    }
+    h3 {
+      font-size: 1.3rem;
+      color: var(--text);
+    }
+    .arabic-title {
+      color: var(--gold-light);
+      font-size: 1.05rem;
+      direction: rtl;
+    }
+    .collection-tag {
+      background: #1f242c;
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      padding: 3px 8px;
+      border-radius: 4px;
+      display: inline-block;
+      margin-top: 4px;
+    }
+    .score-badge {
+      margin-left: auto;
+      background: #1b2f23;
+      color: #3fb950;
+      border: 1px solid #238636;
+      font-weight: bold;
+      font-size: 1.2rem;
+      padding: 6px 14px;
+      border-radius: 6px;
+    }
+    .views-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 15px;
+      margin-bottom: 15px;
+    }
+    .view-panel {
+      background: var(--panel-bg);
+      border: 1px solid #161b22;
+      border-radius: 8px;
+      padding: 10px;
+      text-align: center;
+    }
+    .view-label {
+      display: block;
+      color: var(--text-muted);
+      font-size: 0.75rem;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+    .view-panel img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+    .metrics-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      border-top: 1px solid #161b22;
+      padding-top: 12px;
+      align-items: center;
+    }
+    .metrics-bar strong {
+      color: var(--text);
+    }
+    .status-pill {
+      margin-left: auto;
+      padding: 4px 10px;
+      border-radius: 12px;
+      font-size: 0.75rem;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .status-pass {
+      background: #1b2f23;
+      color: #3fb950;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>DOMOLUX — PRIVATE COLLECTION 30</h1>
+    <p class="subtitle">Complete Multi-Angle Visual Verification Suite & Architectural Quality Gallery</p>
+    <div class="stats-strip">
+      <div class="stat-item"><strong>30</strong><span>Products Verified</span></div>
+      <div class="stat-item"><strong>90</strong><span>Rendered Angles</span></div>
+      <div class="stat-item"><strong>12,118</strong><span>Total Triangles</span></div>
+      <div class="stat-item"><strong>100%</strong><span>Signature Passed</span></div>
+      <div class="stat-item"><strong>96.4/100</strong><span>Avg Quality Score</span></div>
+    </div>
+  </header>
+
+  <div class="gallery-container">
+    
+    <div class="product-card" id="item-1">
+      <div class="card-header">
+        <span class="num-badge">#01</span>
+        <div>
+          <h3>Domolux Sculptural Fireplace</h3>
+          <p class="arabic-title">مدفأة دومولوكس المعمارية النحتية</p>
+          <span class="collection-tag">Private Entertainment & Exclusive Residence</span>
+        </div>
+        <div class="score-badge">97/100</div>
+      </div>
+      <div class="views-grid">
+        <div class="view-panel">
+          <span class="view-label">3/4 PERSPECTIVE</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/01_sculptural_fireplace_3quarter.svg" alt="Domolux Sculptural Fireplace Perspective" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">ARCHITECTURAL TOP VIEW</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/01_sculptural_fireplace_top.svg" alt="Domolux Sculptural Fireplace Top" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">FRONT ELEVATION</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/01_sculptural_fireplace_front.svg" alt="Domolux Sculptural Fireplace Front" loading="lazy">
+        </div>
+      </div>
+      <div class="metrics-bar">
+        <span><strong>Dimensions:</strong> 2.40 × 0.63 × 1.45 m</span>
+        <span><strong>Triangles:</strong> 378</span>
+        <span><strong>Lines:</strong> 160</span>
+        <span><strong>Parts:</strong> 25</span>
+        <span><strong>Gen Time:</strong> 27.84 ms</span>
+        <span class="status-pill status-pass">PASS</span>
+      </div>
+    </div>
+    
+    <div class="product-card" id="item-2">
+      <div class="card-header">
+        <span class="num-badge">#02</span>
+        <div>
+          <h3>Domolux Concert Grand Piano</h3>
+          <p class="arabic-title">بيانو الحفلات الكبير دومولوكس</p>
+          <span class="collection-tag">Private Entertainment & Exclusive Residence</span>
+        </div>
+        <div class="score-badge">97/100</div>
+      </div>
+      <div class="views-grid">
+        <div class="view-panel">
+          <span class="view-label">3/4 PERSPECTIVE</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/02_concert_grand_piano_3quarter.svg" alt="Domolux Concert Grand Piano Perspective" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">ARCHITECTURAL TOP VIEW</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/02_concert_grand_piano_top.svg" alt="Domolux Concert Grand Piano Top" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">FRONT ELEVATION</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/02_concert_grand_piano_front.svg" alt="Domolux Concert Grand Piano Front" loading="lazy">
+        </div>
+      </div>
+      <div class="metrics-bar">
+        <span><strong>Dimensions:</strong> 1.51 × 2.22 × 1.03 m</span>
+        <span><strong>Triangles:</strong> 594</span>
+        <span><strong>Lines:</strong> 144</span>
+        <span><strong>Parts:</strong> 30</span>
+        <span><strong>Gen Time:</strong> 7.57 ms</span>
+        <span class="status-pill status-pass">PASS</span>
+      </div>
+    </div>
+    
+    <div class="product-card" id="item-3">
+      <div class="card-header">
+        <span class="num-badge">#03</span>
+        <div>
+          <h3>Domolux Cinema Power Recliner</h3>
+          <p class="arabic-title">كرسي السينما المنزلية الفاخر دومولوكس</p>
+          <span class="collection-tag">Private Entertainment & Exclusive Residence</span>
+        </div>
+        <div class="score-badge">97/100</div>
+      </div>
+      <div class="views-grid">
+        <div class="view-panel">
+          <span class="view-label">3/4 PERSPECTIVE</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/03_cinema_recliner_3quarter.svg" alt="Domolux Cinema Power Recliner Perspective" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">ARCHITECTURAL TOP VIEW</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/03_cinema_recliner_top.svg" alt="Domolux Cinema Power Recliner Top" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">FRONT ELEVATION</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/03_cinema_recliner_front.svg" alt="Domolux Cinema Power Recliner Front" loading="lazy">
+        </div>
+      </div>
+      <div class="metrics-bar">
+        <span><strong>Dimensions:</strong> 0.99 × 1.09 × 1.10 m</span>
+        <span><strong>Triangles:</strong> 554</span>
+        <span><strong>Lines:</strong> 124</span>
+        <span><strong>Parts:</strong> 21</span>
+        <span><strong>Gen Time:</strong> 7.15 ms</span>
+        <span class="status-pill status-pass">PASS</span>
+      </div>
+    </div>
+    
+    <div class="product-card" id="item-4">
+      <div class="card-header">
+        <span class="num-badge">#04</span>
+        <div>
+          <h3>Domolux Reference Laser Projector</h3>
+          <p class="arabic-title">جهاز العرض الليزري المرجعي دومولوكس</p>
+          <span class="collection-tag">Private Entertainment & Exclusive Residence</span>
+        </div>
+        <div class="score-badge">97/100</div>
+      </div>
+      <div class="views-grid">
+        <div class="view-panel">
+          <span class="view-label">3/4 PERSPECTIVE</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/04_laser_projector_3quarter.svg" alt="Domolux Reference Laser Projector Perspective" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">ARCHITECTURAL TOP VIEW</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/04_laser_projector_top.svg" alt="Domolux Reference Laser Projector Top" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">FRONT ELEVATION</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/04_laser_projector_front.svg" alt="Domolux Reference Laser Projector Front" loading="lazy">
+        </div>
+      </div>
+      <div class="metrics-bar">
+        <span><strong>Dimensions:</strong> 0.55 × 0.58 × 0.23 m</span>
+        <span><strong>Triangles:</strong> 420</span>
+        <span><strong>Lines:</strong> 62</span>
+        <span><strong>Parts:</strong> 14</span>
+        <span><strong>Gen Time:</strong> 3.47 ms</span>
+        <span class="status-pill status-pass">PASS</span>
+      </div>
+    </div>
+    
+    <div class="product-card" id="item-5">
+      <div class="card-header">
+        <span class="num-badge">#05</span>
+        <div>
+          <h3>Domolux Motorized Cinema Screen</h3>
+          <p class="arabic-title">شاشة العرض السينمائية الآلية دومولوكس</p>
+          <span class="collection-tag">Private Entertainment & Exclusive Residence</span>
+        </div>
+        <div class="score-badge">96/100</div>
+      </div>
+      <div class="views-grid">
+        <div class="view-panel">
+          <span class="view-label">3/4 PERSPECTIVE</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/05_motorized_projection_screen_3quarter.svg" alt="Domolux Motorized Cinema Screen Perspective" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">ARCHITECTURAL TOP VIEW</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/05_motorized_projection_screen_top.svg" alt="Domolux Motorized Cinema Screen Top" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">FRONT ELEVATION</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/05_motorized_projection_screen_front.svg" alt="Domolux Motorized Cinema Screen Front" loading="lazy">
+        </div>
+      </div>
+      <div class="metrics-bar">
+        <span><strong>Dimensions:</strong> 3.20 × 0.24 × 2.07 m</span>
+        <span><strong>Triangles:</strong> 276</span>
+        <span><strong>Lines:</strong> 92</span>
+        <span><strong>Parts:</strong> 12</span>
+        <span><strong>Gen Time:</strong> 2.86 ms</span>
+        <span class="status-pill status-pass">PASS</span>
+      </div>
+    </div>
+    
+    <div class="product-card" id="item-6">
+      <div class="card-header">
+        <span class="num-badge">#06</span>
+        <div>
+          <h3>Domolux Reference Hi-Fi Tower Speaker</h3>
+          <p class="arabic-title">مكبر الصوت البرجي عالي الدقة دومولوكس</p>
+          <span class="collection-tag">Private Entertainment & Exclusive Residence</span>
+        </div>
+        <div class="score-badge">97/100</div>
+      </div>
+      <div class="views-grid">
+        <div class="view-panel">
+          <span class="view-label">3/4 PERSPECTIVE</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/06_floorstanding_hifi_speaker_3quarter.svg" alt="Domolux Reference Hi-Fi Tower Speaker Perspective" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">ARCHITECTURAL TOP VIEW</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/06_floorstanding_hifi_speaker_top.svg" alt="Domolux Reference Hi-Fi Tower Speaker Top" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">FRONT ELEVATION</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/06_floorstanding_hifi_speaker_front.svg" alt="Domolux Reference Hi-Fi Tower Speaker Front" loading="lazy">
+        </div>
+      </div>
+      <div class="metrics-bar">
+        <span><strong>Dimensions:</strong> 0.36 × 0.68 × 1.41 m</span>
+        <span><strong>Triangles:</strong> 998</span>
+        <span><strong>Lines:</strong> 24</span>
+        <span><strong>Parts:</strong> 23</span>
+        <span><strong>Gen Time:</strong> 10.99 ms</span>
+        <span class="status-pill status-pass">PASS</span>
+      </div>
+    </div>
+    
+    <div class="product-card" id="item-7">
+      <div class="card-header">
+        <span class="num-badge">#07</span>
+        <div>
+          <h3>Domolux Motorized Architectural Drapery</h3>
+          <p class="arabic-title">ستائر دومولوكس المعمارية الآلية</p>
+          <span class="collection-tag">Private Dressing, Storage & Personal Care</span>
+        </div>
+        <div class="score-badge">96/100</div>
+      </div>
+      <div class="views-grid">
+        <div class="view-panel">
+          <span class="view-label">3/4 PERSPECTIVE</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/07_motorized_drapery_3quarter.svg" alt="Domolux Motorized Architectural Drapery Perspective" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">ARCHITECTURAL TOP VIEW</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/07_motorized_drapery_top.svg" alt="Domolux Motorized Architectural Drapery Top" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">FRONT ELEVATION</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/07_motorized_drapery_front.svg" alt="Domolux Motorized Architectural Drapery Front" loading="lazy">
+        </div>
+      </div>
+      <div class="metrics-bar">
+        <span><strong>Dimensions:</strong> 2.80 × 0.27 × 2.80 m</span>
+        <span><strong>Triangles:</strong> 240</span>
+        <span><strong>Lines:</strong> 128</span>
+        <span><strong>Parts:</strong> 19</span>
+        <span><strong>Gen Time:</strong> 2.03 ms</span>
+        <span class="status-pill status-pass">PASS</span>
+      </div>
+    </div>
+    
+    <div class="product-card" id="item-8">
+      <div class="card-header">
+        <span class="num-badge">#08</span>
+        <div>
+          <h3>Domolux Sculptural Dressing Mirror</h3>
+          <p class="arabic-title">مرآة دومولوكس المعمارية الكاملة</p>
+          <span class="collection-tag">Private Dressing, Storage & Personal Care</span>
+        </div>
+        <div class="score-badge">95/100</div>
+      </div>
+      <div class="views-grid">
+        <div class="view-panel">
+          <span class="view-label">3/4 PERSPECTIVE</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/08_full_length_mirror_3quarter.svg" alt="Domolux Sculptural Dressing Mirror Perspective" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">ARCHITECTURAL TOP VIEW</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/08_full_length_mirror_top.svg" alt="Domolux Sculptural Dressing Mirror Top" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">FRONT ELEVATION</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/08_full_length_mirror_front.svg" alt="Domolux Sculptural Dressing Mirror Front" loading="lazy">
+        </div>
+      </div>
+      <div class="metrics-bar">
+        <span><strong>Dimensions:</strong> 0.87 × 0.31 × 2.11 m</span>
+        <span><strong>Triangles:</strong> 170</span>
+        <span><strong>Lines:</strong> 84</span>
+        <span><strong>Parts:</strong> 11</span>
+        <span><strong>Gen Time:</strong> 1.62 ms</span>
+        <span class="status-pill status-pass">PASS</span>
+      </div>
+    </div>
+    
+    <div class="product-card" id="item-9">
+      <div class="card-header">
+        <span class="num-badge">#09</span>
+        <div>
+          <h3>Domolux Haute Couture Dressing Vanity</h3>
+          <p class="arabic-title">طاولة التزيين الراقية دومولوكس</p>
+          <span class="collection-tag">Private Dressing, Storage & Personal Care</span>
+        </div>
+        <div class="score-badge">97/100</div>
+      </div>
+      <div class="views-grid">
+        <div class="view-panel">
+          <span class="view-label">3/4 PERSPECTIVE</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/09_dressing_vanity_3quarter.svg" alt="Domolux Haute Couture Dressing Vanity Perspective" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">ARCHITECTURAL TOP VIEW</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/09_dressing_vanity_top.svg" alt="Domolux Haute Couture Dressing Vanity Top" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">FRONT ELEVATION</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/09_dressing_vanity_front.svg" alt="Domolux Haute Couture Dressing Vanity Front" loading="lazy">
+        </div>
+      </div>
+      <div class="metrics-bar">
+        <span><strong>Dimensions:</strong> 1.58 × 0.60 × 1.47 m</span>
+        <span><strong>Triangles:</strong> 396</span>
+        <span><strong>Lines:</strong> 78</span>
+        <span><strong>Parts:</strong> 19</span>
+        <span><strong>Gen Time:</strong> 10.37 ms</span>
+        <span class="status-pill status-pass">PASS</span>
+      </div>
+    </div>
+    
+    <div class="product-card" id="item-10">
+      <div class="card-header">
+        <span class="num-badge">#10</span>
+        <div>
+          <h3>Domolux Walk-In Closet Island</h3>
+          <p class="arabic-title">جزيرة خزانة الملابس الفاخرة دومولوكس</p>
+          <span class="collection-tag">Private Dressing, Storage & Personal Care</span>
+        </div>
+        <div class="score-badge">96/100</div>
+      </div>
+      <div class="views-grid">
+        <div class="view-panel">
+          <span class="view-label">3/4 PERSPECTIVE</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/10_closet_island_3quarter.svg" alt="Domolux Walk-In Closet Island Perspective" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">ARCHITECTURAL TOP VIEW</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/10_closet_island_top.svg" alt="Domolux Walk-In Closet Island Top" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">FRONT ELEVATION</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/10_closet_island_front.svg" alt="Domolux Walk-In Closet Island Front" loading="lazy">
+        </div>
+      </div>
+      <div class="metrics-bar">
+        <span><strong>Dimensions:</strong> 1.76 × 1.05 × 0.89 m</span>
+        <span><strong>Triangles:</strong> 296</span>
+        <span><strong>Lines:</strong> 96</span>
+        <span><strong>Parts:</strong> 25</span>
+        <span><strong>Gen Time:</strong> 1.76 ms</span>
+        <span class="status-pill status-pass">PASS</span>
+      </div>
+    </div>
+    
+    <div class="product-card" id="item-11">
+      <div class="card-header">
+        <span class="num-badge">#11</span>
+        <div>
+          <h3>Domolux Armored Jewelry Safe</h3>
+          <p class="arabic-title">خزنة المجوهرات المصفحة دومولوكس</p>
+          <span class="collection-tag">Private Dressing, Storage & Personal Care</span>
+        </div>
+        <div class="score-badge">97/100</div>
+      </div>
+      <div class="views-grid">
+        <div class="view-panel">
+          <span class="view-label">3/4 PERSPECTIVE</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/11_jewelry_safe_3quarter.svg" alt="Domolux Armored Jewelry Safe Perspective" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">ARCHITECTURAL TOP VIEW</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/11_jewelry_safe_top.svg" alt="Domolux Armored Jewelry Safe Top" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">FRONT ELEVATION</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/11_jewelry_safe_front.svg" alt="Domolux Armored Jewelry Safe Front" loading="lazy">
+        </div>
+      </div>
+      <div class="metrics-bar">
+        <span><strong>Dimensions:</strong> 0.61 × 0.67 × 1.25 m</span>
+        <span><strong>Triangles:</strong> 408</span>
+        <span><strong>Lines:</strong> 32</span>
+        <span><strong>Parts:</strong> 14</span>
+        <span><strong>Gen Time:</strong> 1.19 ms</span>
+        <span class="status-pill status-pass">PASS</span>
+      </div>
+    </div>
+    
+    <div class="product-card" id="item-12">
+      <div class="card-header">
+        <span class="num-badge">#12</span>
+        <div>
+          <h3>Domolux Bespoke Shoe-Care Station</h3>
+          <p class="arabic-title">محطة العناية بالأحذية الفاخرة دومولوكس</p>
+          <span class="collection-tag">Private Dressing, Storage & Personal Care</span>
+        </div>
+        <div class="score-badge">96/100</div>
+      </div>
+      <div class="views-grid">
+        <div class="view-panel">
+          <span class="view-label">3/4 PERSPECTIVE</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/12_shoe_care_station_3quarter.svg" alt="Domolux Bespoke Shoe-Care Station Perspective" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">ARCHITECTURAL TOP VIEW</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/12_shoe_care_station_top.svg" alt="Domolux Bespoke Shoe-Care Station Top" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">FRONT ELEVATION</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/12_shoe_care_station_front.svg" alt="Domolux Bespoke Shoe-Care Station Front" loading="lazy">
+        </div>
+      </div>
+      <div class="metrics-bar">
+        <span><strong>Dimensions:</strong> 1.32 × 0.49 × 1.15 m</span>
+        <span><strong>Triangles:</strong> 268</span>
+        <span><strong>Lines:</strong> 56</span>
+        <span><strong>Parts:</strong> 12</span>
+        <span><strong>Gen Time:</strong> 1.00 ms</span>
+        <span class="status-pill status-pass">PASS</span>
+      </div>
+    </div>
+    
+    <div class="product-card" id="item-13">
+      <div class="card-header">
+        <span class="num-badge">#13</span>
+        <div>
+          <h3>Domolux Garment-Care Steam Cabinet</h3>
+          <p class="arabic-title">خزانة العناية بالملابس بالبخار دومولوكس</p>
+          <span class="collection-tag">Private Dressing, Storage & Personal Care</span>
+        </div>
+        <div class="score-badge">95/100</div>
+      </div>
+      <div class="views-grid">
+        <div class="view-panel">
+          <span class="view-label">3/4 PERSPECTIVE</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/13_garment_care_steam_cabinet_3quarter.svg" alt="Domolux Garment-Care Steam Cabinet Perspective" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">ARCHITECTURAL TOP VIEW</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/13_garment_care_steam_cabinet_top.svg" alt="Domolux Garment-Care Steam Cabinet Top" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">FRONT ELEVATION</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/13_garment_care_steam_cabinet_front.svg" alt="Domolux Garment-Care Steam Cabinet Front" loading="lazy">
+        </div>
+      </div>
+      <div class="metrics-bar">
+        <span><strong>Dimensions:</strong> 0.61 × 0.65 × 1.91 m</span>
+        <span><strong>Triangles:</strong> 190</span>
+        <span><strong>Lines:</strong> 48</span>
+        <span><strong>Parts:</strong> 13</span>
+        <span><strong>Gen Time:</strong> 1.15 ms</span>
+        <span class="status-pill status-pass">PASS</span>
+      </div>
+    </div>
+    
+    <div class="product-card" id="item-14">
+      <div class="card-header">
+        <span class="num-badge">#14</span>
+        <div>
+          <h3>Domolux Sculptural Room Divider</h3>
+          <p class="arabic-title">فاصل المساحات المعماري النحتي دومولوكس</p>
+          <span class="collection-tag">Architectural Wellness & Private Sanctuaries</span>
+        </div>
+        <div class="score-badge">97/100</div>
+      </div>
+      <div class="views-grid">
+        <div class="view-panel">
+          <span class="view-label">3/4 PERSPECTIVE</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/14_sculptural_room_divider_3quarter.svg" alt="Domolux Sculptural Room Divider Perspective" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">ARCHITECTURAL TOP VIEW</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/14_sculptural_room_divider_top.svg" alt="Domolux Sculptural Room Divider Top" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">FRONT ELEVATION</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/14_sculptural_room_divider_front.svg" alt="Domolux Sculptural Room Divider Front" loading="lazy">
+        </div>
+      </div>
+      <div class="metrics-bar">
+        <span><strong>Dimensions:</strong> 2.11 × 0.32 × 2.10 m</span>
+        <span><strong>Triangles:</strong> 390</span>
+        <span><strong>Lines:</strong> 80</span>
+        <span><strong>Parts:</strong> 16</span>
+        <span><strong>Gen Time:</strong> 1.94 ms</span>
+        <span class="status-pill status-pass">PASS</span>
+      </div>
+    </div>
+    
+    <div class="product-card" id="item-15">
+      <div class="card-header">
+        <span class="num-badge">#15</span>
+        <div>
+          <h3>Domolux Indoor Sculptural Fountain</h3>
+          <p class="arabic-title">نافورة دومولوكس الداخلية النحتية</p>
+          <span class="collection-tag">Architectural Wellness & Private Sanctuaries</span>
+        </div>
+        <div class="score-badge">96/100</div>
+      </div>
+      <div class="views-grid">
+        <div class="view-panel">
+          <span class="view-label">3/4 PERSPECTIVE</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/15_indoor_sculptural_fountain_3quarter.svg" alt="Domolux Indoor Sculptural Fountain Perspective" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">ARCHITECTURAL TOP VIEW</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/15_indoor_sculptural_fountain_top.svg" alt="Domolux Indoor Sculptural Fountain Top" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">FRONT ELEVATION</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/15_indoor_sculptural_fountain_front.svg" alt="Domolux Indoor Sculptural Fountain Front" loading="lazy">
+        </div>
+      </div>
+      <div class="metrics-bar">
+        <span><strong>Dimensions:</strong> 1.34 × 0.60 × 1.90 m</span>
+        <span><strong>Triangles:</strong> 274</span>
+        <span><strong>Lines:</strong> 64</span>
+        <span><strong>Parts:</strong> 13</span>
+        <span><strong>Gen Time:</strong> 5.02 ms</span>
+        <span class="status-pill status-pass">PASS</span>
+      </div>
+    </div>
+    
+    <div class="product-card" id="item-16">
+      <div class="card-header">
+        <span class="num-badge">#16</span>
+        <div>
+          <h3>Domolux Architectural Luxury Aquarium</h3>
+          <p class="arabic-title">حوض الأسماك المعماري الفاخر دومولوكس</p>
+          <span class="collection-tag">Architectural Wellness & Private Sanctuaries</span>
+        </div>
+        <div class="score-badge">96/100</div>
+      </div>
+      <div class="views-grid">
+        <div class="view-panel">
+          <span class="view-label">3/4 PERSPECTIVE</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/16_luxury_aquarium_3quarter.svg" alt="Domolux Architectural Luxury Aquarium Perspective" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">ARCHITECTURAL TOP VIEW</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/16_luxury_aquarium_top.svg" alt="Domolux Architectural Luxury Aquarium Top" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">FRONT ELEVATION</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/16_luxury_aquarium_front.svg" alt="Domolux Architectural Luxury Aquarium Front" loading="lazy">
+        </div>
+      </div>
+      <div class="metrics-bar">
+        <span><strong>Dimensions:</strong> 1.73 × 0.62 × 1.63 m</span>
+        <span><strong>Triangles:</strong> 250</span>
+        <span><strong>Lines:</strong> 96</span>
+        <span><strong>Parts:</strong> 18</span>
+        <span><strong>Gen Time:</strong> 0.91 ms</span>
+        <span class="status-pill status-pass">PASS</span>
+      </div>
+    </div>
+    
+    <div class="product-card" id="item-17">
+      <div class="card-header">
+        <span class="num-badge">#17</span>
+        <div>
+          <h3>Domolux Finnish Sauna Sanctuary</h3>
+          <p class="arabic-title">مقصورة الساونا الفنلندية الفاخرة دومولوكس</p>
+          <span class="collection-tag">Architectural Wellness & Private Sanctuaries</span>
+        </div>
+        <div class="score-badge">96/100</div>
+      </div>
+      <div class="views-grid">
+        <div class="view-panel">
+          <span class="view-label">3/4 PERSPECTIVE</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/17_finnish_sauna_cabin_3quarter.svg" alt="Domolux Finnish Sauna Sanctuary Perspective" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">ARCHITECTURAL TOP VIEW</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/17_finnish_sauna_cabin_top.svg" alt="Domolux Finnish Sauna Sanctuary Top" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">FRONT ELEVATION</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/17_finnish_sauna_cabin_front.svg" alt="Domolux Finnish Sauna Sanctuary Front" loading="lazy">
+        </div>
+      </div>
+      <div class="metrics-bar">
+        <span><strong>Dimensions:</strong> 2.10 × 1.81 × 2.15 m</span>
+        <span><strong>Triangles:</strong> 270</span>
+        <span><strong>Lines:</strong> 86</span>
+        <span><strong>Parts:</strong> 16</span>
+        <span><strong>Gen Time:</strong> 1.51 ms</span>
+        <span class="status-pill status-pass">PASS</span>
+      </div>
+    </div>
+    
+    <div class="product-card" id="item-18">
+      <div class="card-header">
+        <span class="num-badge">#18</span>
+        <div>
+          <h3>Domolux Full-Body Massage Chair</h3>
+          <p class="arabic-title">كرسي المساج الفاخر لكامل الجسم دومولوكس</p>
+          <span class="collection-tag">Architectural Wellness & Private Sanctuaries</span>
+        </div>
+        <div class="score-badge">96/100</div>
+      </div>
+      <div class="views-grid">
+        <div class="view-panel">
+          <span class="view-label">3/4 PERSPECTIVE</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/18_full_body_massage_chair_3quarter.svg" alt="Domolux Full-Body Massage Chair Perspective" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">ARCHITECTURAL TOP VIEW</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/18_full_body_massage_chair_top.svg" alt="Domolux Full-Body Massage Chair Top" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">FRONT ELEVATION</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/18_full_body_massage_chair_front.svg" alt="Domolux Full-Body Massage Chair Front" loading="lazy">
+        </div>
+      </div>
+      <div class="metrics-bar">
+        <span><strong>Dimensions:</strong> 0.85 × 1.65 × 1.23 m</span>
+        <span><strong>Triangles:</strong> 250</span>
+        <span><strong>Lines:</strong> 70</span>
+        <span><strong>Parts:</strong> 16</span>
+        <span><strong>Gen Time:</strong> 1.94 ms</span>
+        <span class="status-pill status-pass">PASS</span>
+      </div>
+    </div>
+    
+    <div class="product-card" id="item-19">
+      <div class="card-header">
+        <span class="num-badge">#19</span>
+        <div>
+          <h3>Domolux Professional Pilates Reformer</h3>
+          <p class="arabic-title">جهاز البيلاتس ريفورمر الاحترافي دومولوكس</p>
+          <span class="collection-tag">Private Fitness & Performance Wellness</span>
+        </div>
+        <div class="score-badge">97/100</div>
+      </div>
+      <div class="views-grid">
+        <div class="view-panel">
+          <span class="view-label">3/4 PERSPECTIVE</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/19_pilates_reformer_3quarter.svg" alt="Domolux Professional Pilates Reformer Perspective" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">ARCHITECTURAL TOP VIEW</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/19_pilates_reformer_top.svg" alt="Domolux Professional Pilates Reformer Top" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">FRONT ELEVATION</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/19_pilates_reformer_front.svg" alt="Domolux Professional Pilates Reformer Front" loading="lazy">
+        </div>
+      </div>
+      <div class="metrics-bar">
+        <span><strong>Dimensions:</strong> 0.73 × 2.45 × 0.58 m</span>
+        <span><strong>Triangles:</strong> 632</span>
+        <span><strong>Lines:</strong> 84</span>
+        <span><strong>Parts:</strong> 23</span>
+        <span><strong>Gen Time:</strong> 2.83 ms</span>
+        <span class="status-pill status-pass">PASS</span>
+      </div>
+    </div>
+    
+    <div class="product-card" id="item-20">
+      <div class="card-header">
+        <span class="num-badge">#20</span>
+        <div>
+          <h3>Domolux Elite Commercial Treadmill</h3>
+          <p class="arabic-title">جهاز المشي الرياضي الفاخر دومولوكس</p>
+          <span class="collection-tag">Private Fitness & Performance Wellness</span>
+        </div>
+        <div class="score-badge">96/100</div>
+      </div>
+      <div class="views-grid">
+        <div class="view-panel">
+          <span class="view-label">3/4 PERSPECTIVE</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/20_luxury_treadmill_3quarter.svg" alt="Domolux Elite Commercial Treadmill Perspective" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">ARCHITECTURAL TOP VIEW</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/20_luxury_treadmill_top.svg" alt="Domolux Elite Commercial Treadmill Top" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">FRONT ELEVATION</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/20_luxury_treadmill_front.svg" alt="Domolux Elite Commercial Treadmill Front" loading="lazy">
+        </div>
+      </div>
+      <div class="metrics-bar">
+        <span><strong>Dimensions:</strong> 0.86 × 1.88 × 1.48 m</span>
+        <span><strong>Triangles:</strong> 246</span>
+        <span><strong>Lines:</strong> 64</span>
+        <span><strong>Parts:</strong> 14</span>
+        <span><strong>Gen Time:</strong> 1.27 ms</span>
+        <span class="status-pill status-pass">PASS</span>
+      </div>
+    </div>
+    
+    <div class="product-card" id="item-21">
+      <div class="card-header">
+        <span class="num-badge">#21</span>
+        <div>
+          <h3>Domolux Performance Indoor Cycle</h3>
+          <p class="arabic-title">دراجة التمارين الرياضية الفاخرة دومولوكس</p>
+          <span class="collection-tag">Private Fitness & Performance Wellness</span>
+        </div>
+        <div class="score-badge">97/100</div>
+      </div>
+      <div class="views-grid">
+        <div class="view-panel">
+          <span class="view-label">3/4 PERSPECTIVE</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/21_premium_exercise_bike_3quarter.svg" alt="Domolux Performance Indoor Cycle Perspective" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">ARCHITECTURAL TOP VIEW</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/21_premium_exercise_bike_top.svg" alt="Domolux Performance Indoor Cycle Top" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">FRONT ELEVATION</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/21_premium_exercise_bike_front.svg" alt="Domolux Performance Indoor Cycle Front" loading="lazy">
+        </div>
+      </div>
+      <div class="metrics-bar">
+        <span><strong>Dimensions:</strong> 0.55 × 1.24 × 1.32 m</span>
+        <span><strong>Triangles:</strong> 566</span>
+        <span><strong>Lines:</strong> 144</span>
+        <span><strong>Parts:</strong> 19</span>
+        <span><strong>Gen Time:</strong> 2.57 ms</span>
+        <span class="status-pill status-pass">PASS</span>
+      </div>
+    </div>
+    
+    <div class="product-card" id="item-22">
+      <div class="card-header">
+        <span class="num-badge">#22</span>
+        <div>
+          <h3>Domolux Dual Cable Functional Trainer</h3>
+          <p class="arabic-title">محطة الكابلات الوظيفية المزدوجة دومولوكس</p>
+          <span class="collection-tag">Private Fitness & Performance Wellness</span>
+        </div>
+        <div class="score-badge">97/100</div>
+      </div>
+      <div class="views-grid">
+        <div class="view-panel">
+          <span class="view-label">3/4 PERSPECTIVE</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/22_dual_cable_trainer_3quarter.svg" alt="Domolux Dual Cable Functional Trainer Perspective" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">ARCHITECTURAL TOP VIEW</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/22_dual_cable_trainer_top.svg" alt="Domolux Dual Cable Functional Trainer Top" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">FRONT ELEVATION</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/22_dual_cable_trainer_front.svg" alt="Domolux Dual Cable Functional Trainer Front" loading="lazy">
+        </div>
+      </div>
+      <div class="metrics-bar">
+        <span><strong>Dimensions:</strong> 1.68 × 1.01 × 2.20 m</span>
+        <span><strong>Triangles:</strong> 602</span>
+        <span><strong>Lines:</strong> 84</span>
+        <span><strong>Parts:</strong> 19</span>
+        <span><strong>Gen Time:</strong> 3.90 ms</span>
+        <span class="status-pill status-pass">PASS</span>
+      </div>
+    </div>
+    
+    <div class="product-card" id="item-23">
+      <div class="card-header">
+        <span class="num-badge">#23</span>
+        <div>
+          <h3>Domolux Grand Resort Sun Lounger</h3>
+          <p class="arabic-title">سرير الاستجمام الشمسي الفاخر دومولوكس</p>
+          <span class="collection-tag">Private Estate & Outdoor Living</span>
+        </div>
+        <div class="score-badge">96/100</div>
+      </div>
+      <div class="views-grid">
+        <div class="view-panel">
+          <span class="view-label">3/4 PERSPECTIVE</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/23_outdoor_sun_lounger_3quarter.svg" alt="Domolux Grand Resort Sun Lounger Perspective" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">ARCHITECTURAL TOP VIEW</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/23_outdoor_sun_lounger_top.svg" alt="Domolux Grand Resort Sun Lounger Top" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">FRONT ELEVATION</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/23_outdoor_sun_lounger_front.svg" alt="Domolux Grand Resort Sun Lounger Front" loading="lazy">
+        </div>
+      </div>
+      <div class="metrics-bar">
+        <span><strong>Dimensions:</strong> 0.92 × 2.10 × 0.45 m</span>
+        <span><strong>Triangles:</strong> 292</span>
+        <span><strong>Lines:</strong> 92</span>
+        <span><strong>Parts:</strong> 14</span>
+        <span><strong>Gen Time:</strong> 2.70 ms</span>
+        <span class="status-pill status-pass">PASS</span>
+      </div>
+    </div>
+    
+    <div class="product-card" id="item-24">
+      <div class="card-header">
+        <span class="num-badge">#24</span>
+        <div>
+          <h3>Domolux Sculptural Outdoor Fire Pit</h3>
+          <p class="arabic-title">موقد النار الخارجي المعماري دومولوكس</p>
+          <span class="collection-tag">Private Estate & Outdoor Living</span>
+        </div>
+        <div class="score-badge">97/100</div>
+      </div>
+      <div class="views-grid">
+        <div class="view-panel">
+          <span class="view-label">3/4 PERSPECTIVE</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/24_outdoor_fire_pit_3quarter.svg" alt="Domolux Sculptural Outdoor Fire Pit Perspective" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">ARCHITECTURAL TOP VIEW</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/24_outdoor_fire_pit_top.svg" alt="Domolux Sculptural Outdoor Fire Pit Top" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">FRONT ELEVATION</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/24_outdoor_fire_pit_front.svg" alt="Domolux Sculptural Outdoor Fire Pit Front" loading="lazy">
+        </div>
+      </div>
+      <div class="metrics-bar">
+        <span><strong>Dimensions:</strong> 1.23 × 1.23 × 0.41 m</span>
+        <span><strong>Triangles:</strong> 348</span>
+        <span><strong>Lines:</strong> 44</span>
+        <span><strong>Parts:</strong> 13</span>
+        <span><strong>Gen Time:</strong> 1.63 ms</span>
+        <span class="status-pill status-pass">PASS</span>
+      </div>
+    </div>
+    
+    <div class="product-card" id="item-25">
+      <div class="card-header">
+        <span class="num-badge">#25</span>
+        <div>
+          <h3>Domolux Outdoor Gourmet Grill Station</h3>
+          <p class="arabic-title">محطة الشواء الخارجية الفاخرة دومولوكس</p>
+          <span class="collection-tag">Private Estate & Outdoor Living</span>
+        </div>
+        <div class="score-badge">97/100</div>
+      </div>
+      <div class="views-grid">
+        <div class="view-panel">
+          <span class="view-label">3/4 PERSPECTIVE</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/25_outdoor_grill_station_3quarter.svg" alt="Domolux Outdoor Gourmet Grill Station Perspective" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">ARCHITECTURAL TOP VIEW</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/25_outdoor_grill_station_top.svg" alt="Domolux Outdoor Gourmet Grill Station Top" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">FRONT ELEVATION</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/25_outdoor_grill_station_front.svg" alt="Domolux Outdoor Gourmet Grill Station Front" loading="lazy">
+        </div>
+      </div>
+      <div class="metrics-bar">
+        <span><strong>Dimensions:</strong> 2.40 × 0.83 × 1.20 m</span>
+        <span><strong>Triangles:</strong> 794</span>
+        <span><strong>Lines:</strong> 108</span>
+        <span><strong>Parts:</strong> 23</span>
+        <span><strong>Gen Time:</strong> 7.76 ms</span>
+        <span class="status-pill status-pass">PASS</span>
+      </div>
+    </div>
+    
+    <div class="product-card" id="item-26">
+      <div class="card-header">
+        <span class="num-badge">#26</span>
+        <div>
+          <h3>Domolux Architectural Outdoor Shower</h3>
+          <p class="arabic-title">دش الاستحمام الخارجي المعماري دومولوكس</p>
+          <span class="collection-tag">Private Estate & Outdoor Living</span>
+        </div>
+        <div class="score-badge">96/100</div>
+      </div>
+      <div class="views-grid">
+        <div class="view-panel">
+          <span class="view-label">3/4 PERSPECTIVE</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/26_outdoor_shower_column_3quarter.svg" alt="Domolux Architectural Outdoor Shower Perspective" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">ARCHITECTURAL TOP VIEW</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/26_outdoor_shower_column_top.svg" alt="Domolux Architectural Outdoor Shower Top" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">FRONT ELEVATION</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/26_outdoor_shower_column_front.svg" alt="Domolux Architectural Outdoor Shower Front" loading="lazy">
+        </div>
+      </div>
+      <div class="metrics-bar">
+        <span><strong>Dimensions:</strong> 1.03 × 1.03 × 2.28 m</span>
+        <span><strong>Triangles:</strong> 266</span>
+        <span><strong>Lines:</strong> 32</span>
+        <span><strong>Parts:</strong> 12</span>
+        <span><strong>Gen Time:</strong> 1.38 ms</span>
+        <span class="status-pill status-pass">PASS</span>
+      </div>
+    </div>
+    
+    <div class="product-card" id="item-27">
+      <div class="card-header">
+        <span class="num-badge">#27</span>
+        <div>
+          <h3>Domolux Robotic Estate Mower Dock</h3>
+          <p class="arabic-title">محطة روبوت قص العشب دومولوكس</p>
+          <span class="collection-tag">Private Estate & Outdoor Living</span>
+        </div>
+        <div class="score-badge">97/100</div>
+      </div>
+      <div class="views-grid">
+        <div class="view-panel">
+          <span class="view-label">3/4 PERSPECTIVE</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/27_robotic_lawn_mower_dock_3quarter.svg" alt="Domolux Robotic Estate Mower Dock Perspective" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">ARCHITECTURAL TOP VIEW</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/27_robotic_lawn_mower_dock_top.svg" alt="Domolux Robotic Estate Mower Dock Top" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">FRONT ELEVATION</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/27_robotic_lawn_mower_dock_front.svg" alt="Domolux Robotic Estate Mower Dock Front" loading="lazy">
+        </div>
+      </div>
+      <div class="metrics-bar">
+        <span><strong>Dimensions:</strong> 0.91 × 1.10 × 0.56 m</span>
+        <span><strong>Triangles:</strong> 472</span>
+        <span><strong>Lines:</strong> 32</span>
+        <span><strong>Parts:</strong> 15</span>
+        <span><strong>Gen Time:</strong> 6.12 ms</span>
+        <span class="status-pill status-pass">PASS</span>
+      </div>
+    </div>
+    
+    <div class="product-card" id="item-28">
+      <div class="card-header">
+        <span class="num-badge">#28</span>
+        <div>
+          <h3>Domolux Architectural Cat Climbing Tree</h3>
+          <p class="arabic-title">شجرة تسلق القطط المعمارية دومولوكس</p>
+          <span class="collection-tag">Exclusive Pet Lifestyle</span>
+        </div>
+        <div class="score-badge">97/100</div>
+      </div>
+      <div class="views-grid">
+        <div class="view-panel">
+          <span class="view-label">3/4 PERSPECTIVE</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/28_designer_cat_tree_3quarter.svg" alt="Domolux Architectural Cat Climbing Tree Perspective" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">ARCHITECTURAL TOP VIEW</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/28_designer_cat_tree_top.svg" alt="Domolux Architectural Cat Climbing Tree Top" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">FRONT ELEVATION</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/28_designer_cat_tree_front.svg" alt="Domolux Architectural Cat Climbing Tree Front" loading="lazy">
+        </div>
+      </div>
+      <div class="metrics-bar">
+        <span><strong>Dimensions:</strong> 0.99 × 0.69 × 1.75 m</span>
+        <span><strong>Triangles:</strong> 506</span>
+        <span><strong>Lines:</strong> 72</span>
+        <span><strong>Parts:</strong> 12</span>
+        <span><strong>Gen Time:</strong> 1.93 ms</span>
+        <span class="status-pill status-pass">PASS</span>
+      </div>
+    </div>
+    
+    <div class="product-card" id="item-29">
+      <div class="card-header">
+        <span class="num-badge">#29</span>
+        <div>
+          <h3>Domolux Intelligent Pet Dining Station</h3>
+          <p class="arabic-title">محطة إطعام الحيوانات الأليفة الذكية دومولوكس</p>
+          <span class="collection-tag">Exclusive Pet Lifestyle</span>
+        </div>
+        <div class="score-badge">97/100</div>
+      </div>
+      <div class="views-grid">
+        <div class="view-panel">
+          <span class="view-label">3/4 PERSPECTIVE</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/29_smart_pet_feeding_station_3quarter.svg" alt="Domolux Intelligent Pet Dining Station Perspective" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">ARCHITECTURAL TOP VIEW</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/29_smart_pet_feeding_station_top.svg" alt="Domolux Intelligent Pet Dining Station Top" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">FRONT ELEVATION</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/29_smart_pet_feeding_station_front.svg" alt="Domolux Intelligent Pet Dining Station Front" loading="lazy">
+        </div>
+      </div>
+      <div class="metrics-bar">
+        <span><strong>Dimensions:</strong> 0.69 × 0.38 × 0.65 m</span>
+        <span><strong>Triangles:</strong> 380</span>
+        <span><strong>Lines:</strong> 68</span>
+        <span><strong>Parts:</strong> 12</span>
+        <span><strong>Gen Time:</strong> 1.39 ms</span>
+        <span class="status-pill status-pass">PASS</span>
+      </div>
+    </div>
+    
+    <div class="product-card" id="item-30">
+      <div class="card-header">
+        <span class="num-badge">#30</span>
+        <div>
+          <h3>Domolux Luxury Pet Grooming Suite</h3>
+          <p class="arabic-title">جناح العناية بالحيوانات الأليفة الفاخر دومولوكس</p>
+          <span class="collection-tag">Exclusive Pet Lifestyle</span>
+        </div>
+        <div class="score-badge">97/100</div>
+      </div>
+      <div class="views-grid">
+        <div class="view-panel">
+          <span class="view-label">3/4 PERSPECTIVE</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/30_pet_grooming_wash_station_3quarter.svg" alt="Domolux Luxury Pet Grooming Suite Perspective" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">ARCHITECTURAL TOP VIEW</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/30_pet_grooming_wash_station_top.svg" alt="Domolux Luxury Pet Grooming Suite Top" loading="lazy">
+        </div>
+        <div class="view-panel">
+          <span class="view-label">FRONT ELEVATION</span>
+          <img src="../inspection_screenshots/Domolux_Collection_30/30_pet_grooming_wash_station_front.svg" alt="Domolux Luxury Pet Grooming Suite Front" loading="lazy">
+        </div>
+      </div>
+      <div class="metrics-bar">
+        <span><strong>Dimensions:</strong> 1.39 × 0.81 × 1.65 m</span>
+        <span><strong>Triangles:</strong> 392</span>
+        <span><strong>Lines:</strong> 92</span>
+        <span><strong>Parts:</strong> 16</span>
+        <span><strong>Gen Time:</strong> 1.11 ms</span>
+        <span class="status-pill status-pass">PASS</span>
+      </div>
+    </div>
+    
+  </div>
+</body>
+</html>

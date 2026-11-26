@@ -1,0 +1,356 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.floorstanding_hifi_speaker",
+  "name": "Domolux Reference Hi-Fi Tower Speaker",
+  "publisher": "Domolux Studio",
+  "description": "High-end acoustic floorstanding loudspeaker tower in smoked oak veneer with brushed bronze baffle, carbon woofers, and acoustic decoupling plinth.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "floorstanding_hifi_speaker",
+    "name": {
+     "en": "Domolux Reference Hi-Fi Tower Speaker",
+     "de": "Domolux Referenz-Standlautsprecher",
+     "ar": "مكبر الصوت البرجي عالي الدقة دومولوكس"
+    },
+    "size": [
+     0.38,
+     0.52,
+     1.42
+    ],
+    "mount": "floor",
+    "surface": false,
+    "group": "media",
+    "room": [
+     "living",
+     "office"
+    ],
+    "tags": [
+     "speaker",
+     "hifi",
+     "audio",
+     "tower",
+     "acoustic",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.94,
+      "d": 0.94,
+      "y": 0,
+      "h": 0.035,
+      "color": "#8c6747",
+      "edges": "glow",
+      "fix": "h"
+     },
+     {
+      "shape": "cyl",
+      "x": -0.38,
+      "z": 0.38,
+      "w": 0.08,
+      "d": 0.08,
+      "y": 0,
+      "h": 0.02,
+      "color": "#c5a059",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": 0.38,
+      "z": 0.38,
+      "w": 0.08,
+      "d": 0.08,
+      "y": 0,
+      "h": 0.02,
+      "color": "#c5a059",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": -0.38,
+      "z": -0.38,
+      "w": 0.08,
+      "d": 0.08,
+      "y": 0,
+      "h": 0.02,
+      "color": "#c5a059",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": 0.38,
+      "z": -0.38,
+      "w": 0.08,
+      "d": 0.08,
+      "y": 0,
+      "h": 0.02,
+      "color": "#c5a059",
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.8,
+      "d": 0.8,
+      "y": 0.035,
+      "h": 0.02,
+      "color": "#111215",
+      "fix": "h"
+     },
+     {
+      "shape": "loft",
+      "x": 0,
+      "z": -0.04,
+      "w": 0.86,
+      "d": 0.88,
+      "y": 0.055,
+      "h": 0.94,
+      "tx": 0,
+      "tz": -0.06,
+      "tw": 0.78,
+      "td": 0.8,
+      "color": "#2d241e",
+      "finish": "wood",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.4,
+      "w": 0.82,
+      "d": 0.08,
+      "y": 0.07,
+      "h": 0.91,
+      "color": "#8c6747",
+      "edges": "glow"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": 0.43,
+      "w": 0.28,
+      "d": 0.28,
+      "y": 0.85,
+      "h": 0.08,
+      "axis": "z",
+      "color": "#1a1a1f",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": 0.45,
+      "w": 0.1,
+      "d": 0.1,
+      "y": 0.865,
+      "h": 0.04,
+      "axis": "z",
+      "color": "#c5a059",
+      "glow": true,
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": 0.43,
+      "w": 0.46,
+      "d": 0.46,
+      "y": 0.64,
+      "h": 0.15,
+      "axis": "z",
+      "color": "#c5a059",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": 0.44,
+      "w": 0.38,
+      "d": 0.38,
+      "y": 0.65,
+      "h": 0.12,
+      "axis": "z",
+      "color": "#22242a",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": 0.46,
+      "w": 0.08,
+      "d": 0.08,
+      "y": 0.68,
+      "h": 0.06,
+      "axis": "z",
+      "color": "metal",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": 0.43,
+      "w": 0.58,
+      "d": 0.58,
+      "y": 0.38,
+      "h": 0.18,
+      "axis": "z",
+      "color": "#c5a059",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": 0.44,
+      "w": 0.5,
+      "d": 0.5,
+      "y": 0.39,
+      "h": 0.15,
+      "axis": "z",
+      "color": "#1a1c22",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": 0.43,
+      "w": 0.58,
+      "d": 0.58,
+      "y": 0.14,
+      "h": 0.18,
+      "axis": "z",
+      "color": "#c5a059",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": 0.44,
+      "w": 0.5,
+      "d": 0.5,
+      "y": 0.15,
+      "h": 0.15,
+      "axis": "z",
+      "color": "#1a1c22",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": -0.44,
+      "w": 0.28,
+      "d": 0.28,
+      "y": 0.25,
+      "h": 0.08,
+      "axis": "z",
+      "color": "#111215",
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.45,
+      "w": 0.36,
+      "d": 0.04,
+      "y": 0.08,
+      "h": 0.12,
+      "color": "#111215",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": -0.08,
+      "z": -0.47,
+      "w": 0.04,
+      "d": 0.04,
+      "y": 0.11,
+      "h": 0.03,
+      "axis": "z",
+      "color": "#c5a059",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": 0.08,
+      "z": -0.47,
+      "w": 0.04,
+      "d": 0.04,
+      "y": 0.11,
+      "h": 0.03,
+      "axis": "z",
+      "color": "#c5a059",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": -0.08,
+      "z": -0.47,
+      "w": 0.04,
+      "d": 0.04,
+      "y": 0.16,
+      "h": 0.03,
+      "axis": "z",
+      "color": "#c5a059",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": 0.08,
+      "z": -0.47,
+      "w": 0.04,
+      "d": 0.04,
+      "y": 0.16,
+      "h": 0.03,
+      "axis": "z",
+      "color": "#c5a059",
+      "fix": "wdh"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.94,
+      "d": 0.94
+     },
+     {
+      "shape": "circle",
+      "x": 0,
+      "z": 0.38,
+      "r": 0.24
+     },
+     {
+      "shape": "circle",
+      "x": 0,
+      "z": 0.38,
+      "r": 0.15
+     },
+     {
+      "shape": "circle",
+      "x": 0,
+      "z": 0.38,
+      "r": 0.06
+     },
+     {
+      "shape": "circle",
+      "x": 0,
+      "z": -0.4,
+      "r": 0.1
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "fPXiaQYsfWJvuLAVJ1sPg1PiAOmoZqmh1kmFGdXL15LRBT6eGlOrUDgH15qNAcUpyrxmhkKz6vDl0AN9sTMNCw=="
+ }
+}

@@ -1,0 +1,219 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.designer_cat_tree",
+  "name": "Domolux Architectural Cat Climbing Tree",
+  "publisher": "Domolux Studio",
+  "description": "Architectural vertical feline climbing sculpture with natural oak pillars, braided sisal rope, warm ivory bouclé perches, and geometric sleeping pod.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "designer_cat_tree",
+      "name": {
+        "en": "Domolux Architectural Cat Climbing Tree",
+        "de": "Domolux Architektonischer Katzenbaum",
+        "ar": "شجرة تسلق القطط المعمارية دومولوكس"
+      },
+      "size": [
+        1.05,
+        0.75,
+        1.75
+      ],
+      "mount": "floor",
+      "surface": false,
+      "group": "pets",
+      "room": [
+        "living",
+        "hall"
+      ],
+      "tags": [
+        "cat",
+        "pet",
+        "climbing",
+        "tree",
+        "boucle",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.94,
+          "d": 0.92,
+          "y": 0,
+          "h": 0.05,
+          "color": "#d8cfc4",
+          "edges": true,
+          "fix": "h"
+        },
+        {
+          "shape": "cyl",
+          "x": -0.25,
+          "z": 0,
+          "w": 0.16,
+          "d": 0.16,
+          "y": 0.05,
+          "h": 0.03,
+          "color": "#c5a059",
+          "glow": true,
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": 0.25,
+          "z": 0,
+          "w": 0.16,
+          "d": 0.16,
+          "y": 0.05,
+          "h": 0.03,
+          "color": "#c5a059",
+          "glow": true,
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": -0.25,
+          "z": 0,
+          "w": 0.14,
+          "d": 0.14,
+          "y": 0.08,
+          "h": 0.88,
+          "color": "#b89d78",
+          "edges": "faint",
+          "fix": "wd"
+        },
+        {
+          "shape": "cyl",
+          "x": 0.25,
+          "z": 0,
+          "w": 0.14,
+          "d": 0.14,
+          "y": 0.08,
+          "h": 0.55,
+          "color": "#9c6838",
+          "finish": "wood",
+          "fix": "wd"
+        },
+        {
+          "shape": "cyl",
+          "x": 0.25,
+          "z": 0.08,
+          "w": 0.45,
+          "d": 0.45,
+          "y": 0.28,
+          "h": 0.04,
+          "color": "#dedbd2",
+          "finish": "fabric",
+          "edges": true,
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": -0.22,
+          "z": 0.1,
+          "w": 0.45,
+          "d": 0.45,
+          "y": 0.52,
+          "h": 0.04,
+          "color": "#dedbd2",
+          "finish": "fabric",
+          "edges": true,
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0.22,
+          "z": 0,
+          "w": 0.48,
+          "d": 0.52,
+          "y": 0.62,
+          "h": 0.24,
+          "color": "#9c6838",
+          "finish": "wood",
+          "edges": true,
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": 0.22,
+          "z": 0.27,
+          "w": 0.26,
+          "d": 0.02,
+          "y": 0.68,
+          "h": 0.12,
+          "axis": "z",
+          "color": "#18191d",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0.22,
+          "z": 0,
+          "w": 0.42,
+          "d": 0.46,
+          "y": 0.63,
+          "h": 0.04,
+          "color": "#dedbd2",
+          "finish": "fabric",
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": -0.25,
+          "z": 0,
+          "w": 0.5,
+          "d": 0.5,
+          "y": 0.94,
+          "h": 0.06,
+          "color": "#dedbd2",
+          "finish": "fabric",
+          "edges": "glow",
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": -0.25,
+          "z": 0,
+          "w": 0.48,
+          "d": 0.48,
+          "y": 0.96,
+          "h": 0.04,
+          "color": "#cdc8bd",
+          "finish": "fabric",
+          "fix": "wdh"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 0.94,
+          "d": 0.92
+        },
+        {
+          "shape": "circle",
+          "x": -0.25,
+          "z": 0,
+          "r": 0.25
+        },
+        {
+          "shape": "circle",
+          "x": 0.25,
+          "z": 0.08,
+          "r": 0.22
+        },
+        {
+          "shape": "rect",
+          "x": 0.22,
+          "z": 0,
+          "w": 0.48,
+          "d": 0.52
+        }
+      ]
+    }
+  ]
+}

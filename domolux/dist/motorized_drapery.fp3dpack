@@ -1,0 +1,353 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.motorized_drapery",
+  "name": "Domolux Motorized Architectural Drapery",
+  "publisher": "Domolux Studio",
+  "description": "Floor-to-ceiling motorized dual-track curtain system with Belgian blackout linen in sculpted S-folds and sheer acoustic under-layer.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "motorized_drapery",
+    "name": {
+     "en": "Domolux Motorized Architectural Drapery",
+     "de": "Domolux Motorisierte Architektur-Vorhänge",
+     "ar": "ستائر دومولوكس المعمارية الآلية"
+    },
+    "size": [
+     2.8,
+     0.32,
+     2.8
+    ],
+    "mount": "ceiling",
+    "wall_y": 2.8,
+    "surface": false,
+    "group": "deco",
+    "room": [
+     "living",
+     "bedroom"
+    ],
+    "tags": [
+     "curtain",
+     "drapery",
+     "motorized",
+     "linen",
+     "blackout",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 1,
+      "d": 0.85,
+      "y": 0.96,
+      "h": 0.04,
+      "color": "#8c6747",
+      "edges": true,
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": -0.46,
+      "z": 0.1,
+      "w": 0.06,
+      "d": 0.6,
+      "y": 0.88,
+      "h": 0.08,
+      "color": "#18191d",
+      "edges": "faint",
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": -0.495,
+      "z": 0,
+      "w": 0.01,
+      "d": 0.85,
+      "y": 0.96,
+      "h": 0.04,
+      "color": "#c5a059",
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": 0.495,
+      "z": 0,
+      "w": 0.01,
+      "d": 0.85,
+      "y": 0.96,
+      "h": 0.04,
+      "color": "#c5a059",
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.22,
+      "w": 0.96,
+      "d": 0.04,
+      "y": 0.01,
+      "h": 0.95,
+      "color": "#eceae5",
+      "finish": "fabric",
+      "edges": "faint"
+     },
+     {
+      "shape": "loft",
+      "x": -0.42,
+      "z": 0.16,
+      "w": 0.08,
+      "d": 0.22,
+      "y": 0.01,
+      "h": 0.95,
+      "tx": -0.42,
+      "tz": 0.22,
+      "tw": 0.07,
+      "td": 0.2,
+      "color": "#d6d0c6",
+      "finish": "fabric",
+      "edges": "faint"
+     },
+     {
+      "shape": "loft",
+      "x": -0.34,
+      "z": 0.06,
+      "w": 0.08,
+      "d": 0.22,
+      "y": 0.01,
+      "h": 0.95,
+      "tx": -0.34,
+      "tz": 0.08,
+      "tw": 0.07,
+      "td": 0.2,
+      "color": "#cdc6ba",
+      "finish": "fabric",
+      "edges": "faint"
+     },
+     {
+      "shape": "loft",
+      "x": -0.26,
+      "z": 0.16,
+      "w": 0.08,
+      "d": 0.22,
+      "y": 0.01,
+      "h": 0.95,
+      "tx": -0.26,
+      "tz": 0.22,
+      "tw": 0.07,
+      "td": 0.2,
+      "color": "#d6d0c6",
+      "finish": "fabric",
+      "edges": "faint"
+     },
+     {
+      "shape": "loft",
+      "x": -0.18,
+      "z": 0.06,
+      "w": 0.08,
+      "d": 0.22,
+      "y": 0.01,
+      "h": 0.95,
+      "tx": -0.18,
+      "tz": 0.08,
+      "tw": 0.07,
+      "td": 0.2,
+      "color": "#cdc6ba",
+      "finish": "fabric",
+      "edges": "faint"
+     },
+     {
+      "shape": "loft",
+      "x": -0.1,
+      "z": 0.16,
+      "w": 0.08,
+      "d": 0.22,
+      "y": 0.01,
+      "h": 0.95,
+      "tx": -0.1,
+      "tz": 0.22,
+      "tw": 0.07,
+      "td": 0.2,
+      "color": "#d6d0c6",
+      "finish": "fabric",
+      "edges": "faint"
+     },
+     {
+      "shape": "loft",
+      "x": -0.02,
+      "z": 0.06,
+      "w": 0.08,
+      "d": 0.22,
+      "y": 0.01,
+      "h": 0.95,
+      "tx": -0.02,
+      "tz": 0.08,
+      "tw": 0.07,
+      "td": 0.2,
+      "color": "#cdc6ba",
+      "finish": "fabric",
+      "edges": "faint"
+     },
+     {
+      "shape": "loft",
+      "x": 0.06,
+      "z": 0.16,
+      "w": 0.08,
+      "d": 0.22,
+      "y": 0.01,
+      "h": 0.95,
+      "tx": 0.06,
+      "tz": 0.22,
+      "tw": 0.07,
+      "td": 0.2,
+      "color": "#d6d0c6",
+      "finish": "fabric",
+      "edges": "faint"
+     },
+     {
+      "shape": "loft",
+      "x": 0.14,
+      "z": 0.06,
+      "w": 0.08,
+      "d": 0.22,
+      "y": 0.01,
+      "h": 0.95,
+      "tx": 0.14,
+      "tz": 0.08,
+      "tw": 0.07,
+      "td": 0.2,
+      "color": "#cdc6ba",
+      "finish": "fabric",
+      "edges": "faint"
+     },
+     {
+      "shape": "loft",
+      "x": 0.22,
+      "z": 0.16,
+      "w": 0.08,
+      "d": 0.22,
+      "y": 0.01,
+      "h": 0.95,
+      "tx": 0.22,
+      "tz": 0.22,
+      "tw": 0.07,
+      "td": 0.2,
+      "color": "#d6d0c6",
+      "finish": "fabric",
+      "edges": "faint"
+     },
+     {
+      "shape": "loft",
+      "x": 0.3,
+      "z": 0.06,
+      "w": 0.08,
+      "d": 0.22,
+      "y": 0.01,
+      "h": 0.95,
+      "tx": 0.3,
+      "tz": 0.08,
+      "tw": 0.07,
+      "td": 0.2,
+      "color": "#cdc6ba",
+      "finish": "fabric",
+      "edges": "faint"
+     },
+     {
+      "shape": "loft",
+      "x": 0.38,
+      "z": 0.16,
+      "w": 0.08,
+      "d": 0.22,
+      "y": 0.01,
+      "h": 0.95,
+      "tx": 0.38,
+      "tz": 0.22,
+      "tw": 0.07,
+      "td": 0.2,
+      "color": "#d6d0c6",
+      "finish": "fabric",
+      "edges": "faint"
+     },
+     {
+      "shape": "loft",
+      "x": 0.45,
+      "z": 0.06,
+      "w": 0.08,
+      "d": 0.22,
+      "y": 0.01,
+      "h": 0.95,
+      "tx": 0.45,
+      "tz": 0.08,
+      "tw": 0.07,
+      "td": 0.2,
+      "color": "#cdc6ba",
+      "finish": "fabric",
+      "edges": "faint"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.12,
+      "w": 0.96,
+      "d": 0.24,
+      "y": 0,
+      "h": 0.01,
+      "color": "#8c6747",
+      "edges": "faint",
+      "fix": "h"
+     },
+     {
+      "shape": "cyl",
+      "x": 0.44,
+      "z": 0.22,
+      "w": 0.015,
+      "d": 0.015,
+      "y": 0.4,
+      "h": 0.45,
+      "color": "#c5a059",
+      "glow": true,
+      "fix": "wdh"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 1,
+      "d": 0.85
+     },
+     {
+      "shape": "line",
+      "x1": -0.48,
+      "z1": -0.22,
+      "x2": 0.48,
+      "z2": -0.22
+     },
+     {
+      "shape": "line",
+      "x1": -0.48,
+      "z1": 0.12,
+      "x2": 0.48,
+      "z2": 0.12
+     },
+     {
+      "shape": "circle",
+      "x": -0.46,
+      "z": 0.1,
+      "r": 0.08
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "XCQCYuRkVsIuua/jhRvKFFcSj7flMtHoP0b/uaqDr+j5DH3/v8bGkkAOZ2YLt7tLXU+xGuJaiCgtrZNxmOrkAg=="
+ }
+}

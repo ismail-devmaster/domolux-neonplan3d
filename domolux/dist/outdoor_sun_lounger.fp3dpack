@@ -1,0 +1,258 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.outdoor_sun_lounger",
+  "name": "Domolux Grand Resort Sun Lounger",
+  "publisher": "Domolux Studio",
+  "description": "Architectural pool sunbed crafted from solid plantation teak with multi-position reclining backrest, Sunbrella sand cushion, and pull-out cocktail tray.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "outdoor_sun_lounger",
+    "name": {
+     "en": "Domolux Grand Resort Sun Lounger",
+     "de": "Domolux Luxus-Resort Sonnenliege",
+     "ar": "سرير الاستجمام الشمسي الفاخر دومولوكس"
+    },
+    "size": [
+     0.88,
+     2.1,
+     0.52
+    ],
+    "mount": "floor",
+    "surface": false,
+    "group": "outdoor",
+    "room": [
+     "garden"
+    ],
+    "tags": [
+     "lounger",
+     "sunbed",
+     "pool",
+     "teak",
+     "outdoor",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": -0.44,
+      "z": 0,
+      "w": 0.08,
+      "d": 0.96,
+      "y": 0.12,
+      "h": 0.16,
+      "color": "#8a5829",
+      "finish": "wood",
+      "edges": true,
+      "fix": "wd"
+     },
+     {
+      "shape": "box",
+      "x": 0.44,
+      "z": 0,
+      "w": 0.08,
+      "d": 0.96,
+      "y": 0.12,
+      "h": 0.16,
+      "color": "#8a5829",
+      "finish": "wood",
+      "edges": true,
+      "fix": "wd"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.46,
+      "w": 0.96,
+      "d": 0.08,
+      "y": 0.12,
+      "h": 0.16,
+      "color": "#8a5829",
+      "finish": "wood",
+      "edges": true,
+      "fix": "d"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.46,
+      "w": 0.96,
+      "d": 0.08,
+      "y": 0.12,
+      "h": 0.16,
+      "color": "#8a5829",
+      "finish": "wood",
+      "edges": true,
+      "fix": "d"
+     },
+     {
+      "shape": "box",
+      "x": -0.42,
+      "z": 0.42,
+      "w": 0.08,
+      "d": 0.08,
+      "y": 0,
+      "h": 0.12,
+      "color": "#6e441d",
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": 0.42,
+      "z": 0.42,
+      "w": 0.08,
+      "d": 0.08,
+      "y": 0,
+      "h": 0.12,
+      "color": "#6e441d",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": -0.44,
+      "z": -0.4,
+      "w": 0.06,
+      "d": 0.22,
+      "y": 0,
+      "h": 0.22,
+      "axis": "x",
+      "color": "#1c1d22",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": 0.44,
+      "z": -0.4,
+      "w": 0.06,
+      "d": 0.22,
+      "y": 0,
+      "h": 0.22,
+      "axis": "x",
+      "color": "#1c1d22",
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.15,
+      "w": 0.84,
+      "d": 0.58,
+      "y": 0.24,
+      "h": 0.04,
+      "color": "#9c6838",
+      "finish": "wood",
+      "edges": "faint"
+     },
+     {
+      "shape": "loft",
+      "x": 0,
+      "z": -0.25,
+      "w": 0.84,
+      "d": 0.38,
+      "y": 0.26,
+      "h": 0.22,
+      "tx": 0,
+      "tz": -0.32,
+      "tw": 0.84,
+      "td": 0.34,
+      "color": "#9c6838",
+      "finish": "wood",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.15,
+      "w": 0.82,
+      "d": 0.58,
+      "y": 0.28,
+      "h": 0.18,
+      "color": "#ded8ce",
+      "finish": "fabric",
+      "edges": true
+     },
+     {
+      "shape": "loft",
+      "x": 0,
+      "z": -0.25,
+      "w": 0.82,
+      "d": 0.38,
+      "y": 0.3,
+      "h": 0.38,
+      "tx": 0,
+      "tz": -0.32,
+      "tw": 0.82,
+      "td": 0.34,
+      "color": "#ded8ce",
+      "finish": "fabric",
+      "edges": true
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": -0.36,
+      "w": 0.76,
+      "d": 0.14,
+      "y": 0.72,
+      "h": 0.14,
+      "axis": "x",
+      "color": "#8c6747",
+      "finish": "fabric",
+      "edges": true,
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0.46,
+      "z": 0,
+      "w": 0.22,
+      "d": 0.28,
+      "y": 0.16,
+      "h": 0.03,
+      "color": "#9c6838",
+      "finish": "wood",
+      "fix": "wdh"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.96,
+      "d": 0.96
+     },
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0.15,
+      "w": 0.82,
+      "d": 0.58,
+      "fill": true
+     },
+     {
+      "shape": "line",
+      "x1": -0.41,
+      "z1": -0.14,
+      "x2": 0.41,
+      "z2": -0.14
+     },
+     {
+      "shape": "circle",
+      "x": 0,
+      "z": -0.36,
+      "r": 0.08
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "/QOcQ4P6sMV0zE6do0OFhw5wKeoQuocIwRIeapV+rGFLdPxOQibIFJ3MypdlcLQTV3p4WdxIKHmHlpenKXs6CA=="
+ }
+}

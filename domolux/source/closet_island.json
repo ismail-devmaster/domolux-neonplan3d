@@ -1,0 +1,370 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.closet_island",
+  "name": "Domolux Walk-In Closet Island",
+  "publisher": "Domolux Studio",
+  "description": "Freestanding luxury dressing room centerpiece island with smoked glass jewelry vitrine, velvet organizer compartments, and double-sided accessory drawers.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "closet_island",
+      "name": {
+        "en": "Domolux Walk-In Closet Island",
+        "de": "Domolux Ankleidezimmer-Insel",
+        "ar": "جزيرة خزانة الملابس الفاخرة دومولوكس"
+      },
+      "size": [
+        1.8,
+        1.1,
+        0.95
+      ],
+      "mount": "floor",
+      "surface": true,
+      "group": "storage",
+      "room": [
+        "bedroom"
+      ],
+      "tags": [
+        "closet",
+        "island",
+        "wardrobe",
+        "jewelry",
+        "storage",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.92,
+          "d": 0.88,
+          "y": 0,
+          "h": 0.06,
+          "color": "#18191d",
+          "edges": "faint",
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.9,
+          "d": 0.86,
+          "y": 0.01,
+          "h": 0.02,
+          "color": "#fff0db",
+          "glow": true,
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.96,
+          "d": 0.92,
+          "y": 0.06,
+          "h": 0.76,
+          "color": "#2d241e",
+          "finish": "wood",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": -0.24,
+          "z": 0.465,
+          "w": 0.44,
+          "d": 0.02,
+          "y": 0.58,
+          "h": 0.2,
+          "color": "#2d241e",
+          "finish": "wood",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0.24,
+          "z": 0.465,
+          "w": 0.44,
+          "d": 0.02,
+          "y": 0.58,
+          "h": 0.2,
+          "color": "#2d241e",
+          "finish": "wood",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": -0.24,
+          "z": 0.465,
+          "w": 0.44,
+          "d": 0.02,
+          "y": 0.34,
+          "h": 0.22,
+          "color": "#2d241e",
+          "finish": "wood",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0.24,
+          "z": 0.465,
+          "w": 0.44,
+          "d": 0.02,
+          "y": 0.34,
+          "h": 0.22,
+          "color": "#2d241e",
+          "finish": "wood",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": -0.24,
+          "z": 0.465,
+          "w": 0.44,
+          "d": 0.02,
+          "y": 0.08,
+          "h": 0.24,
+          "color": "#2d241e",
+          "finish": "wood",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0.24,
+          "z": 0.465,
+          "w": 0.44,
+          "d": 0.02,
+          "y": 0.08,
+          "h": 0.24,
+          "color": "#2d241e",
+          "finish": "wood",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": -0.24,
+          "z": 0.475,
+          "w": 0.18,
+          "d": 0.015,
+          "y": 0.75,
+          "h": 0.015,
+          "color": "#c5a059",
+          "glow": true,
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0.24,
+          "z": 0.475,
+          "w": 0.18,
+          "d": 0.015,
+          "y": 0.75,
+          "h": 0.015,
+          "color": "#c5a059",
+          "glow": true,
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": -0.24,
+          "z": 0.475,
+          "w": 0.18,
+          "d": 0.015,
+          "y": 0.53,
+          "h": 0.015,
+          "color": "#c5a059",
+          "glow": true,
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0.24,
+          "z": 0.475,
+          "w": 0.18,
+          "d": 0.015,
+          "y": 0.53,
+          "h": 0.015,
+          "color": "#c5a059",
+          "glow": true,
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": -0.24,
+          "z": 0.475,
+          "w": 0.18,
+          "d": 0.015,
+          "y": 0.29,
+          "h": 0.015,
+          "color": "#c5a059",
+          "glow": true,
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0.24,
+          "z": 0.475,
+          "w": 0.18,
+          "d": 0.015,
+          "y": 0.29,
+          "h": 0.015,
+          "color": "#c5a059",
+          "glow": true,
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.465,
+          "w": 0.92,
+          "d": 0.02,
+          "y": 0.08,
+          "h": 0.7,
+          "color": "#2d241e",
+          "finish": "wood",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.88,
+          "d": 0.84,
+          "y": 0.82,
+          "h": 0.06,
+          "color": "#1e3d2f",
+          "edges": "faint"
+        },
+        {
+          "shape": "box",
+          "x": -0.15,
+          "z": 0,
+          "w": 0.015,
+          "d": 0.8,
+          "y": 0.83,
+          "h": 0.04,
+          "color": "#c5a059",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0.15,
+          "z": 0,
+          "w": 0.015,
+          "d": 0.8,
+          "y": 0.83,
+          "h": 0.04,
+          "color": "#c5a059",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": -0.3,
+          "z": -0.2,
+          "w": 0.12,
+          "d": 0.16,
+          "y": 0.84,
+          "h": 0.03,
+          "color": "#dedbd2",
+          "finish": "fabric",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": -0.3,
+          "z": 0.2,
+          "w": 0.12,
+          "d": 0.16,
+          "y": 0.84,
+          "h": 0.03,
+          "color": "#dedbd2",
+          "finish": "fabric",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0.3,
+          "z": -0.2,
+          "w": 0.12,
+          "d": 0.16,
+          "y": 0.84,
+          "h": 0.03,
+          "color": "#dedbd2",
+          "finish": "fabric",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0.3,
+          "z": 0.2,
+          "w": 0.12,
+          "d": 0.16,
+          "y": 0.84,
+          "h": 0.03,
+          "color": "#dedbd2",
+          "finish": "fabric",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.98,
+          "d": 0.94,
+          "y": 0.88,
+          "h": 0.04,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.9,
+          "d": 0.86,
+          "y": 0.92,
+          "h": 0.015,
+          "color": "glass",
+          "edges": "faint",
+          "fix": "h"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 0.98,
+          "d": 0.94
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 0.9,
+          "d": 0.86,
+          "fill": true
+        },
+        {
+          "shape": "line",
+          "x1": -0.44,
+          "z1": 0,
+          "x2": 0.44,
+          "z2": 0
+        },
+        {
+          "shape": "line",
+          "x1": 0,
+          "z1": -0.42,
+          "x2": 0,
+          "z2": 0.42
+        }
+      ]
+    }
+  ]
+}

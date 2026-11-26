@@ -1,0 +1,274 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.finnish_sauna_cabin",
+  "name": "Domolux Finnish Sauna Sanctuary",
+  "publisher": "Domolux Studio",
+  "description": "Freestanding thermal aspen timber private sauna cabin with full-height tempered glass entry, multi-level floating benches, and volcanic stone heater tower.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "finnish_sauna_cabin",
+    "name": {
+     "en": "Domolux Finnish Sauna Sanctuary",
+     "de": "Domolux Finnische Sauna-Kabine",
+     "ar": "مقصورة الساونا الفنلندية الفاخرة دومولوكس"
+    },
+    "size": [
+     2.1,
+     1.8,
+     2.15
+    ],
+    "mount": "floor",
+    "surface": false,
+    "group": "bath",
+    "room": [
+     "bath",
+     "hobby"
+    ],
+    "tags": [
+     "sauna",
+     "spa",
+     "wellness",
+     "timber",
+     "aspen",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.96,
+      "y": 0,
+      "h": 0.04,
+      "color": "#bfa17a",
+      "finish": "wood",
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.96,
+      "y": 0.96,
+      "h": 0.04,
+      "color": "#a88a64",
+      "finish": "wood",
+      "edges": true,
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.46,
+      "w": 0.98,
+      "d": 0.08,
+      "y": 0.04,
+      "h": 0.92,
+      "color": "#c4a781",
+      "finish": "wood",
+      "edges": "faint"
+     },
+     {
+      "shape": "box",
+      "x": -0.46,
+      "z": 0,
+      "w": 0.08,
+      "d": 0.96,
+      "y": 0.04,
+      "h": 0.92,
+      "color": "#c4a781",
+      "finish": "wood",
+      "edges": "faint"
+     },
+     {
+      "shape": "box",
+      "x": 0.46,
+      "z": 0,
+      "w": 0.08,
+      "d": 0.96,
+      "y": 0.04,
+      "h": 0.92,
+      "color": "#c4a781",
+      "finish": "wood",
+      "edges": "faint"
+     },
+     {
+      "shape": "box",
+      "x": -0.32,
+      "z": 0.46,
+      "w": 0.2,
+      "d": 0.02,
+      "y": 0.04,
+      "h": 0.92,
+      "color": "glass",
+      "edges": "glow"
+     },
+     {
+      "shape": "box",
+      "x": 0.06,
+      "z": 0.46,
+      "w": 0.54,
+      "d": 0.02,
+      "y": 0.04,
+      "h": 0.92,
+      "color": "glass",
+      "edges": "glow"
+     },
+     {
+      "shape": "box",
+      "x": -0.16,
+      "z": 0.49,
+      "w": 0.03,
+      "d": 0.03,
+      "y": 0.35,
+      "h": 0.4,
+      "color": "#7a5a3a",
+      "finish": "wood",
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.24,
+      "w": 0.84,
+      "d": 0.34,
+      "y": 0.45,
+      "h": 0.06,
+      "color": "#dfcbb1",
+      "finish": "wood",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.41,
+      "w": 0.84,
+      "d": 0.03,
+      "y": 0.58,
+      "h": 0.14,
+      "color": "#dfcbb1",
+      "finish": "wood",
+      "edges": "faint"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.4,
+      "w": 0.82,
+      "d": 0.01,
+      "y": 0.56,
+      "h": 0.02,
+      "color": "#ffb84d",
+      "glow": true
+     },
+     {
+      "shape": "box",
+      "x": 0.04,
+      "z": 0.08,
+      "w": 0.76,
+      "d": 0.3,
+      "y": 0.22,
+      "h": 0.06,
+      "color": "#dfcbb1",
+      "finish": "wood",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0.04,
+      "z": 0.22,
+      "w": 0.76,
+      "d": 0.02,
+      "y": 0.04,
+      "h": 0.18,
+      "color": "#c4a781",
+      "finish": "wood"
+     },
+     {
+      "shape": "cyl",
+      "x": -0.34,
+      "z": 0.24,
+      "w": 0.2,
+      "d": 0.2,
+      "y": 0.04,
+      "h": 0.45,
+      "color": "metal",
+      "edges": "glow",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": -0.34,
+      "z": 0.24,
+      "w": 0.18,
+      "d": 0.18,
+      "y": 0.48,
+      "h": 0.08,
+      "color": "#2d2f33",
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": -0.34,
+      "z": 0.24,
+      "w": 0.26,
+      "d": 0.26,
+      "y": 0.38,
+      "h": 0.03,
+      "color": "#7a5a3a",
+      "finish": "wood",
+      "fix": "wdh"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.98,
+      "d": 0.96
+     },
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": -0.24,
+      "w": 0.84,
+      "d": 0.34,
+      "fill": true
+     },
+     {
+      "shape": "rect",
+      "x": 0.04,
+      "z": 0.08,
+      "w": 0.76,
+      "d": 0.3
+     },
+     {
+      "shape": "circle",
+      "x": -0.34,
+      "z": 0.24,
+      "r": 0.1
+     },
+     {
+      "shape": "line",
+      "x1": -0.21,
+      "z1": 0.46,
+      "x2": 0.33,
+      "z2": 0.46
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "P+nPwM/oLc+AqF6Es5de/9RL28mGKNuuZoa6ADcnGOQ8qa9SWzT4bwWQPMY397NBOBkRpY+scK1gMf1VkxU6AA=="
+ }
+}

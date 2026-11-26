@@ -1,0 +1,263 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.robotic_lawn_mower_dock",
+  "name": "Domolux Robotic Estate Mower Dock",
+  "publisher": "Domolux Studio",
+  "description": "Architectural outdoor autonomous mower shelter with cantilevered zinc sloped roof, timber ceiling, guide ramp, and rugged estate robotic mower.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "robotic_lawn_mower_dock",
+      "name": {
+        "en": "Domolux Robotic Estate Mower Dock",
+        "de": "Domolux Mähroboter-Dockingstation",
+        "ar": "محطة روبوت قص العشب دومولوكس"
+      },
+      "size": [
+        0.95,
+        1.15,
+        0.58
+      ],
+      "mount": "floor",
+      "surface": false,
+      "group": "outdoor",
+      "room": [
+        "garden"
+      ],
+      "tags": [
+        "mower",
+        "robot",
+        "garden",
+        "dock",
+        "automation",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "loft",
+          "x": 0,
+          "z": 0,
+          "w": 0.92,
+          "d": 0.94,
+          "y": 0,
+          "h": 0.06,
+          "tx": 0,
+          "tz": -0.05,
+          "tw": 0.92,
+          "td": 0.84,
+          "color": "#6e727a",
+          "edges": "faint",
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": -0.38,
+          "z": 0,
+          "w": 0.06,
+          "d": 0.88,
+          "y": 0.04,
+          "h": 0.04,
+          "color": "#1c1e22",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0.38,
+          "z": 0,
+          "w": 0.06,
+          "d": 0.88,
+          "y": 0.04,
+          "h": 0.04,
+          "color": "#1c1e22",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.4,
+          "w": 0.55,
+          "d": 0.16,
+          "y": 0.06,
+          "h": 0.45,
+          "color": "#252830",
+          "edges": true,
+          "fix": "wd"
+        },
+        {
+          "shape": "cyl",
+          "x": -0.14,
+          "z": -0.31,
+          "w": 0.04,
+          "d": 0.04,
+          "y": 0.18,
+          "h": 0.08,
+          "axis": "z",
+          "color": "#c5a059",
+          "glow": true,
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": 0.14,
+          "z": -0.31,
+          "w": 0.04,
+          "d": 0.04,
+          "y": 0.18,
+          "h": 0.08,
+          "axis": "z",
+          "color": "#c5a059",
+          "glow": true,
+          "fix": "wdh"
+        },
+        {
+          "shape": "loft",
+          "x": 0,
+          "z": -0.06,
+          "w": 0.96,
+          "d": 0.86,
+          "y": 0.48,
+          "h": 0.48,
+          "tx": 0,
+          "tz": 0.02,
+          "tw": 0.96,
+          "td": 0.86,
+          "color": "#23262d",
+          "edges": "glow",
+          "fix": "w"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.06,
+          "w": 0.92,
+          "d": 0.82,
+          "y": 0.48,
+          "h": 0.02,
+          "color": "#9c6838",
+          "finish": "wood"
+        },
+        {
+          "shape": "loft",
+          "x": 0,
+          "z": -0.08,
+          "w": 0.58,
+          "d": 0.62,
+          "y": 0.06,
+          "h": 0.22,
+          "tx": 0,
+          "tz": -0.12,
+          "tw": 0.48,
+          "td": 0.52,
+          "color": "#181a20",
+          "edges": true,
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": -0.3,
+          "z": -0.22,
+          "w": 0.08,
+          "d": 0.18,
+          "y": 0.04,
+          "h": 0.18,
+          "axis": "x",
+          "color": "#111215",
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": 0.3,
+          "z": -0.22,
+          "w": 0.08,
+          "d": 0.18,
+          "y": 0.04,
+          "h": 0.18,
+          "axis": "x",
+          "color": "#111215",
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": -0.18,
+          "z": 0.15,
+          "w": 0.05,
+          "d": 0.1,
+          "y": 0.03,
+          "h": 0.1,
+          "axis": "x",
+          "color": "#111215",
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": 0.18,
+          "z": 0.15,
+          "w": 0.05,
+          "d": 0.1,
+          "y": 0.03,
+          "h": 0.1,
+          "axis": "x",
+          "color": "#111215",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.15,
+          "w": 0.22,
+          "d": 0.14,
+          "y": 0.27,
+          "h": 0.025,
+          "color": "#e74c3c",
+          "glow": true,
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": 0.05,
+          "w": 0.12,
+          "d": 0.12,
+          "y": 0.26,
+          "h": 0.04,
+          "color": "#c5a059",
+          "glow": true,
+          "fix": "wdh"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 0.96,
+          "d": 0.94
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": -0.4,
+          "w": 0.55,
+          "d": 0.16
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": -0.08,
+          "w": 0.58,
+          "d": 0.62,
+          "fill": true
+        },
+        {
+          "shape": "circle",
+          "x": 0,
+          "z": 0.05,
+          "r": 0.06
+        }
+      ]
+    }
+  ]
+}

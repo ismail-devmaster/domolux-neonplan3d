@@ -1,0 +1,227 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.indoor_sculptural_fountain",
+  "name": "Domolux Indoor Sculptural Fountain",
+  "publisher": "Domolux Studio",
+  "description": "Architectural monolithic interior water sculpture in textured dark basalt with satin bronze weir water blade, laminar water sheet, and pebble basin.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "indoor_sculptural_fountain",
+    "name": {
+     "en": "Domolux Indoor Sculptural Fountain",
+     "de": "Domolux Skulpturaler Innenbrunnen",
+     "ar": "نافورة دومولوكس الداخلية النحتية"
+    },
+    "size": [
+     1.4,
+     0.7,
+     1.9
+    ],
+    "mount": "floor",
+    "surface": false,
+    "group": "deco",
+    "room": [
+     "hall",
+     "living"
+    ],
+    "tags": [
+     "fountain",
+     "water",
+     "basalt",
+     "bronze",
+     "sculpture",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.12,
+      "w": 0.94,
+      "d": 0.72,
+      "y": 0,
+      "h": 0.18,
+      "color": "#1c1e22",
+      "edges": true,
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.12,
+      "w": 0.96,
+      "d": 0.74,
+      "y": 0.18,
+      "h": 0.03,
+      "color": "#25282f",
+      "edges": true,
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.28,
+      "w": 0.78,
+      "d": 0.18,
+      "y": 0.05,
+      "h": 0.92,
+      "color": "#1a1c20",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.18,
+      "w": 0.68,
+      "d": 0.02,
+      "y": 0.2,
+      "h": 0.74,
+      "color": "#22252c",
+      "edges": "faint"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.22,
+      "w": 0.82,
+      "d": 0.22,
+      "y": 0.94,
+      "h": 0.06,
+      "color": "#8c6747",
+      "edges": "glow",
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.12,
+      "w": 0.62,
+      "d": 0.08,
+      "y": 0.94,
+      "h": 0.02,
+      "color": "#c5a059",
+      "glow": true,
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.15,
+      "w": 0.6,
+      "d": 0.015,
+      "y": 0.21,
+      "h": 0.73,
+      "color": "#1d637d",
+      "glow": true,
+      "edges": "faint"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.15,
+      "w": 0.82,
+      "d": 0.58,
+      "y": 0.14,
+      "h": 0.015,
+      "color": "#174b60",
+      "glow": true,
+      "edges": "faint"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.15,
+      "w": 0.82,
+      "d": 0.58,
+      "y": 0.06,
+      "h": 0.08,
+      "color": "#282a30",
+      "edges": "faint"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.08,
+      "w": 0.7,
+      "d": 0.04,
+      "y": 0.08,
+      "h": 0.02,
+      "color": "#5dade2",
+      "glow": true,
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": -0.22,
+      "z": 0.18,
+      "w": 0.12,
+      "d": 0.12,
+      "y": 0.1,
+      "h": 0.08,
+      "color": "#3a3c42"
+     },
+     {
+      "shape": "cyl",
+      "x": 0.25,
+      "z": 0.22,
+      "w": 0.16,
+      "d": 0.16,
+      "y": 0.1,
+      "h": 0.09,
+      "color": "#32343a"
+     },
+     {
+      "shape": "cyl",
+      "x": 0.08,
+      "z": 0.32,
+      "w": 0.1,
+      "d": 0.1,
+      "y": 0.1,
+      "h": 0.06,
+      "color": "#3a3c42"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0.12,
+      "w": 0.96,
+      "d": 0.74
+     },
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": -0.28,
+      "w": 0.78,
+      "d": 0.18,
+      "fill": true
+     },
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0.15,
+      "w": 0.82,
+      "d": 0.58
+     },
+     {
+      "shape": "line",
+      "x1": -0.31,
+      "z1": -0.12,
+      "x2": 0.31,
+      "z2": -0.12
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "myxE5cLUXBrJNcIsP3WwP2W2GbXMA4WK/LR7JNuucmEAsgzYPjbLvcKneUbPE5DKpzLnnHyHu+AsJFpe54ZpDg=="
+ }
+}

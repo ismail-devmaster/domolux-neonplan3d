@@ -1,0 +1,228 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.outdoor_fire_pit",
+  "name": "Domolux Sculptural Outdoor Fire Pit",
+  "publisher": "Domolux Studio",
+  "description": "Low-slung architectural travertine square fire table with recessed stainless steel burner pan, black lava rocks, and circular glass wind shield.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "outdoor_fire_pit",
+      "name": {
+        "en": "Domolux Sculptural Outdoor Fire Pit",
+        "de": "Domolux Skulpturale Outdoor-Feuerstelle",
+        "ar": "موقد النار الخارجي المعماري دومولوكس"
+      },
+      "size": [
+        1.25,
+        1.25,
+        0.42
+      ],
+      "mount": "floor",
+      "surface": true,
+      "group": "outdoor",
+      "room": [
+        "garden"
+      ],
+      "tags": [
+        "firepit",
+        "terrace",
+        "outdoor",
+        "travertine",
+        "flame",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.9,
+          "d": 0.9,
+          "y": 0,
+          "h": 0.08,
+          "color": "#18191d",
+          "edges": "faint",
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.98,
+          "d": 0.98,
+          "y": 0.08,
+          "h": 0.58,
+          "color": "#d8cfc4",
+          "finish": "body",
+          "edges": true,
+          "fix": "h"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": 0,
+          "w": 0.62,
+          "d": 0.62,
+          "y": 0.54,
+          "h": 0.14,
+          "color": "#18191d",
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": 0,
+          "w": 0.58,
+          "d": 0.58,
+          "y": 0.55,
+          "h": 0.04,
+          "color": "metal",
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": 0,
+          "w": 0.54,
+          "d": 0.54,
+          "y": 0.58,
+          "h": 0.06,
+          "color": "#252528",
+          "edges": "faint",
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": 0,
+          "w": 0.36,
+          "d": 0.36,
+          "y": 0.64,
+          "h": 0.02,
+          "color": "metal",
+          "fix": "wdh"
+        },
+        {
+          "shape": "loft",
+          "x": 0,
+          "z": 0,
+          "w": 0.28,
+          "d": 0.28,
+          "y": 0.66,
+          "h": 0.24,
+          "tx": 0,
+          "tz": 0,
+          "tw": 0.12,
+          "td": 0.12,
+          "color": "#e67e22",
+          "glow": true,
+          "fix": "wdh"
+        },
+        {
+          "shape": "loft",
+          "x": 0,
+          "z": 0,
+          "w": 0.16,
+          "d": 0.16,
+          "y": 0.74,
+          "h": 0.18,
+          "tx": 0,
+          "tz": 0,
+          "tw": 0.04,
+          "td": 0.04,
+          "color": "#f39c12",
+          "glow": true,
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": 0,
+          "w": 0.62,
+          "d": 0.62,
+          "y": 0.66,
+          "h": 0.32,
+          "color": "glass",
+          "edges": "glow",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": -0.3,
+          "z": 0,
+          "w": 0.03,
+          "d": 0.03,
+          "y": 0.66,
+          "h": 0.04,
+          "color": "metal",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0.3,
+          "z": 0,
+          "w": 0.03,
+          "d": 0.03,
+          "y": 0.66,
+          "h": 0.04,
+          "color": "metal",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.3,
+          "w": 0.03,
+          "d": 0.03,
+          "y": 0.66,
+          "h": 0.04,
+          "color": "metal",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.3,
+          "w": 0.03,
+          "d": 0.03,
+          "y": 0.66,
+          "h": 0.04,
+          "color": "metal",
+          "fix": "wdh"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 0.98,
+          "d": 0.98
+        },
+        {
+          "shape": "circle",
+          "x": 0,
+          "z": 0,
+          "r": 0.31
+        },
+        {
+          "shape": "circle",
+          "x": 0,
+          "z": 0,
+          "r": 0.27,
+          "fill": true
+        },
+        {
+          "shape": "circle",
+          "x": 0,
+          "z": 0,
+          "r": 0.18
+        }
+      ]
+    }
+  ]
+}

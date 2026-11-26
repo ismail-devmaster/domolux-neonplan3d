@@ -1,0 +1,231 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.garment_care_steam_cabinet",
+  "name": "Domolux Garment-Care Steam Cabinet",
+  "publisher": "Domolux Studio",
+  "description": "Smart architectural clothing refreshing appliance with full-height smoked glass door, moving suit hanger rail, pants press, and steam generator.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "garment_care_steam_cabinet",
+      "name": {
+        "en": "Domolux Garment-Care Steam Cabinet",
+        "de": "Domolux Dampf-Kleiderpflegeschrank",
+        "ar": "خزانة العناية بالملابس بالبخار دومولوكس"
+      },
+      "size": [
+        0.65,
+        0.68,
+        1.95
+      ],
+      "mount": "floor",
+      "surface": false,
+      "group": "appliance",
+      "room": [
+        "bedroom",
+        "utility"
+      ],
+      "tags": [
+        "steam",
+        "closet",
+        "garment",
+        "care",
+        "appliance",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.04,
+          "w": 0.94,
+          "d": 0.88,
+          "y": 0,
+          "h": 0.98,
+          "color": "#23272e",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.42,
+          "w": 0.92,
+          "d": 0.04,
+          "y": 0.02,
+          "h": 0.96,
+          "color": "glass",
+          "edges": "glow"
+        },
+        {
+          "shape": "box",
+          "x": -0.4,
+          "z": 0.46,
+          "w": 0.03,
+          "d": 0.03,
+          "y": 0.25,
+          "h": 0.55,
+          "color": "#8c6747",
+          "edges": "faint",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": -0.4,
+          "z": 0.44,
+          "w": 0.03,
+          "d": 0.02,
+          "y": 0.78,
+          "h": 0.02,
+          "color": "#c5a059",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": -0.4,
+          "z": 0.44,
+          "w": 0.03,
+          "d": 0.02,
+          "y": 0.25,
+          "h": 0.02,
+          "color": "#c5a059",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.43,
+          "w": 0.6,
+          "d": 0.01,
+          "y": 0.88,
+          "h": 0.08,
+          "color": "#0e1014",
+          "glow": true,
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": -0.04,
+          "w": 0.76,
+          "d": 0.03,
+          "y": 0.82,
+          "h": 0.03,
+          "axis": "x",
+          "color": "metal",
+          "fix": "wdh"
+        },
+        {
+          "shape": "loft",
+          "x": -0.22,
+          "z": -0.04,
+          "w": 0.16,
+          "d": 0.04,
+          "y": 0.74,
+          "h": 0.08,
+          "tx": -0.22,
+          "tz": -0.04,
+          "tw": 0.04,
+          "td": 0.04,
+          "color": "#8c6747",
+          "fix": "wdh"
+        },
+        {
+          "shape": "loft",
+          "x": 0,
+          "z": -0.04,
+          "w": 0.16,
+          "d": 0.04,
+          "y": 0.74,
+          "h": 0.08,
+          "tx": 0,
+          "tz": -0.04,
+          "tw": 0.04,
+          "td": 0.04,
+          "color": "#8c6747",
+          "fix": "wdh"
+        },
+        {
+          "shape": "loft",
+          "x": 0.22,
+          "z": -0.04,
+          "w": 0.16,
+          "d": 0.04,
+          "y": 0.74,
+          "h": 0.08,
+          "tx": 0.22,
+          "tz": -0.04,
+          "tw": 0.04,
+          "td": 0.04,
+          "color": "#8c6747",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0.38,
+          "z": 0,
+          "w": 0.04,
+          "d": 0.6,
+          "y": 0.2,
+          "h": 0.55,
+          "color": "#1c1e22",
+          "edges": "faint"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.04,
+          "w": 0.84,
+          "d": 0.74,
+          "y": 0.04,
+          "h": 0.12,
+          "color": "#18191d",
+          "edges": "faint"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.5,
+          "d": 0.3,
+          "y": 0.16,
+          "h": 0.015,
+          "color": "metal",
+          "edges": "glow",
+          "fix": "wdh"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": -0.04,
+          "w": 0.94,
+          "d": 0.88
+        },
+        {
+          "shape": "line",
+          "x1": -0.46,
+          "z1": 0.42,
+          "x2": 0.46,
+          "z2": 0.42
+        },
+        {
+          "shape": "line",
+          "x1": -0.4,
+          "z1": 0.46,
+          "x2": -0.4,
+          "z2": 0.42
+        },
+        {
+          "shape": "circle",
+          "x": 0,
+          "z": 0,
+          "r": 0.14
+        }
+      ]
+    }
+  ]
+}

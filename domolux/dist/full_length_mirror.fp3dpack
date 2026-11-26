@@ -1,0 +1,217 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.full_length_mirror",
+  "name": "Domolux Sculptural Dressing Mirror",
+  "publisher": "Domolux Studio",
+  "description": "Iconic organic full-length dressing mirror with champagne bronze frame, integrated ambient backlighting, and heavy honed Nero Marquina marble plinth.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "full_length_mirror",
+    "name": {
+     "en": "Domolux Sculptural Dressing Mirror",
+     "de": "Domolux Skulpturaler Ankleidespiegel",
+     "ar": "مرآة دومولوكس المعمارية الكاملة"
+    },
+    "size": [
+     0.95,
+     0.35,
+     2.15
+    ],
+    "mount": "floor",
+    "surface": false,
+    "group": "deco",
+    "room": [
+     "bedroom",
+     "hall",
+     "bath"
+    ],
+    "tags": [
+     "mirror",
+     "dressing",
+     "bronze",
+     "marble",
+     "sculptural",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.92,
+      "d": 0.88,
+      "y": 0,
+      "h": 0.07,
+      "color": "#18191d",
+      "edges": true,
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.82,
+      "d": 0.24,
+      "y": 0.07,
+      "h": 0.035,
+      "color": "#c5a059",
+      "glow": true,
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.06,
+      "w": 0.82,
+      "d": 0.04,
+      "y": 0.1,
+      "h": 0.88,
+      "color": "#fff2d6",
+      "glow": true,
+      "edges": "glow"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.03,
+      "w": 0.78,
+      "d": 0.04,
+      "y": 0.1,
+      "h": 0.88,
+      "color": "#1c1d22",
+      "edges": "faint"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.02,
+      "w": 0.8,
+      "d": 0.06,
+      "y": 0.1,
+      "h": 0.03,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "h"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": 0.02,
+      "w": 0.8,
+      "d": 0.06,
+      "y": 0.88,
+      "h": 0.1,
+      "axis": "x",
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": -0.38,
+      "z": 0.02,
+      "w": 0.04,
+      "d": 0.06,
+      "y": 0.1,
+      "h": 0.82,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wd"
+     },
+     {
+      "shape": "box",
+      "x": 0.38,
+      "z": 0.02,
+      "w": 0.04,
+      "d": 0.06,
+      "y": 0.1,
+      "h": 0.82,
+      "color": "#c5a059",
+      "edges": "glow",
+      "fix": "wd"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.04,
+      "w": 0.72,
+      "d": 0.015,
+      "y": 0.13,
+      "h": 0.82,
+      "color": "glass",
+      "edges": "faint"
+     },
+     {
+      "shape": "loft",
+      "x": -0.35,
+      "z": -0.15,
+      "w": 0.04,
+      "d": 0.3,
+      "y": 0.07,
+      "h": 0.25,
+      "tx": -0.35,
+      "tz": -0.02,
+      "tw": 0.03,
+      "td": 0.04,
+      "color": "#8c6747",
+      "fix": "wdh"
+     },
+     {
+      "shape": "loft",
+      "x": 0.35,
+      "z": -0.15,
+      "w": 0.04,
+      "d": 0.3,
+      "y": 0.07,
+      "h": 0.25,
+      "tx": 0.35,
+      "tz": -0.02,
+      "tw": 0.03,
+      "td": 0.04,
+      "color": "#8c6747",
+      "fix": "wdh"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.92,
+      "d": 0.88
+     },
+     {
+      "shape": "line",
+      "x1": -0.38,
+      "z1": 0.04,
+      "x2": 0.38,
+      "z2": 0.04
+     },
+     {
+      "shape": "line",
+      "x1": -0.35,
+      "z1": -0.3,
+      "x2": -0.35,
+      "z2": 0
+     },
+     {
+      "shape": "line",
+      "x1": 0.35,
+      "z1": -0.3,
+      "x2": 0.35,
+      "z2": 0
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "iMLkpm0NUQeEHC9CRwohAYszfcJlFI97q8t22UZszGWDTgBK9xTmjQHzxwfEHbOt1dkCX10YZHnrNmXWCWNBDw=="
+ }
+}

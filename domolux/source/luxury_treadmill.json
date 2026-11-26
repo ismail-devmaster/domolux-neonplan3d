@@ -1,0 +1,257 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.luxury_treadmill",
+  "name": "Domolux Elite Commercial Treadmill",
+  "publisher": "Domolux Studio",
+  "description": "Architectural commercial-grade treadmill with cast aluminum deck, dark bronze upright pillars, curved HD touchscreen console, and shock-cushioned running belt.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "luxury_treadmill",
+      "name": {
+        "en": "Domolux Elite Commercial Treadmill",
+        "de": "Domolux Elite-Laufband",
+        "ar": "جهاز المشي الرياضي الفاخر دومولوكس"
+      },
+      "size": [
+        0.92,
+        1.95,
+        1.48
+      ],
+      "mount": "floor",
+      "surface": false,
+      "group": "sport",
+      "room": [
+        "hobby"
+      ],
+      "tags": [
+        "treadmill",
+        "running",
+        "fitness",
+        "gym",
+        "cardio",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.05,
+          "w": 0.94,
+          "d": 0.88,
+          "y": 0,
+          "h": 0.12,
+          "color": "#1c1e22",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.05,
+          "w": 0.62,
+          "d": 0.84,
+          "y": 0.09,
+          "h": 0.035,
+          "color": "#111215",
+          "edges": "faint"
+        },
+        {
+          "shape": "box",
+          "x": -0.38,
+          "z": -0.05,
+          "w": 0.12,
+          "d": 0.86,
+          "y": 0.09,
+          "h": 0.04,
+          "color": "#30343f",
+          "edges": "faint"
+        },
+        {
+          "shape": "box",
+          "x": 0.38,
+          "z": -0.05,
+          "w": 0.12,
+          "d": 0.86,
+          "y": 0.09,
+          "h": 0.04,
+          "color": "#30343f",
+          "edges": "faint"
+        },
+        {
+          "shape": "loft",
+          "x": 0,
+          "z": 0.38,
+          "w": 0.9,
+          "d": 0.18,
+          "y": 0.06,
+          "h": 0.22,
+          "tx": 0,
+          "tz": 0.36,
+          "tw": 0.82,
+          "td": 0.14,
+          "color": "#18191d",
+          "edges": "glow"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": -0.47,
+          "w": 0.64,
+          "d": 0.06,
+          "y": 0.07,
+          "h": 0.06,
+          "axis": "x",
+          "color": "metal",
+          "fix": "wdh"
+        },
+        {
+          "shape": "loft",
+          "x": -0.42,
+          "z": 0.28,
+          "w": 0.08,
+          "d": 0.12,
+          "y": 0.12,
+          "h": 0.78,
+          "tx": -0.38,
+          "tz": 0.34,
+          "tw": 0.07,
+          "td": 0.1,
+          "color": "#8c6747",
+          "edges": true,
+          "fix": "wd"
+        },
+        {
+          "shape": "loft",
+          "x": 0.42,
+          "z": 0.28,
+          "w": 0.08,
+          "d": 0.12,
+          "y": 0.12,
+          "h": 0.78,
+          "tx": 0.38,
+          "tz": 0.34,
+          "tw": 0.07,
+          "td": 0.1,
+          "color": "#8c6747",
+          "edges": true,
+          "fix": "wd"
+        },
+        {
+          "shape": "box",
+          "x": -0.38,
+          "z": 0.12,
+          "w": 0.06,
+          "d": 0.45,
+          "y": 0.86,
+          "h": 0.05,
+          "color": "#18191d",
+          "fix": "wd"
+        },
+        {
+          "shape": "box",
+          "x": 0.38,
+          "z": 0.12,
+          "w": 0.06,
+          "d": 0.45,
+          "y": 0.86,
+          "h": 0.05,
+          "color": "#18191d",
+          "fix": "wd"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": 0.32,
+          "w": 0.74,
+          "d": 0.05,
+          "y": 0.85,
+          "h": 0.05,
+          "axis": "x",
+          "color": "metal",
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.34,
+          "w": 0.14,
+          "d": 0.06,
+          "y": 0.87,
+          "h": 0.03,
+          "color": "#e74c3c",
+          "glow": true,
+          "fix": "wdh"
+        },
+        {
+          "shape": "loft",
+          "x": 0,
+          "z": 0.38,
+          "w": 0.78,
+          "d": 0.06,
+          "y": 0.9,
+          "h": 0.1,
+          "tx": 0,
+          "tz": 0.41,
+          "tw": 0.78,
+          "td": 0.04,
+          "color": "#0e1014",
+          "edges": "glow",
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.39,
+          "w": 0.72,
+          "d": 0.02,
+          "y": 0.91,
+          "h": 0.08,
+          "color": "accent",
+          "glow": true,
+          "fix": "h"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": -0.05,
+          "w": 0.94,
+          "d": 0.88
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": -0.05,
+          "w": 0.62,
+          "d": 0.84,
+          "fill": true
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0.38,
+          "w": 0.78,
+          "d": 0.1
+        },
+        {
+          "shape": "line",
+          "x1": -0.38,
+          "z1": 0.34,
+          "x2": -0.38,
+          "z2": -0.1
+        },
+        {
+          "shape": "line",
+          "x1": 0.38,
+          "z1": 0.34,
+          "x2": 0.38,
+          "z2": -0.1
+        }
+      ]
+    }
+  ]
+}

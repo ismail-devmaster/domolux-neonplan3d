@@ -1,0 +1,307 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.dual_cable_trainer",
+  "name": "Domolux Dual Cable Functional Trainer",
+  "publisher": "Domolux Studio",
+  "description": "Architectural private gym functional trainer with dual independent weight stacks, height-adjustable trolley carriages, and multi-grip chin-up bar.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "dual_cable_trainer",
+    "name": {
+     "en": "Domolux Dual Cable Functional Trainer",
+     "de": "Domolux Dual-Kabelzugstation",
+     "ar": "محطة الكابلات الوظيفية المزدوجة دومولوكس"
+    },
+    "size": [
+     1.65,
+     1.15,
+     2.2
+    ],
+    "mount": "floor",
+    "surface": false,
+    "group": "sport",
+    "room": [
+     "hobby"
+    ],
+    "tags": [
+     "gym",
+     "cables",
+     "trainer",
+     "fitness",
+     "weights",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": -0.4,
+      "z": 0,
+      "w": 0.12,
+      "d": 0.88,
+      "y": 0,
+      "h": 0.06,
+      "color": "#1c1e22",
+      "edges": "faint",
+      "fix": "wd"
+     },
+     {
+      "shape": "box",
+      "x": 0.4,
+      "z": 0,
+      "w": 0.12,
+      "d": 0.88,
+      "y": 0,
+      "h": 0.06,
+      "color": "#1c1e22",
+      "edges": "faint",
+      "fix": "wd"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.38,
+      "w": 0.72,
+      "d": 0.08,
+      "y": 0,
+      "h": 0.06,
+      "color": "#1c1e22",
+      "fix": "h"
+     },
+     {
+      "shape": "box",
+      "x": -0.4,
+      "z": -0.25,
+      "w": 0.22,
+      "d": 0.32,
+      "y": 0.06,
+      "h": 0.88,
+      "color": "#18191d",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": -0.4,
+      "z": -0.08,
+      "w": 0.16,
+      "d": 0.02,
+      "y": 0.15,
+      "h": 0.74,
+      "color": "glass",
+      "edges": "glow"
+     },
+     {
+      "shape": "box",
+      "x": 0.4,
+      "z": -0.25,
+      "w": 0.22,
+      "d": 0.32,
+      "y": 0.06,
+      "h": 0.88,
+      "color": "#18191d",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0.4,
+      "z": -0.08,
+      "w": 0.16,
+      "d": 0.02,
+      "y": 0.15,
+      "h": 0.74,
+      "color": "glass",
+      "edges": "glow"
+     },
+     {
+      "shape": "cyl",
+      "x": -0.44,
+      "z": 0.18,
+      "w": 0.03,
+      "d": 0.03,
+      "y": 0.06,
+      "h": 0.88,
+      "color": "metal",
+      "fix": "wd"
+     },
+     {
+      "shape": "cyl",
+      "x": -0.36,
+      "z": 0.18,
+      "w": 0.03,
+      "d": 0.03,
+      "y": 0.06,
+      "h": 0.88,
+      "color": "metal",
+      "fix": "wd"
+     },
+     {
+      "shape": "box",
+      "x": -0.4,
+      "z": 0.18,
+      "w": 0.14,
+      "d": 0.1,
+      "y": 0.52,
+      "h": 0.08,
+      "color": "#c5a059",
+      "glow": true,
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": -0.4,
+      "z": 0.24,
+      "w": 0.06,
+      "d": 0.06,
+      "y": 0.53,
+      "h": 0.06,
+      "axis": "x",
+      "color": "metal",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": 0.44,
+      "z": 0.18,
+      "w": 0.03,
+      "d": 0.03,
+      "y": 0.06,
+      "h": 0.88,
+      "color": "metal",
+      "fix": "wd"
+     },
+     {
+      "shape": "cyl",
+      "x": 0.36,
+      "z": 0.18,
+      "w": 0.03,
+      "d": 0.03,
+      "y": 0.06,
+      "h": 0.88,
+      "color": "metal",
+      "fix": "wd"
+     },
+     {
+      "shape": "box",
+      "x": 0.4,
+      "z": 0.18,
+      "w": 0.14,
+      "d": 0.1,
+      "y": 0.52,
+      "h": 0.08,
+      "color": "#c5a059",
+      "glow": true,
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": 0.4,
+      "z": 0.24,
+      "w": 0.06,
+      "d": 0.06,
+      "y": 0.53,
+      "h": 0.06,
+      "axis": "x",
+      "color": "metal",
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.25,
+      "w": 0.72,
+      "d": 0.12,
+      "y": 0.94,
+      "h": 0.06,
+      "color": "#1c1e22",
+      "edges": true,
+      "fix": "h"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": 0.05,
+      "w": 0.86,
+      "d": 0.04,
+      "y": 0.95,
+      "h": 0.04,
+      "axis": "x",
+      "color": "metal",
+      "edges": "glow",
+      "fix": "h"
+     },
+     {
+      "shape": "cyl",
+      "x": -0.18,
+      "z": 0.12,
+      "w": 0.03,
+      "d": 0.16,
+      "y": 0.94,
+      "h": 0.03,
+      "axis": "z",
+      "color": "#18191d",
+      "rot": 15,
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": 0.18,
+      "z": 0.12,
+      "w": 0.03,
+      "d": 0.16,
+      "y": 0.94,
+      "h": 0.03,
+      "axis": "z",
+      "color": "#18191d",
+      "rot": -15,
+      "fix": "wdh"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": -0.4,
+      "z": -0.25,
+      "w": 0.22,
+      "d": 0.32
+     },
+     {
+      "shape": "rect",
+      "x": 0.4,
+      "z": -0.25,
+      "w": 0.22,
+      "d": 0.32
+     },
+     {
+      "shape": "rect",
+      "x": -0.4,
+      "z": 0,
+      "w": 0.12,
+      "d": 0.88
+     },
+     {
+      "shape": "rect",
+      "x": 0.4,
+      "z": 0,
+      "w": 0.12,
+      "d": 0.88
+     },
+     {
+      "shape": "line",
+      "x1": -0.4,
+      "z1": 0.05,
+      "x2": 0.4,
+      "z2": 0.05
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "v8pxwCWCy+K0RnIoOpiZZ66sp4Ls8UjNrVA3yoKbqCOxwMRKQWvV5BJuYd/CUzZlCXm+U3Qa6HShLiTwHdmSCg=="
+ }
+}

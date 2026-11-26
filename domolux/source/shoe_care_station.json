@@ -1,0 +1,220 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.shoe_care_station",
+  "name": "Domolux Bespoke Shoe-Care Station",
+  "publisher": "Domolux Studio",
+  "description": "Integrated entrance grooming station with upholstered cognac leather bench, angled footwear showcase shelves, electric rotary polishing buffer, and valet drawer.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "shoe_care_station",
+      "name": {
+        "en": "Domolux Bespoke Shoe-Care Station",
+        "de": "Domolux Schuhpflege-Station",
+        "ar": "محطة العناية بالأحذية الفاخرة دومولوكس"
+      },
+      "size": [
+        1.35,
+        0.52,
+        1.15
+      ],
+      "mount": "floor",
+      "surface": true,
+      "group": "storage",
+      "room": [
+        "hall",
+        "bedroom"
+      ],
+      "tags": [
+        "shoes",
+        "care",
+        "bench",
+        "polishing",
+        "leather",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": -0.22,
+          "z": 0,
+          "w": 0.5,
+          "d": 0.9,
+          "y": 0,
+          "h": 0.96,
+          "color": "#2d241e",
+          "finish": "wood",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": -0.22,
+          "z": 0,
+          "w": 0.52,
+          "d": 0.92,
+          "y": 0.96,
+          "h": 0.04,
+          "color": "#d8cfc4",
+          "edges": true,
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": -0.22,
+          "z": 0.46,
+          "w": 0.46,
+          "d": 0.02,
+          "y": 0.8,
+          "h": 0.14,
+          "color": "#2d241e",
+          "finish": "wood",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": -0.22,
+          "z": 0.475,
+          "w": 0.18,
+          "d": 0.015,
+          "y": 0.86,
+          "h": 0.015,
+          "color": "#c5a059",
+          "glow": true,
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": -0.22,
+          "z": 0.1,
+          "w": 0.44,
+          "d": 0.7,
+          "y": 0.12,
+          "h": 0.58,
+          "color": "#18191d",
+          "edges": "faint"
+        },
+        {
+          "shape": "cyl",
+          "x": -0.32,
+          "z": 0.15,
+          "w": 0.14,
+          "d": 0.14,
+          "y": 0.22,
+          "h": 0.22,
+          "axis": "x",
+          "color": "#363840",
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": -0.12,
+          "z": 0.15,
+          "w": 0.14,
+          "d": 0.14,
+          "y": 0.22,
+          "h": 0.22,
+          "axis": "x",
+          "color": "#614838",
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": -0.22,
+          "z": 0.38,
+          "w": 0.06,
+          "d": 0.06,
+          "y": 0.08,
+          "h": 0.03,
+          "color": "#c5a059",
+          "glow": true,
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0.28,
+          "z": 0,
+          "w": 0.44,
+          "d": 0.88,
+          "y": 0,
+          "h": 0.38,
+          "color": "#2d241e",
+          "finish": "wood",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0.28,
+          "z": 0,
+          "w": 0.44,
+          "d": 0.88,
+          "y": 0.38,
+          "h": 0.08,
+          "color": "#6b4028",
+          "finish": "fabric",
+          "edges": true,
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0.28,
+          "z": 0,
+          "w": 0.42,
+          "d": 0.82,
+          "y": 0.1,
+          "h": 0.03,
+          "color": "#8c6747",
+          "edges": "faint"
+        },
+        {
+          "shape": "box",
+          "x": 0.28,
+          "z": 0.42,
+          "w": 0.42,
+          "d": 0.02,
+          "y": 0.13,
+          "h": 0.04,
+          "color": "#c5a059",
+          "fix": "wdh"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": -0.22,
+          "z": 0,
+          "w": 0.52,
+          "d": 0.92
+        },
+        {
+          "shape": "rect",
+          "x": 0.28,
+          "z": 0,
+          "w": 0.44,
+          "d": 0.88
+        },
+        {
+          "shape": "circle",
+          "x": -0.32,
+          "z": 0.15,
+          "r": 0.07
+        },
+        {
+          "shape": "circle",
+          "x": -0.12,
+          "z": 0.15,
+          "r": 0.07
+        },
+        {
+          "shape": "line",
+          "x1": 0.06,
+          "z1": 0.42,
+          "x2": 0.49,
+          "z2": 0.42
+        }
+      ]
+    }
+  ]
+}

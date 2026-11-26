@@ -1,0 +1,213 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.motorized_projection_screen",
+  "name": "Domolux Motorized Cinema Screen",
+  "publisher": "Domolux Studio",
+  "description": "Architectural ceiling-recessed motorized projection screen with acoustic 16:9 tensioned canvas and weighted bronze drop bar.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "motorized_projection_screen",
+      "name": {
+        "en": "Domolux Motorized Cinema Screen",
+        "de": "Domolux Motorisierte Projektionsleinwand",
+        "ar": "شاشة العرض السينمائية الآلية دومولوكس"
+      },
+      "size": [
+        3.2,
+        0.24,
+        2.1
+      ],
+      "mount": "ceiling",
+      "wall_y": 2.65,
+      "surface": false,
+      "group": "media",
+      "room": [
+        "living",
+        "hobby"
+      ],
+      "tags": [
+        "screen",
+        "projection",
+        "cinema",
+        "motorized",
+        "display",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 1,
+          "d": 1,
+          "y": 0.92,
+          "h": 0.08,
+          "color": "white",
+          "edges": true,
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.95,
+          "d": 0.4,
+          "y": 0.91,
+          "h": 0.01,
+          "color": "#18191d",
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": -0.49,
+          "z": 0,
+          "w": 0.02,
+          "d": 0.96,
+          "y": 0.92,
+          "h": 0.08,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0.49,
+          "z": 0,
+          "w": 0.02,
+          "d": 0.96,
+          "y": 0.92,
+          "h": 0.08,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.9,
+          "d": 0.04,
+          "y": 0.78,
+          "h": 0.13,
+          "color": "#0e1014",
+          "edges": "faint"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.86,
+          "d": 0.03,
+          "y": 0.08,
+          "h": 0.7,
+          "color": "#f8f9fa",
+          "edges": "glow"
+        },
+        {
+          "shape": "box",
+          "x": -0.44,
+          "z": 0,
+          "w": 0.03,
+          "d": 0.035,
+          "y": 0.08,
+          "h": 0.7,
+          "color": "#0e1014",
+          "edges": "faint"
+        },
+        {
+          "shape": "box",
+          "x": 0.44,
+          "z": 0,
+          "w": 0.03,
+          "d": 0.035,
+          "y": 0.08,
+          "h": 0.7,
+          "color": "#0e1014",
+          "edges": "faint"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.9,
+          "d": 0.035,
+          "y": 0.05,
+          "h": 0.03,
+          "color": "#0e1014",
+          "edges": "faint"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": 0,
+          "w": 0.93,
+          "d": 0.16,
+          "y": 0,
+          "h": 0.05,
+          "axis": "x",
+          "color": "metal",
+          "edges": true,
+          "fix": "h"
+        },
+        {
+          "shape": "cyl",
+          "x": -0.46,
+          "z": 0,
+          "w": 0.02,
+          "d": 0.18,
+          "y": 0,
+          "h": 0.05,
+          "axis": "x",
+          "color": "#c5a059",
+          "glow": true,
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": 0.46,
+          "z": 0,
+          "w": 0.02,
+          "d": 0.18,
+          "y": 0,
+          "h": 0.05,
+          "axis": "x",
+          "color": "#c5a059",
+          "glow": true,
+          "fix": "wdh"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 1,
+          "d": 1
+        },
+        {
+          "shape": "line",
+          "x1": -0.45,
+          "z1": 0,
+          "x2": 0.45,
+          "z2": 0
+        },
+        {
+          "shape": "circle",
+          "x": -0.48,
+          "z": 0,
+          "r": 0.08
+        },
+        {
+          "shape": "circle",
+          "x": 0.48,
+          "z": 0,
+          "r": 0.08
+        }
+      ]
+    }
+  ]
+}

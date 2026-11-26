@@ -1,0 +1,273 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.pet_grooming_wash_station",
+  "name": "Domolux Luxury Pet Grooming Suite",
+  "publisher": "Domolux Studio",
+  "description": "Private pet washing station with elevated seamless composite tub, retractable teak steps, glass splash guards, grooming arm, and flexible spray shower.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "pet_grooming_wash_station",
+    "name": {
+     "en": "Domolux Luxury Pet Grooming Suite",
+     "de": "Domolux Luxus-Haustier-Pflegetisch",
+     "ar": "جناح العناية بالحيوانات الأليفة الفاخر دومولوكس"
+    },
+    "size": [
+     1.45,
+     0.85,
+     1.65
+    ],
+    "mount": "floor",
+    "surface": false,
+    "group": "pets",
+    "room": [
+     "utility",
+     "bath"
+    ],
+    "tags": [
+     "pet",
+     "grooming",
+     "bath",
+     "wash",
+     "dog",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.94,
+      "d": 0.88,
+      "y": 0,
+      "h": 0.38,
+      "color": "#1c1e22",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": -0.22,
+      "z": 0.45,
+      "w": 0.42,
+      "d": 0.02,
+      "y": 0.04,
+      "h": 0.32,
+      "color": "#252830",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0.22,
+      "z": 0.45,
+      "w": 0.42,
+      "d": 0.02,
+      "y": 0.04,
+      "h": 0.32,
+      "color": "#252830",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": -0.04,
+      "z": 0.465,
+      "w": 0.015,
+      "d": 0.015,
+      "y": 0.2,
+      "h": 0.1,
+      "color": "#c5a059",
+      "glow": true,
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": 0.04,
+      "z": 0.465,
+      "w": 0.015,
+      "d": 0.015,
+      "y": 0.2,
+      "h": 0.1,
+      "color": "#c5a059",
+      "glow": true,
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.96,
+      "d": 0.92,
+      "y": 0.38,
+      "h": 0.28,
+      "color": "white",
+      "finish": "body",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0,
+      "w": 0.84,
+      "d": 0.78,
+      "y": 0.42,
+      "h": 0.23,
+      "color": "#e8eff4",
+      "edges": "faint"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": 0,
+      "w": 0.08,
+      "d": 0.08,
+      "y": 0.425,
+      "h": 0.01,
+      "color": "metal",
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": 0.32,
+      "z": 0.46,
+      "w": 0.28,
+      "d": 0.06,
+      "y": 0.1,
+      "h": 0.26,
+      "color": "#8a5829",
+      "finish": "wood",
+      "edges": true,
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.45,
+      "w": 0.94,
+      "d": 0.02,
+      "y": 0.66,
+      "h": 0.32,
+      "color": "glass",
+      "edges": "glow"
+     },
+     {
+      "shape": "box",
+      "x": -0.47,
+      "z": 0,
+      "w": 0.02,
+      "d": 0.88,
+      "y": 0.66,
+      "h": 0.32,
+      "color": "glass",
+      "edges": "glow"
+     },
+     {
+      "shape": "cyl",
+      "x": -0.42,
+      "z": -0.4,
+      "w": 0.04,
+      "d": 0.04,
+      "y": 0.66,
+      "h": 0.34,
+      "color": "metal",
+      "fix": "wd"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": -0.4,
+      "w": 0.84,
+      "d": 0.03,
+      "y": 0.97,
+      "h": 0.03,
+      "axis": "x",
+      "color": "metal",
+      "edges": "glow",
+      "fix": "h"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": -0.4,
+      "w": 0.04,
+      "d": 0.04,
+      "y": 0.88,
+      "h": 0.08,
+      "color": "#c5a059",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": -0.36,
+      "z": -0.38,
+      "w": 0.06,
+      "d": 0.06,
+      "y": 0.68,
+      "h": 0.16,
+      "color": "metal",
+      "fix": "wdh"
+     },
+     {
+      "shape": "loft",
+      "x": -0.34,
+      "z": -0.32,
+      "w": 0.04,
+      "d": 0.04,
+      "y": 0.58,
+      "h": 0.14,
+      "tx": -0.25,
+      "tz": -0.28,
+      "tw": 0.03,
+      "td": 0.03,
+      "color": "metal",
+      "fix": "wdh"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.96,
+      "d": 0.92
+     },
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0,
+      "w": 0.84,
+      "d": 0.78,
+      "fill": true
+     },
+     {
+      "shape": "circle",
+      "x": 0,
+      "z": 0,
+      "r": 0.05
+     },
+     {
+      "shape": "rect",
+      "x": 0.32,
+      "z": 0.46,
+      "w": 0.28,
+      "d": 0.06
+     },
+     {
+      "shape": "line",
+      "x1": -0.42,
+      "z1": -0.4,
+      "x2": 0.42,
+      "z2": -0.4
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "YMACLSlqhnKWZLnVKuH9hOROJgsAA8PDxBy6CMtWRqOjX3JAn8UhfjBwTuM9F43eudg/CIv1kDeyzIEt6YN5AQ=="
+ }
+}

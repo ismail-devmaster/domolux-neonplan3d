@@ -1,0 +1,242 @@
+{
+ "payload": {
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.jewelry_safe",
+  "name": "Domolux Armored Jewelry Safe",
+  "publisher": "Domolux Studio",
+  "description": "High-security architectural armored valuables safe with multi-point bronze vault wheel, biometric authentication, and automated rotating watch winders.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+   {
+    "id": "jewelry_safe",
+    "name": {
+     "en": "Domolux Armored Jewelry Safe",
+     "de": "Domolux Gepanzerter Schmucktresor",
+     "ar": "خزنة المجوهرات المصفحة دومولوكس"
+    },
+    "size": [
+     0.65,
+     0.6,
+     1.25
+    ],
+    "mount": "floor",
+    "surface": true,
+    "group": "storage",
+    "room": [
+     "bedroom",
+     "office"
+    ],
+    "tags": [
+     "safe",
+     "security",
+     "jewelry",
+     "watches",
+     "armored",
+     "domolux"
+    ],
+    "parts": [
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.05,
+      "w": 0.92,
+      "d": 0.86,
+      "y": 0,
+      "h": 0.96,
+      "color": "#1c1e22",
+      "edges": true
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.4,
+      "w": 0.84,
+      "d": 0.08,
+      "y": 0.04,
+      "h": 0.88,
+      "color": "#23262c",
+      "edges": "glow"
+     },
+     {
+      "shape": "cyl",
+      "x": 0.41,
+      "z": 0.4,
+      "w": 0.06,
+      "d": 0.06,
+      "y": 0.72,
+      "h": 0.12,
+      "color": "#8c6747",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": 0.41,
+      "z": 0.4,
+      "w": 0.06,
+      "d": 0.06,
+      "y": 0.16,
+      "h": 0.12,
+      "color": "#8c6747",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": 0,
+      "z": 0.45,
+      "w": 0.16,
+      "d": 0.16,
+      "y": 0.44,
+      "h": 0.04,
+      "axis": "z",
+      "color": "#c5a059",
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.475,
+      "w": 0.32,
+      "d": 0.03,
+      "y": 0.45,
+      "h": 0.03,
+      "color": "#c5a059",
+      "glow": true,
+      "rot": 0,
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.475,
+      "w": 0.32,
+      "d": 0.03,
+      "y": 0.45,
+      "h": 0.03,
+      "color": "#c5a059",
+      "glow": true,
+      "rot": 60,
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.475,
+      "w": 0.32,
+      "d": 0.03,
+      "y": 0.45,
+      "h": 0.03,
+      "color": "#c5a059",
+      "glow": true,
+      "rot": 120,
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": 0.15,
+      "z": 0.48,
+      "w": 0.04,
+      "d": 0.04,
+      "y": 0.44,
+      "h": 0.04,
+      "color": "metal",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": -0.075,
+      "z": 0.48,
+      "w": 0.04,
+      "d": 0.04,
+      "y": 0.57,
+      "h": 0.04,
+      "color": "metal",
+      "fix": "wdh"
+     },
+     {
+      "shape": "cyl",
+      "x": -0.075,
+      "z": 0.48,
+      "w": 0.04,
+      "d": 0.04,
+      "y": 0.31,
+      "h": 0.04,
+      "color": "metal",
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.45,
+      "w": 0.22,
+      "d": 0.025,
+      "y": 0.68,
+      "h": 0.14,
+      "color": "#111215",
+      "edges": "glow",
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": 0.465,
+      "w": 0.12,
+      "d": 0.01,
+      "y": 0.74,
+      "h": 0.04,
+      "color": "accent",
+      "glow": true,
+      "fix": "wdh"
+     },
+     {
+      "shape": "box",
+      "x": 0,
+      "z": -0.05,
+      "w": 0.94,
+      "d": 0.88,
+      "y": 0.96,
+      "h": 0.04,
+      "color": "#8c6747",
+      "edges": true,
+      "fix": "h"
+     }
+    ],
+    "symbol": [
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": -0.05,
+      "w": 0.92,
+      "d": 0.86
+     },
+     {
+      "shape": "rect",
+      "x": 0,
+      "z": 0.4,
+      "w": 0.84,
+      "d": 0.08,
+      "fill": true
+     },
+     {
+      "shape": "circle",
+      "x": 0,
+      "z": 0.45,
+      "r": 0.16
+     },
+     {
+      "shape": "circle",
+      "x": 0.41,
+      "z": 0.4,
+      "r": 0.04
+     }
+    ]
+   }
+  ]
+ },
+ "signature": {
+  "key": "d08c59237e4f",
+  "sig": "JWbu6jDk5aSG8ZEK+o3bJIxSSvtyVzHOphLpMDNIbk7Ua9heyuMmqbsIvIaS2rcTApkKb9kk0M0bnSlCkA1pCA=="
+ }
+}

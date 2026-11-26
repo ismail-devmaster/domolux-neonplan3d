@@ -1,0 +1,381 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.sculptural_fireplace",
+  "name": "Domolux Sculptural Fireplace",
+  "publisher": "Domolux Studio",
+  "description": "Monumental architectural fireplace with deep recessed panoramic fire chamber, honed travertine surround, floating hearth, and ambient under-hearth illumination.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "sculptural_fireplace",
+      "name": {
+        "en": "Domolux Sculptural Fireplace",
+        "de": "Domolux Skulpturaler Kamin",
+        "ar": "مدفأة دومولوكس المعمارية النحتية"
+      },
+      "size": [
+        2.4,
+        0.65,
+        1.45
+      ],
+      "mount": "floor",
+      "surface": true,
+      "group": "heating",
+      "room": [
+        "living",
+        "hall"
+      ],
+      "tags": [
+        "fireplace",
+        "travertine",
+        "luxury",
+        "flame",
+        "architectural",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.94,
+          "d": 0.9,
+          "y": 0,
+          "h": 0.04,
+          "color": "#1a1a1f",
+          "edges": "faint",
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.4,
+          "w": 0.92,
+          "d": 0.06,
+          "y": 0.01,
+          "h": 0.02,
+          "color": "#ffb366",
+          "glow": true,
+          "edges": "glow",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.05,
+          "w": 1,
+          "d": 0.95,
+          "y": 0.04,
+          "h": 0.08,
+          "color": "#d8cfc4",
+          "finish": "body",
+          "edges": true,
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.92,
+          "d": 0.88,
+          "y": 0.12,
+          "h": 0.12,
+          "color": "#d8cfc4",
+          "finish": "body",
+          "edges": "faint"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.72,
+          "d": 0.65,
+          "y": 0.24,
+          "h": 0.03,
+          "color": "#1c1d22",
+          "edges": "faint"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.28,
+          "w": 0.72,
+          "d": 0.08,
+          "y": 0.27,
+          "h": 0.5,
+          "color": "#18191d",
+          "edges": "faint"
+        },
+        {
+          "shape": "box",
+          "x": -0.34,
+          "z": 0,
+          "w": 0.06,
+          "d": 0.6,
+          "y": 0.27,
+          "h": 0.5,
+          "color": "#1c1d22",
+          "edges": "faint"
+        },
+        {
+          "shape": "box",
+          "x": 0.34,
+          "z": 0,
+          "w": 0.06,
+          "d": 0.6,
+          "y": 0.27,
+          "h": 0.5,
+          "color": "#1c1d22",
+          "edges": "faint"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0,
+          "w": 0.72,
+          "d": 0.65,
+          "y": 0.77,
+          "h": 0.04,
+          "color": "#18191d",
+          "edges": "faint"
+        },
+        {
+          "shape": "box",
+          "x": -0.41,
+          "z": 0.02,
+          "w": 0.16,
+          "d": 0.84,
+          "y": 0.24,
+          "h": 0.57,
+          "color": "#d8cfc4",
+          "finish": "body",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0.41,
+          "z": 0.02,
+          "w": 0.16,
+          "d": 0.84,
+          "y": 0.24,
+          "h": 0.57,
+          "color": "#d8cfc4",
+          "finish": "body",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.02,
+          "w": 0.98,
+          "d": 0.86,
+          "y": 0.81,
+          "h": 0.15,
+          "color": "#d8cfc4",
+          "finish": "body",
+          "edges": true,
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.05,
+          "w": 0.92,
+          "d": 0.75,
+          "y": 0.96,
+          "h": 0.04,
+          "color": "#c8beaf",
+          "finish": "body",
+          "edges": true,
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.05,
+          "w": 0.58,
+          "d": 0.22,
+          "y": 0.27,
+          "h": 0.02,
+          "color": "metal",
+          "edges": "faint",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.05,
+          "w": 0.52,
+          "d": 0.08,
+          "y": 0.29,
+          "h": 0.02,
+          "color": "#e67e22",
+          "glow": true,
+          "edges": "glow",
+          "fix": "wdh"
+        },
+        {
+          "shape": "loft",
+          "x": 0,
+          "z": -0.05,
+          "w": 0.48,
+          "d": 0.06,
+          "y": 0.31,
+          "h": 0.18,
+          "tx": 0,
+          "tz": -0.05,
+          "tw": 0.4,
+          "td": 0.02,
+          "color": "#f39c12",
+          "glow": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.22,
+          "w": 0.66,
+          "d": 0.015,
+          "y": 0.27,
+          "h": 0.14,
+          "color": "glass",
+          "edges": "faint",
+          "fix": "dh"
+        },
+        {
+          "shape": "box",
+          "x": -0.3,
+          "z": 0.22,
+          "w": 0.03,
+          "d": 0.03,
+          "y": 0.27,
+          "h": 0.03,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0.3,
+          "z": 0.22,
+          "w": 0.03,
+          "d": 0.03,
+          "y": 0.27,
+          "h": 0.03,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.32,
+          "w": 0.68,
+          "d": 0.02,
+          "y": 0.23,
+          "h": 0.01,
+          "color": "#c5a059",
+          "edges": "glow",
+          "fix": "h"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.38,
+          "w": 0.8,
+          "d": 0.02,
+          "y": 0.94,
+          "h": 0.02,
+          "color": "#18191d",
+          "edges": "faint",
+          "fix": "wdh"
+        },
+        {
+          "shape": "loft",
+          "x": -0.33,
+          "z": 0.22,
+          "w": 0.04,
+          "d": 0.1,
+          "y": 0.27,
+          "h": 0.5,
+          "tx": -0.35,
+          "tz": 0.22,
+          "tw": 0.02,
+          "td": 0.1,
+          "color": "#25272e"
+        },
+        {
+          "shape": "loft",
+          "x": 0.33,
+          "z": 0.22,
+          "w": 0.04,
+          "d": 0.1,
+          "y": 0.27,
+          "h": 0.5,
+          "tx": 0.35,
+          "tz": 0.22,
+          "tw": 0.02,
+          "td": 0.1,
+          "color": "#25272e"
+        },
+        {
+          "shape": "cyl",
+          "x": -0.16,
+          "z": -0.04,
+          "w": 0.06,
+          "d": 0.18,
+          "y": 0.28,
+          "h": 0.05,
+          "axis": "x",
+          "color": "#3a3530",
+          "rot": 15
+        },
+        {
+          "shape": "cyl",
+          "x": 0.16,
+          "z": -0.04,
+          "w": 0.06,
+          "d": 0.18,
+          "y": 0.28,
+          "h": 0.05,
+          "axis": "x",
+          "color": "#3a3530",
+          "rot": -12
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0.05,
+          "w": 1,
+          "d": 0.95
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 0.68,
+          "d": 0.6,
+          "fill": true
+        },
+        {
+          "shape": "line",
+          "x1": -0.33,
+          "z1": 0.22,
+          "x2": 0.33,
+          "z2": 0.22
+        },
+        {
+          "shape": "line",
+          "x1": -0.26,
+          "z1": -0.05,
+          "x2": 0.26,
+          "z2": -0.05
+        }
+      ]
+    }
+  ]
+}

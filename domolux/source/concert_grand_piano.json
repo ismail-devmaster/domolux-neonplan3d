@@ -1,0 +1,433 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.concert_grand_piano",
+  "name": "Domolux Concert Grand Piano",
+  "publisher": "Domolux Studio",
+  "description": "Full-size architectural concert grand piano in obsidian lacquer with cast gold soundboard frame, precision pedal lyre, and matching bench.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "concert_grand_piano",
+      "name": {
+        "en": "Domolux Concert Grand Piano",
+        "de": "Domolux Konzertflügel",
+        "ar": "بيانو الحفلات الكبير دومولوكس"
+      },
+      "size": [
+        1.55,
+        2.25,
+        1.05
+      ],
+      "mount": "floor",
+      "surface": false,
+      "group": "media",
+      "room": [
+        "living"
+      ],
+      "tags": [
+        "piano",
+        "music",
+        "grand",
+        "instrument",
+        "luxury",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "box",
+          "x": -0.42,
+          "z": -0.15,
+          "w": 0.12,
+          "d": 0.68,
+          "y": 0.42,
+          "h": 0.32,
+          "color": "#111215",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.22,
+          "w": 0.96,
+          "d": 0.16,
+          "y": 0.38,
+          "h": 0.36,
+          "color": "#111215",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": -0.08,
+          "z": -0.15,
+          "w": 0.72,
+          "d": 0.64,
+          "y": 0.42,
+          "h": 0.06,
+          "color": "#111215",
+          "edges": "faint"
+        },
+        {
+          "shape": "loft",
+          "x": 0.18,
+          "z": -0.05,
+          "w": 0.45,
+          "d": 0.5,
+          "y": 0.42,
+          "h": 0.32,
+          "tx": 0.08,
+          "tz": -0.36,
+          "tw": 0.35,
+          "td": 0.25,
+          "color": "#111215",
+          "edges": true
+        },
+        {
+          "shape": "cyl",
+          "x": -0.15,
+          "z": -0.42,
+          "w": 0.38,
+          "d": 0.16,
+          "y": 0.42,
+          "h": 0.32,
+          "color": "#111215",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": -0.1,
+          "z": -0.15,
+          "w": 0.65,
+          "d": 0.6,
+          "y": 0.48,
+          "h": 0.02,
+          "color": "#d2ab7a",
+          "finish": "wood",
+          "edges": "faint"
+        },
+        {
+          "shape": "box",
+          "x": -0.12,
+          "z": -0.16,
+          "w": 0.58,
+          "d": 0.54,
+          "y": 0.5,
+          "h": 0.04,
+          "color": "#c89e4b",
+          "edges": "glow"
+        },
+        {
+          "shape": "box",
+          "x": -0.18,
+          "z": -0.15,
+          "w": 0.04,
+          "d": 0.55,
+          "y": 0.54,
+          "h": 0.03,
+          "color": "#c89e4b",
+          "rot": 12
+        },
+        {
+          "shape": "box",
+          "x": 0.05,
+          "z": -0.18,
+          "w": 0.04,
+          "d": 0.45,
+          "y": 0.54,
+          "h": 0.03,
+          "color": "#c89e4b",
+          "rot": -18
+        },
+        {
+          "shape": "loft",
+          "x": -0.02,
+          "z": -0.15,
+          "w": 0.85,
+          "d": 0.68,
+          "y": 0.74,
+          "h": 0.24,
+          "tx": 0.12,
+          "tz": -0.15,
+          "tw": 0.75,
+          "td": 0.65,
+          "color": "#111215",
+          "edges": true
+        },
+        {
+          "shape": "cyl",
+          "x": 0.22,
+          "z": -0.05,
+          "w": 0.02,
+          "d": 0.02,
+          "y": 0.52,
+          "h": 0.36,
+          "color": "#c5a059",
+          "rot": 25
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.26,
+          "w": 0.84,
+          "d": 0.09,
+          "y": 0.42,
+          "h": 0.04,
+          "color": "white",
+          "edges": true,
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.25,
+          "w": 0.8,
+          "d": 0.05,
+          "y": 0.46,
+          "h": 0.02,
+          "color": "dark",
+          "edges": "faint",
+          "fix": "wdh"
+        },
+        {
+          "shape": "loft",
+          "x": 0,
+          "z": 0.12,
+          "w": 0.6,
+          "d": 0.04,
+          "y": 0.74,
+          "h": 0.16,
+          "tx": 0,
+          "tz": 0.08,
+          "tw": 0.6,
+          "td": 0.02,
+          "color": "#111215",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.14,
+          "w": 0.62,
+          "d": 0.02,
+          "y": 0.73,
+          "h": 0.02,
+          "color": "#c5a059",
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": -0.42,
+          "z": 0.2,
+          "w": 0.1,
+          "d": 0.1,
+          "y": 0,
+          "h": 0.42,
+          "color": "#111215",
+          "edges": "faint",
+          "fix": "wd"
+        },
+        {
+          "shape": "cyl",
+          "x": -0.42,
+          "z": 0.2,
+          "w": 0.06,
+          "d": 0.06,
+          "y": 0,
+          "h": 0.05,
+          "color": "#c5a059",
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": 0.42,
+          "z": 0.2,
+          "w": 0.1,
+          "d": 0.1,
+          "y": 0,
+          "h": 0.42,
+          "color": "#111215",
+          "edges": "faint",
+          "fix": "wd"
+        },
+        {
+          "shape": "cyl",
+          "x": 0.42,
+          "z": 0.2,
+          "w": 0.06,
+          "d": 0.06,
+          "y": 0,
+          "h": 0.05,
+          "color": "#c5a059",
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": -0.15,
+          "z": -0.42,
+          "w": 0.1,
+          "d": 0.1,
+          "y": 0,
+          "h": 0.42,
+          "color": "#111215",
+          "edges": "faint",
+          "fix": "wd"
+        },
+        {
+          "shape": "cyl",
+          "x": -0.15,
+          "z": -0.42,
+          "w": 0.06,
+          "d": 0.06,
+          "y": 0,
+          "h": 0.05,
+          "color": "#c5a059",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.05,
+          "w": 0.14,
+          "d": 0.04,
+          "y": 0.1,
+          "h": 0.32,
+          "color": "#111215"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.05,
+          "w": 0.18,
+          "d": 0.08,
+          "y": 0.06,
+          "h": 0.04,
+          "color": "#c5a059"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.09,
+          "w": 0.12,
+          "d": 0.06,
+          "y": 0.07,
+          "h": 0.02,
+          "color": "#c5a059",
+          "glow": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.42,
+          "w": 0.55,
+          "d": 0.14,
+          "y": 0.2,
+          "h": 0.08,
+          "color": "#18191d",
+          "edges": true,
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.42,
+          "w": 0.53,
+          "d": 0.12,
+          "y": 0.16,
+          "h": 0.04,
+          "color": "#111215",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": -0.22,
+          "z": 0.38,
+          "w": 0.04,
+          "d": 0.04,
+          "y": 0,
+          "h": 0.16,
+          "color": "#111215",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0.22,
+          "z": 0.38,
+          "w": 0.04,
+          "d": 0.04,
+          "y": 0,
+          "h": 0.16,
+          "color": "#111215",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": -0.22,
+          "z": 0.46,
+          "w": 0.04,
+          "d": 0.04,
+          "y": 0,
+          "h": 0.16,
+          "color": "#111215",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0.22,
+          "z": 0.46,
+          "w": 0.04,
+          "d": 0.04,
+          "y": 0,
+          "h": 0.16,
+          "color": "#111215",
+          "fix": "wdh"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0.22,
+          "w": 0.96,
+          "d": 0.16
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0.26,
+          "w": 0.84,
+          "d": 0.09,
+          "fill": true
+        },
+        {
+          "shape": "line",
+          "x1": -0.48,
+          "z1": 0.22,
+          "x2": -0.48,
+          "z2": -0.4
+        },
+        {
+          "shape": "circle",
+          "x": -0.15,
+          "z": -0.42,
+          "r": 0.15
+        },
+        {
+          "shape": "line",
+          "x1": -0.15,
+          "z1": -0.42,
+          "x2": 0.48,
+          "z2": 0.15
+        },
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0.42,
+          "w": 0.55,
+          "d": 0.14
+        }
+      ]
+    }
+  ]
+}

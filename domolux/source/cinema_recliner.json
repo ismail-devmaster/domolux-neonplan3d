@@ -1,0 +1,335 @@
+{
+  "format": "fp3dpack",
+  "version": 1,
+  "id": "domolux.cinema_recliner",
+  "name": "Domolux Cinema Power Recliner",
+  "publisher": "Domolux Studio",
+  "description": "First-class private cinema motorized power recliner in full-grain cognac leather, dual champagne cupholders, integrated controls, and articulated legrest.",
+  "release": 1,
+  "licensee": null,
+  "instance": null,
+  "items": [
+    {
+      "id": "cinema_recliner",
+      "name": {
+        "en": "Domolux Cinema Power Recliner",
+        "de": "Domolux Heimkino-Powersessel",
+        "ar": "كرسي السينما المنزلية الفاخر دومولوكس"
+      },
+      "size": [
+        1.05,
+        1.2,
+        1.1
+      ],
+      "mount": "floor",
+      "surface": false,
+      "group": "seating",
+      "room": [
+        "living",
+        "hobby"
+      ],
+      "tags": [
+        "cinema",
+        "recliner",
+        "leather",
+        "theater",
+        "seating",
+        "domolux"
+      ],
+      "parts": [
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": -0.05,
+          "w": 0.65,
+          "d": 0.65,
+          "y": 0,
+          "h": 0.05,
+          "color": "#8c6747",
+          "edges": "faint",
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": 0,
+          "z": -0.05,
+          "w": 0.22,
+          "d": 0.22,
+          "y": 0.05,
+          "h": 0.15,
+          "color": "#1c1d22",
+          "edges": "faint",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.02,
+          "w": 0.88,
+          "d": 0.7,
+          "y": 0.18,
+          "h": 0.1,
+          "color": "#18191d",
+          "edges": "faint"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.02,
+          "w": 0.62,
+          "d": 0.58,
+          "y": 0.28,
+          "h": 0.18,
+          "color": "#6b4028",
+          "finish": "fabric",
+          "edges": true
+        },
+        {
+          "shape": "loft",
+          "x": 0,
+          "z": -0.22,
+          "w": 0.6,
+          "d": 0.22,
+          "y": 0.44,
+          "h": 0.24,
+          "tx": 0,
+          "tz": -0.26,
+          "tw": 0.58,
+          "td": 0.18,
+          "color": "#6b4028",
+          "finish": "fabric",
+          "edges": true
+        },
+        {
+          "shape": "loft",
+          "x": 0,
+          "z": -0.28,
+          "w": 0.58,
+          "d": 0.18,
+          "y": 0.68,
+          "h": 0.22,
+          "tx": 0,
+          "tz": -0.32,
+          "tw": 0.54,
+          "td": 0.14,
+          "color": "#6b4028",
+          "finish": "fabric",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": -0.34,
+          "w": 0.46,
+          "d": 0.14,
+          "y": 0.9,
+          "h": 0.1,
+          "color": "#54321f",
+          "finish": "fabric",
+          "edges": true,
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": -0.15,
+          "z": -0.34,
+          "w": 0.02,
+          "d": 0.02,
+          "y": 0.86,
+          "h": 0.06,
+          "color": "#c5a059",
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": 0.15,
+          "z": -0.34,
+          "w": 0.02,
+          "d": 0.02,
+          "y": 0.86,
+          "h": 0.06,
+          "color": "#c5a059",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": -0.38,
+          "z": 0.02,
+          "w": 0.18,
+          "d": 0.72,
+          "y": 0.22,
+          "h": 0.38,
+          "color": "#18191d",
+          "edges": "faint"
+        },
+        {
+          "shape": "box",
+          "x": -0.38,
+          "z": 0.02,
+          "w": 0.18,
+          "d": 0.72,
+          "y": 0.6,
+          "h": 0.06,
+          "color": "#6b4028",
+          "finish": "fabric",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0.38,
+          "z": 0.02,
+          "w": 0.18,
+          "d": 0.72,
+          "y": 0.22,
+          "h": 0.38,
+          "color": "#18191d",
+          "edges": "faint"
+        },
+        {
+          "shape": "box",
+          "x": 0.38,
+          "z": 0.02,
+          "w": 0.18,
+          "d": 0.72,
+          "y": 0.6,
+          "h": 0.06,
+          "color": "#6b4028",
+          "finish": "fabric",
+          "edges": true
+        },
+        {
+          "shape": "cyl",
+          "x": -0.38,
+          "z": 0.25,
+          "w": 0.09,
+          "d": 0.09,
+          "y": 0.65,
+          "h": 0.015,
+          "color": "#c5a059",
+          "glow": true,
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": -0.38,
+          "z": 0.25,
+          "w": 0.07,
+          "d": 0.07,
+          "y": 0.62,
+          "h": 0.04,
+          "color": "#111215",
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": 0.38,
+          "z": 0.25,
+          "w": 0.09,
+          "d": 0.09,
+          "y": 0.65,
+          "h": 0.015,
+          "color": "#c5a059",
+          "glow": true,
+          "fix": "wdh"
+        },
+        {
+          "shape": "cyl",
+          "x": 0.38,
+          "z": 0.25,
+          "w": 0.07,
+          "d": 0.07,
+          "y": 0.62,
+          "h": 0.04,
+          "color": "#111215",
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0.28,
+          "z": 0.1,
+          "w": 0.015,
+          "d": 0.1,
+          "y": 0.52,
+          "h": 0.04,
+          "color": "#c5a059",
+          "glow": true,
+          "fix": "wdh"
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.35,
+          "w": 0.58,
+          "d": 0.14,
+          "y": 0.22,
+          "h": 0.16,
+          "color": "#6b4028",
+          "finish": "fabric",
+          "edges": true
+        },
+        {
+          "shape": "box",
+          "x": 0,
+          "z": 0.44,
+          "w": 0.54,
+          "d": 0.1,
+          "y": 0.16,
+          "h": 0.08,
+          "color": "#54321f",
+          "finish": "fabric",
+          "edges": true,
+          "fix": "wdh"
+        },
+        {
+          "shape": "loft",
+          "x": 0,
+          "z": -0.35,
+          "w": 0.64,
+          "d": 0.12,
+          "y": 0.38,
+          "h": 0.58,
+          "tx": 0,
+          "tz": -0.38,
+          "tw": 0.58,
+          "td": 0.08,
+          "color": "#18191d",
+          "edges": "faint"
+        }
+      ],
+      "symbol": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "z": 0,
+          "w": 0.94,
+          "d": 0.92
+        },
+        {
+          "shape": "circle",
+          "x": 0,
+          "z": -0.05,
+          "r": 0.3
+        },
+        {
+          "shape": "circle",
+          "x": -0.38,
+          "z": 0.25,
+          "r": 0.045
+        },
+        {
+          "shape": "circle",
+          "x": 0.38,
+          "z": 0.25,
+          "r": 0.045
+        },
+        {
+          "shape": "line",
+          "x1": -0.28,
+          "z1": 0.3,
+          "x2": 0.28,
+          "z2": 0.3
+        }
+      ]
+    }
+  ]
+}
